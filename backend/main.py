@@ -59,7 +59,7 @@ def diagnose_plant(request: DiagnosisRequest, db: Session = Depends(get_db)):
         crop=request.crop,
         growth_stage=request.growth_stage,
         query_symptoms=enriched_query,
-        top_k=3
+        top_k=5
     )
 
     # Шаг 3: Агент-Агроном формирует ответ, скоринг уверенности и объяснение
