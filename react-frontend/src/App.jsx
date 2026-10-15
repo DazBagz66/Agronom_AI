@@ -1,24 +1,25 @@
 import React, { useState, useEffect, useRef } from "react";
 
-const API_URL = "http://127.0.0.1:8000/api";
+import { visibleDiagnosis } from "./diagnosis.js";
+import { assessmentContext } from "./assessment.js";
+
+// По умолчанию страница обращается к API на том же локальном сервере.
+const API_URL = import.meta.env.VITE_API_URL || "/api";
 
 const CROP_STAGES = {
-  Картофель: ["Всходы", "Смыкание ботвы", "Бутонизация", "Цветение"],
-  Пшеница: ["Всходы", "Кущение", "Выход в трубку", "Флаговый лист", "Колошение"],
-  Кукуруза: ["Всходы", "3-5 листьев", "6-8 листьев", "Выметывание"],
+  Картофель: ["Всходы", "Смыкание ботвы", "Бутонизация", "Цветение", "Уборка и хранение"],
 };
 
 export default function App() {
-  const [crop, setCrop] = useState("Картофель");
+  const crop = "Картофель";
   const [growthStage, setGrowthStage] = useState("Бутонизация");
-  const [region, setRegion] = useState("Кемеровская область");
 
   const [messages, setMessages] = useState([
     {
       id: "welcome",
       role: "assistant",
       type: "welcome",
-      text: "Привет! Я ИИ-Советник агронома. Прикрепите фото ростка или листа (кнопка 📷 внизу) или опишите симптомы на поле. Можно отправлять запросы сколько угодно раз подряд и отвечать на уточняющие вопросы.",
+      text: "Привет! Я помощник агронома. Прикрепите фото картофеля: листа, стебля или клубня (кнопка 📷 внизу) или опишите симптомы на поле. Можно отправить только фото. Я проверю видимые признаки болезни и состояние растения. При необходимости попрошу уточнения.",
     },
   ]);
 
@@ -27,16 +28,14 @@ export default function App() {
   const [imagePreviewName, setImagePreviewName] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  const [isOffline, setIsOffline] = useState(false);
-  const [offlineBundle, setOfflineBundle] = useState(null);
   const [historyList, setHistoryList] = useState([]);
+  const [plantPart, setPlantPart] = useState("auto");
   const [sidebarOpen, setSidebarOpen] = useState(true);
 
   const chatEndRef = useRef(null);
   const fileInputRef = useRef(null);
 
-  // Безопасное получение списка фаз (даже если из БД пришла нестандартная культура)
-  const availableStages = CROP_STAGES[crop] || ["Всходы", "Вегетация", "Цветение"];
+  const availableStages = CROP_STAGES[crop];
 
   useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -44,46 +43,21 @@ export default function App() {
 
   useEffect(() => {
     fetchHistory();
-    fetchOfflineBundle();
   }, []);
 
-  const handleCropChange = (newCrop) => {
-    setCrop(newCrop);
-    const stages = CROP_STAGES[newCrop] || ["Вегетация"];
-    setGrowthStage(stages[0]);
-  };
-
-  const fetchHistory = async () => {
+  async function fetchHistory() {
     try {
       const res = await fetch(`${API_URL}/history`);
       if (res.ok) {
         const data = await res.json();
         if (Array.isArray(data)) {
-          setHistoryList(data);
+          setHistoryList(data.filter((item) => item.crop === crop));
         }
       }
     } catch (err) {
       console.warn("Сервер истории пока недоступен:", err);
     }
-  };
-
-  const fetchOfflineBundle = async () => {
-    try {
-      const res = await fetch(`${API_URL}/offline-bundle`);
-      if (res.ok) {
-        const data = await res.json();
-        setOfflineBundle(data);
-        localStorage.setItem("agro_offline_bundle", JSON.stringify(data));
-      }
-    } catch {
-      try {
-        const saved = localStorage.getItem("agro_offline_bundle");
-        if (saved) setOfflineBundle(JSON.parse(saved));
-      } catch (e) {
-        console.warn("Не удалось прочитать localStorage", e);
-      }
-    }
-  };
+  }
 
   const handleFileChange = (e) => {
     const file = e.target.files?.[0];
@@ -104,7 +78,7 @@ export default function App() {
         id: Date.now(),
         role: "assistant",
         type: "welcome",
-        text: `Начата новая проверка (${crop}, фаза: ${growthStage}). Загрузите фото листа или опишите проблему на поле.`,
+        text: `Начата новая проверка (${crop}, фаза: ${growthStage}). Загрузите фото листа, стебля или клубня либо опишите изменения.`,
       },
     ]);
     setInputText("");
@@ -112,27 +86,26 @@ export default function App() {
     setImagePreviewName("");
   };
 
+  // Открываем сохранённый результат; повторного анализа здесь нет.
   const loadFromHistory = (item) => {
     if (!item) return;
-    if (CROP_STAGES[item.crop]) {
-      setCrop(item.crop);
-    }
+
     setGrowthStage(item.growth_stage || "Вегетация");
-    setRegion(item.region || "Кемеровская область");
+    setPlantPart("auto");
     setMessages([
       {
         id: `user-${item.id}`,
         role: "user",
         text: item.symptoms || "Запрос из истории",
         image: null,
-        meta: `${item.crop} • ${item.growth_stage} • ${item.region}`,
+        meta: `${item.crop} • ${item.growth_stage}`,
       },
       {
         id: `ai-${item.id}`,
         role: "assistant",
         type: "diagnosis",
-        data: { ...(item.result || {}), check_id: item.id },
-        isOffline: false,
+        data: visibleDiagnosis({ ...(item.result || {}), check_id: item.id }),
+
       },
     ]);
   };
@@ -144,47 +117,26 @@ export default function App() {
     if (!textToSend && !selectedImage) return;
     if (isLoading) return;
 
+    // Новое фото начинает проверку образца, текст может уточнять прошлое фото.
     const currentImage = selectedImage;
+    const contextKey = JSON.stringify([plantPart, growthStage]);
+    const { imageForAnalysis, combinedSymptoms } = assessmentContext(messages, currentImage, textToSend, contextKey);
     const userMessage = {
       id: Date.now(),
       role: "user",
       text: textToSend || "📷 [Отправлено только фото растения без текста]",
       image: currentImage,
-      meta: `${crop} • ${growthStage} • ${region}`,
+      imageContext: imageForAnalysis,
+      symptomsContext: combinedSymptoms,
+      contextKey,
+      meta: `${crop} • ${growthStage}`,
     };
-
-    const previousUserTexts = messages
-      .filter((m) => m.role === "user")
-      .map((m) => m.text)
-      .join(" | Дополнение: ");
-
-    const combinedSymptoms = previousUserTexts
-      ? `${previousUserTexts} | Уточнение: ${textToSend}`
-      : textToSend || "Определи проблему по фотографии листа или ростка.";
 
     setMessages((prev) => [...prev, userMessage]);
     setInputText("");
     setSelectedImage(null);
     setImagePreviewName("");
     setIsLoading(true);
-
-    if (isOffline) {
-      setTimeout(() => {
-        const offlineResp = buildOfflineResponse(crop, growthStage, combinedSymptoms);
-        setMessages((prev) => [
-          ...prev,
-          {
-            id: Date.now() + 1,
-            role: "assistant",
-            type: "diagnosis",
-            data: offlineResp,
-            isOffline: true,
-          },
-        ]);
-        setIsLoading(false);
-      }, 400);
-      return;
-    }
 
     try {
       const res = await fetch(`${API_URL}/diagnose`, {
@@ -193,9 +145,9 @@ export default function App() {
         body: JSON.stringify({
           crop,
           growth_stage: growthStage,
-          region,
           symptoms: combinedSymptoms,
-          image_base64: currentImage,
+          image_base64: imageForAnalysis,
+          plant_part: plantPart,
         }),
       });
 
@@ -208,107 +160,27 @@ export default function App() {
           id: Date.now() + 1,
           role: "assistant",
           type: "diagnosis",
-          data: data,
-          isOffline: false,
+          data: visibleDiagnosis(data),
+
         },
       ]);
       fetchHistory();
-    } catch (err) {
-      const offlineResp = buildOfflineResponse(crop, growthStage, combinedSymptoms);
+    } catch {
+      // Возвращаем ввод, чтобы после ошибки можно было повторить отправку.
+      setInputText(textToSend);
+      setSelectedImage(currentImage);
       setMessages((prev) => [
         ...prev,
         {
           id: Date.now() + 1,
           role: "assistant",
-          type: "diagnosis",
-          data: offlineResp,
-          isOffline: true,
+          type: "error",
+          text: "Не удалось получить результат. Проверьте соединение с сервером и повторите запрос.",
+
         },
       ]);
     } finally {
       setIsLoading(false);
-    }
-  };
-
-  const buildOfflineResponse = (cropName, stageName, queryText) => {
-    const articles = offlineBundle?.articles || [];
-    const byCrop = articles.filter(
-      (a) => a.crop && a.crop.toLowerCase() === cropName.toLowerCase()
-    );
-    const pool = byCrop.length > 0 ? byCrop : articles;
-
-    const words = (queryText || "")
-      .toLowerCase()
-      .split(/\s+/)
-      .filter((w) => w.length > 3);
-    let bestArt = pool[0];
-    let maxHits = -1;
-
-    pool.forEach((art) => {
-      const hay = `${art.title || ""} ${art.symptoms_text || ""}`.toLowerCase();
-      let hits = 0;
-      words.forEach((w) => {
-        if (hay.includes(w)) hits++;
-      });
-      if (hits > maxHits) {
-        maxHits = hits;
-        bestArt = art;
-      }
-    });
-
-    if (!bestArt) {
-      return {
-        status: "insufficient_data",
-        overall_confidence: 25,
-        human_explanation:
-          "Офлайн-справочник еще не загружен или сервер FastAPI (порт 8000) выключен.",
-        probable_causes: [],
-        recommendations: ["Проверьте, запущен ли uvicorn на порту 8000."],
-        clarifying_questions: [],
-        sources: [],
-      };
-    }
-
-    return {
-      status: "success",
-      overall_confidence: 65,
-      human_explanation: `[Автономный полевой режим]: Диагноз подобран по внутренней памяти устройства для культуры «${cropName}». Наиболее близкое совпадение — ${bestArt.title}.`,
-      probable_causes: [
-        {
-          name: bestArt.title,
-          category: bestArt.category,
-          probability: 65,
-          reasoning: `Локальный поиск в кеше телефона по культуре (${cropName}) и симптомам.`,
-        },
-      ],
-      recommendations: bestArt.recommendations || [],
-      clarifying_questions: [
-        "При появлении интернета отправьте фото повторно для проверки через Vision-агента.",
-      ],
-      sources: bestArt.source ? [bestArt.source] : [],
-    };
-  };
-
-  const handleFeedback = async (checkId, isHelpful) => {
-    if (!checkId) return;
-    const comment = isHelpful
-      ? "Диагноз подтвержден агрономом"
-      : prompt("Что оказалось на самом деле? (Комментарий сохранится в БД):");
-
-    try {
-      await fetch(`${API_URL}/feedback`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          check_id: checkId,
-          is_helpful: isHelpful,
-          user_comment: comment || "",
-        }),
-      });
-      alert("Обратная связь сохранена в базе данных!");
-      fetchHistory();
-    } catch {
-      alert("Не удалось сохранить отзыв в офлайн-режиме.");
     }
   };
 
@@ -321,10 +193,10 @@ export default function App() {
         } bg-zinc-950 border-r border-zinc-800 flex flex-col transition-all duration-200 overflow-hidden shrink-0`}
       >
         <div className="p-4 border-b border-zinc-800 flex items-center space-x-2">
-          <span className="text-xl">🌱</span>
+          <span className="text-xl">🥔</span>
           <div>
             <h1 className="font-bold text-sm text-white">Советник агронома</h1>
-            <p className="text-[11px] text-emerald-400">Атвинта · AI + RAG</p>
+            <p className="text-[11px] text-emerald-400">Помощник по уходу за картофелем</p>
           </div>
         </div>
 
@@ -335,25 +207,6 @@ export default function App() {
           >
             ＋ Новая диагностика
           </button>
-        </div>
-
-        <div className="px-3 mb-2">
-          <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-3 flex items-center justify-between">
-            <div>
-              <div className="text-xs font-medium text-zinc-200">
-                {isOffline ? "🟠 Полевой офлайн" : "🟢 Онлайн (AI + RAG)"}
-              </div>
-              <div className="text-[10px] text-zinc-400">
-                {isOffline ? "Локальный кеш" : "Gemini + ChromaDB"}
-              </div>
-            </div>
-            <button
-              onClick={() => setIsOffline(!isOffline)}
-              className="px-2.5 py-1 rounded-lg text-xs font-semibold bg-zinc-800 text-zinc-200 hover:bg-zinc-700"
-            >
-              {isOffline ? "Вкл сеть" : "Офлайн"}
-            </button>
-          </div>
         </div>
 
         <div className="px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-zinc-500">
@@ -371,7 +224,7 @@ export default function App() {
                   {item.crop} · {item.growth_stage}
                 </span>
                 <span className="text-[10px] px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-400">
-                  {item.overall_confidence}%
+                  {item.status === "healthy" ? "Без явных повреждений" : `${item.overall_confidence}%`}
                 </span>
               </div>
               <span className="text-[11px] text-zinc-500 truncate mt-0.5">
@@ -381,16 +234,6 @@ export default function App() {
           ))}
         </div>
 
-        <div className="p-3 border-t border-zinc-800 space-y-1 text-xs text-zinc-400">
-          <a
-            href="http://127.0.0.1:8000/docs"
-            target="_blank"
-            rel="noreferrer"
-            className="block hover:text-emerald-400"
-          >
-            ⚙️ API & Swagger ↗
-          </a>
-        </div>
       </aside>
 
       {/* ОСНОВНАЯ ЧАСТЬ С ЧАТОМ */}
@@ -404,17 +247,7 @@ export default function App() {
               ☰
             </button>
 
-            <select
-              value={crop}
-              onChange={(e) => handleCropChange(e.target.value)}
-              className="bg-zinc-800 border border-zinc-700 rounded-lg px-2.5 py-1.5 text-xs text-white"
-            >
-              {Object.keys(CROP_STAGES).map((c) => (
-                <option key={c} value={c}>
-                  🌾 {c}
-                </option>
-              ))}
-            </select>
+            <span className="text-sm text-emerald-300">🥔 Картофель</span>
 
             <select
               value={growthStage}
@@ -428,39 +261,17 @@ export default function App() {
               ))}
             </select>
 
-            <input
-              type="text"
-              value={region}
-              onChange={(e) => setRegion(e.target.value)}
-              className="bg-zinc-800 border border-zinc-700 rounded-lg px-2.5 py-1.5 text-xs text-white w-40"
-            />
+            <select aria-label="Часть растения" value={plantPart} onChange={(e) => setPlantPart(e.target.value)}
+              className="bg-zinc-800 border border-zinc-700 rounded-lg px-2.5 py-1.5 text-xs text-white">
+              <option value="auto">Часть: определить по фото</option>
+              <option value="leaf">Лист</option>
+              <option value="stem">Стебель</option>
+              <option value="tuber">Клубень</option>
+              <option value="whole">Растение целиком</option>
+            </select>
+
           </div>
 
-          <div className="flex items-center space-x-1.5">
-            <button
-              type="button"
-              onClick={() => {
-                setCrop("Картофель");
-                setGrowthStage("Бутонизация");
-                handleSendMessage(
-                  null,
-                  "На листьях картофеля темно-бурые мокнущие пятна, с нижней стороны белый паутинистый налет."
-                );
-              }}
-              className="text-[11px] bg-emerald-950 hover:bg-emerald-900 text-emerald-300 border border-emerald-800 px-2.5 py-1 rounded-lg"
-            >
-              ⚡ Демо: Картофель
-            </button>
-            <button
-              type="button"
-              onClick={() =>
-                handleSendMessage(null, "Лист немного пожелтел, что делать?")
-              }
-              className="text-[11px] bg-amber-950 hover:bg-amber-900 text-amber-300 border border-amber-800 px-2.5 py-1 rounded-lg"
-            >
-              ⚡ Демо: Мало данных
-            </button>
-          </div>
         </header>
 
         <main className="flex-1 overflow-y-auto px-4 py-6 space-y-6">
@@ -478,7 +289,7 @@ export default function App() {
                     {msg.image && (
                       <img
                         src={msg.image}
-                        alt="Лист"
+                        alt="Фото картофеля"
                         className="max-h-60 rounded-xl object-cover"
                       />
                     )}
@@ -486,7 +297,7 @@ export default function App() {
                   </div>
                 )}
 
-                {msg.role === "assistant" && msg.type === "welcome" && (
+                {msg.role === "assistant" && ["welcome", "error"].includes(msg.type) && (
                   <div className="max-w-2xl bg-zinc-800 border border-zinc-700 rounded-2xl px-5 py-4 text-sm text-zinc-200">
                     {msg.text}
                   </div>
@@ -497,18 +308,18 @@ export default function App() {
                     <div className="flex items-center justify-between border-b border-zinc-700 pb-3">
                       <span
                         className={`text-xs font-bold px-2.5 py-1 rounded-full ${
-                          msg.data.status === "success"
+                          ["success", "healthy"].includes(msg.data.status)
                             ? "bg-emerald-500/20 text-emerald-300"
                             : "bg-amber-500/20 text-amber-300"
                         }`}
                       >
-                        {msg.data.status === "success"
-                          ? "✓ Диагноз готов"
-                          : "⚠️ Нужны уточнения"}
+                        {["success", "healthy"].includes(msg.data.status)
+                          ? (msg.data.status === "healthy" ? "✓ Видимых признаков болезни нет" : "✓ Оценка готова")
+                          : "Нет уверенного вывода"}
                       </span>
-                      <span className="text-sm font-bold text-white">
+                      {msg.data.assessment_basis !== "visual_observation" && <span className="text-sm font-bold text-white">
                         Уверенность: {msg.data.overall_confidence || 0}%
-                      </span>
+                      </span>}
                     </div>
 
                     <div className="text-sm text-zinc-100 bg-zinc-900/60 p-3.5 rounded-xl">
@@ -519,7 +330,7 @@ export default function App() {
                       msg.data.probable_causes.length > 0 && (
                         <div className="space-y-2">
                           <h4 className="text-xs font-semibold uppercase text-zinc-400">
-                            Вероятные причины:
+                            Предполагаемое заболевание:
                           </h4>
                           {msg.data.probable_causes.map((cause, idx) => (
                             <div
@@ -540,11 +351,21 @@ export default function App() {
                         </div>
                       )}
 
+                    {msg.data.possible_factors?.length > 0 && (
+                      <div className="bg-zinc-900/60 p-3.5 rounded-xl space-y-2">
+                        <h4 className="text-xs font-semibold uppercase text-zinc-400">Что могло способствовать заболеванию:</h4>
+                        <p className="text-xs text-zinc-400">Это возможные условия, а не установленные по фото факты.</p>
+                        <ul className="list-disc list-inside text-xs text-zinc-200 space-y-1">
+                          {msg.data.possible_factors.map((factor, i) => <li key={i}>{factor}</li>)}
+                        </ul>
+                      </div>
+                    )}
+
                     {Array.isArray(msg.data.recommendations) &&
                       msg.data.recommendations.length > 0 && (
                         <div>
                           <h4 className="text-xs font-semibold uppercase text-zinc-400 mb-2">
-                            Рекомендации:
+                            Что делать:
                           </h4>
                           <ul className="list-decimal list-inside text-xs text-zinc-200 space-y-1 bg-zinc-900/60 p-3.5 rounded-xl">
                             {msg.data.recommendations.map((rec, i) => (
@@ -568,42 +389,7 @@ export default function App() {
                         </div>
                       )}
 
-                    {Array.isArray(msg.data.sources) &&
-                      msg.data.sources.length > 0 && (
-                        <div className="pt-2 border-t border-zinc-700">
-                          <h4 className="text-[11px] font-semibold uppercase text-zinc-400 mb-1">
-                            Источники (RAG):
-                          </h4>
-                          {msg.data.sources.map((src, i) => (
-                            <div key={i} className="text-xs text-zinc-400">
-                              📚 <span className="text-zinc-200">{src.title}</span> —{" "}
-                              {src.section} ({src.url_or_code})
-                            </div>
-                          ))}
-                        </div>
-                      )}
 
-                    {msg.data.check_id && (
-                      <div className="pt-2 border-t border-zinc-700 flex justify-between items-center">
-                        <span className="text-[11px] text-zinc-500">
-                          ID проверки: #{msg.data.check_id}
-                        </span>
-                        <div className="space-x-2">
-                          <button
-                            onClick={() => handleFeedback(msg.data.check_id, true)}
-                            className="text-xs bg-zinc-700 hover:bg-emerald-700 px-3 py-1 rounded-lg"
-                          >
-                            👍 Точно
-                          </button>
-                          <button
-                            onClick={() => handleFeedback(msg.data.check_id, false)}
-                            className="text-xs bg-zinc-700 hover:bg-rose-700 px-3 py-1 rounded-lg"
-                          >
-                            👎 Ошибка
-                          </button>
-                        </div>
-                      </div>
-                    )}
                   </div>
                 )}
               </div>
@@ -611,7 +397,7 @@ export default function App() {
 
             {isLoading && (
               <div className="text-xs text-zinc-300 bg-zinc-800 p-3 rounded-xl w-fit">
-                ⏳ ИИ-агенты анализируют фото и сверяются с базой...
+                ⏳ Рассматриваем фото и оцениваем состояние картофеля...
               </div>
             )}
             <div ref={chatEndRef} />

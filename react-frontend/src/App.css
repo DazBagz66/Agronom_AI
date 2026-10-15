@@ -1,3 +1,4 @@
+/* Стили исходного шаблона; текущий экран подключает styles.css. */
 .counter {
   font-size: 16px;
   padding: 5px 10px;
