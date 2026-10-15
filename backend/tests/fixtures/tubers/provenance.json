@@ -1,0 +1,66 @@
+{
+  "source": "https://www.kaggle.com/datasets/mukaffimoin/potato-diseases-datasets",
+  "license": "CDLA-Permissive-1.0 (dataset metadata)",
+  "selection": "First held-out test record of each class, not selected for correct prediction",
+  "records": [
+    {
+      "file": "Blackleg/19.jpg",
+      "actual": "blackleg",
+      "predicted": "unknown",
+      "confidence": 0.7741648236353728,
+      "fixture": "blackleg.jpg"
+    },
+    {
+      "file": "Common Scab/12.jpg",
+      "actual": "common_scab",
+      "predicted": "common_scab",
+      "confidence": 0.8355405106828424,
+      "fixture": "common_scab.jpg"
+    },
+    {
+      "file": "Dry Rot/1.jpg",
+      "actual": "fusarium",
+      "predicted": "unknown",
+      "confidence": 0.5321710718643765,
+      "fixture": "fusarium.jpg"
+    },
+    {
+      "file": "Healthy Potatoes/13.jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.41052004807170234,
+      "fixture": "healthy.jpg"
+    },
+    {
+      "file": "Pink Rot/11.jpg",
+      "actual": "pink_rot",
+      "predicted": "pink_rot",
+      "confidence": 0.4225081544991899,
+      "fixture": "pink_rot.jpg"
+    },
+    {
+      "file": "Black Scurf/12.jpg",
+      "actual": "rhizoctonia",
+      "predicted": "rhizoctonia",
+      "confidence": 0.3430297428291495,
+      "fixture": "rhizoctonia.jpg"
+    },
+    {
+      "file": "Miscellaneous/11.jpg",
+      "actual": "unknown",
+      "predicted": "rhizoctonia",
+      "confidence": 0.6312008038578527,
+      "fixture": "unknown.jpg"
+    },
+    {
+      "file": "Healthy Potatoes/15.jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9691719074138636,
+      "fixture": "healthy_accepted.jpg",
+      "selection": "First correctly accepted healthy test sample, explicit regression fixture only; no accuracy claim"
+    }
+  ],
+  "license_url": "https://cdla.dev/permissive-1-0/",
+  "attribution": "Faria, Bin Moin, Al Wase, Sani, Hasib, Alam (2023), Classification of Potato Disease with Digital Image Processing Technique: A Hybrid Deep Learning Framework. DOI 10.1109/CCWC57344.2023.10099162"
+}

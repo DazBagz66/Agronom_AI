@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.venv/
+.cache/
+backend/data/knowledge/raw/
+backend/backups/
+backend/data/knowledge/import-report.json

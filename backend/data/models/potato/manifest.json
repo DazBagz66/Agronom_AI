@@ -1,0 +1,19 @@
+{
+  "repository": "https://huggingface.co/24f2004275/potato-disease-classifier",
+  "revision": "d0856affe2f2592f6365245fd644a5e9674780a4",
+  "source_file": "potato-disease-model.keras",
+  "source_sha256": "231ce6b7513835f5fb3206e0f74a241f9d994bca4e4b333a7de6d9351a4c4074",
+  "sha256": "cff894c2d718db1a11647aab4829a39b1c3ab272f177537087e40f393daa6624",
+  "license": "MIT (upstream model card)",
+  "conversion": "backend/scripts/convert_leaf_model.py; training augmentation excluded, preprocessing in app/diagnostics/vision.py",
+  "input": "RGB float32 NCHW [1,3,256,256], pixels / 255",
+  "output": [
+    "alternaria",
+    "late_blight",
+    "healthy leaf"
+  ],
+  "supported_organ": "leaf",
+  "validation": "Three labelled PlantVillage smoke examples; not an independent field-accuracy or regional calibration study.",
+  "limitations": "Does not classify tubers, stems, whole plants or diseases outside these three classes.",
+  "conversion_verification": "Independent NumPy HWC inference with original Keras weights vs OpenCV ONNX on a smoke input: max absolute probability error 5.7e-10."
+}

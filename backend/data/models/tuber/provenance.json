@@ -1,0 +1,15 @@
+{
+  "dataset": {
+    "url": "https://www.kaggle.com/datasets/mukaffimoin/potato-diseases-datasets",
+    "license": "Community Data License Agreement - Permissive - Version 1.0",
+    "description": "# Potato Disease Dataset\nThe dataset was compiled from numerous websites and validated by Bangladesh Agricultural Research Institute (BARI).\n\nYou are free to use and/or refer to the Potato Disease dataset in your own research as long as you credit the original paper. \n\n\nResearchGate Link: https://www.researchgate.net/publication/370123763\n\n## BibTeX Citation\n\n```\n@INPROCEEDINGS{10099162,\n  author={Faria, Fatema Tuj Johora and Bin Moin, Mukaffi and Al Wase, Ahmed and Sani, Md. Rabius and Hasib, Khan Md and Alam, Mohammad Shafiul},\n  booktitle={2023 IEEE 13th Annual Computing and Communication Workshop and Conference (CCWC)}, \n  title={Classification of Potato Disease with Digital Image Processing Technique: A Hybrid Deep Learning Framework}, \n  year={2023},\n  volume={},\n  number={},\n  pages={0820-0826},\n  doi={10.1109/CCWC57344.2023.10099162}}\n\n```\n\n\n\n\n\n\n\n\n# Disease Information\n\n| Disease Name   | Total Images | Causes of Disease |\n|----------------|--------------|-------------------|\n| Common scab    | 62           | Bacteria          |\n| Blackleg              | 60           | Bacteria          |\n| Dry rot             | 60           | Fungus            |\n| Pink rot            | 57           | Fungus            |\n| Black scurf    | 58           | Fungus            |\n| Healthy Potatoes| 80          | -                 |\n| Miscellaneous  | 74           | -                 |\n| **Total**      | **451**       | -                 |\n\n\n\n\n",
+    "archive_sha256": "f3bc11750d0e97543480d96335cad4d8ab35ea3d037164eb96e3ff956c5ad747"
+  },
+  "backbone": {
+    "url": "https://huggingface.co/onnxmodelzoo/mobilenetv2-12",
+    "license": "Apache-2.0",
+    "source_sha256": "c0c3f76d93fa3fd6580652a45618618a220fced18babf65774ed169de0432ad5",
+    "export": "ONNX graph extracted to output 464 (GlobalAveragePool), original ImageNet classifier removed",
+    "revision": "23a2a25eaaa6fcd61865414c8a1acf13dda66b7a"
+  }
+}

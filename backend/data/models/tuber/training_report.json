@@ -1,0 +1,3398 @@
+{
+  "seed": 42,
+  "method": "Frozen ImageNet MobileNetV2 + StandardScaler + multinomial LogisticRegression C=0.1",
+  "temperature": 1.4578492112137102,
+  "temperature_fit": "validation only; test untouched",
+  "dataset_size": 447,
+  "counts": {
+    "rhizoctonia": 58,
+    "blackleg": 58,
+    "common_scab": 62,
+    "fusarium": 59,
+    "healthy": 80,
+    "unknown": 73,
+    "pink_rot": 57
+  },
+  "excluded_conflicting_duplicates": [
+    "Blackleg/28.jpg",
+    "Blackleg/3.jpg",
+    "Dry Rot/16.jpg",
+    "Miscellaneous/18.jpg"
+  ],
+  "duplicate_groups": 437,
+  "split_counts": {
+    "train": 267,
+    "validation": 90,
+    "test": 90
+  },
+  "test_accuracy": 0.7333333333333333,
+  "test_balanced_accuracy": 0.7253246753246753,
+  "test_log_loss": 0.8726249775261555,
+  "classes": [
+    "blackleg",
+    "common_scab",
+    "fusarium",
+    "healthy",
+    "pink_rot",
+    "rhizoctonia",
+    "unknown"
+  ],
+  "confusion_matrix": [
+    [
+      8,
+      0,
+      1,
+      0,
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      9,
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      4,
+      0,
+      4,
+      0,
+      1,
+      0,
+      3
+    ],
+    [
+      0,
+      0,
+      0,
+      16,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      10,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      1,
+      0,
+      0,
+      10,
+      0
+    ],
+    [
+      3,
+      1,
+      1,
+      0,
+      0,
+      1,
+      9
+    ]
+  ],
+  "classification_report": {
+    "blackleg": {
+      "precision": 0.5,
+      "recall": 0.7272727272727273,
+      "f1-score": 0.5925925925925926,
+      "support": 11.0
+    },
+    "common_scab": {
+      "precision": 0.75,
+      "recall": 0.75,
+      "f1-score": 0.75,
+      "support": 12.0
+    },
+    "fusarium": {
+      "precision": 0.5,
+      "recall": 0.3333333333333333,
+      "f1-score": 0.4,
+      "support": 12.0
+    },
+    "healthy": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 16.0
+    },
+    "pink_rot": {
+      "precision": 0.8333333333333334,
+      "recall": 0.8333333333333334,
+      "f1-score": 0.8333333333333334,
+      "support": 12.0
+    },
+    "rhizoctonia": {
+      "precision": 0.8333333333333334,
+      "recall": 0.8333333333333334,
+      "f1-score": 0.8333333333333334,
+      "support": 12.0
+    },
+    "unknown": {
+      "precision": 0.6428571428571429,
+      "recall": 0.6,
+      "f1-score": 0.6206896551724138,
+      "support": 15.0
+    },
+    "accuracy": 0.7333333333333333,
+    "macro avg": {
+      "precision": 0.7227891156462586,
+      "recall": 0.7253246753246753,
+      "f1-score": 0.7185641306330961,
+      "support": 90.0
+    },
+    "weighted avg": {
+      "precision": 0.7349206349206349,
+      "recall": 0.7333333333333333,
+      "f1-score": 0.7292095927344969,
+      "support": 90.0
+    }
+  },
+  "accepted_at_65": 46,
+  "test_count": 90,
+  "accepted_accuracy": 0.8913043478260869,
+  "limitations": "Small website dataset; pHash groups reduce but cannot eliminate source/specimen leakage. Not independent field validation. Healthy means no visible supported disease; unknown is not a universal non-potato detector.",
+  "splits": {
+    "train": [
+      {
+        "file": "Black Scurf/1.jpg",
+        "sha256": "a84052fb0c5eeabac960d6ab5ff213f1659b41d6ba316ecfbbd07e8fcada6837",
+        "class": "rhizoctonia",
+        "group": 0
+      },
+      {
+        "file": "Black Scurf/10.jpg",
+        "sha256": "bfdf3904b2512c6f6b35dff1bdc7c58b5a32a3154d02bafb1d4679772a2a4616",
+        "class": "rhizoctonia",
+        "group": 1
+      },
+      {
+        "file": "Black Scurf/11.jpg",
+        "sha256": "b6b6d9da683494d0e663b1c66360655f1222e1d6c384fb8769ef0690920ae644",
+        "class": "rhizoctonia",
+        "group": 2
+      },
+      {
+        "file": "Black Scurf/13.jpg",
+        "sha256": "417b96ff50ea8084e58b27f9dc82b6e56e056fd81adfe663bd4bab9eb8315786",
+        "class": "rhizoctonia",
+        "group": 4
+      },
+      {
+        "file": "Black Scurf/15.jpg",
+        "sha256": "5d1c34d8474fabdb5ea61261437ef82946462a73b26644332f1816b2f9dcc19b",
+        "class": "rhizoctonia",
+        "group": 6
+      },
+      {
+        "file": "Black Scurf/16.jpg",
+        "sha256": "2dbec34dd1e65c5d28710875a0c34879094e9ee1dfdc5f522f915e2e58323a8e",
+        "class": "rhizoctonia",
+        "group": 7
+      },
+      {
+        "file": "Black Scurf/17.jpg",
+        "sha256": "5af3cbd5ca8053f78dd0ba16f7fb5eba8a1b366c6e45842dbba1fe505d024d19",
+        "class": "rhizoctonia",
+        "group": 8
+      },
+      {
+        "file": "Black Scurf/20.jpg",
+        "sha256": "78e35308f591ee7b06e79cc63017a240638f02f0096e7e413b45384ca2fea4c7",
+        "class": "rhizoctonia",
+        "group": 12
+      },
+      {
+        "file": "Black Scurf/21.jpg",
+        "sha256": "51312741576306aa313677abc2c0d553cbfa8173e7e8b2009aa239937c5ef4da",
+        "class": "rhizoctonia",
+        "group": 13
+      },
+      {
+        "file": "Black Scurf/22.jpg",
+        "sha256": "a6f67a44fc38329fcb163437db409ffa99db38ba6c82787355a22d74ecaf33c1",
+        "class": "rhizoctonia",
+        "group": 14
+      },
+      {
+        "file": "Black Scurf/24.jpg",
+        "sha256": "ebae0feeaed956b1b067663192eddb247251ae4cc5c845c2fb067eaf92cb6e0b",
+        "class": "rhizoctonia",
+        "group": 16
+      },
+      {
+        "file": "Black Scurf/25.jpg",
+        "sha256": "1a5b86289d5ddfb8b434d78ab700b818ae10562e44950c04615fa7f688b2341b",
+        "class": "rhizoctonia",
+        "group": 17
+      },
+      {
+        "file": "Black Scurf/26.jpg",
+        "sha256": "2b21628d519c3447c689c08d0aa9a7ae5b9cf286f74ef0e72ad355f195d58660",
+        "class": "rhizoctonia",
+        "group": 18
+      },
+      {
+        "file": "Black Scurf/27.jpg",
+        "sha256": "1f9547841e621f235a1d06cf5e605d30c1db84e1b8491d98784a8f076eddbc70",
+        "class": "rhizoctonia",
+        "group": 19
+      },
+      {
+        "file": "Black Scurf/28.jpg",
+        "sha256": "2752e72231f5f729b0c523c695ac33efef16c72b693f7195c340901e54fc8956",
+        "class": "rhizoctonia",
+        "group": 20
+      },
+      {
+        "file": "Black Scurf/29.jpg",
+        "sha256": "1060157c574b7333e3532e09d0f2bc575dafe1a7197e0233cff047a6805cca4a",
+        "class": "rhizoctonia",
+        "group": 21
+      },
+      {
+        "file": "Black Scurf/3.jpg",
+        "sha256": "f9e6af222979932caf697dc51a4969aca8605c05e5a6a72627d9d5f68d45237b",
+        "class": "rhizoctonia",
+        "group": 22
+      },
+      {
+        "file": "Black Scurf/31.jpg",
+        "sha256": "d64d1d344cc311a00511ccbb96e5ae562038730a8ca1b1530110b6a6ec2881b2",
+        "class": "rhizoctonia",
+        "group": 24
+      },
+      {
+        "file": "Black Scurf/34.jpg",
+        "sha256": "4e62dc2e8ba3f302705f4b9711c6922c745845f110e8911e28e997e99d594e67",
+        "class": "rhizoctonia",
+        "group": 27
+      },
+      {
+        "file": "Black Scurf/35.jpg",
+        "sha256": "53c695caaf4104caf04b4a883a2dd6f9a32848f376a50fd241146900bf58d17d",
+        "class": "rhizoctonia",
+        "group": 28
+      },
+      {
+        "file": "Black Scurf/36.jpg",
+        "sha256": "dc0749e74733fbe9605c27bb2ea17354ea14dd87d79c169e986379cdb3b26e45",
+        "class": "rhizoctonia",
+        "group": 29
+      },
+      {
+        "file": "Black Scurf/37.jpg",
+        "sha256": "94ac0c63b0167e4d92b40049b743d22fc50352bc4497f12c776ad02025c42a47",
+        "class": "rhizoctonia",
+        "group": 30
+      },
+      {
+        "file": "Black Scurf/42.jpg",
+        "sha256": "2cc9a7137f28b5361b3a57a18abc0e2d75dab153aeac6888fb891c96037e3ce8",
+        "class": "rhizoctonia",
+        "group": 36
+      },
+      {
+        "file": "Black Scurf/43.jpg",
+        "sha256": "5c7c7bfbc320de5ded2f3a4d6f88be7e35eb5411815d9097794639ba88686e99",
+        "class": "rhizoctonia",
+        "group": 37
+      },
+      {
+        "file": "Black Scurf/45.jpg",
+        "sha256": "20dc13672398d640153be5a94820bea87dde5238fe29f3eec1610926ab01bd71",
+        "class": "rhizoctonia",
+        "group": 39
+      },
+      {
+        "file": "Black Scurf/47.jpg",
+        "sha256": "4035f14abe98b42b25f5ac84797d673a041d45d733ff3c8d75270a64d3919f94",
+        "class": "rhizoctonia",
+        "group": 41
+      },
+      {
+        "file": "Black Scurf/48.jpg",
+        "sha256": "34b6d81c4e6b26619f0cffc89d4372b3a264578c1a58aa299ebd2aeb49edf917",
+        "class": "rhizoctonia",
+        "group": 42
+      },
+      {
+        "file": "Black Scurf/49.jpg",
+        "sha256": "d627d4e682750d779ec49d304d51b3ead492a9ffd2487b54f861125c458815fe",
+        "class": "rhizoctonia",
+        "group": 43
+      },
+      {
+        "file": "Black Scurf/5.jpg",
+        "sha256": "ca16710bbf6a23f7ffeb40943097649432afcdfa28ed240a2b99abd553c163bb",
+        "class": "rhizoctonia",
+        "group": 44
+      },
+      {
+        "file": "Black Scurf/50.jpg",
+        "sha256": "d4f47b243df72309decf14e52387a6084e1bc34170605b86fe932f4450b09f49",
+        "class": "rhizoctonia",
+        "group": 45
+      },
+      {
+        "file": "Black Scurf/55.jpg",
+        "sha256": "d2cdcd0a329acb0de63cb344d3768c58dd7cda4cc40725b42a29fffbf6cb081b",
+        "class": "rhizoctonia",
+        "group": 50
+      },
+      {
+        "file": "Black Scurf/57.jpeg",
+        "sha256": "8a48f317ef8d02f853ab46b14f6f9579b488b228e787de7ea5eed97e3c948704",
+        "class": "rhizoctonia",
+        "group": 52
+      },
+      {
+        "file": "Black Scurf/58.jpg",
+        "sha256": "3e7f8311ba3a232924ab3d4acdf7065b6c0e4cd1207eec5fdf291a1aa8a0fede",
+        "class": "rhizoctonia",
+        "group": 53
+      },
+      {
+        "file": "Black Scurf/7.jpg",
+        "sha256": "ca6f8430a4fcfe00078f43dd258c8e5cd6019bf7c6f84ae91cdbea24b1946b9a",
+        "class": "rhizoctonia",
+        "group": 55
+      },
+      {
+        "file": "Black Scurf/8.jpg",
+        "sha256": "798bce7198014e4917a1235344af2e50434395b06b20717d36bda105cc5a5ce8",
+        "class": "rhizoctonia",
+        "group": 56
+      },
+      {
+        "file": "Blackleg/1.jpg",
+        "sha256": "59d1c7a28a1ed1e763a24e1b95f3f6f448aad8ce7626eb5acf2ee0f73164dee9",
+        "class": "blackleg",
+        "group": 58
+      },
+      {
+        "file": "Blackleg/11.jpg",
+        "sha256": "817452c713ddc9ba83bca500396abb4338f93c95ed4a7570fcf330de8dcaaba2",
+        "class": "blackleg",
+        "group": 60
+      },
+      {
+        "file": "Blackleg/13.jpg",
+        "sha256": "c008670b3c29365fde2c5a39aa25e3d9bf959d504074bb0b3e1d907bff248c7b",
+        "class": "blackleg",
+        "group": 62
+      },
+      {
+        "file": "Blackleg/14.jpg",
+        "sha256": "91b3f5611e601c167bb6f2672ac9153384131185d8ad4506331fd88d2bfd3c4a",
+        "class": "blackleg",
+        "group": 63
+      },
+      {
+        "file": "Blackleg/15.jpg",
+        "sha256": "c651134fcc5ef3fbf0d86a2f7be3e7aa6ba23cb8a5c8fe5962966a771e511d9a",
+        "class": "blackleg",
+        "group": 64
+      },
+      {
+        "file": "Blackleg/17.jpg",
+        "sha256": "ebd82b14f40721c40d7bee907885a2f41540ad961f106fbb9f836e2b19733408",
+        "class": "blackleg",
+        "group": 66
+      },
+      {
+        "file": "Blackleg/2.jpg",
+        "sha256": "0bf6cb72fae52f7fd248d9541bf532a5fb5f3e8133bb21424aed5dca87315a49",
+        "class": "blackleg",
+        "group": 69
+      },
+      {
+        "file": "Blackleg/20.jpg",
+        "sha256": "94f74e3dc61d8a7057fab11b39b8ee2dd36db224ae3d0970aa0aca10cdd6d9e3",
+        "class": "blackleg",
+        "group": 70
+      },
+      {
+        "file": "Blackleg/23.jpg",
+        "sha256": "c2c79d4da16c7a05d10ff7dfa602b48656cd4086c887a3b0e72e5314441c32e6",
+        "class": "blackleg",
+        "group": 73
+      },
+      {
+        "file": "Blackleg/24.jpg",
+        "sha256": "0b694af8aed2b40e4edb4cf6ffd065facb34cd09a933142b3d10a41853820464",
+        "class": "blackleg",
+        "group": 74
+      },
+      {
+        "file": "Blackleg/25.jpg",
+        "sha256": "d49de9d50b51e4c7188a9d6aa22f22738a115375173a33e22e45c6733c3c20d6",
+        "class": "blackleg",
+        "group": 75
+      },
+      {
+        "file": "Blackleg/26.jpg",
+        "sha256": "a9c1016358ead08b32576c273c6048a2989f8a62881e98f2961f55474f0eea62",
+        "class": "blackleg",
+        "group": 76
+      },
+      {
+        "file": "Blackleg/30.jpg",
+        "sha256": "6eab035495aafb8d142c9f9f73044d13d41f12f3674ad1be66dbf2c067a5c9a6",
+        "class": "blackleg",
+        "group": 81
+      },
+      {
+        "file": "Blackleg/32.jpg",
+        "sha256": "6b962e616758749ca66aab4e81849a4880b97bb4da200b6a9f1280762c7b5027",
+        "class": "blackleg",
+        "group": 83
+      },
+      {
+        "file": "Blackleg/34.jpg",
+        "sha256": "09667350b9dcd25ae47ced612b3609969dfe5d6a1241d1cc3bd888ba586eba15",
+        "class": "blackleg",
+        "group": 85
+      },
+      {
+        "file": "Blackleg/37.jpeg",
+        "sha256": "b4168b9a8224460f59adf79d4199bb37c7128d4343da2f743485c9fdf9428bc6",
+        "class": "blackleg",
+        "group": 88
+      },
+      {
+        "file": "Blackleg/39.jpg",
+        "sha256": "3978ace0c72c9c51959552ea597136f97525f1584d45ac430879804da2bc66c8",
+        "class": "blackleg",
+        "group": 90
+      },
+      {
+        "file": "Blackleg/40.jpg",
+        "sha256": "bb431fc05015bf9382ff27394107bfa5f8c42e55bbf5194f21b00e334638a41c",
+        "class": "blackleg",
+        "group": 92
+      },
+      {
+        "file": "Blackleg/43.jpg",
+        "sha256": "8e3c058656034e4feb7ca6ed0391344df7bfb12b7f5afd1f745a93d8ea8d9736",
+        "class": "blackleg",
+        "group": 95
+      },
+      {
+        "file": "Blackleg/44.jpg",
+        "sha256": "8b0c01f3231ccc9cfdab08a5ade88c9538f3704b9bc32b4295d232441ce523f9",
+        "class": "blackleg",
+        "group": 96
+      },
+      {
+        "file": "Blackleg/45.jpg",
+        "sha256": "8fcc34852b1c6dba23d6debf42eaf7f651ed3a54536e51dc0589faaaf2aa8d35",
+        "class": "blackleg",
+        "group": 97
+      },
+      {
+        "file": "Blackleg/46.jpg",
+        "sha256": "ef23e6e6fcd5209dbb4f3a18a4788ae59529c3bd814d3d42e6ab527335008697",
+        "class": "blackleg",
+        "group": 98
+      },
+      {
+        "file": "Blackleg/47.jpg",
+        "sha256": "360177074aa6a53ecdc9cbbb15a8e67295fa01193a3f148bf063cf17dd0b270f",
+        "class": "blackleg",
+        "group": 99
+      },
+      {
+        "file": "Blackleg/48.jpg",
+        "sha256": "42d7f13ce222b1a62d15dd81cc9b7ca60fac2369d19f33d8557c9872445a41bc",
+        "class": "blackleg",
+        "group": 100
+      },
+      {
+        "file": "Blackleg/49.jpg",
+        "sha256": "b6860771edaad1d651551a9b085aa8367d7cf1536e2b70eb9334363dacc4b305",
+        "class": "blackleg",
+        "group": 101
+      },
+      {
+        "file": "Blackleg/5.jpg",
+        "sha256": "ffa1a0157564ab4accdd3a20bb766dbc700c314a332b6081cf678d088963ce67",
+        "class": "blackleg",
+        "group": 102
+      },
+      {
+        "file": "Blackleg/50.jpg",
+        "sha256": "1eb4914fc6e28ba39fa39ee21e94b5fe5dad348ccac8961bf4718f199d516fe1",
+        "class": "blackleg",
+        "group": 103
+      },
+      {
+        "file": "Blackleg/51.jpg",
+        "sha256": "1fb52fba24f6629d318455ae0c9d937b70abf4833f7ae88eb7bcd16c69d79102",
+        "class": "blackleg",
+        "group": 104
+      },
+      {
+        "file": "Blackleg/52.jpg",
+        "sha256": "0b04c346b7636a78a3c3c4520c3d68142ed049309a672ff9cdf95b1af37aed92",
+        "class": "blackleg",
+        "group": 105
+      },
+      {
+        "file": "Blackleg/54.jpg",
+        "sha256": "13c0a4e0a047aca6a78366d83ff12ea20a57d5189a2e38d27a9e9fdeaacb99f9",
+        "class": "blackleg",
+        "group": 107
+      },
+      {
+        "file": "Blackleg/55.jpg",
+        "sha256": "0d91ee9d262d7598c852a47b7e56dcbf83aa33ccae2cdeb1af4feba3e7ab528a",
+        "class": "blackleg",
+        "group": 108
+      },
+      {
+        "file": "Blackleg/56.jpg",
+        "sha256": "4feaec7db5c1a703de09cb7a692a9a242c12e176fdcf9fa1cce1fb67258b9a91",
+        "class": "blackleg",
+        "group": 109
+      },
+      {
+        "file": "Blackleg/6.jpg",
+        "sha256": "e8a8613acd7281412b9710fcac10c6c2f967c73b1f8cb1ef3bab25dfa74f9234",
+        "class": "blackleg",
+        "group": 113
+      },
+      {
+        "file": "Blackleg/60.jpg",
+        "sha256": "bf2e9604d839ea2399c28d41b573b4acb3d1692042125c189e92a9b2ef990076",
+        "class": "blackleg",
+        "group": 114
+      },
+      {
+        "file": "Blackleg/8.jpg",
+        "sha256": "b8fb812724c7685836ebe5e28318034db615db486d93c4bc81dc3d61dc0d575c",
+        "class": "blackleg",
+        "group": 116
+      },
+      {
+        "file": "Common Scab/11.jpg",
+        "sha256": "9dc46555ca00564edc36780bfa49e06294d1bc5add1f35ea9f8bb36e66a17a1c",
+        "class": "common_scab",
+        "group": 120
+      },
+      {
+        "file": "Common Scab/14.jpg",
+        "sha256": "19d4079e9847b1d55fc014d931699c9d6e62d100a03d7b3e40585b72cd486d1d",
+        "class": "common_scab",
+        "group": 123
+      },
+      {
+        "file": "Common Scab/16.jpg",
+        "sha256": "1fdfbfc2ff94deb4bc0ee752878249b832e273b6dcf64f8f8fc374245a261f3b",
+        "class": "common_scab",
+        "group": 125
+      },
+      {
+        "file": "Common Scab/18.jpg",
+        "sha256": "47577e1d97fc4b3cbfd5e62f9846068c385d2d51902c990ed0970136fbd22b1f",
+        "class": "common_scab",
+        "group": 127
+      },
+      {
+        "file": "Common Scab/19.jpg",
+        "sha256": "88ab8a740dbffd4d95e9120d689fa5d49d2f6918b5f8e93567ee53d16565733d",
+        "class": "common_scab",
+        "group": 128
+      },
+      {
+        "file": "Common Scab/2.jpg",
+        "sha256": "99820cfc276376b6e3dbf4ab91f958a2ebf230f909abfc1d61aff375bc2c54d8",
+        "class": "common_scab",
+        "group": 129
+      },
+      {
+        "file": "Common Scab/21.jpg",
+        "sha256": "c76648f41838f94e32a531ac842fd7e87f7229e78f4e7b2707b90097910ba1c7",
+        "class": "common_scab",
+        "group": 131
+      },
+      {
+        "file": "Common Scab/22.jpg",
+        "sha256": "f970ce70f8fc1d15d59c55f8d265f5dd7b6d6e4b69e99fe9284a02411b89fca8",
+        "class": "common_scab",
+        "group": 132
+      },
+      {
+        "file": "Common Scab/24.jpg",
+        "sha256": "6521d6bf47b7e4b789ce87f68598b4cea1be936c79ede9c54309a5e5725a1e70",
+        "class": "common_scab",
+        "group": 134
+      },
+      {
+        "file": "Common Scab/25.jpg",
+        "sha256": "7f41f48ddcbadbe42bb51523b128d41a92b2b0651fdf29b8a8c63e58843c4e0b",
+        "class": "common_scab",
+        "group": 135
+      },
+      {
+        "file": "Common Scab/26.jpg",
+        "sha256": "4c396049a6eab48f8bb9c02270c533ab9ada438bda171fec47ca385bee844e9f",
+        "class": "common_scab",
+        "group": 136
+      },
+      {
+        "file": "Common Scab/27.jpg",
+        "sha256": "54dcd4437efa8ca5bce4710b5e8c5dde075250efb83046051252774dc163e3d5",
+        "class": "common_scab",
+        "group": 137
+      },
+      {
+        "file": "Common Scab/28.jpg",
+        "sha256": "189c2882735a8da7a8200d5f010e1f6e2da9465f411ce5584ad36265dc81bb85",
+        "class": "common_scab",
+        "group": 138
+      },
+      {
+        "file": "Common Scab/3.jpg",
+        "sha256": "3f6a95b033fc29d8d9b889473b5672eb037d1cf4365ecf2fae115c525036c9d5",
+        "class": "common_scab",
+        "group": 140
+      },
+      {
+        "file": "Common Scab/31.jpg",
+        "sha256": "44900d257e1583cd8361981cb895890d9c7a1d32006d583292c7322a78c0f7a4",
+        "class": "common_scab",
+        "group": 142
+      },
+      {
+        "file": "Common Scab/32.jpg",
+        "sha256": "3b5de4485e22e1630b2bf7905fb30f0a25b9e4d83001f37fa589dda7c27c8fb9",
+        "class": "common_scab",
+        "group": 143
+      },
+      {
+        "file": "Common Scab/36.jpg",
+        "sha256": "c3ebd792eccbebdb2397cdd135f2c415f2161318fe5d12a340e65de1b2c7b2d6",
+        "class": "common_scab",
+        "group": 147
+      },
+      {
+        "file": "Common Scab/37.jpg",
+        "sha256": "1ce02321de103a18d482432ecdad8a802d7cfdef0608e7ace76730be9104d9fe",
+        "class": "common_scab",
+        "group": 148
+      },
+      {
+        "file": "Common Scab/38.jpg",
+        "sha256": "af567da72e761d0b8a08e5a83a5a96cb2b40ddb1caf9faf15e411130b0206712",
+        "class": "common_scab",
+        "group": 149
+      },
+      {
+        "file": "Common Scab/39.jpg",
+        "sha256": "0562c81c85abd2ccd90672f89ef6b589068f1af2a4ab5f849c78dfe26475ad59",
+        "class": "common_scab",
+        "group": 150
+      },
+      {
+        "file": "Common Scab/40.jpg",
+        "sha256": "c6e8690e2bc2e41cad5e47b2513b1c31d8ed6a5f15cf7fead127f7cc292954e4",
+        "class": "common_scab",
+        "group": 152
+      },
+      {
+        "file": "Common Scab/41.jpg",
+        "sha256": "3791956a201355dcd764531eda87eb30b89191cc1fa6901ea3cbd37ad0eed6c3",
+        "class": "common_scab",
+        "group": 153
+      },
+      {
+        "file": "Common Scab/43.jpg",
+        "sha256": "b026b7b2e49d7811197f840db76377ded80c601d4c67017454acdf69c063bfd0",
+        "class": "common_scab",
+        "group": 155
+      },
+      {
+        "file": "Common Scab/44.jpg",
+        "sha256": "5de2407e06c059f8f4cde4707bf10b360a7f9b40a1de8ad523ad238e81784eee",
+        "class": "common_scab",
+        "group": 156
+      },
+      {
+        "file": "Common Scab/47.jpg",
+        "sha256": "b0e189758c7d7761bf0927d5dae0030fa5ab457678d1a408836c6622ff17a3b1",
+        "class": "common_scab",
+        "group": 159
+      },
+      {
+        "file": "Common Scab/48.jpg",
+        "sha256": "6d0bfd89fc77f028d31153a21723b87888839a7210239f54f32feab5bba8f44f",
+        "class": "common_scab",
+        "group": 160
+      },
+      {
+        "file": "Common Scab/49.jpg",
+        "sha256": "232cefff3e6fd992a1cb7ae6847417283836936901a5f678e985112923781eaf",
+        "class": "common_scab",
+        "group": 161
+      },
+      {
+        "file": "Common Scab/5.jpg",
+        "sha256": "60cc7974fa42dbfa4731daac38f2583bc0bb4cb9d2bb9af6067a5d3d190246db",
+        "class": "common_scab",
+        "group": 162
+      },
+      {
+        "file": "Common Scab/52.jpg",
+        "sha256": "e218a7308b109e772340d88732f2356bd29da8811588ca98f1f1141fee3af7d2",
+        "class": "common_scab",
+        "group": 165
+      },
+      {
+        "file": "Common Scab/53.jpg",
+        "sha256": "e9590f10e7ddd4a8cfc285d06555f252e5b03ac78b97863c72424bf0721ff419",
+        "class": "common_scab",
+        "group": 166
+      },
+      {
+        "file": "Common Scab/55.jpg",
+        "sha256": "c12ca71dd73a5f8c8b1f8cdc83818d863583196607a4febf1487dabbbb55fd09",
+        "class": "common_scab",
+        "group": 168
+      },
+      {
+        "file": "Common Scab/56.jpg",
+        "sha256": "fe2156c2b994ef1ae1624b19e2c9b4379bb7d7df0b56440d4efcccb4444f3701",
+        "class": "common_scab",
+        "group": 169
+      },
+      {
+        "file": "Common Scab/59.jpg",
+        "sha256": "cd5f418f366c386c0a460d46737194d327ffd957587d6e19002ae93b9a5dfd6a",
+        "class": "common_scab",
+        "group": 172
+      },
+      {
+        "file": "Common Scab/60.jpg",
+        "sha256": "8511587033a2fb2c5c826cf06da6a8586eb91073d1ec02f1296e62e69e44a74f",
+        "class": "common_scab",
+        "group": 150
+      },
+      {
+        "file": "Common Scab/61.jpg",
+        "sha256": "3e68681221f506f8d3f5751d87279ee9724c73c849a61631614f2a846956370f",
+        "class": "common_scab",
+        "group": 131
+      },
+      {
+        "file": "Common Scab/62.jpg",
+        "sha256": "a8916628546c0769004c84841f0c66f6b46a874d6097cb7e737e820ffc43caad",
+        "class": "common_scab",
+        "group": 176
+      },
+      {
+        "file": "Common Scab/8.jpg",
+        "sha256": "4a0a316f58259d0aa72dd23a6ee072597cc547932737260f38fd27e00bff2447",
+        "class": "common_scab",
+        "group": 178
+      },
+      {
+        "file": "Dry Rot/10.jpg",
+        "sha256": "0700907f8e6cfc52abd531f4a912a5c64bce577d50e6dc5bf1f1107540fe4747",
+        "class": "fusarium",
+        "group": 181
+      },
+      {
+        "file": "Dry Rot/11.jpg",
+        "sha256": "495ba1c54e4ad9d6af31191b6527a1f784ef529adda38e2a0608e5396c30f21f",
+        "class": "fusarium",
+        "group": 182
+      },
+      {
+        "file": "Dry Rot/14.jpg",
+        "sha256": "ae32341472417a42a844697654e6d02c198dffa38e4c1ce5eae096a3d3913d17",
+        "class": "fusarium",
+        "group": 185
+      },
+      {
+        "file": "Dry Rot/15.jpg",
+        "sha256": "78d38bdb1a5501eef460e9ceafda36a07cdaf7a193f3823062d81a25cf50110b",
+        "class": "fusarium",
+        "group": 186
+      },
+      {
+        "file": "Dry Rot/18.jpg",
+        "sha256": "4910cd5286c5f7e3790f61704e64a4a312ce898e7343650eb4f07da253fa2aa8",
+        "class": "fusarium",
+        "group": 189
+      },
+      {
+        "file": "Dry Rot/19.jpg",
+        "sha256": "a75b3eb41ebdfb00ba77fae9e234e17dd234f5350cdddc8e05f44fc38c8f875c",
+        "class": "fusarium",
+        "group": 190
+      },
+      {
+        "file": "Dry Rot/20.jpg",
+        "sha256": "3e10418df6dc35f5628f49ed6a1a68acd40777049678c5c4771090e8e5b2d342",
+        "class": "fusarium",
+        "group": 192
+      },
+      {
+        "file": "Dry Rot/24.jpg",
+        "sha256": "55604e00988c288a2e3ce825123cf09676ef8b32a7e2764070029e0d66a2541e",
+        "class": "fusarium",
+        "group": 196
+      },
+      {
+        "file": "Dry Rot/25.jpg",
+        "sha256": "47512018d7045dfded814ee8be716b1a3a9f5289a741fde4149c8276f4569293",
+        "class": "fusarium",
+        "group": 197
+      },
+      {
+        "file": "Dry Rot/26.jpg",
+        "sha256": "d57ad1a82c26bb34c834aac44bd36691f77a5ff8f399870a45df28055e09f624",
+        "class": "fusarium",
+        "group": 198
+      },
+      {
+        "file": "Dry Rot/28.jpg",
+        "sha256": "13eef5eaa3120d805606025ef2d9b32e92822b2300a0baa1e775e50bf9465dc9",
+        "class": "fusarium",
+        "group": 200
+      },
+      {
+        "file": "Dry Rot/3.jpg",
+        "sha256": "30e328a3bcd6b4e3e60972f809ec2b4e0abf96e233aa9f34c4c5e52c99a0adb0",
+        "class": "fusarium",
+        "group": 182
+      },
+      {
+        "file": "Dry Rot/30.jpg",
+        "sha256": "54b24cd016b47bcef3d6813c40ef1a8e483efc79fdae7a6440c5c877acee3d5b",
+        "class": "fusarium",
+        "group": 203
+      },
+      {
+        "file": "Dry Rot/31.jpg",
+        "sha256": "8ec38eaf216e845342fa924fd64ea1b965825362fef3b0620f1f1b6c70ef18e2",
+        "class": "fusarium",
+        "group": 204
+      },
+      {
+        "file": "Dry Rot/32.jpg",
+        "sha256": "acd05d6d0cbf9ede938e3e6d08a363d05edbd36faeb3c48201daa3f0766428c5",
+        "class": "fusarium",
+        "group": 205
+      },
+      {
+        "file": "Dry Rot/33.jpg",
+        "sha256": "796b2caf0cd69db1f583a8e21b9005d244ed6b2c795fffcde81ba6b788e38764",
+        "class": "fusarium",
+        "group": 206
+      },
+      {
+        "file": "Dry Rot/36.jpg",
+        "sha256": "1990b1aa8018d1d21c60ee88d06ffb89e5fb9895c73f8de51795cff5dd855369",
+        "class": "fusarium",
+        "group": 209
+      },
+      {
+        "file": "Dry Rot/37.jpg",
+        "sha256": "49873ff3d813d5fdc2b0b7c0aff458809e043d2e665371596ed4d3ed33b74d74",
+        "class": "fusarium",
+        "group": 210
+      },
+      {
+        "file": "Dry Rot/39.jpg",
+        "sha256": "0f54aacf221f6c11002a714c051fc1c365b98d0208aa910d3e1d73d0c52b087d",
+        "class": "fusarium",
+        "group": 212
+      },
+      {
+        "file": "Dry Rot/4.jpg",
+        "sha256": "65adc0787380378fe358c059643cbee27670cabda05f5cf178ba4365a04b1ebf",
+        "class": "fusarium",
+        "group": 213
+      },
+      {
+        "file": "Dry Rot/40.jpg",
+        "sha256": "d8c381dba868d262f6df725c02ea095e68daba7c5d2f4705b2b37872e7b4b876",
+        "class": "fusarium",
+        "group": 214
+      },
+      {
+        "file": "Dry Rot/41.jpg",
+        "sha256": "2c1d827fe9aefc92de85bf5e5fe263a2792eea73cbefbad4112a6104f6946c9b",
+        "class": "fusarium",
+        "group": 215
+      },
+      {
+        "file": "Dry Rot/45.jpg",
+        "sha256": "3658d9c6cfffcc3de5f99a2874c3d886d5e38d62b671f16279f07409b498fd9e",
+        "class": "fusarium",
+        "group": 219
+      },
+      {
+        "file": "Dry Rot/46.png",
+        "sha256": "5888983e60c3f7a549cb63eecda2480ec9a0f4acce461237e25ce59564e62405",
+        "class": "fusarium",
+        "group": 220
+      },
+      {
+        "file": "Dry Rot/47.jpg",
+        "sha256": "1a40306b58bf2dc9e006aca1bfc55495b08eee0d5f7618f0309bde8000b5ad5c",
+        "class": "fusarium",
+        "group": 221
+      },
+      {
+        "file": "Dry Rot/48.jpg",
+        "sha256": "67f2070cfd32e5d108d645cb8d8a1c03cacf8c3e9e09c7b2198256e314d58ec8",
+        "class": "fusarium",
+        "group": 222
+      },
+      {
+        "file": "Dry Rot/50.jpg",
+        "sha256": "9140e4a44c5706c3eb52a4fc8df1a2c5a9cb9e3baa14429875b7cd1755cabf14",
+        "class": "fusarium",
+        "group": 225
+      },
+      {
+        "file": "Dry Rot/52.jpg",
+        "sha256": "347fd0b8c87be45c8536ece25678be99aa156ee47a182e258c7a51b7a0e4da3b",
+        "class": "fusarium",
+        "group": 227
+      },
+      {
+        "file": "Dry Rot/55.jpg",
+        "sha256": "b4d1441c417274a12948ae805d1a762f4fb1d3af7c61c2c85bfe373744bf0201",
+        "class": "fusarium",
+        "group": 230
+      },
+      {
+        "file": "Dry Rot/56.jpg",
+        "sha256": "b3e93fd2585d5673100cc4a2eaf5a1200311507614b781f18bbf1c5a3367e3de",
+        "class": "fusarium",
+        "group": 231
+      },
+      {
+        "file": "Dry Rot/57.jpg",
+        "sha256": "70ca53c97af73b8d378f6b937b11e862717c34bd8bc4a460c13e615792926c5c",
+        "class": "fusarium",
+        "group": 232
+      },
+      {
+        "file": "Dry Rot/58.jpg",
+        "sha256": "640ef9bedcb181ac7536524db5554bb1ae87fd91f39d9cbfa87e183182eac07e",
+        "class": "fusarium",
+        "group": 233
+      },
+      {
+        "file": "Dry Rot/59.jpg",
+        "sha256": "e0ee30e6b1376f2e5ccf484571741c8099102db71dbcc6ee39d9303ea5b52981",
+        "class": "fusarium",
+        "group": 234
+      },
+      {
+        "file": "Dry Rot/7.jpg",
+        "sha256": "c65dc6cd23d8b9ff09fc650b66624c98963c017ae8242a365dc4c3697f36c071",
+        "class": "fusarium",
+        "group": 237
+      },
+      {
+        "file": "Dry Rot/8.jpg",
+        "sha256": "65d0cbde2a6ea40f979145a8ce3807d69e7bfa22be5ed81f8a47ae2d997fe75a",
+        "class": "fusarium",
+        "group": 238
+      },
+      {
+        "file": "Healthy Potatoes/1.jpg",
+        "sha256": "35c85a186fcad72faebe93056ab0b87846620017e20a25e33cd82c2fabdd7cce",
+        "class": "healthy",
+        "group": 240
+      },
+      {
+        "file": "Healthy Potatoes/10.jpg",
+        "sha256": "e0c563113aeca66b9163e7e2371fb6a554a14268b1b55a8728f86e9566e71244",
+        "class": "healthy",
+        "group": 241
+      },
+      {
+        "file": "Healthy Potatoes/11.jpg",
+        "sha256": "cd0f0f1b60452c9bbc4dc4aad7a809e13cbb33cb2e8633a9fad59b6d69b552ba",
+        "class": "healthy",
+        "group": 242
+      },
+      {
+        "file": "Healthy Potatoes/12.jpg",
+        "sha256": "8f39b28464a87fdf13956a69bb02a75baf2e5d01fa4497f2582e37f281ae63b2",
+        "class": "healthy",
+        "group": 243
+      },
+      {
+        "file": "Healthy Potatoes/14.jpg",
+        "sha256": "796c80d88227ec41cf7d134e60c3d2384f9a0abf6e0a94d91a2ee2e4d0ee1c9a",
+        "class": "healthy",
+        "group": 245
+      },
+      {
+        "file": "Healthy Potatoes/17.jpg",
+        "sha256": "efe7fa7e58682ce5bab085662cf242b783aa4edea00617b684509e347c342539",
+        "class": "healthy",
+        "group": 248
+      },
+      {
+        "file": "Healthy Potatoes/20.jpg",
+        "sha256": "031310650a6ca130b16812c6be62f6899018124bbad150223610910a0f82a1cc",
+        "class": "healthy",
+        "group": 252
+      },
+      {
+        "file": "Healthy Potatoes/21.jpg",
+        "sha256": "c9545554e02b7ce55b8ea673582d1ad1de30c05d72d0f756f6ffa37b3e35f4e1",
+        "class": "healthy",
+        "group": 253
+      },
+      {
+        "file": "Healthy Potatoes/22.jpg",
+        "sha256": "1f221928bb6aa9ea00cb8adc7c10b98e3544de16342df21049c3d7108c055e87",
+        "class": "healthy",
+        "group": 254
+      },
+      {
+        "file": "Healthy Potatoes/24.jpg",
+        "sha256": "f1fb145230d427500656c141ca8c97200a29d94627047978d899a13b025acf44",
+        "class": "healthy",
+        "group": 256
+      },
+      {
+        "file": "Healthy Potatoes/25.jpg",
+        "sha256": "98be59c86d725a0b79199fc1c777c58462d7c2ccaaceffec54cc660f0276170b",
+        "class": "healthy",
+        "group": 257
+      },
+      {
+        "file": "Healthy Potatoes/27.jpg",
+        "sha256": "57bcc9fe83d16ce9f9f0b9a840d053225360ce9cd355915b81c34b91093acdc2",
+        "class": "healthy",
+        "group": 259
+      },
+      {
+        "file": "Healthy Potatoes/3.jpg",
+        "sha256": "8032d60a7bfc25a5151ef1e40d7417022dea2b1740b8bdeb27f6ee05aab29018",
+        "class": "healthy",
+        "group": 262
+      },
+      {
+        "file": "Healthy Potatoes/34.jpg",
+        "sha256": "a9287cdb9aff3512596d3fe112102ce4d18aa0c9a11acb5fa48969f6a58ed7a9",
+        "class": "healthy",
+        "group": 267
+      },
+      {
+        "file": "Healthy Potatoes/36.jpg",
+        "sha256": "2b2c6444484026df688eca1d998d2766eeb27b4eae523b139095e8110089b765",
+        "class": "healthy",
+        "group": 269
+      },
+      {
+        "file": "Healthy Potatoes/38.jpg",
+        "sha256": "0eb1ee93b80aa94522cae936172d1d9c231e70904a2ff5296c075dc526c497fd",
+        "class": "healthy",
+        "group": 271
+      },
+      {
+        "file": "Healthy Potatoes/40.jpg",
+        "sha256": "3e59707c802c017725b249ee432a07b88b3be026e9ec90c21a30e1b660b26f80",
+        "class": "healthy",
+        "group": 274
+      },
+      {
+        "file": "Healthy Potatoes/41.jpg",
+        "sha256": "df2e67a1d4d5a88534d5f72b36621cf29e9769e07d64fcff57d6869d415b888f",
+        "class": "healthy",
+        "group": 275
+      },
+      {
+        "file": "Healthy Potatoes/42.jpg",
+        "sha256": "bbedebca75886227d59d7e483135fa571f4beedd4a160bc0f209ed98d8b25bb0",
+        "class": "healthy",
+        "group": 276
+      },
+      {
+        "file": "Healthy Potatoes/43.jpg",
+        "sha256": "fbbe15db6faac3a3a9e01808d1751d1d70a8fde60f54fb233fd1efa206a591e0",
+        "class": "healthy",
+        "group": 277
+      },
+      {
+        "file": "Healthy Potatoes/45.jpg",
+        "sha256": "acdb1de9f550b60a012f4caf19cf074ffeadd27cf2017b773fd622d87e403619",
+        "class": "healthy",
+        "group": 279
+      },
+      {
+        "file": "Healthy Potatoes/46.jpg",
+        "sha256": "b963eb58b5de007b9c37c7230e72434f79711f5f583c95656720bebaa448c254",
+        "class": "healthy",
+        "group": 280
+      },
+      {
+        "file": "Healthy Potatoes/47.jpg",
+        "sha256": "4172a9afad3d1f58b9597e5428fb566c993b8a68f7e255f756f4af4bde685738",
+        "class": "healthy",
+        "group": 281
+      },
+      {
+        "file": "Healthy Potatoes/5.jpg",
+        "sha256": "54a07faf45bb2f09b3fe50a60e825673cdc73d903d818f44517104dd55f4050d",
+        "class": "healthy",
+        "group": 284
+      },
+      {
+        "file": "Healthy Potatoes/50.jpg",
+        "sha256": "0bb0f5ce87ce9e750e0e11f99d8dfb7f5f3e09deaa640fb4f5bbe0fb9ea04cd3",
+        "class": "healthy",
+        "group": 285
+      },
+      {
+        "file": "Healthy Potatoes/52.jpg",
+        "sha256": "658e6480e6d1f4f3d0a5380548b6b51526f03a090ad168535e9a4aa015cc9c75",
+        "class": "healthy",
+        "group": 287
+      },
+      {
+        "file": "Healthy Potatoes/53.jpg",
+        "sha256": "e610d9f26dfc7f17e872280d202cbe2e594de6c57f64b1902c0f5638a3333815",
+        "class": "healthy",
+        "group": 288
+      },
+      {
+        "file": "Healthy Potatoes/55.jpg",
+        "sha256": "b72349576033f2b4d5f113821b6847e65ba24477a40c275bdcbc998949ef14df",
+        "class": "healthy",
+        "group": 290
+      },
+      {
+        "file": "Healthy Potatoes/58.jpg",
+        "sha256": "4f6db6a8d1b01751d0739ceb8e78acd8530e8604af4e5f39aebe7183f52f607d",
+        "class": "healthy",
+        "group": 293
+      },
+      {
+        "file": "Healthy Potatoes/61.jpg",
+        "sha256": "e0f7db17333e8882c24db751eee8e65671eca8929c3c58cbb4e7011f88bf9204",
+        "class": "healthy",
+        "group": 297
+      },
+      {
+        "file": "Healthy Potatoes/62.jpg",
+        "sha256": "68cb9bc58365390058a61822e3553c1df2c679a13d5ba70f4e96b7cfa0174633",
+        "class": "healthy",
+        "group": 298
+      },
+      {
+        "file": "Healthy Potatoes/63.jpg",
+        "sha256": "2108a2e2d354d752a0a5e661e48d4d32452766674c756c63b8b70bfd0afc2778",
+        "class": "healthy",
+        "group": 299
+      },
+      {
+        "file": "Healthy Potatoes/65.jpg",
+        "sha256": "c39eef9a990718cab0d09c525d9811d68cd9f07fb063208d8e9a5016d2f82ef4",
+        "class": "healthy",
+        "group": 301
+      },
+      {
+        "file": "Healthy Potatoes/66.jpg",
+        "sha256": "96b9bc7abc12c31a2f6a485278bbed13385af21f3a9528a15926ab0a295c77ee",
+        "class": "healthy",
+        "group": 302
+      },
+      {
+        "file": "Healthy Potatoes/67.jpg",
+        "sha256": "5585886cdbef06aa98cef9a9f997688c4be97231b9dce3d91cfbca535d7ce9f2",
+        "class": "healthy",
+        "group": 303
+      },
+      {
+        "file": "Healthy Potatoes/68.jpg",
+        "sha256": "df2baae68bc52df1a6bcc33d6209f451db0cc3533905b95b88e3791ae0673a4e",
+        "class": "healthy",
+        "group": 304
+      },
+      {
+        "file": "Healthy Potatoes/7.jpg",
+        "sha256": "fa0eac970234e1f593d16266d1f116b8f2876b87c4417ad7f5288d5f7615c02e",
+        "class": "healthy",
+        "group": 306
+      },
+      {
+        "file": "Healthy Potatoes/70.jpg",
+        "sha256": "760f006b56d30584c50438e84f7a4a89a146c529acf3e95041a944085c01e93e",
+        "class": "healthy",
+        "group": 307
+      },
+      {
+        "file": "Healthy Potatoes/71.jpg",
+        "sha256": "e219e9846e921ff9cdae41384fe53c47b03898f5273fe2878e584f012947719d",
+        "class": "healthy",
+        "group": 308
+      },
+      {
+        "file": "Healthy Potatoes/72.jpg",
+        "sha256": "e3b3c0dabe548a25d4bb0dd4bffb4c75237064acec51a02d9cc34030a29164dd",
+        "class": "healthy",
+        "group": 309
+      },
+      {
+        "file": "Healthy Potatoes/74.jpg",
+        "sha256": "99f4d081c0519660cd3a42aa89d370f1814b020f4229707d0534a2e6e3fd64ab",
+        "class": "healthy",
+        "group": 311
+      },
+      {
+        "file": "Healthy Potatoes/75.jpg",
+        "sha256": "9030072342f87eca9b49bef1cf389ce5ea0c81e71453c4b442a4bc560fe0fb04",
+        "class": "healthy",
+        "group": 312
+      },
+      {
+        "file": "Healthy Potatoes/76.jpg",
+        "sha256": "8372535305cb7109e6e9eac71cb1a9422501e72e712f639c59588d2cfe6d00ed",
+        "class": "healthy",
+        "group": 313
+      },
+      {
+        "file": "Healthy Potatoes/78.jpg",
+        "sha256": "e339b2b92f9ffa7c69b52e588069c98a841a4eac63a7108f89165ede66ae5959",
+        "class": "healthy",
+        "group": 315
+      },
+      {
+        "file": "Healthy Potatoes/79.jpg",
+        "sha256": "9674dd4d9f55297baf5354b2accc095dcc03a05a71a9e60faf11fc3dd0006157",
+        "class": "healthy",
+        "group": 316
+      },
+      {
+        "file": "Healthy Potatoes/8.jpg",
+        "sha256": "f1ec21db777ef946e9a38cee75a85b0d07e136fe2f457b557cb8bf5096f59bcd",
+        "class": "healthy",
+        "group": 317
+      },
+      {
+        "file": "Healthy Potatoes/80.jpg",
+        "sha256": "7a89eea121ccb3bf3b2d7b74d9f7e7a57d5c796eed233ffddfdf63cd11f603b5",
+        "class": "healthy",
+        "group": 318
+      },
+      {
+        "file": "Healthy Potatoes/9.jpg",
+        "sha256": "bd14de7e0c8ae91d5a57a81791084b5d81aa738ffd649096af5a414936385782",
+        "class": "healthy",
+        "group": 306
+      },
+      {
+        "file": "Miscellaneous/10.jpg",
+        "sha256": "d07c50ac24b35f86403525780d2ac0849ed9376995ebd95818fa2c5ce1debdf4",
+        "class": "unknown",
+        "group": 321
+      },
+      {
+        "file": "Miscellaneous/12.jpg",
+        "sha256": "06250ed0f5e81484987d9b2bd09c011a7b817a4ebcdb580d9c6c34c9268b0327",
+        "class": "unknown",
+        "group": 323
+      },
+      {
+        "file": "Miscellaneous/15.jpg",
+        "sha256": "291fcf245276dc9ae540ed2f6d6e3573a10226e13148f44d8bc61db5c62cb9aa",
+        "class": "unknown",
+        "group": 326
+      },
+      {
+        "file": "Miscellaneous/16.jpg",
+        "sha256": "060842a5edf09febe01bc0a203e4008da772bab4c4e7042656a7c2011fb3c2dd",
+        "class": "unknown",
+        "group": 327
+      },
+      {
+        "file": "Miscellaneous/2.jpg",
+        "sha256": "c24fbcc92de2d1f9a417a65427aa8bb3c681afb8f3624bb347c9ae22f8b579b5",
+        "class": "unknown",
+        "group": 331
+      },
+      {
+        "file": "Miscellaneous/21.jpg",
+        "sha256": "dfe77bf718d8f49f555896712bbf3c7fc914632fde889a21b5a83f7457235639",
+        "class": "unknown",
+        "group": 333
+      },
+      {
+        "file": "Miscellaneous/22.jpg",
+        "sha256": "622bd9022100319cb7bc370fa6e55219898ffd5b522ca6ed8d06c6251731c09f",
+        "class": "unknown",
+        "group": 334
+      },
+      {
+        "file": "Miscellaneous/23.jpg",
+        "sha256": "43341d6c7b1be28a78ae6126c3f14fa79b9626b28ecff62c7ea7907d7cdc29f8",
+        "class": "unknown",
+        "group": 335
+      },
+      {
+        "file": "Miscellaneous/24.jpg",
+        "sha256": "f84dca2f74b40d88ac74d7e4c3fe9a76c616dd86e01a6c9f332c6d7e5227220d",
+        "class": "unknown",
+        "group": 336
+      },
+      {
+        "file": "Miscellaneous/25.jpg",
+        "sha256": "acf9e6ba2048d77155b23ce5683c575c166d3bf55367446f4c5f7105e7df7918",
+        "class": "unknown",
+        "group": 337
+      },
+      {
+        "file": "Miscellaneous/28.jpg",
+        "sha256": "078b5d864b1d5b925c6e2994fd6a64b752cdeb1e654e61084d112a5835b5c3ae",
+        "class": "unknown",
+        "group": 340
+      },
+      {
+        "file": "Miscellaneous/30.jpg",
+        "sha256": "368e528778a9e31c05b2f55f2a1bc9160da860f7914d0ee9731644d447054afe",
+        "class": "unknown",
+        "group": 343
+      },
+      {
+        "file": "Miscellaneous/31.jpg",
+        "sha256": "6bb043e55ca347a6bfb7088c42ffe0551483aed3928efeeb52ce219469210cfa",
+        "class": "unknown",
+        "group": 344
+      },
+      {
+        "file": "Miscellaneous/32.jpg",
+        "sha256": "bc2f94519f00e808783032c84d0120de52d08cdf14070c3cee35149377dd9786",
+        "class": "unknown",
+        "group": 345
+      },
+      {
+        "file": "Miscellaneous/33.jpg",
+        "sha256": "164c00f90b65175bcf0a66738b22ed72bdafdcbdc54d840028c43a4e23bc4ce1",
+        "class": "unknown",
+        "group": 346
+      },
+      {
+        "file": "Miscellaneous/35.jpg",
+        "sha256": "3b274976b82fa3b5bb8c0360c5b3992c4b5d7a3b91da03b45655cebbcba89708",
+        "class": "unknown",
+        "group": 348
+      },
+      {
+        "file": "Miscellaneous/36.jpg",
+        "sha256": "a6c44cd53e8327e1920f545e80ece54cb9090c8264dfedb35a2dbd8862e2771f",
+        "class": "unknown",
+        "group": 349
+      },
+      {
+        "file": "Miscellaneous/37.jpg",
+        "sha256": "4c36099e1e80b8f395fc06c4ed3641f67a5e0dadbf3c91351331a361237b052e",
+        "class": "unknown",
+        "group": 350
+      },
+      {
+        "file": "Miscellaneous/4.jpg",
+        "sha256": "01c568aae16cc40e3ebc0052a2762a41f9f43f073263a21812ffdde529235085",
+        "class": "unknown",
+        "group": 353
+      },
+      {
+        "file": "Miscellaneous/40.jpg",
+        "sha256": "057169ecec194c0337a7dac2944b6b3a844724f266843dfa0364c06054359ee5",
+        "class": "unknown",
+        "group": 354
+      },
+      {
+        "file": "Miscellaneous/42.jpg",
+        "sha256": "d21bcc9221997a55a931136f3b4bbe61f659cc2d950a3224aa594cbb605a2532",
+        "class": "unknown",
+        "group": 356
+      },
+      {
+        "file": "Miscellaneous/44.jpg",
+        "sha256": "e0e218417989471bba89d7ba40f3d384ca37f420132d48d8233ebcdcf48c3be1",
+        "class": "unknown",
+        "group": 358
+      },
+      {
+        "file": "Miscellaneous/45.jpg",
+        "sha256": "c8255708308f6092ef9ad2720fc56fbad2b0e2b7aa7e71951676117b025bcca9",
+        "class": "unknown",
+        "group": 359
+      },
+      {
+        "file": "Miscellaneous/46.jpg",
+        "sha256": "d73dd995850065d16f358d063d0cffd96a011e62ccd3f322767e2e164e834a9a",
+        "class": "unknown",
+        "group": 360
+      },
+      {
+        "file": "Miscellaneous/47.jpg",
+        "sha256": "ad8c2cadbc5a735462c35dae8e3e02d605659fff64f926d8c5e995157320a77a",
+        "class": "unknown",
+        "group": 361
+      },
+      {
+        "file": "Miscellaneous/48.jpg",
+        "sha256": "e0def04a2c7299988a8909843f7ed6d1ba43de6151b994a73f0f72c2d961f359",
+        "class": "unknown",
+        "group": 362
+      },
+      {
+        "file": "Miscellaneous/49.jpg",
+        "sha256": "1298c04e06c4b00e2ed59ecc754723e1f41088dd79f0a850accf20006a80dbb0",
+        "class": "unknown",
+        "group": 363
+      },
+      {
+        "file": "Miscellaneous/5.jpg",
+        "sha256": "5089b8dd6424dec51ca198a551ed487a69ef0cc5e287aba5bc42aa4cb2789325",
+        "class": "unknown",
+        "group": 364
+      },
+      {
+        "file": "Miscellaneous/50.jpg",
+        "sha256": "682b99d1c8a0190ac644a5183829ad75d654306b05ce2d1e37561429e4fb352a",
+        "class": "unknown",
+        "group": 365
+      },
+      {
+        "file": "Miscellaneous/51.jpg",
+        "sha256": "5f54084a632990bb52f42973471d32a3fa7371b45b944a6217a2fd1f0276099c",
+        "class": "unknown",
+        "group": 366
+      },
+      {
+        "file": "Miscellaneous/54.jpg",
+        "sha256": "5cb12aa11b083007f1b94a7a5de27841d2ddebf593fa1df4cae33f631673cb44",
+        "class": "unknown",
+        "group": 369
+      },
+      {
+        "file": "Miscellaneous/56.jpg",
+        "sha256": "7891488c7e4916d74a03d15e7daf060174760dc832bd46aefb089ea2c7aa8153",
+        "class": "unknown",
+        "group": 371
+      },
+      {
+        "file": "Miscellaneous/58.jpg",
+        "sha256": "5cb12aa11b083007f1b94a7a5de27841d2ddebf593fa1df4cae33f631673cb44",
+        "class": "unknown",
+        "group": 369
+      },
+      {
+        "file": "Miscellaneous/6.jpg",
+        "sha256": "baf2c42b96389736f1af0c41222f059038974656cd2fb75f30beaefb34939ccb",
+        "class": "unknown",
+        "group": 375
+      },
+      {
+        "file": "Miscellaneous/60.jpg",
+        "sha256": "f16da6d063b3921fde9a64c219d0b52545b1c2535802345293f16ae5c0ba7b7d",
+        "class": "unknown",
+        "group": 376
+      },
+      {
+        "file": "Miscellaneous/61.jpg",
+        "sha256": "11bcc88a31385448fe0fa10ce2b4b213e9a8faec52b6be96a8a65537b650415e",
+        "class": "unknown",
+        "group": 377
+      },
+      {
+        "file": "Miscellaneous/62.jpg",
+        "sha256": "afb40e0fdcfdec1f328179819e6f2b98a67f4751d7e4370c7d29009b04b94e2b",
+        "class": "unknown",
+        "group": 378
+      },
+      {
+        "file": "Miscellaneous/63.jpg",
+        "sha256": "8054a9a1ba39688f44bd754bab079ae3c655dbca4dc7041127824ddbbe909e39",
+        "class": "unknown",
+        "group": 379
+      },
+      {
+        "file": "Miscellaneous/64.jpg",
+        "sha256": "49a1ff67baa6271627522538aca9cff2c1c3863e2304ca6b4f5b48fd3591ced8",
+        "class": "unknown",
+        "group": 380
+      },
+      {
+        "file": "Miscellaneous/66.jpg",
+        "sha256": "8eb84ff10bd99a07e7ca95e9c661c4aae57ef68d7c141e14aa18ba4c1e488808",
+        "class": "unknown",
+        "group": 382
+      },
+      {
+        "file": "Miscellaneous/68.jpg",
+        "sha256": "e5eb4fe6dc30b7cf73dc2a4ddea2cc441b6c20ae82a3f57777be5de67a3e47d7",
+        "class": "unknown",
+        "group": 384
+      },
+      {
+        "file": "Miscellaneous/72.jpg",
+        "sha256": "7cff7e5a622a6c6a21d0ee90a49f89c142f89ebb1773e0c581c3d268bf1e36db",
+        "class": "unknown",
+        "group": 389
+      },
+      {
+        "file": "Miscellaneous/9.jpg",
+        "sha256": "3650540d7983d1dc0ef6bfb202b6c956dc4aa44dfbe7d2553386c1b311dffe10",
+        "class": "unknown",
+        "group": 393
+      },
+      {
+        "file": "Pink Rot/10.jpg",
+        "sha256": "d7753aac82275f0bfdd53ccc8247e98c969220f287431e5573023cfb46fac14e",
+        "class": "pink_rot",
+        "group": 395
+      },
+      {
+        "file": "Pink Rot/12.jpg",
+        "sha256": "fbcb11c59e43bd6c9764ffb5b9eafc244704bce90277be520c568a38ffdb2edc",
+        "class": "pink_rot",
+        "group": 397
+      },
+      {
+        "file": "Pink Rot/13.jpg",
+        "sha256": "76af599141cc262a961eb46bbae646ffdaa6637a54698057888face0671bda65",
+        "class": "pink_rot",
+        "group": 398
+      },
+      {
+        "file": "Pink Rot/14.jpg",
+        "sha256": "bb18e3c409d5a7181ffb459085c19efb15f7e8b055e2d29abb43b93d4c8d2113",
+        "class": "pink_rot",
+        "group": 399
+      },
+      {
+        "file": "Pink Rot/16.jpg",
+        "sha256": "0e5ae42a4ee88d2e33835552b4885d5e7654a2d076da9d6e5187df6d5957b4c9",
+        "class": "pink_rot",
+        "group": 401
+      },
+      {
+        "file": "Pink Rot/19.jpg",
+        "sha256": "482743515359281b7ed4a4cde9ec75e9a7526c996c522e914541b8ac81834de1",
+        "class": "pink_rot",
+        "group": 404
+      },
+      {
+        "file": "Pink Rot/2.jpg",
+        "sha256": "e6d96045ac279ee59747b41384304373f248dcdbe62fd6e803e878fa31abcee8",
+        "class": "pink_rot",
+        "group": 405
+      },
+      {
+        "file": "Pink Rot/20.jpg",
+        "sha256": "b2270e33e0194a5d3f2c5f93946fd4a20c06f87f34c7493bdceeb58c16e2e12d",
+        "class": "pink_rot",
+        "group": 406
+      },
+      {
+        "file": "Pink Rot/21.jpg",
+        "sha256": "17dfa78bf8a6f571233fd431edcaba1702ce770e853a99ab084d6e1181154a00",
+        "class": "pink_rot",
+        "group": 407
+      },
+      {
+        "file": "Pink Rot/23.jpg",
+        "sha256": "6be156d1f3983cef4d4dfc03a11d4019e64330918647430a7b545343f8b2c9be",
+        "class": "pink_rot",
+        "group": 409
+      },
+      {
+        "file": "Pink Rot/24.jpg",
+        "sha256": "00ca71ea1ec9631a45950ff012d48aafd2adb14bae437ed64aad8a7648a66d46",
+        "class": "pink_rot",
+        "group": 410
+      },
+      {
+        "file": "Pink Rot/25.jpg",
+        "sha256": "247401c251f8ba51acdad4d285bac7565ff212ae1730dc0fdf51f6945780fb41",
+        "class": "pink_rot",
+        "group": 411
+      },
+      {
+        "file": "Pink Rot/27.jpg",
+        "sha256": "747069de08741341a5f0e5097189733ebdae3b799c67c1f683eaa9f66c89856d",
+        "class": "pink_rot",
+        "group": 413
+      },
+      {
+        "file": "Pink Rot/28.jpg",
+        "sha256": "f54688c7398c50bc92e2503caff56fd9db1a37c286bcd6aff487990ec1159fd3",
+        "class": "pink_rot",
+        "group": 414
+      },
+      {
+        "file": "Pink Rot/29.jpg",
+        "sha256": "225304982b41a68c07f9faf7979362206abd803bad0a16c39fd1fef3bb7eace6",
+        "class": "pink_rot",
+        "group": 415
+      },
+      {
+        "file": "Pink Rot/3.jpg",
+        "sha256": "6c7832133927fef4eb469c963eeeaec83b5bd4cc06c69c0df338627f3d202161",
+        "class": "pink_rot",
+        "group": 416
+      },
+      {
+        "file": "Pink Rot/31.jpg",
+        "sha256": "9f6c4bde2fe3a513ecf47385c0067e21c5f67db6b041346d8c1426dea78112fb",
+        "class": "pink_rot",
+        "group": 418
+      },
+      {
+        "file": "Pink Rot/35.jpg",
+        "sha256": "17c7878b55337826ecaa60b96049e067cd1711003cb6abe15c6f5c6bd76a1e85",
+        "class": "pink_rot",
+        "group": 422
+      },
+      {
+        "file": "Pink Rot/36.jpg",
+        "sha256": "5a944c1821c57fb73f05565a66c80c0659c2a50d87f63436e544ddd62ebaa4b8",
+        "class": "pink_rot",
+        "group": 423
+      },
+      {
+        "file": "Pink Rot/38.jpg",
+        "sha256": "f6a460ed9d92ccc114f594752b5558ef13c2639450eebc9106a77c9015dddffa",
+        "class": "pink_rot",
+        "group": 425
+      },
+      {
+        "file": "Pink Rot/39.jpg",
+        "sha256": "40e559f0109c1b58aba049942972653d5429a98278a9f9a6eafe9cbc1ac2bc28",
+        "class": "pink_rot",
+        "group": 426
+      },
+      {
+        "file": "Pink Rot/4.jpg",
+        "sha256": "c10978db34f5d4bda67e2d845e84a08bc25c3867b1b9fa31ba40ee828e4d6d67",
+        "class": "pink_rot",
+        "group": 415
+      },
+      {
+        "file": "Pink Rot/40.jpg",
+        "sha256": "25abebfe846bd343bd23d713209206eb5105a1177fe0511525a96a01a3988df1",
+        "class": "pink_rot",
+        "group": 428
+      },
+      {
+        "file": "Pink Rot/41.jpg",
+        "sha256": "b5b80497b93051d37501cb3dc0194d8dad74896ba7395b79776dab345e25a90a",
+        "class": "pink_rot",
+        "group": 429
+      },
+      {
+        "file": "Pink Rot/43.jpg",
+        "sha256": "8c7229de57a2a4a8f13946d35b1fe904a5d6a88690de979378e3de759bd639cf",
+        "class": "pink_rot",
+        "group": 431
+      },
+      {
+        "file": "Pink Rot/44.jpg",
+        "sha256": "ce54e932c9d53e14b42fe72cc98198d3126959e32e74d99dd42e1f5749d8c72e",
+        "class": "pink_rot",
+        "group": 432
+      },
+      {
+        "file": "Pink Rot/45.jpg",
+        "sha256": "92f803f4ec8b729434f1920b675f61a8d576e47e91dc67e394e8cd9bf4325b6c",
+        "class": "pink_rot",
+        "group": 433
+      },
+      {
+        "file": "Pink Rot/46.jpg",
+        "sha256": "93d10b3f90dd6dbac7c3e489176f5b9fb6eb6ba73c3dc7cde21909333d8f2957",
+        "class": "pink_rot",
+        "group": 434
+      },
+      {
+        "file": "Pink Rot/47.jpg",
+        "sha256": "1d11e6073e4cf908948001727502984cb2d51089df832173b02f5734b04e511c",
+        "class": "pink_rot",
+        "group": 435
+      },
+      {
+        "file": "Pink Rot/49.jpg",
+        "sha256": "c7ea74c8cf248db17bfcdef3edd51cfe9732f68bca8d746634f3be167d4db005",
+        "class": "pink_rot",
+        "group": 437
+      },
+      {
+        "file": "Pink Rot/5.jpg",
+        "sha256": "e2ed7fe5452ca8bb0a4d658eda3486550c9eab9b42a3bbec2f6482ef26181c1f",
+        "class": "pink_rot",
+        "group": 438
+      },
+      {
+        "file": "Pink Rot/50.jpg",
+        "sha256": "e3dbbe74c5dc7662dcfa6d7abffe773584f12855ea4a488838f6d93288d38283",
+        "class": "pink_rot",
+        "group": 439
+      },
+      {
+        "file": "Pink Rot/56.jpg",
+        "sha256": "e22d9fea416563d917d6c6d0b04cb43426c2e1e2939836e54f9eebf5ad4850e0",
+        "class": "pink_rot",
+        "group": 445
+      },
+      {
+        "file": "Pink Rot/9.jpg",
+        "sha256": "1e67a90a8b99093c623846005df5754804a1eec41b807b2040db9b8666661902",
+        "class": "pink_rot",
+        "group": 450
+      }
+    ],
+    "validation": [
+      {
+        "file": "Black Scurf/14.jpg",
+        "sha256": "933cc0a34d65394f3a6eb5824dcab8a15f0fcd63873156c952937d083cb0332e",
+        "class": "rhizoctonia",
+        "group": 5
+      },
+      {
+        "file": "Black Scurf/2.jpg",
+        "sha256": "d3330aa57c524658c8a5955677ea659abed8c9a32c9e74a14bb37b0a645e6de3",
+        "class": "rhizoctonia",
+        "group": 11
+      },
+      {
+        "file": "Black Scurf/30.jpg",
+        "sha256": "e4abf506f7eb892480af28991a7b6d6a3e2258fb146429fea363c380b9fc7426",
+        "class": "rhizoctonia",
+        "group": 23
+      },
+      {
+        "file": "Black Scurf/32.jpg",
+        "sha256": "766559f75c7ab5cce5cb5924568875c8f87945f08f9bc930effa4b32504c4a46",
+        "class": "rhizoctonia",
+        "group": 25
+      },
+      {
+        "file": "Black Scurf/33.jpg",
+        "sha256": "3572e1d46a0305a88dcba6246d7fca342f16c5630a4bc60aea511cd7376c6181",
+        "class": "rhizoctonia",
+        "group": 26
+      },
+      {
+        "file": "Black Scurf/39.jpg",
+        "sha256": "6ac01edca9a72d7efd2f99502abd660df5d72e11a5604619ac1e760b1e701136",
+        "class": "rhizoctonia",
+        "group": 32
+      },
+      {
+        "file": "Black Scurf/4.jpg",
+        "sha256": "362053b94f7ed0085354747d8c1f178013fefb9c00892866e7295e54b85f75ba",
+        "class": "rhizoctonia",
+        "group": 33
+      },
+      {
+        "file": "Black Scurf/54.jpg",
+        "sha256": "61ca9cd8c35ca664fc9eb2b3d19afc37ab3b0e1474dda1c39d92f87480c180bf",
+        "class": "rhizoctonia",
+        "group": 49
+      },
+      {
+        "file": "Black Scurf/56.jpg",
+        "sha256": "5b1932414f21016c82d16ab4b38ef3a8c0b942d42c52141da3a28c4e683457eb",
+        "class": "rhizoctonia",
+        "group": 51
+      },
+      {
+        "file": "Black Scurf/6.jpg",
+        "sha256": "3984b29c588fb9f2ee78553a4ad095982970cabf6c52dedb0d426cd2919cea7c",
+        "class": "rhizoctonia",
+        "group": 54
+      },
+      {
+        "file": "Black Scurf/9.jpg",
+        "sha256": "e6cc3eeed634829be87e5733316c0d562c2c02091cdc3f25ede08c671346ba68",
+        "class": "rhizoctonia",
+        "group": 57
+      },
+      {
+        "file": "Blackleg/10.jpg",
+        "sha256": "78fe16a82973b1e339e994cda09920ea86d2ee7a9ca838a3512fe53f17a1fd42",
+        "class": "blackleg",
+        "group": 59
+      },
+      {
+        "file": "Blackleg/12.jpg",
+        "sha256": "2511fc4882162867d93d25e19f0245f85eb700947be63454a61fed15ae58214f",
+        "class": "blackleg",
+        "group": 61
+      },
+      {
+        "file": "Blackleg/16.jpg",
+        "sha256": "bea60a59db930f9a215eeede3c034cb63f5a8265cef188adbe360981b6733cfe",
+        "class": "blackleg",
+        "group": 65
+      },
+      {
+        "file": "Blackleg/18.jpeg",
+        "sha256": "db96eb49ed935ed984f3f771328f3b90a7c25b4df0f8c01ffaee43be2ea51d6a",
+        "class": "blackleg",
+        "group": 67
+      },
+      {
+        "file": "Blackleg/21.jpg",
+        "sha256": "89bee06a51402278274e8cc55eb9477ed7afc6ac141530a828d6396f547f8c87",
+        "class": "blackleg",
+        "group": 71
+      },
+      {
+        "file": "Blackleg/27.jpg",
+        "sha256": "d79d39c1180860afe1633884285b443091fa783fc14bf274234f52eccd6a85ca",
+        "class": "blackleg",
+        "group": 77
+      },
+      {
+        "file": "Blackleg/33.jpg",
+        "sha256": "6163f09f70c201c9b495678769d558a5431a77dd7faa5b100b7145f6fb6ce6e8",
+        "class": "blackleg",
+        "group": 84
+      },
+      {
+        "file": "Blackleg/35.jpeg",
+        "sha256": "e9da02d2ae36f94d2a372ab873e3077d9a3eaff04f9291f5f506cecea6022757",
+        "class": "blackleg",
+        "group": 86
+      },
+      {
+        "file": "Blackleg/41.jpg",
+        "sha256": "252a8453b802cb64cafb6206796e2eeb9154ddc6bd44c7405abd359cc1857c04",
+        "class": "blackleg",
+        "group": 93
+      },
+      {
+        "file": "Blackleg/42.jpg",
+        "sha256": "2a88df3c340ac1ba420792d98f6e32cb7bd1d78ce074a1104fe20e2350cf925e",
+        "class": "blackleg",
+        "group": 94
+      },
+      {
+        "file": "Blackleg/53.jpg",
+        "sha256": "1c87f3ed29b8cd20115a9e92059b6210240fb61e53ea2360228e67c949878bc0",
+        "class": "blackleg",
+        "group": 106
+      },
+      {
+        "file": "Blackleg/57.jpg",
+        "sha256": "da7959585ba21d42e5a7296d1316f04accff1ca3b8a9791e4f7cebffde40dc61",
+        "class": "blackleg",
+        "group": 110
+      },
+      {
+        "file": "Common Scab/1.jpg",
+        "sha256": "f997e08adc88cfa4c06fb7866fb74a18cc7dab4471e075d651f4ccaad5a33636",
+        "class": "common_scab",
+        "group": 118
+      },
+      {
+        "file": "Common Scab/10.jpg",
+        "sha256": "4795d859d9eeabf7886c6380d2164f70750c57e9357936fb5e7a6eaeae06c7be",
+        "class": "common_scab",
+        "group": 119
+      },
+      {
+        "file": "Common Scab/13.jpg",
+        "sha256": "d985fd1b8fb253310a1cea4c0b79ac379e49307b66e082aab880466a6eea1b7e",
+        "class": "common_scab",
+        "group": 122
+      },
+      {
+        "file": "Common Scab/15.jpg",
+        "sha256": "b285b073c3b2d478fd708830f5cff4317bbee83937c9bc748db51590f0060aff",
+        "class": "common_scab",
+        "group": 124
+      },
+      {
+        "file": "Common Scab/20.jpg",
+        "sha256": "f533a23de8d305269c8086554bde97280cd139099de13b9759e723ab20069fcd",
+        "class": "common_scab",
+        "group": 130
+      },
+      {
+        "file": "Common Scab/29.jpg",
+        "sha256": "d4f97698f29e58b1e52b1b0bd4b1ca4bdcc31efba445714e2af9ce47bfe20510",
+        "class": "common_scab",
+        "group": 119
+      },
+      {
+        "file": "Common Scab/34.jpg",
+        "sha256": "79c8a829e9e622fb0d28c629d143fbc316219861c8dc8a74d999407c5891aee2",
+        "class": "common_scab",
+        "group": 145
+      },
+      {
+        "file": "Common Scab/42.jpeg",
+        "sha256": "8f298ea4938684cb360bd437d8356088d3278e8a76fcdb5e4b09011f450e619b",
+        "class": "common_scab",
+        "group": 154
+      },
+      {
+        "file": "Common Scab/45.jpg",
+        "sha256": "ebf410e84a69c48625f7af5bc51d2699ce2f04622ebf738b7cc0e77c2eca9c7e",
+        "class": "common_scab",
+        "group": 157
+      },
+      {
+        "file": "Common Scab/57.jpg",
+        "sha256": "72cc86f8693e9c7b918be4bbb0c6159bf44dca5779e1b0b5b30c986e09ec3781",
+        "class": "common_scab",
+        "group": 170
+      },
+      {
+        "file": "Common Scab/58.jpg",
+        "sha256": "8134846476dba65007dab1be75425f866c5ecc1a3d24d80cc35c671f8699fe59",
+        "class": "common_scab",
+        "group": 171
+      },
+      {
+        "file": "Common Scab/7.jpg",
+        "sha256": "546a104c56f66562ccfeb9c17507dd38884d33d3ed0891d0058aa900277aa9f7",
+        "class": "common_scab",
+        "group": 177
+      },
+      {
+        "file": "Common Scab/9.jpg",
+        "sha256": "4903240aa0c9cdcbd97c94655db93119535bb1fc537c220e19d44a43dee55306",
+        "class": "common_scab",
+        "group": 179
+      },
+      {
+        "file": "Dry Rot/12.jpg",
+        "sha256": "e19c4ccf7ca6747948706fe0343235f08a84c8af4e8bb57897eac722101870dd",
+        "class": "fusarium",
+        "group": 183
+      },
+      {
+        "file": "Dry Rot/13.jpg",
+        "sha256": "a13a6d87bce1b7f15870396b88474ae91725ae1abb2a35aed95c8542aaee455e",
+        "class": "fusarium",
+        "group": 184
+      },
+      {
+        "file": "Dry Rot/17.jpg",
+        "sha256": "4e6bde54b30225474474ad9a3ae567463dc0ba64cd6309b196717fbfe3410ba9",
+        "class": "fusarium",
+        "group": 188
+      },
+      {
+        "file": "Dry Rot/2.jpg",
+        "sha256": "2f27c50a871652bacb65724bc1ef6f1dc6b2d87009bd57438c6715745123717f",
+        "class": "fusarium",
+        "group": 191
+      },
+      {
+        "file": "Dry Rot/21.jpg",
+        "sha256": "be5f47636d05d0062f21d9b28ea10b02fd23eb7dc28fef4915955a92826266dc",
+        "class": "fusarium",
+        "group": 193
+      },
+      {
+        "file": "Dry Rot/29.jpg",
+        "sha256": "a405d8b6a4d1f367a7c56511169e54ee7fcfe219f3de37b20f09e308f51da1dd",
+        "class": "fusarium",
+        "group": 201
+      },
+      {
+        "file": "Dry Rot/34.jpg",
+        "sha256": "02517f854c634c3ab573644fa49406d969b78ed808bd1f9aa72087053d97dd20",
+        "class": "fusarium",
+        "group": 207
+      },
+      {
+        "file": "Dry Rot/35.jpg",
+        "sha256": "1df1dab162a7cbc7741a42e064893a6e5626e192834d4d3a03b6037c64935f08",
+        "class": "fusarium",
+        "group": 208
+      },
+      {
+        "file": "Dry Rot/38.jpg",
+        "sha256": "c8b936f365ad8220eaa6991a71265d331ec4430bfd3c564fe143563268d06b76",
+        "class": "fusarium",
+        "group": 191
+      },
+      {
+        "file": "Dry Rot/43.jpg",
+        "sha256": "f30fe72d8f61dc2666991440e5d73a0e4e786d298c31f42ffb46f16f684a5b9f",
+        "class": "fusarium",
+        "group": 217
+      },
+      {
+        "file": "Dry Rot/53.jpg",
+        "sha256": "d6c671b5e34015dd2642b716ea7f580f92ece59510f717943467782ff2cc8da9",
+        "class": "fusarium",
+        "group": 228
+      },
+      {
+        "file": "Dry Rot/9.jpg",
+        "sha256": "c038e40daab72c0e069300d8e1e5eb9cd4d81575801c8089f1c0dd18961a6ea3",
+        "class": "fusarium",
+        "group": 239
+      },
+      {
+        "file": "Healthy Potatoes/18.jpg",
+        "sha256": "748d2d41336eff92399b9b232df3ad3c17c23abc3efed862e8ba47256e784ab7",
+        "class": "healthy",
+        "group": 249
+      },
+      {
+        "file": "Healthy Potatoes/19.jpg",
+        "sha256": "7a82a89dfeef9470d414bd6268701402366a1ab6de1aaff525bc9cadba45c87a",
+        "class": "healthy",
+        "group": 250
+      },
+      {
+        "file": "Healthy Potatoes/26.jpg",
+        "sha256": "aa9ab56831174985087317f35eb1968f1c783e720e4866715c8681bf3c4d5ff8",
+        "class": "healthy",
+        "group": 258
+      },
+      {
+        "file": "Healthy Potatoes/28.jpg",
+        "sha256": "2b5f305ae45ef572f8b7bc3bd6cf6fd879848f09911687de4677176e5be8d9e4",
+        "class": "healthy",
+        "group": 260
+      },
+      {
+        "file": "Healthy Potatoes/29.jpg",
+        "sha256": "41366dcf3581677ddf75206c27ba2348a040f7694ffc985084afc318bca9e3df",
+        "class": "healthy",
+        "group": 261
+      },
+      {
+        "file": "Healthy Potatoes/31.jpg",
+        "sha256": "add9d17357b6f2ee5331efc54d027f2b93e916bfdff3605d7bf0f9463305a58d",
+        "class": "healthy",
+        "group": 264
+      },
+      {
+        "file": "Healthy Potatoes/44.jpg",
+        "sha256": "c1529941113fd6c48e2a288d128d96379ea8fd4881196cd90c4b5d9bb21aabde",
+        "class": "healthy",
+        "group": 278
+      },
+      {
+        "file": "Healthy Potatoes/48.jpg",
+        "sha256": "0d03a6f500587329c3138b12a8166caf4ad12879393d0d6f68f7b50b0909cfcf",
+        "class": "healthy",
+        "group": 282
+      },
+      {
+        "file": "Healthy Potatoes/49.jpg",
+        "sha256": "31e2ed73df4f11211a9305c93d364ea4b9a29bcb1276e8ed3e8274dc03a4cd67",
+        "class": "healthy",
+        "group": 283
+      },
+      {
+        "file": "Healthy Potatoes/51.jpg",
+        "sha256": "c9ca6da8f7f7c376c03c89a951004b1479196c05ee998ff0f826cf6b817198eb",
+        "class": "healthy",
+        "group": 286
+      },
+      {
+        "file": "Healthy Potatoes/59.jpg",
+        "sha256": "56235e37d76a6c5cc0e38137ed6c08639115b969537f2b8204814ded9ec962a3",
+        "class": "healthy",
+        "group": 294
+      },
+      {
+        "file": "Healthy Potatoes/60.jpg",
+        "sha256": "7fe26d746c084d4f0bf0e2609c3c099bfeb368e7c0a9a7aab90cd310e03e30a6",
+        "class": "healthy",
+        "group": 296
+      },
+      {
+        "file": "Healthy Potatoes/64.jpg",
+        "sha256": "27a060115869673d5608a213c491c077e107fa8db61336dc95439635628c1d74",
+        "class": "healthy",
+        "group": 300
+      },
+      {
+        "file": "Healthy Potatoes/69.jpg",
+        "sha256": "f6209a698570542ce3ae9a3207bdc39a29a9c39ee6e8522a48bd6008f4291b09",
+        "class": "healthy",
+        "group": 305
+      },
+      {
+        "file": "Healthy Potatoes/73.jpg",
+        "sha256": "5d79585672faa796723c08a6283118af10df04a5c478080519be99726360da4b",
+        "class": "healthy",
+        "group": 310
+      },
+      {
+        "file": "Healthy Potatoes/77.jpg",
+        "sha256": "52891abb59f3235ae7baca6a50ebf1dd65cab9f7773677e8c8216baf835ab5d8",
+        "class": "healthy",
+        "group": 314
+      },
+      {
+        "file": "Miscellaneous/1.jpg",
+        "sha256": "bb5bcd20a745953b1e8bedbdefef4a25c50881d00d457fb2265d1eee381488ef",
+        "class": "unknown",
+        "group": 320
+      },
+      {
+        "file": "Miscellaneous/26.jpg",
+        "sha256": "928a4ced22fe9d7ff2e9c3b9e85d414f5f2d43e0c0155d19d7754d5f8e997605",
+        "class": "unknown",
+        "group": 338
+      },
+      {
+        "file": "Miscellaneous/27.jpg",
+        "sha256": "d232fef467af314596e87d029d4de2a92f1b72e7c6774dff294c3ac5e934c133",
+        "class": "unknown",
+        "group": 339
+      },
+      {
+        "file": "Miscellaneous/29.jpg",
+        "sha256": "107352828d63d53fd705fa9d327eea089a6c2ec00365c485f4dde2e2805e57bf",
+        "class": "unknown",
+        "group": 341
+      },
+      {
+        "file": "Miscellaneous/3.jpg",
+        "sha256": "e326691f9d124fda8e628b6534d95a4808b98c480017510998b2c81856fbd58d",
+        "class": "unknown",
+        "group": 342
+      },
+      {
+        "file": "Miscellaneous/41.jpg",
+        "sha256": "20fdcb037d73b7e1faad22db819d04f2738b264dacf8f9c3292809c79dc93321",
+        "class": "unknown",
+        "group": 355
+      },
+      {
+        "file": "Miscellaneous/43.jpg",
+        "sha256": "7a43c8ddce1a04fd5f9a6e6126205dc84ee7c1d88795d9c472222b34bebcafc9",
+        "class": "unknown",
+        "group": 357
+      },
+      {
+        "file": "Miscellaneous/52.jpg",
+        "sha256": "7d3cf83f00ccf0fb0f14df03b284404f7c8e4fc111b059cbc6806a8db7c8d516",
+        "class": "unknown",
+        "group": 367
+      },
+      {
+        "file": "Miscellaneous/53.jpg",
+        "sha256": "7eaa00e21c11bee4d18c22a744af5e3ac6d45900464b6c5199c039f9c6c17221",
+        "class": "unknown",
+        "group": 368
+      },
+      {
+        "file": "Miscellaneous/59.jpg",
+        "sha256": "dc4316caef25451b65d9e5f1e0fd748e1bdbceafffc950c2ab774f92f51a217f",
+        "class": "unknown",
+        "group": 374
+      },
+      {
+        "file": "Miscellaneous/67.jpg",
+        "sha256": "5cdc4e87ce4f99f7fa407db589ff31bc1d88e6687859a46c0f49ddb84297c258",
+        "class": "unknown",
+        "group": 383
+      },
+      {
+        "file": "Miscellaneous/70.jpg",
+        "sha256": "dd28a7829295f0649729353f2ba0c236470a854126b4a2d339dd82e000b13fca",
+        "class": "unknown",
+        "group": 387
+      },
+      {
+        "file": "Miscellaneous/71.jpg",
+        "sha256": "b72428953862cd9c3a1f2fd05cf5e1acba5dad10928208a84704a4f654d53c93",
+        "class": "unknown",
+        "group": 388
+      },
+      {
+        "file": "Miscellaneous/73.jpg",
+        "sha256": "f84d432abd35efdeba102e3aaf3a809d708edbe29cf8b52ee8cdabf8d8ec2cf1",
+        "class": "unknown",
+        "group": 390
+      },
+      {
+        "file": "Miscellaneous/8.jpg",
+        "sha256": "0848cbb3328f2aad2c35d094471eeb8e7b35eb9844a2ea07d267095052b8a018",
+        "class": "unknown",
+        "group": 392
+      },
+      {
+        "file": "Pink Rot/1.jpg",
+        "sha256": "b2b01e8046b46c8a3c33217b3a36782952658e8c1f440f42e181970e6a4c66b4",
+        "class": "pink_rot",
+        "group": 394
+      },
+      {
+        "file": "Pink Rot/15.jpg",
+        "sha256": "c43f25e344f2cad5cd675ef6fbb61eb0c8ad1c8b88e1861a23a85fe179e49f7e",
+        "class": "pink_rot",
+        "group": 400
+      },
+      {
+        "file": "Pink Rot/17.jpg",
+        "sha256": "0df75ecc3f99144c37630e6eae9527f8bf07e579c3a4c657f79e6780f2c9abf4",
+        "class": "pink_rot",
+        "group": 402
+      },
+      {
+        "file": "Pink Rot/18.jpg",
+        "sha256": "7c3e17506ded4100b025be5f6703a92c0c87b747e4b57821bf07961e5e6ac0f6",
+        "class": "pink_rot",
+        "group": 403
+      },
+      {
+        "file": "Pink Rot/22.jpg",
+        "sha256": "8681d2d0345cdb6c69c22d3d964945cce3172001e39faa5a5efc9e66d9c91494",
+        "class": "pink_rot",
+        "group": 408
+      },
+      {
+        "file": "Pink Rot/26.jpg",
+        "sha256": "47edd3de79cff673bf11cb14c6ca381e730f66e9d768895d57423df00970ea5a",
+        "class": "pink_rot",
+        "group": 412
+      },
+      {
+        "file": "Pink Rot/32.jpg",
+        "sha256": "b3f96f20091ecf479a6409f485aaf5dbec9feb8ea94f7e227d529549baafe732",
+        "class": "pink_rot",
+        "group": 419
+      },
+      {
+        "file": "Pink Rot/33.jpg",
+        "sha256": "d35d38b0e635e16392490083e1dd3fc636f0575615be0bdae2cbeb7120dfb4ba",
+        "class": "pink_rot",
+        "group": 420
+      },
+      {
+        "file": "Pink Rot/48.jpg",
+        "sha256": "b04dc23327bed3bca9a0b923544ff42d3f81c73f04fe869b40faf36f191440d1",
+        "class": "pink_rot",
+        "group": 436
+      },
+      {
+        "file": "Pink Rot/53.jpg",
+        "sha256": "9f36f38a2944148b47648ea73bbfaf10f098c77ac3d4d9d81d7ac06853e18ade",
+        "class": "pink_rot",
+        "group": 442
+      },
+      {
+        "file": "Pink Rot/6.jpg",
+        "sha256": "dd433a50603cf8b0b3d05e5529c6c50c393947be7fe530e5df86b13a94c220fa",
+        "class": "pink_rot",
+        "group": 447
+      }
+    ],
+    "test": [
+      {
+        "file": "Black Scurf/12.jpg",
+        "sha256": "d8e2c11a8d5fb4af57822a055a335b3e35a2c904a63098c1a6dc6709d6a7160b",
+        "class": "rhizoctonia",
+        "group": 3
+      },
+      {
+        "file": "Black Scurf/18.jpg",
+        "sha256": "1d3706ad264bc4cb36a707c328f37feb691cb245feb9737a850a0a313e776d30",
+        "class": "rhizoctonia",
+        "group": 9
+      },
+      {
+        "file": "Black Scurf/19.jpg",
+        "sha256": "9ecff2351384a7f7a5f93e73a45c894d75302ff5ec4965494985361cdcbc1304",
+        "class": "rhizoctonia",
+        "group": 10
+      },
+      {
+        "file": "Black Scurf/23.jpg",
+        "sha256": "ba79173e23652ee436cad7d41d9801b5e2b525d13118d3a3a1227f8b24ac6cf1",
+        "class": "rhizoctonia",
+        "group": 15
+      },
+      {
+        "file": "Black Scurf/38.jpg",
+        "sha256": "2c1d9d7d43bcbd9eef8c7c8cf9766408b242a015bcadd1ba0ba5ba184842ad53",
+        "class": "rhizoctonia",
+        "group": 31
+      },
+      {
+        "file": "Black Scurf/40.jpg",
+        "sha256": "c2a9570117b413b487c5580437a1022f8c57ff1b02058629b66ced5fabd3801c",
+        "class": "rhizoctonia",
+        "group": 34
+      },
+      {
+        "file": "Black Scurf/41.jpg",
+        "sha256": "e06e45e4fa17910deb3504f2b77e10cde39494da160a768d634dbeeb181c1b6e",
+        "class": "rhizoctonia",
+        "group": 35
+      },
+      {
+        "file": "Black Scurf/44.jpg",
+        "sha256": "79d3a1039c0cb3f0eb492cb13d436078ff08071c9530735fad1d6668cb8b43cd",
+        "class": "rhizoctonia",
+        "group": 38
+      },
+      {
+        "file": "Black Scurf/46.jpg",
+        "sha256": "57fb4ffb12a34568f6a07cb59c2231f607c958112882f1902746e89ad218753a",
+        "class": "rhizoctonia",
+        "group": 40
+      },
+      {
+        "file": "Black Scurf/51.jpg",
+        "sha256": "f28f90e9e31ccd125b5744f66f71a555eb7db09381af6d6909270527cf58554b",
+        "class": "rhizoctonia",
+        "group": 46
+      },
+      {
+        "file": "Black Scurf/52.jpg",
+        "sha256": "f9422738a9f01373c10f78021c3d7a550d98ab512c315734c2a444b736a4ef3d",
+        "class": "rhizoctonia",
+        "group": 47
+      },
+      {
+        "file": "Black Scurf/53.jpg",
+        "sha256": "d3cff6c5d1bb5049e67c13973b049528ac719d01218f38724a47b975df37cf88",
+        "class": "rhizoctonia",
+        "group": 48
+      },
+      {
+        "file": "Blackleg/19.jpg",
+        "sha256": "19bc1ec877c7c466c4aaa1244f99e44edc2387d8e77a3f191cfc48d9318e6904",
+        "class": "blackleg",
+        "group": 68
+      },
+      {
+        "file": "Blackleg/22.jpg",
+        "sha256": "9dcdda5a2d2770a60e3e6b04510da38605c4678193e1385f5f5cef00d7512f15",
+        "class": "blackleg",
+        "group": 72
+      },
+      {
+        "file": "Blackleg/29.jpg",
+        "sha256": "ea8ce06a8dad0d6f6cab1093aa0831982215b317f4d6e42344c28958e875bf5b",
+        "class": "blackleg",
+        "group": 79
+      },
+      {
+        "file": "Blackleg/31.jpg",
+        "sha256": "3306faf59e672f991dbcb49d98f7b0ea238ef4fca2debb603046a52679d0fc48",
+        "class": "blackleg",
+        "group": 82
+      },
+      {
+        "file": "Blackleg/36.jpg",
+        "sha256": "6a99f8b29d8fd21b63631b73368d19082b76d592a7e945a5f0863e93d52e2e32",
+        "class": "blackleg",
+        "group": 87
+      },
+      {
+        "file": "Blackleg/38.jpg",
+        "sha256": "933d3b969cfe0b6790d74002e55c3543e37861059e723800afdb8e43b87790d8",
+        "class": "blackleg",
+        "group": 89
+      },
+      {
+        "file": "Blackleg/4.jpg",
+        "sha256": "27e3255d666fa136f5eb9a221ed970d218e658c23097683ccafe7195045c3244",
+        "class": "blackleg",
+        "group": 91
+      },
+      {
+        "file": "Blackleg/58.jpg",
+        "sha256": "310d5da44b4c599532026471e4da64861cefa9b6d1ccde8539f027384095b2d1",
+        "class": "blackleg",
+        "group": 111
+      },
+      {
+        "file": "Blackleg/59.jpg",
+        "sha256": "e0f4c8245815c964d9aae9622169d45afe66c9383d055efd514c3351ce4a6bbd",
+        "class": "blackleg",
+        "group": 112
+      },
+      {
+        "file": "Blackleg/7.jpg",
+        "sha256": "082487059b98ff0e47490c36bff314984be5da12ee828b3ccfa2ede9092edc05",
+        "class": "blackleg",
+        "group": 115
+      },
+      {
+        "file": "Blackleg/9.jpg",
+        "sha256": "913c142c08ec79549e80c40c60c606036a885e024d019022a4fe83c737bef393",
+        "class": "blackleg",
+        "group": 117
+      },
+      {
+        "file": "Common Scab/12.jpg",
+        "sha256": "2586df487acb55e87d97732c91e2c05ca555f4fd805e5583d688f8ef263bebcf",
+        "class": "common_scab",
+        "group": 121
+      },
+      {
+        "file": "Common Scab/17.jpg",
+        "sha256": "2eba496ef89b89940c2fcdd0c66538b51a843fa64c9a78aabdc0604beff0d1f6",
+        "class": "common_scab",
+        "group": 126
+      },
+      {
+        "file": "Common Scab/23.jpg",
+        "sha256": "a13b2d7b65812163f77e0f05e8ea183007db51ca303dbeee7e1d11654cb4e308",
+        "class": "common_scab",
+        "group": 133
+      },
+      {
+        "file": "Common Scab/30.jpg",
+        "sha256": "1bc6f427c259e1966726ef135cdc78900ae12d8b1d4c3490b48fcfec48751755",
+        "class": "common_scab",
+        "group": 141
+      },
+      {
+        "file": "Common Scab/33.jpg",
+        "sha256": "3b10a3b65ce63a13178e7687510a0cda22ce94a919f1994ed1670f45ce2ac4ca",
+        "class": "common_scab",
+        "group": 144
+      },
+      {
+        "file": "Common Scab/35.jpg",
+        "sha256": "18498624e8c20f0d3582a161f2577054a4a55350e7fb214c40a3c6c088e8fda4",
+        "class": "common_scab",
+        "group": 146
+      },
+      {
+        "file": "Common Scab/4.jpg",
+        "sha256": "33ede525cf4e3815ccf54e9672f2521787a18cd3a13dd3897583cc66e6bd9350",
+        "class": "common_scab",
+        "group": 151
+      },
+      {
+        "file": "Common Scab/46.jpg",
+        "sha256": "3cc53f8cb29eecd56f49d8dff60fa00cf457df7ba2f7f5dc8136ad508e11e76b",
+        "class": "common_scab",
+        "group": 158
+      },
+      {
+        "file": "Common Scab/50.jpg",
+        "sha256": "ceedc2ba37fcee85de0c74627c89c863729da91ffeb6f588427b9aaeb2ca49cd",
+        "class": "common_scab",
+        "group": 163
+      },
+      {
+        "file": "Common Scab/51.jpg",
+        "sha256": "e16505bcb375b96ea7c164689aaf57ac2ea16b5b43fa4c6b7d14911d892c5cc1",
+        "class": "common_scab",
+        "group": 164
+      },
+      {
+        "file": "Common Scab/54.jpg",
+        "sha256": "868bc00d123fbcd8a11c8926a7e771bd16e4cce03aeb4b932bba2856d4a0276f",
+        "class": "common_scab",
+        "group": 167
+      },
+      {
+        "file": "Common Scab/6.jpg",
+        "sha256": "6f98ffafb64111e3d0962ed521d27c2cd1cf6b37233d0ad1e5789aa0140d4347",
+        "class": "common_scab",
+        "group": 173
+      },
+      {
+        "file": "Dry Rot/1.jpg",
+        "sha256": "1815903eeb3fd01588d3f66a97e1c2e93000f20d13975949bb5b90ce0d9446c2",
+        "class": "fusarium",
+        "group": 180
+      },
+      {
+        "file": "Dry Rot/22.jpg",
+        "sha256": "8c8da35f4bcddc70812bcf4f32ac123e32f50003a73c3294e0381afad6044c5e",
+        "class": "fusarium",
+        "group": 194
+      },
+      {
+        "file": "Dry Rot/23.jpg",
+        "sha256": "68e45b8b50c29f61deac6a58d644739130e8f947dc148df837a07f38fa78a519",
+        "class": "fusarium",
+        "group": 195
+      },
+      {
+        "file": "Dry Rot/27.jpg",
+        "sha256": "b3274e90d41b9348e13705494bedee78c50f913bbacbf2a6f4ba1e1eca356f73",
+        "class": "fusarium",
+        "group": 199
+      },
+      {
+        "file": "Dry Rot/42.jpg",
+        "sha256": "1e73837037ec6634e5b6ce1f2712ed3b1417cfa34f832dc755fe1d7e1f6f6569",
+        "class": "fusarium",
+        "group": 216
+      },
+      {
+        "file": "Dry Rot/44.jpg",
+        "sha256": "718e3ddae09fd44eb010729e6eabd2c530f4f9ec41d4fada5cf6a4837dcfb4e9",
+        "class": "fusarium",
+        "group": 218
+      },
+      {
+        "file": "Dry Rot/49.jpg",
+        "sha256": "99b7d80f430f18500eb721813a2fccfbac7f2bf3b7e1a3aae991cb7709e48c84",
+        "class": "fusarium",
+        "group": 223
+      },
+      {
+        "file": "Dry Rot/5.jpg",
+        "sha256": "0ef1de5f74107e67838be956d9c115857af8c28b1719677b47a45ae5a741a8d7",
+        "class": "fusarium",
+        "group": 224
+      },
+      {
+        "file": "Dry Rot/51.jpg",
+        "sha256": "2ba7e2d884c20d3cdd74764ad9114920d64a21df7735f0fd4f1d547d830e83d4",
+        "class": "fusarium",
+        "group": 226
+      },
+      {
+        "file": "Dry Rot/54.jpg",
+        "sha256": "eb07a5d1d3ab7b2cf29d297332b33d5fea30b7c6c2c0e2fb036d05e1908a04cd",
+        "class": "fusarium",
+        "group": 229
+      },
+      {
+        "file": "Dry Rot/6.jpg",
+        "sha256": "60f3d9d737f61796addd5e76575953d3f147fc8a5f359469f42d27847e1b333a",
+        "class": "fusarium",
+        "group": 235
+      },
+      {
+        "file": "Dry Rot/60.jpg",
+        "sha256": "98ae5b41536f17380fa4d383f0e77eb0b49bbb5b1546db6a352f7c3436733a55",
+        "class": "fusarium",
+        "group": 236
+      },
+      {
+        "file": "Healthy Potatoes/13.jpg",
+        "sha256": "d97c5ee3fed170a8f230998b0a8aff37043af5f42f507d2ef35f96b075127f83",
+        "class": "healthy",
+        "group": 244
+      },
+      {
+        "file": "Healthy Potatoes/15.jpg",
+        "sha256": "9a39107a25f56ec50150eeed58e1cb6f91369b40ccb9c7e0aefaba3ccc24ed8c",
+        "class": "healthy",
+        "group": 246
+      },
+      {
+        "file": "Healthy Potatoes/16.jpg",
+        "sha256": "c1f1a50bc3b7b69955c802a7efb406e61a21e3b577465da2460561fcd232ef52",
+        "class": "healthy",
+        "group": 247
+      },
+      {
+        "file": "Healthy Potatoes/2.jpg",
+        "sha256": "a1cafaa3792237827d0207a47edf5e2a92f5ce92c7e95c2b6e9361179adae03e",
+        "class": "healthy",
+        "group": 251
+      },
+      {
+        "file": "Healthy Potatoes/23.jpg",
+        "sha256": "8c849c4e6966f3648e0e68c0178e73d617d0ed39339e06f79c9bb299a64f6979",
+        "class": "healthy",
+        "group": 255
+      },
+      {
+        "file": "Healthy Potatoes/30.jpg",
+        "sha256": "9794ebf7b94d4f5c1b25d33e41af97565bbedb2c44ae70291a8e9fb975fc0458",
+        "class": "healthy",
+        "group": 263
+      },
+      {
+        "file": "Healthy Potatoes/32.jpg",
+        "sha256": "fc656b5f3d3a7813804051d284dfd2b714b4263fa24e59142d4b9bf7fa4d6c16",
+        "class": "healthy",
+        "group": 265
+      },
+      {
+        "file": "Healthy Potatoes/33.jpg",
+        "sha256": "1d36b949478b891aec321fced9e67df077d49f8a3073bc574e111f5309111fc9",
+        "class": "healthy",
+        "group": 266
+      },
+      {
+        "file": "Healthy Potatoes/35.jpg",
+        "sha256": "cff83d1e5313095c88993d0b015ef62edbb6b443f6473c834611c71eaa7d4be1",
+        "class": "healthy",
+        "group": 268
+      },
+      {
+        "file": "Healthy Potatoes/37.jpg",
+        "sha256": "f45d84acdfc78cedeed7bb4c27d363a171242141c798a35b725c8a2addc7aa40",
+        "class": "healthy",
+        "group": 270
+      },
+      {
+        "file": "Healthy Potatoes/39.jpg",
+        "sha256": "88246e60877b853ac0a39fafa83f6532eae587dbdcfa778241e96634d9260be2",
+        "class": "healthy",
+        "group": 272
+      },
+      {
+        "file": "Healthy Potatoes/4.jpg",
+        "sha256": "ca3f5d6bd49bcf1ec5b7cddccd9a063b91daba0affa81abfdfbf3099823b8a62",
+        "class": "healthy",
+        "group": 273
+      },
+      {
+        "file": "Healthy Potatoes/54.jpg",
+        "sha256": "afbc5ab61624b56c88c1bc446df471a0ca16780b8358733bc52b67d8a7180374",
+        "class": "healthy",
+        "group": 247
+      },
+      {
+        "file": "Healthy Potatoes/56.jpg",
+        "sha256": "55e92f7cdeb22e33279eebad1ff2cc4956eca3d6603313396226124da0e72550",
+        "class": "healthy",
+        "group": 291
+      },
+      {
+        "file": "Healthy Potatoes/57.jpg",
+        "sha256": "67ed8694bd7abdec1462d598b35383d537cf79daa6536e4230d66dad3e202855",
+        "class": "healthy",
+        "group": 292
+      },
+      {
+        "file": "Healthy Potatoes/6.jpg",
+        "sha256": "b4270c8323c01d719a3e095af8e979302dd4ace70f4ab521555141e8df44ffe5",
+        "class": "healthy",
+        "group": 247
+      },
+      {
+        "file": "Miscellaneous/11.jpg",
+        "sha256": "491ffe890f7098fb241c75eb42b9b8cac6a9c25cd0115f93b7d66c8cba189037",
+        "class": "unknown",
+        "group": 322
+      },
+      {
+        "file": "Miscellaneous/13.jpg",
+        "sha256": "d78f46d9188da21e9d0cb4a7309bb9f6bbc81ce842da3504fe7de88226fc05a0",
+        "class": "unknown",
+        "group": 324
+      },
+      {
+        "file": "Miscellaneous/14.jpg",
+        "sha256": "8fd03e6f62575e00c8985d509e39826e9f98d8fa79a5b2793f06dc5bf6805c50",
+        "class": "unknown",
+        "group": 325
+      },
+      {
+        "file": "Miscellaneous/17.jpg",
+        "sha256": "ec4da50a18cb072de4891b22429ed5e1907cf42a1d11cc3c2a8285a8521c8b4b",
+        "class": "unknown",
+        "group": 328
+      },
+      {
+        "file": "Miscellaneous/19.jpg",
+        "sha256": "a065acb676c8d364680d25aa19b3892d47479c860ce927cda6dca54d1001692e",
+        "class": "unknown",
+        "group": 330
+      },
+      {
+        "file": "Miscellaneous/20.jpg",
+        "sha256": "8d3a76f89313008e4ffc885fca2c905818bf39069b64af321f58b44b6ae87d88",
+        "class": "unknown",
+        "group": 332
+      },
+      {
+        "file": "Miscellaneous/34.jpg",
+        "sha256": "593c86c7cc697d0f58946343485c3fa159e9c8de1289637b514843955fcea6ff",
+        "class": "unknown",
+        "group": 347
+      },
+      {
+        "file": "Miscellaneous/38.jpg",
+        "sha256": "65a21d1caeb09da6eb64f68533e895152489da182afee591ad31ab5c32fb3ae1",
+        "class": "unknown",
+        "group": 351
+      },
+      {
+        "file": "Miscellaneous/39.jpg",
+        "sha256": "ab55f05b44ea3ab0565da4154b441504ea6c94ab5cbea6a72ec759c0ea74b1f5",
+        "class": "unknown",
+        "group": 352
+      },
+      {
+        "file": "Miscellaneous/55.jpg",
+        "sha256": "4c8a249cfd3df659277ecdc949902424ba8a6f8a478719e74b84b27666a565f6",
+        "class": "unknown",
+        "group": 370
+      },
+      {
+        "file": "Miscellaneous/57.jpg",
+        "sha256": "ec4d8e9c7f876015c9f2f82ed2f3f4bf91cef53e2a4a4225442d5330a25e4b50",
+        "class": "unknown",
+        "group": 372
+      },
+      {
+        "file": "Miscellaneous/65.jpg",
+        "sha256": "0d416c694c9b72ae42cc40d8abb1620d28a85e005e57173ef98537068fb24917",
+        "class": "unknown",
+        "group": 381
+      },
+      {
+        "file": "Miscellaneous/69.jpg",
+        "sha256": "61def6d8d46060e12bfd124d380f901446130df4a787af1bb265c4049ce48ca1",
+        "class": "unknown",
+        "group": 385
+      },
+      {
+        "file": "Miscellaneous/7.jpg",
+        "sha256": "bc046aaf10813b764066c15584673a1c56ab4effe5cfb5d75724ea6446c394d8",
+        "class": "unknown",
+        "group": 386
+      },
+      {
+        "file": "Miscellaneous/74.jpg",
+        "sha256": "024b438a02d2426e7cde995592033cb2a3abf71164de30389e577cbfe4fed435",
+        "class": "unknown",
+        "group": 391
+      },
+      {
+        "file": "Pink Rot/11.jpg",
+        "sha256": "2b4e1daf63701f33d5811b9e033029a38f976c3c801b0148231f51799a5397eb",
+        "class": "pink_rot",
+        "group": 396
+      },
+      {
+        "file": "Pink Rot/30.jpg",
+        "sha256": "5c1caaa7cd397757dd9998655e36e1b3a691b4a5f1ff251a554763bc5d688786",
+        "class": "pink_rot",
+        "group": 417
+      },
+      {
+        "file": "Pink Rot/34.jpg",
+        "sha256": "2822593ce63820de2fa514f541bf29502b0db54c38c8c2c61812a31192150f6d",
+        "class": "pink_rot",
+        "group": 421
+      },
+      {
+        "file": "Pink Rot/37.jpg",
+        "sha256": "9f6f533ef1be8883383ac33c2d7522ec4ae7e4d45d30fc13015529ae122c21df",
+        "class": "pink_rot",
+        "group": 424
+      },
+      {
+        "file": "Pink Rot/42.jpg",
+        "sha256": "cf2969bd7148e9930a8fd841fd700e753bea0d9251852779f94a4d0aed128cce",
+        "class": "pink_rot",
+        "group": 430
+      },
+      {
+        "file": "Pink Rot/51.jpg",
+        "sha256": "997cec972f679fa1734cc122cccdc402e1188747491f2caf8613b39a0e1d299b",
+        "class": "pink_rot",
+        "group": 440
+      },
+      {
+        "file": "Pink Rot/52.jpg",
+        "sha256": "1945b204b0785b1b246ef42ca362b9fd4bbdda88c1bb0b362e87e70e88c4b048",
+        "class": "pink_rot",
+        "group": 441
+      },
+      {
+        "file": "Pink Rot/54.jpg",
+        "sha256": "698042240b55275e15b24c0733cfa20301f26144c90187f626af38152f2aaefe",
+        "class": "pink_rot",
+        "group": 443
+      },
+      {
+        "file": "Pink Rot/55.jpg",
+        "sha256": "f48a6d10ea54fbf702a0417adf5969a5b9178c815dfdf630f84d8edcd9a0d032",
+        "class": "pink_rot",
+        "group": 444
+      },
+      {
+        "file": "Pink Rot/57.jpg",
+        "sha256": "1f7a9a3b1879e5cfdd4be537709f80aa5b5e01a93e025964deb2a7f82d45a028",
+        "class": "pink_rot",
+        "group": 446
+      },
+      {
+        "file": "Pink Rot/7.jpg",
+        "sha256": "d5183f4bdc8c45531f91ea56232129b30635c636d0b91b9bea0ac4bc88f47998",
+        "class": "pink_rot",
+        "group": 448
+      },
+      {
+        "file": "Pink Rot/8.jpg",
+        "sha256": "0515dc38f721672134624ac417575b206a9e06585777508b5456640664e20815",
+        "class": "pink_rot",
+        "group": 449
+      }
+    ]
+  },
+  "test_predictions": [
+    {
+      "file": "Black Scurf/12.jpg",
+      "actual": "rhizoctonia",
+      "predicted": "rhizoctonia",
+      "confidence": 0.3430297428291495
+    },
+    {
+      "file": "Black Scurf/18.jpg",
+      "actual": "rhizoctonia",
+      "predicted": "rhizoctonia",
+      "confidence": 0.6207649506892875
+    },
+    {
+      "file": "Black Scurf/19.jpg",
+      "actual": "rhizoctonia",
+      "predicted": "rhizoctonia",
+      "confidence": 0.7631662666231652
+    },
+    {
+      "file": "Black Scurf/23.jpg",
+      "actual": "rhizoctonia",
+      "predicted": "common_scab",
+      "confidence": 0.35094606634115655
+    },
+    {
+      "file": "Black Scurf/38.jpg",
+      "actual": "rhizoctonia",
+      "predicted": "rhizoctonia",
+      "confidence": 0.8905386662189415
+    },
+    {
+      "file": "Black Scurf/40.jpg",
+      "actual": "rhizoctonia",
+      "predicted": "rhizoctonia",
+      "confidence": 0.5437706054685641
+    },
+    {
+      "file": "Black Scurf/41.jpg",
+      "actual": "rhizoctonia",
+      "predicted": "rhizoctonia",
+      "confidence": 0.6190230713903229
+    },
+    {
+      "file": "Black Scurf/44.jpg",
+      "actual": "rhizoctonia",
+      "predicted": "rhizoctonia",
+      "confidence": 0.8576684243119854
+    },
+    {
+      "file": "Black Scurf/46.jpg",
+      "actual": "rhizoctonia",
+      "predicted": "fusarium",
+      "confidence": 0.3946176358465295
+    },
+    {
+      "file": "Black Scurf/51.jpg",
+      "actual": "rhizoctonia",
+      "predicted": "rhizoctonia",
+      "confidence": 0.973170394027021
+    },
+    {
+      "file": "Black Scurf/52.jpg",
+      "actual": "rhizoctonia",
+      "predicted": "rhizoctonia",
+      "confidence": 0.8646946037670058
+    },
+    {
+      "file": "Black Scurf/53.jpg",
+      "actual": "rhizoctonia",
+      "predicted": "rhizoctonia",
+      "confidence": 0.48477906790676245
+    },
+    {
+      "file": "Blackleg/19.jpg",
+      "actual": "blackleg",
+      "predicted": "unknown",
+      "confidence": 0.7741648236353728
+    },
+    {
+      "file": "Blackleg/22.jpg",
+      "actual": "blackleg",
+      "predicted": "blackleg",
+      "confidence": 0.8437640098903321
+    },
+    {
+      "file": "Blackleg/29.jpg",
+      "actual": "blackleg",
+      "predicted": "unknown",
+      "confidence": 0.7219161396456819
+    },
+    {
+      "file": "Blackleg/31.jpg",
+      "actual": "blackleg",
+      "predicted": "blackleg",
+      "confidence": 0.6728628867838428
+    },
+    {
+      "file": "Blackleg/36.jpg",
+      "actual": "blackleg",
+      "predicted": "blackleg",
+      "confidence": 0.45770477068816484
+    },
+    {
+      "file": "Blackleg/38.jpg",
+      "actual": "blackleg",
+      "predicted": "blackleg",
+      "confidence": 0.5553658658028405
+    },
+    {
+      "file": "Blackleg/4.jpg",
+      "actual": "blackleg",
+      "predicted": "blackleg",
+      "confidence": 0.9199130217331164
+    },
+    {
+      "file": "Blackleg/58.jpg",
+      "actual": "blackleg",
+      "predicted": "fusarium",
+      "confidence": 0.3978428271593367
+    },
+    {
+      "file": "Blackleg/59.jpg",
+      "actual": "blackleg",
+      "predicted": "blackleg",
+      "confidence": 0.9766423807734639
+    },
+    {
+      "file": "Blackleg/7.jpg",
+      "actual": "blackleg",
+      "predicted": "blackleg",
+      "confidence": 0.5863109980860419
+    },
+    {
+      "file": "Blackleg/9.jpg",
+      "actual": "blackleg",
+      "predicted": "blackleg",
+      "confidence": 0.8920510627294563
+    },
+    {
+      "file": "Common Scab/12.jpg",
+      "actual": "common_scab",
+      "predicted": "common_scab",
+      "confidence": 0.8355405106828424
+    },
+    {
+      "file": "Common Scab/17.jpg",
+      "actual": "common_scab",
+      "predicted": "common_scab",
+      "confidence": 0.7231583075943394
+    },
+    {
+      "file": "Common Scab/23.jpg",
+      "actual": "common_scab",
+      "predicted": "rhizoctonia",
+      "confidence": 0.4336397893378294
+    },
+    {
+      "file": "Common Scab/30.jpg",
+      "actual": "common_scab",
+      "predicted": "fusarium",
+      "confidence": 0.4597014772721842
+    },
+    {
+      "file": "Common Scab/33.jpg",
+      "actual": "common_scab",
+      "predicted": "common_scab",
+      "confidence": 0.6068570697416461
+    },
+    {
+      "file": "Common Scab/35.jpg",
+      "actual": "common_scab",
+      "predicted": "common_scab",
+      "confidence": 0.36476463805582576
+    },
+    {
+      "file": "Common Scab/4.jpg",
+      "actual": "common_scab",
+      "predicted": "common_scab",
+      "confidence": 0.684551210041896
+    },
+    {
+      "file": "Common Scab/46.jpg",
+      "actual": "common_scab",
+      "predicted": "common_scab",
+      "confidence": 0.7585742204075838
+    },
+    {
+      "file": "Common Scab/50.jpg",
+      "actual": "common_scab",
+      "predicted": "pink_rot",
+      "confidence": 0.9233602192982387
+    },
+    {
+      "file": "Common Scab/51.jpg",
+      "actual": "common_scab",
+      "predicted": "common_scab",
+      "confidence": 0.8802908721630999
+    },
+    {
+      "file": "Common Scab/54.jpg",
+      "actual": "common_scab",
+      "predicted": "common_scab",
+      "confidence": 0.960636200008897
+    },
+    {
+      "file": "Common Scab/6.jpg",
+      "actual": "common_scab",
+      "predicted": "common_scab",
+      "confidence": 0.9299629525739391
+    },
+    {
+      "file": "Dry Rot/1.jpg",
+      "actual": "fusarium",
+      "predicted": "unknown",
+      "confidence": 0.5321710718643765
+    },
+    {
+      "file": "Dry Rot/22.jpg",
+      "actual": "fusarium",
+      "predicted": "unknown",
+      "confidence": 0.37550467957943295
+    },
+    {
+      "file": "Dry Rot/23.jpg",
+      "actual": "fusarium",
+      "predicted": "fusarium",
+      "confidence": 0.4002491568895064
+    },
+    {
+      "file": "Dry Rot/27.jpg",
+      "actual": "fusarium",
+      "predicted": "blackleg",
+      "confidence": 0.7921380750180453
+    },
+    {
+      "file": "Dry Rot/42.jpg",
+      "actual": "fusarium",
+      "predicted": "fusarium",
+      "confidence": 0.5244439676301924
+    },
+    {
+      "file": "Dry Rot/44.jpg",
+      "actual": "fusarium",
+      "predicted": "pink_rot",
+      "confidence": 0.629253024592749
+    },
+    {
+      "file": "Dry Rot/49.jpg",
+      "actual": "fusarium",
+      "predicted": "blackleg",
+      "confidence": 0.6725118167614721
+    },
+    {
+      "file": "Dry Rot/5.jpg",
+      "actual": "fusarium",
+      "predicted": "blackleg",
+      "confidence": 0.41651639188960754
+    },
+    {
+      "file": "Dry Rot/51.jpg",
+      "actual": "fusarium",
+      "predicted": "blackleg",
+      "confidence": 0.6272599944160349
+    },
+    {
+      "file": "Dry Rot/54.jpg",
+      "actual": "fusarium",
+      "predicted": "fusarium",
+      "confidence": 0.8331197349487585
+    },
+    {
+      "file": "Dry Rot/6.jpg",
+      "actual": "fusarium",
+      "predicted": "unknown",
+      "confidence": 0.531091410525676
+    },
+    {
+      "file": "Dry Rot/60.jpg",
+      "actual": "fusarium",
+      "predicted": "fusarium",
+      "confidence": 0.947402438427062
+    },
+    {
+      "file": "Healthy Potatoes/13.jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.41052004807170234
+    },
+    {
+      "file": "Healthy Potatoes/15.jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9691719074138636
+    },
+    {
+      "file": "Healthy Potatoes/16.jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9753174089129495
+    },
+    {
+      "file": "Healthy Potatoes/2.jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.8982995857359485
+    },
+    {
+      "file": "Healthy Potatoes/23.jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.984247491179678
+    },
+    {
+      "file": "Healthy Potatoes/30.jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9830976810569918
+    },
+    {
+      "file": "Healthy Potatoes/32.jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9136078256257933
+    },
+    {
+      "file": "Healthy Potatoes/33.jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9920995620475811
+    },
+    {
+      "file": "Healthy Potatoes/35.jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9587662225817958
+    },
+    {
+      "file": "Healthy Potatoes/37.jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9935026944338106
+    },
+    {
+      "file": "Healthy Potatoes/39.jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.8487219122881889
+    },
+    {
+      "file": "Healthy Potatoes/4.jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.8753691244097513
+    },
+    {
+      "file": "Healthy Potatoes/54.jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9687627673384015
+    },
+    {
+      "file": "Healthy Potatoes/56.jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9925948653029153
+    },
+    {
+      "file": "Healthy Potatoes/57.jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9415291344927423
+    },
+    {
+      "file": "Healthy Potatoes/6.jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9038895948626419
+    },
+    {
+      "file": "Miscellaneous/11.jpg",
+      "actual": "unknown",
+      "predicted": "rhizoctonia",
+      "confidence": 0.6312008038578527
+    },
+    {
+      "file": "Miscellaneous/13.jpg",
+      "actual": "unknown",
+      "predicted": "common_scab",
+      "confidence": 0.4604795730206454
+    },
+    {
+      "file": "Miscellaneous/14.jpg",
+      "actual": "unknown",
+      "predicted": "fusarium",
+      "confidence": 0.540669261328791
+    },
+    {
+      "file": "Miscellaneous/17.jpg",
+      "actual": "unknown",
+      "predicted": "unknown",
+      "confidence": 0.483658280164059
+    },
+    {
+      "file": "Miscellaneous/19.jpg",
+      "actual": "unknown",
+      "predicted": "blackleg",
+      "confidence": 0.7748908093848599
+    },
+    {
+      "file": "Miscellaneous/20.jpg",
+      "actual": "unknown",
+      "predicted": "unknown",
+      "confidence": 0.6577399994400573
+    },
+    {
+      "file": "Miscellaneous/34.jpg",
+      "actual": "unknown",
+      "predicted": "unknown",
+      "confidence": 0.8231363044653114
+    },
+    {
+      "file": "Miscellaneous/38.jpg",
+      "actual": "unknown",
+      "predicted": "unknown",
+      "confidence": 0.9607316648149641
+    },
+    {
+      "file": "Miscellaneous/39.jpg",
+      "actual": "unknown",
+      "predicted": "unknown",
+      "confidence": 0.9019224951627304
+    },
+    {
+      "file": "Miscellaneous/55.jpg",
+      "actual": "unknown",
+      "predicted": "blackleg",
+      "confidence": 0.5780784791357002
+    },
+    {
+      "file": "Miscellaneous/57.jpg",
+      "actual": "unknown",
+      "predicted": "blackleg",
+      "confidence": 0.6443378253516855
+    },
+    {
+      "file": "Miscellaneous/65.jpg",
+      "actual": "unknown",
+      "predicted": "unknown",
+      "confidence": 0.5386712167455562
+    },
+    {
+      "file": "Miscellaneous/69.jpg",
+      "actual": "unknown",
+      "predicted": "unknown",
+      "confidence": 0.5981879563363482
+    },
+    {
+      "file": "Miscellaneous/7.jpg",
+      "actual": "unknown",
+      "predicted": "unknown",
+      "confidence": 0.6933009190295237
+    },
+    {
+      "file": "Miscellaneous/74.jpg",
+      "actual": "unknown",
+      "predicted": "unknown",
+      "confidence": 0.36843415242160527
+    },
+    {
+      "file": "Pink Rot/11.jpg",
+      "actual": "pink_rot",
+      "predicted": "pink_rot",
+      "confidence": 0.4225081544991899
+    },
+    {
+      "file": "Pink Rot/30.jpg",
+      "actual": "pink_rot",
+      "predicted": "pink_rot",
+      "confidence": 0.9644815789347648
+    },
+    {
+      "file": "Pink Rot/34.jpg",
+      "actual": "pink_rot",
+      "predicted": "pink_rot",
+      "confidence": 0.538469743683117
+    },
+    {
+      "file": "Pink Rot/37.jpg",
+      "actual": "pink_rot",
+      "predicted": "pink_rot",
+      "confidence": 0.7065070914401551
+    },
+    {
+      "file": "Pink Rot/42.jpg",
+      "actual": "pink_rot",
+      "predicted": "pink_rot",
+      "confidence": 0.9300102709572784
+    },
+    {
+      "file": "Pink Rot/51.jpg",
+      "actual": "pink_rot",
+      "predicted": "pink_rot",
+      "confidence": 0.8339500613846549
+    },
+    {
+      "file": "Pink Rot/52.jpg",
+      "actual": "pink_rot",
+      "predicted": "common_scab",
+      "confidence": 0.8854937001615539
+    },
+    {
+      "file": "Pink Rot/54.jpg",
+      "actual": "pink_rot",
+      "predicted": "blackleg",
+      "confidence": 0.6473592232224802
+    },
+    {
+      "file": "Pink Rot/55.jpg",
+      "actual": "pink_rot",
+      "predicted": "pink_rot",
+      "confidence": 0.5468536031431752
+    },
+    {
+      "file": "Pink Rot/57.jpg",
+      "actual": "pink_rot",
+      "predicted": "pink_rot",
+      "confidence": 0.9946704150427821
+    },
+    {
+      "file": "Pink Rot/7.jpg",
+      "actual": "pink_rot",
+      "predicted": "pink_rot",
+      "confidence": 0.9004464237120567
+    },
+    {
+      "file": "Pink Rot/8.jpg",
+      "actual": "pink_rot",
+      "predicted": "pink_rot",
+      "confidence": 0.9381160953929762
+    }
+  ]
+}

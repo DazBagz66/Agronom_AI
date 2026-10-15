@@ -1,0 +1,7 @@
+/* Tailwind включается в местную сборку; загрузка стилей из сети не нужна. */
+@import "tailwindcss";
+
+:root { color-scheme: dark; font-family: system-ui, sans-serif; }
+body { margin: 0; }
+button:not(:disabled), select { cursor: pointer; }
+button:disabled { cursor: wait; }

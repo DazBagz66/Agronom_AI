@@ -1,0 +1,17 @@
+MobileNetV2 feature backbone derived from ONNX Model Zoo mobilenetv2-12.
+Source: https://huggingface.co/onnxmodelzoo/mobilenetv2-12
+License: Apache-2.0 (see BACKBONE_LICENSE.txt).
+The upstream model card and contributor references are retained in BACKBONE_README.md.
+
+Modification in Agronom_AI: extracted the graph ending at tensor 464
+(GlobalAveragePool); removed the ImageNet classification head. Original
+convolution weights are unchanged. A separate multinomial classifier was trained
+on potato tuber data; its parameters are stored in classifier.npz.
+No endorsement by the original model or dataset authors is implied.
+
+Dataset: Mukaffi Moin, Potato Diseases Datasets, Kaggle.
+Faria, Bin Moin, Al Wase, Sani, Hasib, Alam, CCWC 2023.
+DOI: 10.1109/CCWC57344.2023.10099162.
+Dataset metadata declares CDLA-Permissive-1.0:
+https://cdla.dev/permissive-1-0/
+See provenance.json for source details and limitations.

@@ -1,0 +1,21 @@
+{
+  "classes": [
+    "blackleg",
+    "common_scab",
+    "fusarium",
+    "healthy",
+    "pink_rot",
+    "rhizoctonia",
+    "unknown"
+  ],
+  "supported_organ": "tuber",
+  "input": "RGB 224x224 letterbox, ImageNet mean/std; frozen 1280-dimensional features",
+  "files": {
+    "mobilenetv2_features.onnx": "bfa8f7bdd68ff12b519fe81f420ba370904b33b6580b01fb907bd05a3b6959cc",
+    "classifier.npz": "5c51419e8d4381b54b10aa4043ec436405a73c895267d960a38c816a04de358e"
+  },
+  "training": "Frozen ImageNet MobileNetV2 + StandardScaler + multinomial LogisticRegression C=0.1",
+  "limitations": "Small website dataset; pHash groups reduce but cannot eliminate source/specimen leakage. Not independent field validation. Healthy means no visible supported disease; unknown is not a universal non-potato detector.",
+  "dataset": "https://www.kaggle.com/datasets/mukaffimoin/potato-diseases-datasets",
+  "backbone": "https://huggingface.co/onnxmodelzoo/mobilenetv2-12"
+}

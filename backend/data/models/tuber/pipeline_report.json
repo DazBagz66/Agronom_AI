@@ -1,0 +1,694 @@
+[
+  {
+    "file": "Black Scurf/12.jpg",
+    "actual": "rhizoctonia",
+    "status": "insufficient_data",
+    "confidence": 34,
+    "causes": []
+  },
+  {
+    "file": "Black Scurf/18.jpg",
+    "actual": "rhizoctonia",
+    "status": "insufficient_data",
+    "confidence": 62,
+    "causes": []
+  },
+  {
+    "file": "Black Scurf/19.jpg",
+    "actual": "rhizoctonia",
+    "status": "success",
+    "confidence": 76,
+    "causes": [
+      "Ризоктониоз картофеля"
+    ]
+  },
+  {
+    "file": "Black Scurf/23.jpg",
+    "actual": "rhizoctonia",
+    "status": "insufficient_data",
+    "confidence": 35,
+    "causes": []
+  },
+  {
+    "file": "Black Scurf/38.jpg",
+    "actual": "rhizoctonia",
+    "status": "success",
+    "confidence": 89,
+    "causes": [
+      "Ризоктониоз картофеля"
+    ]
+  },
+  {
+    "file": "Black Scurf/40.jpg",
+    "actual": "rhizoctonia",
+    "status": "insufficient_data",
+    "confidence": 54,
+    "causes": []
+  },
+  {
+    "file": "Black Scurf/41.jpg",
+    "actual": "rhizoctonia",
+    "status": "insufficient_data",
+    "confidence": 61,
+    "causes": []
+  },
+  {
+    "file": "Black Scurf/44.jpg",
+    "actual": "rhizoctonia",
+    "status": "success",
+    "confidence": 85,
+    "causes": [
+      "Ризоктониоз картофеля"
+    ]
+  },
+  {
+    "file": "Black Scurf/46.jpg",
+    "actual": "rhizoctonia",
+    "status": "insufficient_data",
+    "confidence": 39,
+    "causes": []
+  },
+  {
+    "file": "Black Scurf/51.jpg",
+    "actual": "rhizoctonia",
+    "status": "success",
+    "confidence": 97,
+    "causes": [
+      "Ризоктониоз картофеля"
+    ]
+  },
+  {
+    "file": "Black Scurf/52.jpg",
+    "actual": "rhizoctonia",
+    "status": "success",
+    "confidence": 86,
+    "causes": [
+      "Ризоктониоз картофеля"
+    ]
+  },
+  {
+    "file": "Black Scurf/53.jpg",
+    "actual": "rhizoctonia",
+    "status": "insufficient_data",
+    "confidence": 48,
+    "causes": []
+  },
+  {
+    "file": "Blackleg/19.jpg",
+    "actual": "blackleg",
+    "status": "insufficient_data",
+    "confidence": 11,
+    "causes": []
+  },
+  {
+    "file": "Blackleg/22.jpg",
+    "actual": "blackleg",
+    "status": "success",
+    "confidence": 84,
+    "causes": [
+      "Чёрная ножка картофеля"
+    ]
+  },
+  {
+    "file": "Blackleg/29.jpg",
+    "actual": "blackleg",
+    "status": "insufficient_data",
+    "confidence": 21,
+    "causes": []
+  },
+  {
+    "file": "Blackleg/31.jpg",
+    "actual": "blackleg",
+    "status": "success",
+    "confidence": 67,
+    "causes": [
+      "Чёрная ножка картофеля"
+    ]
+  },
+  {
+    "file": "Blackleg/36.jpg",
+    "actual": "blackleg",
+    "status": "insufficient_data",
+    "confidence": 45,
+    "causes": []
+  },
+  {
+    "file": "Blackleg/38.jpg",
+    "actual": "blackleg",
+    "status": "insufficient_data",
+    "confidence": 55,
+    "causes": []
+  },
+  {
+    "file": "Blackleg/4.jpg",
+    "actual": "blackleg",
+    "status": "success",
+    "confidence": 91,
+    "causes": [
+      "Чёрная ножка картофеля"
+    ]
+  },
+  {
+    "file": "Blackleg/58.jpg",
+    "actual": "blackleg",
+    "status": "insufficient_data",
+    "confidence": 39,
+    "causes": []
+  },
+  {
+    "file": "Blackleg/59.jpg",
+    "actual": "blackleg",
+    "status": "success",
+    "confidence": 97,
+    "causes": [
+      "Чёрная ножка картофеля"
+    ]
+  },
+  {
+    "file": "Blackleg/7.jpg",
+    "actual": "blackleg",
+    "status": "insufficient_data",
+    "confidence": 58,
+    "causes": []
+  },
+  {
+    "file": "Blackleg/9.jpg",
+    "actual": "blackleg",
+    "status": "success",
+    "confidence": 89,
+    "causes": [
+      "Чёрная ножка картофеля"
+    ]
+  },
+  {
+    "file": "Common Scab/12.jpg",
+    "actual": "common_scab",
+    "status": "success",
+    "confidence": 83,
+    "causes": [
+      "Парша обыкновенная картофеля"
+    ]
+  },
+  {
+    "file": "Common Scab/17.jpg",
+    "actual": "common_scab",
+    "status": "success",
+    "confidence": 72,
+    "causes": [
+      "Парша обыкновенная картофеля"
+    ]
+  },
+  {
+    "file": "Common Scab/23.jpg",
+    "actual": "common_scab",
+    "status": "insufficient_data",
+    "confidence": 43,
+    "causes": []
+  },
+  {
+    "file": "Common Scab/30.jpg",
+    "actual": "common_scab",
+    "status": "insufficient_data",
+    "confidence": 45,
+    "causes": []
+  },
+  {
+    "file": "Common Scab/33.jpg",
+    "actual": "common_scab",
+    "status": "insufficient_data",
+    "confidence": 60,
+    "causes": []
+  },
+  {
+    "file": "Common Scab/35.jpg",
+    "actual": "common_scab",
+    "status": "insufficient_data",
+    "confidence": 36,
+    "causes": []
+  },
+  {
+    "file": "Common Scab/4.jpg",
+    "actual": "common_scab",
+    "status": "success",
+    "confidence": 68,
+    "causes": [
+      "Парша обыкновенная картофеля"
+    ]
+  },
+  {
+    "file": "Common Scab/46.jpg",
+    "actual": "common_scab",
+    "status": "success",
+    "confidence": 75,
+    "causes": [
+      "Парша обыкновенная картофеля"
+    ]
+  },
+  {
+    "file": "Common Scab/50.jpg",
+    "actual": "common_scab",
+    "status": "success",
+    "confidence": 92,
+    "causes": [
+      "Розовая гниль клубней картофеля"
+    ]
+  },
+  {
+    "file": "Common Scab/51.jpg",
+    "actual": "common_scab",
+    "status": "success",
+    "confidence": 88,
+    "causes": [
+      "Парша обыкновенная картофеля"
+    ]
+  },
+  {
+    "file": "Common Scab/54.jpg",
+    "actual": "common_scab",
+    "status": "success",
+    "confidence": 96,
+    "causes": [
+      "Парша обыкновенная картофеля"
+    ]
+  },
+  {
+    "file": "Common Scab/6.jpg",
+    "actual": "common_scab",
+    "status": "success",
+    "confidence": 92,
+    "causes": [
+      "Парша обыкновенная картофеля"
+    ]
+  },
+  {
+    "file": "Dry Rot/1.jpg",
+    "actual": "fusarium",
+    "status": "insufficient_data",
+    "confidence": 33,
+    "causes": []
+  },
+  {
+    "file": "Dry Rot/22.jpg",
+    "actual": "fusarium",
+    "status": "insufficient_data",
+    "confidence": 31,
+    "causes": []
+  },
+  {
+    "file": "Dry Rot/23.jpg",
+    "actual": "fusarium",
+    "status": "insufficient_data",
+    "confidence": 40,
+    "causes": []
+  },
+  {
+    "file": "Dry Rot/27.jpg",
+    "actual": "fusarium",
+    "status": "success",
+    "confidence": 79,
+    "causes": [
+      "Чёрная ножка картофеля"
+    ]
+  },
+  {
+    "file": "Dry Rot/42.jpg",
+    "actual": "fusarium",
+    "status": "insufficient_data",
+    "confidence": 52,
+    "causes": []
+  },
+  {
+    "file": "Dry Rot/44.jpg",
+    "actual": "fusarium",
+    "status": "insufficient_data",
+    "confidence": 62,
+    "causes": []
+  },
+  {
+    "file": "Dry Rot/49.jpg",
+    "actual": "fusarium",
+    "status": "success",
+    "confidence": 67,
+    "causes": [
+      "Чёрная ножка картофеля"
+    ]
+  },
+  {
+    "file": "Dry Rot/5.jpg",
+    "actual": "fusarium",
+    "status": "insufficient_data",
+    "confidence": 41,
+    "causes": []
+  },
+  {
+    "file": "Dry Rot/51.jpg",
+    "actual": "fusarium",
+    "status": "insufficient_data",
+    "confidence": 62,
+    "causes": []
+  },
+  {
+    "file": "Dry Rot/54.jpg",
+    "actual": "fusarium",
+    "status": "success",
+    "confidence": 83,
+    "causes": [
+      "Фузариоз картофеля"
+    ]
+  },
+  {
+    "file": "Dry Rot/6.jpg",
+    "actual": "fusarium",
+    "status": "insufficient_data",
+    "confidence": 23,
+    "causes": []
+  },
+  {
+    "file": "Dry Rot/60.jpg",
+    "actual": "fusarium",
+    "status": "success",
+    "confidence": 94,
+    "causes": [
+      "Фузариоз картофеля"
+    ]
+  },
+  {
+    "file": "Healthy Potatoes/13.jpg",
+    "actual": "healthy",
+    "status": "insufficient_data",
+    "confidence": 34,
+    "causes": []
+  },
+  {
+    "file": "Healthy Potatoes/15.jpg",
+    "actual": "healthy",
+    "status": "healthy",
+    "confidence": 96,
+    "causes": []
+  },
+  {
+    "file": "Healthy Potatoes/16.jpg",
+    "actual": "healthy",
+    "status": "healthy",
+    "confidence": 97,
+    "causes": []
+  },
+  {
+    "file": "Healthy Potatoes/2.jpg",
+    "actual": "healthy",
+    "status": "healthy",
+    "confidence": 89,
+    "causes": []
+  },
+  {
+    "file": "Healthy Potatoes/23.jpg",
+    "actual": "healthy",
+    "status": "healthy",
+    "confidence": 98,
+    "causes": []
+  },
+  {
+    "file": "Healthy Potatoes/30.jpg",
+    "actual": "healthy",
+    "status": "healthy",
+    "confidence": 98,
+    "causes": []
+  },
+  {
+    "file": "Healthy Potatoes/32.jpg",
+    "actual": "healthy",
+    "status": "healthy",
+    "confidence": 91,
+    "causes": []
+  },
+  {
+    "file": "Healthy Potatoes/33.jpg",
+    "actual": "healthy",
+    "status": "healthy",
+    "confidence": 99,
+    "causes": []
+  },
+  {
+    "file": "Healthy Potatoes/35.jpg",
+    "actual": "healthy",
+    "status": "healthy",
+    "confidence": 95,
+    "causes": []
+  },
+  {
+    "file": "Healthy Potatoes/37.jpg",
+    "actual": "healthy",
+    "status": "healthy",
+    "confidence": 99,
+    "causes": []
+  },
+  {
+    "file": "Healthy Potatoes/39.jpg",
+    "actual": "healthy",
+    "status": "healthy",
+    "confidence": 84,
+    "causes": []
+  },
+  {
+    "file": "Healthy Potatoes/4.jpg",
+    "actual": "healthy",
+    "status": "healthy",
+    "confidence": 87,
+    "causes": []
+  },
+  {
+    "file": "Healthy Potatoes/54.jpg",
+    "actual": "healthy",
+    "status": "healthy",
+    "confidence": 96,
+    "causes": []
+  },
+  {
+    "file": "Healthy Potatoes/56.jpg",
+    "actual": "healthy",
+    "status": "healthy",
+    "confidence": 99,
+    "causes": []
+  },
+  {
+    "file": "Healthy Potatoes/57.jpg",
+    "actual": "healthy",
+    "status": "healthy",
+    "confidence": 94,
+    "causes": []
+  },
+  {
+    "file": "Healthy Potatoes/6.jpg",
+    "actual": "healthy",
+    "status": "healthy",
+    "confidence": 90,
+    "causes": []
+  },
+  {
+    "file": "Miscellaneous/11.jpg",
+    "actual": "unknown",
+    "status": "insufficient_data",
+    "confidence": 63,
+    "causes": []
+  },
+  {
+    "file": "Miscellaneous/13.jpg",
+    "actual": "unknown",
+    "status": "insufficient_data",
+    "confidence": 46,
+    "causes": []
+  },
+  {
+    "file": "Miscellaneous/14.jpg",
+    "actual": "unknown",
+    "status": "insufficient_data",
+    "confidence": 54,
+    "causes": []
+  },
+  {
+    "file": "Miscellaneous/17.jpg",
+    "actual": "unknown",
+    "status": "insufficient_data",
+    "confidence": 18,
+    "causes": []
+  },
+  {
+    "file": "Miscellaneous/19.jpg",
+    "actual": "unknown",
+    "status": "success",
+    "confidence": 77,
+    "causes": [
+      "Чёрная ножка картофеля"
+    ]
+  },
+  {
+    "file": "Miscellaneous/20.jpg",
+    "actual": "unknown",
+    "status": "insufficient_data",
+    "confidence": 15,
+    "causes": []
+  },
+  {
+    "file": "Miscellaneous/34.jpg",
+    "actual": "unknown",
+    "status": "insufficient_data",
+    "confidence": 10,
+    "causes": []
+  },
+  {
+    "file": "Miscellaneous/38.jpg",
+    "actual": "unknown",
+    "status": "insufficient_data",
+    "confidence": 1,
+    "causes": []
+  },
+  {
+    "file": "Miscellaneous/39.jpg",
+    "actual": "unknown",
+    "status": "insufficient_data",
+    "confidence": 6,
+    "causes": []
+  },
+  {
+    "file": "Miscellaneous/55.jpg",
+    "actual": "unknown",
+    "status": "insufficient_data",
+    "confidence": 57,
+    "causes": []
+  },
+  {
+    "file": "Miscellaneous/57.jpg",
+    "actual": "unknown",
+    "status": "insufficient_data",
+    "confidence": 64,
+    "causes": []
+  },
+  {
+    "file": "Miscellaneous/65.jpg",
+    "actual": "unknown",
+    "status": "insufficient_data",
+    "confidence": 11,
+    "causes": []
+  },
+  {
+    "file": "Miscellaneous/69.jpg",
+    "actual": "unknown",
+    "status": "insufficient_data",
+    "confidence": 15,
+    "causes": []
+  },
+  {
+    "file": "Miscellaneous/7.jpg",
+    "actual": "unknown",
+    "status": "insufficient_data",
+    "confidence": 13,
+    "causes": []
+  },
+  {
+    "file": "Miscellaneous/74.jpg",
+    "actual": "unknown",
+    "status": "insufficient_data",
+    "confidence": 22,
+    "causes": []
+  },
+  {
+    "file": "Pink Rot/11.jpg",
+    "actual": "pink_rot",
+    "status": "insufficient_data",
+    "confidence": 42,
+    "causes": []
+  },
+  {
+    "file": "Pink Rot/30.jpg",
+    "actual": "pink_rot",
+    "status": "success",
+    "confidence": 96,
+    "causes": [
+      "Розовая гниль клубней картофеля"
+    ]
+  },
+  {
+    "file": "Pink Rot/34.jpg",
+    "actual": "pink_rot",
+    "status": "insufficient_data",
+    "confidence": 53,
+    "causes": []
+  },
+  {
+    "file": "Pink Rot/37.jpg",
+    "actual": "pink_rot",
+    "status": "success",
+    "confidence": 70,
+    "causes": [
+      "Розовая гниль клубней картофеля"
+    ]
+  },
+  {
+    "file": "Pink Rot/42.jpg",
+    "actual": "pink_rot",
+    "status": "success",
+    "confidence": 93,
+    "causes": [
+      "Розовая гниль клубней картофеля"
+    ]
+  },
+  {
+    "file": "Pink Rot/51.jpg",
+    "actual": "pink_rot",
+    "status": "success",
+    "confidence": 83,
+    "causes": [
+      "Розовая гниль клубней картофеля"
+    ]
+  },
+  {
+    "file": "Pink Rot/52.jpg",
+    "actual": "pink_rot",
+    "status": "success",
+    "confidence": 88,
+    "causes": [
+      "Парша обыкновенная картофеля"
+    ]
+  },
+  {
+    "file": "Pink Rot/54.jpg",
+    "actual": "pink_rot",
+    "status": "insufficient_data",
+    "confidence": 64,
+    "causes": []
+  },
+  {
+    "file": "Pink Rot/55.jpg",
+    "actual": "pink_rot",
+    "status": "insufficient_data",
+    "confidence": 54,
+    "causes": []
+  },
+  {
+    "file": "Pink Rot/57.jpg",
+    "actual": "pink_rot",
+    "status": "success",
+    "confidence": 99,
+    "causes": [
+      "Розовая гниль клубней картофеля"
+    ]
+  },
+  {
+    "file": "Pink Rot/7.jpg",
+    "actual": "pink_rot",
+    "status": "success",
+    "confidence": 90,
+    "causes": [
+      "Розовая гниль клубней картофеля"
+    ]
+  },
+  {
+    "file": "Pink Rot/8.jpg",
+    "actual": "pink_rot",
+    "status": "success",
+    "confidence": 93,
+    "causes": [
+      "Розовая гниль клубней картофеля"
+    ]
+  }
+]
