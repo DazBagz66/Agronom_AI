@@ -216,7 +216,3 @@ python backend/scripts/train_tuber_model.py --data .cache/tuber_training/potato-
 Основа модели клубней: [MobileNetV2 ONNX Model Zoo](https://huggingface.co/onnxmodelzoo/mobilenetv2-12).
 Обучающие фотографии: [Potato Diseases Datasets](https://www.kaggle.com/datasets/mukaffimoin/potato-diseases-datasets).
 Источники, хеши и уведомления сохранены рядом с моделями и данными.
-
-У компонентов разные лицензии. Права на распространение части текстов базы знаний
-требуют уточнения; проект не заявляется готовым к коммерческой поставке.
-Подробности — в [записке о лицензиях](docs/ЛИЦЕНЗИИ_И_ИСТОЧНИКИ.txt).
