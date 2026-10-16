@@ -121,7 +121,6 @@ Agronom_AI/
 │   ├── vite.config.js              # Сборка и прокси к API
 │   ├── package.json                # Зависимости и команды npm
 │   └── dist/                       # Готовый интерфейс, создаётся сборкой
-├── docs/                           # Памятки и подробные объяснения
 ├── requirements.txt                # Зависимости Python
 ├── start.bat                       # Запуск сервера в Windows
 └── README.md
