@@ -1,6 +1,17 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { assessmentContext } from './assessment.js';
+import { CROPS, cropContextKey } from './crops.js';
+
+test('changing crop never carries over the previous photograph or symptoms', () => {
+  const oldContext = cropContextKey('Кукуруза', 'leaf', 'Вегетация');
+  const nextContext = cropContextKey('Подсолнечник', 'leaf', 'Вегетация');
+  const previous = [{ role: 'user', contextKey: oldContext, symptomsContext: 'Пятна', imageContext: 'corn-photo' }];
+  assert.deepEqual(assessmentContext(previous, null, 'Новый образец', nextContext), {
+    imageForAnalysis: null, combinedSymptoms: 'Новый образец',
+  });
+  assert.deepEqual(Object.keys(CROPS), ['Кукуруза', 'Подсолнечник']);
+});
 
 // Проверяем, что симптомы не переходят на фотографию нового образца.
 const messages = [{ role: 'user', contextKey: 'first', symptomsContext: 'Бурые пятна', imageContext: 'photo1' }];

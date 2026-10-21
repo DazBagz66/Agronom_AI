@@ -25,18 +25,19 @@ CLASS_MAP = {"Black Scurf": "rhizoctonia", "Blackleg": "blackleg",
              "Healthy Potatoes": "healthy", "Miscellaneous": "unknown", "Pink Rot": "pink_rot"}
 
 
-def records(source):
+def records(source, class_map=None):
     """Читаем изображения и метки из ZIP или папок без распаковки архива."""
+    class_map = CLASS_MAP if class_map is None else class_map
     if source.is_file():
         with zipfile.ZipFile(source) as archive:
             for name in sorted(archive.namelist()):
                 parts = Path(name).parts
-                if len(parts) >= 2 and parts[-2] in CLASS_MAP and Path(name).suffix.lower() in {".jpg", ".jpeg", ".png"}:
-                    yield name, CLASS_MAP[parts[-2]], archive.read(name)
+                if len(parts) >= 2 and parts[-2] in class_map and Path(name).suffix.lower() in {".jpg", ".jpeg", ".png"}:
+                    yield name, class_map[parts[-2]], archive.read(name)
     else:
         for path in sorted(source.rglob("*")):
-            if path.is_file() and path.parent.name in CLASS_MAP and path.suffix.lower() in {".jpg", ".jpeg", ".png"}:
-                yield str(path.relative_to(source)), CLASS_MAP[path.parent.name], path.read_bytes()
+            if path.is_file() and path.parent.name in class_map and path.suffix.lower() in {".jpg", ".jpeg", ".png"}:
+                yield str(path.relative_to(source)), class_map[path.parent.name], path.read_bytes()
 
 
 def phash(image):
@@ -61,11 +62,12 @@ def duplicate_groups(hashes):
     return np.array([root(i) for i in range(len(hashes))])
 
 
-def train(source, backbone, output, seed):
+def train(source, backbone, output, seed, class_map=None, dataset=None, supported_organ="tuber"):
+    class_map = CLASS_MAP if class_map is None else class_map
     cv2.setNumThreads(2)
     net = cv2.dnn.readNetFromONNX(str(backbone))
     names, labels, features, hashes, digests = [], [], [], [], []
-    for name, label, data in records(source):
+    for name, label, data in records(source, class_map):
         image = cv2.imdecode(np.frombuffer(data, np.uint8), cv2.IMREAD_COLOR)
         if image is None:
             raise ValueError(f"Unreadable image: {name}")
@@ -75,8 +77,8 @@ def train(source, backbone, output, seed):
         if len(names) % 100 == 0:
             print(f"Extracted {len(names)} images", flush=True)
     x, y = np.array(features), np.array(labels)
-    if len(x) < 70 or set(y) != set(CLASS_MAP.values()):
-        raise ValueError("All seven classes and at least 70 images are required")
+    if len(x) < 70 or set(y) != set(class_map.values()):
+        raise ValueError("All configured classes and at least 70 images are required")
     groups = duplicate_groups(hashes)
     # Исключаем похожие фото с противоречивыми диагнозами.
     ambiguous = {g for g in set(groups) if len(set(y[groups == g])) > 1}
@@ -116,7 +118,7 @@ def train(source, backbone, output, seed):
         "classification_report": classification_report(y[test], predicted, labels=classes, output_dict=True, zero_division=0),
         "accepted_at_65": int(accepted.sum()), "test_count": len(test),
         "accepted_accuracy": float(np.mean(predicted[accepted] == y[test][accepted])) if accepted.any() else None,
-        "limitations": "Small website dataset; pHash groups reduce but cannot eliminate source/specimen leakage. Not independent field validation. Healthy means no visible supported disease; unknown is not a universal non-potato detector.",
+        "limitations": "Dataset-only evaluation; pHash groups reduce but cannot eliminate source/specimen leakage. Not independent field validation. Healthy means no visible supported disease. No reliable out-of-distribution or crop detector.",
         "splits": {key: [{"file": str(names[i]), "sha256": str(digests[i]), "class": str(y[i]), "group": int(groups[i])} for i in ids]
                    for key, ids in [("train", training), ("validation", validation), ("test", test)]},
         "test_predictions": [{"file": str(names[i]), "actual": str(y[i]), "predicted": str(predicted[j]), "confidence": float(test_probabilities[j].max())} for j, i in enumerate(test)]}
@@ -127,10 +129,10 @@ def train(source, backbone, output, seed):
     if backbone.resolve() != (output / "mobilenetv2_features.onnx").resolve():
         (output / "mobilenetv2_features.onnx").write_bytes(backbone.read_bytes())
     (output / "training_report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
-    manifest = {"classes": classes, "supported_organ": "tuber", "input": "RGB 224x224 letterbox, ImageNet mean/std; frozen 1280-dimensional features",
+    manifest = {"classes": classes, "supported_organ": supported_organ, "input": "RGB 224x224 letterbox, ImageNet mean/std; frozen 1280-dimensional features",
                 "files": {name: hashlib.sha256((output/name).read_bytes()).hexdigest() for name in ["mobilenetv2_features.onnx", "classifier.npz"]},
                 "training": report["method"], "limitations": report["limitations"],
-                "dataset": "https://www.kaggle.com/datasets/mukaffimoin/potato-diseases-datasets",
+                "dataset": dataset or "https://www.kaggle.com/datasets/mukaffimoin/potato-diseases-datasets",
                 "backbone": "https://huggingface.co/onnxmodelzoo/mobilenetv2-12"}
     (output / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps({k: report[k] for k in ["split_counts", "test_accuracy", "test_balanced_accuracy", "accepted_at_65", "accepted_accuracy", "temperature"]}, indent=2))

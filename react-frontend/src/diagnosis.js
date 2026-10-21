@@ -17,7 +17,7 @@ export function visibleDiagnosis(data = {}) {
       status: "insufficient_data",
       probable_causes: [],
       possible_factors: [],
-      human_explanation: "Недостаточно данных: ни одна гипотеза не достигла порога 65%. Уточните симптомы картофеля и приложите чёткое фото.",
+      human_explanation: "Недостаточно данных: ни одна гипотеза не достигла порога 65%. Уточните симптомы растения и приложите чёткое фото.",
       recommendations: ["Опишите форму и цвет пятен, наличие налёта и скорость развития симптомов."],
       sources: [],
     };

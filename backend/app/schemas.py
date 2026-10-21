@@ -5,14 +5,14 @@ from datetime import datetime
 
 # Входные данные от пользователя
 class DiagnosisRequest(BaseModel):
-    crop: Literal["Картофель"] = Field(default="Картофель", description="Поддерживается только картофель")
+    crop: Literal["Кукуруза", "Подсолнечник", "Картофель"] = Field(default="Кукуруза", description="Кукуруза и подсолнечник; картофель сохранён для совместимости")
     growth_stage: str = Field(..., description="Фаза развития")
     symptoms: Optional[str] = Field(
         default=None,
         description="Описание симптомов растения"
     )
     image_base64: Optional[str] = Field(None, description="Фото растения в формате Base64")
-    plant_part: Literal["auto", "leaf", "stem", "tuber", "whole"] = "auto"
+    plant_part: Literal["auto", "leaf", "flower", "stem", "tuber", "whole"] = "leaf"
 
 # Отдельная гипотеза (причина)
 class ProbableCause(BaseModel):

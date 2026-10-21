@@ -2,24 +2,21 @@ import React, { useState, useEffect, useRef } from "react";
 
 import { visibleDiagnosis } from "./diagnosis.js";
 import { assessmentContext } from "./assessment.js";
+import { CROPS, cropContextKey } from "./crops.js";
 
 // По умолчанию страница обращается к API на том же локальном сервере.
 const API_URL = import.meta.env.VITE_API_URL || "/api";
 
-const CROP_STAGES = {
-  Картофель: ["Всходы", "Смыкание ботвы", "Бутонизация", "Цветение", "Уборка и хранение"],
-};
-
 export default function App() {
-  const crop = "Картофель";
-  const [growthStage, setGrowthStage] = useState("Бутонизация");
+  const [crop, setCrop] = useState("Кукуруза");
+  const [growthStage, setGrowthStage] = useState("Вегетация");
 
   const [messages, setMessages] = useState([
     {
       id: "welcome",
       role: "assistant",
       type: "welcome",
-      text: "Привет! Я помощник агронома. Прикрепите фото картофеля: листа, стебля или клубня (кнопка 📷 внизу) или опишите симптомы на поле. Можно отправить только фото. Я проверю видимые признаки болезни и состояние растения. При необходимости попрошу уточнения.",
+      text: "Выберите кукурузу или подсолнечник и прикрепите чёткое фото листа. Для подсолнечника также доступна проверка корзинки. Описание симптомов поможет заметить противоречия, но для классификации нужна фотография. Результат предварительный: модель различает только классы обучающего набора.",
     },
   ]);
 
@@ -29,13 +26,14 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(false);
 
   const [historyList, setHistoryList] = useState([]);
-  const [plantPart, setPlantPart] = useState("auto");
+  const [plantPart, setPlantPart] = useState("leaf");
   const [sidebarOpen, setSidebarOpen] = useState(true);
 
   const chatEndRef = useRef(null);
   const fileInputRef = useRef(null);
 
-  const availableStages = CROP_STAGES[crop];
+  const availableStages = CROPS[crop].stages;
+  const visibleHistory = historyList.filter((item) => item.crop === crop);
 
   useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -47,11 +45,11 @@ export default function App() {
 
   async function fetchHistory() {
     try {
-      const res = await fetch(`${API_URL}/history`);
+      const res = await fetch(`${API_URL}/history?limit=100`);
       if (res.ok) {
         const data = await res.json();
         if (Array.isArray(data)) {
-          setHistoryList(data.filter((item) => item.crop === crop));
+          setHistoryList(data);
         }
       }
     } catch (err) {
@@ -72,13 +70,14 @@ export default function App() {
     e.target.value = "";
   };
 
-  const startNewChat = () => {
+  const startNewChat = (nextCrop = crop) => {
+    if (isLoading) return;
     setMessages([
       {
         id: Date.now(),
         role: "assistant",
         type: "welcome",
-        text: `Начата новая проверка (${crop}, фаза: ${growthStage}). Загрузите фото листа, стебля или клубня либо опишите изменения.`,
+        text: `Начата новая проверка: ${nextCrop}. ${CROPS[nextCrop].hint} Загрузите фото и при необходимости опишите изменения.`,
       },
     ]);
     setInputText("");
@@ -88,10 +87,14 @@ export default function App() {
 
   // Открываем сохранённый результат; повторного анализа здесь нет.
   const loadFromHistory = (item) => {
-    if (!item) return;
+    if (!item || isLoading) return;
 
+    setCrop(item.crop);
     setGrowthStage(item.growth_stage || "Вегетация");
-    setPlantPart("auto");
+    setPlantPart("leaf");
+    setSelectedImage(null);
+    setImagePreviewName("");
+    setInputText("");
     setMessages([
       {
         id: `user-${item.id}`,
@@ -119,7 +122,7 @@ export default function App() {
 
     // Новое фото начинает проверку образца, текст может уточнять прошлое фото.
     const currentImage = selectedImage;
-    const contextKey = JSON.stringify([plantPart, growthStage]);
+    const contextKey = cropContextKey(crop, plantPart, growthStage);
     const { imageForAnalysis, combinedSymptoms } = assessmentContext(messages, currentImage, textToSend, contextKey);
     const userMessage = {
       id: Date.now(),
@@ -193,16 +196,17 @@ export default function App() {
         } bg-zinc-950 border-r border-zinc-800 flex flex-col transition-all duration-200 overflow-hidden shrink-0`}
       >
         <div className="p-4 border-b border-zinc-800 flex items-center space-x-2">
-          <span className="text-xl">🥔</span>
+          <span className="text-xl">{CROPS[crop].icon}</span>
           <div>
             <h1 className="font-bold text-sm text-white">Советник агронома</h1>
-            <p className="text-[11px] text-emerald-400">Помощник по уходу за картофелем</p>
+            <p className="text-[11px] text-emerald-400">Кукуруза и подсолнечник</p>
           </div>
         </div>
 
         <div className="p-3">
           <button
-            onClick={startNewChat}
+            onClick={() => startNewChat()}
+            disabled={isLoading}
             className="w-full bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-medium py-2.5 px-4 rounded-xl transition"
           >
             ＋ Новая диагностика
@@ -210,13 +214,14 @@ export default function App() {
         </div>
 
         <div className="px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-zinc-500">
-          История проверок ({historyList.length})
+          История проверок ({visibleHistory.length})
         </div>
         <div className="flex-1 overflow-y-auto px-2 space-y-1">
-          {historyList.map((item) => (
+          {visibleHistory.map((item) => (
             <button
               key={item.id}
               onClick={() => loadFromHistory(item)}
+              disabled={isLoading}
               className="w-full text-left px-3 py-2 rounded-xl hover:bg-zinc-900 transition flex flex-col"
             >
               <div className="flex items-center justify-between w-full">
@@ -247,10 +252,21 @@ export default function App() {
               ☰
             </button>
 
-            <span className="text-sm text-emerald-300">🥔 Картофель</span>
+            <select aria-label="Культура" value={crop} disabled={isLoading}
+              onChange={(e) => {
+                const nextCrop = e.target.value;
+                setCrop(nextCrop);
+                setGrowthStage("Вегетация");
+                setPlantPart("leaf");
+                startNewChat(nextCrop);
+              }}
+              className="bg-zinc-800 border border-zinc-700 rounded-lg px-2.5 py-1.5 text-xs text-white">
+              {Object.entries(CROPS).map(([name, config]) => <option key={name} value={name}>{config.icon} {name}</option>)}
+            </select>
 
             <select
               value={growthStage}
+              disabled={isLoading}
               onChange={(e) => setGrowthStage(e.target.value)}
               className="bg-zinc-800 border border-zinc-700 rounded-lg px-2.5 py-1.5 text-xs text-white"
             >
@@ -261,13 +277,9 @@ export default function App() {
               ))}
             </select>
 
-            <select aria-label="Часть растения" value={plantPart} onChange={(e) => setPlantPart(e.target.value)}
+            <select aria-label="Часть растения" value={plantPart} disabled={isLoading} onChange={(e) => setPlantPart(e.target.value)}
               className="bg-zinc-800 border border-zinc-700 rounded-lg px-2.5 py-1.5 text-xs text-white">
-              <option value="auto">Часть: определить по фото</option>
-              <option value="leaf">Лист</option>
-              <option value="stem">Стебель</option>
-              <option value="tuber">Клубень</option>
-              <option value="whole">Растение целиком</option>
+              {CROPS[crop].parts.map(([value, name]) => <option key={value} value={value}>{name}</option>)}
             </select>
 
           </div>
@@ -276,6 +288,11 @@ export default function App() {
 
         <main className="flex-1 overflow-y-auto px-4 py-6 space-y-6">
           <div className="max-w-3xl mx-auto space-y-6">
+            <div className="text-xs text-amber-100 bg-amber-950/40 border border-amber-700/50 rounded-xl p-3" role="note">
+              Предварительная проверка с ограниченным набором классов. {CROPS[crop].hint}
+              {" "}Отсутствие болезни по фото не подтверждается. Снимайте выбранный орган крупным планом;
+              общий вид растения может привести к ошибке.
+            </div>
             {messages.map((msg) => (
               <div
                 key={msg.id}
@@ -289,7 +306,7 @@ export default function App() {
                     {msg.image && (
                       <img
                         src={msg.image}
-                        alt="Фото картофеля"
+                        alt="Фото растения"
                         className="max-h-60 rounded-xl object-cover"
                       />
                     )}
@@ -318,7 +335,7 @@ export default function App() {
                           : "Нет уверенного вывода"}
                       </span>
                       {msg.data.assessment_basis !== "visual_observation" && <span className="text-sm font-bold text-white">
-                        Уверенность: {msg.data.overall_confidence || 0}%
+                        Оценка модели: {msg.data.overall_confidence || 0}%
                       </span>}
                     </div>
 
@@ -330,7 +347,7 @@ export default function App() {
                       msg.data.probable_causes.length > 0 && (
                         <div className="space-y-2">
                           <h4 className="text-xs font-semibold uppercase text-zinc-400">
-                            Предполагаемое заболевание:
+                            Предварительная гипотеза:
                           </h4>
                           {msg.data.probable_causes.map((cause, idx) => (
                             <div
@@ -397,7 +414,7 @@ export default function App() {
 
             {isLoading && (
               <div className="text-xs text-zinc-300 bg-zinc-800 p-3 rounded-xl w-fit">
-                ⏳ Рассматриваем фото и оцениваем состояние картофеля...
+                ⏳ Рассматриваем фото и оцениваем состояние растения...
               </div>
             )}
             <div ref={chatEndRef} />

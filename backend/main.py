@@ -1,10 +1,13 @@
-"""HTTP-запросы: анализ картофеля, история и выдача интерфейса."""
+"""HTTP-запросы: активные культуры, история и выдача интерфейса."""
 from fastapi import FastAPI, Depends, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pathlib import Path
+from typing import Literal
+from app.crops import CROPS
+from app.diagnostics.crop_advisor import diagnose_crop, apply_crop_display_policy
 
 from app.storage.database import engine, Base, get_db, SessionLocal
 from app.storage.models import KnowledgeArticle, CheckHistory
@@ -20,7 +23,7 @@ Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
     title="Советник агронома API",
-    description="Диагностика картофеля по внутренней базе знаний. Порог отображения гипотез — 65%.",
+    description="Предварительная диагностика кукурузы и подсолнечника. Порог отображения — 65%. Картофель в бэклоге.",
     version="1.0.0"
 )
 
@@ -54,6 +57,9 @@ def diagnose_plant(request: DiagnosisRequest, db: Session = Depends(get_db)):
     """
     Фото и описание -> оценка признаков -> поиск карточек -> вывод -> история.
     """
+    if request.crop in CROPS:
+        return save_diagnosis(request, diagnose_crop(request), db)
+    # Совместимость с прежними клиентами; картофель не предлагается в интерфейсе.
     # 1. Рассматриваем фотографию.
     triage_report = advisor.analyze_photo(request)
 
@@ -81,7 +87,11 @@ def diagnose_plant(request: DiagnosisRequest, db: Session = Depends(get_db)):
     )
     diagnosis_result = apply_diagnosis_policy(diagnosis_result)
 
-    # 4. Сохраняем результат в историю.
+    return save_diagnosis(request, diagnosis_result, db)
+
+
+def save_diagnosis(request, diagnosis_result, db):
+    # Сохраняем результат в историю без смешивания культур.
     history_record = CheckHistory(
         crop=request.crop,
         growth_stage=request.growth_stage,
@@ -102,13 +112,21 @@ def diagnose_plant(request: DiagnosisRequest, db: Session = Depends(get_db)):
 
 
 @app.get("/api/history")
-def get_check_history(limit: int = Query(default=20, ge=1, le=100), db: Session = Depends(get_db)):
+def get_check_history(limit: int = Query(default=20, ge=1, le=100),
+                      crop: Literal["Кукуруза", "Подсолнечник", "Картофель"] | None = None,
+                      db: Session = Depends(get_db)):
     """Возвращает историю проверок с актуальным фильтром отображения"""
-    records = db.query(CheckHistory).filter_by(crop="Картофель").order_by(CheckHistory.created_at.desc()).limit(limit).all()
+    query = db.query(CheckHistory)
+    query = query.filter(CheckHistory.crop == crop) if crop else query.filter(CheckHistory.crop.in_(CROPS))
+    records = query.order_by(CheckHistory.created_at.desc(), CheckHistory.id.desc()).limit(limit).all()
 
     output = []
     for r in records:
-        result = apply_diagnosis_policy(DiagnosisResponse.model_validate(r.result_json))
+        result = DiagnosisResponse.model_validate(r.result_json)
+        if r.crop == "Картофель":
+            result = apply_diagnosis_policy(result)
+        else:
+            result = apply_crop_display_policy(result)
         output.append({
             "id": r.id,
             "crop": r.crop,
@@ -130,8 +148,15 @@ def serve_frontend():
     return FileResponse(frontend_path)
 
 @app.get("/api/knowledge")
-def get_knowledge(db: Session = Depends(get_db)):
-    """Справочник болезней картофеля с источниками."""
+def get_knowledge(crop: Literal["Кукуруза", "Подсолнечник", "Картофель"] = "Кукуруза", db: Session = Depends(get_db)):
+    """Метки активных датасетов или сохранённый справочник картофеля."""
+    if crop in CROPS:
+        config = CROPS[crop]
+        articles = [{"id": f"{config['id']}_{key}", "crop": crop, "title": label,
+                     "source": {"title": "Классы датасета", "url_or_code": f"https://www.kaggle.com/datasets/{config['dataset']}"}}
+                    for key, label in config["labels"].items()]
+        return {"crop": crop, "count": len(articles), "articles": articles,
+                "scope": "Метки классификатора; агрономическая база рекомендаций ещё не подготовлена."}
     articles = active_articles(db).order_by(KnowledgeArticle.title).all()
     return {
         "crop": "Картофель",

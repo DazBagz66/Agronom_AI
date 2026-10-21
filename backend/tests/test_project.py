@@ -49,6 +49,115 @@ def result(probability):
 
 
 # Здесь проверяется граница 65% и отсутствие скрытого диагноза в ответе.
+class CropIntegrationTests(unittest.TestCase):
+    def setUp(self):
+        Base.metadata.drop_all(engine)
+        Base.metadata.create_all(engine)
+        # A textured image passes the quality gate; predictions are isolated below.
+        pixels = np.random.default_rng(42).integers(0, 256, (160, 160, 3), dtype=np.uint8)
+        self.photo = base64.b64encode(cv2.imencode(".png", pixels)[1]).decode()
+
+    def test_default_crop_and_no_text_only_diagnosis(self):
+        with TestClient(app) as client:
+            result = client.post("/api/diagnose", json={"growth_stage": "Вегетация", "symptoms": "Бурые пятна"})
+            self.assertEqual(result.status_code, 200)
+            self.assertEqual(result.json()["status"], "insufficient_data")
+            self.assertIn("фотограф", result.json()["human_explanation"])
+            self.assertEqual(client.get("/api/history").json()[0]["crop"], "Кукуруза")
+
+    def test_crop_routing_and_history_isolation(self):
+        with TestClient(app) as client, patch("app.diagnostics.crop_advisor.classify_crop") as classify:
+            for crop, key in [("Кукуруза", "common_rust"), ("Подсолнечник", "downy_mildew")]:
+                classify.return_value = {key: .9, "healthy": .1}
+                response = client.post("/api/diagnose", json={"crop": crop, "growth_stage": "Вегетация", "image_base64": self.photo})
+                self.assertEqual(response.status_code, 200)
+                self.assertEqual(response.json()["status"], "success")
+                self.assertEqual(classify.call_args.args[0], crop)
+                history = client.get("/api/history", params={"crop": crop}).json()
+                self.assertTrue(all(row["crop"] == crop for row in history))
+                self.assertEqual(history[0]["result"]["probable_causes"], response.json()["probable_causes"])
+            self.assertEqual(len(client.get("/api/history").json()), 2)
+            self.assertEqual(client.get("/api/history", params={"crop": "Пшеница"}).status_code, 422)
+            self.assertEqual(client.get("/api/knowledge", params={"crop": "Подсолнечник"}).json()["count"], 4)
+
+    def test_no_model_call_for_invalid_image_or_unsupported_organ(self):
+        with TestClient(app) as client, patch("app.diagnostics.crop_advisor.classify_crop") as classify:
+            for photo, organ in [("invalid", "leaf"), (self.photo, "tuber"), (self.photo, "flower")]:
+                response = client.post("/api/diagnose", json={"growth_stage": "Вегетация", "image_base64": photo, "plant_part": organ})
+                self.assertEqual(response.json()["status"], "insufficient_data")
+            classify.assert_not_called()
+
+    def test_model_failure_and_threshold_do_not_invent_diagnoses(self):
+        from app.diagnostics.crop_advisor import diagnose_crop
+        req = DiagnosisRequest(crop="Кукуруза", growth_stage="Вегетация", image_base64=self.photo)
+        with patch("app.diagnostics.crop_advisor.classify_crop", side_effect=OSError("missing")), self.assertLogs("app.diagnostics.crop_advisor", level="ERROR"):
+            self.assertIn("недоступна", diagnose_crop(req).human_explanation)
+        for score, expected in [(.649, "insufficient_data"), (.65, "success")]:
+            with patch("app.diagnostics.crop_advisor.classify_crop", return_value={"common_rust": score, "healthy": 1-score}):
+                self.assertEqual(diagnose_crop(req).status, expected)
+
+    def test_leaf_scars_does_not_name_a_pathogen_and_healthy_does_not_override_symptoms(self):
+        from app.diagnostics.crop_advisor import diagnose_crop
+        req = DiagnosisRequest(crop="Подсолнечник", growth_stage="Вегетация", image_base64=self.photo)
+        with patch("app.diagnostics.crop_advisor.classify_crop", return_value={"leaf_scars": .9, "healthy": .1}):
+            self.assertEqual(diagnose_crop(req).probable_causes[0].category, "неопределено")
+        req.symptoms = "На листе пятна"
+        with patch("app.diagnostics.crop_advisor.classify_crop", return_value={"healthy": .99, "leaf_scars": .01}):
+            self.assertEqual(diagnose_crop(req).status, "insufficient_data")
+
+    def test_even_confident_healthy_prediction_cannot_certify_health(self):
+        # Reproduces the failure mode from user photos without making their
+        # unlabelled images into training examples or asserting a pathogen.
+        with TestClient(app) as client:
+            for crop in ["Кукуруза", "Подсолнечник"]:
+                with patch("app.diagnostics.crop_advisor.classify_crop", return_value={"healthy": .999, "other": .001}):
+                    response = client.post("/api/diagnose", json={"crop": crop, "growth_stage": "Вегетация", "image_base64": self.photo})
+                self.assertEqual(response.status_code, 200)
+                result = response.json()
+                self.assertEqual(result["status"], "insufficient_data")
+                self.assertEqual(result["probable_causes"], [])
+                self.assertIn("не подтверждено", result["human_explanation"])
+                self.assertIn("Модель выбрала класс «Здоровый лист» (оценка 99%)", result["human_explanation"])
+                self.assertEqual(result["assessment_basis"], "visual_observation")
+                self.assertNotIn("признаков болезни не обнаружено", result["human_explanation"])
+
+    def test_old_healthy_history_is_reinterpreted_without_changing_saved_record(self):
+        old = DiagnosisResponse(status="healthy", overall_confidence=99, assessment_basis="model",
+            visual_observations="Здоровый лист", human_explanation="Признаков болезни не обнаружено.")
+        with SessionLocal() as db:
+            db.add(CheckHistory(crop="Подсолнечник", growth_stage="Вегетация", region="", symptoms="",
+                status="healthy", overall_confidence=99, result_json=old.model_dump(mode="json")))
+            db.commit()
+        with TestClient(app) as client:
+            row = client.get("/api/history", params={"crop": "Подсолнечник"}).json()[0]
+            self.assertEqual(row["status"], "insufficient_data")
+            self.assertIn("не подтверждено", row["result"]["human_explanation"])
+            self.assertIn("оценка 99%", row["result"]["human_explanation"])
+        with SessionLocal() as db:
+            saved = db.query(CheckHistory).one()
+            self.assertEqual(saved.status, "healthy")
+            self.assertEqual(saved.result_json, old.model_dump(mode="json"))
+
+    def test_new_models_have_no_shared_test_groups_or_hashes(self):
+        root = Path(__file__).resolve().parents[1] / "data/models"
+        for crop in ["corn", "sunflower"]:
+            report = json.loads((root / crop / "training_report.json").read_text(encoding="utf-8"))
+            for field in ["sha256", "group"]:
+                sets = [{row[field] for row in report["splits"][split]} for split in ["train", "validation", "test"]]
+                self.assertFalse(sets[0] & sets[1] or sets[0] & sets[2] or sets[1] & sets[2])
+
+    def test_real_crop_models_load_offline_and_return_only_their_classes(self):
+        from app.crops import CROPS
+        from app.diagnostics.crop_model import classify_crop
+        pixels = np.random.default_rng(42).integers(0, 256, (160, 160, 3), dtype=np.uint8)
+        with patch("urllib.request.urlopen", side_effect=AssertionError("Inference must be offline")):
+            for crop, config in CROPS.items():
+                probabilities = classify_crop(crop, pixels)
+                self.assertEqual(set(probabilities), set(config["labels"]))
+                self.assertAlmostEqual(sum(probabilities.values()), 1.)
+                self.assertTrue(all(0 <= p <= 1 for p in probabilities.values()))
+
+
 class PolicyTests(unittest.TestCase):
     def test_healthy_observation_is_not_a_hidden_disease_diagnosis(self):
         actual = DiagnosisResponse(status="healthy", overall_confidence=0, assessment_basis="visual_observation",
@@ -75,7 +184,7 @@ class PolicyTests(unittest.TestCase):
 
     def test_unrounded_score_cannot_cross_threshold(self):
         agent = PotatoAdvisor()
-        request = DiagnosisRequest(growth_stage="Цветение", region="Регион", symptoms="Бурые пятна на листьях")
+        request = DiagnosisRequest(crop="Картофель", growth_stage="Цветение", region="Регион", symptoms="Бурые пятна на листьях")
         for score, expected in [(0.649, "insufficient_data"), (0.65, "success")]:
             with self.subTest(score=score), patch.object(agent, "_calculate_cv_match_score", return_value=score):
                 actual = agent.assess(request, VisionTriageReport(), [
@@ -88,7 +197,7 @@ class PolicyTests(unittest.TestCase):
         agent = PotatoAdvisor()
         with patch.object(agent, "_calculate_cv_match_score", return_value=.99):
             actual = agent.assess(
-                DiagnosisRequest(growth_stage="Цветение", region="Регион", image_base64="image"),
+                DiagnosisRequest(crop="Картофель", growth_stage="Цветение", region="Регион", image_base64="image"),
                 VisionTriageReport(is_plant_visible=True, image_quality_score=100,
                     extracted_visual_symptoms="бурые пятна"),
                 [{"title": "Тестовая болезнь", "similarity_score": .99}])
@@ -130,11 +239,11 @@ class DatabaseTests(unittest.TestCase):
         with TestClient(app) as client:
             response = client.post("/api/diagnose", json={"crop": "Пшеница", "growth_stage": "Цветение", "region": "Регион"})
             self.assertEqual(response.status_code, 422)
-            response = client.post("/api/diagnose", json={"growth_stage": "Цветение", "region": "Регион"})
+            response = client.post("/api/diagnose", json={"crop": "Картофель", "growth_stage": "Цветение", "region": "Регион"})
             self.assertEqual(response.status_code, 200)
             self.assertEqual(response.json()["status"], "insufficient_data")
             self.assertEqual(response.json()["probable_causes"], [])
-            self.assertEqual(client.get("/api/knowledge").json()["count"], SEED_COUNT)
+            self.assertEqual(client.get("/api/knowledge?crop=Картофель").json()["count"], SEED_COUNT)
             self.assertEqual(client.get("/api/history?limit=-1").status_code, 422)
 
     def test_old_history_is_filtered_without_modifying_storage(self):
@@ -142,14 +251,14 @@ class DatabaseTests(unittest.TestCase):
             symptoms="Пятна", status="success", overall_confidence=64, result_json=result(64).model_dump(mode="json")))
         self.db.commit()
         with TestClient(app) as client:
-            saved = client.get("/api/history").json()[0]
+            saved = client.get("/api/history?crop=Картофель").json()[0]
             self.assertEqual(saved["status"], "insufficient_data")
             self.assertNotIn("Скрытая болезнь", json.dumps(saved["result"], ensure_ascii=False))
         self.assertEqual(self.db.query(CheckHistory).first().result_json["human_explanation"], "Скрытая болезнь")
 
     def test_real_diagnosis_pipeline_distinguishes_weak_and_detailed_symptoms(self):
         with TestClient(app) as client:
-            base = {"growth_stage": "Цветение", "region": "Кемеровская область"}
+            base = {"crop": "Картофель", "growth_stage": "Цветение", "region": "Кемеровская область"}
             weak = client.post("/api/diagnose", json=dict(base, symptoms="Лист немного пожелтел, что делать?")).json()
             self.assertEqual(weak["status"], "insufficient_data")
             self.assertFalse(weak["probable_causes"])
@@ -165,7 +274,7 @@ class DatabaseTests(unittest.TestCase):
         with TestClient(app) as client:
             results = []
             for city, scenario in [("Сочи", "humid"), ("Краснодар", "hot_dry")]:
-                response = client.post("/api/diagnose", json={"region": city, "growth_stage": "Цветение",
+                response = client.post("/api/diagnose", json={"crop": "Картофель", "region": city, "growth_stage": "Цветение",
                     "symptoms": text, "weather_scenario": scenario})
                 self.assertEqual(response.status_code, 200)
                 actual = response.json()
@@ -181,7 +290,7 @@ class DatabaseTests(unittest.TestCase):
             self.assertEqual(results[0]["possible_factors"], results[1]["possible_factors"])
 
     def test_model_disagreement_does_not_artificially_cap_strong_description_at_64(self):
-        request = DiagnosisRequest(region="Сочи", growth_stage="Цветение",
+        request = DiagnosisRequest(crop="Картофель", region="Сочи", growth_stage="Цветение",
             symptoms="На листьях бурые расплывчатые пятна, с нижней стороны белый паутинистый налёт, пятна быстро увеличиваются.")
         triage = VisionTriageReport(is_plant_visible=True, object_type="лист", image_quality_score=100,
             healthy_confidence=.95, class_probabilities={"healthy": .95, "late_blight": .03, "alternaria": .02})
@@ -202,7 +311,7 @@ class DatabaseTests(unittest.TestCase):
                 ("potato_healthy.jpg", "healthy", None),
             ]:
                 with self.subTest(filename=filename), patch("urllib.request.urlopen", side_effect=AssertionError("Inference must be offline")), patch("httpx.Client.get", side_effect=AssertionError("Inference must be offline")):
-                    response = client.post("/api/diagnose", json={"region": "Сочи", "growth_stage": "Цветение",
+                    response = client.post("/api/diagnose", json={"crop": "Картофель", "region": "Сочи", "growth_stage": "Цветение",
                         "plant_part": "leaf", "image_base64": base64.b64encode((fixtures / filename).read_bytes()).decode()})
                     self.assertEqual(response.status_code, 200)
                     result = response.json()
@@ -223,7 +332,7 @@ class DatabaseTests(unittest.TestCase):
                 text_colour = (255, 255, 255) if background == 0 else (0, 0, 0)
                 cv2.putText(screenshot, "Browser screenshot", (35, 55), cv2.FONT_HERSHEY_SIMPLEX, .65, text_colour, 1)
                 _, binary = cv2.imencode(".png", screenshot)
-                req = DiagnosisRequest(region="Сочи", growth_stage="Цветение", plant_part="leaf",
+                req = DiagnosisRequest(crop="Картофель", region="Сочи", growth_stage="Цветение", plant_part="leaf",
                     image_base64=base64.b64encode(binary).decode())
                 with self.subTest(filename=filename, background=background):
                     triage = agent.analyze_photo(req)
@@ -239,7 +348,7 @@ class DatabaseTests(unittest.TestCase):
             else:
                 cv2.rectangle(image, (170, 40), (230, 360), (45, 145, 65), -1)
             _, encoded = cv2.imencode(".png", image)
-            request = DiagnosisRequest(region="Краснодар", growth_stage="Цветение", plant_part=organ,
+            request = DiagnosisRequest(crop="Картофель", region="Краснодар", growth_stage="Цветение", plant_part=organ,
                 image_base64=base64.b64encode(encoded).decode())
             with self.subTest(organ=organ), patch("app.diagnostics.vision.classify_leaf", side_effect=AssertionError("Leaf model must not see a stem/tuber")):
                 triage = agent.analyze_photo(request)
@@ -256,12 +365,12 @@ class DatabaseTests(unittest.TestCase):
 
     def test_api_needs_no_region_and_has_no_feedback_route(self):
         with TestClient(app) as client:
-            reply = client.post("/api/diagnose", json={"growth_stage": "Цветение"})
+            reply = client.post("/api/diagnose", json={"crop": "Картофель", "growth_stage": "Цветение"})
             self.assertEqual(reply.status_code, 200)
             self.assertNotIn("regional_context", reply.json())
             self.assertEqual(reply.json()["possible_factors"], [])
             self.assertEqual(client.post("/api/feedback", json={"check_id": 1, "is_helpful": True}).status_code, 404)
-            history = client.get("/api/history").json()[0]
+            history = client.get("/api/history?crop=Картофель").json()[0]
             self.assertNotIn("region", history)
             self.assertNotIn("feedback", history)
 
@@ -270,7 +379,7 @@ class DatabaseTests(unittest.TestCase):
         with TestClient(app) as client, patch("app.diagnostics.vision.classify_leaf", side_effect=AssertionError("Leaf model called for tuber")), patch("main.rag_service.retrieve", return_value=[]):
             for filename, expected in [("healthy_accepted.jpg", "healthy"), ("common_scab.jpg", "success"), ("blackleg.jpg", "insufficient_data")]:
                 with self.subTest(filename=filename):
-                    reply = client.post("/api/diagnose", json={"growth_stage": "Уборка и хранение", "plant_part": "tuber",
+                    reply = client.post("/api/diagnose", json={"crop": "Картофель", "growth_stage": "Уборка и хранение", "plant_part": "tuber",
                         "image_base64": base64.b64encode((fixture_dir/filename).read_bytes()).decode()})
                     self.assertEqual(reply.status_code, 200)
                     actual = reply.json()
@@ -285,7 +394,7 @@ class DatabaseTests(unittest.TestCase):
 
     def test_missing_tuber_model_cannot_fall_back_to_healthy_colour(self):
         fixture = Path(__file__).resolve().parent / "fixtures/tubers/healthy_accepted.jpg"
-        req = DiagnosisRequest(growth_stage="Уборка и хранение", plant_part="tuber",
+        req = DiagnosisRequest(crop="Картофель", growth_stage="Уборка и хранение", plant_part="tuber",
             image_base64=base64.b64encode(fixture.read_bytes()).decode())
         with patch("app.diagnostics.tuber_model.classify_tuber", side_effect=OSError("missing")), self.assertLogs("app.diagnostics.vision", level="ERROR"):
             agent = PotatoAdvisor()
@@ -303,7 +412,7 @@ class DatabaseTests(unittest.TestCase):
 
     def test_tuber_breakdown_is_a_general_rot_hypothesis_not_a_guessed_pathogen(self):
         agent = PotatoAdvisor()
-        request = DiagnosisRequest(region="Сочи", growth_stage="Уборка и хранение", plant_part="tuber",
+        request = DiagnosisRequest(crop="Картофель", region="Сочи", growth_stage="Уборка и хранение", plant_part="tuber",
             symptoms="Пятна чёрные, становится довольно рыхлым очень быстро. Скукоживается сил ьно")
         articles = self.rag.retrieve(self.db, request.crop, request.growth_stage, request.symptoms, 50)
         result = agent.assess(request, VisionTriageReport(object_type="клубень"), articles)
@@ -323,7 +432,7 @@ class DatabaseTests(unittest.TestCase):
         cv2.ellipse(image, (200, 200), (120, 150), 0, 0, 360, (105, 170, 205), -1)
         cv2.ellipse(image, (240, 200), (65, 110), 0, 0, 360, (120, 130, 150), -1)
         _, encoded = cv2.imencode(".png", image)
-        req = DiagnosisRequest(region="Сочи", growth_stage="Уборка и хранение", plant_part="tuber",
+        req = DiagnosisRequest(crop="Картофель", region="Сочи", growth_stage="Уборка и хранение", plant_part="tuber",
             image_base64=base64.b64encode(encoded).decode())
         agent = PotatoAdvisor()
         triage = agent.analyze_photo(req)
@@ -336,7 +445,7 @@ class DatabaseTests(unittest.TestCase):
 
     def test_missing_model_does_not_turn_into_a_diagnosis(self):
         fixture = Path(__file__).resolve().parent / "fixtures" / "potato_Late_blight.jpg"
-        req = DiagnosisRequest(region="Сочи", growth_stage="Цветение", plant_part="leaf",
+        req = DiagnosisRequest(crop="Картофель", region="Сочи", growth_stage="Цветение", plant_part="leaf",
             image_base64=base64.b64encode(fixture.read_bytes()).decode())
         with patch("app.diagnostics.vision.classify_leaf", side_effect=OSError("missing model")), self.assertLogs("app.diagnostics.vision", level="ERROR"):
             agent = PotatoAdvisor()
