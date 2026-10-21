@@ -1,0 +1,1700 @@
+[
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/167_CIMG3903.JPG",
+    "sha256": "935c93b1a01fb4b62c26647c2b105683807514bc5f71dc66a7cff25cec1f9826",
+    "group": "935c93b1a01fb4b62c26647c",
+    "source": "pretoria",
+    "actual_labels": [
+      "other_damage"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.5663343847401308,
+    "probabilities": {
+      "common_rust": 0.5663343847401308,
+      "curvularia_leaf_spot": 0.040552651730017965,
+      "gray_leaf_spot": 0.18107804304928943,
+      "healthy": 0.004683602080628011,
+      "maize_lethal_necrosis": 0.01882265927729658,
+      "maize_streak_virus": 0.18825914603797447,
+      "northern_leaf_blight": 0.0002695130846629306
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/183_CIMG3919_1-68-2.JPG",
+    "sha256": "df9d5a14b7fa1fcbb2442e5cb9225c838512ae7982f1655c01b3f05d55a9f64c",
+    "group": "df9d5a14b7fa1fcbb2442e5c",
+    "source": "pretoria",
+    "actual_labels": [
+      "gray_leaf_spot"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.4809073934793176,
+    "probabilities": {
+      "common_rust": 0.4809073934793176,
+      "curvularia_leaf_spot": 0.0010076367038091315,
+      "gray_leaf_spot": 0.4335254699712536,
+      "healthy": 3.228419120034149e-05,
+      "maize_lethal_necrosis": 0.08393097906465923,
+      "maize_streak_virus": 0.00043964283441689606,
+      "northern_leaf_blight": 0.00015659375534333433
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/198_CIMG3934_1-33-2.JPG",
+    "sha256": "be48010bcfec791588d77788c9e60ced28928e36e7fe0d496bd239961ff889f1",
+    "group": "be48010bcfec791588d77788",
+    "source": "pretoria",
+    "actual_labels": [
+      "gray_leaf_spot"
+    ],
+    "predicted": "gray_leaf_spot",
+    "confidence": 0.4632603580341004,
+    "probabilities": {
+      "common_rust": 0.21274994197345515,
+      "curvularia_leaf_spot": 0.011222024107958195,
+      "gray_leaf_spot": 0.4632603580341004,
+      "healthy": 0.15879084411535313,
+      "maize_lethal_necrosis": 0.1228190372474821,
+      "maize_streak_virus": 0.008579479843704147,
+      "northern_leaf_blight": 0.022578314677947107
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_DSC1711_maize_diverse-C-AC-DK-273.JPG",
+    "sha256": "8b97b42c108eb3d23d71e6a7659742e096ffb6d1184e22d611a3f2a3d0e68f77",
+    "group": "8b97b42c108eb3d23d71e6a7",
+    "source": "pretoria",
+    "actual_labels": [
+      "unknown_disease"
+    ],
+    "predicted": "gray_leaf_spot",
+    "confidence": 0.2978477300238139,
+    "probabilities": {
+      "common_rust": 0.03858608317042008,
+      "curvularia_leaf_spot": 0.19744705974739815,
+      "gray_leaf_spot": 0.2978477300238139,
+      "healthy": 0.15026537719148433,
+      "maize_lethal_necrosis": 0.03891715858195532,
+      "maize_streak_virus": 0.10606671349388672,
+      "northern_leaf_blight": 0.17086987779104146
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_DSC1763_maize_diverse-C-AC-DK-273.JPG",
+    "sha256": "7055d4203c208d1171329f163895a77be5c80c5a9295ec27f163a911ed6002db",
+    "group": "7055d4203c208d1171329f16",
+    "source": "pretoria",
+    "actual_labels": [
+      "healthy"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.9801318015054209,
+    "probabilities": {
+      "common_rust": 0.9801318015054209,
+      "curvularia_leaf_spot": 0.0004591442936372516,
+      "gray_leaf_spot": 0.0016302851326902912,
+      "healthy": 0.011998226897243986,
+      "maize_lethal_necrosis": 0.0037409847902542407,
+      "maize_streak_virus": 0.0011457284520941951,
+      "northern_leaf_blight": 0.0008938289286593162
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_DSC1798_maize_diverse-C-AC-DK-273.JPG",
+    "sha256": "faf3505ba8f7da66069270cd32b518f6c6358cf57654cabeeaa5a94c37b1a88e",
+    "group": "faf3505ba8f7da66069270cd",
+    "source": "pretoria",
+    "actual_labels": [
+      "gray_leaf_spot",
+      "other_damage"
+    ],
+    "predicted": "gray_leaf_spot",
+    "confidence": 0.8473686045769898,
+    "probabilities": {
+      "common_rust": 0.0009207063864153065,
+      "curvularia_leaf_spot": 4.085269088297019e-05,
+      "gray_leaf_spot": 0.8473686045769898,
+      "healthy": 0.14973630149300027,
+      "maize_lethal_necrosis": 0.00012105429161918633,
+      "maize_streak_virus": 0.0003391435925129217,
+      "northern_leaf_blight": 0.001473336968579484
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_DSC1992_maize_diverse-R-Pn-DK-28.JPG",
+    "sha256": "205e18f5e0f5271e3f99d3f227b5114d022a9649fbefc158ac7ae7e18fa0befa",
+    "group": "205e18f5e0f5271e3f99d3f2",
+    "source": "pretoria",
+    "actual_labels": [
+      "other_damage"
+    ],
+    "predicted": "healthy",
+    "confidence": 0.9532060722355743,
+    "probabilities": {
+      "common_rust": 0.04109319331222652,
+      "curvularia_leaf_spot": 2.4120035854824883e-05,
+      "gray_leaf_spot": 0.0003836718015158996,
+      "healthy": 0.9532060722355743,
+      "maize_lethal_necrosis": 0.0008771288877605711,
+      "maize_streak_virus": 9.098281816071153e-05,
+      "northern_leaf_blight": 0.0043248309089071076
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_DSC2008_maize_diverse-R-Pn-DK-28.JPG",
+    "sha256": "f362530024c69669045a81886b0a150ae55427bf71d9c061214220542d951d8e",
+    "group": "f362530024c69669045a8188",
+    "source": "pretoria",
+    "actual_labels": [
+      "unknown_disease"
+    ],
+    "predicted": "healthy",
+    "confidence": 0.5067052494035329,
+    "probabilities": {
+      "common_rust": 0.0012625725618590328,
+      "curvularia_leaf_spot": 0.0005043197030875526,
+      "gray_leaf_spot": 0.2662508459394252,
+      "healthy": 0.5067052494035329,
+      "maize_lethal_necrosis": 0.0003085948027808777,
+      "maize_streak_virus": 9.297938907252301e-05,
+      "northern_leaf_blight": 0.224875438200242
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_IMG_6283_maize_diverse JM-C-Ac.JPG",
+    "sha256": "972e471d79a3631de2ea33f6fb4e73660d13d175e1a2725aaef0cfb623e5920a",
+    "group": "972e471d79a3631de2ea33f6",
+    "source": "pretoria",
+    "actual_labels": [
+      "gray_leaf_spot"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.49968700215537815,
+    "probabilities": {
+      "common_rust": 0.49968700215537815,
+      "curvularia_leaf_spot": 0.14223928795891044,
+      "gray_leaf_spot": 0.25916849442110207,
+      "healthy": 0.00013120962994306442,
+      "maize_lethal_necrosis": 0.026171954794678615,
+      "maize_streak_virus": 0.040590361150686594,
+      "northern_leaf_blight": 0.03201168988930096
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_IMG_6302_maize_diverse JM-C-Ac.JPG",
+    "sha256": "95a1a58b0e978f9e18ffa9cd43632738304cc4cac023b51f4e8250528a700217",
+    "group": "95a1a58b0e978f9e18ffa9cd",
+    "source": "pretoria",
+    "actual_labels": [
+      "other_damage"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.4843864922649359,
+    "probabilities": {
+      "common_rust": 0.4843864922649359,
+      "curvularia_leaf_spot": 4.612807686924072e-05,
+      "gray_leaf_spot": 0.41500012779685724,
+      "healthy": 0.0038685611931239365,
+      "maize_lethal_necrosis": 0.0003455842394381991,
+      "maize_streak_virus": 0.000615020016283291,
+      "northern_leaf_blight": 0.09573808641249222
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_IMG_6441_maize_diverse JM-R-Pn.JPG",
+    "sha256": "61bdcd9d8e0bf7161983c036a1dbf8f38c27b6d4be9865f070bb0b982dce62a4",
+    "group": "61bdcd9d8e0bf7161983c036",
+    "source": "pretoria",
+    "actual_labels": [
+      "other_damage"
+    ],
+    "predicted": "northern_leaf_blight",
+    "confidence": 0.8797368492480777,
+    "probabilities": {
+      "common_rust": 0.06203498542618785,
+      "curvularia_leaf_spot": 5.4558855227330626e-05,
+      "gray_leaf_spot": 0.057531660683956605,
+      "healthy": 0.0005457277031581118,
+      "maize_lethal_necrosis": 6.015724250182105e-05,
+      "maize_streak_virus": 3.6060840890606594e-05,
+      "northern_leaf_blight": 0.8797368492480777
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_IMG_6465_maize_diverse JM-R-Pn.JPG",
+    "sha256": "6a4b268e9557a07ef74891713c87253cd4c96772c39bbd70f79d20a8807786d7",
+    "group": "6a4b268e9557a07ef7489171",
+    "source": "pretoria",
+    "actual_labels": [
+      "other_damage"
+    ],
+    "predicted": "gray_leaf_spot",
+    "confidence": 0.7048706511291308,
+    "probabilities": {
+      "common_rust": 0.2916021439699519,
+      "curvularia_leaf_spot": 0.00010809870968707978,
+      "gray_leaf_spot": 0.7048706511291308,
+      "healthy": 0.0015909412971744487,
+      "maize_lethal_necrosis": 2.843130176397779e-05,
+      "maize_streak_virus": 0.00010847878696160062,
+      "northern_leaf_blight": 0.001691254805330245
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_IMG_6538_maize_diverse JM-R-Pn.JPG",
+    "sha256": "582e4d8644991c0dfc877ea36f6c1f322b2f3e371f843086b4ab23e87d185a0e",
+    "group": "582e4d8644991c0dfc877ea3",
+    "source": "pretoria",
+    "actual_labels": [
+      "healthy"
+    ],
+    "predicted": "gray_leaf_spot",
+    "confidence": 0.6205553203049679,
+    "probabilities": {
+      "common_rust": 0.15544616051216403,
+      "curvularia_leaf_spot": 0.010701951847063667,
+      "gray_leaf_spot": 0.6205553203049679,
+      "healthy": 0.0013236238512024563,
+      "maize_lethal_necrosis": 0.0013410358994846642,
+      "maize_streak_virus": 0.0017240954814363879,
+      "northern_leaf_blight": 0.2089078121036809
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_IMG_6547_maize_diverse JM-R-Pn.JPG",
+    "sha256": "07bbac3c99fe32a5dc8da1d4cf9949c8f30828e7d987b837f2609f11a6234b3e",
+    "group": "07bbac3c99fe32a5dc8da1d4",
+    "source": "pretoria",
+    "actual_labels": [
+      "unknown_disease"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.5985608184685992,
+    "probabilities": {
+      "common_rust": 0.5985608184685992,
+      "curvularia_leaf_spot": 0.026140742979192232,
+      "gray_leaf_spot": 0.07645216696201704,
+      "healthy": 0.04850577695715844,
+      "maize_lethal_necrosis": 0.003253878935811354,
+      "maize_streak_virus": 0.009743536773480652,
+      "northern_leaf_blight": 0.23734307892374096
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_IMG_6571_maize_diverse JM-R-Pn.JPG",
+    "sha256": "58d66a03b3c20e6b6eddc543ebed415919315869d2180582508e387a504b1e17",
+    "group": "58d66a03b3c20e6b6eddc543",
+    "source": "pretoria",
+    "actual_labels": [
+      "healthy"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.915923052969986,
+    "probabilities": {
+      "common_rust": 0.915923052969986,
+      "curvularia_leaf_spot": 0.000734003871952013,
+      "gray_leaf_spot": 0.0013632223971540148,
+      "healthy": 0.0003565452693076286,
+      "maize_lethal_necrosis": 9.528405648370482e-06,
+      "maize_streak_virus": 1.4892687349567221e-05,
+      "northern_leaf_blight": 0.08159875439860242
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_IMG_6572_maize_diverse JM-R-Pn.JPG",
+    "sha256": "84ee81d2c176250dc06447dbc1ffa4c68a0678f8cabd31876dfb5f802892f78b",
+    "group": "84ee81d2c176250dc06447db",
+    "source": "pretoria",
+    "actual_labels": [
+      "unknown_disease"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.6714934016851974,
+    "probabilities": {
+      "common_rust": 0.6714934016851974,
+      "curvularia_leaf_spot": 0.005467840133345973,
+      "gray_leaf_spot": 0.011810510491503034,
+      "healthy": 0.1836565315747218,
+      "maize_lethal_necrosis": 0.0006864152575604529,
+      "maize_streak_virus": 0.0010917139193656429,
+      "northern_leaf_blight": 0.12579358693830564
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_IMG_6575_maize_diverse JM-R-Pn.JPG",
+    "sha256": "99c4d8dcdb3b4925b0087a249434b71b81a8d574e1b8db612d7c3df5e36009cd",
+    "group": "99c4d8dcdb3b4925b0087a24",
+    "source": "pretoria",
+    "actual_labels": [
+      "gray_leaf_spot",
+      "phaeosphaeria_leaf_spot"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.7694351296762306,
+    "probabilities": {
+      "common_rust": 0.7694351296762306,
+      "curvularia_leaf_spot": 0.021751826469909613,
+      "gray_leaf_spot": 0.06830421897860132,
+      "healthy": 0.09397402126626798,
+      "maize_lethal_necrosis": 0.0040156978604572215,
+      "maize_streak_virus": 0.0002939943533088161,
+      "northern_leaf_blight": 0.042225111395224446
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0003.JPG",
+    "sha256": "4a20fbe97669afeee49dbaaad835483e5e344de71c0e8e739e53133e3229d556",
+    "group": "4a20fbe97669afeee49dbaaa",
+    "source": "pretoria",
+    "actual_labels": [
+      "phaeosphaeria_leaf_spot"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.9659913062865609,
+    "probabilities": {
+      "common_rust": 0.9659913062865609,
+      "curvularia_leaf_spot": 0.0026696902697305696,
+      "gray_leaf_spot": 0.030572816506797353,
+      "healthy": 0.00014651141232824172,
+      "maize_lethal_necrosis": 2.0227370912548757e-05,
+      "maize_streak_virus": 0.00046833467492774373,
+      "northern_leaf_blight": 0.0001311134787426275
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0009.JPG",
+    "sha256": "965b746d1d04bf80722a6ac2817833bd2392351feefc5bd6673cc5de283630f2",
+    "group": "965b746d1d04bf80722a6ac2",
+    "source": "pretoria",
+    "actual_labels": [
+      "common_rust",
+      "phaeosphaeria_leaf_spot"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.6728898734853385,
+    "probabilities": {
+      "common_rust": 0.6728898734853385,
+      "curvularia_leaf_spot": 0.0024123871597129657,
+      "gray_leaf_spot": 0.31168029398801195,
+      "healthy": 0.0020772323506991386,
+      "maize_lethal_necrosis": 4.73036442725407e-06,
+      "maize_streak_virus": 0.0011024104331336096,
+      "northern_leaf_blight": 0.009833072218676586
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0019.JPG",
+    "sha256": "5d640737a6f58dd015c65f95b6a3e3d393f3d52f52a55d1ba77ec69c4b3247f8",
+    "group": "5d640737a6f58dd015c65f95",
+    "source": "pretoria",
+    "actual_labels": [
+      "healthy"
+    ],
+    "predicted": "healthy",
+    "confidence": 0.4144724050734928,
+    "probabilities": {
+      "common_rust": 0.29981618115058994,
+      "curvularia_leaf_spot": 0.17497532461709367,
+      "gray_leaf_spot": 0.020494856997216433,
+      "healthy": 0.4144724050734928,
+      "maize_lethal_necrosis": 0.043866193933785325,
+      "maize_streak_virus": 0.029939431581482687,
+      "northern_leaf_blight": 0.016435606646339238
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0057.JPG",
+    "sha256": "94829d6a0fe6ce1bce14d783cc49f292aa9eb6e5b4c96deccc603c9cda5c4c07",
+    "group": "94829d6a0fe6ce1bce14d783",
+    "source": "pretoria",
+    "actual_labels": [
+      "healthy"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.855875435801314,
+    "probabilities": {
+      "common_rust": 0.855875435801314,
+      "curvularia_leaf_spot": 0.0018279164796211134,
+      "gray_leaf_spot": 0.0075921282790596045,
+      "healthy": 0.12431152510639598,
+      "maize_lethal_necrosis": 0.004714333268711547,
+      "maize_streak_virus": 0.000493452237769723,
+      "northern_leaf_blight": 0.005185208827128087
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0083.JPG",
+    "sha256": "c01b6bbf9b2ab7e2c43533cc72bed5786267a5bb1523f835d72b08a1af701532",
+    "group": "c01b6bbf9b2ab7e2c43533cc",
+    "source": "pretoria",
+    "actual_labels": [
+      "healthy"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.6068717628840903,
+    "probabilities": {
+      "common_rust": 0.6068717628840903,
+      "curvularia_leaf_spot": 0.000369649678214998,
+      "gray_leaf_spot": 0.02750175840316235,
+      "healthy": 0.3608226378089443,
+      "maize_lethal_necrosis": 0.00039385206274025807,
+      "maize_streak_virus": 0.0007430259470421213,
+      "northern_leaf_blight": 0.003297313215805792
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0162.JPG",
+    "sha256": "4506351bb80b16322d36c76398c785b2cbbd5f182edb8abbabc4fd30ad9864bb",
+    "group": "4506351bb80b16322d36c763",
+    "source": "pretoria",
+    "actual_labels": [
+      "unknown_disease"
+    ],
+    "predicted": "gray_leaf_spot",
+    "confidence": 0.33278532662412597,
+    "probabilities": {
+      "common_rust": 0.3015812350291486,
+      "curvularia_leaf_spot": 0.11650719302414876,
+      "gray_leaf_spot": 0.33278532662412597,
+      "healthy": 0.2186759065871555,
+      "maize_lethal_necrosis": 0.008207247267661887,
+      "maize_streak_virus": 0.01161337473305434,
+      "northern_leaf_blight": 0.01062971673470508
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0181.JPG",
+    "sha256": "b3517246be7f6a74f2184d600c7dc035417710022b0075056104fab6e36a3213",
+    "group": "b3517246be7f6a74f2184d60",
+    "source": "pretoria",
+    "actual_labels": [
+      "northern_leaf_blight",
+      "phaeosphaeria_leaf_spot"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.6654836316687542,
+    "probabilities": {
+      "common_rust": 0.6654836316687542,
+      "curvularia_leaf_spot": 0.003791698212564146,
+      "gray_leaf_spot": 0.3222404917699605,
+      "healthy": 0.00011744860804493854,
+      "maize_lethal_necrosis": 1.6113248079755797e-05,
+      "maize_streak_virus": 0.001678875489040067,
+      "northern_leaf_blight": 0.006671741003556335
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0196.JPG",
+    "sha256": "0e683605e5246173bb5786d788f569febfd5ec77c2b221d3ca4029c87735868d",
+    "group": "0e683605e5246173bb5786d7",
+    "source": "pretoria",
+    "actual_labels": [
+      "northern_leaf_blight"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.9036109968518693,
+    "probabilities": {
+      "common_rust": 0.9036109968518693,
+      "curvularia_leaf_spot": 0.0007743406140379093,
+      "gray_leaf_spot": 0.019187565457672834,
+      "healthy": 0.0024771605769082013,
+      "maize_lethal_necrosis": 0.0005189841926451374,
+      "maize_streak_virus": 4.611629757993812e-05,
+      "northern_leaf_blight": 0.07338483600928683
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0208.JPG",
+    "sha256": "59c9f672141c01fc522d2c4a3e273cdce92b5e8ad2eec912ec973f0b25b8eb8e",
+    "group": "59c9f672141c01fc522d2c4a",
+    "source": "pretoria",
+    "actual_labels": [
+      "southern_rust"
+    ],
+    "predicted": "healthy",
+    "confidence": 0.9139601715294156,
+    "probabilities": {
+      "common_rust": 0.04527793308339165,
+      "curvularia_leaf_spot": 0.004351685457090728,
+      "gray_leaf_spot": 0.013428549388656544,
+      "healthy": 0.9139601715294156,
+      "maize_lethal_necrosis": 0.003437045354011076,
+      "maize_streak_virus": 0.003380412102891185,
+      "northern_leaf_blight": 0.01616420308454329
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0215.JPG",
+    "sha256": "8b8ca7375d0997312d4237352b87790d905d1f1feea8478b2e6b4acff2938ba2",
+    "group": "8b8ca7375d0997312d423735",
+    "source": "pretoria",
+    "actual_labels": [
+      "common_rust"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.9801698905506977,
+    "probabilities": {
+      "common_rust": 0.9801698905506977,
+      "curvularia_leaf_spot": 0.001049153634402066,
+      "gray_leaf_spot": 0.007534221947594795,
+      "healthy": 0.00614187610023398,
+      "maize_lethal_necrosis": 0.0011271471404569282,
+      "maize_streak_virus": 0.0003502810356140556,
+      "northern_leaf_blight": 0.003627429591000495
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0231.JPG",
+    "sha256": "0401a434d225689033aea9adf576e9985fd3e6d79f77d944bd50a69a6ca6e3b9",
+    "group": "0401a434d225689033aea9ad",
+    "source": "pretoria",
+    "actual_labels": [
+      "southern_rust"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.9801401441683498,
+    "probabilities": {
+      "common_rust": 0.9801401441683498,
+      "curvularia_leaf_spot": 0.00016455970604616041,
+      "gray_leaf_spot": 0.005330907416088465,
+      "healthy": 0.0008666791047802924,
+      "maize_lethal_necrosis": 0.00020848715061059047,
+      "maize_streak_virus": 0.004884657808600248,
+      "northern_leaf_blight": 0.008404564645524677
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0232.JPG",
+    "sha256": "64c423351b7d87c5fa98f5bd548817d25d5e3d6db139a8cd1590bc34645a34fc",
+    "group": "64c423351b7d87c5fa98f5bd",
+    "source": "pretoria",
+    "actual_labels": [
+      "southern_rust"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.9418696299268274,
+    "probabilities": {
+      "common_rust": 0.9418696299268274,
+      "curvularia_leaf_spot": 0.0005190355323458772,
+      "gray_leaf_spot": 0.00047387733128510676,
+      "healthy": 0.02478128808075679,
+      "maize_lethal_necrosis": 0.0006683769278316089,
+      "maize_streak_virus": 0.021011513011356373,
+      "northern_leaf_blight": 0.010676279189596656
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0256.JPG",
+    "sha256": "54ec167407d629f410c5d8811e3f44843ca727dae10cb867f83ccfbe97c92f40",
+    "group": "54ec167407d629f410c5d881",
+    "source": "pretoria",
+    "actual_labels": [
+      "southern_rust"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.8580650641907531,
+    "probabilities": {
+      "common_rust": 0.8580650641907531,
+      "curvularia_leaf_spot": 0.003200085120998243,
+      "gray_leaf_spot": 0.052993324603292036,
+      "healthy": 0.0356487218847224,
+      "maize_lethal_necrosis": 0.0019314404351656966,
+      "maize_streak_virus": 0.00040847362988422146,
+      "northern_leaf_blight": 0.04775289013518438
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0274.JPG",
+    "sha256": "3379acfec99f6180f3e1044d37a33b9e7b66e6e90a1bc98b264f9fb8942d69e8",
+    "group": "3379acfec99f6180f3e1044d",
+    "source": "pretoria",
+    "actual_labels": [
+      "northern_leaf_blight"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.7449649402595377,
+    "probabilities": {
+      "common_rust": 0.7449649402595377,
+      "curvularia_leaf_spot": 0.013634781390403333,
+      "gray_leaf_spot": 0.21339788140155025,
+      "healthy": 0.00438430969561419,
+      "maize_lethal_necrosis": 0.0017252378003539588,
+      "maize_streak_virus": 0.000412954384556909,
+      "northern_leaf_blight": 0.021479895067983652
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0283.JPG",
+    "sha256": "2b1fa39d1161793cf3d80821611dcb4df81eb796ccdae62c5b8988c656d696ed",
+    "group": "2b1fa39d1161793cf3d80821",
+    "source": "pretoria",
+    "actual_labels": [
+      "unknown_disease"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.9915266870088405,
+    "probabilities": {
+      "common_rust": 0.9915266870088405,
+      "curvularia_leaf_spot": 0.0007399421290401108,
+      "gray_leaf_spot": 0.00015354357616462568,
+      "healthy": 0.00013098798329450216,
+      "maize_lethal_necrosis": 4.172653150659122e-05,
+      "maize_streak_virus": 0.007405917076698008,
+      "northern_leaf_blight": 1.1956944555904922e-06
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0301.JPG",
+    "sha256": "1599152dfcdc92b43821b6995172a8a5a5ca8c6f604cfe90f357651e0ca1b2d0",
+    "group": "1599152dfcdc92b43821b699",
+    "source": "pretoria",
+    "actual_labels": [
+      "other_damage"
+    ],
+    "predicted": "healthy",
+    "confidence": 0.9479710857655047,
+    "probabilities": {
+      "common_rust": 0.038873154099888466,
+      "curvularia_leaf_spot": 0.0005384728716852127,
+      "gray_leaf_spot": 0.0014833823300493508,
+      "healthy": 0.9479710857655047,
+      "maize_lethal_necrosis": 0.001270168724416558,
+      "maize_streak_virus": 0.008835992812356482,
+      "northern_leaf_blight": 0.0010277433960993428
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/20190313_111315.jpg",
+    "sha256": "333b40218409891b6ca92e8980a1865986ff3a3c6390b45e74e8aa3defb08227",
+    "group": "333b40218409891b6ca92e89",
+    "source": "pretoria",
+    "actual_labels": [
+      "healthy"
+    ],
+    "predicted": "healthy",
+    "confidence": 0.6423948119771193,
+    "probabilities": {
+      "common_rust": 0.32758583765910515,
+      "curvularia_leaf_spot": 0.005923391045766128,
+      "gray_leaf_spot": 0.0002928020153306157,
+      "healthy": 0.6423948119771193,
+      "maize_lethal_necrosis": 5.278587965566778e-05,
+      "maize_streak_virus": 0.00033262636198979316,
+      "northern_leaf_blight": 0.023417745061033154
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/20190313_111743.jpg",
+    "sha256": "8161a3a859f3fa241b53da6d8188cfd879a508221810fcfb4549ac67ad9f7da1",
+    "group": "8161a3a859f3fa241b53da6d",
+    "source": "pretoria",
+    "actual_labels": [
+      "phaeosphaeria_leaf_spot"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.830468131367434,
+    "probabilities": {
+      "common_rust": 0.830468131367434,
+      "curvularia_leaf_spot": 0.13598821195734273,
+      "gray_leaf_spot": 0.0018532476870283465,
+      "healthy": 0.01303109645258283,
+      "maize_lethal_necrosis": 0.0014478327664216024,
+      "maize_streak_virus": 0.0019039651470702434,
+      "northern_leaf_blight": 0.015307514622120197
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/20190313_111842.jpg",
+    "sha256": "a8e400b120544e98954fa1087e7c1f3ec1b1afc36df07b54e52afbe5332e982f",
+    "group": "a8e400b120544e98954fa108",
+    "source": "pretoria",
+    "actual_labels": [
+      "phaeosphaeria_leaf_spot"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.9812057895171866,
+    "probabilities": {
+      "common_rust": 0.9812057895171866,
+      "curvularia_leaf_spot": 0.013058455753333465,
+      "gray_leaf_spot": 0.000804294198532199,
+      "healthy": 0.00013621131687986394,
+      "maize_lethal_necrosis": 5.07246611251002e-05,
+      "maize_streak_virus": 0.0046603789332419305,
+      "northern_leaf_blight": 8.414561970089172e-05
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/20190313_113105.jpg",
+    "sha256": "2bfbe02d6563fcfb6ff8514459dea0a6121b6958eba9dbb501dfeabdbe346de7",
+    "group": "2bfbe02d6563fcfb6ff85144",
+    "source": "pretoria",
+    "actual_labels": [
+      "northern_leaf_blight"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.9155501440624179,
+    "probabilities": {
+      "common_rust": 0.9155501440624179,
+      "curvularia_leaf_spot": 0.0052863601945721955,
+      "gray_leaf_spot": 0.059037567228030725,
+      "healthy": 0.0016618306225370855,
+      "maize_lethal_necrosis": 0.0006088368289685177,
+      "maize_streak_virus": 0.0001461414266796864,
+      "northern_leaf_blight": 0.01770911963679376
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/20190313_113414.jpg",
+    "sha256": "ffb2df13eacc916d46d36aae0d09a9037527e85de6b195ab1b807e63ca3e3b69",
+    "group": "ffb2df13eacc916d46d36aae",
+    "source": "pretoria",
+    "actual_labels": [
+      "common_rust"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.6046654745333567,
+    "probabilities": {
+      "common_rust": 0.6046654745333567,
+      "curvularia_leaf_spot": 0.020538961383659238,
+      "gray_leaf_spot": 3.1754699151691126e-05,
+      "healthy": 0.3620156791027062,
+      "maize_lethal_necrosis": 0.0034301330824362056,
+      "maize_streak_virus": 0.0004928584141321724,
+      "northern_leaf_blight": 0.008825138784557627
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/20190313_115710.jpg",
+    "sha256": "e0cec8c43b29d0297cd0260c4f462b4de14ca684ee71eadcba29463bd69468e4",
+    "group": "e0cec8c43b29d0297cd0260c",
+    "source": "pretoria",
+    "actual_labels": [
+      "gray_leaf_spot"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.6643153478118742,
+    "probabilities": {
+      "common_rust": 0.6643153478118742,
+      "curvularia_leaf_spot": 0.03506389409676232,
+      "gray_leaf_spot": 0.2252091156794599,
+      "healthy": 4.6539459368337724e-05,
+      "maize_lethal_necrosis": 0.06533580993835288,
+      "maize_streak_virus": 0.008404026130181978,
+      "northern_leaf_blight": 0.0016252668840004189
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/20190313_120323.jpg",
+    "sha256": "97ddd309c10474c5d23efaae1522a938ada90ffe8cf4be33dffb6494abf77d6f",
+    "group": "97ddd309c10474c5d23efaae",
+    "source": "pretoria",
+    "actual_labels": [
+      "healthy"
+    ],
+    "predicted": "curvularia_leaf_spot",
+    "confidence": 0.5685473557854482,
+    "probabilities": {
+      "common_rust": 0.14489011229063506,
+      "curvularia_leaf_spot": 0.5685473557854482,
+      "gray_leaf_spot": 0.07561173827710613,
+      "healthy": 0.11087337702325588,
+      "maize_lethal_necrosis": 0.041544034416846,
+      "maize_streak_virus": 0.009189094289656433,
+      "northern_leaf_blight": 0.04934428791705231
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/20190313_120606.jpg",
+    "sha256": "e48ca4151fd7860d7aa7501cc3b778e8b9fffbc3f41e709b01fec7975b875d9d",
+    "group": "e48ca4151fd7860d7aa7501c",
+    "source": "pretoria",
+    "actual_labels": [
+      "northern_leaf_blight"
+    ],
+    "predicted": "northern_leaf_blight",
+    "confidence": 0.8128779542152982,
+    "probabilities": {
+      "common_rust": 0.045782675139376554,
+      "curvularia_leaf_spot": 0.0252142375910093,
+      "gray_leaf_spot": 0.01120629027413269,
+      "healthy": 0.08922442936806245,
+      "maize_lethal_necrosis": 0.012025047021571506,
+      "maize_streak_virus": 0.003669366390549243,
+      "northern_leaf_blight": 0.8128779542152982
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/20190313_142824.jpg",
+    "sha256": "e9ba3e6524d9ea09438aac7b88e0329ca23f9cb20f0045a009568d5cdbad98ba",
+    "group": "e9ba3e6524d9ea09438aac7b",
+    "source": "pretoria",
+    "actual_labels": [
+      "southern_rust"
+    ],
+    "predicted": "healthy",
+    "confidence": 0.624741835699546,
+    "probabilities": {
+      "common_rust": 0.35697856383971727,
+      "curvularia_leaf_spot": 0.008369496513343061,
+      "gray_leaf_spot": 2.5894209878161315e-05,
+      "healthy": 0.624741835699546,
+      "maize_lethal_necrosis": 0.0006629240784772523,
+      "maize_streak_virus": 0.008710843096998,
+      "northern_leaf_blight": 0.0005104425620402228
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/20190313_142834.jpg",
+    "sha256": "ca3e080cb3444f35fbe5a248fd76ee01df002d73e15007d1207fbb50159b8c7c",
+    "group": "ca3e080cb3444f35fbe5a248",
+    "source": "pretoria",
+    "actual_labels": [
+      "southern_rust"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.8644677426658753,
+    "probabilities": {
+      "common_rust": 0.8644677426658753,
+      "curvularia_leaf_spot": 0.03442327788483855,
+      "gray_leaf_spot": 0.0014783486707380638,
+      "healthy": 0.06313114081290923,
+      "maize_lethal_necrosis": 0.007574663794287452,
+      "maize_streak_virus": 0.009694863976961713,
+      "northern_leaf_blight": 0.019229962194389504
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/20190313_143628.jpg",
+    "sha256": "7020f516849ab97d6cf21b5c8324814359bbbb73c177ed9d042e8e298a7ae533",
+    "group": "7020f516849ab97d6cf21b5c",
+    "source": "pretoria",
+    "actual_labels": [
+      "northern_leaf_blight",
+      "phaeosphaeria_leaf_spot"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.49740349380790405,
+    "probabilities": {
+      "common_rust": 0.49740349380790405,
+      "curvularia_leaf_spot": 0.003584063099788008,
+      "gray_leaf_spot": 0.005064594526084112,
+      "healthy": 2.760592584823261e-05,
+      "maize_lethal_necrosis": 0.00034231000795904333,
+      "maize_streak_virus": 0.00010112880232236401,
+      "northern_leaf_blight": 0.4934768038300942
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/20190313_145937.jpg",
+    "sha256": "1a6975500592279b01ce45d2681661b96705e841782b16f962115687ff9f9239",
+    "group": "1a6975500592279b01ce45d2",
+    "source": "pretoria",
+    "actual_labels": [
+      "other_damage"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.5717836650695004,
+    "probabilities": {
+      "common_rust": 0.5717836650695004,
+      "curvularia_leaf_spot": 0.004374708673469585,
+      "gray_leaf_spot": 0.03069371676142002,
+      "healthy": 0.0011695890096524797,
+      "maize_lethal_necrosis": 0.0018566664214043611,
+      "maize_streak_virus": 0.0004621062463858174,
+      "northern_leaf_blight": 0.3896595478181674
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/20200309_091144.jpg",
+    "sha256": "54a2c6b19beccd3842b7be890b728bb1a542aefd40a9a0519302279bbf9d8fb5",
+    "group": "54a2c6b19beccd3842b7be89",
+    "source": "pretoria",
+    "actual_labels": [
+      "unknown_disease"
+    ],
+    "predicted": "healthy",
+    "confidence": 0.6534673648465393,
+    "probabilities": {
+      "common_rust": 0.14411357141208833,
+      "curvularia_leaf_spot": 0.14926139332997287,
+      "gray_leaf_spot": 0.0013048823316710331,
+      "healthy": 0.6534673648465393,
+      "maize_lethal_necrosis": 0.0034980897521043083,
+      "maize_streak_virus": 0.006748413618704297,
+      "northern_leaf_blight": 0.0416062847089199
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/20200309_091330.jpg",
+    "sha256": "7837c147b1443cece5b1fb9e2c5d0ac07fea5cf99abff1546e546f6027c1dacb",
+    "group": "7837c147b1443cece5b1fb9e",
+    "source": "pretoria",
+    "actual_labels": [
+      "gray_leaf_spot",
+      "northern_leaf_blight"
+    ],
+    "predicted": "northern_leaf_blight",
+    "confidence": 0.43451893477218545,
+    "probabilities": {
+      "common_rust": 0.2227956130832506,
+      "curvularia_leaf_spot": 0.016994861728907865,
+      "gray_leaf_spot": 0.280934174221905,
+      "healthy": 0.024502353880567908,
+      "maize_lethal_necrosis": 0.016160726310833137,
+      "maize_streak_virus": 0.00409333600235001,
+      "northern_leaf_blight": 0.43451893477218545
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/20200309_091421.jpg",
+    "sha256": "8c8b4dbee550dc5eb6ec09fd7a65d16df123e41c1997b1b28b64febf94017fdf",
+    "group": "8c8b4dbee550dc5eb6ec09fd",
+    "source": "pretoria",
+    "actual_labels": [
+      "northern_leaf_blight",
+      "phaeosphaeria_leaf_spot"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.492978852492219,
+    "probabilities": {
+      "common_rust": 0.492978852492219,
+      "curvularia_leaf_spot": 0.00614847966606247,
+      "gray_leaf_spot": 0.007794366400651939,
+      "healthy": 0.20748838446813267,
+      "maize_lethal_necrosis": 0.0906395727589983,
+      "maize_streak_virus": 0.004627110280704844,
+      "northern_leaf_blight": 0.1903232339332307
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/20200309_092134.jpg",
+    "sha256": "a76cd18b8a8f576928cf4880fd7fc737ff341faf05502f9df87040f15015593c",
+    "group": "a76cd18b8a8f576928cf4880",
+    "source": "pretoria",
+    "actual_labels": [
+      "unknown_disease"
+    ],
+    "predicted": "healthy",
+    "confidence": 0.798903525509506,
+    "probabilities": {
+      "common_rust": 0.10594061204144524,
+      "curvularia_leaf_spot": 0.0790520079468099,
+      "gray_leaf_spot": 0.0031459793173505587,
+      "healthy": 0.798903525509506,
+      "maize_lethal_necrosis": 0.0012988671912381835,
+      "maize_streak_virus": 0.0024117403319022556,
+      "northern_leaf_blight": 0.009247267661747816
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/20200309_101916.jpg",
+    "sha256": "d5fa4b0894d0b010a0984bdae8385f0b15fb5222f06d76fbf4ea7013c05d3067",
+    "group": "d5fa4b0894d0b010a0984bda",
+    "source": "pretoria",
+    "actual_labels": [
+      "northern_leaf_blight"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.5286537564366454,
+    "probabilities": {
+      "common_rust": 0.5286537564366454,
+      "curvularia_leaf_spot": 0.18475889903047088,
+      "gray_leaf_spot": 0.07645717307771428,
+      "healthy": 0.022466236497726205,
+      "maize_lethal_necrosis": 0.009119980904675213,
+      "maize_streak_virus": 0.07290281266563758,
+      "northern_leaf_blight": 0.10564114138713042
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/20200309_102123.jpg",
+    "sha256": "9b1076771218ed6d369bc6e7ee865464c3bff3c3e8f621395c16912e22f06863",
+    "group": "9b1076771218ed6d369bc6e7",
+    "source": "pretoria",
+    "actual_labels": [
+      "northern_leaf_blight"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.70016011924942,
+    "probabilities": {
+      "common_rust": 0.70016011924942,
+      "curvularia_leaf_spot": 0.1842260320173345,
+      "gray_leaf_spot": 0.07074520963416142,
+      "healthy": 0.004503976412192709,
+      "maize_lethal_necrosis": 0.0018942118892338602,
+      "maize_streak_virus": 0.007526222846461786,
+      "northern_leaf_blight": 0.030944227951195783
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/20200309_103343.jpg",
+    "sha256": "807f7c50bb3e65f685f9df4a29ab8910e206236522d571a421dcf690b3d63c9c",
+    "group": "807f7c50bb3e65f685f9df4a",
+    "source": "pretoria",
+    "actual_labels": [
+      "phaeosphaeria_leaf_spot"
+    ],
+    "predicted": "northern_leaf_blight",
+    "confidence": 0.34166596437554275,
+    "probabilities": {
+      "common_rust": 0.1742665158057848,
+      "curvularia_leaf_spot": 0.06780864527342272,
+      "gray_leaf_spot": 0.04777449176473697,
+      "healthy": 0.3328941586476979,
+      "maize_lethal_necrosis": 0.031869690285212346,
+      "maize_streak_virus": 0.0037205338476023558,
+      "northern_leaf_blight": 0.34166596437554275
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/78_CIMG3813_1-381-1.JPG",
+    "sha256": "02f5458688bf6df33c40fcadfdf7f47f41e192d9fb9ed44ab0e9ca09fc62e965",
+    "group": "02f5458688bf6df33c40fcad",
+    "source": "pretoria",
+    "actual_labels": [
+      "gray_leaf_spot"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.954845069577834,
+    "probabilities": {
+      "common_rust": 0.954845069577834,
+      "curvularia_leaf_spot": 0.006623859978287925,
+      "gray_leaf_spot": 0.011611974881410721,
+      "healthy": 0.00801937127428961,
+      "maize_lethal_necrosis": 0.008171800321663723,
+      "maize_streak_virus": 0.010219852375675331,
+      "northern_leaf_blight": 0.0005080715908386067
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/85_CIMG3820_1-165-1.JPG",
+    "sha256": "80d3b0da5fb06d9c9fcd440e0e5dab719e93dc573880ceae201240f256af9080",
+    "group": "80d3b0da5fb06d9c9fcd440e",
+    "source": "pretoria",
+    "actual_labels": [
+      "gray_leaf_spot"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.8930038030724579,
+    "probabilities": {
+      "common_rust": 0.8930038030724579,
+      "curvularia_leaf_spot": 0.003133494678892618,
+      "gray_leaf_spot": 0.05544805537567616,
+      "healthy": 0.0006386750431795575,
+      "maize_lethal_necrosis": 0.031482422845901956,
+      "maize_streak_virus": 0.016239806807170017,
+      "northern_leaf_blight": 5.374217672201857e-05
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/93_CIMG3828_1-314-2.JPG",
+    "sha256": "d545dbd0232bf96a74c96825dafffc7300e04878d64927927faef9e1495151fb",
+    "group": "d545dbd0232bf96a74c96825",
+    "source": "pretoria",
+    "actual_labels": [
+      "gray_leaf_spot"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.822946917764044,
+    "probabilities": {
+      "common_rust": 0.822946917764044,
+      "curvularia_leaf_spot": 0.016834948897101475,
+      "gray_leaf_spot": 0.07511295608467985,
+      "healthy": 0.039199351980410295,
+      "maize_lethal_necrosis": 0.040216489386259754,
+      "maize_streak_virus": 0.0014768333184505135,
+      "northern_leaf_blight": 0.004212502569054036
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190227_112811.jpg",
+    "sha256": "b792cf056cce5bbfc3e7fd4eac9c63a096c64de2e99a1dcb3ff1d62422730af4",
+    "group": "b792cf056cce5bbfc3e7fd4e",
+    "source": "pretoria",
+    "actual_labels": [
+      "other_damage",
+      "phaeosphaeria_leaf_spot"
+    ],
+    "predicted": "gray_leaf_spot",
+    "confidence": 0.7632941649129179,
+    "probabilities": {
+      "common_rust": 0.15695977629999375,
+      "curvularia_leaf_spot": 0.01175725871558342,
+      "gray_leaf_spot": 0.7632941649129179,
+      "healthy": 0.0033056894383810425,
+      "maize_lethal_necrosis": 0.004475888912243949,
+      "maize_streak_virus": 0.04597170009070382,
+      "northern_leaf_blight": 0.014235521630176263
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190227_113101.jpg",
+    "sha256": "82be5c34431f078e3a9a89b0bad582caf7ae17e33e97e20a962aafdc839cd36e",
+    "group": "82be5c34431f078e3a9a89b0",
+    "source": "pretoria",
+    "actual_labels": [
+      "northern_leaf_blight",
+      "southern_rust"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.984071279303098,
+    "probabilities": {
+      "common_rust": 0.984071279303098,
+      "curvularia_leaf_spot": 0.0008448732953329464,
+      "gray_leaf_spot": 0.011179525242583786,
+      "healthy": 0.0003323076901875398,
+      "maize_lethal_necrosis": 4.4720422930061976e-05,
+      "maize_streak_virus": 0.00027082393756279244,
+      "northern_leaf_blight": 0.0032564701083047814
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190227_113113.jpg",
+    "sha256": "cf85897140b24ac6c288346057d8a67950663c0533cdd210a67e1a1327c8a4bc",
+    "group": "cf85897140b24ac6c2883460",
+    "source": "pretoria",
+    "actual_labels": [
+      "gray_leaf_spot",
+      "northern_leaf_blight",
+      "phaeosphaeria_leaf_spot"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.6525342824579166,
+    "probabilities": {
+      "common_rust": 0.6525342824579166,
+      "curvularia_leaf_spot": 0.022269774220746903,
+      "gray_leaf_spot": 0.12082220100896557,
+      "healthy": 0.0008542887910768151,
+      "maize_lethal_necrosis": 0.0021668474326045437,
+      "maize_streak_virus": 0.001346386123079546,
+      "northern_leaf_blight": 0.20000621996561008
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_075333.jpg",
+    "sha256": "ea5db259115dc2729e506739436496a29838549eb121a556c0b78ba9d2b0264b",
+    "group": "ea5db259115dc2729e506739",
+    "source": "pretoria",
+    "actual_labels": [
+      "phaeosphaeria_leaf_spot"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.9491028731776955,
+    "probabilities": {
+      "common_rust": 0.9491028731776955,
+      "curvularia_leaf_spot": 0.0005263325555004943,
+      "gray_leaf_spot": 0.006394343257436241,
+      "healthy": 0.00040623575602943097,
+      "maize_lethal_necrosis": 0.0008532509219993376,
+      "maize_streak_virus": 0.0031926561575491078,
+      "northern_leaf_blight": 0.03952430817378992
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_080643.jpg",
+    "sha256": "5987c2660038e1c3f7dc72ad1d684eb074152be08e2150272fa8ce5f6d297c7a",
+    "group": "5987c2660038e1c3f7dc72ad",
+    "source": "pretoria",
+    "actual_labels": [
+      "common_rust"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.8731965541677666,
+    "probabilities": {
+      "common_rust": 0.8731965541677666,
+      "curvularia_leaf_spot": 0.00028210925505642645,
+      "gray_leaf_spot": 0.1256153262465832,
+      "healthy": 5.985641243735049e-05,
+      "maize_lethal_necrosis": 4.969852234423605e-05,
+      "maize_streak_virus": 2.7507160572603448e-05,
+      "northern_leaf_blight": 0.000768948235239656
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_081245.jpg",
+    "sha256": "f127d0453670c00c324fd2252a2c6bbfd44a5775ba37d0f3a990e82851b77da5",
+    "group": "f127d0453670c00c324fd225",
+    "source": "pretoria",
+    "actual_labels": [
+      "southern_rust"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.8404560325625989,
+    "probabilities": {
+      "common_rust": 0.8404560325625989,
+      "curvularia_leaf_spot": 2.1244832227411898e-05,
+      "gray_leaf_spot": 0.00013699507746833616,
+      "healthy": 0.003035385796561432,
+      "maize_lethal_necrosis": 0.0019672915738256397,
+      "maize_streak_virus": 0.00016347344748233412,
+      "northern_leaf_blight": 0.15421957670983596
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_081729.jpg",
+    "sha256": "e7e24806c5e5c74932ddca332a87dd5a3fc0ab44c87818207ec9ada4fb594c98",
+    "group": "e7e24806c5e5c74932ddca33",
+    "source": "pretoria",
+    "actual_labels": [
+      "northern_leaf_blight",
+      "phaeosphaeria_leaf_spot"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.9612770179772445,
+    "probabilities": {
+      "common_rust": 0.9612770179772445,
+      "curvularia_leaf_spot": 1.650689805708944e-05,
+      "gray_leaf_spot": 0.027397403944854296,
+      "healthy": 7.792395614742091e-07,
+      "maize_lethal_necrosis": 0.0001230851162243642,
+      "maize_streak_virus": 0.00011173598800681842,
+      "northern_leaf_blight": 0.0110734708360511
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_083337.jpg",
+    "sha256": "968e4f1e0f652eb1ceda00b1156a5c6beccb91366a008df6599082da2d41a58e",
+    "group": "968e4f1e0f652eb1ceda00b1",
+    "source": "pretoria",
+    "actual_labels": [
+      "northern_leaf_blight",
+      "phaeosphaeria_leaf_spot"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.6551664159676326,
+    "probabilities": {
+      "common_rust": 0.6551664159676326,
+      "curvularia_leaf_spot": 0.003469936369263845,
+      "gray_leaf_spot": 0.06936058582307629,
+      "healthy": 0.011345546662908226,
+      "maize_lethal_necrosis": 0.0003103199298906662,
+      "maize_streak_virus": 0.01692909984667204,
+      "northern_leaf_blight": 0.24341809540055642
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_085358.jpg",
+    "sha256": "c125e561af0c59bd4e4422061364019da1b561f82bbcc0bb1c0a2d7b805993c0",
+    "group": "c125e561af0c59bd4e442206",
+    "source": "pretoria",
+    "actual_labels": [
+      "common_rust"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.9791494866568908,
+    "probabilities": {
+      "common_rust": 0.9791494866568908,
+      "curvularia_leaf_spot": 0.0005539344627102916,
+      "gray_leaf_spot": 0.016587220722946005,
+      "healthy": 0.0005344550422764124,
+      "maize_lethal_necrosis": 0.00029245490106127967,
+      "maize_streak_virus": 0.00036456111897378683,
+      "northern_leaf_blight": 0.0025178870951413856
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_085854.jpg",
+    "sha256": "a0a92ce0f719e158b1ee307f921108a583766832de84f7ec7d7f1ec52f5b69b1",
+    "group": "a0a92ce0f719e158b1ee307f",
+    "source": "pretoria",
+    "actual_labels": [
+      "common_rust"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.9366440108071236,
+    "probabilities": {
+      "common_rust": 0.9366440108071236,
+      "curvularia_leaf_spot": 0.0022072297374762196,
+      "gray_leaf_spot": 0.0532373590996752,
+      "healthy": 0.000125181761412968,
+      "maize_lethal_necrosis": 0.0030370699360188834,
+      "maize_streak_virus": 0.0006140739486980074,
+      "northern_leaf_blight": 0.00413507470959512
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_090225.jpg",
+    "sha256": "401c60506b726ed4ce2d8e663f4e80e65750a92f30b38c3b5c1531b132cc84ac",
+    "group": "401c60506b726ed4ce2d8e66",
+    "source": "pretoria",
+    "actual_labels": [
+      "common_rust"
+    ],
+    "predicted": "gray_leaf_spot",
+    "confidence": 0.5692934146422096,
+    "probabilities": {
+      "common_rust": 0.25260552054514385,
+      "curvularia_leaf_spot": 0.13871910371670318,
+      "gray_leaf_spot": 0.5692934146422096,
+      "healthy": 0.006442824324257081,
+      "maize_lethal_necrosis": 0.00038339988761300516,
+      "maize_streak_virus": 0.016906399239689375,
+      "northern_leaf_blight": 0.015649337644383858
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_090315.jpg",
+    "sha256": "159055e7265add56c1536babe89c190426f90828e11e1157fb926e564d612132",
+    "group": "159055e7265add56c1536bab",
+    "source": "pretoria",
+    "actual_labels": [
+      "northern_leaf_blight"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.7838318017061907,
+    "probabilities": {
+      "common_rust": 0.7838318017061907,
+      "curvularia_leaf_spot": 0.00013771415811677324,
+      "gray_leaf_spot": 0.00438028914385241,
+      "healthy": 0.1317859709362777,
+      "maize_lethal_necrosis": 0.00013212260927866252,
+      "maize_streak_virus": 0.0030779615520869982,
+      "northern_leaf_blight": 0.07665413989419677
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_091230.jpg",
+    "sha256": "efd80535687899cf35385a73baba778075f5cd9d021ac8ed505c51f37f402978",
+    "group": "efd80535687899cf35385a73",
+    "source": "pretoria",
+    "actual_labels": [
+      "phaeosphaeria_leaf_spot"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.6743673125218606,
+    "probabilities": {
+      "common_rust": 0.6743673125218606,
+      "curvularia_leaf_spot": 0.0005219528191305675,
+      "gray_leaf_spot": 0.31570834041222223,
+      "healthy": 0.0006091398774193462,
+      "maize_lethal_necrosis": 0.00022460521402132677,
+      "maize_streak_virus": 0.0014200745068986018,
+      "northern_leaf_blight": 0.007148574648447354
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_091348.jpg",
+    "sha256": "7183669171096024e43489c7a24934264a404c9540470b0c5c8272b4e28c5f18",
+    "group": "7183669171096024e43489c7",
+    "source": "pretoria",
+    "actual_labels": [
+      "northern_leaf_blight"
+    ],
+    "predicted": "gray_leaf_spot",
+    "confidence": 0.734511596535336,
+    "probabilities": {
+      "common_rust": 0.13803002411939083,
+      "curvularia_leaf_spot": 0.019472702152282338,
+      "gray_leaf_spot": 0.734511596535336,
+      "healthy": 0.00013466722583055862,
+      "maize_lethal_necrosis": 5.970716588912996e-05,
+      "maize_streak_virus": 0.00038016359369978024,
+      "northern_leaf_blight": 0.1074111392075714
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_091855.jpg",
+    "sha256": "ccc5a8ac58a250531064aafab365f01ca50347daccef356df113984bcfd2d26a",
+    "group": "ccc5a8ac58a250531064aafa",
+    "source": "pretoria",
+    "actual_labels": [
+      "common_rust"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.9656777096354165,
+    "probabilities": {
+      "common_rust": 0.9656777096354165,
+      "curvularia_leaf_spot": 0.013421769420814831,
+      "gray_leaf_spot": 0.009568524459399964,
+      "healthy": 0.0006305746059867124,
+      "maize_lethal_necrosis": 0.00016841886567073804,
+      "maize_streak_virus": 0.0010234837004435122,
+      "northern_leaf_blight": 0.009509519312267478
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_091910.jpg",
+    "sha256": "70c3b59c14b377906830c834318973648c62800c5f8880fc63146130cc8964fa",
+    "group": "70c3b59c14b377906830c834",
+    "source": "pretoria",
+    "actual_labels": [
+      "common_rust",
+      "phaeosphaeria_leaf_spot"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.8071343525123534,
+    "probabilities": {
+      "common_rust": 0.8071343525123534,
+      "curvularia_leaf_spot": 0.006062305052603843,
+      "gray_leaf_spot": 0.01590128128959789,
+      "healthy": 0.024950497759233206,
+      "maize_lethal_necrosis": 0.0001684957755983673,
+      "maize_streak_virus": 0.03215658662899417,
+      "northern_leaf_blight": 0.11362648098161915
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_091947.jpg",
+    "sha256": "393d3e1bff3f623820eeadd0d17b7aee3fb85723d61731352f8b270120715d79",
+    "group": "393d3e1bff3f623820eeadd0",
+    "source": "pretoria",
+    "actual_labels": [
+      "common_rust",
+      "other_damage"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.7659346431612585,
+    "probabilities": {
+      "common_rust": 0.7659346431612585,
+      "curvularia_leaf_spot": 0.0007970871895868138,
+      "gray_leaf_spot": 0.23110969490060573,
+      "healthy": 3.125261270133983e-05,
+      "maize_lethal_necrosis": 0.0012277874120553865,
+      "maize_streak_virus": 0.0006914964992974246,
+      "northern_leaf_blight": 0.000208038224494892
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_092215.jpg",
+    "sha256": "6f71f3d662b1feae5cd9734b13102e4ad98c68c9d8f7a1acb57a120132f94889",
+    "group": "6f71f3d662b1feae5cd9734b",
+    "source": "pretoria",
+    "actual_labels": [
+      "common_rust"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.9925087021238468,
+    "probabilities": {
+      "common_rust": 0.9925087021238468,
+      "curvularia_leaf_spot": 0.001618151539468239,
+      "gray_leaf_spot": 0.005052363847683915,
+      "healthy": 8.43936852284569e-05,
+      "maize_lethal_necrosis": 0.0005331533217587045,
+      "maize_streak_virus": 0.00012181212483816086,
+      "northern_leaf_blight": 8.142335717583498e-05
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20200309_105455.jpg",
+    "sha256": "6b7b3495da5c914e10c599f17f0c2a47012934374bc49f38055e1cc8ad38d640",
+    "group": "6b7b3495da5c914e10c599f1",
+    "source": "pretoria",
+    "actual_labels": [
+      "gray_leaf_spot"
+    ],
+    "predicted": "gray_leaf_spot",
+    "confidence": 0.3954666201675904,
+    "probabilities": {
+      "common_rust": 0.1322519733396279,
+      "curvularia_leaf_spot": 0.20337603234168014,
+      "gray_leaf_spot": 0.3954666201675904,
+      "healthy": 0.0002857551509928397,
+      "maize_lethal_necrosis": 0.04288778044962146,
+      "maize_streak_virus": 0.09939379691502725,
+      "northern_leaf_blight": 0.12633804163546
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/IMG_3648.JPG",
+    "sha256": "303fec503501b600d26f9afef10462d9928ff09b92182dfb0a992282053d0007",
+    "group": "303fec503501b600d26f9afe",
+    "source": "pretoria",
+    "actual_labels": [
+      "phaeosphaeria_leaf_spot"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.8752607528274202,
+    "probabilities": {
+      "common_rust": 0.8752607528274202,
+      "curvularia_leaf_spot": 0.002130838733710442,
+      "gray_leaf_spot": 0.025503191197827662,
+      "healthy": 0.08910040293205805,
+      "maize_lethal_necrosis": 0.0008754708615834931,
+      "maize_streak_virus": 0.0071252483409705615,
+      "northern_leaf_blight": 4.09510642953331e-06
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/IMG_3655.JPG",
+    "sha256": "47da55ae6571b5131bf8780f4e9cfa5bdcee868b6a320300829bbd9fd1ae5d6e",
+    "group": "47da55ae6571b5131bf8780f",
+    "source": "pretoria",
+    "actual_labels": [
+      "northern_leaf_blight",
+      "phaeosphaeria_leaf_spot"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.8303152441946596,
+    "probabilities": {
+      "common_rust": 0.8303152441946596,
+      "curvularia_leaf_spot": 0.03137545020048797,
+      "gray_leaf_spot": 0.007303041868457205,
+      "healthy": 0.05382199729144153,
+      "maize_lethal_necrosis": 0.0009968863792761797,
+      "maize_streak_virus": 0.0021373994437837354,
+      "northern_leaf_blight": 0.07404998062189395
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/IMG_3673.JPG",
+    "sha256": "cabdef031ea4cb847d7dc331f6f08f9ac56f31a521cbea22bbc0aaa1e6d68b7e",
+    "group": "cabdef031ea4cb847d7dc331",
+    "source": "pretoria",
+    "actual_labels": [
+      "gray_leaf_spot",
+      "northern_leaf_blight"
+    ],
+    "predicted": "gray_leaf_spot",
+    "confidence": 0.9859783545253218,
+    "probabilities": {
+      "common_rust": 0.005711775484467329,
+      "curvularia_leaf_spot": 0.0036012960246443707,
+      "gray_leaf_spot": 0.9859783545253218,
+      "healthy": 0.003142228748420584,
+      "maize_lethal_necrosis": 0.0001470144393447801,
+      "maize_streak_virus": 0.00031934670495738124,
+      "northern_leaf_blight": 0.0010999840728437762
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/IMG_3676.JPG",
+    "sha256": "bc4fbdd391fae0265b70efa371ae7db134dd7f7bf88a03ac03c5777c231eb124",
+    "group": "bc4fbdd391fae0265b70efa3",
+    "source": "pretoria",
+    "actual_labels": [
+      "gray_leaf_spot",
+      "northern_leaf_blight"
+    ],
+    "predicted": "gray_leaf_spot",
+    "confidence": 0.9941174733097674,
+    "probabilities": {
+      "common_rust": 0.0014518657209524474,
+      "curvularia_leaf_spot": 0.0026942667119239402,
+      "gray_leaf_spot": 0.9941174733097674,
+      "healthy": 0.0005559957014657944,
+      "maize_lethal_necrosis": 5.913386495843511e-05,
+      "maize_streak_virus": 0.00043067071016551295,
+      "northern_leaf_blight": 0.0006905939807663122
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/IMG_3739.JPG",
+    "sha256": "8449e5aa9e7271e217f3518704d9b75bdba0f0a78ee5a08a7c1049dd9f3ca0de",
+    "group": "8449e5aa9e7271e217f35187",
+    "source": "pretoria",
+    "actual_labels": [
+      "other_damage"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.9964418735461147,
+    "probabilities": {
+      "common_rust": 0.9964418735461147,
+      "curvularia_leaf_spot": 0.0023113851279059415,
+      "gray_leaf_spot": 0.0009263180155961124,
+      "healthy": 0.00016936016855989243,
+      "maize_lethal_necrosis": 6.100306903418016e-06,
+      "maize_streak_virus": 5.291592312745466e-05,
+      "northern_leaf_blight": 9.204691179245417e-05
+    }
+  },
+  {
+    "file": ".cache/datasets/corn_expansion/pretoria/sample/IMG_3847.JPG",
+    "sha256": "6ca0ce2981939430ca0058a61f4ee5d3ecb37a290314f30207032d253c3b3b49",
+    "group": "6ca0ce2981939430ca0058a6",
+    "source": "pretoria",
+    "actual_labels": [
+      "phaeosphaeria_leaf_spot"
+    ],
+    "predicted": "common_rust",
+    "confidence": 0.4859290808126349,
+    "probabilities": {
+      "common_rust": 0.4859290808126349,
+      "curvularia_leaf_spot": 0.030330176974638513,
+      "gray_leaf_spot": 0.4507297881404409,
+      "healthy": 0.004349019637123146,
+      "maize_lethal_necrosis": 0.0007354475043149851,
+      "maize_streak_virus": 0.000796027982473527,
+      "northern_leaf_blight": 0.027130458948374018
+    }
+  },
+  {
+    "file": ".cache/evaluation/corn_user/64_a162ba617bd6.png",
+    "sha256": "a162ba617bd6ba3083a3d15bfa6404ee8c3a33eaa5d5de3a654e51cb31caf050",
+    "group": "a162ba617bd6ba3083a3d15b",
+    "source": "user_review",
+    "actual_labels": [
+      "common_smut"
+    ],
+    "predicted": "healthy",
+    "confidence": 0.7729413828502081,
+    "probabilities": {
+      "common_rust": 0.15722988465821816,
+      "curvularia_leaf_spot": 0.0016709125597849368,
+      "gray_leaf_spot": 0.054650847650935454,
+      "healthy": 0.7729413828502081,
+      "maize_lethal_necrosis": 0.0013558497792789713,
+      "maize_streak_virus": 0.011017829530220775,
+      "northern_leaf_blight": 0.001133292971353449
+    }
+  },
+  {
+    "file": ".cache/evaluation/corn_user/65_eba443458198.png",
+    "sha256": "eba443458198a865eb395d1f0ce2c9ffdefde5f5664fb4a174c16934b6fb2e88",
+    "group": "eba443458198a865eb395d1f",
+    "source": "user_review",
+    "actual_labels": [
+      "southern_leaf_blight"
+    ],
+    "predicted": "curvularia_leaf_spot",
+    "confidence": 0.828312238725862,
+    "probabilities": {
+      "common_rust": 0.0012206527563139846,
+      "curvularia_leaf_spot": 0.828312238725862,
+      "gray_leaf_spot": 0.12885108389024838,
+      "healthy": 0.00010683618850304082,
+      "maize_lethal_necrosis": 0.0015472498215627992,
+      "maize_streak_virus": 0.03996070322641855,
+      "northern_leaf_blight": 1.2353910911531942e-06
+    }
+  },
+  {
+    "file": ".cache/evaluation/corn_user/66_3a23aa8a54b9.png",
+    "sha256": "3a23aa8a54b9b2076c9f3bff3f90a6444dc9982456c2bb13474b9af33c04483f",
+    "group": "3a23aa8a54b9b2076c9f3bff",
+    "source": "user_review",
+    "actual_labels": [
+      "northern_leaf_blight"
+    ],
+    "predicted": "gray_leaf_spot",
+    "confidence": 0.9702669902792953,
+    "probabilities": {
+      "common_rust": 0.01601847418775412,
+      "curvularia_leaf_spot": 9.664565217580985e-05,
+      "gray_leaf_spot": 0.9702669902792953,
+      "healthy": 0.0002151084494592584,
+      "maize_lethal_necrosis": 0.012603787532099002,
+      "maize_streak_virus": 0.0007619589750358946,
+      "northern_leaf_blight": 3.7034924180547105e-05
+    }
+  },
+  {
+    "file": ".cache/evaluation/corn_user/67_d310b1870a3f.png",
+    "sha256": "d310b1870a3f90be8dfd5615c172acb190bf8195ec7dae8136a8f554bf0fabbd",
+    "group": "d310b1870a3f90be8dfd5615",
+    "source": "user_review",
+    "actual_labels": [
+      "healthy"
+    ],
+    "predicted": "healthy",
+    "confidence": 0.965711071337503,
+    "probabilities": {
+      "common_rust": 0.0014231024418718283,
+      "curvularia_leaf_spot": 0.023957606320197958,
+      "gray_leaf_spot": 0.00037541876459173945,
+      "healthy": 0.965711071337503,
+      "maize_lethal_necrosis": 0.008370951338860748,
+      "maize_streak_virus": 0.00015743391033053286,
+      "northern_leaf_blight": 4.41588664413772e-06
+    }
+  }
+]

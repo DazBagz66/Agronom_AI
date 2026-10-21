@@ -1,0 +1,158 @@
+{
+  "created": "2025-09-26T12:43:00.081629+00:00",
+  "modified": "2025-09-26T12:43:00.678311+00:00",
+  "id": 17085836,
+  "conceptrecid": "17085835",
+  "doi": "10.5281/zenodo.17085836",
+  "conceptdoi": "10.5281/zenodo.17085835",
+  "doi_url": "https://doi.org/10.5281/zenodo.17085836",
+  "metadata": {
+    "title": "Image dataset of healthy and pathogen-affected maize leaves with suggested control measures",
+    "doi": "10.5281/zenodo.17085836",
+    "publication_date": "2025-09-09",
+    "description": "<p>This dataset contains images of maize (<em>Zea mays</em>, EPPO code: ZEAMX) crop, including both healthy plants and plants affected by major pathogens, collected during the experimentation of the PLANTHEAD Diagnostic Platform in Tanzania, within the framework of the EU Horizon2020 EWA-BELT Project (GA#862848).</p>\n<p>Within the dataset, the following diseases and their corresponding EPPO codes are represented:</p>\n<ul>\n<li>\n<p>Maize Lethal Necrosis (EPPO Code: n/a)</p>\n</li>\n<li>\n<p><em>Exserohilum turcicum</em> (EPPO Code: SETOTU)</p>\n</li>\n<li>\n<p>Maize streak virus (EPPO Code: MSV000)*</p>\n</li>\n</ul>\n<p>Each folder is organized by pathogen to facilitate data exploration and analysis. In addition, the dataset includes a PDF file providing recommended management solutions for each disease, including agronomic, biological, and chemical measures.</p>\n<p><em>*suggested control measures not available</em></p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Tanzania Agricultural Research Institution (TARI)",
+        "affiliation": null
+      }
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "grants": [
+      {
+        "code": "862848",
+        "internal_id": "10.13039/501100000780::862848",
+        "funder": {
+          "name": "European Commission",
+          "doi": "10.13039/501100000780",
+          "acronym": "EC"
+        },
+        "title": "Linking East and West African farming systems experience into a BELT of sustainable intensification",
+        "acronym": "EWA - BELT",
+        "program": "H2020-EU.3.2.",
+        "url": "https://cordis.europa.eu/projects/862848"
+      }
+    ],
+    "communities": [
+      {
+        "id": "eu"
+      },
+      {
+        "id": "ewa-belt_h2020_project_ga_862848"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "17085835"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Image dataset of healthy and pathogen-affected maize leaves with suggested control measures",
+  "links": {
+    "self": "https://zenodo.org/api/records/17085836",
+    "self_html": "https://zenodo.org/records/17085836",
+    "preview_html": "https://zenodo.org/records/17085836?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.17085836",
+    "self_doi": "https://doi.org/10.5281/zenodo.17085836",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17085836",
+    "reserve_doi": "https://zenodo.org/api/records/17085836/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/17085835",
+    "parent_html": "https://zenodo.org/records/17085835",
+    "parent_doi": "https://doi.org/10.5281/zenodo.17085835",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17085835",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:17085836/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:17085836/sequence/default",
+    "files": "https://zenodo.org/api/records/17085836/files",
+    "media_files": "https://zenodo.org/api/records/17085836/media-files",
+    "latest": "https://zenodo.org/api/records/17085836/versions/latest",
+    "latest_html": "https://zenodo.org/records/17085836/latest",
+    "versions": "https://zenodo.org/api/records/17085836/versions",
+    "draft": "https://zenodo.org/api/records/17085836/draft",
+    "access_links": "https://zenodo.org/api/records/17085836/access/links",
+    "access_grants": "https://zenodo.org/api/records/17085836/access/grants",
+    "access_users": "https://zenodo.org/api/records/17085836/access/users",
+    "access_request": "https://zenodo.org/api/records/17085836/access/request",
+    "access": "https://zenodo.org/api/records/17085836/access",
+    "communities": "https://zenodo.org/api/records/17085836/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/17085836/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/17085836/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/17085836/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/17085836/quota-increase",
+    "requests": "https://zenodo.org/api/records/17085836/requests"
+  },
+  "updated": "2025-09-26T12:43:00.678311+00:00",
+  "recid": "17085836",
+  "revision": 4,
+  "files": [
+    {
+      "id": "51335ae6-ea9e-4a3b-b376-deb1bc271daf",
+      "key": "ZEAMX_healthy leaves.zip",
+      "size": 138018756,
+      "checksum": "md5:458e0fa7a0ca51baa9584020dc81c2b6",
+      "links": {
+        "self": "https://zenodo.org/api/records/17085836/files/ZEAMX_healthy%20leaves.zip/content"
+      }
+    },
+    {
+      "id": "a0f36347-9319-41fd-86b4-a9669e66eb04",
+      "key": "ZEAMX_SETOTU_Exserohilum turcicum.zip",
+      "size": 213118747,
+      "checksum": "md5:f307c7a66246c7125c4c660e03bee17d",
+      "links": {
+        "self": "https://zenodo.org/api/records/17085836/files/ZEAMX_SETOTU_Exserohilum%20turcicum.zip/content"
+      }
+    },
+    {
+      "id": "504e15fd-5991-4d49-a96c-3a758ee39caf",
+      "key": "ZEAMX_MSV000_Maize streak virus (MSV).zip",
+      "size": 276657698,
+      "checksum": "md5:38ba6152f274d8dae7d0c95becc1174a",
+      "links": {
+        "self": "https://zenodo.org/api/records/17085836/files/ZEAMX_MSV000_Maize%20streak%20virus%20(MSV).zip/content"
+      }
+    },
+    {
+      "id": "5847f37b-0e49-455c-aee8-ded53d39a9d2",
+      "key": "ZEAMX Maize lethal necrosis.zip",
+      "size": 223146159,
+      "checksum": "md5:c781d7c6d8f331835d341c104203ffda",
+      "links": {
+        "self": "https://zenodo.org/api/records/17085836/files/ZEAMX%20Maize%20lethal%20necrosis.zip/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "353618"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 488,
+    "unique_downloads": 346,
+    "views": 316,
+    "unique_views": 294,
+    "version_downloads": 488,
+    "version_unique_downloads": 346,
+    "version_unique_views": 294,
+    "version_views": 316
+  },
+  "state": "done",
+  "submitted": true
+}

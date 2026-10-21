@@ -1,0 +1,6 @@
+{
+  "method": "Visual spot-check of four deterministic random samples per downloaded TARI/TOM folder; not clinical relabelling. Seed 42.",
+  "tari": "Reviewed examples are close-up maize leaves. Lethal-necrosis examples share a green background, while other displayed classes often have a light background: possible class/background confounding, requiring cross-source validation.",
+  "tom2024": "Reviewed images are cropped leaf fragments with variable resolution. Some are smaller than the application minimum. Generic class names do not establish a specific pathogen.",
+  "limitation": "Only a small preview was inspected manually. No claim that every label is correct."
+}

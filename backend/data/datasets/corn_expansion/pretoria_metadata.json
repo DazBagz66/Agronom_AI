@@ -1,0 +1,156 @@
+{
+  "files": [
+    {
+      "id": 36203595,
+      "name": "Database.csv",
+      "size": 112792,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/36203595",
+      "supplied_md5": "ec3023b1044dc19a5d2584b588ebe3d6",
+      "computed_md5": "ec3023b1044dc19a5d2584b588ebe3d6",
+      "mimetype": "text/plain"
+    },
+    {
+      "id": 36203592,
+      "name": "ReadMe.txt",
+      "size": 1246,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/36203592",
+      "supplied_md5": "0fa8bf75e0ad8df3629a68a776886d2b",
+      "computed_md5": "0fa8bf75e0ad8df3629a68a776886d2b",
+      "mimetype": "text/plain"
+    },
+    {
+      "id": 36203652,
+      "name": "leaf_images.zip",
+      "size": 10755639029,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/36203652",
+      "supplied_md5": "cec31c7f2bea1a669b7f98b9bdd7b617",
+      "computed_md5": "cec31c7f2bea1a669b7f98b9bdd7b617",
+      "mimetype": "undefined"
+    }
+  ],
+  "folder_structure": {},
+  "authors": [
+    {
+      "id": 12499711,
+      "full_name": "Hamish Craze",
+      "first_name": "Hamish",
+      "last_name": "Craze",
+      "is_active": true,
+      "url_name": "Hamish_Craze",
+      "orcid_id": ""
+    }
+  ],
+  "custom_fields": [
+    {
+      "name": "Department/Unit/School/Center",
+      "value": "Forestry and Agricultural Biotechnology Institute (FABI)",
+      "settings": {
+        "validations": {
+          "min_length": 1,
+          "max_length": 250
+        },
+        "placeholder": "Academic Department/Unit Name"
+      },
+      "field_type": "text",
+      "order": null,
+      "is_mandatory": false
+    }
+  ],
+  "figshare_url": "https://researchdata.up.ac.za/articles/dataset/Diseases_of_maize_in_the_field/20237613",
+  "download_disabled": false,
+  "description": "<p>In this dataset lies 2355 images of maize leaves with different diseases. The images were taken over a variety of times and locations in South Africa. The diseases labelled herein are:</p>\n<ul>\n  <li>Grey Leaf Spot (GLS)</li>\n  <li>Northern Corn Leaf Blight (NCLB)</li>\n  <li>Common Rust (CR)</li>\n  <li>Southern Rust (SR)</li>\n  <li>Phaeosphaeria Leaf Spot (PLS)</li>\n</ul>\n<p>The data contains a realistic representation of field conditions where it shows images of leaves destroyed by bugs, protein deficiencies, leaves with hands occluding them, different lighting conditions, some  leaves are wet, backgrounds vary wildly, anthers, bird droppings, several simultaneous and sometimes even overlapping diseases.The Readme.txt or the file description of the parent folder gives more details as to how the images are stored and  annotated. </p>\n<p><br></p>",
+  "funding": null,
+  "funding_list": [],
+  "version": 1,
+  "status": "public",
+  "size": 10755753067,
+  "created_date": "2022-07-08T09:49:56Z",
+  "modified_date": "2022-07-09T06:00:00Z",
+  "is_public": true,
+  "is_confidential": false,
+  "is_metadata_record": false,
+  "confidential_reason": "",
+  "metadata_reason": "",
+  "license": {
+    "value": 1,
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "tags": [
+    "Maize",
+    "Crop monitoring",
+    "Crop diseases",
+    "Deep learning",
+    "Binary classification",
+    "High throughput phenotyping",
+    "Plant pathology"
+  ],
+  "keywords": [
+    "Maize",
+    "Crop monitoring",
+    "Crop diseases",
+    "Deep learning",
+    "Binary classification",
+    "High throughput phenotyping",
+    "Plant pathology"
+  ],
+  "categories": [
+    {
+      "id": 24388,
+      "title": "Plant pathology",
+      "parent_id": 24373,
+      "path": "/24130/24373/24388",
+      "source_id": "310805",
+      "taxonomy_id": 100
+    },
+    {
+      "id": 28879,
+      "title": "Computer vision",
+      "parent_id": 28867,
+      "path": "/28798/28867/28879",
+      "source_id": "460304",
+      "taxonomy_id": 100
+    },
+    {
+      "id": 29161,
+      "title": "Deep learning",
+      "parent_id": 29152,
+      "path": "/28798/29152/29161",
+      "source_id": "461103",
+      "taxonomy_id": 100
+    }
+  ],
+  "references": [],
+  "has_linked_file": false,
+  "citation": "Craze, Hamish (2022). Diseases of maize in the field. University of Pretoria. Dataset. https://doi.org/10.25403/UPresearchdata.20237613.v1",
+  "related_materials": [],
+  "is_embargoed": false,
+  "embargo_date": null,
+  "embargo_type": "file",
+  "embargo_title": "",
+  "embargo_reason": "",
+  "embargo_options": [],
+  "id": 20237613,
+  "title": "Diseases of maize in the field",
+  "doi": "10.25403/UPresearchdata.20237613.v1",
+  "handle": "",
+  "url": "https://api.figshare.com/v2/articles/20237613",
+  "published_date": "2022-07-08T09:49:56Z",
+  "thumb": "",
+  "defined_type": 3,
+  "defined_type_name": "dataset",
+  "group_id": 25619,
+  "url_private_api": "https://api.figshare.com/v2/account/articles/20237613",
+  "url_public_api": "https://api.figshare.com/v2/articles/20237613",
+  "url_private_html": "https://figshare.com/account/articles/20237613",
+  "url_public_html": "https://researchdata.up.ac.za/articles/dataset/Diseases_of_maize_in_the_field/20237613",
+  "timeline": {
+    "posted": "2022-07-08T09:49:56",
+    "firstOnline": "2022-07-08"
+  },
+  "resource_title": "",
+  "resource_doi": ""
+}

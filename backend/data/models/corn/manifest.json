@@ -1,0 +1,18 @@
+{
+  "classes": [
+    "blight",
+    "common_rust",
+    "gray_leaf_spot",
+    "healthy"
+  ],
+  "supported_organ": "leaf",
+  "input": "RGB 224x224 letterbox, ImageNet mean/std; frozen 1280-dimensional features",
+  "files": {
+    "mobilenetv2_features.onnx": "bfa8f7bdd68ff12b519fe81f420ba370904b33b6580b01fb907bd05a3b6959cc",
+    "classifier.npz": "5eeb3cf100ebf7930c0832c1bd998ec3931de4aa9db0c514340e8cc7c8a593c6"
+  },
+  "training": "Frozen ImageNet MobileNetV2 + StandardScaler + multinomial LogisticRegression C=0.1",
+  "limitations": "Dataset-only evaluation; pHash groups reduce but cannot eliminate source/specimen leakage. Not independent field validation. Healthy means no visible supported disease. No reliable out-of-distribution or crop detector.",
+  "dataset": "https://www.kaggle.com/datasets/smaranjitghose/corn-or-maize-leaf-disease-dataset",
+  "backbone": "https://huggingface.co/onnxmodelzoo/mobilenetv2-12"
+}

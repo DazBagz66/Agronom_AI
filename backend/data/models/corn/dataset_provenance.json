@@ -1,0 +1,17 @@
+{
+  "crop": "corn",
+  "source": "https://www.kaggle.com/datasets/smaranjitghose/corn-or-maize-leaf-disease-dataset",
+  "version": 1,
+  "license": "Data files © Original Authors",
+  "description": "A dataset for classification of corn or maize plant leaf diseases\n\n## Dataset Description:\n- 0: Common Rust - 1306 images\n- 1: Gray Leaf Spot - 574 images\n- 2: Blight -1146 images\n- 3: Healthy - 1162 images\n\n## Note:\nThis dataset has been made using the popular [PlantVillage](https://www.kaggle.com/abdallahalidev/plantvillage-dataset/version/1) and [PlantDoc](https://github.com/pratikkayal/PlantDoc-Dataset) datasets. During the formation of the dataset certain images have been removed which were not found to be useful. The original authors reserve right to the respective datasets. If you use this dataset in your academic research, please credit the authors.\n\n### Citations:\n\n1. Singh D, Jain N, Jain P, Kayal P, Kumawat S, Batra N. PlantDoc: a dataset for visual plant disease detection. InProceedings of the 7th ACM IKDD CoDS and 25th COMAD 2020 Jan 5 (pp. 249-253).\n\n2.  J, ARUN PANDIAN; GOPAL, GEETHARAMANI (2019), “Data for: Identification of Plant Leaf Diseases Using a 9-layer Deep Convolutional Neural Network”, Mendeley Data, V1, doi: 10.17632/tywbtsjrjv.1\n\n\n",
+  "archive_sha256": "f80b56212de2c194bacd67e70419e6a87b780603710087ec69347940fecd6313",
+  "archive_bytes": 168591426,
+  "image_counts": {
+    "data\\Blight": 1146,
+    "data\\Common_Rust": 1306,
+    "data\\Gray_Leaf_Spot": 574,
+    "data\\Healthy": 1162
+  },
+  "installed_at": "2026-10-21T06:13:00.962389+00:00",
+  "local_path": ".cache/datasets/corn/images"
+}

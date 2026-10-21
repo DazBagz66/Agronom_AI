@@ -1,0 +1,39 @@
+{
+  "status": "not_activated",
+  "review_date": "2026-10-21",
+  "reason": "Improved common-class subset but poor external coverage of northern leaf blight and increased confident false-healthy predictions.",
+  "legacy_common_classes": {
+    "count": 24,
+    "correct": 6,
+    "accepted_at_65": 15,
+    "correct_accepted": 3
+  },
+  "candidate_external_metrics": {
+    "common_three_classes": {
+      "count": 24,
+      "correct": 11,
+      "accepted_at_65": 13,
+      "correct_accepted": 6
+    },
+    "all_supported_single_labels": {
+      "count": 32,
+      "correct": 12,
+      "accepted_at_65": 20,
+      "correct_accepted": 7
+    },
+    "raw_healthy_on_nonhealthy_at_65": 5
+  },
+  "legacy_confident_raw_healthy_on_nonhealthy": 0,
+  "northern_leaf_blight": {
+    "count": 8,
+    "correct": 1
+  },
+  "active_model_changed": false,
+  "mendeley": "Public metadata/files API still returned HTTP 403 after user registration in Opera GX. Awaiting local archive; browser session is not connected.",
+  "required_next_data": [
+    "Southern leaf blight and common smut images with verified labels",
+    "Northern leaf blight images from diverse independent sources",
+    "Healthy and damaged examples with balanced backgrounds"
+  ],
+  "limitations": "Small stratified review; not a blind estimate of general field accuracy. Healthy display policy still prevents certifying plant health."
+}

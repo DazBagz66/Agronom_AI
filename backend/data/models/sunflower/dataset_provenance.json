@@ -1,0 +1,17 @@
+{
+  "crop": "sunflower",
+  "source": "https://www.kaggle.com/datasets/noamaanabdulazeem/sunflower-fruits-and-leaves-dataset",
+  "version": 1,
+  "license": "Unknown",
+  "description": " In the recent era, image classification and detection is crucial application of Computer Vision. \nIn this dataset, two types files of Sunflower images are included, namely the original image file and the augmented image file. Three types of diseases, namely downy mildew, leaf scars, and Gray Mold, exist in every file. Besides, the fresh leaves image of a sunflower is also included. Because of the early disease recognition of sunflower, the farmer cannot produce high yield and face economic loss.\nA total of four hundred and sixty-seven images (467) are collected from the sunflower garden contained in the original image file. \nThis dataset has been acquired from https://data.mendeley.com/datasets/b83hmrzth8/1",
+  "archive_sha256": "bce50b7611eb0d5ac9c26c2a73b85124c3ecf1e10dd66761c71e8faaf3c92516",
+  "archive_bytes": 1746501986,
+  "image_counts": {
+    "Original Image\\Downy mildew": 120,
+    "Original Image\\Fresh Leaf": 134,
+    "Original Image\\Gray mold": 72,
+    "Original Image\\Leaf scars": 140
+  },
+  "installed_at": "2026-10-21T06:19:40.586197+00:00",
+  "local_path": ".cache/datasets/sunflower/images"
+}

@@ -1,0 +1,139 @@
+{
+  "sources": {
+    "legacy_kaggle": {
+      "images": 4188,
+      "labels": {
+        "blight_unspecified": 1146,
+        "common_rust": 1306,
+        "gray_leaf_spot": 574,
+        "healthy_leaf": 1162
+      },
+      "splits": {
+        "quarantine": 2368,
+        "train_candidate": 1471,
+        "validation_candidate": 349
+      },
+      "low_resolution": 0,
+      "unreadable": 0
+    },
+    "pretoria": {
+      "images": 80,
+      "labels": {
+        "other_damage": 11,
+        "gray_leaf_spot": 14,
+        "unknown_disease": 8,
+        "healthy_leaf": 8,
+        "phaeosphaeria_leaf_spot": 19,
+        "common_rust": 11,
+        "northern_leaf_blight": 19,
+        "southern_rust": 8
+      },
+      "splits": {
+        "external_review": 80
+      },
+      "low_resolution": 0,
+      "unreadable": 0
+    },
+    "tari": {
+      "images": 321,
+      "labels": {
+        "maize_lethal_necrosis": 102,
+        "healthy_leaf": 53,
+        "maize_streak_virus": 81,
+        "northern_leaf_blight": 85
+      },
+      "splits": {
+        "train_candidate": 243,
+        "validation_candidate": 77,
+        "quarantine": 1
+      },
+      "low_resolution": 0,
+      "unreadable": 0
+    },
+    "tom2024": {
+      "images": 3517,
+      "labels": {
+        "curvularia_leaf_spot": 259,
+        "healthy_leaf": 585,
+        "helminthosporiosis_unspecified": 159,
+        "abiotic_damage_unspecified": 77,
+        "rust_unspecified": 99,
+        "streak_unspecified": 2190,
+        "virus_unspecified": 148
+      },
+      "splits": {
+        "quarantine": 3077,
+        "train_candidate": 363,
+        "validation_candidate": 77
+      },
+      "low_resolution": 70,
+      "unreadable": 0
+    },
+    "user_review": {
+      "images": 4,
+      "labels": {
+        "common_smut": 1,
+        "southern_leaf_blight": 1,
+        "northern_leaf_blight": 1,
+        "healthy_leaf": 1
+      },
+      "splits": {
+        "external_review": 4
+      },
+      "low_resolution": 0,
+      "unreadable": 0
+    }
+  },
+  "total_images": 8110,
+  "duplicate_method": "Exact file SHA256, decoded pixels SHA256, 63-bit pHash distance <=6, inferred equal TOM filename timestamps; candidate matches require review, crops/rotations may be missed.",
+  "duplicate_groups": 6260,
+  "groups_with_repeats": 976,
+  "cross_source_groups": 0,
+  "conflicting_groups": 27,
+  "splits": {
+    "quarantine": 5446,
+    "train_candidate": 2077,
+    "validation_candidate": 503,
+    "external_review": 84
+  },
+  "exclusion_reasons": {
+    "taxonomy_requires_review": 3819,
+    "reserved_by_existing_model_validation_or_test": 1674,
+    "similar_images_with_different_labels_review_required": 99,
+    "duplicate_representative_already_selected": 370,
+    "low_resolution_or_flat_image": 70
+  },
+  "train_classes": {
+    "common_rust": 627,
+    "gray_leaf_spot": 279,
+    "healthy_leaf": 857,
+    "maize_lethal_necrosis": 79,
+    "maize_streak_virus": 55,
+    "northern_leaf_blight": 65,
+    "curvularia_leaf_spot": 115
+  },
+  "validation_classes": {
+    "common_rust": 155,
+    "gray_leaf_spot": 64,
+    "healthy_leaf": 192,
+    "maize_lethal_necrosis": 23,
+    "maize_streak_virus": 26,
+    "northern_leaf_blight": 20,
+    "curvularia_leaf_spot": 23
+  },
+  "target_gaps": [
+    "southern_leaf_blight: no acquired training data",
+    "common_smut: no acquired training data",
+    "ear/stem/root diseases: no acquired training data",
+    "healthy ears/stems/roots: no acquired training data"
+  ],
+  "limitations": [
+    "Candidate splits are not a trained model or validated diagnoses.",
+    "Pretoria sample is deliberately stratified, not representative of field prevalence.",
+    "Existing model was already trained on legacy train; legacy is not an independent field test.",
+    "No guaranteed separation by plant/site where source metadata is absent.",
+    "Unknown/multiple diseases remain in the external review; not forced to one class.",
+    "Downloaded licence attribution is in sources.json and installed receipts."
+  ],
+  "manifest": ".cache/datasets/corn_expansion/review/manifest.jsonl"
+}

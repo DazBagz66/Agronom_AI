@@ -1,0 +1,1644 @@
+{
+  "model_files": {
+    "mobilenetv2_features.onnx": "bfa8f7bdd68ff12b519fe81f420ba370904b33b6580b01fb907bd05a3b6959cc",
+    "classifier.npz": "5eeb3cf100ebf7930c0832c1bd998ec3931de4aa9db0c514340e8cc7c8a593c6"
+  },
+  "sources": {
+    "pretoria": 80,
+    "user_review": 4
+  },
+  "pretoria": {
+    "reviewed": 80,
+    "without_detected_legacy_overlap": 80,
+    "comparable_single_label": 24,
+    "correct_comparable": 6,
+    "accepted_comparable_at_65": 15,
+    "correct_accepted_comparable": 3,
+    "nonhealthy_labeled_images": 72,
+    "raw_healthy_on_nonhealthy": 1,
+    "raw_healthy_on_nonhealthy_at_65": 0
+  },
+  "limitations": [
+    "Raw classifier before UI thresholds/healthy suppression.",
+    "Stratified 80-image review sample does not estimate field prevalence or overall field accuracy.",
+    "Unsupported/multilabel diagnoses excluded from single-label accuracy, retained in detailed results.",
+    "User supplied labels not clinically verified and excluded from Pretoria metrics.",
+    "No training, threshold tuning or modification of active model."
+  ],
+  "predictions": [
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/167_CIMG3903.JPG",
+      "sha256": "935c93b1a01fb4b62c26647c2b105683807514bc5f71dc66a7cff25cec1f9826",
+      "expected_labels": [
+        "other_damage"
+      ],
+      "raw_prediction": "common_rust",
+      "score": 0.786876479448827,
+      "probabilities": {
+        "blight": 0.03738722763415421,
+        "common_rust": 0.786876479448827,
+        "gray_leaf_spot": 0.1591239050586164,
+        "healthy": 0.016612387858402414
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/183_CIMG3919_1-68-2.JPG",
+      "sha256": "df9d5a14b7fa1fcbb2442e5cb9225c838512ae7982f1655c01b3f05d55a9f64c",
+      "expected_labels": [
+        "gray_leaf_spot"
+      ],
+      "raw_prediction": "common_rust",
+      "score": 0.8884046329768802,
+      "probabilities": {
+        "blight": 0.028329027088625246,
+        "common_rust": 0.8884046329768802,
+        "gray_leaf_spot": 0.08209113387773423,
+        "healthy": 0.0011752060567603584
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": true,
+      "correct_on_comparable_label": false
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/198_CIMG3934_1-33-2.JPG",
+      "sha256": "be48010bcfec791588d77788c9e60ced28928e36e7fe0d496bd239961ff889f1",
+      "expected_labels": [
+        "gray_leaf_spot"
+      ],
+      "raw_prediction": "common_rust",
+      "score": 0.8827971708903247,
+      "probabilities": {
+        "blight": 0.0449683957198777,
+        "common_rust": 0.8827971708903247,
+        "gray_leaf_spot": 0.03254026171606469,
+        "healthy": 0.039694171673732875
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": true,
+      "correct_on_comparable_label": false
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_DSC1711_maize_diverse-C-AC-DK-273.JPG",
+      "sha256": "8b97b42c108eb3d23d71e6a7659742e096ffb6d1184e22d611a3f2a3d0e68f77",
+      "expected_labels": [
+        "unknown_disease"
+      ],
+      "raw_prediction": "gray_leaf_spot",
+      "score": 0.49928182505739255,
+      "probabilities": {
+        "blight": 0.026326681822348236,
+        "common_rust": 0.38356792409030943,
+        "gray_leaf_spot": 0.49928182505739255,
+        "healthy": 0.09082356902994966
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_DSC1763_maize_diverse-C-AC-DK-273.JPG",
+      "sha256": "7055d4203c208d1171329f163895a77be5c80c5a9295ec27f163a911ed6002db",
+      "expected_labels": [
+        "healthy_leaf"
+      ],
+      "raw_prediction": "common_rust",
+      "score": 0.897025166397264,
+      "probabilities": {
+        "blight": 0.07146048544716659,
+        "common_rust": 0.897025166397264,
+        "gray_leaf_spot": 7.767680879401622e-05,
+        "healthy": 0.031436671346775344
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": true,
+      "correct_on_comparable_label": false
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_DSC1798_maize_diverse-C-AC-DK-273.JPG",
+      "sha256": "faf3505ba8f7da66069270cd32b518f6c6358cf57654cabeeaa5a94c37b1a88e",
+      "expected_labels": [
+        "gray_leaf_spot",
+        "other_damage"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.8646733611768482,
+      "probabilities": {
+        "blight": 0.8646733611768482,
+        "common_rust": 0.0022716185875762372,
+        "gray_leaf_spot": 0.06686369132162022,
+        "healthy": 0.06619132891395524
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_DSC1992_maize_diverse-R-Pn-DK-28.JPG",
+      "sha256": "205e18f5e0f5271e3f99d3f227b5114d022a9649fbefc158ac7ae7e18fa0befa",
+      "expected_labels": [
+        "other_damage"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.6194057772889333,
+      "probabilities": {
+        "blight": 0.6194057772889333,
+        "common_rust": 0.36132984724003986,
+        "gray_leaf_spot": 0.0002128894069176489,
+        "healthy": 0.01905148606410924
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_DSC2008_maize_diverse-R-Pn-DK-28.JPG",
+      "sha256": "f362530024c69669045a81886b0a150ae55427bf71d9c061214220542d951d8e",
+      "expected_labels": [
+        "unknown_disease"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.9666607272511746,
+      "probabilities": {
+        "blight": 0.9666607272511746,
+        "common_rust": 0.00243521139333255,
+        "gray_leaf_spot": 0.018361000296572935,
+        "healthy": 0.01254306105891992
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_IMG_6283_maize_diverse JM-C-Ac.JPG",
+      "sha256": "972e471d79a3631de2ea33f6fb4e73660d13d175e1a2725aaef0cfb623e5920a",
+      "expected_labels": [
+        "gray_leaf_spot"
+      ],
+      "raw_prediction": "gray_leaf_spot",
+      "score": 0.8176597565800272,
+      "probabilities": {
+        "blight": 0.0013298958711499829,
+        "common_rust": 0.18041824874243967,
+        "gray_leaf_spot": 0.8176597565800272,
+        "healthy": 0.0005920988063832019
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": true,
+      "correct_on_comparable_label": true
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_IMG_6302_maize_diverse JM-C-Ac.JPG",
+      "sha256": "95a1a58b0e978f9e18ffa9cd43632738304cc4cac023b51f4e8250528a700217",
+      "expected_labels": [
+        "other_damage"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.8526011322573531,
+      "probabilities": {
+        "blight": 0.8526011322573531,
+        "common_rust": 0.022401248555189646,
+        "gray_leaf_spot": 0.11414579674808592,
+        "healthy": 0.01085182243937125
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_IMG_6441_maize_diverse JM-R-Pn.JPG",
+      "sha256": "61bdcd9d8e0bf7161983c036a1dbf8f38c27b6d4be9865f070bb0b982dce62a4",
+      "expected_labels": [
+        "other_damage"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.8803127816369052,
+      "probabilities": {
+        "blight": 0.8803127816369052,
+        "common_rust": 0.07280635242450126,
+        "gray_leaf_spot": 0.04564442817316546,
+        "healthy": 0.0012364377654280295
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_IMG_6465_maize_diverse JM-R-Pn.JPG",
+      "sha256": "6a4b268e9557a07ef74891713c87253cd4c96772c39bbd70f79d20a8807786d7",
+      "expected_labels": [
+        "other_damage"
+      ],
+      "raw_prediction": "gray_leaf_spot",
+      "score": 0.9292064888053473,
+      "probabilities": {
+        "blight": 0.017712606945804163,
+        "common_rust": 0.052457089094621843,
+        "gray_leaf_spot": 0.9292064888053473,
+        "healthy": 0.0006238151542267586
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_IMG_6538_maize_diverse JM-R-Pn.JPG",
+      "sha256": "582e4d8644991c0dfc877ea36f6c1f322b2f3e371f843086b4ab23e87d185a0e",
+      "expected_labels": [
+        "healthy_leaf"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.9584936892181372,
+      "probabilities": {
+        "blight": 0.9584936892181372,
+        "common_rust": 0.03424050838693291,
+        "gray_leaf_spot": 0.005982455394996041,
+        "healthy": 0.0012833469999337691
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": true,
+      "correct_on_comparable_label": false
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_IMG_6547_maize_diverse JM-R-Pn.JPG",
+      "sha256": "07bbac3c99fe32a5dc8da1d4cf9949c8f30828e7d987b837f2609f11a6234b3e",
+      "expected_labels": [
+        "unknown_disease"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.9767994090346458,
+      "probabilities": {
+        "blight": 0.9767994090346458,
+        "common_rust": 0.02165502907078215,
+        "gray_leaf_spot": 0.000729360098530786,
+        "healthy": 0.0008162017960413273
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_IMG_6571_maize_diverse JM-R-Pn.JPG",
+      "sha256": "58d66a03b3c20e6b6eddc543ebed415919315869d2180582508e387a504b1e17",
+      "expected_labels": [
+        "healthy_leaf"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.8837448645687647,
+      "probabilities": {
+        "blight": 0.8837448645687647,
+        "common_rust": 0.10746771451799099,
+        "gray_leaf_spot": 0.007277066161947257,
+        "healthy": 0.001510354751297001
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": true,
+      "correct_on_comparable_label": false
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_IMG_6572_maize_diverse JM-R-Pn.JPG",
+      "sha256": "84ee81d2c176250dc06447dbc1ffa4c68a0678f8cabd31876dfb5f802892f78b",
+      "expected_labels": [
+        "unknown_disease"
+      ],
+      "raw_prediction": "common_rust",
+      "score": 0.7859037113284718,
+      "probabilities": {
+        "blight": 0.18102865367138582,
+        "common_rust": 0.7859037113284718,
+        "gray_leaf_spot": 0.021632727438195342,
+        "healthy": 0.011434907561946964
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_IMG_6575_maize_diverse JM-R-Pn.JPG",
+      "sha256": "99c4d8dcdb3b4925b0087a249434b71b81a8d574e1b8db612d7c3df5e36009cd",
+      "expected_labels": [
+        "gray_leaf_spot",
+        "phaeosphaeria_leaf_spot"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.4635996877285805,
+      "probabilities": {
+        "blight": 0.4635996877285805,
+        "common_rust": 0.4373962123136506,
+        "gray_leaf_spot": 0.08199969851541386,
+        "healthy": 0.01700440144235511
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0003.JPG",
+      "sha256": "4a20fbe97669afeee49dbaaad835483e5e344de71c0e8e739e53133e3229d556",
+      "expected_labels": [
+        "phaeosphaeria_leaf_spot"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.7641270421741422,
+      "probabilities": {
+        "blight": 0.7641270421741422,
+        "common_rust": 0.05614994694697604,
+        "gray_leaf_spot": 0.17784535312231672,
+        "healthy": 0.001877657756565062
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0009.JPG",
+      "sha256": "965b746d1d04bf80722a6ac2817833bd2392351feefc5bd6673cc5de283630f2",
+      "expected_labels": [
+        "common_rust",
+        "phaeosphaeria_leaf_spot"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.944855044478762,
+      "probabilities": {
+        "blight": 0.944855044478762,
+        "common_rust": 0.015293670664111131,
+        "gray_leaf_spot": 0.037921316474727816,
+        "healthy": 0.0019299683823990102
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0019.JPG",
+      "sha256": "5d640737a6f58dd015c65f95b6a3e3d393f3d52f52a55d1ba77ec69c4b3247f8",
+      "expected_labels": [
+        "healthy_leaf"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.41372862156468954,
+      "probabilities": {
+        "blight": 0.41372862156468954,
+        "common_rust": 0.23444723119989022,
+        "gray_leaf_spot": 0.038417598926847714,
+        "healthy": 0.3134065483085726
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": true,
+      "correct_on_comparable_label": false
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0057.JPG",
+      "sha256": "94829d6a0fe6ce1bce14d783cc49f292aa9eb6e5b4c96deccc603c9cda5c4c07",
+      "expected_labels": [
+        "healthy_leaf"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.9618963066484174,
+      "probabilities": {
+        "blight": 0.9618963066484174,
+        "common_rust": 0.03512434357908272,
+        "gray_leaf_spot": 0.0002879558517136485,
+        "healthy": 0.002691393920786099
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": true,
+      "correct_on_comparable_label": false
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0083.JPG",
+      "sha256": "c01b6bbf9b2ab7e2c43533cc72bed5786267a5bb1523f835d72b08a1af701532",
+      "expected_labels": [
+        "healthy_leaf"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.4864957632081247,
+      "probabilities": {
+        "blight": 0.4864957632081247,
+        "common_rust": 0.13192224775597142,
+        "gray_leaf_spot": 0.12799801963519697,
+        "healthy": 0.25358396940070693
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": true,
+      "correct_on_comparable_label": false
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0162.JPG",
+      "sha256": "4506351bb80b16322d36c76398c785b2cbbd5f182edb8abbabc4fd30ad9864bb",
+      "expected_labels": [
+        "unknown_disease"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.9978460786289645,
+      "probabilities": {
+        "blight": 0.9978460786289645,
+        "common_rust": 0.001273721514756842,
+        "gray_leaf_spot": 0.0003372622809720389,
+        "healthy": 0.0005429375753067423
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0181.JPG",
+      "sha256": "b3517246be7f6a74f2184d600c7dc035417710022b0075056104fab6e36a3213",
+      "expected_labels": [
+        "northern_leaf_blight",
+        "phaeosphaeria_leaf_spot"
+      ],
+      "raw_prediction": "gray_leaf_spot",
+      "score": 0.5760121443309957,
+      "probabilities": {
+        "blight": 0.3154576873847858,
+        "common_rust": 0.10619826993862598,
+        "gray_leaf_spot": 0.5760121443309957,
+        "healthy": 0.0023318983455925474
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0196.JPG",
+      "sha256": "0e683605e5246173bb5786d788f569febfd5ec77c2b221d3ca4029c87735868d",
+      "expected_labels": [
+        "northern_leaf_blight"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.7104065762892868,
+      "probabilities": {
+        "blight": 0.7104065762892868,
+        "common_rust": 0.2767107208334097,
+        "gray_leaf_spot": 0.006014927324648958,
+        "healthy": 0.006867775552654494
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0208.JPG",
+      "sha256": "59c9f672141c01fc522d2c4a3e273cdce92b5e8ad2eec912ec973f0b25b8eb8e",
+      "expected_labels": [
+        "southern_rust"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.4850694197301233,
+      "probabilities": {
+        "blight": 0.4850694197301233,
+        "common_rust": 0.33377039863737584,
+        "gray_leaf_spot": 0.062746590504611,
+        "healthy": 0.11841359112788984
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0215.JPG",
+      "sha256": "8b8ca7375d0997312d4237352b87790d905d1f1feea8478b2e6b4acff2938ba2",
+      "expected_labels": [
+        "common_rust"
+      ],
+      "raw_prediction": "common_rust",
+      "score": 0.666612822497027,
+      "probabilities": {
+        "blight": 0.3304458222954064,
+        "common_rust": 0.666612822497027,
+        "gray_leaf_spot": 0.0016389014563586584,
+        "healthy": 0.0013024537512079583
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": true,
+      "correct_on_comparable_label": true
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0231.JPG",
+      "sha256": "0401a434d225689033aea9adf576e9985fd3e6d79f77d944bd50a69a6ca6e3b9",
+      "expected_labels": [
+        "southern_rust"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.9417569935202987,
+      "probabilities": {
+        "blight": 0.9417569935202987,
+        "common_rust": 0.036271484438243885,
+        "gray_leaf_spot": 0.021559376994071917,
+        "healthy": 0.00041214504738541915
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0232.JPG",
+      "sha256": "64c423351b7d87c5fa98f5bd548817d25d5e3d6db139a8cd1590bc34645a34fc",
+      "expected_labels": [
+        "southern_rust"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.8851599400664405,
+      "probabilities": {
+        "blight": 0.8851599400664405,
+        "common_rust": 0.10727895144876805,
+        "gray_leaf_spot": 0.006132437541748645,
+        "healthy": 0.0014286709430428126
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0256.JPG",
+      "sha256": "54ec167407d629f410c5d8811e3f44843ca727dae10cb867f83ccfbe97c92f40",
+      "expected_labels": [
+        "southern_rust"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.42640253601324046,
+      "probabilities": {
+        "blight": 0.42640253601324046,
+        "common_rust": 0.40262598851501136,
+        "gray_leaf_spot": 0.0681424969616576,
+        "healthy": 0.10282897851009054
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0274.JPG",
+      "sha256": "3379acfec99f6180f3e1044d37a33b9e7b66e6e90a1bc98b264f9fb8942d69e8",
+      "expected_labels": [
+        "northern_leaf_blight"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.43962678091648394,
+      "probabilities": {
+        "blight": 0.43962678091648394,
+        "common_rust": 0.2696587667672271,
+        "gray_leaf_spot": 0.2697446290515007,
+        "healthy": 0.02096982326478838
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0283.JPG",
+      "sha256": "2b1fa39d1161793cf3d80821611dcb4df81eb796ccdae62c5b8988c656d696ed",
+      "expected_labels": [
+        "unknown_disease"
+      ],
+      "raw_prediction": "common_rust",
+      "score": 0.711329397172013,
+      "probabilities": {
+        "blight": 0.2195563875333395,
+        "common_rust": 0.711329397172013,
+        "gray_leaf_spot": 0.06875019793441439,
+        "healthy": 0.00036401736023315305
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0301.JPG",
+      "sha256": "1599152dfcdc92b43821b6995172a8a5a5ca8c6f604cfe90f357651e0ca1b2d0",
+      "expected_labels": [
+        "other_damage"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.5569279944159491,
+      "probabilities": {
+        "blight": 0.5569279944159491,
+        "common_rust": 0.26069850115537924,
+        "gray_leaf_spot": 0.00497760018991337,
+        "healthy": 0.17739590423875837
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/20190313_111315.jpg",
+      "sha256": "333b40218409891b6ca92e8980a1865986ff3a3c6390b45e74e8aa3defb08227",
+      "expected_labels": [
+        "healthy_leaf"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.91173285301918,
+      "probabilities": {
+        "blight": 0.91173285301918,
+        "common_rust": 0.07330340842736721,
+        "gray_leaf_spot": 0.0008912498290955138,
+        "healthy": 0.014072488724357379
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": true,
+      "correct_on_comparable_label": false
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/20190313_111743.jpg",
+      "sha256": "8161a3a859f3fa241b53da6d8188cfd879a508221810fcfb4549ac67ad9f7da1",
+      "expected_labels": [
+        "phaeosphaeria_leaf_spot"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.6865575257705068,
+      "probabilities": {
+        "blight": 0.6865575257705068,
+        "common_rust": 0.30823181112989684,
+        "gray_leaf_spot": 0.0011844367424504157,
+        "healthy": 0.004026226357145864
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/20190313_111842.jpg",
+      "sha256": "a8e400b120544e98954fa1087e7c1f3ec1b1afc36df07b54e52afbe5332e982f",
+      "expected_labels": [
+        "phaeosphaeria_leaf_spot"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.7137208654480122,
+      "probabilities": {
+        "blight": 0.7137208654480122,
+        "common_rust": 0.2682717301464948,
+        "gray_leaf_spot": 0.01601230053345053,
+        "healthy": 0.0019951038720426163
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/20190313_113105.jpg",
+      "sha256": "2bfbe02d6563fcfb6ff8514459dea0a6121b6958eba9dbb501dfeabdbe346de7",
+      "expected_labels": [
+        "northern_leaf_blight"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.5813519682548978,
+      "probabilities": {
+        "blight": 0.5813519682548978,
+        "common_rust": 0.2886067490881882,
+        "gray_leaf_spot": 0.12535805999600888,
+        "healthy": 0.004683222660905175
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/20190313_113414.jpg",
+      "sha256": "ffb2df13eacc916d46d36aae0d09a9037527e85de6b195ab1b807e63ca3e3b69",
+      "expected_labels": [
+        "common_rust"
+      ],
+      "raw_prediction": "common_rust",
+      "score": 0.6801073914143327,
+      "probabilities": {
+        "blight": 0.25591155012165506,
+        "common_rust": 0.6801073914143327,
+        "gray_leaf_spot": 0.0005542009892709988,
+        "healthy": 0.0634268574747412
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": true,
+      "correct_on_comparable_label": true
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/20190313_115710.jpg",
+      "sha256": "e0cec8c43b29d0297cd0260c4f462b4de14ca684ee71eadcba29463bd69468e4",
+      "expected_labels": [
+        "gray_leaf_spot"
+      ],
+      "raw_prediction": "common_rust",
+      "score": 0.7292257087429762,
+      "probabilities": {
+        "blight": 0.2262231447761678,
+        "common_rust": 0.7292257087429762,
+        "gray_leaf_spot": 0.04224747888905736,
+        "healthy": 0.0023036675917985075
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": true,
+      "correct_on_comparable_label": false
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/20190313_120323.jpg",
+      "sha256": "97ddd309c10474c5d23efaae1522a938ada90ffe8cf4be33dffb6494abf77d6f",
+      "expected_labels": [
+        "healthy_leaf"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.36922013188351194,
+      "probabilities": {
+        "blight": 0.36922013188351194,
+        "common_rust": 0.09708798228188807,
+        "gray_leaf_spot": 0.21158464609754335,
+        "healthy": 0.32210723973705657
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": true,
+      "correct_on_comparable_label": false
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/20190313_120606.jpg",
+      "sha256": "e48ca4151fd7860d7aa7501cc3b778e8b9fffbc3f41e709b01fec7975b875d9d",
+      "expected_labels": [
+        "northern_leaf_blight"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.9649236543341332,
+      "probabilities": {
+        "blight": 0.9649236543341332,
+        "common_rust": 0.007638239536517621,
+        "gray_leaf_spot": 0.0009564901182069487,
+        "healthy": 0.026481616011142343
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/20190313_142824.jpg",
+      "sha256": "e9ba3e6524d9ea09438aac7b88e0329ca23f9cb20f0045a009568d5cdbad98ba",
+      "expected_labels": [
+        "southern_rust"
+      ],
+      "raw_prediction": "common_rust",
+      "score": 0.6668946208208099,
+      "probabilities": {
+        "blight": 0.22156744379138682,
+        "common_rust": 0.6668946208208099,
+        "gray_leaf_spot": 0.004919391446456861,
+        "healthy": 0.10661854394134662
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/20190313_142834.jpg",
+      "sha256": "ca3e080cb3444f35fbe5a248fd76ee01df002d73e15007d1207fbb50159b8c7c",
+      "expected_labels": [
+        "southern_rust"
+      ],
+      "raw_prediction": "common_rust",
+      "score": 0.43167049892616255,
+      "probabilities": {
+        "blight": 0.3591376834805836,
+        "common_rust": 0.43167049892616255,
+        "gray_leaf_spot": 0.03908372903330352,
+        "healthy": 0.17010808855995033
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/20190313_143628.jpg",
+      "sha256": "7020f516849ab97d6cf21b5c8324814359bbbb73c177ed9d042e8e298a7ae533",
+      "expected_labels": [
+        "northern_leaf_blight",
+        "phaeosphaeria_leaf_spot"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.9910966844294924,
+      "probabilities": {
+        "blight": 0.9910966844294924,
+        "common_rust": 0.008279418749994561,
+        "gray_leaf_spot": 0.0005529024942462292,
+        "healthy": 7.099432626695154e-05
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/20190313_145937.jpg",
+      "sha256": "1a6975500592279b01ce45d2681661b96705e841782b16f962115687ff9f9239",
+      "expected_labels": [
+        "other_damage"
+      ],
+      "raw_prediction": "common_rust",
+      "score": 0.5670408114765593,
+      "probabilities": {
+        "blight": 0.3275841248835484,
+        "common_rust": 0.5670408114765593,
+        "gray_leaf_spot": 0.09811417006956691,
+        "healthy": 0.007260893570325382
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/20200309_091144.jpg",
+      "sha256": "54a2c6b19beccd3842b7be890b728bb1a542aefd40a9a0519302279bbf9d8fb5",
+      "expected_labels": [
+        "unknown_disease"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.7943854816987287,
+      "probabilities": {
+        "blight": 0.7943854816987287,
+        "common_rust": 0.01752188223221795,
+        "gray_leaf_spot": 0.04181279511821769,
+        "healthy": 0.14627984095083582
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/20200309_091330.jpg",
+      "sha256": "7837c147b1443cece5b1fb9e2c5d0ac07fea5cf99abff1546e546f6027c1dacb",
+      "expected_labels": [
+        "gray_leaf_spot",
+        "northern_leaf_blight"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.5282665381380491,
+      "probabilities": {
+        "blight": 0.5282665381380491,
+        "common_rust": 0.34597084326999583,
+        "gray_leaf_spot": 0.02640855542564069,
+        "healthy": 0.09935406316631429
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/20200309_091421.jpg",
+      "sha256": "8c8b4dbee550dc5eb6ec09fd7a65d16df123e41c1997b1b28b64febf94017fdf",
+      "expected_labels": [
+        "northern_leaf_blight",
+        "phaeosphaeria_leaf_spot"
+      ],
+      "raw_prediction": "healthy",
+      "score": 0.3751860786662063,
+      "probabilities": {
+        "blight": 0.30062459105783723,
+        "common_rust": 0.1331371048424604,
+        "gray_leaf_spot": 0.19105222543349604,
+        "healthy": 0.3751860786662063
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/20200309_092134.jpg",
+      "sha256": "a76cd18b8a8f576928cf4880fd7fc737ff341faf05502f9df87040f15015593c",
+      "expected_labels": [
+        "unknown_disease"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.7321199615496963,
+      "probabilities": {
+        "blight": 0.7321199615496963,
+        "common_rust": 0.05868201391654583,
+        "gray_leaf_spot": 0.0442363378112423,
+        "healthy": 0.16496168672251554
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/20200309_101916.jpg",
+      "sha256": "d5fa4b0894d0b010a0984bdae8385f0b15fb5222f06d76fbf4ea7013c05d3067",
+      "expected_labels": [
+        "northern_leaf_blight"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.9518809391270088,
+      "probabilities": {
+        "blight": 0.9518809391270088,
+        "common_rust": 0.03895197079540404,
+        "gray_leaf_spot": 0.008151369110484462,
+        "healthy": 0.0010157209671028506
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/20200309_102123.jpg",
+      "sha256": "9b1076771218ed6d369bc6e7ee865464c3bff3c3e8f621395c16912e22f06863",
+      "expected_labels": [
+        "northern_leaf_blight"
+      ],
+      "raw_prediction": "common_rust",
+      "score": 0.7170758917113981,
+      "probabilities": {
+        "blight": 0.11246596040829483,
+        "common_rust": 0.7170758917113981,
+        "gray_leaf_spot": 0.11514665179482131,
+        "healthy": 0.05531149608548585
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/20200309_103343.jpg",
+      "sha256": "807f7c50bb3e65f685f9df4a29ab8910e206236522d571a421dcf690b3d63c9c",
+      "expected_labels": [
+        "phaeosphaeria_leaf_spot"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.5853682279099117,
+      "probabilities": {
+        "blight": 0.5853682279099117,
+        "common_rust": 0.09471218804048719,
+        "gray_leaf_spot": 0.13335177384293131,
+        "healthy": 0.18656781020666977
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/78_CIMG3813_1-381-1.JPG",
+      "sha256": "02f5458688bf6df33c40fcadfdf7f47f41e192d9fb9ed44ab0e9ca09fc62e965",
+      "expected_labels": [
+        "gray_leaf_spot"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.7544297168101185,
+      "probabilities": {
+        "blight": 0.7544297168101185,
+        "common_rust": 0.21170204098350667,
+        "gray_leaf_spot": 0.0007457905934969987,
+        "healthy": 0.033122451612877864
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": true,
+      "correct_on_comparable_label": false
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/85_CIMG3820_1-165-1.JPG",
+      "sha256": "80d3b0da5fb06d9c9fcd440e0e5dab719e93dc573880ceae201240f256af9080",
+      "expected_labels": [
+        "gray_leaf_spot"
+      ],
+      "raw_prediction": "common_rust",
+      "score": 0.8950099522104124,
+      "probabilities": {
+        "blight": 0.06335034069413642,
+        "common_rust": 0.8950099522104124,
+        "gray_leaf_spot": 0.03293513465841208,
+        "healthy": 0.008704572437039263
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": true,
+      "correct_on_comparable_label": false
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/93_CIMG3828_1-314-2.JPG",
+      "sha256": "d545dbd0232bf96a74c96825dafffc7300e04878d64927927faef9e1495151fb",
+      "expected_labels": [
+        "gray_leaf_spot"
+      ],
+      "raw_prediction": "common_rust",
+      "score": 0.4989076286272646,
+      "probabilities": {
+        "blight": 0.43128153433586874,
+        "common_rust": 0.4989076286272646,
+        "gray_leaf_spot": 0.0023524204945050264,
+        "healthy": 0.06745841654236165
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": true,
+      "correct_on_comparable_label": false
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190227_112811.jpg",
+      "sha256": "b792cf056cce5bbfc3e7fd4eac9c63a096c64de2e99a1dcb3ff1d62422730af4",
+      "expected_labels": [
+        "other_damage",
+        "phaeosphaeria_leaf_spot"
+      ],
+      "raw_prediction": "common_rust",
+      "score": 0.6537827709494902,
+      "probabilities": {
+        "blight": 0.006786494150705515,
+        "common_rust": 0.6537827709494902,
+        "gray_leaf_spot": 0.32270092999121835,
+        "healthy": 0.016729804908585943
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190227_113101.jpg",
+      "sha256": "82be5c34431f078e3a9a89b0bad582caf7ae17e33e97e20a962aafdc839cd36e",
+      "expected_labels": [
+        "northern_leaf_blight",
+        "southern_rust"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.6990669659918809,
+      "probabilities": {
+        "blight": 0.6990669659918809,
+        "common_rust": 0.27734613716885703,
+        "gray_leaf_spot": 0.021121485982435316,
+        "healthy": 0.0024654108568267657
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190227_113113.jpg",
+      "sha256": "cf85897140b24ac6c288346057d8a67950663c0533cdd210a67e1a1327c8a4bc",
+      "expected_labels": [
+        "gray_leaf_spot",
+        "northern_leaf_blight",
+        "phaeosphaeria_leaf_spot"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.9377199100674939,
+      "probabilities": {
+        "blight": 0.9377199100674939,
+        "common_rust": 0.04431448257254804,
+        "gray_leaf_spot": 0.016785503244451255,
+        "healthy": 0.00118010411550698
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_075333.jpg",
+      "sha256": "ea5db259115dc2729e506739436496a29838549eb121a556c0b78ba9d2b0264b",
+      "expected_labels": [
+        "phaeosphaeria_leaf_spot"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.941005564643374,
+      "probabilities": {
+        "blight": 0.941005564643374,
+        "common_rust": 0.05232661582113806,
+        "gray_leaf_spot": 0.006264267436113929,
+        "healthy": 0.00040355209937386363
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_080643.jpg",
+      "sha256": "5987c2660038e1c3f7dc72ad1d684eb074152be08e2150272fa8ce5f6d297c7a",
+      "expected_labels": [
+        "common_rust"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.7125966989828779,
+      "probabilities": {
+        "blight": 0.7125966989828779,
+        "common_rust": 0.2756651543767347,
+        "gray_leaf_spot": 0.011037763817539296,
+        "healthy": 0.0007003828228480639
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": true,
+      "correct_on_comparable_label": false
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_081245.jpg",
+      "sha256": "f127d0453670c00c324fd2252a2c6bbfd44a5775ba37d0f3a990e82851b77da5",
+      "expected_labels": [
+        "southern_rust"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.5950718165864021,
+      "probabilities": {
+        "blight": 0.5950718165864021,
+        "common_rust": 0.3983118908870311,
+        "gray_leaf_spot": 0.0027676332874233414,
+        "healthy": 0.0038486592391433947
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_081729.jpg",
+      "sha256": "e7e24806c5e5c74932ddca332a87dd5a3fc0ab44c87818207ec9ada4fb594c98",
+      "expected_labels": [
+        "northern_leaf_blight",
+        "phaeosphaeria_leaf_spot"
+      ],
+      "raw_prediction": "common_rust",
+      "score": 0.5641209753526788,
+      "probabilities": {
+        "blight": 0.31920421023334955,
+        "common_rust": 0.5641209753526788,
+        "gray_leaf_spot": 0.11642037000597524,
+        "healthy": 0.00025444440799635766
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_083337.jpg",
+      "sha256": "968e4f1e0f652eb1ceda00b1156a5c6beccb91366a008df6599082da2d41a58e",
+      "expected_labels": [
+        "northern_leaf_blight",
+        "phaeosphaeria_leaf_spot"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.6374947589848483,
+      "probabilities": {
+        "blight": 0.6374947589848483,
+        "common_rust": 0.33178808996109216,
+        "gray_leaf_spot": 0.023811463905631377,
+        "healthy": 0.006905687148428223
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_085358.jpg",
+      "sha256": "c125e561af0c59bd4e4422061364019da1b561f82bbcc0bb1c0a2d7b805993c0",
+      "expected_labels": [
+        "common_rust"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.6957688454533235,
+      "probabilities": {
+        "blight": 0.6957688454533235,
+        "common_rust": 0.2973298333815869,
+        "gray_leaf_spot": 0.006461706681567828,
+        "healthy": 0.0004396144835217687
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": true,
+      "correct_on_comparable_label": false
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_085854.jpg",
+      "sha256": "a0a92ce0f719e158b1ee307f921108a583766832de84f7ec7d7f1ec52f5b69b1",
+      "expected_labels": [
+        "common_rust"
+      ],
+      "raw_prediction": "common_rust",
+      "score": 0.529230186587902,
+      "probabilities": {
+        "blight": 0.32695750319969036,
+        "common_rust": 0.529230186587902,
+        "gray_leaf_spot": 0.14166851422257118,
+        "healthy": 0.0021437959898365382
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": true,
+      "correct_on_comparable_label": true
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_090225.jpg",
+      "sha256": "401c60506b726ed4ce2d8e663f4e80e65750a92f30b38c3b5c1531b132cc84ac",
+      "expected_labels": [
+        "common_rust"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.4387536899325939,
+      "probabilities": {
+        "blight": 0.4387536899325939,
+        "common_rust": 0.2489751106223306,
+        "gray_leaf_spot": 0.2961194522823031,
+        "healthy": 0.016151747162772467
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": true,
+      "correct_on_comparable_label": false
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_090315.jpg",
+      "sha256": "159055e7265add56c1536babe89c190426f90828e11e1157fb926e564d612132",
+      "expected_labels": [
+        "northern_leaf_blight"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.9401589781883085,
+      "probabilities": {
+        "blight": 0.9401589781883085,
+        "common_rust": 0.057345291328262785,
+        "gray_leaf_spot": 9.221863913810797e-05,
+        "healthy": 0.00240351184429051
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_091230.jpg",
+      "sha256": "efd80535687899cf35385a73baba778075f5cd9d021ac8ed505c51f37f402978",
+      "expected_labels": [
+        "phaeosphaeria_leaf_spot"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.6285544075706592,
+      "probabilities": {
+        "blight": 0.6285544075706592,
+        "common_rust": 0.28166071887227956,
+        "gray_leaf_spot": 0.08813301426226733,
+        "healthy": 0.001651859294793958
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_091348.jpg",
+      "sha256": "7183669171096024e43489c7a24934264a404c9540470b0c5c8272b4e28c5f18",
+      "expected_labels": [
+        "northern_leaf_blight"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.7625208994874073,
+      "probabilities": {
+        "blight": 0.7625208994874073,
+        "common_rust": 0.015604647995741348,
+        "gray_leaf_spot": 0.22117194622099628,
+        "healthy": 0.0007025062958551077
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_091855.jpg",
+      "sha256": "ccc5a8ac58a250531064aafab365f01ca50347daccef356df113984bcfd2d26a",
+      "expected_labels": [
+        "common_rust"
+      ],
+      "raw_prediction": "common_rust",
+      "score": 0.5654490927678564,
+      "probabilities": {
+        "blight": 0.3371078547945699,
+        "common_rust": 0.5654490927678564,
+        "gray_leaf_spot": 0.06910939678190836,
+        "healthy": 0.028333655655665358
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": true,
+      "correct_on_comparable_label": true
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_091910.jpg",
+      "sha256": "70c3b59c14b377906830c834318973648c62800c5f8880fc63146130cc8964fa",
+      "expected_labels": [
+        "common_rust",
+        "phaeosphaeria_leaf_spot"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.7786946422157756,
+      "probabilities": {
+        "blight": 0.7786946422157756,
+        "common_rust": 0.13536136818692954,
+        "gray_leaf_spot": 0.08091189833811269,
+        "healthy": 0.005032091259182221
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_091947.jpg",
+      "sha256": "393d3e1bff3f623820eeadd0d17b7aee3fb85723d61731352f8b270120715d79",
+      "expected_labels": [
+        "common_rust",
+        "other_damage"
+      ],
+      "raw_prediction": "common_rust",
+      "score": 0.5103554469637661,
+      "probabilities": {
+        "blight": 0.10164071445157202,
+        "common_rust": 0.5103554469637661,
+        "gray_leaf_spot": 0.38552209103237167,
+        "healthy": 0.002481747552290081
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_092215.jpg",
+      "sha256": "6f71f3d662b1feae5cd9734b13102e4ad98c68c9d8f7a1acb57a120132f94889",
+      "expected_labels": [
+        "common_rust"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.6407854532875699,
+      "probabilities": {
+        "blight": 0.6407854532875699,
+        "common_rust": 0.2752097012570428,
+        "gray_leaf_spot": 0.0805987132992518,
+        "healthy": 0.003406132156135567
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": true,
+      "correct_on_comparable_label": false
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20200309_105455.jpg",
+      "sha256": "6b7b3495da5c914e10c599f17f0c2a47012934374bc49f38055e1cc8ad38d640",
+      "expected_labels": [
+        "gray_leaf_spot"
+      ],
+      "raw_prediction": "gray_leaf_spot",
+      "score": 0.5963193252693754,
+      "probabilities": {
+        "blight": 0.29186692623822397,
+        "common_rust": 0.11114937039178267,
+        "gray_leaf_spot": 0.5963193252693754,
+        "healthy": 0.0006643781006180741
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": true,
+      "correct_on_comparable_label": true
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_3648.JPG",
+      "sha256": "303fec503501b600d26f9afef10462d9928ff09b92182dfb0a992282053d0007",
+      "expected_labels": [
+        "phaeosphaeria_leaf_spot"
+      ],
+      "raw_prediction": "common_rust",
+      "score": 0.8375917960483964,
+      "probabilities": {
+        "blight": 0.15148351806476423,
+        "common_rust": 0.8375917960483964,
+        "gray_leaf_spot": 0.00480640812567308,
+        "healthy": 0.00611827776116627
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_3655.JPG",
+      "sha256": "47da55ae6571b5131bf8780f4e9cfa5bdcee868b6a320300829bbd9fd1ae5d6e",
+      "expected_labels": [
+        "northern_leaf_blight",
+        "phaeosphaeria_leaf_spot"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.9789961765571465,
+      "probabilities": {
+        "blight": 0.9789961765571465,
+        "common_rust": 0.016895272238174483,
+        "gray_leaf_spot": 0.0013499122382069721,
+        "healthy": 0.002758638966472012
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_3673.JPG",
+      "sha256": "cabdef031ea4cb847d7dc331f6f08f9ac56f31a521cbea22bbc0aaa1e6d68b7e",
+      "expected_labels": [
+        "gray_leaf_spot",
+        "northern_leaf_blight"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.5834266592842415,
+      "probabilities": {
+        "blight": 0.5834266592842415,
+        "common_rust": 0.002601217741284911,
+        "gray_leaf_spot": 0.3842448533189668,
+        "healthy": 0.02972726965550686
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_3676.JPG",
+      "sha256": "bc4fbdd391fae0265b70efa371ae7db134dd7f7bf88a03ac03c5777c231eb124",
+      "expected_labels": [
+        "gray_leaf_spot",
+        "northern_leaf_blight"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.7214145390433248,
+      "probabilities": {
+        "blight": 0.7214145390433248,
+        "common_rust": 0.000516634187368882,
+        "gray_leaf_spot": 0.27052720933340574,
+        "healthy": 0.007541617435900598
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_3739.JPG",
+      "sha256": "8449e5aa9e7271e217f3518704d9b75bdba0f0a78ee5a08a7c1049dd9f3ca0de",
+      "expected_labels": [
+        "other_damage"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.5768530327698617,
+      "probabilities": {
+        "blight": 0.5768530327698617,
+        "common_rust": 0.38620310708902345,
+        "gray_leaf_spot": 0.03172274658542988,
+        "healthy": 0.005221113555685034
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "pretoria",
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_3847.JPG",
+      "sha256": "6ca0ce2981939430ca0058a61f4ee5d3ecb37a290314f30207032d253c3b3b49",
+      "expected_labels": [
+        "phaeosphaeria_leaf_spot"
+      ],
+      "raw_prediction": "blight",
+      "score": 0.9731566725033252,
+      "probabilities": {
+        "blight": 0.9731566725033252,
+        "common_rust": 0.009902725757274284,
+        "gray_leaf_spot": 0.014693548185422374,
+        "healthy": 0.0022470535539781664
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "user_review",
+      "path": ".cache/evaluation/corn_user/64_a162ba617bd6.png",
+      "sha256": "a162ba617bd6ba3083a3d15bfa6404ee8c3a33eaa5d5de3a654e51cb31caf050",
+      "expected_labels": [
+        "common_smut"
+      ],
+      "raw_prediction": "common_rust",
+      "score": 0.3760796491054415,
+      "probabilities": {
+        "blight": 0.3328131746684398,
+        "common_rust": 0.3760796491054415,
+        "gray_leaf_spot": 0.2080158423268536,
+        "healthy": 0.08309133389926511
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "user_review",
+      "path": ".cache/evaluation/corn_user/65_eba443458198.png",
+      "sha256": "eba443458198a865eb395d1f0ce2c9ffdefde5f5664fb4a174c16934b6fb2e88",
+      "expected_labels": [
+        "southern_leaf_blight"
+      ],
+      "raw_prediction": "gray_leaf_spot",
+      "score": 0.9131401428979078,
+      "probabilities": {
+        "blight": 0.07042630166012334,
+        "common_rust": 0.008642781777530273,
+        "gray_leaf_spot": 0.9131401428979078,
+        "healthy": 0.007790773664438592
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "user_review",
+      "path": ".cache/evaluation/corn_user/66_3a23aa8a54b9.png",
+      "sha256": "3a23aa8a54b9b2076c9f3bff3f90a6444dc9982456c2bb13474b9af33c04483f",
+      "expected_labels": [
+        "northern_leaf_blight"
+      ],
+      "raw_prediction": "gray_leaf_spot",
+      "score": 0.4973638940193098,
+      "probabilities": {
+        "blight": 0.4693106679915913,
+        "common_rust": 0.031828283148797924,
+        "gray_leaf_spot": 0.4973638940193098,
+        "healthy": 0.0014971548403007794
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": false,
+      "correct_on_comparable_label": null
+    },
+    {
+      "source": "user_review",
+      "path": ".cache/evaluation/corn_user/67_d310b1870a3f.png",
+      "sha256": "d310b1870a3f90be8dfd5615c172acb190bf8195ec7dae8136a8f554bf0fabbd",
+      "expected_labels": [
+        "healthy_leaf"
+      ],
+      "raw_prediction": "healthy",
+      "score": 0.7660264150972372,
+      "probabilities": {
+        "blight": 0.02160964549112863,
+        "common_rust": 0.16647862907435784,
+        "gray_leaf_spot": 0.0458853103372763,
+        "healthy": 0.7660264150972372
+      },
+      "possible_legacy_overlap": false,
+      "comparable_single_label": true,
+      "correct_on_comparable_label": true
+    }
+  ]
+}

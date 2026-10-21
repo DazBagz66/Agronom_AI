@@ -1,0 +1,1534 @@
+{
+  "source": "pretoria",
+  "version": 1,
+  "url": "https://researchdata.up.ac.za/articles/dataset/Diseases_of_maize_in_the_field/20237613",
+  "license": "CC BY 4.0",
+  "mode": "stratified_review_sample",
+  "seed": 42,
+  "per_label": 8,
+  "mixed": 16,
+  "source_images": 2355,
+  "selected_images": 80,
+  "images": [
+    {
+      "file": "167_CIMG3903.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/167_CIMG3903.JPG",
+      "bytes": 1548507,
+      "sha256": "935c93b1a01fb4b62c26647c2b105683807514bc5f71dc66a7cff25cec1f9826",
+      "crc32": "c53c5c62",
+      "raw_annotation": {
+        "imgID_id": "1215",
+        "filePath": "167_CIMG3903.JPG",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "1",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "183_CIMG3919_1-68-2.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/183_CIMG3919_1-68-2.JPG",
+      "bytes": 1582587,
+      "sha256": "df9d5a14b7fa1fcbb2442e5cb9225c838512ae7982f1655c01b3f05d55a9f64c",
+      "crc32": "afb0caf1",
+      "raw_annotation": {
+        "imgID_id": "1002",
+        "filePath": "183_CIMG3919_1-68-2.JPG",
+        "GLS": "1",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "198_CIMG3934_1-33-2.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/198_CIMG3934_1-33-2.JPG",
+      "bytes": 1751718,
+      "sha256": "be48010bcfec791588d77788c9e60ced28928e36e7fe0d496bd239961ff889f1",
+      "crc32": "9b812e06",
+      "raw_annotation": {
+        "imgID_id": "1058",
+        "filePath": "198_CIMG3934_1-33-2.JPG",
+        "GLS": "1",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "2012_03_DSC1711_maize_diverse-C-AC-DK-273.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_DSC1711_maize_diverse-C-AC-DK-273.JPG",
+      "bytes": 7086440,
+      "sha256": "8b97b42c108eb3d23d71e6a7659742e096ffb6d1184e22d611a3f2a3d0e68f77",
+      "crc32": "9e3b4c37",
+      "raw_annotation": {
+        "imgID_id": "1595",
+        "filePath": "2012_03_DSC1711_maize_diverse-C-AC-DK-273.JPG",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "1"
+      }
+    },
+    {
+      "file": "2012_03_DSC1763_maize_diverse-C-AC-DK-273.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_DSC1763_maize_diverse-C-AC-DK-273.JPG",
+      "bytes": 5182557,
+      "sha256": "7055d4203c208d1171329f163895a77be5c80c5a9295ec27f163a911ed6002db",
+      "crc32": "baab8b95",
+      "raw_annotation": {
+        "imgID_id": "1604",
+        "filePath": "2012_03_DSC1763_maize_diverse-C-AC-DK-273.JPG",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "1",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "2012_03_DSC1798_maize_diverse-C-AC-DK-273.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_DSC1798_maize_diverse-C-AC-DK-273.JPG",
+      "bytes": 5398963,
+      "sha256": "faf3505ba8f7da66069270cd32b518f6c6358cf57654cabeeaa5a94c37b1a88e",
+      "crc32": "63a9cf61",
+      "raw_annotation": {
+        "imgID_id": "1526",
+        "filePath": "2012_03_DSC1798_maize_diverse-C-AC-DK-273.JPG",
+        "GLS": "1",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "1",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "2012_03_DSC1992_maize_diverse-R-Pn-DK-28.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_DSC1992_maize_diverse-R-Pn-DK-28.JPG",
+      "bytes": 6060974,
+      "sha256": "205e18f5e0f5271e3f99d3f227b5114d022a9649fbefc158ac7ae7e18fa0befa",
+      "crc32": "bb512c41",
+      "raw_annotation": {
+        "imgID_id": "1563",
+        "filePath": "2012_03_DSC1992_maize_diverse-R-Pn-DK-28.JPG",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "1",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "2012_03_DSC2008_maize_diverse-R-Pn-DK-28.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_DSC2008_maize_diverse-R-Pn-DK-28.JPG",
+      "bytes": 6526888,
+      "sha256": "f362530024c69669045a81886b0a150ae55427bf71d9c061214220542d951d8e",
+      "crc32": "c741db30",
+      "raw_annotation": {
+        "imgID_id": "1614",
+        "filePath": "2012_03_DSC2008_maize_diverse-R-Pn-DK-28.JPG",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "1"
+      }
+    },
+    {
+      "file": "2012_03_IMG_6283_maize_diverse JM-C-Ac.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_IMG_6283_maize_diverse JM-C-Ac.JPG",
+      "bytes": 7210695,
+      "sha256": "972e471d79a3631de2ea33f6fb4e73660d13d175e1a2725aaef0cfb623e5920a",
+      "crc32": "68dc6a1d",
+      "raw_annotation": {
+        "imgID_id": "1693",
+        "filePath": "2012_03_IMG_6283_maize_diverse JM-C-Ac.JPG",
+        "GLS": "1",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "2012_03_IMG_6302_maize_diverse JM-C-Ac.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_IMG_6302_maize_diverse JM-C-Ac.JPG",
+      "bytes": 6814102,
+      "sha256": "95a1a58b0e978f9e18ffa9cd43632738304cc4cac023b51f4e8250528a700217",
+      "crc32": "bbf64dec",
+      "raw_annotation": {
+        "imgID_id": "1753",
+        "filePath": "2012_03_IMG_6302_maize_diverse JM-C-Ac.JPG",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "1",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "2012_03_IMG_6441_maize_diverse JM-R-Pn.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_IMG_6441_maize_diverse JM-R-Pn.JPG",
+      "bytes": 6774616,
+      "sha256": "61bdcd9d8e0bf7161983c036a1dbf8f38c27b6d4be9865f070bb0b982dce62a4",
+      "crc32": "c83cd5db",
+      "raw_annotation": {
+        "imgID_id": "1730",
+        "filePath": "2012_03_IMG_6441_maize_diverse JM-R-Pn.JPG",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "1",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "2012_03_IMG_6465_maize_diverse JM-R-Pn.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_IMG_6465_maize_diverse JM-R-Pn.JPG",
+      "bytes": 5973143,
+      "sha256": "6a4b268e9557a07ef74891713c87253cd4c96772c39bbd70f79d20a8807786d7",
+      "crc32": "82615747",
+      "raw_annotation": {
+        "imgID_id": "1787",
+        "filePath": "2012_03_IMG_6465_maize_diverse JM-R-Pn.JPG",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "1",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "2012_03_IMG_6538_maize_diverse JM-R-Pn.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_IMG_6538_maize_diverse JM-R-Pn.JPG",
+      "bytes": 6332201,
+      "sha256": "582e4d8644991c0dfc877ea36f6c1f322b2f3e371f843086b4ab23e87d185a0e",
+      "crc32": "f0530545",
+      "raw_annotation": {
+        "imgID_id": "1751",
+        "filePath": "2012_03_IMG_6538_maize_diverse JM-R-Pn.JPG",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "1",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "2012_03_IMG_6547_maize_diverse JM-R-Pn.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_IMG_6547_maize_diverse JM-R-Pn.JPG",
+      "bytes": 6336067,
+      "sha256": "07bbac3c99fe32a5dc8da1d4cf9949c8f30828e7d987b837f2609f11a6234b3e",
+      "crc32": "37ac1346",
+      "raw_annotation": {
+        "imgID_id": "1723",
+        "filePath": "2012_03_IMG_6547_maize_diverse JM-R-Pn.JPG",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "1"
+      }
+    },
+    {
+      "file": "2012_03_IMG_6571_maize_diverse JM-R-Pn.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_IMG_6571_maize_diverse JM-R-Pn.JPG",
+      "bytes": 6679894,
+      "sha256": "58d66a03b3c20e6b6eddc543ebed415919315869d2180582508e387a504b1e17",
+      "crc32": "c3740ee8",
+      "raw_annotation": {
+        "imgID_id": "1832",
+        "filePath": "2012_03_IMG_6571_maize_diverse JM-R-Pn.JPG",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "1",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "2012_03_IMG_6572_maize_diverse JM-R-Pn.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_IMG_6572_maize_diverse JM-R-Pn.JPG",
+      "bytes": 6492562,
+      "sha256": "84ee81d2c176250dc06447dbc1ffa4c68a0678f8cabd31876dfb5f802892f78b",
+      "crc32": "a4be21c7",
+      "raw_annotation": {
+        "imgID_id": "1886",
+        "filePath": "2012_03_IMG_6572_maize_diverse JM-R-Pn.JPG",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "1"
+      }
+    },
+    {
+      "file": "2012_03_IMG_6575_maize_diverse JM-R-Pn.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_IMG_6575_maize_diverse JM-R-Pn.JPG",
+      "bytes": 6256344,
+      "sha256": "99c4d8dcdb3b4925b0087a249434b71b81a8d574e1b8db612d7c3df5e36009cd",
+      "crc32": "09d8f65d",
+      "raw_annotation": {
+        "imgID_id": "1844",
+        "filePath": "2012_03_IMG_6575_maize_diverse JM-R-Pn.JPG",
+        "GLS": "1",
+        "NCLB": "0",
+        "PLS": "1",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "2019-03-13--Cedara-(DKB)-DSC_0003.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0003.JPG",
+      "bytes": 6092982,
+      "sha256": "4a20fbe97669afeee49dbaaad835483e5e344de71c0e8e739e53133e3229d556",
+      "crc32": "17d53e17",
+      "raw_annotation": {
+        "imgID_id": "102",
+        "filePath": "2019-03-13--Cedara-(DKB)-DSC_0003.JPG",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "1",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "2019-03-13--Cedara-(DKB)-DSC_0009.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0009.JPG",
+      "bytes": 5998887,
+      "sha256": "965b746d1d04bf80722a6ac2817833bd2392351feefc5bd6673cc5de283630f2",
+      "crc32": "d9f1cb7f",
+      "raw_annotation": {
+        "imgID_id": "284",
+        "filePath": "2019-03-13--Cedara-(DKB)-DSC_0009.JPG",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "1",
+        "CR": "1",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "2019-03-13--Cedara-(DKB)-DSC_0019.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0019.JPG",
+      "bytes": 5766601,
+      "sha256": "5d640737a6f58dd015c65f95b6a3e3d393f3d52f52a55d1ba77ec69c4b3247f8",
+      "crc32": "82a51794",
+      "raw_annotation": {
+        "imgID_id": "274",
+        "filePath": "2019-03-13--Cedara-(DKB)-DSC_0019.JPG",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "1",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "2019-03-13--Cedara-(DKB)-DSC_0057.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0057.JPG",
+      "bytes": 5789271,
+      "sha256": "94829d6a0fe6ce1bce14d783cc49f292aa9eb6e5b4c96deccc603c9cda5c4c07",
+      "crc32": "0ff48693",
+      "raw_annotation": {
+        "imgID_id": "263",
+        "filePath": "2019-03-13--Cedara-(DKB)-DSC_0057.JPG",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "1",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "2019-03-13--Cedara-(DKB)-DSC_0083.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0083.JPG",
+      "bytes": 4733370,
+      "sha256": "c01b6bbf9b2ab7e2c43533cc72bed5786267a5bb1523f835d72b08a1af701532",
+      "crc32": "bab1507c",
+      "raw_annotation": {
+        "imgID_id": "83",
+        "filePath": "2019-03-13--Cedara-(DKB)-DSC_0083.JPG",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "1",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "2019-03-13--Cedara-(DKB)-DSC_0162.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0162.JPG",
+      "bytes": 5496890,
+      "sha256": "4506351bb80b16322d36c76398c785b2cbbd5f182edb8abbabc4fd30ad9864bb",
+      "crc32": "a3a82546",
+      "raw_annotation": {
+        "imgID_id": "225",
+        "filePath": "2019-03-13--Cedara-(DKB)-DSC_0162.JPG",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "1"
+      }
+    },
+    {
+      "file": "2019-03-13--Cedara-(DKB)-DSC_0181.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0181.JPG",
+      "bytes": 6377057,
+      "sha256": "b3517246be7f6a74f2184d600c7dc035417710022b0075056104fab6e36a3213",
+      "crc32": "dd03e94f",
+      "raw_annotation": {
+        "imgID_id": "159",
+        "filePath": "2019-03-13--Cedara-(DKB)-DSC_0181.JPG",
+        "GLS": "0",
+        "NCLB": "1",
+        "PLS": "1",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "2019-03-13--Cedara-(DKB)-DSC_0196.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0196.JPG",
+      "bytes": 5980386,
+      "sha256": "0e683605e5246173bb5786d788f569febfd5ec77c2b221d3ca4029c87735868d",
+      "crc32": "7f68875f",
+      "raw_annotation": {
+        "imgID_id": "99",
+        "filePath": "2019-03-13--Cedara-(DKB)-DSC_0196.JPG",
+        "GLS": "0",
+        "NCLB": "1",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "2019-03-13--Cedara-(DKB)-DSC_0208.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0208.JPG",
+      "bytes": 5833992,
+      "sha256": "59c9f672141c01fc522d2c4a3e273cdce92b5e8ad2eec912ec973f0b25b8eb8e",
+      "crc32": "9777ff1a",
+      "raw_annotation": {
+        "imgID_id": "215",
+        "filePath": "2019-03-13--Cedara-(DKB)-DSC_0208.JPG",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "1",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "2019-03-13--Cedara-(DKB)-DSC_0215.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0215.JPG",
+      "bytes": 5657175,
+      "sha256": "8b8ca7375d0997312d4237352b87790d905d1f1feea8478b2e6b4acff2938ba2",
+      "crc32": "290c2e13",
+      "raw_annotation": {
+        "imgID_id": "288",
+        "filePath": "2019-03-13--Cedara-(DKB)-DSC_0215.JPG",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "1",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "2019-03-13--Cedara-(DKB)-DSC_0231.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0231.JPG",
+      "bytes": 7209889,
+      "sha256": "0401a434d225689033aea9adf576e9985fd3e6d79f77d944bd50a69a6ca6e3b9",
+      "crc32": "29ba88cf",
+      "raw_annotation": {
+        "imgID_id": "182",
+        "filePath": "2019-03-13--Cedara-(DKB)-DSC_0231.JPG",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "1",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "2019-03-13--Cedara-(DKB)-DSC_0232.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0232.JPG",
+      "bytes": 6303022,
+      "sha256": "64c423351b7d87c5fa98f5bd548817d25d5e3d6db139a8cd1590bc34645a34fc",
+      "crc32": "48fff703",
+      "raw_annotation": {
+        "imgID_id": "233",
+        "filePath": "2019-03-13--Cedara-(DKB)-DSC_0232.JPG",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "1",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "2019-03-13--Cedara-(DKB)-DSC_0256.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0256.JPG",
+      "bytes": 5605347,
+      "sha256": "54ec167407d629f410c5d8811e3f44843ca727dae10cb867f83ccfbe97c92f40",
+      "crc32": "45863140",
+      "raw_annotation": {
+        "imgID_id": "267",
+        "filePath": "2019-03-13--Cedara-(DKB)-DSC_0256.JPG",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "1",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "2019-03-13--Cedara-(DKB)-DSC_0274.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0274.JPG",
+      "bytes": 5640238,
+      "sha256": "3379acfec99f6180f3e1044d37a33b9e7b66e6e90a1bc98b264f9fb8942d69e8",
+      "crc32": "61cf9c9f",
+      "raw_annotation": {
+        "imgID_id": "90",
+        "filePath": "2019-03-13--Cedara-(DKB)-DSC_0274.JPG",
+        "GLS": "0",
+        "NCLB": "1",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "2019-03-13--Cedara-(DKB)-DSC_0283.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0283.JPG",
+      "bytes": 5931255,
+      "sha256": "2b1fa39d1161793cf3d80821611dcb4df81eb796ccdae62c5b8988c656d696ed",
+      "crc32": "d5326b8e",
+      "raw_annotation": {
+        "imgID_id": "11",
+        "filePath": "2019-03-13--Cedara-(DKB)-DSC_0283.JPG",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "1"
+      }
+    },
+    {
+      "file": "2019-03-13--Cedara-(DKB)-DSC_0301.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0301.JPG",
+      "bytes": 5527255,
+      "sha256": "1599152dfcdc92b43821b6995172a8a5a5ca8c6f604cfe90f357651e0ca1b2d0",
+      "crc32": "0478eefe",
+      "raw_annotation": {
+        "imgID_id": "304",
+        "filePath": "2019-03-13--Cedara-(DKB)-DSC_0301.JPG",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "1",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "20190313_111315.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/20190313_111315.jpg",
+      "bytes": 5314583,
+      "sha256": "333b40218409891b6ca92e8980a1865986ff3a3c6390b45e74e8aa3defb08227",
+      "crc32": "9dc98a5f",
+      "raw_annotation": {
+        "imgID_id": "700",
+        "filePath": "20190313_111315.jpg",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "1",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "20190313_111743.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/20190313_111743.jpg",
+      "bytes": 4526906,
+      "sha256": "8161a3a859f3fa241b53da6d8188cfd879a508221810fcfb4549ac67ad9f7da1",
+      "crc32": "562f8bee",
+      "raw_annotation": {
+        "imgID_id": "757",
+        "filePath": "20190313_111743.jpg",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "1",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "20190313_111842.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/20190313_111842.jpg",
+      "bytes": 4715172,
+      "sha256": "a8e400b120544e98954fa1087e7c1f3ec1b1afc36df07b54e52afbe5332e982f",
+      "crc32": "e4e9e63e",
+      "raw_annotation": {
+        "imgID_id": "746",
+        "filePath": "20190313_111842.jpg",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "1",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "20190313_113105.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/20190313_113105.jpg",
+      "bytes": 3962805,
+      "sha256": "2bfbe02d6563fcfb6ff8514459dea0a6121b6958eba9dbb501dfeabdbe346de7",
+      "crc32": "6d88a0b9",
+      "raw_annotation": {
+        "imgID_id": "763",
+        "filePath": "20190313_113105.jpg",
+        "GLS": "0",
+        "NCLB": "1",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "20190313_113414.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/20190313_113414.jpg",
+      "bytes": 5334485,
+      "sha256": "ffb2df13eacc916d46d36aae0d09a9037527e85de6b195ab1b807e63ca3e3b69",
+      "crc32": "48f46637",
+      "raw_annotation": {
+        "imgID_id": "623",
+        "filePath": "20190313_113414.jpg",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "1",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "20190313_115710.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/20190313_115710.jpg",
+      "bytes": 4012724,
+      "sha256": "e0cec8c43b29d0297cd0260c4f462b4de14ca684ee71eadcba29463bd69468e4",
+      "crc32": "eccfee84",
+      "raw_annotation": {
+        "imgID_id": "630",
+        "filePath": "20190313_115710.jpg",
+        "GLS": "1",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "20190313_120323.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/20190313_120323.jpg",
+      "bytes": 3895963,
+      "sha256": "97ddd309c10474c5d23efaae1522a938ada90ffe8cf4be33dffb6494abf77d6f",
+      "crc32": "978f8359",
+      "raw_annotation": {
+        "imgID_id": "614",
+        "filePath": "20190313_120323.jpg",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "1",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "20190313_120606.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/20190313_120606.jpg",
+      "bytes": 4657120,
+      "sha256": "e48ca4151fd7860d7aa7501cc3b778e8b9fffbc3f41e709b01fec7975b875d9d",
+      "crc32": "6489893c",
+      "raw_annotation": {
+        "imgID_id": "635",
+        "filePath": "20190313_120606.jpg",
+        "GLS": "0",
+        "NCLB": "1",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "20190313_142824.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/20190313_142824.jpg",
+      "bytes": 4338687,
+      "sha256": "e9ba3e6524d9ea09438aac7b88e0329ca23f9cb20f0045a009568d5cdbad98ba",
+      "crc32": "bcb82581",
+      "raw_annotation": {
+        "imgID_id": "645",
+        "filePath": "20190313_142824.jpg",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "1",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "20190313_142834.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/20190313_142834.jpg",
+      "bytes": 4581665,
+      "sha256": "ca3e080cb3444f35fbe5a248fd76ee01df002d73e15007d1207fbb50159b8c7c",
+      "crc32": "a5f47845",
+      "raw_annotation": {
+        "imgID_id": "586",
+        "filePath": "20190313_142834.jpg",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "1",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "20190313_143628.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/20190313_143628.jpg",
+      "bytes": 4383289,
+      "sha256": "7020f516849ab97d6cf21b5c8324814359bbbb73c177ed9d042e8e298a7ae533",
+      "crc32": "e4819979",
+      "raw_annotation": {
+        "imgID_id": "538",
+        "filePath": "20190313_143628.jpg",
+        "GLS": "0",
+        "NCLB": "1",
+        "PLS": "1",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "20190313_145937.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/20190313_145937.jpg",
+      "bytes": 4571637,
+      "sha256": "1a6975500592279b01ce45d2681661b96705e841782b16f962115687ff9f9239",
+      "crc32": "20eae491",
+      "raw_annotation": {
+        "imgID_id": "762",
+        "filePath": "20190313_145937.jpg",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "1",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "20200309_091144.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/20200309_091144.jpg",
+      "bytes": 4854677,
+      "sha256": "54a2c6b19beccd3842b7be890b728bb1a542aefd40a9a0519302279bbf9d8fb5",
+      "crc32": "ec18f294",
+      "raw_annotation": {
+        "imgID_id": "2067",
+        "filePath": "20200309_091144.jpg",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "1"
+      }
+    },
+    {
+      "file": "20200309_091330.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/20200309_091330.jpg",
+      "bytes": 4976105,
+      "sha256": "7837c147b1443cece5b1fb9e2c5d0ac07fea5cf99abff1546e546f6027c1dacb",
+      "crc32": "45b67968",
+      "raw_annotation": {
+        "imgID_id": "2075",
+        "filePath": "20200309_091330.jpg",
+        "GLS": "1",
+        "NCLB": "1",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "20200309_091421.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/20200309_091421.jpg",
+      "bytes": 6103472,
+      "sha256": "8c8b4dbee550dc5eb6ec09fd7a65d16df123e41c1997b1b28b64febf94017fdf",
+      "crc32": "93f74d34",
+      "raw_annotation": {
+        "imgID_id": "2139",
+        "filePath": "20200309_091421.jpg",
+        "GLS": "0",
+        "NCLB": "1",
+        "PLS": "1",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "20200309_092134.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/20200309_092134.jpg",
+      "bytes": 4143159,
+      "sha256": "a76cd18b8a8f576928cf4880fd7fc737ff341faf05502f9df87040f15015593c",
+      "crc32": "b3c7c462",
+      "raw_annotation": {
+        "imgID_id": "2141",
+        "filePath": "20200309_092134.jpg",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "1"
+      }
+    },
+    {
+      "file": "20200309_101916.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/20200309_101916.jpg",
+      "bytes": 5069407,
+      "sha256": "d5fa4b0894d0b010a0984bdae8385f0b15fb5222f06d76fbf4ea7013c05d3067",
+      "crc32": "eb56ebc1",
+      "raw_annotation": {
+        "imgID_id": "2161",
+        "filePath": "20200309_101916.jpg",
+        "GLS": "0",
+        "NCLB": "1",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "20200309_102123.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/20200309_102123.jpg",
+      "bytes": 5136630,
+      "sha256": "9b1076771218ed6d369bc6e7ee865464c3bff3c3e8f621395c16912e22f06863",
+      "crc32": "3fd9643d",
+      "raw_annotation": {
+        "imgID_id": "1975",
+        "filePath": "20200309_102123.jpg",
+        "GLS": "0",
+        "NCLB": "1",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "20200309_103343.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/20200309_103343.jpg",
+      "bytes": 4287407,
+      "sha256": "807f7c50bb3e65f685f9df4a29ab8910e206236522d571a421dcf690b3d63c9c",
+      "crc32": "368dd576",
+      "raw_annotation": {
+        "imgID_id": "2021",
+        "filePath": "20200309_103343.jpg",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "1",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "78_CIMG3813_1-381-1.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/78_CIMG3813_1-381-1.JPG",
+      "bytes": 1797227,
+      "sha256": "02f5458688bf6df33c40fcadfdf7f47f41e192d9fb9ed44ab0e9ca09fc62e965",
+      "crc32": "b339a529",
+      "raw_annotation": {
+        "imgID_id": "1155",
+        "filePath": "78_CIMG3813_1-381-1.JPG",
+        "GLS": "1",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "85_CIMG3820_1-165-1.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/85_CIMG3820_1-165-1.JPG",
+      "bytes": 1763810,
+      "sha256": "80d3b0da5fb06d9c9fcd440e0e5dab719e93dc573880ceae201240f256af9080",
+      "crc32": "9e0e30f4",
+      "raw_annotation": {
+        "imgID_id": "1148",
+        "filePath": "85_CIMG3820_1-165-1.JPG",
+        "GLS": "1",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "93_CIMG3828_1-314-2.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/93_CIMG3828_1-314-2.JPG",
+      "bytes": 1664397,
+      "sha256": "d545dbd0232bf96a74c96825dafffc7300e04878d64927927faef9e1495151fb",
+      "crc32": "e9d8e07f",
+      "raw_annotation": {
+        "imgID_id": "1124",
+        "filePath": "93_CIMG3828_1-314-2.JPG",
+        "GLS": "1",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "IMG_20190227_112811.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190227_112811.jpg",
+      "bytes": 7103076,
+      "sha256": "b792cf056cce5bbfc3e7fd4eac9c63a096c64de2e99a1dcb3ff1d62422730af4",
+      "crc32": "59ddf107",
+      "raw_annotation": {
+        "imgID_id": "1495",
+        "filePath": "IMG_20190227_112811.jpg",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "1",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "1",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "IMG_20190227_113101.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190227_113101.jpg",
+      "bytes": 5184664,
+      "sha256": "82be5c34431f078e3a9a89b0bad582caf7ae17e33e97e20a962aafdc839cd36e",
+      "crc32": "262122c5",
+      "raw_annotation": {
+        "imgID_id": "1483",
+        "filePath": "IMG_20190227_113101.jpg",
+        "GLS": "0",
+        "NCLB": "1",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "1",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "IMG_20190227_113113.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190227_113113.jpg",
+      "bytes": 4764555,
+      "sha256": "cf85897140b24ac6c288346057d8a67950663c0533cdd210a67e1a1327c8a4bc",
+      "crc32": "8b231334",
+      "raw_annotation": {
+        "imgID_id": "1488",
+        "filePath": "IMG_20190227_113113.jpg",
+        "GLS": "1",
+        "NCLB": "1",
+        "PLS": "1",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "IMG_20190316_075333.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_075333.jpg",
+      "bytes": 4866895,
+      "sha256": "ea5db259115dc2729e506739436496a29838549eb121a556c0b78ba9d2b0264b",
+      "crc32": "22606ff6",
+      "raw_annotation": {
+        "imgID_id": "427",
+        "filePath": "IMG_20190316_075333.jpg",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "1",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "IMG_20190316_080643.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_080643.jpg",
+      "bytes": 5193435,
+      "sha256": "5987c2660038e1c3f7dc72ad1d684eb074152be08e2150272fa8ce5f6d297c7a",
+      "crc32": "75e9a288",
+      "raw_annotation": {
+        "imgID_id": "900",
+        "filePath": "IMG_20190316_080643.jpg",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "1",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "IMG_20190316_081245.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_081245.jpg",
+      "bytes": 4208070,
+      "sha256": "f127d0453670c00c324fd2252a2c6bbfd44a5775ba37d0f3a990e82851b77da5",
+      "crc32": "d2bc2701",
+      "raw_annotation": {
+        "imgID_id": "402",
+        "filePath": "IMG_20190316_081245.jpg",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "1",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "IMG_20190316_081729.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_081729.jpg",
+      "bytes": 5664162,
+      "sha256": "e7e24806c5e5c74932ddca332a87dd5a3fc0ab44c87818207ec9ada4fb594c98",
+      "crc32": "43813d26",
+      "raw_annotation": {
+        "imgID_id": "800",
+        "filePath": "IMG_20190316_081729.jpg",
+        "GLS": "0",
+        "NCLB": "1",
+        "PLS": "1",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "IMG_20190316_083337.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_083337.jpg",
+      "bytes": 4833577,
+      "sha256": "968e4f1e0f652eb1ceda00b1156a5c6beccb91366a008df6599082da2d41a58e",
+      "crc32": "6919f2bb",
+      "raw_annotation": {
+        "imgID_id": "467",
+        "filePath": "IMG_20190316_083337.jpg",
+        "GLS": "0",
+        "NCLB": "1",
+        "PLS": "1",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "IMG_20190316_085358.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_085358.jpg",
+      "bytes": 5506044,
+      "sha256": "c125e561af0c59bd4e4422061364019da1b561f82bbcc0bb1c0a2d7b805993c0",
+      "crc32": "9dac7800",
+      "raw_annotation": {
+        "imgID_id": "466",
+        "filePath": "IMG_20190316_085358.jpg",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "1",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "IMG_20190316_085854.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_085854.jpg",
+      "bytes": 5338374,
+      "sha256": "a0a92ce0f719e158b1ee307f921108a583766832de84f7ec7d7f1ec52f5b69b1",
+      "crc32": "a560428f",
+      "raw_annotation": {
+        "imgID_id": "346",
+        "filePath": "IMG_20190316_085854.jpg",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "1",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "IMG_20190316_090225.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_090225.jpg",
+      "bytes": 5497935,
+      "sha256": "401c60506b726ed4ce2d8e663f4e80e65750a92f30b38c3b5c1531b132cc84ac",
+      "crc32": "915366cb",
+      "raw_annotation": {
+        "imgID_id": "901",
+        "filePath": "IMG_20190316_090225.jpg",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "1",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "IMG_20190316_090315.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_090315.jpg",
+      "bytes": 4850731,
+      "sha256": "159055e7265add56c1536babe89c190426f90828e11e1157fb926e564d612132",
+      "crc32": "9b655432",
+      "raw_annotation": {
+        "imgID_id": "321",
+        "filePath": "IMG_20190316_090315.jpg",
+        "GLS": "0",
+        "NCLB": "1",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "IMG_20190316_091230.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_091230.jpg",
+      "bytes": 5781325,
+      "sha256": "efd80535687899cf35385a73baba778075f5cd9d021ac8ed505c51f37f402978",
+      "crc32": "217a16ec",
+      "raw_annotation": {
+        "imgID_id": "314",
+        "filePath": "IMG_20190316_091230.jpg",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "1",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "IMG_20190316_091348.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_091348.jpg",
+      "bytes": 5351114,
+      "sha256": "7183669171096024e43489c7a24934264a404c9540470b0c5c8272b4e28c5f18",
+      "crc32": "3eda26c0",
+      "raw_annotation": {
+        "imgID_id": "963",
+        "filePath": "IMG_20190316_091348.jpg",
+        "GLS": "0",
+        "NCLB": "1",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "IMG_20190316_091855.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_091855.jpg",
+      "bytes": 6674918,
+      "sha256": "ccc5a8ac58a250531064aafab365f01ca50347daccef356df113984bcfd2d26a",
+      "crc32": "b6221ba3",
+      "raw_annotation": {
+        "imgID_id": "852",
+        "filePath": "IMG_20190316_091855.jpg",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "1",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "IMG_20190316_091910.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_091910.jpg",
+      "bytes": 4894948,
+      "sha256": "70c3b59c14b377906830c834318973648c62800c5f8880fc63146130cc8964fa",
+      "crc32": "2bd751ce",
+      "raw_annotation": {
+        "imgID_id": "312",
+        "filePath": "IMG_20190316_091910.jpg",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "1",
+        "CR": "1",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "IMG_20190316_091947.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_091947.jpg",
+      "bytes": 5797416,
+      "sha256": "393d3e1bff3f623820eeadd0d17b7aee3fb85723d61731352f8b270120715d79",
+      "crc32": "5530ad8b",
+      "raw_annotation": {
+        "imgID_id": "946",
+        "filePath": "IMG_20190316_091947.jpg",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "1",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "1",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "IMG_20190316_092215.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_092215.jpg",
+      "bytes": 4327738,
+      "sha256": "6f71f3d662b1feae5cd9734b13102e4ad98c68c9d8f7a1acb57a120132f94889",
+      "crc32": "a38c2f0e",
+      "raw_annotation": {
+        "imgID_id": "399",
+        "filePath": "IMG_20190316_092215.jpg",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "1",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "IMG_20200309_105455.jpg",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20200309_105455.jpg",
+      "bytes": 6268013,
+      "sha256": "6b7b3495da5c914e10c599f17f0c2a47012934374bc49f38055e1cc8ad38d640",
+      "crc32": "5ffcf017",
+      "raw_annotation": {
+        "imgID_id": "2273",
+        "filePath": "IMG_20200309_105455.jpg",
+        "GLS": "1",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "IMG_3648.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_3648.JPG",
+      "bytes": 1057317,
+      "sha256": "303fec503501b600d26f9afef10462d9928ff09b92182dfb0a992282053d0007",
+      "crc32": "2e5475f7",
+      "raw_annotation": {
+        "imgID_id": "1248",
+        "filePath": "IMG_3648.JPG",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "1",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "IMG_3655.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_3655.JPG",
+      "bytes": 849226,
+      "sha256": "47da55ae6571b5131bf8780f4e9cfa5bdcee868b6a320300829bbd9fd1ae5d6e",
+      "crc32": "15d983d4",
+      "raw_annotation": {
+        "imgID_id": "1442",
+        "filePath": "IMG_3655.JPG",
+        "GLS": "0",
+        "NCLB": "1",
+        "PLS": "1",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "IMG_3673.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_3673.JPG",
+      "bytes": 1032035,
+      "sha256": "cabdef031ea4cb847d7dc331f6f08f9ac56f31a521cbea22bbc0aaa1e6d68b7e",
+      "crc32": "36664e2b",
+      "raw_annotation": {
+        "imgID_id": "1290",
+        "filePath": "IMG_3673.JPG",
+        "GLS": "1",
+        "NCLB": "1",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "IMG_3676.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_3676.JPG",
+      "bytes": 966714,
+      "sha256": "bc4fbdd391fae0265b70efa371ae7db134dd7f7bf88a03ac03c5777c231eb124",
+      "crc32": "1e5aa9c8",
+      "raw_annotation": {
+        "imgID_id": "1325",
+        "filePath": "IMG_3676.JPG",
+        "GLS": "1",
+        "NCLB": "1",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "IMG_3739.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_3739.JPG",
+      "bytes": 921632,
+      "sha256": "8449e5aa9e7271e217f3518704d9b75bdba0f0a78ee5a08a7c1049dd9f3ca0de",
+      "crc32": "28e5f614",
+      "raw_annotation": {
+        "imgID_id": "1379",
+        "filePath": "IMG_3739.JPG",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "0",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "1",
+        "UnidentifiedDisease": "0"
+      }
+    },
+    {
+      "file": "IMG_3847.JPG",
+      "local_path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_3847.JPG",
+      "bytes": 858366,
+      "sha256": "6ca0ce2981939430ca0058a61f4ee5d3ecb37a290314f30207032d253c3b3b49",
+      "crc32": "c290a087",
+      "raw_annotation": {
+        "imgID_id": "1433",
+        "filePath": "IMG_3847.JPG",
+        "GLS": "0",
+        "NCLB": "0",
+        "PLS": "1",
+        "CR": "0",
+        "SR": "0",
+        "NoFoliarSymptoms": "0",
+        "Other": "0",
+        "UnidentifiedDisease": "0"
+      }
+    }
+  ]
+}

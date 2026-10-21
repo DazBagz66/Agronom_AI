@@ -1,0 +1,3453 @@
+{
+  "seed": 42,
+  "method": "Frozen ImageNet MobileNetV2 + StandardScaler + multinomial LogisticRegression C=0.1",
+  "temperature": 0.8431991071038435,
+  "temperature_fit": "validation only; test untouched",
+  "dataset_size": 464,
+  "counts": {
+    "downy_mildew": 119,
+    "healthy": 134,
+    "gray_mold": 72,
+    "leaf_scars": 139
+  },
+  "excluded_conflicting_duplicates": [
+    "Downy mildew\\downymildew.  (2).jpg",
+    "Leaf scars\\scars (137).jpg"
+  ],
+  "duplicate_groups": 438,
+  "split_counts": {
+    "train": 278,
+    "validation": 93,
+    "test": 93
+  },
+  "test_accuracy": 0.9354838709677419,
+  "test_balanced_accuracy": 0.9427910052910053,
+  "test_log_loss": 0.21267188399480658,
+  "classes": [
+    "downy_mildew",
+    "gray_mold",
+    "healthy",
+    "leaf_scars"
+  ],
+  "confusion_matrix": [
+    [
+      22,
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      14,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      25,
+      0
+    ],
+    [
+      2,
+      0,
+      0,
+      26
+    ]
+  ],
+  "classification_report": {
+    "downy_mildew": {
+      "precision": 0.8461538461538461,
+      "recall": 0.9166666666666666,
+      "f1-score": 0.88,
+      "support": 24.0
+    },
+    "gray_mold": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 14.0
+    },
+    "healthy": {
+      "precision": 0.9615384615384616,
+      "recall": 0.9259259259259259,
+      "f1-score": 0.9433962264150944,
+      "support": 27.0
+    },
+    "leaf_scars": {
+      "precision": 0.9629629629629629,
+      "recall": 0.9285714285714286,
+      "f1-score": 0.9454545454545454,
+      "support": 28.0
+    },
+    "accuracy": 0.9354838709677419,
+    "macro avg": {
+      "precision": 0.9426638176638177,
+      "recall": 0.9427910052910053,
+      "f1-score": 0.94221269296741,
+      "support": 93.0
+    },
+    "weighted avg": {
+      "precision": 0.937980577765524,
+      "recall": 0.9354838709677419,
+      "f1-score": 0.9361766170530627,
+      "support": 93.0
+    }
+  },
+  "accepted_at_65": 90,
+  "test_count": 93,
+  "accepted_accuracy": 0.9555555555555556,
+  "limitations": "Dataset-only evaluation; pHash groups reduce but cannot eliminate source/specimen leakage. Not independent field validation. Healthy means no visible supported disease. No reliable out-of-distribution or crop detector.",
+  "splits": {
+    "train": [
+      {
+        "file": "Downy mildew\\downymildew.  (1).jpg",
+        "sha256": "6f6cbcb1e9ed7c2e8daf5d9b73bfdbbd21da8ab7d17510a787c3aba8d0d8704a",
+        "class": "downy_mildew",
+        "group": 0
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (10).jpg",
+        "sha256": "783be044f8a9fbd2d67ba7ce01b9128987c64ebfd49ea880f68dbc5d44f2e038",
+        "class": "downy_mildew",
+        "group": 1
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (100).jpg",
+        "sha256": "01bf5a1427a576c6a496367e4656942bfb26b57e67da98aa87ce1514ab971b69",
+        "class": "downy_mildew",
+        "group": 2
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (101).jpg",
+        "sha256": "97e40cb68c0d4b8df8e87dcd3d480b136503ff1e5bc01074470d5da9d60867cf",
+        "class": "downy_mildew",
+        "group": 3
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (102).jpg",
+        "sha256": "50f7e69674d38611fa48c742cb79209608bfb466caa467d023d206b2d9351ff6",
+        "class": "downy_mildew",
+        "group": 4
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (103).jpg",
+        "sha256": "e6c77071f8cb1380e25b691c3d9f692cab83f1700cd6b0734b91181d52e81f24",
+        "class": "downy_mildew",
+        "group": 5
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (104).jpg",
+        "sha256": "98b3cf9a458b9cd42508e95cc701d8f827cf5499a4aab908b22d2ce5e288d92c",
+        "class": "downy_mildew",
+        "group": 6
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (105).jpg",
+        "sha256": "2ea3cee25b1162b148d664b5e68fba645b1ca7b36a90bf5d1d08ed6e74d6ea0f",
+        "class": "downy_mildew",
+        "group": 7
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (107).jpg",
+        "sha256": "7ae50528ad11871b2fd494f2ab08a733b91ed2d810859012a16f13aaee815833",
+        "class": "downy_mildew",
+        "group": 9
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (108).jpg",
+        "sha256": "6fcebdba12b419161a30f308ace41f5ff1085da97d43902fad97e91fbb917a66",
+        "class": "downy_mildew",
+        "group": 10
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (109).jpg",
+        "sha256": "e6b0a172dbb5d5abad5e9653c3fdb8f153bfd2adf52855e119569072730d1537",
+        "class": "downy_mildew",
+        "group": 11
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (11).jpg",
+        "sha256": "4ab6a2b260b14fb6f5a7b4ab4168da9d9c56bbef1d815a461080f02e8a5991ec",
+        "class": "downy_mildew",
+        "group": 12
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (111).jpg",
+        "sha256": "012f97ec4d6d13d1ccf5050030e232c40a65ba76149e21fbdbb66087d2d35e1e",
+        "class": "downy_mildew",
+        "group": 14
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (112).jpg",
+        "sha256": "fccd1834f07afd97df3a20f66dd380f38758811003bc2c0dd7d8361bc66df84b",
+        "class": "downy_mildew",
+        "group": 15
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (113).jpg",
+        "sha256": "fccd1834f07afd97df3a20f66dd380f38758811003bc2c0dd7d8361bc66df84b",
+        "class": "downy_mildew",
+        "group": 15
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (116).jpg",
+        "sha256": "2436291cd7389c145e46e948cf85040c3ba2c461880d983b03caa4be568191d0",
+        "class": "downy_mildew",
+        "group": 19
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (117).jpg",
+        "sha256": "fe60b1baae65877ff71747cc4bb26148934374edd7a5ac2d92030c830e54b91c",
+        "class": "downy_mildew",
+        "group": 20
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (119).jpg",
+        "sha256": "27eba94effd0f34ebff42714dd0237b6949b7526724b9c4d76cf64e8d529cef4",
+        "class": "downy_mildew",
+        "group": 22
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (13).jpg",
+        "sha256": "80bd29aad74876d73957e5bcde5889c16cbda14e1f7db58413a76a54042476fa",
+        "class": "downy_mildew",
+        "group": 25
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (15).jpg",
+        "sha256": "73852b9a7a4c78380f554c77458b021a9a63c9b97569e76f8effbb49641c95c3",
+        "class": "downy_mildew",
+        "group": 27
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (16).jpg",
+        "sha256": "c5494f3c887e219b37c35689ae59c76159eff4e4714f39bf1853bc9399e9082c",
+        "class": "downy_mildew",
+        "group": 28
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (17).jpg",
+        "sha256": "4dd164ebbd7e80b6c2b9b93351ac45107e460e0cfa10e3884b35405f7eca4e1a",
+        "class": "downy_mildew",
+        "group": 29
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (22).jpg",
+        "sha256": "8c7e110347f5730e5725565a08a9aceffd8426923ab972cb9eaaaafcb705587b",
+        "class": "downy_mildew",
+        "group": 35
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (24).jpg",
+        "sha256": "c6cc6a5f717d9fa4313e0b9afcd7f9f7e6cc2cc2b6063347698d607ec5365885",
+        "class": "downy_mildew",
+        "group": 37
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (28).jpg",
+        "sha256": "577307f423ad443703711575d4607f7c751485b7182b20079a8dbdd21ad75c81",
+        "class": "downy_mildew",
+        "group": 41
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (29).jpg",
+        "sha256": "fa93f9c284863b6bde62d5a175464310088be57195447f3d39b011434a955e59",
+        "class": "downy_mildew",
+        "group": 42
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (30).jpg",
+        "sha256": "fa93f9c284863b6bde62d5a175464310088be57195447f3d39b011434a955e59",
+        "class": "downy_mildew",
+        "group": 42
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (31).jpg",
+        "sha256": "49fe70603c181ff82c009281a24d69141b35cb9ac466e12e57c5bf6c2afbc23d",
+        "class": "downy_mildew",
+        "group": 45
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (32).jpg",
+        "sha256": "603275db6cb43384e8ec75b18c4a4638f86704d6f5d65b95db741273fd902032",
+        "class": "downy_mildew",
+        "group": 46
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (33).jpg",
+        "sha256": "aa9a5a35bfec33805f2802fa47b96de3ca5eb2a848ac085c60d38bf2b8a8c577",
+        "class": "downy_mildew",
+        "group": 47
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (37).jpg",
+        "sha256": "787ac36a84dcaf47ac26d937b3497cce38c6d3d0d29a7cfd64700ce8725ad875",
+        "class": "downy_mildew",
+        "group": 51
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (40).jpg",
+        "sha256": "f6fd1c2a7bdbf0c1ff55c3790128bac85dd89eed7a48d8b26a1ea9f51a92e81b",
+        "class": "downy_mildew",
+        "group": 55
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (41).jpg",
+        "sha256": "f6fd1c2a7bdbf0c1ff55c3790128bac85dd89eed7a48d8b26a1ea9f51a92e81b",
+        "class": "downy_mildew",
+        "group": 55
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (44).jpg",
+        "sha256": "ec55e0c7162e6e5a77fe1b30e06b74f53b9da6e13c12095db38aa45e87574172",
+        "class": "downy_mildew",
+        "group": 59
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (45).jpg",
+        "sha256": "0433d2b0b64b1373c2c8b2ac9e0f2d5221224e56864a33102e7c2ce683fa7624",
+        "class": "downy_mildew",
+        "group": 60
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (46).jpg",
+        "sha256": "553a29f1770d953eaaee28b1bcb21e736e6fdfc7c853802ce48068e8e744b42c",
+        "class": "downy_mildew",
+        "group": 61
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (47).jpg",
+        "sha256": "553a29f1770d953eaaee28b1bcb21e736e6fdfc7c853802ce48068e8e744b42c",
+        "class": "downy_mildew",
+        "group": 61
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (48).jpg",
+        "sha256": "95fa2dffa054655f907d400e4021d7f9f4df7f94f743941e02b558db296f06f9",
+        "class": "downy_mildew",
+        "group": 63
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (49).jpg",
+        "sha256": "95fa2dffa054655f907d400e4021d7f9f4df7f94f743941e02b558db296f06f9",
+        "class": "downy_mildew",
+        "group": 63
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (5).jpg",
+        "sha256": "ee5ae605d5021571e5af015bb602d43312780380a5405ce889059f9bf2aa83b3",
+        "class": "downy_mildew",
+        "group": 65
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (52).jpg",
+        "sha256": "be1741378adf614810d2a671619861f4c2b861c28c51960721f93f1c9391c9da",
+        "class": "downy_mildew",
+        "group": 68
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (54).jpg",
+        "sha256": "826aa74a9138fa554538e4bc4c5cc9b2c3c40144bfec2d1f6dddd72dc23e821c",
+        "class": "downy_mildew",
+        "group": 70
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (55).jpg",
+        "sha256": "efb003ec4fc907f2550b69c9c794e90ad2ae84c39459a3c2824c69e03e16cc92",
+        "class": "downy_mildew",
+        "group": 71
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (56).jpg",
+        "sha256": "bf16378d01d53784c099454c0c41d01d4a278396a5a090f8b5d0f9909cd20b20",
+        "class": "downy_mildew",
+        "group": 72
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (60).jpg",
+        "sha256": "c55bb1739baee7a9ae7a9e89988a17d77b73712e55a8007bb31086e9ef96265e",
+        "class": "downy_mildew",
+        "group": 77
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (61).jpg",
+        "sha256": "c55bb1739baee7a9ae7a9e89988a17d77b73712e55a8007bb31086e9ef96265e",
+        "class": "downy_mildew",
+        "group": 77
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (63).jpg",
+        "sha256": "8496bc1abde1361d14e88255f681a8584d9510c340fdff8b3e86db9df3f0730f",
+        "class": "downy_mildew",
+        "group": 80
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (66).jpg",
+        "sha256": "7b55cf8b37b431b015116cdebd1b4f26489f81ceb0814775691aa52805e8cfee",
+        "class": "downy_mildew",
+        "group": 83
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (67).jpg",
+        "sha256": "7b55cf8b37b431b015116cdebd1b4f26489f81ceb0814775691aa52805e8cfee",
+        "class": "downy_mildew",
+        "group": 83
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (68).jpg",
+        "sha256": "f6dda186cebffc5adf433ac068b5ed0d5b4d6586689f81c411935ea8fdb23534",
+        "class": "downy_mildew",
+        "group": 85
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (69).jpg",
+        "sha256": "5a0bc2262a69a9298d08dcdb97cb4eb023965db0863773ccd86530b60445f287",
+        "class": "downy_mildew",
+        "group": 86
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (7).jpg",
+        "sha256": "e5e83d7c7bfd87c8eaa367bf1e9585c97e315f8019c19a5e8d7a04a0e3b8b6cc",
+        "class": "downy_mildew",
+        "group": 87
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (70).jpg",
+        "sha256": "5a0bc2262a69a9298d08dcdb97cb4eb023965db0863773ccd86530b60445f287",
+        "class": "downy_mildew",
+        "group": 86
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (75).jpg",
+        "sha256": "b12f5e73c7e0932e81470b7b3113971854cc69041c4f27ebde208e26e2f799e3",
+        "class": "downy_mildew",
+        "group": 93
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (76).jpg",
+        "sha256": "1632b91070123bdcca2423c949f9487d54d45b41a9d62d7cdebf48dcec580fde",
+        "class": "downy_mildew",
+        "group": 94
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (79).jpg",
+        "sha256": "f8c26345e6c74d06448b6ff3a15997976e51d874e0ab76474caf6adec7f24775",
+        "class": "downy_mildew",
+        "group": 97
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (8).jpg",
+        "sha256": "cce3942d7da02e30b997c22969bed8095c929eeefe1660637622275dacdc6d59",
+        "class": "downy_mildew",
+        "group": 98
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (80).jpg",
+        "sha256": "f8c26345e6c74d06448b6ff3a15997976e51d874e0ab76474caf6adec7f24775",
+        "class": "downy_mildew",
+        "group": 97
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (81).jpg",
+        "sha256": "0b780630865abb52c4c14d6ed8027fad54fa21821468d2f97c24f6c8534583e8",
+        "class": "downy_mildew",
+        "group": 100
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (82).jpg",
+        "sha256": "0b780630865abb52c4c14d6ed8027fad54fa21821468d2f97c24f6c8534583e8",
+        "class": "downy_mildew",
+        "group": 100
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (83).jpg",
+        "sha256": "38c14e29658a0582186dfae73a582ba457523e5a67ed18108fa4c6fdc97a327f",
+        "class": "downy_mildew",
+        "group": 102
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (84).jpg",
+        "sha256": "38c14e29658a0582186dfae73a582ba457523e5a67ed18108fa4c6fdc97a327f",
+        "class": "downy_mildew",
+        "group": 102
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (85).jpg",
+        "sha256": "718a2962d4fe639fc620ffb4535dfe83e60cbbfacf95a09ac1331657fcb2a143",
+        "class": "downy_mildew",
+        "group": 104
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (86).jpg",
+        "sha256": "718a2962d4fe639fc620ffb4535dfe83e60cbbfacf95a09ac1331657fcb2a143",
+        "class": "downy_mildew",
+        "group": 104
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (87).jpg",
+        "sha256": "30fe8cf361597b407462881e3a6022668f6453fb5aec009c066ee8e195a017ec",
+        "class": "downy_mildew",
+        "group": 106
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (88).jpg",
+        "sha256": "7dca36464845c4d3be39a50acff91b261ac249a13a403ef8a04b527529d4e97d",
+        "class": "downy_mildew",
+        "group": 107
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (89).jpg",
+        "sha256": "b5d366697fd839054d6ea90b98166a61ee3742a863fc6f58b6760fabfd341beb",
+        "class": "downy_mildew",
+        "group": 108
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (9).jpg",
+        "sha256": "0ca0a0d93790b5bff712290c548838cec62adafe7154d9451fda70991fdd3ae1",
+        "class": "downy_mildew",
+        "group": 109
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (90).jpg",
+        "sha256": "722aaa14a8d6581b1afd49326956c50a857bdd45106dd571caf54231b591dae5",
+        "class": "downy_mildew",
+        "group": 110
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (92).jpg",
+        "sha256": "7d80c38ae7cb14368af12a07a75342418d843882670a6647a4376d595854a385",
+        "class": "downy_mildew",
+        "group": 112
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (95).jpg",
+        "sha256": "b134f1692a3cbbe476737051b9a361c3f479ff7904b53d98ea5c6610f2cf37af",
+        "class": "downy_mildew",
+        "group": 115
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (1).jpg",
+        "sha256": "f90822fa65533d4d39999781ae724bb3fa910926b115243d4f451f9ee7d04a92",
+        "class": "healthy",
+        "group": 120
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (102).jpg",
+        "sha256": "b5d02422972c8d7bf103ef70e06d537832511e0182feaf4804ae6a23ee4dc190",
+        "class": "healthy",
+        "group": 124
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (103).jpg",
+        "sha256": "e1ed9a04366df4c2b0a8b35c3bd509388b09760ff1212f286066366e0dc83c78",
+        "class": "healthy",
+        "group": 125
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (106).jpg",
+        "sha256": "56a5ce43a8f346212069c2986d8f33a62033e53919aa45934aaa4934caca002b",
+        "class": "healthy",
+        "group": 128
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (107).jpg",
+        "sha256": "b8effa5e8a2d86a61c77a00aabf983851e9ef74c3b255dbcd3f9c3c42e9a8f19",
+        "class": "healthy",
+        "group": 129
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (11).jpg",
+        "sha256": "6fa15b4be0997779307626124ff82d220360eaa2eff451ac3974b2ff6c5638bd",
+        "class": "healthy",
+        "group": 132
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (110).jpg",
+        "sha256": "0e0c4b7e47d58f2fc5aac9d6ed667f015650e6e1df9d00c3936caaa1cd87c318",
+        "class": "healthy",
+        "group": 133
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (115).jpg",
+        "sha256": "6a37b92fd87108679496a8c0fe9e1fa9a300d282e2880be9e06ade69df931c6f",
+        "class": "healthy",
+        "group": 138
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (117).jpg",
+        "sha256": "97ce8211d2c9dca1eb597154c7620aaa689b059615e75dc1b35b9d6d207cfbdf",
+        "class": "healthy",
+        "group": 140
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (118).jpg",
+        "sha256": "c6f051f5929e0d595a90421f36b389a0c4c83875df80bcbede20aa8134ab944e",
+        "class": "healthy",
+        "group": 141
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (119).jpg",
+        "sha256": "f0ee48407ae71a719d1af5f1f1f686a9159a3aeb845b949115d94b27e2be7baa",
+        "class": "healthy",
+        "group": 142
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (12).jpg",
+        "sha256": "d09ba257a2455391628056d190d2841ec532836fa4d5b2ef5bda4817c476d23d",
+        "class": "healthy",
+        "group": 143
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (120).jpg",
+        "sha256": "ca031b9e6d315f6b4f5444ea7da28c8f8a33b3f197758b768274c59070f93545",
+        "class": "healthy",
+        "group": 144
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (121).jpg",
+        "sha256": "f3a676796815f2e0163048092b7d437a1096cf8f001fb1d1aaf34d0650eb40cd",
+        "class": "healthy",
+        "group": 145
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (125).jpg",
+        "sha256": "93e7b0619882b9440159db5d4b29c625252f0fe834bf86248d4ac0ecc48d3922",
+        "class": "healthy",
+        "group": 149
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (128).jpg",
+        "sha256": "70110111cf399623a5bdafb5474ab32bc3c0179aa991c9cbd8622171921da8fe",
+        "class": "healthy",
+        "group": 152
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (129).jpg",
+        "sha256": "bd6c171aeb2b27a36295754c1219b0ca2366a70bccc5033b484b46254bfbdf3d",
+        "class": "healthy",
+        "group": 153
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (13).jpg",
+        "sha256": "54e8a027e7d9427e37c8c15e946adfdf3ba532908fb17c0000fc0f39d555e16f",
+        "class": "healthy",
+        "group": 154
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (130).jpg",
+        "sha256": "97995c729748eb256d65ee739119d787594bc4b07b14f095006e3fdea989834c",
+        "class": "healthy",
+        "group": 155
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (131).jpg",
+        "sha256": "c049daaa919a16eca4a17f72a3915a947e02842e1f2f85f1349147ad50e151e5",
+        "class": "healthy",
+        "group": 156
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (132).jpg",
+        "sha256": "d2b99583f3bcf88b34a7f9b411fff0aaf203342b01997c695a1acfc00c9578a3",
+        "class": "healthy",
+        "group": 157
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (133).jpg",
+        "sha256": "4cb4a69fca5b25de995231fdfbe13ff6a467e18f8149d2e26d4013f84bebd875",
+        "class": "healthy",
+        "group": 158
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (134).jpg",
+        "sha256": "351129e3793e17f922d95938649cc8b29e34ea3a2e0d3c70ff05e4a5ebaa1b4e",
+        "class": "healthy",
+        "group": 159
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (16).jpg",
+        "sha256": "37b92da4fc0becd3af9d2a8ff26cc4844529544ac3ef21b3178463c2413967be",
+        "class": "healthy",
+        "group": 162
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (17).jpg",
+        "sha256": "bbbab9dfcbc24610a6b110a0b6f416aecd7e8c4df1663aee55e811e856c720c3",
+        "class": "healthy",
+        "group": 163
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (2).jpg",
+        "sha256": "95dbf275aa6d3bcd016cb69cb34546e730d4437d4caa408569d148b436272438",
+        "class": "healthy",
+        "group": 166
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (20).jpg",
+        "sha256": "7ccc2de420e48c04a030c120ca09f007bbc2c5e77c5b30d15e4c033efef339a3",
+        "class": "healthy",
+        "group": 167
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (23).jpg",
+        "sha256": "b009311d9dc905ba8a0a42952241628c088b4f2480cdd768c62ee25a79c35d7d",
+        "class": "healthy",
+        "group": 170
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (26).jpg",
+        "sha256": "9cd5ee316a7d4f638e8146d88724a7be31fd00f6b55658b889d9e1e3f8e73269",
+        "class": "healthy",
+        "group": 173
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (27).jpg",
+        "sha256": "6bed7064854783d6c24deed4c2cab56dfe912531ed9c9988a7339dba96245dc3",
+        "class": "healthy",
+        "group": 174
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (29).jpg",
+        "sha256": "1cd4ea9e7d44e96ecef4807af70b4ded3a52bbd7a6f4b2235f13a4350cee93a0",
+        "class": "healthy",
+        "group": 176
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (3).jpg",
+        "sha256": "7849e8dc13b08bbfebc5b0113f0748a7c2dba23573c7760ad02cccc46529e1bc",
+        "class": "healthy",
+        "group": 177
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (31).jpg",
+        "sha256": "130945e7a7f0426b2e2f84e72b719cbce55bcaca0bbadbd3a63512a5715eac2e",
+        "class": "healthy",
+        "group": 179
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (33).jpg",
+        "sha256": "94f48d8637dba085344c5f28d34e95585f3bb8a77de2b5bffe62f7b804e75ffd",
+        "class": "healthy",
+        "group": 181
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (34).jpg",
+        "sha256": "55235a388121c428549ad7b3d0cdf5c9483495c9e3f1456f09070e53896ba788",
+        "class": "healthy",
+        "group": 182
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (36).jpg",
+        "sha256": "8d020017fce32265aa1275286e2ee91bdc2d3d098ab971d79d4fc17d879ae7d1",
+        "class": "healthy",
+        "group": 184
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (37).jpg",
+        "sha256": "bf6f41da9420b92eeb95d8c34538d57524a954b2d1bfa90b46ff6adb645620de",
+        "class": "healthy",
+        "group": 185
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (42).jpg",
+        "sha256": "5378c66cb455a1989391d30da5ba47438007c9b73a26fe3259b73cedce265977",
+        "class": "healthy",
+        "group": 191
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (43).jpg",
+        "sha256": "b267087f29d0b5277f828abd939c708e4cb2308a49d57e2a15e8a6def20165fb",
+        "class": "healthy",
+        "group": 192
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (44).jpg",
+        "sha256": "3472dd8acf60fa113b3001cfdcc00a1e377b57381a312b043fe0d9049daea999",
+        "class": "healthy",
+        "group": 193
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (45).jpg",
+        "sha256": "2c1fcc885968925023ac590e880ea596a99ac039d8078b7c2e41ed4fa7a63ba7",
+        "class": "healthy",
+        "group": 194
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (47).jpg",
+        "sha256": "711fc268e71bdd77f499e1654682858198c0065ae6ad5abe3d02f1fee2dde209",
+        "class": "healthy",
+        "group": 196
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (48).jpg",
+        "sha256": "a26c9578eac5f07449206e9b082be9a27b7cd65576444da9143855111233dd0a",
+        "class": "healthy",
+        "group": 197
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (5).jpg",
+        "sha256": "175537117f9f8aa1fe30830956786380ed7795ca56140d73ee83001a73659378",
+        "class": "healthy",
+        "group": 199
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (51).jpg",
+        "sha256": "421bc562eebe970520dd0bbabbf3b239bee07dec9746d96b683c33b423b0b265",
+        "class": "healthy",
+        "group": 201
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (52).jpg",
+        "sha256": "581b7c5f5b3811b5ba7389edd546e896a76e16ded69f90b3fac87ff1d0d53f0d",
+        "class": "healthy",
+        "group": 202
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (54).jpg",
+        "sha256": "3e770651ba2759f910107ab10e8b0d795fb59c943c42756eb9bf8e9840a8a1d5",
+        "class": "healthy",
+        "group": 204
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (55).jpg",
+        "sha256": "14eeebd915b0e07075947fc7a37ff98e4f7bbdf957b556e789fc6db44112a17a",
+        "class": "healthy",
+        "group": 205
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (59).jpg",
+        "sha256": "3b2800c8d9d1977d78ae2758bace057c4af31bf479792b5b4c8ca3a2109defce",
+        "class": "healthy",
+        "group": 209
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (6).jpg",
+        "sha256": "873b063db0363b4c8a4b3b2f5b84f6adb7ae380239bb5a2ce129b1a2094c5e44",
+        "class": "healthy",
+        "group": 210
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (61).jpg",
+        "sha256": "69c3e11d3cafc1232da5c425b050f06fea2635188ed72eb65a67e117ba36bb55",
+        "class": "healthy",
+        "group": 212
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (63).jpg",
+        "sha256": "3843e9fcd2ba4935fdab3153e39267450e1ddb067e4c326ac4e3831550e9a45e",
+        "class": "healthy",
+        "group": 214
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (64).jpg",
+        "sha256": "ed6897a50400dd5c372fd76b0fd1ac8c8f7f975801d2a2d35cb7a50af582fd3f",
+        "class": "healthy",
+        "group": 215
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (65).jpg",
+        "sha256": "13b067f25f8eded89a582e242158de50911fdfb182ead98b5cf6325301ae8fb4",
+        "class": "healthy",
+        "group": 216
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (66).jpg",
+        "sha256": "0a4e5ab4be552e9fd9641a9c31e9e3ab87ea515ecc7712388070dd64f5c82b55",
+        "class": "healthy",
+        "group": 217
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (67).jpg",
+        "sha256": "832ccb0fae790eb3cd7779c53b26aebbfa117a5d8d73eead6c9c9d6ecfb3bb3c",
+        "class": "healthy",
+        "group": 218
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (68).jpg",
+        "sha256": "76f04cd330e090b3f60bb10002f36a39916d41c1b51185345bf69747fd9a5a96",
+        "class": "healthy",
+        "group": 219
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (69).jpg",
+        "sha256": "a03c25439f57d3965e450a34e811f59273a12325b75d7318cdf2bc6fbbeae635",
+        "class": "healthy",
+        "group": 220
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (70).jpg",
+        "sha256": "881ba9cb86d3e9488ae3bd4c425d801e66a102932a055e8c415c4cf6bf635950",
+        "class": "healthy",
+        "group": 222
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (73).jpg",
+        "sha256": "d0e645918cfa4929482a68c52f2015f433f5678497a905a797c8f85046a624eb",
+        "class": "healthy",
+        "group": 225
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (75).jpg",
+        "sha256": "b31cf1736d0a36b16b35e922ee393d985fce4defb4a4438e962f2c4cd55081af",
+        "class": "healthy",
+        "group": 227
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (77).jpg",
+        "sha256": "03074622451fd0c568cabc6b8e949ffcdd1c25785ce003070d46ca206b39b42d",
+        "class": "healthy",
+        "group": 229
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (78).jpg",
+        "sha256": "b4b233ae7d980b2667293a59214800027c43cd32ccdc61685c2f2f23cf75eeef",
+        "class": "healthy",
+        "group": 230
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (80).jpg",
+        "sha256": "b2ba6039db95b911eb5f9acb0456da24881e8dbbf298568db9ca75a277349c5a",
+        "class": "healthy",
+        "group": 233
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (81).jpg",
+        "sha256": "870f9d68d117ac684f6185b6c490f8929d13998b721b964faf2c0f22ad70b4d6",
+        "class": "healthy",
+        "group": 234
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (82).jpg",
+        "sha256": "5e65a43a8b9a2186478ab1e9566d463372d11176e3a8e0fa71b3134234301bd5",
+        "class": "healthy",
+        "group": 235
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (84).jpg",
+        "sha256": "56cecf29b4237e4fc48542d51c7da216cadf8e06ef25cbc76c23b9f1e99df8e3",
+        "class": "healthy",
+        "group": 237
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (85).jpg",
+        "sha256": "5ed5a090683e05fe4f2eb1af7fe564cc3fe05fd1f776c1735c87996398143510",
+        "class": "healthy",
+        "group": 238
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (86).jpg",
+        "sha256": "d9681ad573299ccb8fa015f67ade548792705ac14bbfd51c16518b4bc0611d2a",
+        "class": "healthy",
+        "group": 239
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (87).jpg",
+        "sha256": "ffc7cf77751139a5c4f05a434fe7c214b9d51675140d987d83104eaf4313c0d9",
+        "class": "healthy",
+        "group": 240
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (88).jpg",
+        "sha256": "4aa6961115aca8bb9121875487c3be39e6a6b0a46a20c6f91e6fb40d7a3b70f3",
+        "class": "healthy",
+        "group": 241
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (89).jpg",
+        "sha256": "bb09bbd175fb270c78ed85bf94f09940885d7647715cdfe0e8d066d09f424153",
+        "class": "healthy",
+        "group": 242
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (9).jpg",
+        "sha256": "f887c4278963213860a3e5d4e74ae45a200f52a94eac4131e3fa696017f58055",
+        "class": "healthy",
+        "group": 243
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (90).jpg",
+        "sha256": "795458d156ed349098308447ceb24f425a2b1b6f38eb4aa8591fbe56b2c42dc2",
+        "class": "healthy",
+        "group": 244
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (91).jpg",
+        "sha256": "655197afd7839f88e011eee8de96c4f3172c2ce5dba27cf40b9602b73e9b06d6",
+        "class": "healthy",
+        "group": 245
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (94).jpg",
+        "sha256": "d510f2d5ad2276bb6ef2186000bfc5cc07045f88c437cf4c8739856acfb5aad3",
+        "class": "healthy",
+        "group": 248
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (95).jpg",
+        "sha256": "1e45eef26eb407e34a3b7c0146444c6082dc879a82bd100a1c837505dfbfd4a6",
+        "class": "healthy",
+        "group": 249
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (96).jpg",
+        "sha256": "e39791ba48d29e408146c77085103999ee1aafbd271dde9fe94fc5b67e8acc59",
+        "class": "healthy",
+        "group": 250
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (97).jpg",
+        "sha256": "47f0a01e1cc0b21942507f977223cd0d552ee011124e7aaaad694cb88b6fc2ec",
+        "class": "healthy",
+        "group": 251
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (99).jpg",
+        "sha256": "81023e37d28afe0c1e7ad3ed504f9a40644f39f7a0a6962ede3b2475a3e521ef",
+        "class": "healthy",
+        "group": 253
+      },
+      {
+        "file": "Gray mold\\grayMold. (1).jpg",
+        "sha256": "0824e7bab7a5db7fde61919daea552c063d7e4902c9f17d0ced121e8080ae31e",
+        "class": "gray_mold",
+        "group": 254
+      },
+      {
+        "file": "Gray mold\\grayMold. (11).jpg",
+        "sha256": "248fe14f09c2ab677d61c3356829cebae5dea97cd39ec8029c90f35d3f2ae942",
+        "class": "gray_mold",
+        "group": 256
+      },
+      {
+        "file": "Gray mold\\grayMold. (13).jpg",
+        "sha256": "ef4fc57334627a8d3c8dfe4c635a1b7125a1327943958897e852b08268a2a6a5",
+        "class": "gray_mold",
+        "group": 258
+      },
+      {
+        "file": "Gray mold\\grayMold. (15).jpg",
+        "sha256": "b8243832089f55e67f4016309e259ce73effe7163d9ea0314a076b0b6d084e19",
+        "class": "gray_mold",
+        "group": 260
+      },
+      {
+        "file": "Gray mold\\grayMold. (16).jpg",
+        "sha256": "49d1cf369c351d9a0b0cc211d7774151f5917ff522b327cf05b1290c234534af",
+        "class": "gray_mold",
+        "group": 261
+      },
+      {
+        "file": "Gray mold\\grayMold. (17).jpg",
+        "sha256": "59129f7ea51976f18fcede4cb015846f01a4b0517035fe0fd3d68380dc178133",
+        "class": "gray_mold",
+        "group": 262
+      },
+      {
+        "file": "Gray mold\\grayMold. (18).jpg",
+        "sha256": "b9a09c519ab4bf8dc2247280a397c77af0658b8b70d23c8403867e2ebc19a387",
+        "class": "gray_mold",
+        "group": 263
+      },
+      {
+        "file": "Gray mold\\grayMold. (19).jpg",
+        "sha256": "b355f285595a7f724a46bd25ea6220716d83818f1d171184d2dd2b6355afb90c",
+        "class": "gray_mold",
+        "group": 264
+      },
+      {
+        "file": "Gray mold\\grayMold. (2).jpg",
+        "sha256": "7c19b2b48a797dd4079640eca58615f64c4eb6c02d3bfcdab7a20ab74fb77ed6",
+        "class": "gray_mold",
+        "group": 265
+      },
+      {
+        "file": "Gray mold\\grayMold. (22).jpg",
+        "sha256": "ffe22e1b80a0451380d4eaac33f059ff13adb7e3891992c376124a262e63b0de",
+        "class": "gray_mold",
+        "group": 268
+      },
+      {
+        "file": "Gray mold\\grayMold. (25).jpg",
+        "sha256": "98460b115b880689da6696170005d43158411597f49ef8f94360dddd98afe493",
+        "class": "gray_mold",
+        "group": 271
+      },
+      {
+        "file": "Gray mold\\grayMold. (28).jpg",
+        "sha256": "11f9912722ad09534a88c0ee14590a290404f9435170c0fa7454a34ba1372b99",
+        "class": "gray_mold",
+        "group": 274
+      },
+      {
+        "file": "Gray mold\\grayMold. (29).jpg",
+        "sha256": "47beb72825e1cc3f6fc62b69874edad0088391504191221bf41ee0f53e7580b4",
+        "class": "gray_mold",
+        "group": 275
+      },
+      {
+        "file": "Gray mold\\grayMold. (30).jpg",
+        "sha256": "47beb72825e1cc3f6fc62b69874edad0088391504191221bf41ee0f53e7580b4",
+        "class": "gray_mold",
+        "group": 275
+      },
+      {
+        "file": "Gray mold\\grayMold. (31).jpg",
+        "sha256": "c191a0d1dcc20e78761d462d365f6a46617adace10b852fb7b4a84a3e6d7c617",
+        "class": "gray_mold",
+        "group": 278
+      },
+      {
+        "file": "Gray mold\\grayMold. (34).jpg",
+        "sha256": "084dd4caa6cfe7243d8fa78708fe1fc4dc4493fe1ceeb42cd7031a89db7c24aa",
+        "class": "gray_mold",
+        "group": 281
+      },
+      {
+        "file": "Gray mold\\grayMold. (35).jpg",
+        "sha256": "c99c09df6f7a91f8d061334b9b7a955a96acfaf38c0c716a9b63efea226afb52",
+        "class": "gray_mold",
+        "group": 282
+      },
+      {
+        "file": "Gray mold\\grayMold. (37).jpg",
+        "sha256": "886d3760faf43f50e34c1264dcaac15967bd8797ea164747dd8a5a5126ddce47",
+        "class": "gray_mold",
+        "group": 284
+      },
+      {
+        "file": "Gray mold\\grayMold. (38).jpg",
+        "sha256": "ea1e1420d6ac8c0e4c481cc0a6c8579d20ca7afb41b7669be089faf91b15ce0d",
+        "class": "gray_mold",
+        "group": 285
+      },
+      {
+        "file": "Gray mold\\grayMold. (4).jpg",
+        "sha256": "567d499a8dbb30c0b5356181c5adfde1186b397ee7165275b71bd03a1b94586d",
+        "class": "gray_mold",
+        "group": 287
+      },
+      {
+        "file": "Gray mold\\grayMold. (40).jpg",
+        "sha256": "3bc89c6e4073721c45bd3d03670b82cd54acdbdad477629286bc4def04a888e5",
+        "class": "gray_mold",
+        "group": 288
+      },
+      {
+        "file": "Gray mold\\grayMold. (41).jpg",
+        "sha256": "5145f2dbf289616ce5c772d338f06dd41e55013f290368bc7b2c8046994e0ffc",
+        "class": "gray_mold",
+        "group": 289
+      },
+      {
+        "file": "Gray mold\\grayMold. (42).jpg",
+        "sha256": "8fec9e642a488f2019d98e5e5cccbc97b54cea8af77796e34dc0dd7386a8680c",
+        "class": "gray_mold",
+        "group": 290
+      },
+      {
+        "file": "Gray mold\\grayMold. (44).jpg",
+        "sha256": "a627b28dce91bd9d24aa8254092ac814d3dbe402d73e9d185b6a61bab185476c",
+        "class": "gray_mold",
+        "group": 292
+      },
+      {
+        "file": "Gray mold\\grayMold. (45).jpg",
+        "sha256": "d9731bcda36e47790e630a2bd99e8cc30395f50fa0f81231cc801e2e5cea2a49",
+        "class": "gray_mold",
+        "group": 293
+      },
+      {
+        "file": "Gray mold\\grayMold. (46).jpg",
+        "sha256": "7e15ae69156a52d80732989ab3751b1a906b276de48d68922e2e0576dd204357",
+        "class": "gray_mold",
+        "group": 294
+      },
+      {
+        "file": "Gray mold\\grayMold. (47).jpg",
+        "sha256": "233102afe43483dc242a6048e06873ea5850f054ab1c6e53e3d2bb740c28fb5b",
+        "class": "gray_mold",
+        "group": 295
+      },
+      {
+        "file": "Gray mold\\grayMold. (5).jpg",
+        "sha256": "97025ed5902513fb3fcc753b58ac6fde9d0effcad118df998b7680e5f6cacd53",
+        "class": "gray_mold",
+        "group": 298
+      },
+      {
+        "file": "Gray mold\\grayMold. (50).jpg",
+        "sha256": "6ddebc163e2476317df0e76240bb3ca3f46a1ade602b5780e68fe57aad98be37",
+        "class": "gray_mold",
+        "group": 299
+      },
+      {
+        "file": "Gray mold\\grayMold. (51).jpg",
+        "sha256": "c50f2ccaf6922dc2fc1984ae76c883c20ea13871b064541f4f8ca0bad3f92f5d",
+        "class": "gray_mold",
+        "group": 300
+      },
+      {
+        "file": "Gray mold\\grayMold. (52).jpg",
+        "sha256": "fdb8c522777189dba769e5bbff47177ff6a9438ba27cd86ab0d5fb3eae1eb8e7",
+        "class": "gray_mold",
+        "group": 301
+      },
+      {
+        "file": "Gray mold\\grayMold. (53).jpg",
+        "sha256": "4e84312311aad146ec720e7125f2a6867dc91fa8afd34923b99684de62b5099e",
+        "class": "gray_mold",
+        "group": 302
+      },
+      {
+        "file": "Gray mold\\grayMold. (54).jpg",
+        "sha256": "405ec76dc1e7a69434f6faf491495ff3c29b5994c48c358d49e2ab84aaff0439",
+        "class": "gray_mold",
+        "group": 303
+      },
+      {
+        "file": "Gray mold\\grayMold. (58).jpg",
+        "sha256": "4cd78ae89d63e909b3d8becac211cd80e8d26bc9a7cb06b014794689e2ae768c",
+        "class": "gray_mold",
+        "group": 307
+      },
+      {
+        "file": "Gray mold\\grayMold. (59).jpg",
+        "sha256": "c191a0d1dcc20e78761d462d365f6a46617adace10b852fb7b4a84a3e6d7c617",
+        "class": "gray_mold",
+        "group": 278
+      },
+      {
+        "file": "Gray mold\\grayMold. (6).jpg",
+        "sha256": "6c672aa6b440216309c0f5af7c98b120e28b767807c725799c741ac55dcb2e86",
+        "class": "gray_mold",
+        "group": 309
+      },
+      {
+        "file": "Gray mold\\grayMold. (60).jpg",
+        "sha256": "73c365334856cfc7fcbd5f6038d84ae16d3cde35229a535535173d7b0631f030",
+        "class": "gray_mold",
+        "group": 310
+      },
+      {
+        "file": "Gray mold\\grayMold. (63).jpg",
+        "sha256": "c0946dd2d7f58e17a5a08f08c0754e2cff54187f6d85023d36fd152005050940",
+        "class": "gray_mold",
+        "group": 313
+      },
+      {
+        "file": "Gray mold\\grayMold. (64).jpg",
+        "sha256": "c0946dd2d7f58e17a5a08f08c0754e2cff54187f6d85023d36fd152005050940",
+        "class": "gray_mold",
+        "group": 313
+      },
+      {
+        "file": "Gray mold\\grayMold. (65).jpg",
+        "sha256": "b7d952a6352ac13ba3293df582bc738d6cae291d1cd20f48daae74a409d87f4a",
+        "class": "gray_mold",
+        "group": 315
+      },
+      {
+        "file": "Gray mold\\grayMold. (66).jpg",
+        "sha256": "df99fc1dfac6d72004e6323e935583ebe7faaeb13197ee8d8f9cf86086c66b12",
+        "class": "gray_mold",
+        "group": 316
+      },
+      {
+        "file": "Gray mold\\grayMold. (68).jpg",
+        "sha256": "ddf8fc8e187cce5ed530d5a381079d2945e2c183f760fce46eee41c9812f9254",
+        "class": "gray_mold",
+        "group": 318
+      },
+      {
+        "file": "Gray mold\\grayMold. (69).jpg",
+        "sha256": "cb55b64730108837abfdf1b2c5b34942884397be52850993522b903c15456967",
+        "class": "gray_mold",
+        "group": 319
+      },
+      {
+        "file": "Gray mold\\grayMold. (9).jpg",
+        "sha256": "620b958db161c5564efe630459ca9ed9db48afee370ce972020d152b7fb7d0a9",
+        "class": "gray_mold",
+        "group": 325
+      },
+      {
+        "file": "Leaf scars\\scars (10).jpg",
+        "sha256": "152f9f27cadc27f1f1cfbaef04dd71e47f7f71d893cd8995d47f655645b47694",
+        "class": "leaf_scars",
+        "group": 327
+      },
+      {
+        "file": "Leaf scars\\scars (100).jpg",
+        "sha256": "192ff41adf54534e2b0c7f853cf282fdd5f79706cd99178fd78a8f8626c9bd88",
+        "class": "leaf_scars",
+        "group": 328
+      },
+      {
+        "file": "Leaf scars\\scars (108).jpg",
+        "sha256": "304b21375121ab8405093f089bc7bf9ac13259479cb1f7dd6bf37b0bb7388c31",
+        "class": "leaf_scars",
+        "group": 336
+      },
+      {
+        "file": "Leaf scars\\scars (109).jpg",
+        "sha256": "a1032b65ca477113787274e2feb89c9f65f1f07971fa1097074c7fb45d92bb6b",
+        "class": "leaf_scars",
+        "group": 337
+      },
+      {
+        "file": "Leaf scars\\scars (110).jpg",
+        "sha256": "0032ca731cc86916fccde3e3efd0897a91c4e808f0c0545031262a3d56305df0",
+        "class": "leaf_scars",
+        "group": 339
+      },
+      {
+        "file": "Leaf scars\\scars (112).jpg",
+        "sha256": "29c4606ce71890538513c51d946979bd8574e4c0c8344f1dee6741a1533e1284",
+        "class": "leaf_scars",
+        "group": 341
+      },
+      {
+        "file": "Leaf scars\\scars (113).jpg",
+        "sha256": "243a622af7fd1c9f349d58c30d4b35586a9a0fc57e60bfa6ab102acac45cdc35",
+        "class": "leaf_scars",
+        "group": 342
+      },
+      {
+        "file": "Leaf scars\\scars (115).jpg",
+        "sha256": "45b0a6508a75701ee95148d0bd64c241476f9d5ed95d5556ca57d1521fc7bb95",
+        "class": "leaf_scars",
+        "group": 344
+      },
+      {
+        "file": "Leaf scars\\scars (116).jpg",
+        "sha256": "d2ded36b7078a30c6930a6dec5d3ddd427710d2d0c369a3d236ce05fb067150f",
+        "class": "leaf_scars",
+        "group": 345
+      },
+      {
+        "file": "Leaf scars\\scars (117).jpg",
+        "sha256": "aabea038aa15a06017717c890672f16aa9b4ab0b28eaa1115fc71e9bf32c5d00",
+        "class": "leaf_scars",
+        "group": 346
+      },
+      {
+        "file": "Leaf scars\\scars (118).jpg",
+        "sha256": "a20e2c3dfaed2a4fe449b3c6ef4a7e9c68d0dfe5381d2786127d2e32f0da46b7",
+        "class": "leaf_scars",
+        "group": 347
+      },
+      {
+        "file": "Leaf scars\\scars (119).jpg",
+        "sha256": "64b04c9e637478bc6cf70d1f33f6e732c6f6fa7a4074c57870ce29b36fbce6dc",
+        "class": "leaf_scars",
+        "group": 348
+      },
+      {
+        "file": "Leaf scars\\scars (120).jpg",
+        "sha256": "ef5b98a1c360f14a7ff8bf715428cd32823c0a76dbf13d8bea32735c0a4195bd",
+        "class": "leaf_scars",
+        "group": 350
+      },
+      {
+        "file": "Leaf scars\\scars (121).jpg",
+        "sha256": "091008e3674ac3323a7bc950ae0d4a648bf803f32b300c70fecf9cfa58b503b4",
+        "class": "leaf_scars",
+        "group": 351
+      },
+      {
+        "file": "Leaf scars\\scars (122).jpg",
+        "sha256": "e0b589b51d183f410242cef2d612f57f0f03627671f5d78a5f54e0d47e9f5eb6",
+        "class": "leaf_scars",
+        "group": 352
+      },
+      {
+        "file": "Leaf scars\\scars (123).jpg",
+        "sha256": "0877fd52ebb68cf1656181266e81256d5a5f6f1b3b92cc00802e9a8b6df476dc",
+        "class": "leaf_scars",
+        "group": 353
+      },
+      {
+        "file": "Leaf scars\\scars (124).jpg",
+        "sha256": "e31862115e33566aca0f4dfa232348953fba68804306fee84b29778f41929ff9",
+        "class": "leaf_scars",
+        "group": 354
+      },
+      {
+        "file": "Leaf scars\\scars (125).jpg",
+        "sha256": "9c79f70023a5289ff69c189b87734424fc0fb5e3d79ec4d25245a6e2afaaa285",
+        "class": "leaf_scars",
+        "group": 355
+      },
+      {
+        "file": "Leaf scars\\scars (128).jpg",
+        "sha256": "22ffb46aa795e8bc30697d24a8e289f54dde9820a72a4cd66dcfcb816846abff",
+        "class": "leaf_scars",
+        "group": 358
+      },
+      {
+        "file": "Leaf scars\\scars (131).jpg",
+        "sha256": "3227cde5447cbd088d8d2bba46e7fe341884e5a3c9dcc72fbda069a9ce1d81ad",
+        "class": "leaf_scars",
+        "group": 362
+      },
+      {
+        "file": "Leaf scars\\scars (132).jpg",
+        "sha256": "797966168aebad15e9111bde8b60529ab99824e6a5f5cc4e43e83fc61000af97",
+        "class": "leaf_scars",
+        "group": 363
+      },
+      {
+        "file": "Leaf scars\\scars (135).jpg",
+        "sha256": "d78e062af9fa71f8cb70b5d018b24ee4048a3cad28ceb77ad3353b334e94464e",
+        "class": "leaf_scars",
+        "group": 366
+      },
+      {
+        "file": "Leaf scars\\scars (136).jpg",
+        "sha256": "76f531c8568f67a36f740ecf76f8238cb6fabfb66d227b1879dab869aa37b2d5",
+        "class": "leaf_scars",
+        "group": 367
+      },
+      {
+        "file": "Leaf scars\\scars (138).jpg",
+        "sha256": "685332cf37598442369ae5a931e918245b1fa61ba91ce566831ecf072e745436",
+        "class": "leaf_scars",
+        "group": 369
+      },
+      {
+        "file": "Leaf scars\\scars (14).jpg",
+        "sha256": "a38ab635944b7e198bcb5343574b6169c25a79a40f3b826b57efa0fb11b8660b",
+        "class": "leaf_scars",
+        "group": 371
+      },
+      {
+        "file": "Leaf scars\\scars (140).jpg",
+        "sha256": "5f64594f3a425f6fe8c428cc1dce210d4c73c642e8d4588fe63c9494db7f582f",
+        "class": "leaf_scars",
+        "group": 372
+      },
+      {
+        "file": "Leaf scars\\scars (16).jpg",
+        "sha256": "9abe078824368a582bc205e1aac5519200ae2a1de7428ceada387676fe24bc0c",
+        "class": "leaf_scars",
+        "group": 374
+      },
+      {
+        "file": "Leaf scars\\scars (17).jpg",
+        "sha256": "69677de9df17324d9efc2ffe818a273b5ba5ec26a6f5ee7253504950e2a1920d",
+        "class": "leaf_scars",
+        "group": 375
+      },
+      {
+        "file": "Leaf scars\\scars (18).jpg",
+        "sha256": "10e49a02443abfe1bcb866500bd6861ffd817601d20b986a3fbd6912f3da7217",
+        "class": "leaf_scars",
+        "group": 376
+      },
+      {
+        "file": "Leaf scars\\scars (19).jpg",
+        "sha256": "429a9b10f18e3501bd14690591402cb601c8fcb40f379a00883f376c970e9142",
+        "class": "leaf_scars",
+        "group": 377
+      },
+      {
+        "file": "Leaf scars\\scars (2).jpg",
+        "sha256": "e7ac73ca5c6df3a7c9f6c4e6983a127f328c8b32c541fb8ef363feb7f20a28a5",
+        "class": "leaf_scars",
+        "group": 378
+      },
+      {
+        "file": "Leaf scars\\scars (20).jpg",
+        "sha256": "55333541602600e209200e22bc74c2d4e0dfed3315b9776a15c7cf89a0679588",
+        "class": "leaf_scars",
+        "group": 379
+      },
+      {
+        "file": "Leaf scars\\scars (21).jpg",
+        "sha256": "03fa86cc95c3e854ec838ee9b45626929f4bf066a8198a0926d28627acdebb36",
+        "class": "leaf_scars",
+        "group": 380
+      },
+      {
+        "file": "Leaf scars\\scars (23).jpg",
+        "sha256": "ecf7d6f6de1c27de24f69374862d915f5a3de141af7268ad2c397807226966be",
+        "class": "leaf_scars",
+        "group": 382
+      },
+      {
+        "file": "Leaf scars\\scars (25).jpg",
+        "sha256": "d614325218ef6db53b23d1b67bef96823ac51a28809860aa68b62da7d71842ab",
+        "class": "leaf_scars",
+        "group": 384
+      },
+      {
+        "file": "Leaf scars\\scars (26).jpg",
+        "sha256": "73894fa36be6403814e2feedc3f1acf611804573906c69136ccbd1cddf976be5",
+        "class": "leaf_scars",
+        "group": 385
+      },
+      {
+        "file": "Leaf scars\\scars (29).jpg",
+        "sha256": "b53f17557ff2c0239b9b1594fd348e9bffa12da354802e4ac2a3bf45af5ed284",
+        "class": "leaf_scars",
+        "group": 388
+      },
+      {
+        "file": "Leaf scars\\scars (3).jpg",
+        "sha256": "c5eba74bf0e8eb6757a6e180c3412e839a79d1dea986fa254445a5c7ae925fc9",
+        "class": "leaf_scars",
+        "group": 389
+      },
+      {
+        "file": "Leaf scars\\scars (30).jpg",
+        "sha256": "6e7e34f8a7af78e1b61df54fd4e473db81daa2a882e73e1b5f1c3a0dd1ca2c6e",
+        "class": "leaf_scars",
+        "group": 390
+      },
+      {
+        "file": "Leaf scars\\scars (31).jpg",
+        "sha256": "243f8883e8595f1567e7af13022642931b78ddbde51c8a1ab28675e8cd25b0b9",
+        "class": "leaf_scars",
+        "group": 391
+      },
+      {
+        "file": "Leaf scars\\scars (33).jpg",
+        "sha256": "49f7b3262810e6d573848f967a812e3467979028c7c28da9b2d7d23038bd5c88",
+        "class": "leaf_scars",
+        "group": 393
+      },
+      {
+        "file": "Leaf scars\\scars (35).jpg",
+        "sha256": "2b22a1d4f9e687e0f295253983a86e4c6a242b90f724c18996c29176a0d4f4d1",
+        "class": "leaf_scars",
+        "group": 395
+      },
+      {
+        "file": "Leaf scars\\scars (38).jpg",
+        "sha256": "00741f72812d7dc178083680530447c0e58c325db5fb66dd28b2d6711755570a",
+        "class": "leaf_scars",
+        "group": 398
+      },
+      {
+        "file": "Leaf scars\\scars (4).jpg",
+        "sha256": "4da548cef8ffb378c83b48f468c5302a39aa6827b691e746ee5de21a491ba41d",
+        "class": "leaf_scars",
+        "group": 400
+      },
+      {
+        "file": "Leaf scars\\scars (42).jpg",
+        "sha256": "84111d2a6082f239dc0ed47da1ce59e221b55854f9d9591d3a457f5b29f80988",
+        "class": "leaf_scars",
+        "group": 403
+      },
+      {
+        "file": "Leaf scars\\scars (45).jpg",
+        "sha256": "bca2bcffc92adf9c231b4845ee1fb985673b48b7776f1a993d371871708473d1",
+        "class": "leaf_scars",
+        "group": 406
+      },
+      {
+        "file": "Leaf scars\\scars (47).jpg",
+        "sha256": "7e485ad716dfce063dc41f0558a8ed46a3fd22b8de0c12be100ea5f1d6d1d514",
+        "class": "leaf_scars",
+        "group": 408
+      },
+      {
+        "file": "Leaf scars\\scars (48).jpg",
+        "sha256": "9a8c7bf7dc59e73dd76d36719b7e8ad797aae47a2d58380cbe6157006cc82472",
+        "class": "leaf_scars",
+        "group": 409
+      },
+      {
+        "file": "Leaf scars\\scars (49).jpg",
+        "sha256": "bb2e4dad60133bd2d222297f755de63ebe80dd91ca32fd8eb5c57fd8fac0f4ba",
+        "class": "leaf_scars",
+        "group": 410
+      },
+      {
+        "file": "Leaf scars\\scars (50).jpg",
+        "sha256": "d8f1fa2036cce006f748340b4518b7cc942b3e1ba605175816f2abe44f6a3eb8",
+        "class": "leaf_scars",
+        "group": 412
+      },
+      {
+        "file": "Leaf scars\\scars (51).jpg",
+        "sha256": "7bfa14b8372c21f547e6a2add02b512516a6cda11f333087000be1bb64741f86",
+        "class": "leaf_scars",
+        "group": 413
+      },
+      {
+        "file": "Leaf scars\\scars (52).jpg",
+        "sha256": "6a381d91b60915477812b08d5d4494cf8b1db55ae2a7e6a0464429e25e93cec6",
+        "class": "leaf_scars",
+        "group": 414
+      },
+      {
+        "file": "Leaf scars\\scars (53).jpg",
+        "sha256": "63e65dc35c466f3b431f5a0c18460818cda0a6c660d315fc7e7cad9e658711f4",
+        "class": "leaf_scars",
+        "group": 415
+      },
+      {
+        "file": "Leaf scars\\scars (56).jpg",
+        "sha256": "d8368b9361df0e5d276703e8524e54758e7b6212cb8c311bfff748f72d087aec",
+        "class": "leaf_scars",
+        "group": 418
+      },
+      {
+        "file": "Leaf scars\\scars (57).jpg",
+        "sha256": "f56fbad135d2ab96f02cd574ecd6bd8837aa2b166fe7384f91a57b7222b9ad42",
+        "class": "leaf_scars",
+        "group": 419
+      },
+      {
+        "file": "Leaf scars\\scars (58).jpg",
+        "sha256": "a57afc02e000321f4ebbfe6a2d4d4f46fdb0491207d6f272761bc7eefec3b313",
+        "class": "leaf_scars",
+        "group": 420
+      },
+      {
+        "file": "Leaf scars\\scars (6).jpg",
+        "sha256": "a770741ecbfd9a9211e81971eab4ce1f1d508bcfe124d4db7cf7d634c916bb69",
+        "class": "leaf_scars",
+        "group": 422
+      },
+      {
+        "file": "Leaf scars\\scars (60).jpg",
+        "sha256": "b62f22a24c4f11a8163710792d58867f17ce9ca843e09ef279dc6922844ed358",
+        "class": "leaf_scars",
+        "group": 423
+      },
+      {
+        "file": "Leaf scars\\scars (61).jpg",
+        "sha256": "1e0cc5b13e4ca441a9c8af1c71b1fb0b7fae7af7333e59f3c06affe83516af64",
+        "class": "leaf_scars",
+        "group": 424
+      },
+      {
+        "file": "Leaf scars\\scars (63).jpg",
+        "sha256": "69fbcc56a06801480a98d6dc6e5e2ed97086b8dbef575ac8a27ccd0535dff9a1",
+        "class": "leaf_scars",
+        "group": 426
+      },
+      {
+        "file": "Leaf scars\\scars (64).jpg",
+        "sha256": "0b6922de5ac5de817e069551d9d8a11b602c38fca3dd0a9ecd32a8405f829031",
+        "class": "leaf_scars",
+        "group": 427
+      },
+      {
+        "file": "Leaf scars\\scars (66).jpg",
+        "sha256": "be4713034ae625bf417554764ad94e0f03f2edcd0dee4ae9a3503670e9ce1bbd",
+        "class": "leaf_scars",
+        "group": 429
+      },
+      {
+        "file": "Leaf scars\\scars (67).jpg",
+        "sha256": "6433c842ea06a55fcd73234cf8c2ee08831e43c058953782ab8bb702d966cb7e",
+        "class": "leaf_scars",
+        "group": 430
+      },
+      {
+        "file": "Leaf scars\\scars (68).jpg",
+        "sha256": "1678a7c1a4f446c41ae4c28d5a8f1443effa09eec2f0d6bb16d891e0451d49ab",
+        "class": "leaf_scars",
+        "group": 431
+      },
+      {
+        "file": "Leaf scars\\scars (69).jpg",
+        "sha256": "5846d210072f9575beb8f5600b3094ab7b526f611c540aee7aaf24419578aa35",
+        "class": "leaf_scars",
+        "group": 432
+      },
+      {
+        "file": "Leaf scars\\scars (7).jpg",
+        "sha256": "c31f5ff295db89b9c617bf717c8b542abf719a029a70f0110fd2993db2ced1f3",
+        "class": "leaf_scars",
+        "group": 433
+      },
+      {
+        "file": "Leaf scars\\scars (70).jpg",
+        "sha256": "a714c688b4425e8dbb927bac74250514ed8bfc2115504aec334037ac728d1839",
+        "class": "leaf_scars",
+        "group": 434
+      },
+      {
+        "file": "Leaf scars\\scars (72).jpg",
+        "sha256": "8f9249625af2d8b575bbc3734a3ed8990a08de195c2e121401927b725e6920cd",
+        "class": "leaf_scars",
+        "group": 436
+      },
+      {
+        "file": "Leaf scars\\scars (74).jpg",
+        "sha256": "64f941aa87fcde1e84aadcfcaf334bffe233da16282ab35ff5af5720fff5de4e",
+        "class": "leaf_scars",
+        "group": 438
+      },
+      {
+        "file": "Leaf scars\\scars (77).jpg",
+        "sha256": "26f8d6d0d3f77baa1278b3cb5c2996cfabaaf1dd4708f488690f18dffcbe624b",
+        "class": "leaf_scars",
+        "group": 441
+      },
+      {
+        "file": "Leaf scars\\scars (79).jpg",
+        "sha256": "843af1bdea14917ce5cd07f2fd6ac282d5fbef88c1b453bd71744482dcce1cba",
+        "class": "leaf_scars",
+        "group": 443
+      },
+      {
+        "file": "Leaf scars\\scars (8).jpg",
+        "sha256": "80d4cedc1c5ec7f31164e9c67c295be93ff7ef586fa3d60821b487f8aaaa32b8",
+        "class": "leaf_scars",
+        "group": 444
+      },
+      {
+        "file": "Leaf scars\\scars (80).jpg",
+        "sha256": "c62471ef514cf4cad639fd6887a8e70660a28442c7727acc86f57ebebbb51e07",
+        "class": "leaf_scars",
+        "group": 445
+      },
+      {
+        "file": "Leaf scars\\scars (82).jpg",
+        "sha256": "568a96c0c09d05385ccae65ed06d696ea172f5dd16445c3911d7bc68262badd3",
+        "class": "leaf_scars",
+        "group": 447
+      },
+      {
+        "file": "Leaf scars\\scars (85).jpg",
+        "sha256": "5776c410431c5c2e1088d5426883a8201aa174eb6ac7ae46e2350d919323f489",
+        "class": "leaf_scars",
+        "group": 450
+      },
+      {
+        "file": "Leaf scars\\scars (86).jpg",
+        "sha256": "fea3556689496a3a14fe6a3c2aaae0aa23b46f5cd9c149cd3459447fbe8e8b17",
+        "class": "leaf_scars",
+        "group": 451
+      },
+      {
+        "file": "Leaf scars\\scars (88).jpg",
+        "sha256": "71a706b69c22240c65f7ae9791d1cd5f32dcd998150cd4a1d5d679bf728ef6b6",
+        "class": "leaf_scars",
+        "group": 453
+      },
+      {
+        "file": "Leaf scars\\scars (89).jpg",
+        "sha256": "72e99c5e41af513b794ff2b7b3ca39d7810180e9eae30b068fd28445a22dd21e",
+        "class": "leaf_scars",
+        "group": 454
+      },
+      {
+        "file": "Leaf scars\\scars (9).jpg",
+        "sha256": "b94892f1df93d19bdc88cae2a9d5aa69574f36d653a9b27578e1e5b16ab130bb",
+        "class": "leaf_scars",
+        "group": 455
+      },
+      {
+        "file": "Leaf scars\\scars (91).jpg",
+        "sha256": "324272610a60c6814653dff1f4e5dafc22fb6500a0a2db154cfbb152b1fa628e",
+        "class": "leaf_scars",
+        "group": 457
+      },
+      {
+        "file": "Leaf scars\\scars (92).jpg",
+        "sha256": "db5b0a25b54b838c91725558422817e02998ad2517ebffac26e5f1946426809b",
+        "class": "leaf_scars",
+        "group": 458
+      },
+      {
+        "file": "Leaf scars\\scars (97).jpg",
+        "sha256": "3354d71e863f8fae204f417ae7ab08830dc12c361d9e131f01a333ed276034fe",
+        "class": "leaf_scars",
+        "group": 463
+      },
+      {
+        "file": "Leaf scars\\scars (98).jpg",
+        "sha256": "323cf0dfea6439a6de8e34ffa2ab7a41d6d29737282a1c1a695ba8cce989c53d",
+        "class": "leaf_scars",
+        "group": 464
+      }
+    ],
+    "validation": [
+      {
+        "file": "Downy mildew\\downymildew.  (106).jpg",
+        "sha256": "2f2cc2c24393640ff76a7309d0db27f6054db2743f8058168f50541b7e710b7b",
+        "class": "downy_mildew",
+        "group": 8
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (114).jpg",
+        "sha256": "117e07175419c263ed17a79dc00c04285a9484ac5c6e9944d4b051054ca3de31",
+        "class": "downy_mildew",
+        "group": 17
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (115).jpg",
+        "sha256": "117e07175419c263ed17a79dc00c04285a9484ac5c6e9944d4b051054ca3de31",
+        "class": "downy_mildew",
+        "group": 17
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (12).jpg",
+        "sha256": "f528266ee8f93719f289d993d857fba5447f71f3c098d3f32c657bf71ad8244b",
+        "class": "downy_mildew",
+        "group": 23
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (14).jpg",
+        "sha256": "5dc024b66142388f392a7e36df93b7e6103fb41741c3964ba8aafb05fad07f6c",
+        "class": "downy_mildew",
+        "group": 26
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (18).jpg",
+        "sha256": "283c340d9ed9409f5b117ab42b8be0f0ed55384f5990118d401c901488da7baa",
+        "class": "downy_mildew",
+        "group": 30
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (19).jpg",
+        "sha256": "b768f2031fdd87856521735cec5fa833a9115d7582d05409e2e5fab211637978",
+        "class": "downy_mildew",
+        "group": 31
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (23).jpg",
+        "sha256": "454bf2f056de0cb159eea801326d94a0f6d59df2339eeb959f230266c07f0869",
+        "class": "downy_mildew",
+        "group": 36
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (34).jpg",
+        "sha256": "f59900cc08ca4d67f93fc2e3ed79ce5a8d9930c3c3bfae086befda107f4875c1",
+        "class": "downy_mildew",
+        "group": 48
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (38).jpg",
+        "sha256": "9ce558a12d2057fa3bb08bfc83c126fc3b638d13efbfb680406c5c0b78b272b0",
+        "class": "downy_mildew",
+        "group": 52
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (50).jpg",
+        "sha256": "5ca164f591dba22b8fc0939e6d25fc0b8a53b43feadc79db9324ff99617a6954",
+        "class": "downy_mildew",
+        "group": 66
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (51).jpg",
+        "sha256": "5ca164f591dba22b8fc0939e6d25fc0b8a53b43feadc79db9324ff99617a6954",
+        "class": "downy_mildew",
+        "group": 66
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (53).jpg",
+        "sha256": "ed3148081db4d334603334a5ae7a3eb5a5a0115e9d0a90c9be0daa90f9701e87",
+        "class": "downy_mildew",
+        "group": 69
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (58).jpg",
+        "sha256": "d242c203c4fd0e17ce2ddeb7dc229c4d7afdd4196cf5667f90f41070e5483486",
+        "class": "downy_mildew",
+        "group": 74
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (59).jpg",
+        "sha256": "d242c203c4fd0e17ce2ddeb7dc229c4d7afdd4196cf5667f90f41070e5483486",
+        "class": "downy_mildew",
+        "group": 74
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (62).jpg",
+        "sha256": "639edf7f71cb0f57803837cb0a372c437f31deae324abeea584e97f88ebf13bd",
+        "class": "downy_mildew",
+        "group": 79
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (65).jpg",
+        "sha256": "137d0714e9b7b01f56aa73e3abd10ed4ddc2bfc5d4ec7a90f8ab466fc2f0b615",
+        "class": "downy_mildew",
+        "group": 82
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (73).jpg",
+        "sha256": "54bad3b9304efd756c5162c27f8da38262bb8d820c950131790574b79cfa3f77",
+        "class": "downy_mildew",
+        "group": 91
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (74).jpg",
+        "sha256": "54bad3b9304efd756c5162c27f8da38262bb8d820c950131790574b79cfa3f77",
+        "class": "downy_mildew",
+        "group": 91
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (78).jpg",
+        "sha256": "d24c27c627fc99b358cee1c31e037222ff9b561cfeb9eb08fe18ca7a386fa138",
+        "class": "downy_mildew",
+        "group": 96
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (91).jpg",
+        "sha256": "c1c364fd3d59cc66b28c477c34266cbb8add0c802f2a030551e51423750ee4ec",
+        "class": "downy_mildew",
+        "group": 111
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (93).jpg",
+        "sha256": "458f54cbb3e279079e8a9fd4c1dce1763c6406fd070883603055f05fa896e5eb",
+        "class": "downy_mildew",
+        "group": 113
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (94).jpg",
+        "sha256": "0fc50b48ca89f540d0891fe32cd777a5bdcea7462cfcf9ad0a1d4faea476ed18",
+        "class": "downy_mildew",
+        "group": 114
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (98).jpg",
+        "sha256": "509f1bc0d60e7c6e8797e081a80324c6509bf6824dfa4f7e12e9bf0a039fd80f",
+        "class": "downy_mildew",
+        "group": 118
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (10).jpg",
+        "sha256": "59bdccc28e90408ee5ab60f01d86c5a5910911e6eb8cdc1138a0cde1e88ac441",
+        "class": "healthy",
+        "group": 121
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (100).jpg",
+        "sha256": "e44d37ea65236ca0a9d1b02a390a75c03bcdc8e43f969b7e623f962684792b48",
+        "class": "healthy",
+        "group": 122
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (101).jpg",
+        "sha256": "5db20f5544abbae8f787e417e41ebae5c60330074e34768465204a53476474ca",
+        "class": "healthy",
+        "group": 123
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (104).jpg",
+        "sha256": "4474d216eca1d57e44662cc43c84d8be3393a94d5ce6a1e3d54b9c480adf4472",
+        "class": "healthy",
+        "group": 126
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (108).jpg",
+        "sha256": "456197644cb9f092dc2a0a571bdb4f0e72cda8d1b49fce4e811345d7a898987e",
+        "class": "healthy",
+        "group": 130
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (109).jpg",
+        "sha256": "4609c7d9152b3fa2c65aa29d7f3cb45e33b5e61e8706456c6169ca48f605d4a2",
+        "class": "healthy",
+        "group": 131
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (113).jpg",
+        "sha256": "95d0652967c4c2b3369d664cb10b345cffaefa080f8a02ebe3328eb2a9984ce4",
+        "class": "healthy",
+        "group": 136
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (114).jpg",
+        "sha256": "cd3f0c1d7c619dea954ecde5acf9764721617b034fe7bc8313941af81ce4280e",
+        "class": "healthy",
+        "group": 137
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (116).jpg",
+        "sha256": "2f31d3c67085a0be50b224892b1f8db7f72a2cd87711c8498c434e3ee704963f",
+        "class": "healthy",
+        "group": 139
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (15).jpg",
+        "sha256": "52096f4698f842734e993b22fea5bb0703726847b374550bd47f9fb8461d6148",
+        "class": "healthy",
+        "group": 161
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (19).jpg",
+        "sha256": "9b76dde9326f45b3f24c1d517c54dbe328da996df4d1a0215cd00844f670ec57",
+        "class": "healthy",
+        "group": 165
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (21).jpg",
+        "sha256": "9daf8b9f1908c5011fc427981b049a35a741a44e8e9610c6f72f806dcb76c615",
+        "class": "healthy",
+        "group": 168
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (22).jpg",
+        "sha256": "f0579594b044055b0c72625a627d3d7d4da4e2df311397dd8a79a170f245d9fb",
+        "class": "healthy",
+        "group": 169
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (24).jpg",
+        "sha256": "e62771415bb2cadcebc7fcc5a564cad9eaf157c50f4f45b6f0a70e83bdef529c",
+        "class": "healthy",
+        "group": 171
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (25).jpg",
+        "sha256": "cf7c1c625bf6792ed0b75be59eacff8ab1881d64a6ca977c2247cc5ae06a9659",
+        "class": "healthy",
+        "group": 172
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (28).jpg",
+        "sha256": "1ea3a3da6b8f4427020c88766dc7a72ac4abeec4694f772e2f1365bb33bf3e03",
+        "class": "healthy",
+        "group": 175
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (30).jpg",
+        "sha256": "aea3774f3fe3dc03c4297ddca23ce069709080b33305ffe0cd7ac9f95afe27c3",
+        "class": "healthy",
+        "group": 178
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (35).jpg",
+        "sha256": "938df6a3fdd7a4844f8f669af8fb04ca1969c02e86bcdc02f63bc9b5d3a0489c",
+        "class": "healthy",
+        "group": 183
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (39).jpg",
+        "sha256": "a4b052a56f59f817abcebf7d64abcd4bee26004e2be2f579131061027686573f",
+        "class": "healthy",
+        "group": 187
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (50).jpg",
+        "sha256": "9f14d55fed501218a8091dcdccb002e1f35fc3b43953daa44af894422d0015e1",
+        "class": "healthy",
+        "group": 200
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (57).jpg",
+        "sha256": "87052498e3f7cd6dee5e4a6bd94adc3d09e49a7adcc7daa6399189196a9ffec8",
+        "class": "healthy",
+        "group": 207
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (58).jpg",
+        "sha256": "9967e68b5cc9493117feee79ae643c4c09112b6825a4bf4c507d7f954bbe7a5c",
+        "class": "healthy",
+        "group": 208
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (62).jpg",
+        "sha256": "f913cdcfcf30450d65d5bc02921b9a118d0b05f3499ff7750e3e3c132aa41585",
+        "class": "healthy",
+        "group": 213
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (79).jpg",
+        "sha256": "043fbd5a3f406c09ef08bbc288a7869d75eba276916c85aac78353932d7708fa",
+        "class": "healthy",
+        "group": 231
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (8).jpg",
+        "sha256": "9dd58a6a8a3994ebf37acaa5bd73fd3f532940180b8126ed65d9ed4bd1af8c9f",
+        "class": "healthy",
+        "group": 232
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (93).jpg",
+        "sha256": "c183b5e1a905eb492d6379a77c8c64f3360478d805d3c7ee76e2e8e8dc15d6bb",
+        "class": "healthy",
+        "group": 247
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (98).jpg",
+        "sha256": "a906e76fec558b2b893e8d7518f0a080221279394380d9369009f7209547cf7b",
+        "class": "healthy",
+        "group": 252
+      },
+      {
+        "file": "Gray mold\\grayMold. (10).jpg",
+        "sha256": "84094b603d4c2b660a79e6e0395011d08aeabf50090700e5753f46b181fb7278",
+        "class": "gray_mold",
+        "group": 255
+      },
+      {
+        "file": "Gray mold\\grayMold. (12).jpg",
+        "sha256": "ace75cab65e0889972b4f3c36d19becd35ff07a5b7c025433bbc78d74cdf1dd8",
+        "class": "gray_mold",
+        "group": 257
+      },
+      {
+        "file": "Gray mold\\grayMold. (20).jpg",
+        "sha256": "9f19204472b982a757d0dfbb351bb06737e7e05038c4cccfed2c304c403cde03",
+        "class": "gray_mold",
+        "group": 266
+      },
+      {
+        "file": "Gray mold\\grayMold. (27).jpg",
+        "sha256": "fff10156f183c84dff64984999028b9e5511a01b7a501254c00e79f2ac0d9c6d",
+        "class": "gray_mold",
+        "group": 273
+      },
+      {
+        "file": "Gray mold\\grayMold. (3).jpg",
+        "sha256": "10191cf34e092973e0e31589c975c5c87236f32a5386ca6e3c72b1ca4b38aaf7",
+        "class": "gray_mold",
+        "group": 276
+      },
+      {
+        "file": "Gray mold\\grayMold. (39).jpg",
+        "sha256": "c3103c78dd10d961a6de706e19f95349bc2a4cd7fc914e63fb84f166fa964e6a",
+        "class": "gray_mold",
+        "group": 286
+      },
+      {
+        "file": "Gray mold\\grayMold. (48).jpg",
+        "sha256": "a9b1a47a6743a3f3fb86f8ef09a36c88da7de5c70569d2f9a3d6de3b87e70ecb",
+        "class": "gray_mold",
+        "group": 296
+      },
+      {
+        "file": "Gray mold\\grayMold. (49).jpg",
+        "sha256": "02b9080e86dbb4f3bbf93f5a1d9a09179755f7fc3cc464d93fa4fd70325fc9ee",
+        "class": "gray_mold",
+        "group": 297
+      },
+      {
+        "file": "Gray mold\\grayMold. (55).jpg",
+        "sha256": "0cf4bb9c3a518fe1f81f30904acfc888662ef94f0a36ab858243e39533f20749",
+        "class": "gray_mold",
+        "group": 304
+      },
+      {
+        "file": "Gray mold\\grayMold. (56).jpg",
+        "sha256": "7dc8e934be35cf19062e16e3376b56d2b3aab1f0b2b4e0edd598578338b50d38",
+        "class": "gray_mold",
+        "group": 305
+      },
+      {
+        "file": "Gray mold\\grayMold. (61).jpg",
+        "sha256": "c1a96481688ee112b0cc066d28213ef522b930bb6e4ff674a3f87bb58206779f",
+        "class": "gray_mold",
+        "group": 311
+      },
+      {
+        "file": "Gray mold\\grayMold. (62).jpg",
+        "sha256": "c1a96481688ee112b0cc066d28213ef522b930bb6e4ff674a3f87bb58206779f",
+        "class": "gray_mold",
+        "group": 311
+      },
+      {
+        "file": "Gray mold\\grayMold. (67).jpg",
+        "sha256": "8c5d4328281bc2f19ca01706bec8f1abc46799e351f79cf1bf9cea41bb8faee6",
+        "class": "gray_mold",
+        "group": 317
+      },
+      {
+        "file": "Gray mold\\grayMold. (70).jpg",
+        "sha256": "96fa373a4f4b394d2391e8ead16153e9df322c7dc7bb05eabe6b13758bd426b2",
+        "class": "gray_mold",
+        "group": 321
+      },
+      {
+        "file": "Leaf scars\\scars (1).jpg",
+        "sha256": "a02e81b9a84d921c5a47a47c606dcb50c89f635c4a44345d542455735f2c3fd3",
+        "class": "leaf_scars",
+        "group": 326
+      },
+      {
+        "file": "Leaf scars\\scars (101).jpg",
+        "sha256": "d26798d3b363fbe43c8fd51557c8b5a26ab3be1d121bf8e80d021bb624acf74c",
+        "class": "leaf_scars",
+        "group": 329
+      },
+      {
+        "file": "Leaf scars\\scars (102).jpg",
+        "sha256": "ec33c88a5a06177ed54e8ea7e7e32adf25e2b094bfcf6358afe8602fb7284cee",
+        "class": "leaf_scars",
+        "group": 330
+      },
+      {
+        "file": "Leaf scars\\scars (104).jpg",
+        "sha256": "3cbee356fa2998085cb5fa9ce8505defc08622e31aea114583307c953f2e7a3a",
+        "class": "leaf_scars",
+        "group": 332
+      },
+      {
+        "file": "Leaf scars\\scars (11).jpg",
+        "sha256": "4abb95cd786522b041234e51bebb2fd02f925040774f5b6c779182151dbb2b2e",
+        "class": "leaf_scars",
+        "group": 338
+      },
+      {
+        "file": "Leaf scars\\scars (12).jpg",
+        "sha256": "eb3930ac080b31b111fc25214a545953923c9490de6513b4cf3344bcdc81db9a",
+        "class": "leaf_scars",
+        "group": 349
+      },
+      {
+        "file": "Leaf scars\\scars (133).jpg",
+        "sha256": "d8607929749c429c7147f7a0392788fe693e0d8680becf6661fdd4ee64a46a7d",
+        "class": "leaf_scars",
+        "group": 364
+      },
+      {
+        "file": "Leaf scars\\scars (15).jpg",
+        "sha256": "863e0a16c5231c6271d890571f0075823f958126442cb8021a24044dbec6bf91",
+        "class": "leaf_scars",
+        "group": 373
+      },
+      {
+        "file": "Leaf scars\\scars (28).jpg",
+        "sha256": "d2b84742e135de99015b8fc38157549743b61d9c9ec84d710b6e868ddfadc372",
+        "class": "leaf_scars",
+        "group": 387
+      },
+      {
+        "file": "Leaf scars\\scars (32).jpg",
+        "sha256": "b42368b9d5299943ab02bc01143c7b308fdf510651857c5a5481cdaf6db610e6",
+        "class": "leaf_scars",
+        "group": 392
+      },
+      {
+        "file": "Leaf scars\\scars (36).jpg",
+        "sha256": "0297235db11be9b750cf450ce5edee9fc5e50bd376471c7026a5eaf3e2dc2ee1",
+        "class": "leaf_scars",
+        "group": 396
+      },
+      {
+        "file": "Leaf scars\\scars (39).jpg",
+        "sha256": "cb0b0930532a708e83c00a473f17a85e1adae803aa2bb41affbd9600f01b812e",
+        "class": "leaf_scars",
+        "group": 399
+      },
+      {
+        "file": "Leaf scars\\scars (41).jpg",
+        "sha256": "54f902d08e7af8d5af83fee4f18343ca26e7ee3966c8297e7dae6d8c4685b6bc",
+        "class": "leaf_scars",
+        "group": 402
+      },
+      {
+        "file": "Leaf scars\\scars (43).jpg",
+        "sha256": "aba15e9269fa68da0d8cbd2c613a7994e8592538b1f2e45288181055253e8c27",
+        "class": "leaf_scars",
+        "group": 404
+      },
+      {
+        "file": "Leaf scars\\scars (5).jpg",
+        "sha256": "bf0323ad45b5022b7699f3a1a5979bb6c2d8606ef174bee6414d10f81b69285a",
+        "class": "leaf_scars",
+        "group": 411
+      },
+      {
+        "file": "Leaf scars\\scars (54).jpg",
+        "sha256": "55b4134c197ac9a6fc9a6337a8b07e554e7f56be7fcf271f672a83979bde3f08",
+        "class": "leaf_scars",
+        "group": 416
+      },
+      {
+        "file": "Leaf scars\\scars (55).jpg",
+        "sha256": "e918517c405ee09749607ee612c072f384c325bf52056032326336f13e9e721d",
+        "class": "leaf_scars",
+        "group": 417
+      },
+      {
+        "file": "Leaf scars\\scars (62).jpg",
+        "sha256": "122baf12ed16c3a75497dc5d724fcf94cbb4e87d96805714a5b043810f245096",
+        "class": "leaf_scars",
+        "group": 425
+      },
+      {
+        "file": "Leaf scars\\scars (71).jpg",
+        "sha256": "da49863c576ca3298a256e99a5715896c5f5fc76443e545d2bcbe0cdd970feb6",
+        "class": "leaf_scars",
+        "group": 435
+      },
+      {
+        "file": "Leaf scars\\scars (73).jpg",
+        "sha256": "cf4a145b9ecc827f316427cb2a08fff380c1da1f0b615f78ee83348e4b54992e",
+        "class": "leaf_scars",
+        "group": 437
+      },
+      {
+        "file": "Leaf scars\\scars (76).jpg",
+        "sha256": "0671de4c3f442e6144b0f631d1a7297de3c0dd82d02da9e84c92e352a029a27c",
+        "class": "leaf_scars",
+        "group": 440
+      },
+      {
+        "file": "Leaf scars\\scars (81).jpg",
+        "sha256": "a07c944a92a5892bd2ae5e554ead20907cb26d8c9817873a9a8bd101c816e06f",
+        "class": "leaf_scars",
+        "group": 446
+      },
+      {
+        "file": "Leaf scars\\scars (83).jpg",
+        "sha256": "fc25a0afc7e6facdc7c5852bf17cd388722c1fdb71bcaf8a4e3cebeeb83a0e9b",
+        "class": "leaf_scars",
+        "group": 448
+      },
+      {
+        "file": "Leaf scars\\scars (84).jpg",
+        "sha256": "e7e4144afe0ee1f5c475a5b890321e1d095625394378d5152a605e31ec26aa97",
+        "class": "leaf_scars",
+        "group": 449
+      },
+      {
+        "file": "Leaf scars\\scars (87).jpg",
+        "sha256": "ee5ce98d573bce18b36f7972dac280379dfda82baad1a6689f5dfd17bc69afbd",
+        "class": "leaf_scars",
+        "group": 452
+      },
+      {
+        "file": "Leaf scars\\scars (90).jpg",
+        "sha256": "c61677cc20245e04cd2ba0af4ccdc06dce00d25a2b7b70fbcfe930def7637e8e",
+        "class": "leaf_scars",
+        "group": 456
+      },
+      {
+        "file": "Leaf scars\\scars (96).jpg",
+        "sha256": "9c0a4743d4b7e81f959587f3cb4f16ac7c0b3c4c080b4ee869e92632fe586b24",
+        "class": "leaf_scars",
+        "group": 462
+      },
+      {
+        "file": "Leaf scars\\scars (99).jpg",
+        "sha256": "91b001a37218fc7fd1f5b1220ed166e2bc8de8b429ac9558a71229bbac1adf8e",
+        "class": "leaf_scars",
+        "group": 465
+      }
+    ],
+    "test": [
+      {
+        "file": "Downy mildew\\downymildew.  (110).jpg",
+        "sha256": "32883179168e9510e327d2e7423932449507cc673b1cd452f1781a9dbc39ff34",
+        "class": "downy_mildew",
+        "group": 13
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (118).jpg",
+        "sha256": "79d543a779391dd028f0bb4ad9c4080eb4dcf93d27c6436ad7a37cfc6224944e",
+        "class": "downy_mildew",
+        "group": 21
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (120).jpg",
+        "sha256": "fcb8ab26b28e3f68985773838d4eda83604883781cc7312f8f462a6e3b3d3f20",
+        "class": "downy_mildew",
+        "group": 24
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (20).jpg",
+        "sha256": "7cfeaa7293664bc933c1fb91baec0408a3552b3384a5a1ef1d794753f8230444",
+        "class": "downy_mildew",
+        "group": 33
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (21).jpg",
+        "sha256": "6431e94c6b976a917389b5cbb8d4ee020511bc8e470c67bfb28efeb0baa454d7",
+        "class": "downy_mildew",
+        "group": 34
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (25).jpg",
+        "sha256": "804a0a9f1c33bdf8ba1cd20c08f509a9f50d0e41c290b74e623925fbc8dae26f",
+        "class": "downy_mildew",
+        "group": 38
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (26).jpg",
+        "sha256": "12181150be53d7983d382f2293678a3b9d5cfdf1ad6062ceebdc6f548331ae50",
+        "class": "downy_mildew",
+        "group": 39
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (27).jpg",
+        "sha256": "07855085ce361e080c55527942a744345875ced663b21ecbda6453f4e939eb6a",
+        "class": "downy_mildew",
+        "group": 40
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (3).jpg",
+        "sha256": "8f337698b0d4466912d9640a83165aede5ed6c370aee2a89197560628a96ca66",
+        "class": "downy_mildew",
+        "group": 43
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (35).jpg",
+        "sha256": "5816d3b33f5ed9b2997e12ee677e593a989b6de6490b7180197f15ac2144e5ce",
+        "class": "downy_mildew",
+        "group": 49
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (36).jpg",
+        "sha256": "5816d3b33f5ed9b2997e12ee677e593a989b6de6490b7180197f15ac2144e5ce",
+        "class": "downy_mildew",
+        "group": 49
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (39).jpg",
+        "sha256": "425424782b4d524b8591b8c44ac49d0ac5470b01b63f7e36042941c252e0d948",
+        "class": "downy_mildew",
+        "group": 53
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (4).jpg",
+        "sha256": "d6e5e5b5b56b7f1769602416e936b37f4bab5adffa7fa80ae9c4e09d505ef09b",
+        "class": "downy_mildew",
+        "group": 54
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (42).jpg",
+        "sha256": "dc8981c8a0b4f4eeda296b989c36ceca7a2f9622bb4c12db171b3aa78b735daa",
+        "class": "downy_mildew",
+        "group": 57
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (43).jpg",
+        "sha256": "dc8981c8a0b4f4eeda296b989c36ceca7a2f9622bb4c12db171b3aa78b735daa",
+        "class": "downy_mildew",
+        "group": 57
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (57).jpg",
+        "sha256": "7a2d4601d58ec17db7391b017bdd45ac92467184bce9ac97d0079d4839e02d52",
+        "class": "downy_mildew",
+        "group": 73
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (6).jpg",
+        "sha256": "4d5d41d26c77aa36adb7c3b62a195d5b8326a22d4a29f7252da06fddc5fd3208",
+        "class": "downy_mildew",
+        "group": 76
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (64).jpg",
+        "sha256": "aab94cd9854fcb78a177c6721bafe8d8422164717236adace1bbb51e7125ad1e",
+        "class": "downy_mildew",
+        "group": 81
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (71).jpg",
+        "sha256": "84cf3778699c38b901dfa74b58282e851f543389bb7ff2d68ba5c6e612a87016",
+        "class": "downy_mildew",
+        "group": 89
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (72).jpg",
+        "sha256": "84cf3778699c38b901dfa74b58282e851f543389bb7ff2d68ba5c6e612a87016",
+        "class": "downy_mildew",
+        "group": 89
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (77).jpg",
+        "sha256": "2e4122b11f9291dc1dc56e1222b99fbffc5611607d4a694726ed1696654684a6",
+        "class": "downy_mildew",
+        "group": 95
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (96).jpg",
+        "sha256": "6cf1ed2236e74f9c5cb6546d6a43d52747b1275c7baae1670f17b0509eab5e99",
+        "class": "downy_mildew",
+        "group": 116
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (97).jpg",
+        "sha256": "6cf1ed2236e74f9c5cb6546d6a43d52747b1275c7baae1670f17b0509eab5e99",
+        "class": "downy_mildew",
+        "group": 116
+      },
+      {
+        "file": "Downy mildew\\downymildew.  (99).jpg",
+        "sha256": "2f928f9cf8c76767f36b2213674d762db73557d1e861f7846e05fd3d3704afc6",
+        "class": "downy_mildew",
+        "group": 119
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (105).jpg",
+        "sha256": "3b48b0a6b589c9e1aee6dbea7085b83610b59e794d75d20b0e78a26abc4de8ff",
+        "class": "healthy",
+        "group": 127
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (111).jpg",
+        "sha256": "16afd9f4b08b4790ecd67a4667b6ff8756c4b4f1c222a2ca83d88114f59c6549",
+        "class": "healthy",
+        "group": 134
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (112).jpg",
+        "sha256": "ec4fb5cebc74ef964b7727ec4fa016b4a42acb6f9a24b2e4033687dea05a5670",
+        "class": "healthy",
+        "group": 135
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (122).jpg",
+        "sha256": "133cda4464d3e84623927df3c1d6cb2bc82e4b8849e47f23c86d0a4501c7aeaa",
+        "class": "healthy",
+        "group": 146
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (123).jpg",
+        "sha256": "61b6d8da9d357c23991e4913243a886326221f9d3272d085275f3a13e88c1951",
+        "class": "healthy",
+        "group": 147
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (124).jpg",
+        "sha256": "61b6d8da9d357c23991e4913243a886326221f9d3272d085275f3a13e88c1951",
+        "class": "healthy",
+        "group": 147
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (126).jpg",
+        "sha256": "d9714cefaf20f3b097aeb6c6480d060ee5b10b7ba2f468cd1851c851daf2ccc0",
+        "class": "healthy",
+        "group": 150
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (127).jpg",
+        "sha256": "28369f712f84c961320c1bbf033a4ed67555984e6913242a58fcf5d99ab41dcf",
+        "class": "healthy",
+        "group": 151
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (14).jpg",
+        "sha256": "bda2a60ad8a35886bcafb98b021b3e6ee65a24b77746719fc2eb4b378b1fa776",
+        "class": "healthy",
+        "group": 160
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (18).jpg",
+        "sha256": "44f1038337f6318251c9bee624527d79b98f6569f80fd4b96fed9432dc0a0f93",
+        "class": "healthy",
+        "group": 164
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (32).jpg",
+        "sha256": "f4dcf7ffb5543547b0f2067dd4fecd20480e3e6bb70697b79e3fe2790d9822b8",
+        "class": "healthy",
+        "group": 180
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (38).jpg",
+        "sha256": "ea65798651e86bdf455cd108280b90e5007aa579272df5d764d5b9f4e86312d2",
+        "class": "healthy",
+        "group": 186
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (4).jpg",
+        "sha256": "558f324cc50f68e8f3c5fbf63d507e746a3f98ded1dc10267926c06fe5ce540e",
+        "class": "healthy",
+        "group": 188
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (40).jpg",
+        "sha256": "64e49c77be6fbad51370a9cc7debc0f7a90fdc4db5934d1a1f0e2d4d2a09a98b",
+        "class": "healthy",
+        "group": 189
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (41).jpg",
+        "sha256": "3976eac8f7e8c1bef2122d4f892a7f6c165970fc2662e549ae63d451b9864851",
+        "class": "healthy",
+        "group": 190
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (46).jpg",
+        "sha256": "6ab9c4cba78ddfcaec3566c0cd834cf54147f2fd69a00a871041c3af3151f401",
+        "class": "healthy",
+        "group": 195
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (49).jpg",
+        "sha256": "3ac233ad2ee5ec109b7051c819ebbfd2a63c6a5396b858c79ff92f2b0e521c86",
+        "class": "healthy",
+        "group": 198
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (53).jpg",
+        "sha256": "d05a769556c4511fe73ff65c8a392ecdaacfd48b711419780747eb5b48fcdc40",
+        "class": "healthy",
+        "group": 203
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (56).jpg",
+        "sha256": "58ce023b29310dba2dcc4958784be9e04c5597a55a6fa7193351cb6c5d0863ba",
+        "class": "healthy",
+        "group": 206
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (60).jpg",
+        "sha256": "82762092fec306f7c05dde748888bd8b1ede5a6aabbd0dfe9783f893f940c276",
+        "class": "healthy",
+        "group": 211
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (7).jpg",
+        "sha256": "0684592bce5fcdde1273bbdaa5dae1c472f56d86917f05ce920f0c954b2d9581",
+        "class": "healthy",
+        "group": 221
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (71).jpg",
+        "sha256": "5c2d6f3077e406a3eab95f64e310f1e67f8b191e35c043124c83e970bac0f60e",
+        "class": "healthy",
+        "group": 223
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (72).jpg",
+        "sha256": "c4cf3ef0406d66f15b8d04fe271536bb79395a37502c1046579678d3ed56389f",
+        "class": "healthy",
+        "group": 224
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (74).jpg",
+        "sha256": "a148caacbd80247e397fb007927f5c888a964dbe44cb672c9ab4d26f9c76b8f6",
+        "class": "healthy",
+        "group": 226
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (76).jpg",
+        "sha256": "7623da76f73ee6aedb36f30626787cce81082d2e2f54fec0b468addbb5e56b05",
+        "class": "healthy",
+        "group": 228
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (83).jpg",
+        "sha256": "3244d2029ac37a18424c36a929d08d1430540d1a237f5ed1f1e81281b2c25c6a",
+        "class": "healthy",
+        "group": 236
+      },
+      {
+        "file": "Fresh Leaf\\fresh. (92).jpg",
+        "sha256": "50bb39232cb5ebc1c0dd644d4e3d72b14efed1c9c326a5d72fb41ae9e28f2480",
+        "class": "healthy",
+        "group": 246
+      },
+      {
+        "file": "Gray mold\\grayMold. (14).jpg",
+        "sha256": "2da3b9acf9bb6db73134becc6350302e746bc5798cae3a3c9d7bf41072e934d4",
+        "class": "gray_mold",
+        "group": 259
+      },
+      {
+        "file": "Gray mold\\grayMold. (21).jpg",
+        "sha256": "5513f11f68288d4e7ba99b0d467bca588dbaf12f4c3b329bc4ae20a81574a372",
+        "class": "gray_mold",
+        "group": 267
+      },
+      {
+        "file": "Gray mold\\grayMold. (23).jpg",
+        "sha256": "79b535ff5ed53c51e95ea65e4bd6149af1aaae493e96fc9261141fcd54e776a1",
+        "class": "gray_mold",
+        "group": 269
+      },
+      {
+        "file": "Gray mold\\grayMold. (24).jpg",
+        "sha256": "9ca45487a4f08aa2c0febec69670369dfb4866d36200b5aa15df885263bc3676",
+        "class": "gray_mold",
+        "group": 270
+      },
+      {
+        "file": "Gray mold\\grayMold. (26).jpg",
+        "sha256": "5cc8ca831af2ceb8ed99a96e2982f7c7265450e916a1d72054f038ac90df0196",
+        "class": "gray_mold",
+        "group": 272
+      },
+      {
+        "file": "Gray mold\\grayMold. (32).jpg",
+        "sha256": "a62a26f0a5b155ef33531f4ad6b98be1d933c33603a01c50be0b863dcee84079",
+        "class": "gray_mold",
+        "group": 279
+      },
+      {
+        "file": "Gray mold\\grayMold. (33).jpg",
+        "sha256": "a62a26f0a5b155ef33531f4ad6b98be1d933c33603a01c50be0b863dcee84079",
+        "class": "gray_mold",
+        "group": 279
+      },
+      {
+        "file": "Gray mold\\grayMold. (36).jpg",
+        "sha256": "ec2f9842832a6633999999e1a150be7e27a1f0dffc335b96a4cc113cf1f32187",
+        "class": "gray_mold",
+        "group": 283
+      },
+      {
+        "file": "Gray mold\\grayMold. (43).jpg",
+        "sha256": "9cca6667edc39c53bd827999a5becb1bc6fb12193dc3a1f74ef2a70d2f3f4ce4",
+        "class": "gray_mold",
+        "group": 291
+      },
+      {
+        "file": "Gray mold\\grayMold. (57).jpg",
+        "sha256": "d00c3c89e019fd67176dca22e94e3316f1d3a3ca1fa1df56dbfc4d73553f6aef",
+        "class": "gray_mold",
+        "group": 306
+      },
+      {
+        "file": "Gray mold\\grayMold. (7).jpg",
+        "sha256": "1125c1121fe6ad255b3bf5b00148aa3c7f5822be8cd6018d3f1dd321388ce737",
+        "class": "gray_mold",
+        "group": 320
+      },
+      {
+        "file": "Gray mold\\grayMold. (71).jpg",
+        "sha256": "d54147db5b9a2640befd408dfd0782afab105e0af70c0e130cef891f2d97dde4",
+        "class": "gray_mold",
+        "group": 322
+      },
+      {
+        "file": "Gray mold\\grayMold. (72).jpg",
+        "sha256": "290371a2d62bfae0488ffeea234b065379dc5c415907e9e9633cce4b9c88db2d",
+        "class": "gray_mold",
+        "group": 323
+      },
+      {
+        "file": "Gray mold\\grayMold. (8).jpg",
+        "sha256": "7274e05f334774747f0b13fa14e0de45eb8f2d100abb73720d28b979d15acf83",
+        "class": "gray_mold",
+        "group": 324
+      },
+      {
+        "file": "Leaf scars\\scars (103).jpg",
+        "sha256": "65e0545bcb167f02b2c26bcecb021d88926bed8edb41b1cf302140b5884ad4cc",
+        "class": "leaf_scars",
+        "group": 331
+      },
+      {
+        "file": "Leaf scars\\scars (105).jpg",
+        "sha256": "c7e9f96969b0ee7921c6aa73bb00b241cee19fb9c637f2379e692e3b27e8a744",
+        "class": "leaf_scars",
+        "group": 333
+      },
+      {
+        "file": "Leaf scars\\scars (106).jpg",
+        "sha256": "23cdebcd29afc2b095ec0b0c54a1260b286a8451d6837e754868ab616a372d36",
+        "class": "leaf_scars",
+        "group": 334
+      },
+      {
+        "file": "Leaf scars\\scars (107).jpg",
+        "sha256": "7ba110f826edbaf93414b158f215b7e6696769417fc956b01b6a8235cc865e1b",
+        "class": "leaf_scars",
+        "group": 335
+      },
+      {
+        "file": "Leaf scars\\scars (111).jpg",
+        "sha256": "c6c3269eaae39e5ad2d35724b8ba9bc853e4aef7b2bfa5cb35641c084a826b42",
+        "class": "leaf_scars",
+        "group": 340
+      },
+      {
+        "file": "Leaf scars\\scars (114).jpg",
+        "sha256": "04fee6bb064e5ae5282eb3f60ced85270a183e5e01093a9f9ef7d9bb8f126b38",
+        "class": "leaf_scars",
+        "group": 343
+      },
+      {
+        "file": "Leaf scars\\scars (126).jpg",
+        "sha256": "a5735632d2b7fae8ede267f95d7561d0bbee68f87a50820d6502a49f6caebd27",
+        "class": "leaf_scars",
+        "group": 356
+      },
+      {
+        "file": "Leaf scars\\scars (127).jpg",
+        "sha256": "5d8e2864fa7b5f34aee58fd95c73ebce0ed957d8764d4d6f97f3fe524270ca1a",
+        "class": "leaf_scars",
+        "group": 357
+      },
+      {
+        "file": "Leaf scars\\scars (129).jpg",
+        "sha256": "c2b66e7bc76a694e81f2f685628ac39294fbf40719b10e43b346a1684cbd09e7",
+        "class": "leaf_scars",
+        "group": 359
+      },
+      {
+        "file": "Leaf scars\\scars (13).jpg",
+        "sha256": "e0ebea1c92b1bedcb96996b233a3702601bfc1d55adb55b393fec83c5be10729",
+        "class": "leaf_scars",
+        "group": 360
+      },
+      {
+        "file": "Leaf scars\\scars (130).jpg",
+        "sha256": "71d6cc56e976138ca84fabbdeff4c3cf576ee6bcb818bb74450af3be2a26bd0c",
+        "class": "leaf_scars",
+        "group": 361
+      },
+      {
+        "file": "Leaf scars\\scars (134).jpg",
+        "sha256": "c9261ba98449ebd2bdc24e4e847c0e5f9ec0e9dbbf7a653bc1366e8a940f1665",
+        "class": "leaf_scars",
+        "group": 365
+      },
+      {
+        "file": "Leaf scars\\scars (139).jpg",
+        "sha256": "0b90e04fcb95156a6a7a663426f910bb3353228d444432ed617241c63e006f73",
+        "class": "leaf_scars",
+        "group": 370
+      },
+      {
+        "file": "Leaf scars\\scars (22).jpg",
+        "sha256": "5c1a70b451ba07b421dc3662a43d2e8bfa9da00cc89d366e75a1861441835e34",
+        "class": "leaf_scars",
+        "group": 381
+      },
+      {
+        "file": "Leaf scars\\scars (24).jpg",
+        "sha256": "4e6856e8bfa98452851f98c9a46996cc8d06ba6ac83adedb839afeedf08fe53b",
+        "class": "leaf_scars",
+        "group": 383
+      },
+      {
+        "file": "Leaf scars\\scars (27).jpg",
+        "sha256": "fa7649df834b65168aff70017ad1e6513b5781cc6840f1a5944eddd931585ace",
+        "class": "leaf_scars",
+        "group": 386
+      },
+      {
+        "file": "Leaf scars\\scars (34).jpg",
+        "sha256": "9465eeea662596cd7b007211f859a7b2d40aab3db48d109a124581d80faebb46",
+        "class": "leaf_scars",
+        "group": 394
+      },
+      {
+        "file": "Leaf scars\\scars (37).jpg",
+        "sha256": "240a547f9ce39f11d694cf87acc39ce50f9c90d3e7a7bc602f11019d4cd7b986",
+        "class": "leaf_scars",
+        "group": 397
+      },
+      {
+        "file": "Leaf scars\\scars (40).jpg",
+        "sha256": "16387ab7536e86d1db79c3b3ffbba0c2464c6ba724c013466337b32c1993d650",
+        "class": "leaf_scars",
+        "group": 401
+      },
+      {
+        "file": "Leaf scars\\scars (44).jpg",
+        "sha256": "7fd4f5da81e61a276d8daeb51c513934e5696cf295384ee34443b4c4815a37c3",
+        "class": "leaf_scars",
+        "group": 405
+      },
+      {
+        "file": "Leaf scars\\scars (46).jpg",
+        "sha256": "3e22705dfcef3f57f0939b26ccda078fb22552c8994d35bcfe7c6cc6cc0694c3",
+        "class": "leaf_scars",
+        "group": 407
+      },
+      {
+        "file": "Leaf scars\\scars (59).jpg",
+        "sha256": "06651f22d34cf0406e01116c9e2f79d560bf669ea4343466be02f403a2d79285",
+        "class": "leaf_scars",
+        "group": 421
+      },
+      {
+        "file": "Leaf scars\\scars (65).jpg",
+        "sha256": "715b4799eff3ea671b06ca40825827bbbf863ec22629c8586d2d5c914f05b5a1",
+        "class": "leaf_scars",
+        "group": 428
+      },
+      {
+        "file": "Leaf scars\\scars (75).jpg",
+        "sha256": "5a8354fec3b2d00cd75daa7adad8190c8e06774dcfe00f5c12926a7ec9d89a77",
+        "class": "leaf_scars",
+        "group": 439
+      },
+      {
+        "file": "Leaf scars\\scars (78).jpg",
+        "sha256": "93b6f0ce066a5050648ec3e1383bb3b13018ebc339d62c1bd7cfd86758bfce69",
+        "class": "leaf_scars",
+        "group": 442
+      },
+      {
+        "file": "Leaf scars\\scars (93).jpg",
+        "sha256": "87e37435103177bf11663a1776e4217a3436a38922a0d2f98a300464022be6af",
+        "class": "leaf_scars",
+        "group": 459
+      },
+      {
+        "file": "Leaf scars\\scars (94).jpg",
+        "sha256": "33aad3100a755f7c5b589600411a34b34e8250854c4e24c0e7f180fad99d6853",
+        "class": "leaf_scars",
+        "group": 460
+      },
+      {
+        "file": "Leaf scars\\scars (95).jpg",
+        "sha256": "0062ac435feca66097cf1874dcde4c3aee3e0b8c1685cd3137cbdcec0936b393",
+        "class": "leaf_scars",
+        "group": 461
+      }
+    ]
+  },
+  "test_predictions": [
+    {
+      "file": "Downy mildew\\downymildew.  (110).jpg",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.8708158894085795
+    },
+    {
+      "file": "Downy mildew\\downymildew.  (118).jpg",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.7750476036180247
+    },
+    {
+      "file": "Downy mildew\\downymildew.  (120).jpg",
+      "actual": "downy_mildew",
+      "predicted": "leaf_scars",
+      "confidence": 0.7961528772186282
+    },
+    {
+      "file": "Downy mildew\\downymildew.  (20).jpg",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.6526591326955742
+    },
+    {
+      "file": "Downy mildew\\downymildew.  (21).jpg",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.9107492214815719
+    },
+    {
+      "file": "Downy mildew\\downymildew.  (25).jpg",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.8415332460880917
+    },
+    {
+      "file": "Downy mildew\\downymildew.  (26).jpg",
+      "actual": "downy_mildew",
+      "predicted": "healthy",
+      "confidence": 0.7179391764549028
+    },
+    {
+      "file": "Downy mildew\\downymildew.  (27).jpg",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.9108716328025811
+    },
+    {
+      "file": "Downy mildew\\downymildew.  (3).jpg",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.9813517472262924
+    },
+    {
+      "file": "Downy mildew\\downymildew.  (35).jpg",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.9788566998689666
+    },
+    {
+      "file": "Downy mildew\\downymildew.  (36).jpg",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.9788566998689666
+    },
+    {
+      "file": "Downy mildew\\downymildew.  (39).jpg",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.9751217450036284
+    },
+    {
+      "file": "Downy mildew\\downymildew.  (4).jpg",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.9439752123131699
+    },
+    {
+      "file": "Downy mildew\\downymildew.  (42).jpg",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.9479557659497255
+    },
+    {
+      "file": "Downy mildew\\downymildew.  (43).jpg",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.9479557659497255
+    },
+    {
+      "file": "Downy mildew\\downymildew.  (57).jpg",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.967350771956383
+    },
+    {
+      "file": "Downy mildew\\downymildew.  (6).jpg",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.9952645605377622
+    },
+    {
+      "file": "Downy mildew\\downymildew.  (64).jpg",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.9974998633146607
+    },
+    {
+      "file": "Downy mildew\\downymildew.  (71).jpg",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.9987184695448619
+    },
+    {
+      "file": "Downy mildew\\downymildew.  (72).jpg",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.9987184695448619
+    },
+    {
+      "file": "Downy mildew\\downymildew.  (77).jpg",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.5717368309719304
+    },
+    {
+      "file": "Downy mildew\\downymildew.  (96).jpg",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.9539662098385977
+    },
+    {
+      "file": "Downy mildew\\downymildew.  (97).jpg",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.9539662098385977
+    },
+    {
+      "file": "Downy mildew\\downymildew.  (99).jpg",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.9879921744124321
+    },
+    {
+      "file": "Fresh Leaf\\fresh. (105).jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9999771834241113
+    },
+    {
+      "file": "Fresh Leaf\\fresh. (111).jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9999130669195633
+    },
+    {
+      "file": "Fresh Leaf\\fresh. (112).jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9994845839617763
+    },
+    {
+      "file": "Fresh Leaf\\fresh. (122).jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9976669033636154
+    },
+    {
+      "file": "Fresh Leaf\\fresh. (123).jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9999392441051179
+    },
+    {
+      "file": "Fresh Leaf\\fresh. (124).jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9999392441051179
+    },
+    {
+      "file": "Fresh Leaf\\fresh. (126).jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9894071487265002
+    },
+    {
+      "file": "Fresh Leaf\\fresh. (127).jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9877543012408087
+    },
+    {
+      "file": "Fresh Leaf\\fresh. (14).jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9923192575002027
+    },
+    {
+      "file": "Fresh Leaf\\fresh. (18).jpg",
+      "actual": "healthy",
+      "predicted": "downy_mildew",
+      "confidence": 0.576737251742728
+    },
+    {
+      "file": "Fresh Leaf\\fresh. (32).jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9987340809633392
+    },
+    {
+      "file": "Fresh Leaf\\fresh. (38).jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9883219493428178
+    },
+    {
+      "file": "Fresh Leaf\\fresh. (4).jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.8889107646477525
+    },
+    {
+      "file": "Fresh Leaf\\fresh. (40).jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9904043072325653
+    },
+    {
+      "file": "Fresh Leaf\\fresh. (41).jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9961801712133006
+    },
+    {
+      "file": "Fresh Leaf\\fresh. (46).jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9975753652422843
+    },
+    {
+      "file": "Fresh Leaf\\fresh. (49).jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9165944336256667
+    },
+    {
+      "file": "Fresh Leaf\\fresh. (53).jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.983151210163507
+    },
+    {
+      "file": "Fresh Leaf\\fresh. (56).jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9990171798376564
+    },
+    {
+      "file": "Fresh Leaf\\fresh. (60).jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9999336436396427
+    },
+    {
+      "file": "Fresh Leaf\\fresh. (7).jpg",
+      "actual": "healthy",
+      "predicted": "downy_mildew",
+      "confidence": 0.5683671677146226
+    },
+    {
+      "file": "Fresh Leaf\\fresh. (71).jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9983644209822972
+    },
+    {
+      "file": "Fresh Leaf\\fresh. (72).jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9956825495691101
+    },
+    {
+      "file": "Fresh Leaf\\fresh. (74).jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9999772571151077
+    },
+    {
+      "file": "Fresh Leaf\\fresh. (76).jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.6784017711323226
+    },
+    {
+      "file": "Fresh Leaf\\fresh. (83).jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.999990676964629
+    },
+    {
+      "file": "Fresh Leaf\\fresh. (92).jpg",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9660583867700705
+    },
+    {
+      "file": "Gray mold\\grayMold. (14).jpg",
+      "actual": "gray_mold",
+      "predicted": "gray_mold",
+      "confidence": 0.999798994004565
+    },
+    {
+      "file": "Gray mold\\grayMold. (21).jpg",
+      "actual": "gray_mold",
+      "predicted": "gray_mold",
+      "confidence": 0.9999510809783024
+    },
+    {
+      "file": "Gray mold\\grayMold. (23).jpg",
+      "actual": "gray_mold",
+      "predicted": "gray_mold",
+      "confidence": 0.9993838411286705
+    },
+    {
+      "file": "Gray mold\\grayMold. (24).jpg",
+      "actual": "gray_mold",
+      "predicted": "gray_mold",
+      "confidence": 0.9996693930872372
+    },
+    {
+      "file": "Gray mold\\grayMold. (26).jpg",
+      "actual": "gray_mold",
+      "predicted": "gray_mold",
+      "confidence": 0.9999310400250484
+    },
+    {
+      "file": "Gray mold\\grayMold. (32).jpg",
+      "actual": "gray_mold",
+      "predicted": "gray_mold",
+      "confidence": 0.9990295296782906
+    },
+    {
+      "file": "Gray mold\\grayMold. (33).jpg",
+      "actual": "gray_mold",
+      "predicted": "gray_mold",
+      "confidence": 0.9990295296782906
+    },
+    {
+      "file": "Gray mold\\grayMold. (36).jpg",
+      "actual": "gray_mold",
+      "predicted": "gray_mold",
+      "confidence": 0.9999016614700186
+    },
+    {
+      "file": "Gray mold\\grayMold. (43).jpg",
+      "actual": "gray_mold",
+      "predicted": "gray_mold",
+      "confidence": 0.9869683409441257
+    },
+    {
+      "file": "Gray mold\\grayMold. (57).jpg",
+      "actual": "gray_mold",
+      "predicted": "gray_mold",
+      "confidence": 0.9999922654229787
+    },
+    {
+      "file": "Gray mold\\grayMold. (7).jpg",
+      "actual": "gray_mold",
+      "predicted": "gray_mold",
+      "confidence": 0.9874843226211784
+    },
+    {
+      "file": "Gray mold\\grayMold. (71).jpg",
+      "actual": "gray_mold",
+      "predicted": "gray_mold",
+      "confidence": 0.998192923452964
+    },
+    {
+      "file": "Gray mold\\grayMold. (72).jpg",
+      "actual": "gray_mold",
+      "predicted": "gray_mold",
+      "confidence": 0.9980740301654876
+    },
+    {
+      "file": "Gray mold\\grayMold. (8).jpg",
+      "actual": "gray_mold",
+      "predicted": "gray_mold",
+      "confidence": 0.990517444470443
+    },
+    {
+      "file": "Leaf scars\\scars (103).jpg",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.9983280117370521
+    },
+    {
+      "file": "Leaf scars\\scars (105).jpg",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.9999566821020451
+    },
+    {
+      "file": "Leaf scars\\scars (106).jpg",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.9968177575543109
+    },
+    {
+      "file": "Leaf scars\\scars (107).jpg",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.9502099324095497
+    },
+    {
+      "file": "Leaf scars\\scars (111).jpg",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.9693188882395412
+    },
+    {
+      "file": "Leaf scars\\scars (114).jpg",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.997256577740437
+    },
+    {
+      "file": "Leaf scars\\scars (126).jpg",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.9908010863352962
+    },
+    {
+      "file": "Leaf scars\\scars (127).jpg",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.9921722359031102
+    },
+    {
+      "file": "Leaf scars\\scars (129).jpg",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.9927284335381252
+    },
+    {
+      "file": "Leaf scars\\scars (13).jpg",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.7027558789202595
+    },
+    {
+      "file": "Leaf scars\\scars (130).jpg",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.999580794698115
+    },
+    {
+      "file": "Leaf scars\\scars (134).jpg",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.9357325923184568
+    },
+    {
+      "file": "Leaf scars\\scars (139).jpg",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.9966343219461914
+    },
+    {
+      "file": "Leaf scars\\scars (22).jpg",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.9477011037604713
+    },
+    {
+      "file": "Leaf scars\\scars (24).jpg",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.9837972221106823
+    },
+    {
+      "file": "Leaf scars\\scars (27).jpg",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.838075977771961
+    },
+    {
+      "file": "Leaf scars\\scars (34).jpg",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.715561733359641
+    },
+    {
+      "file": "Leaf scars\\scars (37).jpg",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.9999775621741761
+    },
+    {
+      "file": "Leaf scars\\scars (40).jpg",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.9156867527189956
+    },
+    {
+      "file": "Leaf scars\\scars (44).jpg",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.9993835411999892
+    },
+    {
+      "file": "Leaf scars\\scars (46).jpg",
+      "actual": "leaf_scars",
+      "predicted": "downy_mildew",
+      "confidence": 0.999538319374366
+    },
+    {
+      "file": "Leaf scars\\scars (59).jpg",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.9557539645373357
+    },
+    {
+      "file": "Leaf scars\\scars (65).jpg",
+      "actual": "leaf_scars",
+      "predicted": "downy_mildew",
+      "confidence": 0.6734313850122431
+    },
+    {
+      "file": "Leaf scars\\scars (75).jpg",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.7378097197139275
+    },
+    {
+      "file": "Leaf scars\\scars (78).jpg",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.9927908876143564
+    },
+    {
+      "file": "Leaf scars\\scars (93).jpg",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.999981017615613
+    },
+    {
+      "file": "Leaf scars\\scars (94).jpg",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.927716889231391
+    },
+    {
+      "file": "Leaf scars\\scars (95).jpg",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.9916876262208134
+    }
+  ]
+}

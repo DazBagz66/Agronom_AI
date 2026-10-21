@@ -1,0 +1,83 @@
+{
+  "review_date": "2026-10-21",
+  "crop": "corn",
+  "purpose": "external_evaluation_only",
+  "label_provenance": "User supplied labels in chronological order for four latest records; not independently verified.",
+  "reference_url": "https://direct.farm/knowledge/plant/cultures/kukuruza/disease",
+  "reference_scope": "User supplied the disease catalogue; exact source image URLs are unknown.",
+  "limitations": "Four cases do not estimate field accuracy. Blight is not mapped to northern/southern disease without provenance. Do not add these images to training.",
+  "model_files_sha256": {
+    "mobilenetv2_features.onnx": "bfa8f7bdd68ff12b519fe81f420ba370904b33b6580b01fb907bd05a3b6959cc",
+    "classifier.npz": "5eeb3cf100ebf7930c0832c1bd998ec3931de4aa9db0c514340e8cc7c8a593c6"
+  },
+  "cases": [
+    {
+      "history_id": 64,
+      "created_at": "2026-10-21 06:39:06",
+      "user_label": "common_smut",
+      "user_label_name": "Пузырчатая головня кукурузы",
+      "model_coverage": "absent",
+      "image_path": ".cache/evaluation/corn_user/64_a162ba617bd6.png",
+      "image_sha256": "a162ba617bd6ba3083a3d15bfa6404ee8c3a33eaa5d5de3a654e51cb31caf050",
+      "probabilities": {
+        "blight": 0.3328131746684398,
+        "common_rust": 0.3760796491054415,
+        "gray_leaf_spot": 0.2080158423268536,
+        "healthy": 0.08309133389926511
+      },
+      "stored_status": "insufficient_data",
+      "stored_confidence": 37
+    },
+    {
+      "history_id": 65,
+      "created_at": "2026-10-21 06:39:30",
+      "user_label": "southern_leaf_blight",
+      "user_label_name": "Южный гельминтоспориоз кукурузы",
+      "model_coverage": "no_separate_class",
+      "image_path": ".cache/evaluation/corn_user/65_eba443458198.png",
+      "image_sha256": "eba443458198a865eb395d1f0ce2c9ffdefde5f5664fb4a174c16934b6fb2e88",
+      "probabilities": {
+        "blight": 0.07042630166012334,
+        "common_rust": 0.008642781777530273,
+        "gray_leaf_spot": 0.9131401428979078,
+        "healthy": 0.007790773664438592
+      },
+      "stored_status": "success",
+      "stored_confidence": 91
+    },
+    {
+      "history_id": 66,
+      "created_at": "2026-10-21 06:39:55",
+      "user_label": "northern_leaf_blight",
+      "user_label_name": "Северный гельминтоспориоз кукурузы",
+      "model_coverage": "no_separate_class",
+      "image_path": ".cache/evaluation/corn_user/66_3a23aa8a54b9.png",
+      "image_sha256": "3a23aa8a54b9b2076c9f3bff3f90a6444dc9982456c2bb13474b9af33c04483f",
+      "probabilities": {
+        "blight": 0.4693106679915913,
+        "common_rust": 0.031828283148797924,
+        "gray_leaf_spot": 0.4973638940193098,
+        "healthy": 0.0014971548403007794
+      },
+      "stored_status": "insufficient_data",
+      "stored_confidence": 49
+    },
+    {
+      "history_id": 67,
+      "created_at": "2026-10-21 06:40:37",
+      "user_label": "healthy",
+      "user_label_name": "Здоровое растение",
+      "model_coverage": "healthy_leaf_class",
+      "image_path": ".cache/evaluation/corn_user/67_d310b1870a3f.png",
+      "image_sha256": "d310b1870a3f90be8dfd5615c172acb190bf8195ec7dae8136a8f554bf0fabbd",
+      "probabilities": {
+        "blight": 0.02160964549112863,
+        "common_rust": 0.16647862907435784,
+        "gray_leaf_spot": 0.0458853103372763,
+        "healthy": 0.7660264150972372
+      },
+      "stored_status": "insufficient_data",
+      "stored_confidence": 0
+    }
+  ]
+}

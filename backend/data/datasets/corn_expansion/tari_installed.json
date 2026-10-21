@@ -1,0 +1,41 @@
+{
+  "source": "tari",
+  "url": "https://zenodo.org/records/17085836",
+  "license": "cc-by-4.0",
+  "version": 17085836,
+  "files": [
+    {
+      "name": "ZEAMX_healthy leaves.zip",
+      "bytes": 138018756,
+      "url": "https://zenodo.org/api/records/17085836/files/ZEAMX_healthy%20leaves.zip/content",
+      "md5": "458e0fa7a0ca51baa9584020dc81c2b6",
+      "sha256": "8cdc4a9533b88e6bc66c942f59c3b116bc0d6beed32debe4b7d0086feee62399",
+      "local_path": ".cache/datasets/corn_expansion/tari/archives/ZEAMX_healthy leaves.zip"
+    },
+    {
+      "name": "ZEAMX_SETOTU_Exserohilum turcicum.zip",
+      "bytes": 213118747,
+      "url": "https://zenodo.org/api/records/17085836/files/ZEAMX_SETOTU_Exserohilum%20turcicum.zip/content",
+      "md5": "f307c7a66246c7125c4c660e03bee17d",
+      "sha256": "af7a8a31dc57fcf77c07b606ae0115a77b9c5acef88bf503a18b19c71e29e41d",
+      "local_path": ".cache/datasets/corn_expansion/tari/archives/ZEAMX_SETOTU_Exserohilum turcicum.zip"
+    },
+    {
+      "name": "ZEAMX_MSV000_Maize streak virus (MSV).zip",
+      "bytes": 276657698,
+      "url": "https://zenodo.org/api/records/17085836/files/ZEAMX_MSV000_Maize%20streak%20virus%20(MSV).zip/content",
+      "md5": "38ba6152f274d8dae7d0c95becc1174a",
+      "sha256": "a810b2b4a512fd7e83c02eb6e7a5c42b5c8785e6c475342200caf5701d54e59d",
+      "local_path": ".cache/datasets/corn_expansion/tari/archives/ZEAMX_MSV000_Maize streak virus (MSV).zip"
+    },
+    {
+      "name": "ZEAMX Maize lethal necrosis.zip",
+      "bytes": 223146159,
+      "url": "https://zenodo.org/api/records/17085836/files/ZEAMX%20Maize%20lethal%20necrosis.zip/content",
+      "md5": "c781d7c6d8f331835d341c104203ffda",
+      "sha256": "845a6c7957dd668d7bab54ff5e9895c7d9e253f8b85567dcd8a6629751e6d6a4",
+      "local_path": ".cache/datasets/corn_expansion/tari/archives/ZEAMX Maize lethal necrosis.zip"
+    }
+  ],
+  "installed_at": "2026-10-21T07:14:30.058309+00:00"
+}

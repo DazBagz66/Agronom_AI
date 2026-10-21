@@ -1,0 +1,16 @@
+{
+  "source": "tom2024",
+  "url": "https://data.mendeley.com/datasets/3d4yg89rtr/1",
+  "license": "CC BY 4.0 (landing page)",
+  "version": "Official project mirror, Last-Modified 2024-04-25",
+  "files": [
+    {
+      "name": "maize_diseases.zip",
+      "bytes": 43147826,
+      "url": "https://ppedmas.org/datasets/images/labelled/maize_diseases.zip",
+      "sha256": "4d3ba94b2acb26059bef483e13a34bec1f11736110f54f6411a0456c96cf5ed8",
+      "local_path": ".cache/datasets/corn_expansion/tom2024/archives/maize_diseases.zip"
+    }
+  ],
+  "installed_at": "2026-10-21T07:06:37.258938+00:00"
+}
