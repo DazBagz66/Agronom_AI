@@ -3,7 +3,7 @@ export const CROPS = {
     icon: '🌽',
     stages: ['Всходы', 'Вегетация', 'Вымётывание метёлки', 'Цветение', 'Созревание'],
     parts: [['leaf', 'Лист']],
-    hint: 'Проверка листьев: ржавчина, серая пятнистость, Blight и здоровый лист.',
+    hint: 'Лист и початок: категории берутся из установленных моделей.',
   },
   Подсолнечник: {
     icon: '🌻',
@@ -15,4 +15,11 @@ export const CROPS = {
 
 export function cropContextKey(crop, plantPart, growthStage) {
   return JSON.stringify([crop, plantPart, growthStage]);
+}
+
+export function photoParts(crop, capability) {
+  const names = { leaf: 'Лист', ear: 'Початок', flower: 'Корзинка' };
+  const parts = capability?.parts?.map(part => [part, names[part] || part]) ?? CROPS[crop].parts;
+  if (crop !== 'Кукуруза' || parts.some(([part]) => part === 'ear')) return parts;
+  return [...parts, ['ear', capability ? 'Початок — пока только рекомендации' : 'Початок — проверка доступности']];
 }

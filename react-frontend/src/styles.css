@@ -1,7 +1,59 @@
-/* Tailwind включается в местную сборку; загрузка стилей из сети не нужна. */
+/* Tailwind собирается локально; стили оформления взяты из макета «Помощник агронома». */
 @import "tailwindcss";
 
-:root { color-scheme: dark; font-family: system-ui, sans-serif; }
-body { margin: 0; }
-button:not(:disabled), select { cursor: pointer; }
-button:disabled { cursor: wait; }
+:root {
+  color-scheme: light;
+  --color-brand-primary: #059669;
+  --color-text-main: #0f172a;
+  accent-color: var(--color-brand-primary);
+}
+
+html {
+  min-height: 100dvh;
+  background-color: #f1f5f9; /* фон вокруг «телефона» на широком экране */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: var(--color-text-main);
+}
+
+h1, h2, h3, h4 { text-wrap: balance; }
+p { text-wrap: pretty; }
+button:not(:disabled), select, summary { cursor: pointer; }
+button:disabled { cursor: not-allowed; }
+
+/* Отступы под вырезы экрана телефона и под нижнюю навигацию. */
+.pt-safe { padding-top: max(0.75rem, env(safe-area-inset-top, 0.75rem)); }
+.pb-safe { padding-bottom: max(0.75rem, env(safe-area-inset-bottom, 0.75rem)); }
+.pb-safe-nav { padding-bottom: calc(4.75rem + env(safe-area-inset-bottom, 0px)); }
+
+.scrollbar-none { -ms-overflow-style: none; scrollbar-width: none; }
+.scrollbar-none::-webkit-scrollbar { display: none; }
+
+/* Сетка и «луч» сканера во время ожидания ответа сервера. */
+.radar-grid-bg {
+  background-size: 24px 24px;
+  background-image:
+    linear-gradient(to right, rgba(34, 197, 94, 0.15) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(34, 197, 94, 0.15) 1px, transparent 1px);
+}
+
+@keyframes radarSweep {
+  0% { transform: translateY(0%); opacity: 0.8; }
+  50% { opacity: 1; }
+  100% { transform: translateY(100%); opacity: 0.8; }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.02); }
+}
+
+.animate-radar-sweep { animation: radarSweep 2s ease-in-out infinite alternate; }
+.animate-pulse-glow { animation: pulseGlow 2.5s ease-in-out infinite; }
