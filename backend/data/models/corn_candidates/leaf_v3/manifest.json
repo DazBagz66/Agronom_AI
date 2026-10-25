@@ -1,0 +1,107 @@
+{
+  "format": "onnx_logits_v1",
+  "architecture": "mobilenet_v3_large",
+  "classes": [
+    "common_rust",
+    "curvularia_leaf_spot",
+    "diplodia_leaf_streak",
+    "gray_leaf_spot",
+    "healthy",
+    "maize_lethal_necrosis",
+    "maize_streak_virus",
+    "northern_leaf_blight",
+    "southern_leaf_blight",
+    "tar_spot"
+  ],
+  "labels": {
+    "common_rust": "Обыкновенная ржавчина",
+    "curvularia_leaf_spot": "Курвуляриозная пятнистость",
+    "diplodia_leaf_streak": "Диплодиозная полосатость листьев",
+    "gray_leaf_spot": "Серая пятнистость листьев",
+    "healthy": "Лист без видимых симптомов",
+    "maize_lethal_necrosis": "Летальный некроз кукурузы",
+    "maize_streak_virus": "Вирус полосатости кукурузы",
+    "northern_leaf_blight": "Северный гельминтоспориоз",
+    "southern_leaf_blight": "Южный гельминтоспориоз",
+    "tar_spot": "Мухосед (Phyllachora maydis)"
+  },
+  "supported_organ": "leaf",
+  "release_classes": [
+    "common_rust",
+    "gray_leaf_spot",
+    "healthy"
+  ],
+  "temperature": 0.7845322083015978,
+  "input": "EXIF transpose, RGB, thumbnail max side 320 (LANCZOS), pad to 224x224 gray (127,127,127), ImageNet mean/std",
+  "files": {
+    "model.onnx": "4c6afb7e472a7cb8179ee8e6ab04e4e8a4bbcb92d6c1dbd58d38e32e83ef1017"
+  },
+  "onnx_max_abs_error": 5.4836273193359375e-06,
+  "release_status": "approved",
+  "release_rule": {
+    "minimum_support": 15,
+    "minimum_precision": 0.7,
+    "minimum_recall": 0.7
+  },
+  "release_evidence": {
+    "common_rust": {
+      "support": 793,
+      "precision": 0.8002,
+      "recall": 0.9294
+    },
+    "curvularia_leaf_spot": {
+      "support": 118,
+      "precision": 0.4318,
+      "recall": 0.161
+    },
+    "diplodia_leaf_streak": {
+      "support": 0,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    "gray_leaf_spot": {
+      "support": 264,
+      "precision": 0.7381,
+      "recall": 0.9394
+    },
+    "healthy": {
+      "support": 855,
+      "precision": 0.9112,
+      "recall": 0.9965
+    },
+    "maize_lethal_necrosis": {
+      "support": 14,
+      "precision": 0.8235,
+      "recall": 1.0
+    },
+    "maize_streak_virus": {
+      "support": 4,
+      "precision": 0.5,
+      "recall": 1.0
+    },
+    "northern_leaf_blight": {
+      "support": 189,
+      "precision": 1.0,
+      "recall": 0.0476
+    },
+    "southern_leaf_blight": {
+      "support": 200,
+      "precision": 0.3243,
+      "recall": 0.12
+    },
+    "tar_spot": {
+      "support": 0,
+      "precision": 0.0,
+      "recall": 0.0
+    }
+  },
+  "dataset": ".cache/datasets/corn_field/manifests",
+  "trained_at": "2026-10-22T23:36:11",
+  "limitations": [
+    "Метки взяты у авторов наборов; это не лабораторное подтверждение.",
+    "Тест отложен по группам похожих снимков, но не является независимой полевой проверкой.",
+    "Здоровый класс означает отсутствие видимых поддерживаемых болезней, а не здоровье растения."
+  ],
+  "release_decision": "release_rule",
+  "activated_at": "2026-10-22T16:38:29.337210+00:00"
+}

@@ -1,0 +1,87 @@
+{
+  "source": "inat_cobs",
+  "images": 4,
+  "requested": 4,
+  "errors": [],
+  "counts": {
+    "maize_unverified": 4
+  },
+  "records": [
+    {
+      "path": ".cache/datasets/corn_field/inat_cobs/images/1207236.jpg",
+      "source": "inat_cobs",
+      "source_url": "http://naturewatch.org.nz/observations/353851",
+      "source_id": "955224",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/1207236/large.",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_plant_identification_only",
+      "capture_group_hint": "inat_observer:58074",
+      "license": "cc-by-sa",
+      "attribution": "(c) paulah, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "fd37589e89251a8dd382fc2964ca28eed5e3eae29ff423f10fbc64ca9cafedd9",
+      "bytes": 341032
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_cobs/images/287718088.jpg",
+      "source": "inat_cobs",
+      "source_url": "https://www.inaturalist.org/observations/166164850",
+      "source_id": "166164850",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/287718088/large.jpeg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_plant_identification_only",
+      "capture_group_hint": "inat_observer:510273",
+      "license": "cc-by",
+      "attribution": "(c) Gary Bowers, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "2aa4dc877fffcafe0ace5ba86deb859639a4a72c3d0c8cafef174591c8413956",
+      "bytes": 339014
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_cobs/images/332290671.jpg",
+      "source": "inat_cobs",
+      "source_url": "https://www.inaturalist.org/observations/189652511",
+      "source_id": "189652511",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/332290671/large.jpeg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_plant_identification_only",
+      "capture_group_hint": "inat_observer:6466175",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "54c360e146c9567fe67b3e3ab974b544fffa5418f779ffeb49424f440eed1332",
+      "bytes": 621312
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_cobs/images/750261183.jpg",
+      "source": "inat_cobs",
+      "source_url": "https://www.inaturalist.org/observations/408181160",
+      "source_id": "408181160",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/750261183/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays mays",
+      "organ": "unverified",
+      "label_basis": "community_plant_identification_only",
+      "capture_group_hint": "inat_observer:2097451",
+      "license": "cc-by",
+      "attribution": "(c) Senna Bryce Robeson, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "33bbc9d88e76b69d8d87c48e519aaafc09cbd71ee2b4abc860720b5b21da8034",
+      "bytes": 399976
+    }
+  ]
+}

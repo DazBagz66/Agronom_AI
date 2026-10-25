@@ -1,0 +1,97 @@
+{
+  "review_date": "2026-10-22",
+  "existing_sclb": {
+    "ecuador_raw": 220,
+    "ecuador_usable_train": 67,
+    "ecuador_usable_validation": 152,
+    "anhui_test": 100,
+    "test_must_remain_held_out": true
+  },
+  "corn_rag": {
+    "diagnose_endpoint_uses_retrieval": false,
+    "reason": "backend/main.py returns diagnose_crop before retrieval; KnowledgeSearch explicitly permits only potato.",
+    "advice": "Static class-keyed care_for() in corn_care.py",
+    "southern_leaf_blight_care_card": false,
+    "database_corn_articles": 1,
+    "database_corn_articles_used_by_diagnosis": false,
+    "model_training_started": false
+  },
+  "sources": [
+    {
+      "name": "WG-MARNet / FXD96 Corn-Diseases",
+      "url": "https://github.com/FXD96/Corn-Diseases",
+      "paper": "https://doi.org/10.1371/journal.pone.0267650",
+      "claimed_sclb_originals": 150,
+      "claimed_augmented_sclb": 1200,
+      "archive_bytes": 25997241,
+      "github_blob_sha1": "22a285f324ab138853239774694a564c6c091d44",
+      "license": "Not specified in repository; source includes field and third-party images; clarify before training",
+      "status": "Archive downloaded and verified in memory; actual classes do not match paper. No SCLB image category found; no images imported.",
+      "actual_folders": {
+        "Corn-Diseases/Blight": 167,
+        "Corn-Diseases/Cercospora": 167,
+        "Corn-Diseases/fallarmyworm": 144,
+        "Corn-Diseases/healthy": 144,
+        "Corn-Diseases/herbicideburn": 121,
+        "Corn-Diseases/rust": 57,
+        "Corn-Diseases/zincdeficiency": 167
+      },
+      "archive_sha256": "22a5d6863e1ee56cee4e4dac1c1c1be69801d94ea56931fb3d45f32e8bcd11bc",
+      "imported_images": 0
+    },
+    {
+      "name": "Mendeley sb4wwjs8bz",
+      "url": "https://data.mendeley.com/datasets/sb4wwjs8bz/1",
+      "license": "CC BY 4.0",
+      "status": "Do not use as SCLB: no separate class in actual folders despite landing-page claim",
+      "actual_classes": [
+        "Bacterial_Leaf_Streak",
+        "Common_Rust",
+        "Corn_Leaf_Blight",
+        "Eyespot",
+        "Gray_Leaf_Spot",
+        "Healthy_Leaf",
+        "Maize_Streak_Disease"
+      ]
+    },
+    {
+      "name": "ICAR digital decision support SCLB 2026",
+      "paper": "https://doi.org/10.1038/s41598-026-38151-0",
+      "sclb_images_claimed": 1674,
+      "healthy_images_claimed": 1034,
+      "status": "Available from corresponding author on reasonable request; not downloaded; no message sent"
+    },
+    {
+      "name": "MDSD",
+      "paper": "https://doi.org/10.3389/fpls.2022.1077568",
+      "total_images": 1760,
+      "categories": [
+        "healthy",
+        "low severity",
+        "medium severity",
+        "high severity"
+      ],
+      "status": "Authors promise data availability; no public image archive confirmed; not downloaded"
+    },
+    {
+      "name": "ICAR AIKosh",
+      "url": "https://aikosh.indiaai.gov.in/home/datasets/details/crop_disease_and_insect_pest_image_dataset_for_rice_and_maize.html",
+      "status": "Maydis Leaf Blight listed; public response is application shell; downloadable files and license terms not verified"
+    },
+    {
+      "name": "BPNet CSLB segmentation dataset",
+      "url": "https://github.com/hpguo1982/BPNet",
+      "paper": "https://www.sciencedirect.com/science/article/pii/S2772375526006477",
+      "download_url": "https://pan.baidu.com/s/17RkT67pS99uuHdau1Ez-8Q?pwd=ydtm",
+      "access_code": "ydtm",
+      "content": "Authors describe corn southern leaf blight leaf photos paired with expert-verified binary lesion masks",
+      "license": "Repository code MIT; separate image archive terms not verified",
+      "status": "Author download link confirmed in README. Baidu archive could not be retrieved; no image count or file integrity verified. Not imported."
+    },
+    {
+      "name": "Resende-Lab/SCLB-Disease",
+      "url": "https://github.com/Resende-Lab/SCLB-Disease",
+      "status": "Complete recursive GitHub tree checked; no JPG/JPEG/PNG/TIF/TIFF files found. Contains code and phenotype/genotype data, not a downloadable training-photo corpus."
+    }
+  ]
+}

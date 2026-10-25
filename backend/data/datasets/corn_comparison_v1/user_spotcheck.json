@@ -1,0 +1,97 @@
+{
+  "purpose": "Previously inspected user photos; not training, selection or an accuracy estimate.",
+  "models": {
+    "mobilenet_v3_large": [
+      {
+        "check_id": 83,
+        "sha256": "58b9133a65a42db9d0abba333974194c23aa5e7481f6bf1304bdd059990ce3cc",
+        "user_proposed_labels": [
+          "healthy"
+        ],
+        "verified": false,
+        "predicted": "healthy",
+        "confidence": 0.99724942445755,
+        "accepted_at_existing_threshold": true
+      },
+      {
+        "check_id": 87,
+        "sha256": "ebe7df15fca6e612df2b10b7985de414de07cc969d203d489521337d32139941",
+        "user_proposed_labels": [
+          "unknown_disease"
+        ],
+        "verified": false,
+        "predicted": "healthy",
+        "confidence": 0.937112033367157,
+        "accepted_at_existing_threshold": true
+      },
+      {
+        "check_id": 92,
+        "sha256": "7c490a09ed7a535aa8f8fe04ffa17f4826c6c6cb782be52a6002ebc503442fd5",
+        "user_proposed_labels": [
+          "northern_leaf_blight"
+        ],
+        "verified": false,
+        "predicted": "southern_leaf_blight",
+        "confidence": 0.9228045344352722,
+        "accepted_at_existing_threshold": true
+      },
+      {
+        "check_id": 94,
+        "sha256": "065a3a7d940440d9f34885b1ccfba907b92c46c363707d73b7088b6cad60901c",
+        "user_proposed_labels": [
+          "gray_leaf_spot"
+        ],
+        "verified": false,
+        "predicted": "curvularia_leaf_spot",
+        "confidence": 0.2750281095504761,
+        "accepted_at_existing_threshold": false
+      }
+    ],
+    "efficientnet_v2_s": [
+      {
+        "check_id": 83,
+        "sha256": "58b9133a65a42db9d0abba333974194c23aa5e7481f6bf1304bdd059990ce3cc",
+        "user_proposed_labels": [
+          "healthy"
+        ],
+        "verified": false,
+        "predicted": "healthy",
+        "confidence": 0.9953795671463013,
+        "accepted_at_existing_threshold": true
+      },
+      {
+        "check_id": 87,
+        "sha256": "ebe7df15fca6e612df2b10b7985de414de07cc969d203d489521337d32139941",
+        "user_proposed_labels": [
+          "unknown_disease"
+        ],
+        "verified": false,
+        "predicted": "healthy",
+        "confidence": 0.9839090704917908,
+        "accepted_at_existing_threshold": true
+      },
+      {
+        "check_id": 92,
+        "sha256": "7c490a09ed7a535aa8f8fe04ffa17f4826c6c6cb782be52a6002ebc503442fd5",
+        "user_proposed_labels": [
+          "northern_leaf_blight"
+        ],
+        "verified": false,
+        "predicted": "southern_leaf_blight",
+        "confidence": 0.979119598865509,
+        "accepted_at_existing_threshold": true
+      },
+      {
+        "check_id": 94,
+        "sha256": "065a3a7d940440d9f34885b1ccfba907b92c46c363707d73b7088b6cad60901c",
+        "user_proposed_labels": [
+          "gray_leaf_spot"
+        ],
+        "verified": false,
+        "predicted": "gray_leaf_spot",
+        "confidence": 0.6302089691162109,
+        "accepted_at_existing_threshold": false
+      }
+    ]
+  }
+}

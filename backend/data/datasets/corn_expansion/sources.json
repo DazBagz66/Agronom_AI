@@ -73,10 +73,10 @@
       "url": "https://data.mendeley.com/datasets/sb4wwjs8bz/1",
       "version": 1,
       "license": "CC BY 4.0 (landing page)",
-      "status": "access_blocked",
+      "status": "metadata_accessible_taxonomy_unresolved",
       "role": "candidate",
       "files": [],
-      "access_note": "Rechecked after user registration in Opera GX: public metadata/files API still HTTP 403 for script. No browser session connector available. User was given incoming archive path; no images acquired yet.",
+      "access_note": "Rechecked 2026-10-22: public metadata and /folders/1 APIs return HTTP 200. File tree contains seven classes; no separate Southern Corn Leaf Blight folder. Not imported as southern_leaf_blight.",
       "claimed_labels": [
         "Northern Corn Leaf Blight",
         "Southern Corn Leaf Blight",
@@ -89,7 +89,16 @@
         "Bacterial Leaf Streak",
         "Healthy Leaves"
       ],
-      "review_note": "Description claims 11 classes but enumerates 10; no automatic class mapping."
+      "review_note": "Description claims 11 classes but enumerates 10; no automatic class mapping.",
+      "actual_leaf_folders": [
+        "Bacterial_Leaf_Streak",
+        "Common_Rust",
+        "Corn_Leaf_Blight",
+        "Eyespot",
+        "Gray_Leaf_Spot",
+        "Healthy_Leaf",
+        "Maize_Streak_Disease"
+      ]
     },
     "roboflow_smut": {
       "title": "corn_disease",

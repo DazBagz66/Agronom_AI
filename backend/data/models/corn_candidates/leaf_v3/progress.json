@@ -1,0 +1,82 @@
+[
+  {
+    "classes": [
+      "common_rust",
+      "curvularia_leaf_spot",
+      "diplodia_leaf_streak",
+      "gray_leaf_spot",
+      "healthy",
+      "maize_lethal_necrosis",
+      "maize_streak_virus",
+      "northern_leaf_blight",
+      "southern_leaf_blight",
+      "tar_spot"
+    ],
+    "counts": {
+      "train": {
+        "common_rust": 479,
+        "curvularia_leaf_spot": 156,
+        "diplodia_leaf_streak": 96,
+        "gray_leaf_spot": 214,
+        "healthy": 876,
+        "maize_lethal_necrosis": 56,
+        "maize_streak_virus": 41,
+        "northern_leaf_blight": 49,
+        "southern_leaf_blight": 67,
+        "tar_spot": 154
+      },
+      "validation": {
+        "common_rust": 242,
+        "curvularia_leaf_spot": 71,
+        "diplodia_leaf_streak": 130,
+        "gray_leaf_spot": 101,
+        "healthy": 355,
+        "maize_lethal_necrosis": 32,
+        "maize_streak_virus": 36,
+        "northern_leaf_blight": 27,
+        "southern_leaf_blight": 152,
+        "tar_spot": 42
+      },
+      "test": {
+        "common_rust": 793,
+        "curvularia_leaf_spot": 118,
+        "gray_leaf_spot": 264,
+        "healthy": 855,
+        "maize_lethal_necrosis": 14,
+        "maize_streak_virus": 4,
+        "northern_leaf_blight": 189,
+        "southern_leaf_blight": 200
+      }
+    },
+    "threads": 6
+  },
+  {
+    "evaluate_only": true,
+    "selected_epoch": 8,
+    "note": "weights.pt from an earlier run; history restored from progress.json"
+  },
+  {
+    "selected_epoch": 8,
+    "temperature": 0.7845322083015978,
+    "note": "evaluating held-out test once"
+  },
+  {
+    "done": true,
+    "test_accuracy": 0.7825194911776775,
+    "test_macro_f1": 0.47091505837201286,
+    "release_classes": [
+      "common_rust",
+      "gray_leaf_spot",
+      "healthy"
+    ],
+    "by_source": {
+      "anhui": 0.25,
+      "ecuador": 1.0,
+      "idadp": 0.505,
+      "legacy_kaggle": 0.983,
+      "pretoria": 0.344,
+      "tari": 0.969,
+      "tom2024": 0.986
+    }
+  }
+]

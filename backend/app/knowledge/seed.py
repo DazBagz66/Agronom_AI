@@ -16,8 +16,10 @@ def seed_initial_knowledge(db: Session):
     extra = DATA_PATH.with_name("bashinkom.json")
     if extra.exists():
         items += json.loads(extra.read_text(encoding="utf-8"))["articles"]
+    items += json.loads(DATA_PATH.with_name('corn.json').read_text(encoding='utf-8'))['articles']
     for item in items:
         if db.get(KnowledgeArticle, item["id"]) is None:
-            db.add(KnowledgeArticle(**item))
+            db.add(KnowledgeArticle(**{key: value for key, value in item.items()
+                                      if key in KnowledgeArticle.__table__.columns}))
     # Старые демонстрационные записи сохраняем, но поиск их не использует.
     db.commit()

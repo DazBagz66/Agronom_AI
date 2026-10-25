@@ -1,0 +1,58 @@
+{
+  "format": "onnx_logits_v1",
+  "architecture": "mobilenet_v3_large",
+  "classes": [
+    "common_smut",
+    "ear_rot",
+    "healthy_ear"
+  ],
+  "labels": {
+    "common_smut": "Пузырчатая головня",
+    "ear_rot": "Гниль початка — вид не уточнён",
+    "healthy_ear": "Початок без видимых признаков болезни"
+  },
+  "supported_organ": "ear",
+  "release_classes": [
+    "common_smut",
+    "ear_rot",
+    "healthy_ear"
+  ],
+  "temperature": 0.6664305656026692,
+  "input": "EXIF transpose, RGB, thumbnail max side 320 (LANCZOS), pad to 224x224 gray (127,127,127), ImageNet mean/std",
+  "files": {
+    "model.onnx": "d930058602b1d7cabb5abedc67e676a84e7c511c84dfb1c6666a55d408f916e4"
+  },
+  "onnx_max_abs_error": 1.5497207641601562e-06,
+  "release_status": "approved",
+  "release_rule": {
+    "minimum_support": 15,
+    "minimum_precision": 0.7,
+    "minimum_recall": 0.7
+  },
+  "release_evidence": {
+    "common_smut": {
+      "support": 42,
+      "precision": 1.0,
+      "recall": 0.9762
+    },
+    "ear_rot": {
+      "support": 38,
+      "precision": 0.925,
+      "recall": 0.9737
+    },
+    "healthy_ear": {
+      "support": 27,
+      "precision": 0.9231,
+      "recall": 0.8889
+    }
+  },
+  "dataset": "backend/data/datasets/corn_ear_v3",
+  "trained_at": "2026-10-23T01:28:24",
+  "limitations": [
+    "Метки взяты у авторов наборов; это не лабораторное подтверждение.",
+    "Тест отложен по группам похожих снимков, но не является независимой полевой проверкой.",
+    "Здоровый класс означает отсутствие видимых поддерживаемых болезней, а не здоровье растения."
+  ],
+  "release_decision": "release_rule",
+  "activated_at": "2026-10-22T18:28:45.830311+00:00"
+}

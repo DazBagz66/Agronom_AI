@@ -1,0 +1,3164 @@
+{
+  "counts": {
+    "train": {
+      "leaf": 300,
+      "other": 187,
+      "whole": 127,
+      "ear": 123
+    },
+    "validation": {
+      "leaf": 100,
+      "other": 42,
+      "whole": 21,
+      "ear": 33
+    },
+    "test": {
+      "leaf": 220,
+      "other": 62,
+      "ear": 134,
+      "whole": 19
+    }
+  },
+  "threshold": 0.8,
+  "temperature": 0.9002974147694692,
+  "classification_report": {
+    "ear": {
+      "precision": 0.9568345323741008,
+      "recall": 0.9925373134328358,
+      "f1-score": 0.9743589743589743,
+      "support": 134.0
+    },
+    "leaf": {
+      "precision": 1.0,
+      "recall": 0.9772727272727273,
+      "f1-score": 0.9885057471264368,
+      "support": 220.0
+    },
+    "other": {
+      "precision": 0.9672131147540983,
+      "recall": 0.9516129032258065,
+      "f1-score": 0.959349593495935,
+      "support": 62.0
+    },
+    "whole": {
+      "precision": 0.9,
+      "recall": 0.9473684210526315,
+      "f1-score": 0.9230769230769231,
+      "support": 19.0
+    },
+    "accuracy": 0.9770114942528736,
+    "macro avg": {
+      "precision": 0.9560119117820497,
+      "recall": 0.9671978412460003,
+      "f1-score": 0.9613228095145674,
+      "support": 435.0
+    },
+    "weighted avg": {
+      "precision": 0.977662161960652,
+      "recall": 0.9770114942528736,
+      "f1-score": 0.9771344902692604,
+      "support": 435.0
+    }
+  },
+  "accepted_metrics": {
+    "ear": {
+      "support": 134,
+      "accepted": 131,
+      "precision": 0.9694656488549618,
+      "recall": 0.9477611940298507
+    },
+    "leaf": {
+      "support": 220,
+      "accepted": 207,
+      "precision": 1.0,
+      "recall": 0.9409090909090909
+    },
+    "other": {
+      "support": 62,
+      "accepted": 58,
+      "precision": 0.9827586206896551,
+      "recall": 0.9193548387096774
+    },
+    "whole": {
+      "support": 19,
+      "accepted": 17,
+      "precision": 1.0,
+      "recall": 0.8947368421052632
+    }
+  },
+  "confusion_matrix": [
+    [
+      133,
+      0,
+      1,
+      0
+    ],
+    [
+      2,
+      215,
+      1,
+      2
+    ],
+    [
+      3,
+      0,
+      59,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      18
+    ]
+  ],
+  "eligible": true,
+  "rule": "At fixed 0.8 score: each class precision >=0.9, recall >=0.6, test support >=15.",
+  "predictions": [
+    {
+      "path": ".cache/datasets/corn_field/ecuador/images/healthy_222.jpg",
+      "source": "ecuador",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.99290931224823
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (325).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999063014984131
+    },
+    {
+      "path": ".cache/datasets/corn_expansion/tom2024/extracted/maize_diseases/Curvulariose-D/1604394364_1676801173346_640x480.jpg",
+      "source": "tom2024",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9995028972625732
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Gray_Leaf_Spot/Corn_Gray_Spot (169).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9997641444206238
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (477).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9996147155761719
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (95).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9639294743537903
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077161.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9940985441207886
+    },
+    {
+      "path": ".cache/datasets/corn_field/anhui/extracted/Corn-disease-data-main/Bipolaris_Maydis/image_253.png",
+      "source": "anhui",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9987433552742004
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (852).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999438524246216
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (1085).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9924888610839844
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (172).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.999853253364563
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Gray_Leaf_Spot/Corn_Gray_Spot (244).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9997492432594299
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (500).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999754428863525
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (204).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9981757402420044
+    },
+    {
+      "path": ".cache/datasets/corn_field/ecuador/images/healthy_127.jpg",
+      "source": "ecuador",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.8208813071250916
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Gray_Leaf_Spot/Corn_Gray_Spot (511).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999810457229614
+    },
+    {
+      "path": ".cache/datasets/corn_field/ecuador/images/healthy_128.jpg",
+      "source": "ecuador",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9624407887458801
+    },
+    {
+      "path": ".cache/datasets/corn_field/ecuador/images/healthy_171.jpg",
+      "source": "ecuador",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9483389258384705
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (659).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9996079802513123
+    },
+    {
+      "path": ".cache/datasets/corn_field/ecuador/images/healthy_143.jpg",
+      "source": "ecuador",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9720965623855591
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (332).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999374151229858
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (969).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999598264694214
+    },
+    {
+      "path": ".cache/datasets/corn_field/anhui/extracted/Corn-disease-data-main/Bipolaris_Maydis/image_414.png",
+      "source": "anhui",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9894511103630066
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (521).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9998929500579834
+    },
+    {
+      "path": ".cache/datasets/corn_field/ecuador/images/healthy_231.jpg",
+      "source": "ecuador",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9985889792442322
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (699).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9998483657836914
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/220771949.jpg",
+      "source": "inat_smut",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9994485974311829
+    },
+    {
+      "path": ".cache/datasets/corn_field/ecuador/images/healthy_210.jpg",
+      "source": "ecuador",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9767107367515564
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (884).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999200105667114
+    },
+    {
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/78_CIMG3813_1-381-1.JPG",
+      "source": "pretoria",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9983730316162109
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Gray_Leaf_Spot/Corn_Gray_Spot (62).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9985548853874207
+    },
+    {
+      "path": ".cache/datasets/corn_field/anhui/extracted/Corn-disease-data-main/Northern-Leaf-Blight/image_1216.png",
+      "source": "anhui",
+      "actual": "leaf",
+      "predicted": "ear",
+      "score": 0.8798985481262207
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u5065\u5eb7/IMG1905_4467.JPG",
+      "source": "idadp",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9922835230827332
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (756).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9980058073997498
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u5927\u6591\u75c5/HLdbb(193).jpg",
+      "source": "idadp",
+      "actual": "leaf",
+      "predicted": "whole",
+      "score": 0.591679036617279
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (887).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9998461008071899
+    },
+    {
+      "path": ".cache/datasets/corn_expansion/tom2024/extracted/maize_diseases/Curvulariose-D/84092177_1680541314139_640x480.jpg",
+      "source": "tom2024",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9995720982551575
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Gray_Leaf_Spot/Corn_Gray_Spot (224).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999281167984009
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (212).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9993991851806641
+    },
+    {
+      "path": ".cache/datasets/corn_field/anhui/extracted/Corn-disease-data-main/Common_Rust/image_956.png",
+      "source": "anhui",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9967164397239685
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (535).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9998511075973511
+    },
+    {
+      "path": ".cache/datasets/corn_expansion/tom2024/extracted/maize_diseases/Feuille saine/151582271_1661178439224.jpg",
+      "source": "tom2024",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9722537398338318
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (17).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.6313680410385132
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (916).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.998762845993042
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (1129).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999681711196899
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (114).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9993312358856201
+    },
+    {
+      "path": ".cache/datasets/corn_field/anhui/extracted/Corn-disease-data-main/Common_Rust/image_1172.png",
+      "source": "anhui",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9016955494880676
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u5065\u5eb7/IMG1905_4356.JPG",
+      "source": "idadp",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9983114004135132
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (1015).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9991999268531799
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (1202).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999550580978394
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (1253).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9990361928939819
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (184).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999182224273682
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (337).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9997873902320862
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u5c0f\u6591\u75c5/IMG1808_2312.JPG",
+      "source": "idadp",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9916736483573914
+    },
+    {
+      "path": ".cache/datasets/corn_field/anhui/extracted/Corn-disease-data-main/Bipolaris_Maydis/image_603.png",
+      "source": "anhui",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9872487187385559
+    },
+    {
+      "path": ".cache/datasets/corn_field/anhui/extracted/Corn-disease-data-main/Curvularia_Lunata(wakker)boed_Spot/image_2651.png",
+      "source": "anhui",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9986841082572937
+    },
+    {
+      "path": ".cache/datasets/corn_field/anhui/extracted/Corn-disease-data-main/Bipolaris_Maydis/image_254.png",
+      "source": "anhui",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9988228678703308
+    },
+    {
+      "path": ".cache/datasets/corn_field/ecuador/images/healthy_187.jpg",
+      "source": "ecuador",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9010330438613892
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Gray_Leaf_Spot/Corn_Gray_Spot (439).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9997572302818298
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (182).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999470710754395
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u5c0f\u6591\u75c5/HLxbb (199).jpg",
+      "source": "idadp",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.8572293519973755
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (21).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9728963375091553
+    },
+    {
+      "path": ".cache/datasets/corn_expansion/tom2024/extracted/maize_diseases/Curvulariose-D/1628618534_1680539231532_640x480.jpg",
+      "source": "tom2024",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9775270223617554
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (59).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9998055100440979
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (7).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9977291226387024
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u9508\u75c5/IMG2108_0546.JPG",
+      "source": "idadp",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9858890771865845
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077182.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "other",
+      "score": 0.9186464548110962
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (925).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9997863173484802
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (162).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9996535778045654
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (1098).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9998974800109863
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (27).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.998121440410614
+    },
+    {
+      "path": ".cache/datasets/corn_field/ecuador/images/healthy_153.jpg",
+      "source": "ecuador",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9980146884918213
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Gray_Leaf_Spot/Corn_Gray_Spot (229).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999959468841553
+    },
+    {
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2012_03_IMG_6547_maize_diverse JM-R-Pn.JPG",
+      "source": "pretoria",
+      "actual": "leaf",
+      "predicted": "ear",
+      "score": 0.9578179717063904
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (941).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9942136406898499
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u5c0f\u6591\u75c5/HLxbb (191).jpg",
+      "source": "idadp",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9838621020317078
+    },
+    {
+      "path": ".cache/datasets/corn_field/anhui/extracted/Corn-disease-data-main/Northern-Leaf-Blight/image_1585.png",
+      "source": "anhui",
+      "actual": "leaf",
+      "predicted": "whole",
+      "score": 0.4014187455177307
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (1193).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9998575448989868
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u5065\u5eb7/IMG2108_4882.JPG",
+      "source": "idadp",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9908717274665833
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Gray_Leaf_Spot/Corn_Gray_Spot (119).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999599456787109
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (88).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9890486001968384
+    },
+    {
+      "path": ".cache/datasets/corn_expansion/tom2024/extracted/maize_diseases/Feuille saine/1988149596_1678123325837_640x480.jpg",
+      "source": "tom2024",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.999968409538269
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (652).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999138116836548
+    },
+    {
+      "path": ".cache/datasets/corn_field/anhui/extracted/Corn-disease-data-main/Curvularia_Lunata(wakker)boed_Spot/image_1551.png",
+      "source": "anhui",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9740164875984192
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (354).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9991773962974548
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (36).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9956071972846985
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u5065\u5eb7/IMG2108_4872.JPG",
+      "source": "idadp",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9480616450309753
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (589).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9993798732757568
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (89).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9996545314788818
+    },
+    {
+      "path": ".cache/datasets/corn_field/anhui/extracted/Corn-disease-data-main/Curvularia_Lunata(wakker)boed_Spot/image_2691.png",
+      "source": "anhui",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.984645664691925
+    },
+    {
+      "path": ".cache/datasets/corn_field/anhui/extracted/Corn-disease-data-main/Curvularia_Lunata(wakker)boed_Spot/image_2581.png",
+      "source": "anhui",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999310970306396
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Gray_Leaf_Spot/Corn_Gray_Spot (347).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9997894167900085
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Gray_Leaf_Spot/Corn_Gray_Spot (572).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9806561470031738
+    },
+    {
+      "path": ".cache/datasets/corn_field/ecuador/images/healthy_125.jpg",
+      "source": "ecuador",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9556611180305481
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u5927\u6591\u75c5/HLdbb(117).jpg",
+      "source": "idadp",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.6840604543685913
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (621).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9997740387916565
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (451).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999864101409912
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u5065\u5eb7/IMG2108_4808.JPG",
+      "source": "idadp",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9550060629844666
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/236415022.jpg",
+      "source": "inat_maize",
+      "actual": "whole",
+      "predicted": "whole",
+      "score": 0.999707043170929
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (249).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9997586607933044
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Gray_Leaf_Spot/Corn_Gray_Spot (567).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.8418396711349487
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (89).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9996142387390137
+    },
+    {
+      "path": ".cache/datasets/corn_expansion/tari/extracted/ZEAMX_healthy leaves/ZEAMX_healthy leaves/ZEAMX_38.jpg",
+      "source": "tari",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9996522665023804
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077120.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.998078465461731
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (780).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9978651404380798
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u9508\u75c5/HLxb (110).jpg",
+      "source": "idadp",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9909850358963013
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (335).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9998151659965515
+    },
+    {
+      "path": ".cache/datasets/corn_field/anhui/extracted/Corn-disease-data-main/Bipolaris_Maydis/image_1009.png",
+      "source": "anhui",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9948084950447083
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (139).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9998490810394287
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (323).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9994264841079712
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (362).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999711513519287
+    },
+    {
+      "path": ".cache/datasets/corn_field/anhui/extracted/Corn-disease-data-main/Northern-Leaf-Blight/image_1891.png",
+      "source": "anhui",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.6188259720802307
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Gray_Leaf_Spot/Corn_Gray_Spot (89).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999372959136963
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (615).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999961853027344
+    },
+    {
+      "path": ".cache/datasets/corn_field/ecuador/images/healthy_108.jpg",
+      "source": "ecuador",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9935182929039001
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (158).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9959021210670471
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (683).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9998984336853027
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (737).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9996520280838013
+    },
+    {
+      "path": ".cache/datasets/corn_field/anhui/extracted/Corn-disease-data-main/Curvularia_Lunata(wakker)boed_Spot/image_2311.png",
+      "source": "anhui",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9990397095680237
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (904).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999412298202515
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (1172).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9496784806251526
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u5065\u5eb7/IMG1905_4451.JPG",
+      "source": "idadp",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9904274940490723
+    },
+    {
+      "path": ".cache/datasets/corn_expansion/tari/extracted/ZEAMX Maize lethal necrosis/ZEAMX Maize lethal necrosis/ZEAMX_Maize_lethal_necrosis_40.jpg",
+      "source": "tari",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9965863227844238
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (279).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9996114373207092
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (1001).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9992337226867676
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (624).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9995844960212708
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Gray_Leaf_Spot/Corn_Gray_Spot (38).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.658254086971283
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077129.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9781782031059265
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (65).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9527400135993958
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u9508\u75c5/HLxb (201).jpg",
+      "source": "idadp",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9473685026168823
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (458).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9400472044944763
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (148).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999915361404419
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (872).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9894950985908508
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (179).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9996234178543091
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (260).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9958115816116333
+    },
+    {
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0196.JPG",
+      "source": "pretoria",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9959402084350586
+    },
+    {
+      "path": ".cache/datasets/corn_field/ecuador/images/healthy_105.jpg",
+      "source": "ecuador",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9779953956604004
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Gray_Leaf_Spot/Corn_Gray_Spot (279).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9998937845230103
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Gray_Leaf_Spot/Corn_Gray_Spot (240).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999912977218628
+    },
+    {
+      "path": ".cache/datasets/corn_field/ecuador/images/healthy_138.jpg",
+      "source": "ecuador",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9997740387916565
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (396).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9837084412574768
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (255).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9998348951339722
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Gray_Leaf_Spot/Corn_Gray_Spot (337).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999697208404541
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (1153).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9991393089294434
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (539).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9995706677436829
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (1027).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.999674916267395
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (46).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9998083710670471
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (867).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999366998672485
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Gray_Leaf_Spot/Corn_Gray_Spot (329).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999901056289673
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (947).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9995947480201721
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (1138).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9971170425415039
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Gray_Leaf_Spot/Corn_Gray_Spot (481).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9996145963668823
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (1022).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9980311989784241
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Gray_Leaf_Spot/Corn_Gray_Spot (510).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9997566342353821
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (1147).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9998090863227844
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077167.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9991165995597839
+    },
+    {
+      "path": ".cache/datasets/corn_field/ecuador/images/healthy_121.jpg",
+      "source": "ecuador",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9230795502662659
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (469).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9996991157531738
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (582).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999682903289795
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Gray_Leaf_Spot/Corn_Gray_Spot (499).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999339580535889
+    },
+    {
+      "path": ".cache/datasets/corn_field/ecuador/images/healthy_173.jpg",
+      "source": "ecuador",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9971781969070435
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Gray_Leaf_Spot/Corn_Gray_Spot (336).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9998107552528381
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u5c0f\u6591\u75c5/HLxbb (367).jpg",
+      "source": "idadp",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9763109087944031
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Gray mold/grayMold. (7).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9867365956306458
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (587).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9996933937072754
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (1226).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9997802376747131
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/57590544.jpg",
+      "source": "inat_maize",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9864497780799866
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078342.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9934566617012024
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (26).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9977045655250549
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (1083).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9995414018630981
+    },
+    {
+      "path": ".cache/datasets/corn_field/anhui/extracted/Corn-disease-data-main/Northern-Leaf-Blight/image_838.png",
+      "source": "anhui",
+      "actual": "leaf",
+      "predicted": "other",
+      "score": 0.4577925503253937
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (707).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999910593032837
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (10).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9711430072784424
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (549).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.999910831451416
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (832).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9955047965049744
+    },
+    {
+      "path": ".cache/datasets/corn_field/anhui/extracted/Corn-disease-data-main/Curvularia_Lunata(wakker)boed_Spot/image_2331.png",
+      "source": "anhui",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9950118064880371
+    },
+    {
+      "path": ".cache/datasets/corn_field/ecuador/images/healthy_228.jpg",
+      "source": "ecuador",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9290955662727356
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (374).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999381303787231
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (304).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9996057152748108
+    },
+    {
+      "path": ".cache/datasets/corn_field/anhui/extracted/Corn-disease-data-main/Common_Rust/image_1252.png",
+      "source": "anhui",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9007829427719116
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (894).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9998879432678223
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Gray_Leaf_Spot/Corn_Gray_Spot (270).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9997660517692566
+    },
+    {
+      "path": ".cache/datasets/corn_field/anhui/extracted/Corn-disease-data-main/Curvularia_Lunata(wakker)boed_Spot/image_2961.png",
+      "source": "anhui",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9672457575798035
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (180).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9986816048622131
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (122).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.999830961227417
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (984).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9998445510864258
+    },
+    {
+      "path": ".cache/datasets/corn_field/anhui/extracted/Corn-disease-data-main/Curvularia_Lunata(wakker)boed_Spot/image_2071.png",
+      "source": "anhui",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9969942569732666
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (237).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9967390894889832
+    },
+    {
+      "path": ".cache/datasets/corn_field/anhui/extracted/Corn-disease-data-main/Common_Rust/image_1127.png",
+      "source": "anhui",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9523689150810242
+    },
+    {
+      "path": ".cache/datasets/corn_field/anhui/extracted/Corn-disease-data-main/Northern-Leaf-Blight/image_982.png",
+      "source": "anhui",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.5995002388954163
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (323).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999948740005493
+    },
+    {
+      "path": ".cache/datasets/corn_field/anhui/extracted/Corn-disease-data-main/Curvularia_Lunata(wakker)boed_Spot/image_2891.png",
+      "source": "anhui",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9993160963058472
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (918).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9993640780448914
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (64).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9632951021194458
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (566).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999624490737915
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u9508\u75c5/IMG2108_0684.JPG",
+      "source": "idadp",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9703693389892578
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Gray_Leaf_Spot/Corn_Gray_Spot (323).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9993345141410828
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u5c0f\u6591\u75c5/IMG1808_2072.JPG",
+      "source": "idadp",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9879933595657349
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (658).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9979715943336487
+    },
+    {
+      "path": ".cache/datasets/corn_field/ecuador/images/healthy_111.jpg",
+      "source": "ecuador",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9946533441543579
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (1162).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9990983009338379
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u5065\u5eb7/IMG1905_4346.JPG",
+      "source": "idadp",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.8638502359390259
+    },
+    {
+      "path": ".cache/datasets/corn_field/anhui/extracted/Corn-disease-data-main/Bipolaris_Maydis/image_738.png",
+      "source": "anhui",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9993602633476257
+    },
+    {
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/IMG_20190316_090315.jpg",
+      "source": "pretoria",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.43824830651283264
+    },
+    {
+      "path": ".cache/datasets/corn_expansion/pretoria/sample/2019-03-13--Cedara-(DKB)-DSC_0301.JPG",
+      "source": "pretoria",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9973613619804382
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Gray_Leaf_Spot/Corn_Gray_Spot (42).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.6731889247894287
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (1022).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9984148740768433
+    },
+    {
+      "path": ".cache/datasets/corn_field/anhui/extracted/Corn-disease-data-main/Curvularia_Lunata(wakker)boed_Spot/image_2731.png",
+      "source": "anhui",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.990559458732605
+    },
+    {
+      "path": ".cache/datasets/corn_expansion/tari/extracted/ZEAMX_SETOTU_Exserohilum turcicum/ZEAMX_SETOTU_Exserohilum turcicum/ZEAMX_SETOTU_19.jpg",
+      "source": "tari",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999723434448242
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (508).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9991815686225891
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (40).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.999816358089447
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (692).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9998584985733032
+    },
+    {
+      "path": ".cache/datasets/corn_expansion/tom2024/extracted/maize_diseases/Curvulariose-D/2034809980_1680541314139_640x480.jpg",
+      "source": "tom2024",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9990397095680237
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (587).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9995705485343933
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (565).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9992832541465759
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (1137).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9996926784515381
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (388).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999536275863647
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (111).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9991430044174194
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Gray_Leaf_Spot/Corn_Gray_Spot (408).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.999932050704956
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (1151).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999872446060181
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (289).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9962831139564514
+    },
+    {
+      "path": ".cache/datasets/corn_field/anhui/extracted/Corn-disease-data-main/Curvularia_Lunata(wakker)boed_Spot/image_2291.png",
+      "source": "anhui",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9706770777702332
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Gray_Leaf_Spot/Corn_Gray_Spot (553).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.999902606010437
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (68).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9994198083877563
+    },
+    {
+      "path": ".cache/datasets/corn_expansion/tom2024/extracted/maize_diseases/Feuille saine/359884636_1661874111869.jpg",
+      "source": "tom2024",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9994968175888062
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u9508\u75c5/IMG2108_0555.JPG",
+      "source": "idadp",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9626426100730896
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Gray_Leaf_Spot/Corn_Gray_Spot (255).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9967431426048279
+    },
+    {
+      "path": ".cache/datasets/corn_expansion/tom2024/extracted/maize_diseases/Feuille saine/811525405_1678124039589_640x480.jpg",
+      "source": "tom2024",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9987050294876099
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077098.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9982384443283081
+    },
+    {
+      "path": ".cache/datasets/corn_field/ecuador/images/healthy_223.jpg",
+      "source": "ecuador",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9970160722732544
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Gray_Leaf_Spot/Corn_Gray_Spot (28).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999961853027344
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (303).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9998974800109863
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (318).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9991211295127869
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (536).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.999727189540863
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Gray_Leaf_Spot/Corn_Gray_Spot (20).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9947100877761841
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078425.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9479408264160156
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Gray_Leaf_Spot/Corn_Gray_Spot (24).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9970542192459106
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Gray_Leaf_Spot/Corn_Gray_Spot (357).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9998635053634644
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (2).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9999399185180664
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Common_Rust/Corn_Common_Rust (638).JPG",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.999573290348053
+    },
+    {
+      "path": ".cache/datasets/corn/images/data/Healthy/Corn_Health (549).jpg",
+      "source": "legacy_kaggle",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.9987710118293762
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u5927\u6591\u75c5/HLdbb(186).jpg",
+      "source": "idadp",
+      "actual": "leaf",
+      "predicted": "leaf",
+      "score": 0.3483346402645111
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (106).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9993888139724731
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (37).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9990584254264832
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/93292110.jpg",
+      "source": "inat_smut",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9946720004081726
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077130.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9983193278312683
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078403.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9858371019363403
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078282.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.999092698097229
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (127).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9886564016342163
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Gray mold/grayMold. (72).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "ear",
+      "score": 0.9206907749176025
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/224216258.jpg",
+      "source": "inat_smut",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.996005117893219
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Gray mold/grayMold. (14).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9972852468490601
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078234.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9912652373313904
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (77).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.999563992023468
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (99).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9905694723129272
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077078.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9917920827865601
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077108.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.999881386756897
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077094.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9997848868370056
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (83).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9799016714096069
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (110).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9999138116836548
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078267.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9886292219161987
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (94).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9997479319572449
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/233127891.jpg",
+      "source": "inat_maize",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.7563238143920898
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/51507980.jpg",
+      "source": "inat_smut",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9993834495544434
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078336.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.5869050621986389
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/158654938.jpg",
+      "source": "inat_maize",
+      "actual": "whole",
+      "predicted": "whole",
+      "score": 0.9494954347610474
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078382.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.968272864818573
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (41).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9964452385902405
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078271.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9858054518699646
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (49).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9553176760673523
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (105).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9583144187927246
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078339.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9906717538833618
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (46).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9999744892120361
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/241263458.jpg",
+      "source": "inat_maize",
+      "actual": "whole",
+      "predicted": "whole",
+      "score": 0.9996789693832397
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (39).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9809367060661316
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078223.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9449332356452942
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (18).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9883120656013489
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077089.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9695636034011841
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077100.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9945631623268127
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078240.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.953605592250824
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078239.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9993563294410706
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077115.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9990899562835693
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078449.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.8556928038597107
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (6).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9993162155151367
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078307.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.8124976754188538
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (24).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9998263716697693
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/23275750.jpg",
+      "source": "inat_smut",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9861603379249573
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/117528320.jpg",
+      "source": "inat_maize",
+      "actual": "other",
+      "predicted": "ear",
+      "score": 0.8278155326843262
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/212561338.jpg",
+      "source": "inat_maize",
+      "actual": "whole",
+      "predicted": "whole",
+      "score": 0.9961109757423401
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/315604280.jpg",
+      "source": "inat_maize",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.966896653175354
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/225879895.jpg",
+      "source": "inat_smut",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9999935626983643
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (92).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9860823154449463
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077073.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9998492002487183
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077135.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.8388624787330627
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077119.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9765452742576599
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/236415071.jpg",
+      "source": "inat_maize",
+      "actual": "whole",
+      "predicted": "ear",
+      "score": 0.7652787566184998
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/148328907.jpg",
+      "source": "inat_maize",
+      "actual": "whole",
+      "predicted": "whole",
+      "score": 0.995354413986206
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078381.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.926958441734314
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Gray mold/grayMold. (21).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9983192086219788
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (4).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9930949807167053
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (36).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9980934262275696
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077180.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.8913595676422119
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (56).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9992364645004272
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/82818408.jpg",
+      "source": "inat_maize",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9999964237213135
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (75).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9995535016059875
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077076.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.995363712310791
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (22).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9999480247497559
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (71).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9892578721046448
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Gray mold/grayMold. (26).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9769980907440186
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077158.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9734228849411011
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (127).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9148757457733154
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077187.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9623392224311829
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (124).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9851875305175781
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078440.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.8545197248458862
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (21).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9998071789741516
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (40).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9998138546943665
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (103).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.999518632888794
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/227719722.jpg",
+      "source": "inat_smut",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9890792965888977
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (46).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9968283772468567
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077186.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9999226331710815
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/312894108.jpg",
+      "source": "inat_maize",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.6798105239868164
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (97).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9998157620429993
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/311729162.jpg",
+      "source": "inat_smut",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.885298490524292
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078469.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9903269410133362
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/155407645.jpg",
+      "source": "inat_smut",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9999864101409912
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077188.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9814327359199524
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (65).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9999048709869385
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078326.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9953658580780029
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (130).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9990719556808472
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Gray mold/grayMold. (8).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9990602135658264
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078231.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9996215105056763
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077181.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.8696781992912292
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/256764977.jpg",
+      "source": "inat_maize",
+      "actual": "whole",
+      "predicted": "whole",
+      "score": 0.5618065595626831
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (76).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9959161877632141
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/48281816.jpg",
+      "source": "inat_smut",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9998623132705688
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/236035869.jpg",
+      "source": "inat_smut",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9997456669807434
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/275319730.jpg",
+      "source": "inat_smut",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9999476671218872
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/39256640.jpg",
+      "source": "inat_maize",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9998753070831299
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078341.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9987140893936157
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077123.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9764660596847534
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077062.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9166702628135681
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Gray mold/grayMold. (23).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9991421699523926
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (118).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9999862909317017
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (57).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9989207983016968
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078245.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9522294402122498
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/320812623.jpg",
+      "source": "inat_smut",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9999951124191284
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (107).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9996862411499023
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (20).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9988880753517151
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078461.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9999886751174927
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (44).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9992213249206543
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077114.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9133625030517578
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (25).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9996143579483032
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077092.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9748479127883911
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078265.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9945585131645203
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078451.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.985491931438446
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078213.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9716436862945557
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (60).jpg",
+      "source": "sunflower_negative",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9972323775291443
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077144.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9912545680999756
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078416.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9992910623550415
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078272.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9624027013778687
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078424.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9445046782493591
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/318770845.jpg",
+      "source": "inat_maize",
+      "actual": "whole",
+      "predicted": "whole",
+      "score": 0.9978762865066528
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/222477411.jpg",
+      "source": "inat_maize",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9982261061668396
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078414.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9825742840766907
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078285.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9461303949356079
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/149182326.jpg",
+      "source": "inat_smut",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9873714447021484
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/147673658.jpg",
+      "source": "inat_maize",
+      "actual": "whole",
+      "predicted": "whole",
+      "score": 0.9999735355377197
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078328.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.59144127368927
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/149182340.jpg",
+      "source": "inat_smut",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9932055473327637
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078410.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9998669624328613
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077139.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9999145269393921
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/321590795.jpg",
+      "source": "inat_smut",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9979143738746643
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078251.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9998819828033447
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077075.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.5501593947410583
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078426.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9907217025756836
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077127.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9899599552154541
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/236413921.jpg",
+      "source": "inat_maize",
+      "actual": "whole",
+      "predicted": "whole",
+      "score": 0.8924081325531006
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/159588073.jpg",
+      "source": "inat_smut",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9999865293502808
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/217697224.jpg",
+      "source": "inat_smut",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9973885416984558
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/163257485.jpg",
+      "source": "inat_smut",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9999139308929443
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077096.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9090306162834167
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077134.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.965579628944397
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077063.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.982673704624176
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078413.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.8664014339447021
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077085.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9937756061553955
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078308.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9951272010803223
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/259140877.jpg",
+      "source": "inat_smut",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9994392991065979
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/90465048.jpg",
+      "source": "inat_smut",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9915770292282104
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078466.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9976527094841003
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/159591172.jpg",
+      "source": "inat_maize",
+      "actual": "whole",
+      "predicted": "whole",
+      "score": 0.9945048689842224
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078406.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9795030355453491
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078415.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.8651451468467712
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078453.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9828788042068481
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077170.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9990323781967163
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077101.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9946926236152649
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077064.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9062166213989258
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077110.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9826714396476746
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077142.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.6385639309883118
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077065.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9912829399108887
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078457.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9749171137809753
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/91470793.jpg",
+      "source": "inat_smut",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9982951283454895
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078227.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9996215105056763
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077106.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.8408333659172058
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078268.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9994354844093323
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/233688583.jpg",
+      "source": "inat_maize",
+      "actual": "whole",
+      "predicted": "whole",
+      "score": 0.9997406601905823
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077171.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9988610744476318
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/203955494.jpg",
+      "source": "inat_smut",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9992444515228271
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/45141127.jpg",
+      "source": "inat_smut",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.998776376247406
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/222396753.jpg",
+      "source": "inat_smut",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9633378386497498
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078217.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9997747540473938
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/236432201.jpg",
+      "source": "inat_maize",
+      "actual": "whole",
+      "predicted": "whole",
+      "score": 0.9666846394538879
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078431.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9554020762443542
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077058.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.998532772064209
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/311585689.jpg",
+      "source": "inat_maize",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.7121297717094421
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077054.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.917500913143158
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078405.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9747016429901123
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/158232151.jpg",
+      "source": "inat_maize",
+      "actual": "whole",
+      "predicted": "whole",
+      "score": 0.8480632305145264
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078471.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.654819130897522
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077109.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9995855689048767
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/415021440.jpg",
+      "source": "inat_smut",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.966536283493042
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/236571570.jpg",
+      "source": "inat_maize",
+      "actual": "whole",
+      "predicted": "whole",
+      "score": 0.9892565011978149
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077086.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9960517287254333
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/111635121.jpg",
+      "source": "inat_smut",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9837247133255005
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078280.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9650518298149109
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/242425943.jpg",
+      "source": "inat_maize",
+      "actual": "whole",
+      "predicted": "whole",
+      "score": 0.9999642372131348
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078314.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9996067881584167
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/169677308.jpg",
+      "source": "inat_maize",
+      "actual": "whole",
+      "predicted": "whole",
+      "score": 0.9700890183448792
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19077122.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9994232654571533
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078452.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9747870564460754
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/198420029.jpg",
+      "source": "inat_maize",
+      "actual": "other",
+      "predicted": "other",
+      "score": 0.9361376762390137
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/159483904.jpg",
+      "source": "inat_maize",
+      "actual": "whole",
+      "predicted": "whole",
+      "score": 0.9935750365257263
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/99848829.jpg",
+      "source": "inat_maize",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.990251898765564
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/242221948.jpg",
+      "source": "inat_maize",
+      "actual": "other",
+      "predicted": "ear",
+      "score": 0.6725794076919556
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/292785702.jpg",
+      "source": "inat_maize",
+      "actual": "whole",
+      "predicted": "whole",
+      "score": 0.9995566010475159
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/\u7a57\u8150\u75c5/IMG_19078320.JPG",
+      "source": "idadp",
+      "actual": "ear",
+      "predicted": "ear",
+      "score": 0.9563101530075073
+    }
+  ]
+}

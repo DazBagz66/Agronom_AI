@@ -1,0 +1,91 @@
+{
+  "images": 11134,
+  "splits": {
+    "external_review": 942,
+    "quarantine": 4197,
+    "train": 2292,
+    "test": 2484,
+    "validation": 1219
+  },
+  "classes": {
+    "train": {
+      "common_rust": 479,
+      "gray_leaf_spot": 214,
+      "healthy": 876,
+      "maize_lethal_necrosis": 56,
+      "maize_streak_virus": 41,
+      "northern_leaf_blight": 49,
+      "curvularia_leaf_spot": 156,
+      "tar_spot": 154,
+      "southern_leaf_blight": 67,
+      "diplodia_leaf_streak": 96,
+      "common_smut": 85,
+      "healthy_ear": 19
+    },
+    "validation": {
+      "common_rust": 242,
+      "gray_leaf_spot": 101,
+      "healthy": 355,
+      "maize_lethal_necrosis": 32,
+      "maize_streak_virus": 36,
+      "northern_leaf_blight": 27,
+      "curvularia_leaf_spot": 71,
+      "tar_spot": 42,
+      "southern_leaf_blight": 152,
+      "diplodia_leaf_streak": 130,
+      "common_smut": 17,
+      "healthy_ear": 14
+    },
+    "test": {
+      "common_rust": 793,
+      "gray_leaf_spot": 264,
+      "healthy": 855,
+      "maize_lethal_necrosis": 14,
+      "maize_streak_virus": 4,
+      "northern_leaf_blight": 189,
+      "curvularia_leaf_spot": 118,
+      "other_damage": 8,
+      "unknown_disease": 8,
+      "southern_leaf_blight": 200,
+      "common_smut": 27,
+      "healthy_ear": 4
+    }
+  },
+  "sources": {
+    "legacy_kaggle": 4188,
+    "tari": 321,
+    "tom2024": 3517,
+    "pretoria": 80,
+    "user_review": 4,
+    "ecuador": 1079,
+    "anhui": 600,
+    "inat_smut": 200,
+    "inat_maize": 500,
+    "inat_ears": 34,
+    "inat_cobs": 4,
+    "idadp": 600,
+    "user_feedback": 7
+  },
+  "reviews_applied": 166,
+  "excluded": {
+    "taxonomy_or_organ_review_required": 5016,
+    "conflicting_duplicate_group": 149,
+    "exact_duplicate": 114,
+    "image_quality": 70,
+    "multiple_labels_require_multilabel_model": 17,
+    "organ_not_supported_for_training": 567,
+    "duplicate_across_fixed_sites": 2
+  },
+  "manifests": {
+    "train": "99a9da05dfa1648d716567af38c1f7c5f42393c677073c9d88b2bb6bd789ab6a",
+    "validation": "ecd4f33ff24a15346d7c66a5393287714cd5a7229313491aa5a59b6726e49aa8",
+    "test": "5b1d470660e7c78fd3a908371fe3b3af412e41b5da175793e1b47e164fb2289f",
+    "external_review": "499e734ba6136c83c13570e64db5d9da16a9223e539e5bb7fa6a5083f42a1741"
+  },
+  "limitations": [
+    "Ecuador split by publisher plantation/site: BOLIVAR train, TOSAGUA validation, CHONE test; not every class occurs at every site.",
+    "Original Pretoria review was already inspected; it is not a new blind test.",
+    "Community observation labels require organ/visual review and are not laboratory confirmations.",
+    "Unresolved and mixed diagnoses are excluded from single-label training."
+  ]
+}

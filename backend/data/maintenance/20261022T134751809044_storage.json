@@ -1,0 +1,62 @@
+{
+  "started_at": "2026-10-22T13:47:49.770298+00:00",
+  "applied": true,
+  "before": {
+    "logical_bytes": 7703228787,
+    "top_level_bytes": {
+      ".cache": 5986210680,
+      ".git": 81620923,
+      ".gitignore": 147,
+      ".idea": 8477,
+      ".venv": 1090926137,
+      "backend": 392506059,
+      "dist-runtime": 72556412,
+      "docs": 62163,
+      "react-frontend": 79318179,
+      "README.md": 19239,
+      "requirements-training.txt": 60,
+      "requirements.txt": 227,
+      "start.bat": 84
+    }
+  },
+  "actions": [
+    {
+      "kind": "disposable_cache",
+      "path": ".cache/datasets/corn_comparison_v1/rgb320_v1",
+      "bytes": 535629974,
+      "removed": true
+    },
+    {
+      "kind": "disposable_cache",
+      "path": ".cache/datasets/corn_comparison_v1/rgb320_mobile_v1",
+      "bytes": 503399810,
+      "removed": true
+    },
+    {
+      "kind": "disposable_cache",
+      "path": ".cache/features/corn_expanded",
+      "bytes": 30809565,
+      "removed": true
+    }
+  ],
+  "skipped": [],
+  "after": {
+    "logical_bytes": 6633390494,
+    "top_level_bytes": {
+      ".cache": 4916371331,
+      ".git": 81620923,
+      ".gitignore": 147,
+      ".idea": 8477,
+      ".venv": 1090926137,
+      "backend": 392507115,
+      "dist-runtime": 72556412,
+      "docs": 62163,
+      "react-frontend": 79318179,
+      "README.md": 19239,
+      "requirements-training.txt": 60,
+      "requirements.txt": 227,
+      "start.bat": 84
+    }
+  },
+  "removed_bytes": 1069839349
+}

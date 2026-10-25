@@ -1,0 +1,90 @@
+{
+  "classes": [
+    "common_rust",
+    "curvularia_leaf_spot",
+    "gray_leaf_spot",
+    "healthy",
+    "maize_lethal_necrosis",
+    "maize_streak_virus",
+    "northern_leaf_blight",
+    "southern_leaf_blight"
+  ],
+  "manifest_hashes": {
+    "train": "57c935dbd7be6791cf9973da85c08ec0eba57249ab73d5cf6f0b1a276fd225ad",
+    "validation": "b9bf505133695a02353a48b343ac52f28f5f1f3fb0d0afeb3af99a06c639db98",
+    "test": "83241539cb76b30d9a08544cf1acd1811cb8b2cb1b12dee87dc540fbe2eafd91"
+  },
+  "counts": {
+    "train": {
+      "common_rust": 499,
+      "gray_leaf_spot": 226,
+      "healthy": 961,
+      "maize_lethal_necrosis": 56,
+      "maize_streak_virus": 41,
+      "northern_leaf_blight": 49,
+      "curvularia_leaf_spot": 156,
+      "southern_leaf_blight": 67
+    },
+    "validation": {
+      "common_rust": 242,
+      "gray_leaf_spot": 101,
+      "healthy": 355,
+      "maize_lethal_necrosis": 32,
+      "maize_streak_virus": 36,
+      "northern_leaf_blight": 27,
+      "curvularia_leaf_spot": 71,
+      "southern_leaf_blight": 152
+    },
+    "test": {
+      "common_rust": 793,
+      "gray_leaf_spot": 264,
+      "healthy": 855,
+      "maize_lethal_necrosis": 14,
+      "maize_streak_virus": 4,
+      "northern_leaf_blight": 189,
+      "curvularia_leaf_spot": 118,
+      "southern_leaf_blight": 200
+    }
+  },
+  "sources": {
+    "train": {
+      "legacy_kaggle": 1114,
+      "tari": 177,
+      "tom2024": 487,
+      "ecuador": 160,
+      "bangladesh_raw_v1": 117
+    },
+    "validation": {
+      "legacy_kaggle": 534,
+      "tari": 111,
+      "tom2024": 219,
+      "ecuador": 152
+    },
+    "test": {
+      "legacy_kaggle": 1391,
+      "tari": 32,
+      "tom2024": 72,
+      "pretoria": 32,
+      "ecuador": 138,
+      "anhui": 400,
+      "idadp": 372
+    }
+  },
+  "architectures": [
+    "mobilenet_v3_large",
+    "efficientnet_v2_s"
+  ],
+  "seed": 42,
+  "epochs": 4,
+  "selection": "Validation macro-F1; identical training manifests and augmentation for both models.",
+  "evaluation": "Report external sources separately; legacy_kaggle is not independent of deployed baseline.",
+  "crop_experiment": "Deterministically selected held-out photos; boxes drawn before reading model predictions. Same weights and image pairs.",
+  "limitations": [
+    "Publisher labels and visual triage are not laboratory confirmation.",
+    "Older test sources have been inspected in previous experiments; this is not a new blind benchmark.",
+    "Legacy Kaggle test images may have been used in the deployed model training.",
+    "Four CPU epochs compare a fixed recipe, not the maximum achievable performance of either architecture.",
+    "New raw source is train-only because capture/specimen identities are unavailable.",
+    "No automatic activation; diagnosis and detection must be independently reviewed."
+  ]
+}

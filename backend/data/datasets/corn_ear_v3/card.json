@@ -1,0 +1,63 @@
+{
+  "version": "corn_ear_v3",
+  "classes": [
+    "common_smut",
+    "ear_rot",
+    "healthy_ear"
+  ],
+  "counts": {
+    "train": {
+      "common_smut": 111,
+      "ear_rot": 115,
+      "healthy_ear": 89
+    },
+    "validation": {
+      "common_smut": 27,
+      "ear_rot": 38,
+      "healthy_ear": 37
+    },
+    "test": {
+      "common_smut": 42,
+      "ear_rot": 38,
+      "healthy_ear": 27
+    }
+  },
+  "sources": {
+    "train": {
+      "hf_ricemaize_ear_rot": 55,
+      "idadp": 60,
+      "inat_maize": 19,
+      "inat_smut": 85,
+      "inat_smut_recent": 26,
+      "wikimedia_ears": 70
+    },
+    "validation": {
+      "hf_ricemaize_ear_rot": 18,
+      "idadp": 20,
+      "inat_maize": 14,
+      "inat_smut": 17,
+      "inat_smut_recent": 10,
+      "wikimedia_ears": 23
+    },
+    "test": {
+      "hf_ricemaize_ear_rot": 18,
+      "idadp": 20,
+      "inat_maize": 4,
+      "inat_smut": 27,
+      "inat_smut_recent": 15,
+      "wikimedia_ears": 23
+    }
+  },
+  "manifest_hashes": {
+    "train": "83dc08081f32881a8e9553f3b8b23b829e3c5a73d115f2cb4a146a4463c4b678",
+    "validation": "70f672ea5c5a7c983cf777d001cd8919196bf350888a2853de08f0567865c4ca",
+    "test": "91b0cd861ce1af1a5085e745aa3bcad3a8ab0d3c83b2bdfd76caf16d165406ee"
+  },
+  "label_basis": "Метки публикаторов и сообщества iNaturalist; экспертного подтверждения нет.",
+  "excluded": [
+    "OpenEar: конвейерные сканы, не похожи на фотографии с телефона",
+    "Bugwood: некоммерческая лицензия",
+    "hf_ricemaize со статусом excluded в corn_ear_v2"
+  ],
+  "test_design": "Гниль: оба источника (hf, IDADP) в train/validation/test по группам, тест не независимый. Головня и здоровые початки — прежние защищённые разбиения iNaturalist."
+}

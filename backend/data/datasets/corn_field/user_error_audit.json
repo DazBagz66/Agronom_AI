@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-22",
+  "user_label_basis": "User explicitly described the new rust/gray-leaf-spot labels as preliminary personal assessments, not confirmed diagnoses.",
+  "feedback_policy": "All seven reports remain pending; proposed diagnoses are not training ground truth.",
+  "confirmed_routing_issue": {
+    "check_ids": [84, 85, 91],
+    "original_organ": "leaf",
+    "reported_and_visually_reviewed_organ": "ear",
+    "consequence": "Leaf classifier outputs cannot be interpreted as ear disease or health assessments.",
+    "fix": "Explicit organ choice for each newly uploaded corn photo; disputed history display invalidated while preserving original DB snapshot."
+  },
+  "check_94": {
+    "model_prediction": "common_rust",
+    "model_score": 0.6886,
+    "user_proposed_label": "gray_leaf_spot",
+    "ground_truth_status": "unconfirmed",
+    "action": "Pending review; neither label has been used as new training ground truth."
+  },
+  "rejected_experiment": {
+    "policy": "Rust/gray-leaf-spot accepted only if original, horizontally mirrored and vertically mirrored images all give the same class >=0.65; no class promotion.",
+    "selection": "Up to 40 images by sorted SHA256 per source/class from existing non-legacy test manifests; this is a diagnostic audit, not a new blind field trial.",
+    "count": 96,
+    "before": {"accepted_correct": 35, "accepted_wrong": 25, "abstained": 36},
+    "after": {"accepted_correct": 28, "accepted_wrong": 24, "abstained": 44},
+    "decision": "Not deployed: losing seven correct answers to remove one error does not justify the added inference work.",
+    "full_local_report": ".cache/recent_corn_audit/consistency_audit.json"
+  },
+  "active_weights_changed": false,
+  "ear_model_released": false
+}

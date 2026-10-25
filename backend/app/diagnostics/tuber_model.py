@@ -39,6 +39,8 @@ def softmax(logits):
 def load_model():
     """Загружаем основу и обученную голову, сверяя файлы с manifest."""
     manifest = json.loads((MODEL_DIR / "manifest.json").read_text(encoding="utf-8"))
+    if manifest.get('release_status') == 'retired':
+        raise ValueError('The MobileNetV2 tuber model was retired')
     for filename, expected in manifest["files"].items():
         if hashlib.sha256((MODEL_DIR / filename).read_bytes()).hexdigest() != expected:
             raise ValueError("Tuber model checksum mismatch")

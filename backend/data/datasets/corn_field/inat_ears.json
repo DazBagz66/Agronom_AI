@@ -1,0 +1,657 @@
+{
+  "source": "inat_ears",
+  "images": 34,
+  "requested": 34,
+  "errors": [],
+  "counts": {
+    "maize_unverified": 34
+  },
+  "records": [
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/134148039.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/81775015",
+      "source_id": "81775015",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/134148039/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:231737",
+      "license": "cc-by",
+      "attribution": "(c) B. Phalan, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "9c2854e697b0fdce15a92d1081d3d9d5bb6fcaaf645298197c509a567c50f806",
+      "bytes": 450419
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/149132449.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/90246137",
+      "source_id": "90246137",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/149132449/large.jpeg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:3804546",
+      "license": "cc-by",
+      "attribution": "(c) Codrin Bucur, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "c7a2feda56b14bcd323b7f902c4e379b8d60673e61f58c9a22ddb0e4db6c1faf",
+      "bytes": 863572
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/15433349.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/10965462",
+      "source_id": "10965462",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/15433349/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:389997",
+      "license": "cc-by",
+      "attribution": "(c) Shaun Swanepoel, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "325e95564912cf3ce1529cc2c8b8a765290cacb724351548c0297b602bb7c930",
+      "bytes": 154540
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/170228965.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/101896948",
+      "source_id": "101896948",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/170228965/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:572980",
+      "license": "cc-by",
+      "attribution": "(c) Sandy Wolkenberg, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "0e3e2c5269d8f4b9a57c5900ffa577a77cd78f3a6d42f17b7ac0a1c600c9fedb",
+      "bytes": 541593
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/18321995.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/12661910",
+      "source_id": "12661910",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/18321995/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:963904",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "3fec4a4bb702f99f6fbb30feb9ed5f951d34cf375e784ca80bf259e563881917",
+      "bytes": 292040
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/188823359.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/111827020",
+      "source_id": "111827020",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/188823359/large.jpeg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:231737",
+      "license": "cc-by",
+      "attribution": "(c) B. Phalan, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "b4a6f72944e63d5b0f1498286e269742d54002dba4fcccc9b9d1d33863fc9397",
+      "bytes": 315892
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/204173211.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/120701264",
+      "source_id": "120701264",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/204173211/large.jpeg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:2740708",
+      "license": "cc-by",
+      "attribution": "(c) Celso Henrique Varela Rios, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "358dcc775641242008d410e6455d343bc5485d75e2f2459a23baa90869f38d3d",
+      "bytes": 733537
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/212643197.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/125393254",
+      "source_id": "125393254",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/212643197/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:572980",
+      "license": "cc-by",
+      "attribution": "(c) Sandy Wolkenberg, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "d782eb12fe96d918dcb1b0170a338131f4b2214e8c56426d5246175845d4ec33",
+      "bytes": 500247
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/232454526.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/136220783",
+      "source_id": "136220783",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/232454526/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:572980",
+      "license": "cc-by",
+      "attribution": "(c) Sandy Wolkenberg, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "cd8afcf607ef8f6242a68aa6a6be728555bf9b17190b6a5be913af143b2a3a7c",
+      "bytes": 381983
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/233688583.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/136883751",
+      "source_id": "136883751",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/233688583/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:24158",
+      "license": "cc-by-sa",
+      "attribution": "(c) Dinesh Valke, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "d70396f7b7678a7133da0c4802b01b2fcf6214dbcea3b305134aed0497536d8e",
+      "bytes": 704731
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/235226069.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/137700718",
+      "source_id": "137700718",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/235226069/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:572980",
+      "license": "cc-by",
+      "attribution": "(c) Sandy Wolkenberg, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "b50c89f3244e4f645ebb14f1c2974f6958b0ace84b13bf18a5f3e104b0006b84",
+      "bytes": 395686
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/236004578.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/138114489",
+      "source_id": "138114489",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/236004578/large.jpeg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:477431",
+      "license": "cc-by",
+      "attribution": "(c) carnifex, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "08cdd9db1891e17eb36300fdb5c371f79e01004060f1f797e3b6d0a4be6ce58a",
+      "bytes": 818967
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/262805374.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/152251596",
+      "source_id": "152251596",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/262805374/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:375342",
+      "license": "cc-by",
+      "attribution": "(c) Martin Kalfatovic, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "1338984e6976d251c6e0b67b72b26d256f1892e3d43e892f9e4d1b82c62ca238",
+      "bytes": 105363
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/29143458.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/19004992",
+      "source_id": "19004992",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/29143458/large.jpeg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:753019",
+      "license": "cc-by-sa",
+      "attribution": "(c) Israel Castorena Lemus, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "a745460c2ef1b3812ea807691ab6dc787f9ff9488e3ddd116093f3eeb3ee462b",
+      "bytes": 416135
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/302642633.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/174217088",
+      "source_id": "174217088",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/302642633/large.jpeg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:16911",
+      "license": "cc-by",
+      "attribution": "(c) nasua, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "e442c42508523c0d5f0168b73e38e0e6501b4142c95a95123def510ec4d134f0",
+      "bytes": 356209
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/302642648.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/174217090",
+      "source_id": "174217090",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/302642648/large.jpeg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:16911",
+      "license": "cc-by",
+      "attribution": "(c) nasua, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "306d3b52af10ea309ce867d98651151779549eabee4fa684b84dee433d68c76b",
+      "bytes": 410944
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/308363418.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/177307208",
+      "source_id": "177307208",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/308363418/large.jpeg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1844866",
+      "license": "cc-by",
+      "attribution": "(c) Yannick ST-Jacques Prescod, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "4af7adf8c320265c364ff4e0e87110c8be271248f0049435a151a4e6cba80678",
+      "bytes": 240998
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/328626401.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/187858380",
+      "source_id": "187858380",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/328626401/large.jpeg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:7326764",
+      "license": "cc-by",
+      "attribution": "(c) Julie, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "63d4287e4316a725e4d421292763a756c8b81a40a44b4dde0c2c3dabc76d243e",
+      "bytes": 681583
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/340211722.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/193656805",
+      "source_id": "193656805",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/340211722/large.jpeg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:4273228",
+      "license": "cc-by",
+      "attribution": "(c) Emily Abrego, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "00a326d5e775e57aabb9f1dfaeb8fc5ea4ef2b86dce7312f661ea42e93639c3b",
+      "bytes": 929430
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/48492965.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/31012913",
+      "source_id": "31012913",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/48492965/large.jpeg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:18701",
+      "license": "cc-by",
+      "attribution": "(c) Mark Apgar, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "b96645e3f2e494898f21bac06f52b12dbad9e8c00bb34adee1cc7082f33a86c7",
+      "bytes": 631736
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/50743574.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/32358731",
+      "source_id": "32358731",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/50743574/large.jpeg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1899313",
+      "license": "cc-by",
+      "attribution": "(c) Nick Kleinschmidt, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "07527f6e70793a6de63c389c7aee688b7c4a8530a17a1fb852a857874bc16ae5",
+      "bytes": 568281
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/50981798.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/32501523",
+      "source_id": "32501523",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/50981798/large.jpeg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1899313",
+      "license": "cc-by",
+      "attribution": "(c) Nick Kleinschmidt, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "bc7db952175f3335f5972c0b47bb61f0a6942fba9c90171fb37567b3d2c90a93",
+      "bytes": 323310
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/51247747.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/32663509",
+      "source_id": "32663509",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/51247747/large.jpeg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1076827",
+      "license": "cc-by",
+      "attribution": "(c) Eric Watts, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "5bae1bb809f4803406552a91d9a565f38edaf0ae65c31bd378f27d675a3cff43",
+      "bytes": 193359
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/567426694.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/314185501",
+      "source_id": "314185501",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/567426694/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:7545635",
+      "license": "cc-by",
+      "attribution": "(c) jonsense, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "7533bd2e399785454eba070650a614115aaf3057b52832a663fc012420fc0ac6",
+      "bytes": 495250
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/57590544.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/36434139",
+      "source_id": "36434139",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/57590544/large.jpeg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1876348",
+      "license": "cc-by",
+      "attribution": "(c) Diogo Luiz, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "11c87e066bd8021602906586c1ce4eb58485a4577c27e5003ba5c0149edd0536",
+      "bytes": 379001
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/578500075.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/319995071",
+      "source_id": "319995071",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/578500075/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1434599",
+      "license": "cc-by",
+      "attribution": "(c) Георгий Виноградов (Georgy Vinogradov), some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "9b44adfcefae73efdd12f9aa9c3a01bbbfe68f16e9ff40fa15b2779744860b63",
+      "bytes": 269653
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/697631559.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/381277857",
+      "source_id": "381277857",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/697631559/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1094650",
+      "license": "cc-by",
+      "attribution": "(c) Gianni Del Bufalo bygdb, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "c9346002984e3378f674ba58db86c0a9176092d564c9322ebbbf846b6f6137ee",
+      "bytes": 415400
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/711690870.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/388576936",
+      "source_id": "388576936",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/711690870/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:4637153",
+      "license": "cc-by",
+      "attribution": "(c) Leyla, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "90646c1e5ffd6b2af438dcdca8b84ddc34d9d0dd13410a460314b54af8a22d19",
+      "bytes": 382743
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/718735397.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/392206318",
+      "source_id": "392206318",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/718735397/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1094650",
+      "license": "cc-by",
+      "attribution": "(c) Gianni Del Bufalo bygdb, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "6f93a1b7607c9a3c4781f0be6d7c8f03f114588b0d2bf261273bcb90fc1a6162",
+      "bytes": 631845
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/722142907.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/393945587",
+      "source_id": "393945587",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/722142907/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:2412710",
+      "license": "cc-by",
+      "attribution": "(c) Paulo Galvão, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "188fe41473c2bfd921ff3545caa24c764a2680a9f95b97403b4293b85a02d841",
+      "bytes": 544016
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/726680145.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/396257291",
+      "source_id": "396257291",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/726680145/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:175837",
+      "license": "cc-by",
+      "attribution": "(c) Tom Norton, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "5f878e51ddf0504488a4da914dbe57de03985ec5b4daf02e761b825b400803b3",
+      "bytes": 623871
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/74058406.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/46693627",
+      "source_id": "46693627",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/74058406/large.jpeg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:5302",
+      "license": "cc-by-sa",
+      "attribution": "(c) Colin Meurk, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "22e0bd5f4c6dfbccb9bdaaac68afd23be45efbd8621b6db3b4fc323ed3fbb9a5",
+      "bytes": 804460
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/744456176.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/405314032",
+      "source_id": "405314032",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/744456176/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:7567198",
+      "license": "cc-by",
+      "attribution": "(c) Chris Stahl, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "1f29a096fea9767d52bec36f73e6922b7cc832fabc9b68ec2245aab813102c79",
+      "bytes": 1111762
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_ears/images/93141166.jpg",
+      "source": "inat_ears",
+      "source_url": "https://www.inaturalist.org/observations/58343701",
+      "source_id": "58343701",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/93141166/large.jpeg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "raw_label": "Zea mays",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:3325109",
+      "license": "cc-by",
+      "attribution": "(c) Lexi Destria, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "43c3754bc9405f1e44ca596a7fbd579967710c8a2e77b732dc80ecc4403e36b3",
+      "bytes": 663473
+    }
+  ]
+}

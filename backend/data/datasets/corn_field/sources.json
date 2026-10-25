@@ -1,0 +1,97 @@
+{
+  "review_date": "2026-10-22",
+  "sources": {
+    "idadp": {
+      "title": "IDADP - Corn Disease Image Description Dataset",
+      "url": "https://doi.org/10.57760/sciencedb.21290",
+      "license": "CC BY 4.0",
+      "images": 600,
+      "southern_leaf_blight_images": 100,
+      "ear_images_pending_taxonomy_review": 100,
+      "archive_md5": "984b063bb8c248f595a94a18cc39f815",
+      "role": "Whole-source holdout. Not added to active model training.",
+      "caveat": "Ear-rot category requires expert differential review against smuts. Healthy category contains leaves, not healthy ears. Machine-generated image descriptions are not used as RAG advice."
+    },
+    "ecuador": {
+      "title": "CornLeafDiseaseCollection",
+      "url": "https://data.mendeley.com/datasets/w56xxnykcc/1",
+      "license": "CC BY 4.0",
+      "images": 1079,
+      "southern_leaf_blight_images": 220,
+      "mapping": "bipolaris / Bipolaris maydis -> southern_leaf_blight",
+      "split": "Publisher Data.csv: BOLIVAR training; TOSAGUA validation; CHONE held-out test. Cross-site duplicates quarantined.",
+      "caveat": "common rust (Southern rust) is inconsistent in publisher description; retain as unresolved rust."
+    },
+    "anhui": {
+      "title": "Corn Leaf Disease Recognition Dataset",
+      "url": "https://doi.org/10.6084/m9.figshare.30264037",
+      "paper": "https://doi.org/10.1371/journal.pone.0336945",
+      "license": "CC BY 4.0",
+      "images": 600,
+      "role": "Entire source reserved for cross-source evaluation",
+      "caveat": "This is the public subset, not the full 2725-image study dataset. Own-Spot and Sheath-Blight remain unresolved."
+    },
+    "inat_smut": {
+      "title": "iNaturalist research-grade Mycosarcoma maydis observations",
+      "url": "https://www.inaturalist.org/taxa/1409663-Mycosarcoma-maydis",
+      "license": "Per-photo CC0, CC BY or CC BY-SA; exact license and attribution in receipts",
+      "images": 200,
+      "caveat": "Community identification and assistant visual organ triage, not independent expert/laboratory diagnosis. Observer groups kept in one partition."
+    },
+    "inat_maize": {
+      "title": "iNaturalist Zea mays observations for negative-control review",
+      "url": "https://www.inaturalist.org/taxa/48448-Zea-mays",
+      "license": "Per-photo CC0, CC BY or CC BY-SA; exact license and attribution in receipts",
+      "caveat": "Species identification does not imply health; only visually reviewed exposed ears enter the no-visible-galls class.",
+      "images": 500
+    },
+    "cds": {
+      "title": "Corn Disease and Severity Dataset",
+      "url": "https://osf.io/s6ru5/",
+      "paper": "https://arxiv.org/abs/2110.12084",
+      "status": "Metadata checked; images not imported",
+      "caveat": "OSF API node_license is null; license/permission needs clarification before adding to the training corpus."
+    },
+    "plant_scanner": {
+      "title": "Plant-scanner Ustilago maydis infection study",
+      "paper": "https://doi.org/10.1038/s41598-026-60714-4",
+      "status": "Research reference; full data available on author request, not acquired",
+      "caveat": "Laboratory video frames of seedlings differ from field photographs of affected ears."
+    },
+    "inat_ears": {
+      "title": "iNaturalist Zea mays observations for negative-control review",
+      "url": "https://www.inaturalist.org/taxa/48448-Zea-mays",
+      "license": "Per-photo CC0, CC BY or CC BY-SA; exact license and attribution in receipts",
+      "caveat": "Species identification does not imply health; only visually reviewed exposed ears enter the no-visible-galls class.",
+      "images": 34,
+      "query": "fruiting annotation"
+    },
+    "inat_cobs": {
+      "title": "iNaturalist Zea mays observations for negative-control review",
+      "url": "https://www.inaturalist.org/taxa/48448-Zea-mays",
+      "license": "Per-photo CC0, CC BY or CC BY-SA; exact license and attribution in receipts",
+      "caveat": "Species identification does not imply health; only visually reviewed exposed ears enter the no-visible-galls class.",
+      "images": 4,
+      "query": "description query cob"
+    },
+    "plantseg": {
+      "title": "PlantSeg v2",
+      "url": "https://zenodo.org/records/13958858",
+      "repository": "https://github.com/tqwei05/PlantSeg",
+      "license": "CC BY-NC-ND 4.0",
+      "archive_class_counts": {
+        "corn_smut": 202,
+        "corn_northern_leaf_blight": 130,
+        "corn_gray_leaf_spot": 107
+      },
+      "status": "Archive index and metadata verified; partial download hit HTTP 429. Not included in current model training or evaluation."
+    },
+    "plantwild_v2": {
+      "title": "PlantWild v2",
+      "url": "https://tqwei05.github.io/PlantWild/",
+      "download": "https://huggingface.co/datasets/uqtwei2/PlantWild",
+      "license": "CC BY-NC-ND 4.0",
+      "status": "Catalogued; not imported"
+    }
+  }
+}

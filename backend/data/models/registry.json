@@ -1,0 +1,9 @@
+{
+  "sunflower": {
+    "leaf": "backend/data/models/sunflower_candidates/leaf_v2"
+  },
+  "corn": {
+    "leaf": "backend/data/models/corn_candidates/leaf_v3",
+    "ear": "backend/data/models/corn_candidates/ear_v3"
+  }
+}

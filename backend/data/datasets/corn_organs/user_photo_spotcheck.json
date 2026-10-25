@@ -1,0 +1,86 @@
+[
+  {
+    "photo": "81.jpg",
+    "part": "unknown",
+    "score": 0.5047660373503436,
+    "model_sha256": "df1b620cb647f5fd7fab0f18bceed30810fd4b5db40cbd4f4de19b48f9133030"
+  },
+  {
+    "photo": "82.jpg",
+    "part": "unknown",
+    "score": 0.6266142937643351,
+    "model_sha256": "df1b620cb647f5fd7fab0f18bceed30810fd4b5db40cbd4f4de19b48f9133030"
+  },
+  {
+    "photo": "83.jpg",
+    "part": "unknown",
+    "score": 0.6613215718269598,
+    "model_sha256": "df1b620cb647f5fd7fab0f18bceed30810fd4b5db40cbd4f4de19b48f9133030"
+  },
+  {
+    "photo": "84.jpg",
+    "part": "ear",
+    "score": 0.9989668213055748,
+    "model_sha256": "df1b620cb647f5fd7fab0f18bceed30810fd4b5db40cbd4f4de19b48f9133030"
+  },
+  {
+    "photo": "85.jpg",
+    "part": "ear",
+    "score": 0.9989035811030998,
+    "model_sha256": "df1b620cb647f5fd7fab0f18bceed30810fd4b5db40cbd4f4de19b48f9133030"
+  },
+  {
+    "photo": "86.jpg",
+    "part": "leaf",
+    "score": 0.9717964849145766,
+    "model_sha256": "df1b620cb647f5fd7fab0f18bceed30810fd4b5db40cbd4f4de19b48f9133030"
+  },
+  {
+    "photo": "87.jpg",
+    "part": "unknown",
+    "score": 0.637553429170569,
+    "model_sha256": "df1b620cb647f5fd7fab0f18bceed30810fd4b5db40cbd4f4de19b48f9133030"
+  },
+  {
+    "photo": "88.jpg",
+    "part": "leaf",
+    "score": 0.8671966545867885,
+    "model_sha256": "df1b620cb647f5fd7fab0f18bceed30810fd4b5db40cbd4f4de19b48f9133030"
+  },
+  {
+    "photo": "89.jpg",
+    "part": "leaf",
+    "score": 0.9922012565298587,
+    "model_sha256": "df1b620cb647f5fd7fab0f18bceed30810fd4b5db40cbd4f4de19b48f9133030"
+  },
+  {
+    "photo": "90.jpg",
+    "part": "leaf",
+    "score": 0.9948639051512388,
+    "model_sha256": "df1b620cb647f5fd7fab0f18bceed30810fd4b5db40cbd4f4de19b48f9133030"
+  },
+  {
+    "photo": "91.jpg",
+    "part": "ear",
+    "score": 0.9999941683726241,
+    "model_sha256": "df1b620cb647f5fd7fab0f18bceed30810fd4b5db40cbd4f4de19b48f9133030"
+  },
+  {
+    "photo": "92.jpg",
+    "part": "leaf",
+    "score": 0.947080661314788,
+    "model_sha256": "df1b620cb647f5fd7fab0f18bceed30810fd4b5db40cbd4f4de19b48f9133030"
+  },
+  {
+    "photo": "93.jpg",
+    "part": "unknown",
+    "score": 0.7552250504064122,
+    "model_sha256": "df1b620cb647f5fd7fab0f18bceed30810fd4b5db40cbd4f4de19b48f9133030"
+  },
+  {
+    "photo": "94.jpg",
+    "part": "leaf",
+    "score": 0.9295902282983206,
+    "model_sha256": "df1b620cb647f5fd7fab0f18bceed30810fd4b5db40cbd4f4de19b48f9133030"
+  }
+]

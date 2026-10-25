@@ -1,0 +1,23 @@
+"""Review vocabulary; presence here does not claim a deployed model supports it."""
+CORN_LABELS = {
+    'common_rust': 'Обыкновенная ржавчина',
+    'gray_leaf_spot': 'Серая пятнистость листьев',
+    'northern_leaf_blight': 'Северный гельминтоспориоз',
+    'southern_leaf_blight': 'Южный гельминтоспориоз',
+    'common_smut': 'Пузырчатая головня',
+    'head_smut': 'Пыльная головня',
+    'ear_rot': 'Гниль початка — вид не уточнён',
+    'fusarium_ear_rot': 'Фузариоз початка',
+    'gibberella_ear_rot': 'Красная гниль початка (Gibberella)',
+    'aspergillus_ear_rot': 'Аспергиллёзная гниль початка',
+    'curvularia_leaf_spot': 'Курвуляриозная пятнистость',
+    'maize_lethal_necrosis': 'Летальный некроз кукурузы',
+    'maize_streak_virus': 'Вирус полосатости кукурузы',
+    'northern_leaf_spot': 'Северная пятнистость листьев',
+    'tar_spot': 'Мухосед (Phyllachora maydis)',
+    'diplodia_leaf_streak': 'Диплодиозная полосатость листьев',
+    'healthy': 'Лист без видимых симптомов',
+    'healthy_ear': 'Початок без видимых признаков болезни',
+    'other_damage': 'Другое повреждение',
+    'unknown_disease': 'Причина не установлена',
+}

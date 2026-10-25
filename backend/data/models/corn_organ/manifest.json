@@ -1,0 +1,18 @@
+{
+  "format": "corn_organ_features_v2",
+  "architecture": "mobilenet_v3_large",
+  "feature_size": 960,
+  "backbone_file": "features.onnx",
+  "classes": [
+    "ear",
+    "leaf",
+    "other",
+    "whole"
+  ],
+  "threshold": 0.8,
+  "temperature": 0.9002974147694692,
+  "backbone_sha256": "48df9139658f9f3db01044e702fed6e0b1aab6b299a43478cb3e27b625a4454b",
+  "classifier_sha256": "b910221ee2364b3fabbd441bb5de231172b6f4f8b8e9e2ddd0a00386f8c5e032",
+  "release_status": "approved",
+  "limitations": "Coarse corn organ routing; whole includes general plant/field views. Not a crop, disease or health diagnosis. Mixed and unknown objects may be misclassified."
+}

@@ -1,0 +1,56 @@
+{
+  "counts": {
+    "train": {
+      "common_smut": 111,
+      "healthy_ear": 19
+    },
+    "validation": {
+      "common_smut": 27,
+      "healthy_ear": 14
+    },
+    "test": {
+      "common_smut": 42,
+      "healthy_ear": 4
+    }
+  },
+  "new_usable": 51,
+  "new_usable_by_class": {
+    "common_smut": 51
+  },
+  "new_quarantined_after_review": [
+    {
+      "sha256": "a745460c2ef1b3812ea807691ab6dc787f9ff9488e3ddd116093f3eeb3ee462b",
+      "reasons": [
+        "exact_duplicate"
+      ]
+    },
+    {
+      "sha256": "e442c42508523c0d5f0168b73e38e0e6501b4142c95a95123def510ec4d134f0",
+      "reasons": [
+        "exact_duplicate"
+      ]
+    },
+    {
+      "sha256": "306d3b52af10ea309ce867d98651151779549eabee4fa684b84dee433d68c76b",
+      "reasons": [
+        "exact_duplicate"
+      ]
+    },
+    {
+      "sha256": "4af7adf8c320265c364ff4e0e87110c8be271248f0049435a151a4e6cba80678",
+      "reasons": [
+        "exact_duplicate"
+      ]
+    },
+    {
+      "sha256": "11c87e066bd8021602906586c1ce4eb58485a4577c27e5003ba5c0149edd0536",
+      "reasons": [
+        "exact_duplicate"
+      ]
+    }
+  ],
+  "additional_detail_photos": 35,
+  "detail_review": "Mostly closed husks/whole plants/tassels or same ears already reviewed. Retained separately, not health-labelled.",
+  "kernel_counting_source": "Not imported: terms restrict use to internal non-commercial academic research; project intended use not established.",
+  "activated": false
+}

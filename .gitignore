@@ -5,3 +5,4 @@ __pycache__/
 backend/data/knowledge/raw/
 backend/backups/
 backend/data/knowledge/import-report.json
+dist-runtime/

@@ -1,0 +1,1585 @@
+{
+  "seed": 42,
+  "architecture": "mobilenet_v3_large",
+  "classes": [
+    "downy_mildew",
+    "gray_mold",
+    "healthy",
+    "leaf_scars"
+  ],
+  "organ": "leaf",
+  "recipe": "2 epochs head only (lr 1e-3), then full fine-tuning (backbone lr 0.0001, cosine), AdamW, label smoothing 0.05, class×source balanced sampling",
+  "preprocessing": "EXIF transpose, RGB, thumbnail max side 320 (LANCZOS), pad to 224x224 gray (127,127,127), ImageNet mean/std",
+  "counts": {
+    "train": {
+      "downy_mildew": 71,
+      "gray_mold": 44,
+      "healthy": 80,
+      "leaf_scars": 83
+    },
+    "validation": {
+      "downy_mildew": 24,
+      "gray_mold": 14,
+      "healthy": 27,
+      "leaf_scars": 28
+    },
+    "test": {
+      "downy_mildew": 24,
+      "gray_mold": 14,
+      "healthy": 27,
+      "leaf_scars": 28
+    }
+  },
+  "manifest_hashes": null,
+  "history": [
+    {
+      "epoch": 1,
+      "stage": "head",
+      "loss": 0.8736335948216829,
+      "validation_macro_f1": 0.8382214156079855,
+      "validation_accuracy": 0.8279569892473119,
+      "seconds": 52
+    },
+    {
+      "epoch": 2,
+      "stage": "head",
+      "loss": 0.5912735719474957,
+      "validation_macro_f1": 0.8561677146878239,
+      "validation_accuracy": 0.8494623655913979,
+      "seconds": 20
+    },
+    {
+      "epoch": 3,
+      "stage": "finetune",
+      "loss": 0.6009007623727373,
+      "validation_macro_f1": 0.8494252873563217,
+      "validation_accuracy": 0.8387096774193549,
+      "seconds": 30
+    },
+    {
+      "epoch": 4,
+      "stage": "finetune",
+      "loss": 0.4116309021445487,
+      "validation_macro_f1": 0.9203389830508475,
+      "validation_accuracy": 0.9139784946236559,
+      "seconds": 25
+    },
+    {
+      "epoch": 5,
+      "stage": "finetune",
+      "loss": 0.3883689116659782,
+      "validation_macro_f1": 0.9227032227032227,
+      "validation_accuracy": 0.9139784946236559,
+      "seconds": 24
+    },
+    {
+      "epoch": 6,
+      "stage": "finetune",
+      "loss": 0.37735698870617707,
+      "validation_macro_f1": 0.9615384615384617,
+      "validation_accuracy": 0.956989247311828,
+      "seconds": 24
+    },
+    {
+      "epoch": 7,
+      "stage": "finetune",
+      "loss": 0.3091537635103404,
+      "validation_macro_f1": 0.9118679193147279,
+      "validation_accuracy": 0.9032258064516129,
+      "seconds": 23
+    },
+    {
+      "epoch": 8,
+      "stage": "finetune",
+      "loss": 0.35632522672200373,
+      "validation_macro_f1": 0.9415292353823088,
+      "validation_accuracy": 0.9354838709677419,
+      "seconds": 23
+    },
+    {
+      "epoch": 9,
+      "stage": "finetune",
+      "loss": 0.3240158935244992,
+      "validation_macro_f1": 0.920282361879036,
+      "validation_accuracy": 0.9139784946236559,
+      "seconds": 23
+    },
+    {
+      "epoch": 10,
+      "stage": "finetune",
+      "loss": 0.3167026006489349,
+      "validation_macro_f1": 0.9307035876001394,
+      "validation_accuracy": 0.9247311827956989,
+      "seconds": 25
+    },
+    {
+      "epoch": 11,
+      "stage": "finetune",
+      "loss": 0.34207838151952347,
+      "validation_macro_f1": 0.9307035876001394,
+      "validation_accuracy": 0.9247311827956989,
+      "seconds": 25
+    },
+    {
+      "epoch": 12,
+      "stage": "finetune",
+      "loss": 0.28371244325912254,
+      "validation_macro_f1": 0.9307035876001394,
+      "validation_accuracy": 0.9247311827956989,
+      "seconds": 23
+    }
+  ],
+  "selected_epoch": 6,
+  "temperature": 0.5000049211903709,
+  "selection": "validation macro-F1 only; temperature fitted to validation NLL; test evaluated once",
+  "validation": {
+    "count": 93,
+    "accuracy": 0.956989247311828,
+    "macro_f1": 0.9615384615384617,
+    "classification_report": {
+      "downy_mildew": {
+        "precision": 0.8571428571428571,
+        "recall": 1.0,
+        "f1-score": 0.9230769230769231,
+        "support": 24.0
+      },
+      "gray_mold": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 14.0
+      },
+      "healthy": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 27.0
+      },
+      "leaf_scars": {
+        "precision": 1.0,
+        "recall": 0.8571428571428571,
+        "f1-score": 0.9230769230769231,
+        "support": 28.0
+      },
+      "accuracy": 0.956989247311828,
+      "macro avg": {
+        "precision": 0.9642857142857143,
+        "recall": 0.9642857142857143,
+        "f1-score": 0.9615384615384617,
+        "support": 93.0
+      },
+      "weighted avg": {
+        "precision": 0.9631336405529953,
+        "recall": 0.956989247311828,
+        "f1-score": 0.956989247311828,
+        "support": 93.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        24,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        14,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        27,
+        0
+      ],
+      [
+        4,
+        0,
+        0,
+        24
+      ]
+    ]
+  },
+  "test": {
+    "count": 93,
+    "accuracy": 0.9247311827956989,
+    "macro_f1": 0.9324675324675324,
+    "classification_report": {
+      "downy_mildew": {
+        "precision": 0.7741935483870968,
+        "recall": 1.0,
+        "f1-score": 0.8727272727272727,
+        "support": 24.0
+      },
+      "gray_mold": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 14.0
+      },
+      "healthy": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 27.0
+      },
+      "leaf_scars": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1-score": 0.8571428571428571,
+        "support": 28.0
+      },
+      "accuracy": 0.9247311827956989,
+      "macro avg": {
+        "precision": 0.9435483870967742,
+        "recall": 0.9375,
+        "f1-score": 0.9324675324675324,
+        "support": 93.0
+      },
+      "weighted avg": {
+        "precision": 0.9417273673257024,
+        "recall": 0.9247311827956989,
+        "f1-score": 0.9241446725317692,
+        "support": 93.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        24,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        14,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        27,
+        0
+      ],
+      [
+        7,
+        0,
+        0,
+        21
+      ]
+    ]
+  },
+  "test_by_source": {
+    "kaggle_sunflower": {
+      "count": 93,
+      "accuracy": 0.9247311827956989,
+      "macro_f1": 0.9324675324675324,
+      "classification_report": {
+        "downy_mildew": {
+          "precision": 0.7741935483870968,
+          "recall": 1.0,
+          "f1-score": 0.8727272727272727,
+          "support": 24.0
+        },
+        "gray_mold": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 14.0
+        },
+        "healthy": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 27.0
+        },
+        "leaf_scars": {
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1-score": 0.8571428571428571,
+          "support": 28.0
+        },
+        "accuracy": 0.9247311827956989,
+        "macro avg": {
+          "precision": 0.9435483870967742,
+          "recall": 0.9375,
+          "f1-score": 0.9324675324675324,
+          "support": 93.0
+        },
+        "weighted avg": {
+          "precision": 0.9417273673257024,
+          "recall": 0.9247311827956989,
+          "f1-score": 0.9241446725317692,
+          "support": 93.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          24,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          14,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          27,
+          0
+        ],
+        [
+          7,
+          0,
+          0,
+          21
+        ]
+      ]
+    }
+  },
+  "release_evidence": {
+    "downy_mildew": {
+      "support": 24,
+      "precision": 0.7742,
+      "recall": 1.0
+    },
+    "gray_mold": {
+      "support": 14,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "healthy": {
+      "support": 27,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "leaf_scars": {
+      "support": 28,
+      "precision": 1.0,
+      "recall": 0.75
+    }
+  },
+  "release_classes": [
+    "downy_mildew",
+    "healthy",
+    "leaf_scars"
+  ],
+  "predictions": [
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (110).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.9832032918930054,
+      "probabilities": {
+        "downy_mildew": 0.9832032918930054,
+        "gray_mold": 0.0002414371119812131,
+        "healthy": 0.0007692792569287121,
+        "leaf_scars": 0.015785984694957733
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (118).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.9977350234985352,
+      "probabilities": {
+        "downy_mildew": 0.9977350234985352,
+        "gray_mold": 4.496075416682288e-05,
+        "healthy": 7.533402595072403e-07,
+        "leaf_scars": 0.0022192723117768764
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (120).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.9467403292655945,
+      "probabilities": {
+        "downy_mildew": 0.9467403292655945,
+        "gray_mold": 0.0022380060981959105,
+        "healthy": 0.0005556294345296919,
+        "leaf_scars": 0.05046602338552475
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (20).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.8779175281524658,
+      "probabilities": {
+        "downy_mildew": 0.8779175281524658,
+        "gray_mold": 0.0006799789262004197,
+        "healthy": 0.08957163244485855,
+        "leaf_scars": 0.03183085843920708
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (21).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.9431441426277161,
+      "probabilities": {
+        "downy_mildew": 0.9431441426277161,
+        "gray_mold": 0.0007461997447535396,
+        "healthy": 0.03851084038615227,
+        "leaf_scars": 0.017598815262317657
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (25).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.9413145184516907,
+      "probabilities": {
+        "downy_mildew": 0.9413145184516907,
+        "gray_mold": 0.0002520462730899453,
+        "healthy": 0.00021746174024883658,
+        "leaf_scars": 0.058215945959091187
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (26).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.957310676574707,
+      "probabilities": {
+        "downy_mildew": 0.957310676574707,
+        "gray_mold": 0.0022582116071134806,
+        "healthy": 0.002060734434053302,
+        "leaf_scars": 0.038370344787836075
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (27).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.990059494972229,
+      "probabilities": {
+        "downy_mildew": 0.990059494972229,
+        "gray_mold": 0.001082796836271882,
+        "healthy": 3.736179860425182e-05,
+        "leaf_scars": 0.008820362389087677
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (3).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.9992006421089172,
+      "probabilities": {
+        "downy_mildew": 0.9992006421089172,
+        "gray_mold": 1.9768978745560162e-05,
+        "healthy": 0.0005321367643773556,
+        "leaf_scars": 0.0002475173387210816
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (36).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.9957518577575684,
+      "probabilities": {
+        "downy_mildew": 0.9957518577575684,
+        "gray_mold": 9.916199633153155e-05,
+        "healthy": 0.0005688448436558247,
+        "leaf_scars": 0.0035801520571112633
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (36).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.9957518577575684,
+      "probabilities": {
+        "downy_mildew": 0.9957518577575684,
+        "gray_mold": 9.916199633153155e-05,
+        "healthy": 0.0005688448436558247,
+        "leaf_scars": 0.0035801520571112633
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (39).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.9247093200683594,
+      "probabilities": {
+        "downy_mildew": 0.9247093200683594,
+        "gray_mold": 0.003718805266544223,
+        "healthy": 0.0026218965649604797,
+        "leaf_scars": 0.06894989311695099
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (4).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.9356117844581604,
+      "probabilities": {
+        "downy_mildew": 0.9356117844581604,
+        "gray_mold": 0.0018335228087380528,
+        "healthy": 0.02114727720618248,
+        "leaf_scars": 0.04140736907720566
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (43).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.9276286363601685,
+      "probabilities": {
+        "downy_mildew": 0.9276286363601685,
+        "gray_mold": 0.00296414690092206,
+        "healthy": 0.06349164992570877,
+        "leaf_scars": 0.005915571935474873
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (43).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.9276286363601685,
+      "probabilities": {
+        "downy_mildew": 0.9276286363601685,
+        "gray_mold": 0.00296414690092206,
+        "healthy": 0.06349164992570877,
+        "leaf_scars": 0.005915571935474873
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (57).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.5180987119674683,
+      "probabilities": {
+        "downy_mildew": 0.5180987119674683,
+        "gray_mold": 0.0008556878892704844,
+        "healthy": 0.45002734661102295,
+        "leaf_scars": 0.03101821057498455
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (6).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.9970914125442505,
+      "probabilities": {
+        "downy_mildew": 0.9970914125442505,
+        "gray_mold": 0.00014007730351295322,
+        "healthy": 4.71245548396837e-05,
+        "leaf_scars": 0.002721514320001006
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (64).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.9914152026176453,
+      "probabilities": {
+        "downy_mildew": 0.9914152026176453,
+        "gray_mold": 0.0010936870239675045,
+        "healthy": 0.0009814953664317727,
+        "leaf_scars": 0.006509580183774233
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (72).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.9931883811950684,
+      "probabilities": {
+        "downy_mildew": 0.9931883811950684,
+        "gray_mold": 0.00039918406400829554,
+        "healthy": 0.0025563158560544252,
+        "leaf_scars": 0.0038560552056878805
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (72).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.9931883811950684,
+      "probabilities": {
+        "downy_mildew": 0.9931883811950684,
+        "gray_mold": 0.00039918406400829554,
+        "healthy": 0.0025563158560544252,
+        "leaf_scars": 0.0038560552056878805
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (77).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.7843643426895142,
+      "probabilities": {
+        "downy_mildew": 0.7843643426895142,
+        "gray_mold": 0.002141204895451665,
+        "healthy": 0.03159905970096588,
+        "leaf_scars": 0.18189537525177002
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (97).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.7044426798820496,
+      "probabilities": {
+        "downy_mildew": 0.7044426798820496,
+        "gray_mold": 0.0013613254996016622,
+        "healthy": 6.403482984751463e-06,
+        "leaf_scars": 0.29418960213661194
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (97).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.7044426798820496,
+      "probabilities": {
+        "downy_mildew": 0.7044426798820496,
+        "gray_mold": 0.0013613254996016622,
+        "healthy": 6.403482984751463e-06,
+        "leaf_scars": 0.29418960213661194
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Downy mildew/downymildew.  (99).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "downy_mildew",
+      "predicted": "downy_mildew",
+      "confidence": 0.38808518648147583,
+      "probabilities": {
+        "downy_mildew": 0.38808518648147583,
+        "gray_mold": 0.23373651504516602,
+        "healthy": 0.00014594763342756778,
+        "leaf_scars": 0.3780323565006256
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (105).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9999685287475586,
+      "probabilities": {
+        "downy_mildew": 2.151403168682009e-05,
+        "gray_mold": 7.00809687259607e-06,
+        "healthy": 0.9999685287475586,
+        "leaf_scars": 2.9487705432984512e-06
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (111).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9983336329460144,
+      "probabilities": {
+        "downy_mildew": 0.0001931197475641966,
+        "gray_mold": 0.0004827745142392814,
+        "healthy": 0.9983336329460144,
+        "leaf_scars": 0.0009904869366437197
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (112).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9937692284584045,
+      "probabilities": {
+        "downy_mildew": 0.006060765124857426,
+        "gray_mold": 8.394868928007782e-06,
+        "healthy": 0.9937692284584045,
+        "leaf_scars": 0.00016155852063093334
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (122).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9873981475830078,
+      "probabilities": {
+        "downy_mildew": 0.0008667729562148452,
+        "gray_mold": 6.313491758191958e-05,
+        "healthy": 0.9873981475830078,
+        "leaf_scars": 0.01167196687310934
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (124).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9968728423118591,
+      "probabilities": {
+        "downy_mildew": 0.002807550597935915,
+        "gray_mold": 9.991054685087875e-05,
+        "healthy": 0.9968728423118591,
+        "leaf_scars": 0.00021969959198031574
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (124).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9968728423118591,
+      "probabilities": {
+        "downy_mildew": 0.002807550597935915,
+        "gray_mold": 9.991054685087875e-05,
+        "healthy": 0.9968728423118591,
+        "leaf_scars": 0.00021969959198031574
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (126).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.800533652305603,
+      "probabilities": {
+        "downy_mildew": 0.025546569377183914,
+        "gray_mold": 0.0013595897471532226,
+        "healthy": 0.800533652305603,
+        "leaf_scars": 0.17256022989749908
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (127).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9780584573745728,
+      "probabilities": {
+        "downy_mildew": 0.021528616547584534,
+        "gray_mold": 0.00040389009518548846,
+        "healthy": 0.9780584573745728,
+        "leaf_scars": 8.933857316151261e-06
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (14).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9828232526779175,
+      "probabilities": {
+        "downy_mildew": 0.016347607597708702,
+        "gray_mold": 0.0003403752634767443,
+        "healthy": 0.9828232526779175,
+        "leaf_scars": 0.0004887359100393951
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (18).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.8755495548248291,
+      "probabilities": {
+        "downy_mildew": 0.1242537572979927,
+        "gray_mold": 8.258899470092729e-06,
+        "healthy": 0.8755495548248291,
+        "leaf_scars": 0.00018840473785530776
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (32).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9985182881355286,
+      "probabilities": {
+        "downy_mildew": 0.0010128719732165337,
+        "gray_mold": 0.00043836154509335756,
+        "healthy": 0.9985182881355286,
+        "leaf_scars": 3.0504559617838822e-05
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (38).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.7165366411209106,
+      "probabilities": {
+        "downy_mildew": 0.2685359716415405,
+        "gray_mold": 0.00469411863014102,
+        "healthy": 0.7165366411209106,
+        "leaf_scars": 0.01023320946842432
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (4).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9558612704277039,
+      "probabilities": {
+        "downy_mildew": 0.037546418607234955,
+        "gray_mold": 0.002071153372526169,
+        "healthy": 0.9558612704277039,
+        "leaf_scars": 0.004521061200648546
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (40).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.7072446346282959,
+      "probabilities": {
+        "downy_mildew": 0.26774248480796814,
+        "gray_mold": 0.0196103285998106,
+        "healthy": 0.7072446346282959,
+        "leaf_scars": 0.005402475595474243
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (41).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9429185390472412,
+      "probabilities": {
+        "downy_mildew": 0.051956333220005035,
+        "gray_mold": 0.00352163496427238,
+        "healthy": 0.9429185390472412,
+        "leaf_scars": 0.0016034306026995182
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (46).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9997895359992981,
+      "probabilities": {
+        "downy_mildew": 0.0001169578026747331,
+        "gray_mold": 8.573936793254688e-05,
+        "healthy": 0.9997895359992981,
+        "leaf_scars": 7.734756763966288e-06
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (49).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9945129156112671,
+      "probabilities": {
+        "downy_mildew": 0.0022565647959709167,
+        "gray_mold": 0.0022925434168428183,
+        "healthy": 0.9945129156112671,
+        "leaf_scars": 0.0009380396804772317
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (53).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.8560406565666199,
+      "probabilities": {
+        "downy_mildew": 0.01078102458268404,
+        "gray_mold": 0.00118331762496382,
+        "healthy": 0.8560406565666199,
+        "leaf_scars": 0.13199496269226074
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (56).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9999077320098877,
+      "probabilities": {
+        "downy_mildew": 2.084208063024562e-05,
+        "gray_mold": 5.078014874015935e-05,
+        "healthy": 0.9999077320098877,
+        "leaf_scars": 2.06436470762128e-05
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (60).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9994280934333801,
+      "probabilities": {
+        "downy_mildew": 0.0004467155085876584,
+        "gray_mold": 1.18260131785064e-05,
+        "healthy": 0.9994280934333801,
+        "leaf_scars": 0.0001133401456172578
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (7).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9392341375350952,
+      "probabilities": {
+        "downy_mildew": 0.05859692767262459,
+        "gray_mold": 7.838790043024346e-05,
+        "healthy": 0.9392341375350952,
+        "leaf_scars": 0.0020906489808112383
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (71).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.7424236536026001,
+      "probabilities": {
+        "downy_mildew": 0.03829856216907501,
+        "gray_mold": 0.0008899330860003829,
+        "healthy": 0.7424236536026001,
+        "leaf_scars": 0.21838781237602234
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (72).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9697620868682861,
+      "probabilities": {
+        "downy_mildew": 0.0277223140001297,
+        "gray_mold": 0.0011289895046502352,
+        "healthy": 0.9697620868682861,
+        "leaf_scars": 0.0013865951914340258
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (74).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9996694326400757,
+      "probabilities": {
+        "downy_mildew": 3.740164538612589e-05,
+        "gray_mold": 0.00026347022503614426,
+        "healthy": 0.9996694326400757,
+        "leaf_scars": 2.964141640404705e-05
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (76).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.6174065470695496,
+      "probabilities": {
+        "downy_mildew": 0.35354647040367126,
+        "gray_mold": 0.005512787960469723,
+        "healthy": 0.6174065470695496,
+        "leaf_scars": 0.023534147068858147
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (83).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.9998776912689209,
+      "probabilities": {
+        "downy_mildew": 0.00010733690578490496,
+        "gray_mold": 8.381674888369162e-06,
+        "healthy": 0.9998776912689209,
+        "leaf_scars": 6.5884264586202335e-06
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Fresh Leaf/fresh. (92).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "healthy",
+      "predicted": "healthy",
+      "confidence": 0.6562553644180298,
+      "probabilities": {
+        "downy_mildew": 0.2647644579410553,
+        "gray_mold": 0.00269712065346539,
+        "healthy": 0.6562553644180298,
+        "leaf_scars": 0.0762830525636673
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Gray mold/grayMold. (14).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "gray_mold",
+      "predicted": "gray_mold",
+      "confidence": 0.9995079040527344,
+      "probabilities": {
+        "downy_mildew": 6.924721674295142e-05,
+        "gray_mold": 0.9995079040527344,
+        "healthy": 0.00021186353114899248,
+        "leaf_scars": 0.0002109828346874565
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Gray mold/grayMold. (21).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "gray_mold",
+      "predicted": "gray_mold",
+      "confidence": 0.9995406866073608,
+      "probabilities": {
+        "downy_mildew": 5.391057857195847e-05,
+        "gray_mold": 0.9995406866073608,
+        "healthy": 0.000214867148315534,
+        "leaf_scars": 0.00019059970509260893
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Gray mold/grayMold. (23).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "gray_mold",
+      "predicted": "gray_mold",
+      "confidence": 0.9997550845146179,
+      "probabilities": {
+        "downy_mildew": 2.4145549105014652e-05,
+        "gray_mold": 0.9997550845146179,
+        "healthy": 0.00017263280460610986,
+        "leaf_scars": 4.8036887164926156e-05
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Gray mold/grayMold. (24).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "gray_mold",
+      "predicted": "gray_mold",
+      "confidence": 0.9998636245727539,
+      "probabilities": {
+        "downy_mildew": 1.1085642654506955e-05,
+        "gray_mold": 0.9998636245727539,
+        "healthy": 0.00010245639714412391,
+        "leaf_scars": 2.280730041093193e-05
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Gray mold/grayMold. (26).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "gray_mold",
+      "predicted": "gray_mold",
+      "confidence": 0.999845027923584,
+      "probabilities": {
+        "downy_mildew": 7.272500806720927e-05,
+        "gray_mold": 0.999845027923584,
+        "healthy": 7.765208209775665e-08,
+        "leaf_scars": 8.210393571062014e-05
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Gray mold/grayMold. (33).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "gray_mold",
+      "predicted": "gray_mold",
+      "confidence": 0.9999704360961914,
+      "probabilities": {
+        "downy_mildew": 2.529818630137015e-05,
+        "gray_mold": 0.9999704360961914,
+        "healthy": 1.4452137975240475e-06,
+        "leaf_scars": 2.9140326205379097e-06
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Gray mold/grayMold. (33).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "gray_mold",
+      "predicted": "gray_mold",
+      "confidence": 0.9999704360961914,
+      "probabilities": {
+        "downy_mildew": 2.529818630137015e-05,
+        "gray_mold": 0.9999704360961914,
+        "healthy": 1.4452137975240475e-06,
+        "leaf_scars": 2.9140326205379097e-06
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Gray mold/grayMold. (36).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "gray_mold",
+      "predicted": "gray_mold",
+      "confidence": 0.9949583411216736,
+      "probabilities": {
+        "downy_mildew": 0.0027881453279405832,
+        "gray_mold": 0.9949583411216736,
+        "healthy": 0.0008350879652425647,
+        "leaf_scars": 0.0014184408355504274
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Gray mold/grayMold. (43).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "gray_mold",
+      "predicted": "gray_mold",
+      "confidence": 0.9996886253356934,
+      "probabilities": {
+        "downy_mildew": 0.0002944576262962073,
+        "gray_mold": 0.9996886253356934,
+        "healthy": 5.983401479170425e-06,
+        "leaf_scars": 1.0947054761345498e-05
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Gray mold/grayMold. (57).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "gray_mold",
+      "predicted": "gray_mold",
+      "confidence": 0.9972921013832092,
+      "probabilities": {
+        "downy_mildew": 0.0006238471833057702,
+        "gray_mold": 0.9972921013832092,
+        "healthy": 0.0008574011153541505,
+        "leaf_scars": 0.0012266446137800813
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Gray mold/grayMold. (7).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "gray_mold",
+      "predicted": "gray_mold",
+      "confidence": 0.6804232597351074,
+      "probabilities": {
+        "downy_mildew": 0.002956063486635685,
+        "gray_mold": 0.6804232597351074,
+        "healthy": 0.0007901319768279791,
+        "leaf_scars": 0.3158305585384369
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Gray mold/grayMold. (71).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "gray_mold",
+      "predicted": "gray_mold",
+      "confidence": 0.9999657869338989,
+      "probabilities": {
+        "downy_mildew": 2.5354418539791368e-05,
+        "gray_mold": 0.9999657869338989,
+        "healthy": 6.660832241323078e-07,
+        "leaf_scars": 8.048082236200571e-06
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Gray mold/grayMold. (72).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "gray_mold",
+      "predicted": "gray_mold",
+      "confidence": 0.9841750264167786,
+      "probabilities": {
+        "downy_mildew": 0.0013941120123490691,
+        "gray_mold": 0.9841750264167786,
+        "healthy": 0.00036214455030858517,
+        "leaf_scars": 0.014068705029785633
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Gray mold/grayMold. (8).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "gray_mold",
+      "predicted": "gray_mold",
+      "confidence": 0.9997419714927673,
+      "probabilities": {
+        "downy_mildew": 2.8920227123307995e-05,
+        "gray_mold": 0.9997419714927673,
+        "healthy": 7.474251469830051e-05,
+        "leaf_scars": 0.0001543223625048995
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (103).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.6179673671722412,
+      "probabilities": {
+        "downy_mildew": 0.3817041516304016,
+        "gray_mold": 0.00017596461111679673,
+        "healthy": 0.00015250341675709933,
+        "leaf_scars": 0.6179673671722412
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (105).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.9604851007461548,
+      "probabilities": {
+        "downy_mildew": 0.03899713233113289,
+        "gray_mold": 0.0005026923608966172,
+        "healthy": 1.5116509530344047e-05,
+        "leaf_scars": 0.9604851007461548
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (106).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.9298520088195801,
+      "probabilities": {
+        "downy_mildew": 0.07006610184907913,
+        "gray_mold": 7.531801384175196e-05,
+        "healthy": 6.539440164488042e-06,
+        "leaf_scars": 0.9298520088195801
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (107).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.8864661455154419,
+      "probabilities": {
+        "downy_mildew": 0.1127171441912651,
+        "gray_mold": 0.0008093000506050885,
+        "healthy": 7.363109943980817e-06,
+        "leaf_scars": 0.8864661455154419
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (111).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "leaf_scars",
+      "predicted": "downy_mildew",
+      "confidence": 0.8301253318786621,
+      "probabilities": {
+        "downy_mildew": 0.8301253318786621,
+        "gray_mold": 0.0011288856621831656,
+        "healthy": 0.002604981418699026,
+        "leaf_scars": 0.16614079475402832
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (114).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "leaf_scars",
+      "predicted": "downy_mildew",
+      "confidence": 0.8077048659324646,
+      "probabilities": {
+        "downy_mildew": 0.8077048659324646,
+        "gray_mold": 0.00023118243552744389,
+        "healthy": 0.0009383130818605423,
+        "leaf_scars": 0.19112567603588104
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (126).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.973823606967926,
+      "probabilities": {
+        "downy_mildew": 0.0012834913795813918,
+        "gray_mold": 0.02488701604306698,
+        "healthy": 5.9155486269446556e-06,
+        "leaf_scars": 0.973823606967926
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (127).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.9856076240539551,
+      "probabilities": {
+        "downy_mildew": 0.0001769136288203299,
+        "gray_mold": 0.014209508895874023,
+        "healthy": 5.998349934088765e-06,
+        "leaf_scars": 0.9856076240539551
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (129).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "leaf_scars",
+      "predicted": "downy_mildew",
+      "confidence": 0.9461774826049805,
+      "probabilities": {
+        "downy_mildew": 0.9461774826049805,
+        "gray_mold": 9.688702266430482e-05,
+        "healthy": 1.9878458260791376e-05,
+        "leaf_scars": 0.05370572581887245
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (13).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "leaf_scars",
+      "predicted": "downy_mildew",
+      "confidence": 0.9885181188583374,
+      "probabilities": {
+        "downy_mildew": 0.9885181188583374,
+        "gray_mold": 0.00011861514212796465,
+        "healthy": 0.0029384433291852474,
+        "leaf_scars": 0.008424720726907253
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (130).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.9709323644638062,
+      "probabilities": {
+        "downy_mildew": 0.02803609147667885,
+        "gray_mold": 0.0010275827953591943,
+        "healthy": 3.967200882470934e-06,
+        "leaf_scars": 0.9709323644638062
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (134).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.6316989660263062,
+      "probabilities": {
+        "downy_mildew": 0.36374014616012573,
+        "gray_mold": 0.0045283278450369835,
+        "healthy": 3.257772186771035e-05,
+        "leaf_scars": 0.6316989660263062
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (139).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "leaf_scars",
+      "predicted": "downy_mildew",
+      "confidence": 0.669723629951477,
+      "probabilities": {
+        "downy_mildew": 0.669723629951477,
+        "gray_mold": 0.00038449582643806934,
+        "healthy": 2.3128477550926618e-05,
+        "leaf_scars": 0.32986870408058167
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (22).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.9986217021942139,
+      "probabilities": {
+        "downy_mildew": 0.0010031249839812517,
+        "gray_mold": 0.00037277225055731833,
+        "healthy": 2.3936020170367556e-06,
+        "leaf_scars": 0.9986217021942139
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (24).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.9919396042823792,
+      "probabilities": {
+        "downy_mildew": 0.004618238192051649,
+        "gray_mold": 0.0034243622794747353,
+        "healthy": 1.776927092578262e-05,
+        "leaf_scars": 0.9919396042823792
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (27).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.9707557559013367,
+      "probabilities": {
+        "downy_mildew": 0.002182604046538472,
+        "gray_mold": 0.026946162804961205,
+        "healthy": 0.00011554115189937875,
+        "leaf_scars": 0.9707557559013367
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (34).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.9998779296875,
+      "probabilities": {
+        "downy_mildew": 9.252862219000235e-05,
+        "gray_mold": 2.9432343580992892e-05,
+        "healthy": 9.21999259162476e-08,
+        "leaf_scars": 0.9998779296875
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (37).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.9997206330299377,
+      "probabilities": {
+        "downy_mildew": 9.229024726664647e-05,
+        "gray_mold": 0.00018693311722017825,
+        "healthy": 1.2503200252922397e-07,
+        "leaf_scars": 0.9997206330299377
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (40).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "leaf_scars",
+      "predicted": "downy_mildew",
+      "confidence": 0.9000569581985474,
+      "probabilities": {
+        "downy_mildew": 0.9000569581985474,
+        "gray_mold": 0.002070026006549597,
+        "healthy": 0.00010833072883542627,
+        "leaf_scars": 0.09776461869478226
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (44).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.9393274188041687,
+      "probabilities": {
+        "downy_mildew": 0.05903517082333565,
+        "gray_mold": 0.0003440001455601305,
+        "healthy": 0.0012934246333315969,
+        "leaf_scars": 0.9393274188041687
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (46).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "leaf_scars",
+      "predicted": "downy_mildew",
+      "confidence": 0.9391493797302246,
+      "probabilities": {
+        "downy_mildew": 0.9391493797302246,
+        "gray_mold": 0.0015637284377589822,
+        "healthy": 0.0010374007979407907,
+        "leaf_scars": 0.058249522000551224
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (59).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.6643469333648682,
+      "probabilities": {
+        "downy_mildew": 0.33510464429855347,
+        "gray_mold": 0.00039188264054246247,
+        "healthy": 0.00015657892799936235,
+        "leaf_scars": 0.6643469333648682
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (65).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.9594904184341431,
+      "probabilities": {
+        "downy_mildew": 0.038620658218860626,
+        "gray_mold": 0.0018420491833239794,
+        "healthy": 4.6914228732930496e-05,
+        "leaf_scars": 0.9594904184341431
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (75).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.7681348323822021,
+      "probabilities": {
+        "downy_mildew": 0.23071077466011047,
+        "gray_mold": 0.001113267382606864,
+        "healthy": 4.1057963244384155e-05,
+        "leaf_scars": 0.7681348323822021
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (78).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.9907256960868835,
+      "probabilities": {
+        "downy_mildew": 0.009091448038816452,
+        "gray_mold": 9.772065095603466e-05,
+        "healthy": 8.51308650453575e-05,
+        "leaf_scars": 0.9907256960868835
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (93).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.9937487840652466,
+      "probabilities": {
+        "downy_mildew": 0.005534693598747253,
+        "gray_mold": 0.0007113663014024496,
+        "healthy": 5.215015335124917e-06,
+        "leaf_scars": 0.9937487840652466
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (94).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.803883969783783,
+      "probabilities": {
+        "downy_mildew": 0.19602936506271362,
+        "gray_mold": 8.604960021330044e-05,
+        "healthy": 6.056996539882675e-07,
+        "leaf_scars": 0.803883969783783
+      }
+    },
+    {
+      "path": ".cache/datasets/sunflower/images/Original Image/Leaf scars/scars (95).jpg",
+      "source": "kaggle_sunflower",
+      "actual": "leaf_scars",
+      "predicted": "leaf_scars",
+      "confidence": 0.9920294284820557,
+      "probabilities": {
+        "downy_mildew": 0.005923745688050985,
+        "gray_mold": 0.0020454041659832,
+        "healthy": 1.349566218777909e-06,
+        "leaf_scars": 0.9920294284820557
+      }
+    }
+  ]
+}

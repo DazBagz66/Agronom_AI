@@ -1,0 +1,2212 @@
+{
+  "counts": {
+    "train": {
+      "common_smut": 111,
+      "healthy_ear": 19
+    },
+    "validation": {
+      "common_smut": 27,
+      "healthy_ear": 14
+    },
+    "test": {
+      "common_smut": 42,
+      "healthy_ear": 4
+    }
+  },
+  "models": {
+    "previous_ear_v1": {
+      "count": 46,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "classification_report": {
+        "common_smut": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 42.0
+        },
+        "healthy_ear": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 4.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 46.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 46.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          42,
+          0
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "health": {},
+      "by_source": {
+        "inat_maize": {
+          "count": 4,
+          "accuracy": 1.0,
+          "macro_f1": 0.5,
+          "classification_report": {
+            "common_smut": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "healthy_ear": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 4.0
+            },
+            "accuracy": 1.0,
+            "macro avg": {
+              "precision": 0.5,
+              "recall": 0.5,
+              "f1-score": 0.5,
+              "support": 4.0
+            },
+            "weighted avg": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 4.0
+            }
+          },
+          "confusion_matrix": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "health": {}
+        },
+        "inat_smut": {
+          "count": 27,
+          "accuracy": 1.0,
+          "macro_f1": 0.5,
+          "classification_report": {
+            "common_smut": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 27.0
+            },
+            "healthy_ear": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "accuracy": 1.0,
+            "macro avg": {
+              "precision": 0.5,
+              "recall": 0.5,
+              "f1-score": 0.5,
+              "support": 27.0
+            },
+            "weighted avg": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 27.0
+            }
+          },
+          "confusion_matrix": [
+            [
+              27,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "health": {}
+        },
+        "inat_smut_recent": {
+          "count": 15,
+          "accuracy": 1.0,
+          "macro_f1": 0.5,
+          "classification_report": {
+            "common_smut": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 15.0
+            },
+            "healthy_ear": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "accuracy": 1.0,
+            "macro avg": {
+              "precision": 0.5,
+              "recall": 0.5,
+              "f1-score": 0.5,
+              "support": 15.0
+            },
+            "weighted avg": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 15.0
+            }
+          },
+          "confusion_matrix": [
+            [
+              15,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "health": {}
+        }
+      },
+      "predictions": [
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/111635121.jpg",
+          "sha256": "f2772a7005fff98dc474f9fade240d5826b2acfca5c732cf9ef8f9611207acd0",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9671421647071838,
+          "probabilities": {
+            "common_smut": 0.9671421647071838,
+            "healthy_ear": 0.03285789117217064
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/149182326.jpg",
+          "sha256": "94dcfd7fb1b4d55e7bda33ad18341809082a337ce1883ded9d736ed2eafb6655",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.8663927912712097,
+          "probabilities": {
+            "common_smut": 0.8663927912712097,
+            "healthy_ear": 0.13360722362995148
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/149182340.jpg",
+          "sha256": "97f6ea2916322c0a0bdf6d425f95601ecf6af648d4206feb49aa71af8c8631de",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9754753708839417,
+          "probabilities": {
+            "common_smut": 0.9754753708839417,
+            "healthy_ear": 0.0245246309787035
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/155407645.jpg",
+          "sha256": "6e9e0728fb6a1e31118e903a3e231bdb3e041bb99969ce7f8fb31921d6feb692",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9997349381446838,
+          "probabilities": {
+            "common_smut": 0.9997349381446838,
+            "healthy_ear": 0.0002650952956173569
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/159588073.jpg",
+          "sha256": "a89db8c473465760d387c09d5fbc3b359c9dbbfa67697925a4f603d421bc6447",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9952384233474731,
+          "probabilities": {
+            "common_smut": 0.9952384233474731,
+            "healthy_ear": 0.004761586431413889
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/163257485.jpg",
+          "sha256": "a98ac18e7d29e5dc1dc7f1422eb5547099f176cb860b3c601b16147c75212229",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9813374280929565,
+          "probabilities": {
+            "common_smut": 0.9813374280929565,
+            "healthy_ear": 0.01866249553859234
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/203955494.jpg",
+          "sha256": "da76eccb10c5026cc734bb24bb416ef9119b89b5df1da01384f462c29b653f91",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9311334490776062,
+          "probabilities": {
+            "common_smut": 0.9311334490776062,
+            "healthy_ear": 0.06886652857065201
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/217697224.jpg",
+          "sha256": "a937cd023626d65beeb2c13cbc9f126ab71c884b8ac15d60a2203a80780c02aa",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9829163551330566,
+          "probabilities": {
+            "common_smut": 0.9829163551330566,
+            "healthy_ear": 0.017083659768104553
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/220771949.jpg",
+          "sha256": "02bb02ce59e01ff6aaddfb55aeb26f60599a84db0dc6cc48252d7cbdf3f1dd30",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9766322374343872,
+          "probabilities": {
+            "common_smut": 0.9766322374343872,
+            "healthy_ear": 0.023367755115032196
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/222396753.jpg",
+          "sha256": "dbfd0766f0861bda71a353f57e9f825f53957586a26513bbb8f95946efa6c1e6",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9994250535964966,
+          "probabilities": {
+            "common_smut": 0.9994250535964966,
+            "healthy_ear": 0.0005750245763920248
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/224216258.jpg",
+          "sha256": "2aabfde24cf2a42ab23e4f9bf38eed045b185bce379a89f2953482e4b905060d",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.981656014919281,
+          "probabilities": {
+            "common_smut": 0.981656014919281,
+            "healthy_ear": 0.018343962728977203
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/225879895.jpg",
+          "sha256": "5016c3deedc6bbfb216ed23edc473a93c39e2c1db1caf4476c41ac901da31a8f",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9978209733963013,
+          "probabilities": {
+            "common_smut": 0.9978209733963013,
+            "healthy_ear": 0.002179037779569626
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/227719722.jpg",
+          "sha256": "67dc3ea012089326b70fb7ac520135e12ec952d47dc88748f607e85972fc9da1",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9792247414588928,
+          "probabilities": {
+            "common_smut": 0.9792247414588928,
+            "healthy_ear": 0.020775262266397476
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/23275750.jpg",
+          "sha256": "4e7c567f05267f29b8670388a15b6a29626ebb7196b4fa47e5d0960b048949e9",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.99649578332901,
+          "probabilities": {
+            "common_smut": 0.99649578332901,
+            "healthy_ear": 0.0035042089875787497
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/236035869.jpg",
+          "sha256": "77b6b9e022ecaabf6797b613c60eaf812d6f1b37b28cb196463b26b278555b1b",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9689792990684509,
+          "probabilities": {
+            "common_smut": 0.9689792990684509,
+            "healthy_ear": 0.03102065995335579
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/259140877.jpg",
+          "sha256": "b34fb949158c6822f604bb790e45e41ca9f2e526e906cfd399200101054792fc",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9296656250953674,
+          "probabilities": {
+            "common_smut": 0.9296656250953674,
+            "healthy_ear": 0.07033435255289078
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/275319730.jpg",
+          "sha256": "78058e6c9a28e7f539b70288cad4d5ac7c9b22dfefde4e3ffdd090524ce8de0a",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9843097925186157,
+          "probabilities": {
+            "common_smut": 0.9843097925186157,
+            "healthy_ear": 0.015690181404352188
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/311729162.jpg",
+          "sha256": "6d46f922f4f8701a2173d54b93129c0b724d5cba668cbdb7ee2830c265b574c5",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9071530699729919,
+          "probabilities": {
+            "common_smut": 0.9071530699729919,
+            "healthy_ear": 0.09284689277410507
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/320812623.jpg",
+          "sha256": "7aa19be8ea894cf06987bb8ede052431eee19b877a5886258d26b8ea9f784ff3",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.943071186542511,
+          "probabilities": {
+            "common_smut": 0.943071186542511,
+            "healthy_ear": 0.05692881718277931
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/321590795.jpg",
+          "sha256": "a2e821057532791c76162d3024507470baf3df900c8a9327ed99592bf942d3dc",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9927133917808533,
+          "probabilities": {
+            "common_smut": 0.9927133917808533,
+            "healthy_ear": 0.007286621257662773
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/415021440.jpg",
+          "sha256": "f110ebbdfed2088a53c4ba353c1824f5d40566be2487851290ff947a26323e3d",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9897740483283997,
+          "probabilities": {
+            "common_smut": 0.9897740483283997,
+            "healthy_ear": 0.010225932113826275
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/45141127.jpg",
+          "sha256": "daadf39cd161be514e1ce04de50cb9b7659ca825137148453151d74aa70a688e",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.8262596130371094,
+          "probabilities": {
+            "common_smut": 0.8262596130371094,
+            "healthy_ear": 0.17374037206172943
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/48281816.jpg",
+          "sha256": "7760d7ee705b49d383f24276d451234946abe8280e899e1fd70f56f1431fd475",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9607784748077393,
+          "probabilities": {
+            "common_smut": 0.9607784748077393,
+            "healthy_ear": 0.03922155126929283
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/51507980.jpg",
+          "sha256": "3511e5aa665eff436dcc5c89dca0ca3ede81e1fac96576267e1e293a0c088d53",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.990145206451416,
+          "probabilities": {
+            "common_smut": 0.990145206451416,
+            "healthy_ear": 0.009854857809841633
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/90465048.jpg",
+          "sha256": "b5caeefd1d2be695ee9b578b2378787d6982bc299f8160656d7275d0f7aa5682",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.7590057849884033,
+          "probabilities": {
+            "common_smut": 0.7590057849884033,
+            "healthy_ear": 0.24099420011043549
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/91470793.jpg",
+          "sha256": "cdf556357051967d70b123b3034e74aa36bec8a8b8226fa263745acd7877df6f",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9939992427825928,
+          "probabilities": {
+            "common_smut": 0.9939992427825928,
+            "healthy_ear": 0.006000727880746126
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/93292110.jpg",
+          "sha256": "253066d7999a5c1c1f55a13162ac35f583ea95cdd762e07b2e0cda541f1e02d0",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9838308095932007,
+          "probabilities": {
+            "common_smut": 0.9838308095932007,
+            "healthy_ear": 0.016169220209121704
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_maize/images/39256640.jpg",
+          "sha256": "783026782d490260027f9ef73f701c01bbf6cbbceadb21000507d987fde14d9e",
+          "source": "inat_maize",
+          "actual": "healthy_ear",
+          "predicted": "healthy_ear",
+          "confidence": 0.7500124573707581,
+          "probabilities": {
+            "common_smut": 0.24998752772808075,
+            "healthy_ear": 0.7500124573707581
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_maize/images/57590544.jpg",
+          "sha256": "11c87e066bd8021602906586c1ce4eb58485a4577c27e5003ba5c0149edd0536",
+          "source": "inat_maize",
+          "actual": "healthy_ear",
+          "predicted": "healthy_ear",
+          "confidence": 0.955430269241333,
+          "probabilities": {
+            "common_smut": 0.04456976056098938,
+            "healthy_ear": 0.955430269241333
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_maize/images/82818408.jpg",
+          "sha256": "59ffaccd911590679b2b18d67e5402a59e9d2eaa51eb8f29eef738cf6b62a584",
+          "source": "inat_maize",
+          "actual": "healthy_ear",
+          "predicted": "healthy_ear",
+          "confidence": 0.8468292951583862,
+          "probabilities": {
+            "common_smut": 0.15317068994045258,
+            "healthy_ear": 0.8468292951583862
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_maize/images/99848829.jpg",
+          "sha256": "fe89c23d1ef9688badd69751dc1b9e9fae49dbfc247e6390aebb2278db2cfe46",
+          "source": "inat_maize",
+          "actual": "healthy_ear",
+          "predicted": "healthy_ear",
+          "confidence": 0.8561286330223083,
+          "probabilities": {
+            "common_smut": 0.14387130737304688,
+            "healthy_ear": 0.8561286330223083
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/602107326.jpg",
+          "sha256": "029ed215dc4deac465176b2403cc0037a8224df5c9e129b4b4c48b2b21f124d6",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9928141236305237,
+          "probabilities": {
+            "common_smut": 0.9928141236305237,
+            "healthy_ear": 0.007185901049524546
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/711612686.jpg",
+          "sha256": "6efd0cf265b5e825c8aa58926db31e33c3c3646535c1f3d8c88acce6b885e2cc",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9945183396339417,
+          "probabilities": {
+            "common_smut": 0.9945183396339417,
+            "healthy_ear": 0.005481639876961708
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/711966581.jpg",
+          "sha256": "081f7f7c2e14568bf8192e1952dbbb881f497735d74b7e62856cd44e44248a86",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9902440905570984,
+          "probabilities": {
+            "common_smut": 0.9902440905570984,
+            "healthy_ear": 0.009755976498126984
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/714303594.jpg",
+          "sha256": "872c810a4cabbd88ac64a6b436ac64613523f1be9a6f4f810176591d85071500",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.972017228603363,
+          "probabilities": {
+            "common_smut": 0.972017228603363,
+            "healthy_ear": 0.027982737869024277
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/718416172.jpg",
+          "sha256": "c7041efaa8fa515551ab88830a4ca4c1a06957158c7a6b638e872430df108401",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9604827165603638,
+          "probabilities": {
+            "common_smut": 0.9604827165603638,
+            "healthy_ear": 0.03951725363731384
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/718418434.jpg",
+          "sha256": "ad9b54eaf54f3fbc6dbb11d2e3503f85b866d257223754174576c76dd1b5679c",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9931556582450867,
+          "probabilities": {
+            "common_smut": 0.9931556582450867,
+            "healthy_ear": 0.006844289600849152
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/718418463.jpg",
+          "sha256": "24278e41c4ce23233e9ef7f5fb17398b3f6470c71e765ca8a1869b628a2080dc",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9950616955757141,
+          "probabilities": {
+            "common_smut": 0.9950616955757141,
+            "healthy_ear": 0.0049382587894797325
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/721236483.jpg",
+          "sha256": "bb02d2ccb256da051cbdbb552100cdb6e94456059ebe0cb218d837c267129a49",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9948831796646118,
+          "probabilities": {
+            "common_smut": 0.9948831796646118,
+            "healthy_ear": 0.005116864573210478
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/724535780.jpg",
+          "sha256": "afde8ee1108c410382b39dd5271a63e76d84f92ae080d319aa0f27eb77600662",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9837020635604858,
+          "probabilities": {
+            "common_smut": 0.9837020635604858,
+            "healthy_ear": 0.016297919675707817
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/724580857.jpg",
+          "sha256": "291c19eda506b6381827915e88ebeef1dcb86eac2a05de5b70e3afe5c328f550",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9652140736579895,
+          "probabilities": {
+            "common_smut": 0.9652140736579895,
+            "healthy_ear": 0.034785933792591095
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/726584471.jpg",
+          "sha256": "c052d4cdcd7a9517df0241a03be2c6a3eaed25d7a02e68fcc6ec040f02a38342",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9842825531959534,
+          "probabilities": {
+            "common_smut": 0.9842825531959534,
+            "healthy_ear": 0.01571747474372387
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/726869291.jpg",
+          "sha256": "d9cb471d2d1dcb56a71367b88ae4d64daaa6e28ec74755a3c29194e3a65053c4",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9475088119506836,
+          "probabilities": {
+            "common_smut": 0.9475088119506836,
+            "healthy_ear": 0.05249117687344551
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/727313216.jpg",
+          "sha256": "7432bcff00b274cd772363c5a22b40805c38bba4c073453dd18066ba8f6fddc1",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9591992497444153,
+          "probabilities": {
+            "common_smut": 0.9591992497444153,
+            "healthy_ear": 0.040800776332616806
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/737856470.jpg",
+          "sha256": "90d87e7dccdadfae452d38887bc3163d2a72a9e68359edf4f7eb0f63614ff405",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9575818777084351,
+          "probabilities": {
+            "common_smut": 0.9575818777084351,
+            "healthy_ear": 0.04241805896162987
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/738187058.jpg",
+          "sha256": "dffd5ed64ffb351efa192de8244c6b6bf7374a7da9f6cf161ba04a5ac862ef91",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9843536615371704,
+          "probabilities": {
+            "common_smut": 0.9843536615371704,
+            "healthy_ear": 0.015646278858184814
+          }
+        }
+      ]
+    },
+    "mobilenet_v3_large": {
+      "count": 46,
+      "accuracy": 0.9565217391304348,
+      "macro_f1": 0.8878048780487805,
+      "classification_report": {
+        "common_smut": {
+          "precision": 1.0,
+          "recall": 0.9523809523809523,
+          "f1-score": 0.975609756097561,
+          "support": 42.0
+        },
+        "healthy_ear": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1-score": 0.8,
+          "support": 4.0
+        },
+        "accuracy": 0.9565217391304348,
+        "macro avg": {
+          "precision": 0.8333333333333333,
+          "recall": 0.9761904761904762,
+          "f1-score": 0.8878048780487805,
+          "support": 46.0
+        },
+        "weighted avg": {
+          "precision": 0.9710144927536232,
+          "recall": 0.9565217391304348,
+          "f1-score": 0.9603393425238601,
+          "support": 46.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          40,
+          2
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "health": {},
+      "by_source": {
+        "inat_maize": {
+          "count": 4,
+          "accuracy": 1.0,
+          "macro_f1": 0.5,
+          "classification_report": {
+            "common_smut": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "healthy_ear": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 4.0
+            },
+            "accuracy": 1.0,
+            "macro avg": {
+              "precision": 0.5,
+              "recall": 0.5,
+              "f1-score": 0.5,
+              "support": 4.0
+            },
+            "weighted avg": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 4.0
+            }
+          },
+          "confusion_matrix": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "health": {}
+        },
+        "inat_smut": {
+          "count": 27,
+          "accuracy": 1.0,
+          "macro_f1": 0.5,
+          "classification_report": {
+            "common_smut": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 27.0
+            },
+            "healthy_ear": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "accuracy": 1.0,
+            "macro avg": {
+              "precision": 0.5,
+              "recall": 0.5,
+              "f1-score": 0.5,
+              "support": 27.0
+            },
+            "weighted avg": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 27.0
+            }
+          },
+          "confusion_matrix": [
+            [
+              27,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "health": {}
+        },
+        "inat_smut_recent": {
+          "count": 15,
+          "accuracy": 0.8666666666666667,
+          "macro_f1": 0.4642857142857143,
+          "classification_report": {
+            "common_smut": {
+              "precision": 1.0,
+              "recall": 0.8666666666666667,
+              "f1-score": 0.9285714285714286,
+              "support": 15.0
+            },
+            "healthy_ear": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "accuracy": 0.8666666666666667,
+            "macro avg": {
+              "precision": 0.5,
+              "recall": 0.43333333333333335,
+              "f1-score": 0.4642857142857143,
+              "support": 15.0
+            },
+            "weighted avg": {
+              "precision": 1.0,
+              "recall": 0.8666666666666667,
+              "f1-score": 0.9285714285714286,
+              "support": 15.0
+            }
+          },
+          "confusion_matrix": [
+            [
+              13,
+              2
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "health": {}
+        }
+      },
+      "predictions": [
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/111635121.jpg",
+          "sha256": "f2772a7005fff98dc474f9fade240d5826b2acfca5c732cf9ef8f9611207acd0",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9475775957107544,
+          "probabilities": {
+            "common_smut": 0.9475775957107544,
+            "healthy_ear": 0.05242238566279411
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/149182326.jpg",
+          "sha256": "94dcfd7fb1b4d55e7bda33ad18341809082a337ce1883ded9d736ed2eafb6655",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9909121990203857,
+          "probabilities": {
+            "common_smut": 0.9909121990203857,
+            "healthy_ear": 0.00908774696290493
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/149182340.jpg",
+          "sha256": "97f6ea2916322c0a0bdf6d425f95601ecf6af648d4206feb49aa71af8c8631de",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9213320016860962,
+          "probabilities": {
+            "common_smut": 0.9213320016860962,
+            "healthy_ear": 0.07866796851158142
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/155407645.jpg",
+          "sha256": "6e9e0728fb6a1e31118e903a3e231bdb3e041bb99969ce7f8fb31921d6feb692",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9961360096931458,
+          "probabilities": {
+            "common_smut": 0.9961360096931458,
+            "healthy_ear": 0.0038639174308627844
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/159588073.jpg",
+          "sha256": "a89db8c473465760d387c09d5fbc3b359c9dbbfa67697925a4f603d421bc6447",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.996482253074646,
+          "probabilities": {
+            "common_smut": 0.996482253074646,
+            "healthy_ear": 0.003517703851684928
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/163257485.jpg",
+          "sha256": "a98ac18e7d29e5dc1dc7f1422eb5547099f176cb860b3c601b16147c75212229",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9836536049842834,
+          "probabilities": {
+            "common_smut": 0.9836536049842834,
+            "healthy_ear": 0.016346413642168045
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/203955494.jpg",
+          "sha256": "da76eccb10c5026cc734bb24bb416ef9119b89b5df1da01384f462c29b653f91",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9481164216995239,
+          "probabilities": {
+            "common_smut": 0.9481164216995239,
+            "healthy_ear": 0.05188354477286339
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/217697224.jpg",
+          "sha256": "a937cd023626d65beeb2c13cbc9f126ab71c884b8ac15d60a2203a80780c02aa",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.7459004521369934,
+          "probabilities": {
+            "common_smut": 0.7459004521369934,
+            "healthy_ear": 0.25409960746765137
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/220771949.jpg",
+          "sha256": "02bb02ce59e01ff6aaddfb55aeb26f60599a84db0dc6cc48252d7cbdf3f1dd30",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9369775056838989,
+          "probabilities": {
+            "common_smut": 0.9369775056838989,
+            "healthy_ear": 0.06302251666784286
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/222396753.jpg",
+          "sha256": "dbfd0766f0861bda71a353f57e9f825f53957586a26513bbb8f95946efa6c1e6",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.7833799719810486,
+          "probabilities": {
+            "common_smut": 0.7833799719810486,
+            "healthy_ear": 0.21661999821662903
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/224216258.jpg",
+          "sha256": "2aabfde24cf2a42ab23e4f9bf38eed045b185bce379a89f2953482e4b905060d",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.994797945022583,
+          "probabilities": {
+            "common_smut": 0.994797945022583,
+            "healthy_ear": 0.005202001892030239
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/225879895.jpg",
+          "sha256": "5016c3deedc6bbfb216ed23edc473a93c39e2c1db1caf4476c41ac901da31a8f",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9992455244064331,
+          "probabilities": {
+            "common_smut": 0.9992455244064331,
+            "healthy_ear": 0.0007544634863734245
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/227719722.jpg",
+          "sha256": "67dc3ea012089326b70fb7ac520135e12ec952d47dc88748f607e85972fc9da1",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9959139227867126,
+          "probabilities": {
+            "common_smut": 0.9959139227867126,
+            "healthy_ear": 0.0040860846638679504
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/23275750.jpg",
+          "sha256": "4e7c567f05267f29b8670388a15b6a29626ebb7196b4fa47e5d0960b048949e9",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9983060359954834,
+          "probabilities": {
+            "common_smut": 0.9983060359954834,
+            "healthy_ear": 0.0016939127817749977
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/236035869.jpg",
+          "sha256": "77b6b9e022ecaabf6797b613c60eaf812d6f1b37b28cb196463b26b278555b1b",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9802320003509521,
+          "probabilities": {
+            "common_smut": 0.9802320003509521,
+            "healthy_ear": 0.01976795680820942
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/259140877.jpg",
+          "sha256": "b34fb949158c6822f604bb790e45e41ca9f2e526e906cfd399200101054792fc",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9474074244499207,
+          "probabilities": {
+            "common_smut": 0.9474074244499207,
+            "healthy_ear": 0.05259253829717636
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/275319730.jpg",
+          "sha256": "78058e6c9a28e7f539b70288cad4d5ac7c9b22dfefde4e3ffdd090524ce8de0a",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.998244047164917,
+          "probabilities": {
+            "common_smut": 0.998244047164917,
+            "healthy_ear": 0.0017560021951794624
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/311729162.jpg",
+          "sha256": "6d46f922f4f8701a2173d54b93129c0b724d5cba668cbdb7ee2830c265b574c5",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9889987111091614,
+          "probabilities": {
+            "common_smut": 0.9889987111091614,
+            "healthy_ear": 0.011001241393387318
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/320812623.jpg",
+          "sha256": "7aa19be8ea894cf06987bb8ede052431eee19b877a5886258d26b8ea9f784ff3",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9780711531639099,
+          "probabilities": {
+            "common_smut": 0.9780711531639099,
+            "healthy_ear": 0.021928858011960983
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/321590795.jpg",
+          "sha256": "a2e821057532791c76162d3024507470baf3df900c8a9327ed99592bf942d3dc",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.956785261631012,
+          "probabilities": {
+            "common_smut": 0.956785261631012,
+            "healthy_ear": 0.04321475327014923
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/415021440.jpg",
+          "sha256": "f110ebbdfed2088a53c4ba353c1824f5d40566be2487851290ff947a26323e3d",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9943259358406067,
+          "probabilities": {
+            "common_smut": 0.9943259358406067,
+            "healthy_ear": 0.005674078594893217
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/45141127.jpg",
+          "sha256": "daadf39cd161be514e1ce04de50cb9b7659ca825137148453151d74aa70a688e",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9316825866699219,
+          "probabilities": {
+            "common_smut": 0.9316825866699219,
+            "healthy_ear": 0.06831742823123932
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/48281816.jpg",
+          "sha256": "7760d7ee705b49d383f24276d451234946abe8280e899e1fd70f56f1431fd475",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9932223558425903,
+          "probabilities": {
+            "common_smut": 0.9932223558425903,
+            "healthy_ear": 0.006777655798941851
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/51507980.jpg",
+          "sha256": "3511e5aa665eff436dcc5c89dca0ca3ede81e1fac96576267e1e293a0c088d53",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9760977029800415,
+          "probabilities": {
+            "common_smut": 0.9760977029800415,
+            "healthy_ear": 0.02390233241021633
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/90465048.jpg",
+          "sha256": "b5caeefd1d2be695ee9b578b2378787d6982bc299f8160656d7275d0f7aa5682",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.8054799437522888,
+          "probabilities": {
+            "common_smut": 0.8054799437522888,
+            "healthy_ear": 0.19452005624771118
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/91470793.jpg",
+          "sha256": "cdf556357051967d70b123b3034e74aa36bec8a8b8226fa263745acd7877df6f",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.7511206269264221,
+          "probabilities": {
+            "common_smut": 0.7511206269264221,
+            "healthy_ear": 0.2488793581724167
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/93292110.jpg",
+          "sha256": "253066d7999a5c1c1f55a13162ac35f583ea95cdd762e07b2e0cda541f1e02d0",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9557376503944397,
+          "probabilities": {
+            "common_smut": 0.9557376503944397,
+            "healthy_ear": 0.044262342154979706
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_maize/images/39256640.jpg",
+          "sha256": "783026782d490260027f9ef73f701c01bbf6cbbceadb21000507d987fde14d9e",
+          "source": "inat_maize",
+          "actual": "healthy_ear",
+          "predicted": "healthy_ear",
+          "confidence": 0.9103214144706726,
+          "probabilities": {
+            "common_smut": 0.08967862278223038,
+            "healthy_ear": 0.9103214144706726
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_maize/images/57590544.jpg",
+          "sha256": "11c87e066bd8021602906586c1ce4eb58485a4577c27e5003ba5c0149edd0536",
+          "source": "inat_maize",
+          "actual": "healthy_ear",
+          "predicted": "healthy_ear",
+          "confidence": 0.9368968605995178,
+          "probabilities": {
+            "common_smut": 0.06310320645570755,
+            "healthy_ear": 0.9368968605995178
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_maize/images/82818408.jpg",
+          "sha256": "59ffaccd911590679b2b18d67e5402a59e9d2eaa51eb8f29eef738cf6b62a584",
+          "source": "inat_maize",
+          "actual": "healthy_ear",
+          "predicted": "healthy_ear",
+          "confidence": 0.9999908208847046,
+          "probabilities": {
+            "common_smut": 9.176251296594273e-06,
+            "healthy_ear": 0.9999908208847046
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_maize/images/99848829.jpg",
+          "sha256": "fe89c23d1ef9688badd69751dc1b9e9fae49dbfc247e6390aebb2278db2cfe46",
+          "source": "inat_maize",
+          "actual": "healthy_ear",
+          "predicted": "healthy_ear",
+          "confidence": 0.9234267473220825,
+          "probabilities": {
+            "common_smut": 0.07657328993082047,
+            "healthy_ear": 0.9234267473220825
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/602107326.jpg",
+          "sha256": "029ed215dc4deac465176b2403cc0037a8224df5c9e129b4b4c48b2b21f124d6",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9667856693267822,
+          "probabilities": {
+            "common_smut": 0.9667856693267822,
+            "healthy_ear": 0.03321429714560509
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/711612686.jpg",
+          "sha256": "6efd0cf265b5e825c8aa58926db31e33c3c3646535c1f3d8c88acce6b885e2cc",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.8878500461578369,
+          "probabilities": {
+            "common_smut": 0.8878500461578369,
+            "healthy_ear": 0.11214999854564667
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/711966581.jpg",
+          "sha256": "081f7f7c2e14568bf8192e1952dbbb881f497735d74b7e62856cd44e44248a86",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9968945980072021,
+          "probabilities": {
+            "common_smut": 0.9968945980072021,
+            "healthy_ear": 0.0031053321436047554
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/714303594.jpg",
+          "sha256": "872c810a4cabbd88ac64a6b436ac64613523f1be9a6f4f810176591d85071500",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.6807645559310913,
+          "probabilities": {
+            "common_smut": 0.6807645559310913,
+            "healthy_ear": 0.3192354142665863
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/718416172.jpg",
+          "sha256": "c7041efaa8fa515551ab88830a4ca4c1a06957158c7a6b638e872430df108401",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "healthy_ear",
+          "confidence": 0.5048474073410034,
+          "probabilities": {
+            "common_smut": 0.49515262246131897,
+            "healthy_ear": 0.5048474073410034
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/718418434.jpg",
+          "sha256": "ad9b54eaf54f3fbc6dbb11d2e3503f85b866d257223754174576c76dd1b5679c",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9907374978065491,
+          "probabilities": {
+            "common_smut": 0.9907374978065491,
+            "healthy_ear": 0.009262475185096264
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/718418463.jpg",
+          "sha256": "24278e41c4ce23233e9ef7f5fb17398b3f6470c71e765ca8a1869b628a2080dc",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9927535653114319,
+          "probabilities": {
+            "common_smut": 0.9927535653114319,
+            "healthy_ear": 0.007246413733810186
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/721236483.jpg",
+          "sha256": "bb02d2ccb256da051cbdbb552100cdb6e94456059ebe0cb218d837c267129a49",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.998805046081543,
+          "probabilities": {
+            "common_smut": 0.998805046081543,
+            "healthy_ear": 0.001194907003082335
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/724535780.jpg",
+          "sha256": "afde8ee1108c410382b39dd5271a63e76d84f92ae080d319aa0f27eb77600662",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9635215997695923,
+          "probabilities": {
+            "common_smut": 0.9635215997695923,
+            "healthy_ear": 0.03647834062576294
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/724580857.jpg",
+          "sha256": "291c19eda506b6381827915e88ebeef1dcb86eac2a05de5b70e3afe5c328f550",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9993404746055603,
+          "probabilities": {
+            "common_smut": 0.9993404746055603,
+            "healthy_ear": 0.0006595068261958659
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/726584471.jpg",
+          "sha256": "c052d4cdcd7a9517df0241a03be2c6a3eaed25d7a02e68fcc6ec040f02a38342",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "healthy_ear",
+          "confidence": 0.7948499321937561,
+          "probabilities": {
+            "common_smut": 0.2051500380039215,
+            "healthy_ear": 0.7948499321937561
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/726869291.jpg",
+          "sha256": "d9cb471d2d1dcb56a71367b88ae4d64daaa6e28ec74755a3c29194e3a65053c4",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9546405673027039,
+          "probabilities": {
+            "common_smut": 0.9546405673027039,
+            "healthy_ear": 0.045359477400779724
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/727313216.jpg",
+          "sha256": "7432bcff00b274cd772363c5a22b40805c38bba4c073453dd18066ba8f6fddc1",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.8457241654396057,
+          "probabilities": {
+            "common_smut": 0.8457241654396057,
+            "healthy_ear": 0.15427584946155548
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/737856470.jpg",
+          "sha256": "90d87e7dccdadfae452d38887bc3163d2a72a9e68359edf4f7eb0f63614ff405",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9732266068458557,
+          "probabilities": {
+            "common_smut": 0.9732266068458557,
+            "healthy_ear": 0.026773368939757347
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/738187058.jpg",
+          "sha256": "dffd5ed64ffb351efa192de8244c6b6bf7374a7da9f6cf161ba04a5ac862ef91",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.8875685930252075,
+          "probabilities": {
+            "common_smut": 0.8875685930252075,
+            "healthy_ear": 0.11243142932653427
+          }
+        }
+      ],
+      "selected_epoch": 4
+    },
+    "efficientnet_v2_s": {
+      "count": 46,
+      "accuracy": 0.9565217391304348,
+      "macro_f1": 0.8878048780487805,
+      "classification_report": {
+        "common_smut": {
+          "precision": 1.0,
+          "recall": 0.9523809523809523,
+          "f1-score": 0.975609756097561,
+          "support": 42.0
+        },
+        "healthy_ear": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1-score": 0.8,
+          "support": 4.0
+        },
+        "accuracy": 0.9565217391304348,
+        "macro avg": {
+          "precision": 0.8333333333333333,
+          "recall": 0.9761904761904762,
+          "f1-score": 0.8878048780487805,
+          "support": 46.0
+        },
+        "weighted avg": {
+          "precision": 0.9710144927536232,
+          "recall": 0.9565217391304348,
+          "f1-score": 0.9603393425238601,
+          "support": 46.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          40,
+          2
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "health": {},
+      "by_source": {
+        "inat_maize": {
+          "count": 4,
+          "accuracy": 1.0,
+          "macro_f1": 0.5,
+          "classification_report": {
+            "common_smut": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "healthy_ear": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 4.0
+            },
+            "accuracy": 1.0,
+            "macro avg": {
+              "precision": 0.5,
+              "recall": 0.5,
+              "f1-score": 0.5,
+              "support": 4.0
+            },
+            "weighted avg": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 4.0
+            }
+          },
+          "confusion_matrix": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "health": {}
+        },
+        "inat_smut": {
+          "count": 27,
+          "accuracy": 0.9629629629629629,
+          "macro_f1": 0.49056603773584906,
+          "classification_report": {
+            "common_smut": {
+              "precision": 1.0,
+              "recall": 0.9629629629629629,
+              "f1-score": 0.9811320754716981,
+              "support": 27.0
+            },
+            "healthy_ear": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "accuracy": 0.9629629629629629,
+            "macro avg": {
+              "precision": 0.5,
+              "recall": 0.48148148148148145,
+              "f1-score": 0.49056603773584906,
+              "support": 27.0
+            },
+            "weighted avg": {
+              "precision": 1.0,
+              "recall": 0.9629629629629629,
+              "f1-score": 0.9811320754716981,
+              "support": 27.0
+            }
+          },
+          "confusion_matrix": [
+            [
+              26,
+              1
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "health": {}
+        },
+        "inat_smut_recent": {
+          "count": 15,
+          "accuracy": 0.9333333333333333,
+          "macro_f1": 0.4827586206896552,
+          "classification_report": {
+            "common_smut": {
+              "precision": 1.0,
+              "recall": 0.9333333333333333,
+              "f1-score": 0.9655172413793104,
+              "support": 15.0
+            },
+            "healthy_ear": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "accuracy": 0.9333333333333333,
+            "macro avg": {
+              "precision": 0.5,
+              "recall": 0.4666666666666667,
+              "f1-score": 0.4827586206896552,
+              "support": 15.0
+            },
+            "weighted avg": {
+              "precision": 1.0,
+              "recall": 0.9333333333333333,
+              "f1-score": 0.9655172413793104,
+              "support": 15.0
+            }
+          },
+          "confusion_matrix": [
+            [
+              14,
+              1
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "health": {}
+        }
+      },
+      "predictions": [
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/111635121.jpg",
+          "sha256": "f2772a7005fff98dc474f9fade240d5826b2acfca5c732cf9ef8f9611207acd0",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.999269425868988,
+          "probabilities": {
+            "common_smut": 0.999269425868988,
+            "healthy_ear": 0.000730556552298367
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/149182326.jpg",
+          "sha256": "94dcfd7fb1b4d55e7bda33ad18341809082a337ce1883ded9d736ed2eafb6655",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9566514492034912,
+          "probabilities": {
+            "common_smut": 0.9566514492034912,
+            "healthy_ear": 0.043348528444767
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/149182340.jpg",
+          "sha256": "97f6ea2916322c0a0bdf6d425f95601ecf6af648d4206feb49aa71af8c8631de",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9906688332557678,
+          "probabilities": {
+            "common_smut": 0.9906688332557678,
+            "healthy_ear": 0.009331177920103073
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/155407645.jpg",
+          "sha256": "6e9e0728fb6a1e31118e903a3e231bdb3e041bb99969ce7f8fb31921d6feb692",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9986699819564819,
+          "probabilities": {
+            "common_smut": 0.9986699819564819,
+            "healthy_ear": 0.0013300697319209576
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/159588073.jpg",
+          "sha256": "a89db8c473465760d387c09d5fbc3b359c9dbbfa67697925a4f603d421bc6447",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9922345876693726,
+          "probabilities": {
+            "common_smut": 0.9922345876693726,
+            "healthy_ear": 0.007765458431094885
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/163257485.jpg",
+          "sha256": "a98ac18e7d29e5dc1dc7f1422eb5547099f176cb860b3c601b16147c75212229",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.998469889163971,
+          "probabilities": {
+            "common_smut": 0.998469889163971,
+            "healthy_ear": 0.0015300586819648743
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/203955494.jpg",
+          "sha256": "da76eccb10c5026cc734bb24bb416ef9119b89b5df1da01384f462c29b653f91",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.8052111268043518,
+          "probabilities": {
+            "common_smut": 0.8052111268043518,
+            "healthy_ear": 0.1947888731956482
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/217697224.jpg",
+          "sha256": "a937cd023626d65beeb2c13cbc9f126ab71c884b8ac15d60a2203a80780c02aa",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9810108542442322,
+          "probabilities": {
+            "common_smut": 0.9810108542442322,
+            "healthy_ear": 0.01898912899196148
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/220771949.jpg",
+          "sha256": "02bb02ce59e01ff6aaddfb55aeb26f60599a84db0dc6cc48252d7cbdf3f1dd30",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9435496926307678,
+          "probabilities": {
+            "common_smut": 0.9435496926307678,
+            "healthy_ear": 0.05645027011632919
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/222396753.jpg",
+          "sha256": "dbfd0766f0861bda71a353f57e9f825f53957586a26513bbb8f95946efa6c1e6",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9939584732055664,
+          "probabilities": {
+            "common_smut": 0.9939584732055664,
+            "healthy_ear": 0.006041571963578463
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/224216258.jpg",
+          "sha256": "2aabfde24cf2a42ab23e4f9bf38eed045b185bce379a89f2953482e4b905060d",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9040032625198364,
+          "probabilities": {
+            "common_smut": 0.9040032625198364,
+            "healthy_ear": 0.09599677473306656
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/225879895.jpg",
+          "sha256": "5016c3deedc6bbfb216ed23edc473a93c39e2c1db1caf4476c41ac901da31a8f",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9990713596343994,
+          "probabilities": {
+            "common_smut": 0.9990713596343994,
+            "healthy_ear": 0.0009286047425121069
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/227719722.jpg",
+          "sha256": "67dc3ea012089326b70fb7ac520135e12ec952d47dc88748f607e85972fc9da1",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9879756569862366,
+          "probabilities": {
+            "common_smut": 0.9879756569862366,
+            "healthy_ear": 0.012024293653666973
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/23275750.jpg",
+          "sha256": "4e7c567f05267f29b8670388a15b6a29626ebb7196b4fa47e5d0960b048949e9",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9966887831687927,
+          "probabilities": {
+            "common_smut": 0.9966887831687927,
+            "healthy_ear": 0.0033111916854977608
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/236035869.jpg",
+          "sha256": "77b6b9e022ecaabf6797b613c60eaf812d6f1b37b28cb196463b26b278555b1b",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9776549339294434,
+          "probabilities": {
+            "common_smut": 0.9776549339294434,
+            "healthy_ear": 0.022345032542943954
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/259140877.jpg",
+          "sha256": "b34fb949158c6822f604bb790e45e41ca9f2e526e906cfd399200101054792fc",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.7984707951545715,
+          "probabilities": {
+            "common_smut": 0.7984707951545715,
+            "healthy_ear": 0.20152924954891205
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/275319730.jpg",
+          "sha256": "78058e6c9a28e7f539b70288cad4d5ac7c9b22dfefde4e3ffdd090524ce8de0a",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9830564856529236,
+          "probabilities": {
+            "common_smut": 0.9830564856529236,
+            "healthy_ear": 0.01694343239068985
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/311729162.jpg",
+          "sha256": "6d46f922f4f8701a2173d54b93129c0b724d5cba668cbdb7ee2830c265b574c5",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9754294157028198,
+          "probabilities": {
+            "common_smut": 0.9754294157028198,
+            "healthy_ear": 0.02457057125866413
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/320812623.jpg",
+          "sha256": "7aa19be8ea894cf06987bb8ede052431eee19b877a5886258d26b8ea9f784ff3",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9906753301620483,
+          "probabilities": {
+            "common_smut": 0.9906753301620483,
+            "healthy_ear": 0.009324616752564907
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/321590795.jpg",
+          "sha256": "a2e821057532791c76162d3024507470baf3df900c8a9327ed99592bf942d3dc",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9928198456764221,
+          "probabilities": {
+            "common_smut": 0.9928198456764221,
+            "healthy_ear": 0.007180137559771538
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/415021440.jpg",
+          "sha256": "f110ebbdfed2088a53c4ba353c1824f5d40566be2487851290ff947a26323e3d",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9702516198158264,
+          "probabilities": {
+            "common_smut": 0.9702516198158264,
+            "healthy_ear": 0.02974839322268963
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/45141127.jpg",
+          "sha256": "daadf39cd161be514e1ce04de50cb9b7659ca825137148453151d74aa70a688e",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.6184388399124146,
+          "probabilities": {
+            "common_smut": 0.6184388399124146,
+            "healthy_ear": 0.38156116008758545
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/48281816.jpg",
+          "sha256": "7760d7ee705b49d383f24276d451234946abe8280e899e1fd70f56f1431fd475",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "healthy_ear",
+          "confidence": 0.5767922401428223,
+          "probabilities": {
+            "common_smut": 0.42320773005485535,
+            "healthy_ear": 0.5767922401428223
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/51507980.jpg",
+          "sha256": "3511e5aa665eff436dcc5c89dca0ca3ede81e1fac96576267e1e293a0c088d53",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9569491744041443,
+          "probabilities": {
+            "common_smut": 0.9569491744041443,
+            "healthy_ear": 0.04305080324411392
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/90465048.jpg",
+          "sha256": "b5caeefd1d2be695ee9b578b2378787d6982bc299f8160656d7275d0f7aa5682",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9433743953704834,
+          "probabilities": {
+            "common_smut": 0.9433743953704834,
+            "healthy_ear": 0.05662558600306511
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/91470793.jpg",
+          "sha256": "cdf556357051967d70b123b3034e74aa36bec8a8b8226fa263745acd7877df6f",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9975777268409729,
+          "probabilities": {
+            "common_smut": 0.9975777268409729,
+            "healthy_ear": 0.002422335324808955
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_smut/images/93292110.jpg",
+          "sha256": "253066d7999a5c1c1f55a13162ac35f583ea95cdd762e07b2e0cda541f1e02d0",
+          "source": "inat_smut",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9945662021636963,
+          "probabilities": {
+            "common_smut": 0.9945662021636963,
+            "healthy_ear": 0.005433819256722927
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_maize/images/39256640.jpg",
+          "sha256": "783026782d490260027f9ef73f701c01bbf6cbbceadb21000507d987fde14d9e",
+          "source": "inat_maize",
+          "actual": "healthy_ear",
+          "predicted": "healthy_ear",
+          "confidence": 0.9989750385284424,
+          "probabilities": {
+            "common_smut": 0.0010250264313071966,
+            "healthy_ear": 0.9989750385284424
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_maize/images/57590544.jpg",
+          "sha256": "11c87e066bd8021602906586c1ce4eb58485a4577c27e5003ba5c0149edd0536",
+          "source": "inat_maize",
+          "actual": "healthy_ear",
+          "predicted": "healthy_ear",
+          "confidence": 0.9962577819824219,
+          "probabilities": {
+            "common_smut": 0.003742283210158348,
+            "healthy_ear": 0.9962577819824219
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_maize/images/82818408.jpg",
+          "sha256": "59ffaccd911590679b2b18d67e5402a59e9d2eaa51eb8f29eef738cf6b62a584",
+          "source": "inat_maize",
+          "actual": "healthy_ear",
+          "predicted": "healthy_ear",
+          "confidence": 0.9959231615066528,
+          "probabilities": {
+            "common_smut": 0.004076885525137186,
+            "healthy_ear": 0.9959231615066528
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_field/inat_maize/images/99848829.jpg",
+          "sha256": "fe89c23d1ef9688badd69751dc1b9e9fae49dbfc247e6390aebb2278db2cfe46",
+          "source": "inat_maize",
+          "actual": "healthy_ear",
+          "predicted": "healthy_ear",
+          "confidence": 0.9973083734512329,
+          "probabilities": {
+            "common_smut": 0.0026916295755654573,
+            "healthy_ear": 0.9973083734512329
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/602107326.jpg",
+          "sha256": "029ed215dc4deac465176b2403cc0037a8224df5c9e129b4b4c48b2b21f124d6",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9965662956237793,
+          "probabilities": {
+            "common_smut": 0.9965662956237793,
+            "healthy_ear": 0.0034337202087044716
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/711612686.jpg",
+          "sha256": "6efd0cf265b5e825c8aa58926db31e33c3c3646535c1f3d8c88acce6b885e2cc",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9595775604248047,
+          "probabilities": {
+            "common_smut": 0.9595775604248047,
+            "healthy_ear": 0.04042237624526024
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/711966581.jpg",
+          "sha256": "081f7f7c2e14568bf8192e1952dbbb881f497735d74b7e62856cd44e44248a86",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9975548386573792,
+          "probabilities": {
+            "common_smut": 0.9975548386573792,
+            "healthy_ear": 0.002445205580443144
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/714303594.jpg",
+          "sha256": "872c810a4cabbd88ac64a6b436ac64613523f1be9a6f4f810176591d85071500",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9057438373565674,
+          "probabilities": {
+            "common_smut": 0.9057438373565674,
+            "healthy_ear": 0.0942561998963356
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/718416172.jpg",
+          "sha256": "c7041efaa8fa515551ab88830a4ca4c1a06957158c7a6b638e872430df108401",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "healthy_ear",
+          "confidence": 0.7650572657585144,
+          "probabilities": {
+            "common_smut": 0.2349427491426468,
+            "healthy_ear": 0.7650572657585144
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/718418434.jpg",
+          "sha256": "ad9b54eaf54f3fbc6dbb11d2e3503f85b866d257223754174576c76dd1b5679c",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9810491800308228,
+          "probabilities": {
+            "common_smut": 0.9810491800308228,
+            "healthy_ear": 0.018950873985886574
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/718418463.jpg",
+          "sha256": "24278e41c4ce23233e9ef7f5fb17398b3f6470c71e765ca8a1869b628a2080dc",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9991121888160706,
+          "probabilities": {
+            "common_smut": 0.9991121888160706,
+            "healthy_ear": 0.0008878328371793032
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/721236483.jpg",
+          "sha256": "bb02d2ccb256da051cbdbb552100cdb6e94456059ebe0cb218d837c267129a49",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9989067316055298,
+          "probabilities": {
+            "common_smut": 0.9989067316055298,
+            "healthy_ear": 0.001093225204385817
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/724535780.jpg",
+          "sha256": "afde8ee1108c410382b39dd5271a63e76d84f92ae080d319aa0f27eb77600662",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9973033666610718,
+          "probabilities": {
+            "common_smut": 0.9973033666610718,
+            "healthy_ear": 0.0026965709403157234
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/724580857.jpg",
+          "sha256": "291c19eda506b6381827915e88ebeef1dcb86eac2a05de5b70e3afe5c328f550",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9978653788566589,
+          "probabilities": {
+            "common_smut": 0.9978653788566589,
+            "healthy_ear": 0.002134640933945775
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/726584471.jpg",
+          "sha256": "c052d4cdcd7a9517df0241a03be2c6a3eaed25d7a02e68fcc6ec040f02a38342",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.5277807116508484,
+          "probabilities": {
+            "common_smut": 0.5277807116508484,
+            "healthy_ear": 0.472219318151474
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/726869291.jpg",
+          "sha256": "d9cb471d2d1dcb56a71367b88ae4d64daaa6e28ec74755a3c29194e3a65053c4",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.8919960260391235,
+          "probabilities": {
+            "common_smut": 0.8919960260391235,
+            "healthy_ear": 0.10800398886203766
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/727313216.jpg",
+          "sha256": "7432bcff00b274cd772363c5a22b40805c38bba4c073453dd18066ba8f6fddc1",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9924384951591492,
+          "probabilities": {
+            "common_smut": 0.9924384951591492,
+            "healthy_ear": 0.007561472710222006
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/737856470.jpg",
+          "sha256": "90d87e7dccdadfae452d38887bc3163d2a72a9e68359edf4f7eb0f63614ff405",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9418513178825378,
+          "probabilities": {
+            "common_smut": 0.9418513178825378,
+            "healthy_ear": 0.058148667216300964
+          }
+        },
+        {
+          "path": ".cache/datasets/corn_comparison_v1/ear_review/images/738187058.jpg",
+          "sha256": "dffd5ed64ffb351efa192de8244c6b6bf7374a7da9f6cf161ba04a5ac862ef91",
+          "source": "inat_smut_recent",
+          "actual": "common_smut",
+          "predicted": "common_smut",
+          "confidence": 0.9951671361923218,
+          "probabilities": {
+            "common_smut": 0.9951671361923218,
+            "healthy_ear": 0.004832936450839043
+          }
+        }
+      ],
+      "selected_epoch": 3
+    }
+  },
+  "activated": false,
+  "limitations": [
+    "Research-only community labels and non-expert visual triage.",
+    "healthy_ear means no visible smut, not absence of other diseases.",
+    "Very few independent negative ears; no release eligibility.",
+    "Rot, head smut and specific fungal species are not represented by validated classes.",
+    "Existing protected test and validation groups preserved; sources were previously inspected."
+  ]
+}

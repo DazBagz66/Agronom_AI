@@ -1,0 +1,482 @@
+{
+  "models": {
+    "deployed_mobilenet_v2": {
+      "all": {
+        "count": 2437,
+        "shared_class_count": 1912,
+        "shared_class_correct": 1520,
+        "shared_class_accuracy": 0.7949790794979079,
+        "healthy_count": 855,
+        "healthy_called_diseased_argmax": 253,
+        "healthy_called_diseased_accepted": 178,
+        "healthy_correct_accepted": 596,
+        "healthy_abstained": 81,
+        "diseased_count": 1582,
+        "diseased_called_healthy_accepted": 1
+      },
+      "external": {
+        "count": 1046,
+        "shared_class_count": 521,
+        "shared_class_correct": 171,
+        "shared_class_accuracy": 0.32821497120921306,
+        "healthy_count": 305,
+        "healthy_called_diseased_argmax": 253,
+        "healthy_called_diseased_accepted": 178,
+        "healthy_correct_accepted": 46,
+        "healthy_abstained": 81,
+        "diseased_count": 741,
+        "diseased_called_healthy_accepted": 1
+      },
+      "unseen_sources": {
+        "count": 804,
+        "shared_class_count": 324,
+        "shared_class_correct": 127,
+        "shared_class_accuracy": 0.39197530864197533,
+        "healthy_count": 108,
+        "healthy_called_diseased_argmax": 100,
+        "healthy_called_diseased_accepted": 37,
+        "healthy_correct_accepted": 5,
+        "healthy_abstained": 66,
+        "diseased_count": 696,
+        "diseased_called_healthy_accepted": 0
+      },
+      "by_source": {
+        "anhui": {
+          "count": 400,
+          "shared_class_count": 100,
+          "shared_class_correct": 65,
+          "shared_class_accuracy": 0.65,
+          "healthy_count": 0,
+          "healthy_called_diseased_argmax": 0,
+          "healthy_called_diseased_accepted": 0,
+          "healthy_correct_accepted": 0,
+          "healthy_abstained": 0,
+          "diseased_count": 400,
+          "diseased_called_healthy_accepted": 0
+        },
+        "ecuador": {
+          "count": 138,
+          "shared_class_count": 138,
+          "shared_class_correct": 0,
+          "shared_class_accuracy": 0.0,
+          "healthy_count": 138,
+          "healthy_called_diseased_argmax": 138,
+          "healthy_called_diseased_accepted": 130,
+          "healthy_correct_accepted": 0,
+          "healthy_abstained": 8,
+          "diseased_count": 0,
+          "diseased_called_healthy_accepted": 0
+        },
+        "idadp": {
+          "count": 372,
+          "shared_class_count": 200,
+          "shared_class_correct": 56,
+          "shared_class_accuracy": 0.28,
+          "healthy_count": 100,
+          "healthy_called_diseased_argmax": 92,
+          "healthy_called_diseased_accepted": 32,
+          "healthy_correct_accepted": 5,
+          "healthy_abstained": 63,
+          "diseased_count": 272,
+          "diseased_called_healthy_accepted": 0
+        },
+        "legacy_kaggle": {
+          "count": 1391,
+          "shared_class_count": 1391,
+          "shared_class_correct": 1349,
+          "shared_class_accuracy": 0.9698058950395398,
+          "healthy_count": 550,
+          "healthy_called_diseased_argmax": 0,
+          "healthy_called_diseased_accepted": 0,
+          "healthy_correct_accepted": 550,
+          "healthy_abstained": 0,
+          "diseased_count": 841,
+          "diseased_called_healthy_accepted": 0
+        },
+        "pretoria": {
+          "count": 32,
+          "shared_class_count": 24,
+          "shared_class_correct": 6,
+          "shared_class_accuracy": 0.25,
+          "healthy_count": 8,
+          "healthy_called_diseased_argmax": 8,
+          "healthy_called_diseased_accepted": 5,
+          "healthy_correct_accepted": 0,
+          "healthy_abstained": 3,
+          "diseased_count": 24,
+          "diseased_called_healthy_accepted": 0
+        },
+        "tari": {
+          "count": 32,
+          "shared_class_count": 5,
+          "shared_class_correct": 0,
+          "shared_class_accuracy": 0.0,
+          "healthy_count": 5,
+          "healthy_called_diseased_argmax": 5,
+          "healthy_called_diseased_accepted": 4,
+          "healthy_correct_accepted": 0,
+          "healthy_abstained": 1,
+          "diseased_count": 27,
+          "diseased_called_healthy_accepted": 0
+        },
+        "tom2024": {
+          "count": 72,
+          "shared_class_count": 54,
+          "shared_class_correct": 44,
+          "shared_class_accuracy": 0.8148148148148148,
+          "healthy_count": 54,
+          "healthy_called_diseased_argmax": 10,
+          "healthy_called_diseased_accepted": 7,
+          "healthy_correct_accepted": 41,
+          "healthy_abstained": 6,
+          "diseased_count": 18,
+          "diseased_called_healthy_accepted": 1
+        }
+      }
+    },
+    "mobilenet_v3_large": {
+      "all": {
+        "count": 2437,
+        "shared_class_count": 1912,
+        "shared_class_correct": 1696,
+        "shared_class_accuracy": 0.8870292887029289,
+        "healthy_count": 855,
+        "healthy_called_diseased_argmax": 3,
+        "healthy_called_diseased_accepted": 2,
+        "healthy_correct_accepted": 849,
+        "healthy_abstained": 4,
+        "diseased_count": 1582,
+        "diseased_called_healthy_accepted": 84
+      },
+      "external": {
+        "count": 1046,
+        "shared_class_count": 521,
+        "shared_class_correct": 422,
+        "shared_class_accuracy": 0.8099808061420346,
+        "healthy_count": 305,
+        "healthy_called_diseased_argmax": 3,
+        "healthy_called_diseased_accepted": 2,
+        "healthy_correct_accepted": 301,
+        "healthy_abstained": 2,
+        "diseased_count": 741,
+        "diseased_called_healthy_accepted": 71
+      },
+      "unseen_sources": {
+        "count": 804,
+        "shared_class_count": 324,
+        "shared_class_correct": 225,
+        "shared_class_accuracy": 0.6944444444444444,
+        "healthy_count": 108,
+        "healthy_called_diseased_argmax": 3,
+        "healthy_called_diseased_accepted": 2,
+        "healthy_correct_accepted": 105,
+        "healthy_abstained": 1,
+        "diseased_count": 696,
+        "diseased_called_healthy_accepted": 70
+      },
+      "by_source": {
+        "anhui": {
+          "count": 400,
+          "shared_class_count": 100,
+          "shared_class_correct": 72,
+          "shared_class_accuracy": 0.72,
+          "healthy_count": 0,
+          "healthy_called_diseased_argmax": 0,
+          "healthy_called_diseased_accepted": 0,
+          "healthy_correct_accepted": 0,
+          "healthy_abstained": 0,
+          "diseased_count": 400,
+          "diseased_called_healthy_accepted": 23
+        },
+        "ecuador": {
+          "count": 138,
+          "shared_class_count": 138,
+          "shared_class_correct": 138,
+          "shared_class_accuracy": 1.0,
+          "healthy_count": 138,
+          "healthy_called_diseased_argmax": 0,
+          "healthy_called_diseased_accepted": 0,
+          "healthy_correct_accepted": 138,
+          "healthy_abstained": 0,
+          "diseased_count": 0,
+          "diseased_called_healthy_accepted": 0
+        },
+        "idadp": {
+          "count": 372,
+          "shared_class_count": 200,
+          "shared_class_correct": 143,
+          "shared_class_accuracy": 0.715,
+          "healthy_count": 100,
+          "healthy_called_diseased_argmax": 0,
+          "healthy_called_diseased_accepted": 0,
+          "healthy_correct_accepted": 100,
+          "healthy_abstained": 0,
+          "diseased_count": 272,
+          "diseased_called_healthy_accepted": 40
+        },
+        "legacy_kaggle": {
+          "count": 1391,
+          "shared_class_count": 1391,
+          "shared_class_correct": 1274,
+          "shared_class_accuracy": 0.9158878504672897,
+          "healthy_count": 550,
+          "healthy_called_diseased_argmax": 0,
+          "healthy_called_diseased_accepted": 0,
+          "healthy_correct_accepted": 548,
+          "healthy_abstained": 2,
+          "diseased_count": 841,
+          "diseased_called_healthy_accepted": 13
+        },
+        "pretoria": {
+          "count": 32,
+          "shared_class_count": 24,
+          "shared_class_correct": 10,
+          "shared_class_accuracy": 0.4166666666666667,
+          "healthy_count": 8,
+          "healthy_called_diseased_argmax": 3,
+          "healthy_called_diseased_accepted": 2,
+          "healthy_correct_accepted": 5,
+          "healthy_abstained": 1,
+          "diseased_count": 24,
+          "diseased_called_healthy_accepted": 7
+        },
+        "tari": {
+          "count": 32,
+          "shared_class_count": 5,
+          "shared_class_correct": 5,
+          "shared_class_accuracy": 1.0,
+          "healthy_count": 5,
+          "healthy_called_diseased_argmax": 0,
+          "healthy_called_diseased_accepted": 0,
+          "healthy_correct_accepted": 5,
+          "healthy_abstained": 0,
+          "diseased_count": 27,
+          "diseased_called_healthy_accepted": 0
+        },
+        "tom2024": {
+          "count": 72,
+          "shared_class_count": 54,
+          "shared_class_correct": 54,
+          "shared_class_accuracy": 1.0,
+          "healthy_count": 54,
+          "healthy_called_diseased_argmax": 0,
+          "healthy_called_diseased_accepted": 0,
+          "healthy_correct_accepted": 53,
+          "healthy_abstained": 1,
+          "diseased_count": 18,
+          "diseased_called_healthy_accepted": 1
+        }
+      }
+    },
+    "efficientnet_v2_s": {
+      "all": {
+        "count": 2437,
+        "shared_class_count": 1912,
+        "shared_class_correct": 1634,
+        "shared_class_accuracy": 0.854602510460251,
+        "healthy_count": 855,
+        "healthy_called_diseased_argmax": 3,
+        "healthy_called_diseased_accepted": 2,
+        "healthy_correct_accepted": 852,
+        "healthy_abstained": 1,
+        "diseased_count": 1582,
+        "diseased_called_healthy_accepted": 150
+      },
+      "external": {
+        "count": 1046,
+        "shared_class_count": 521,
+        "shared_class_correct": 315,
+        "shared_class_accuracy": 0.6046065259117083,
+        "healthy_count": 305,
+        "healthy_called_diseased_argmax": 3,
+        "healthy_called_diseased_accepted": 2,
+        "healthy_correct_accepted": 302,
+        "healthy_abstained": 1,
+        "diseased_count": 741,
+        "diseased_called_healthy_accepted": 141
+      },
+      "unseen_sources": {
+        "count": 804,
+        "shared_class_count": 324,
+        "shared_class_correct": 118,
+        "shared_class_accuracy": 0.36419753086419754,
+        "healthy_count": 108,
+        "healthy_called_diseased_argmax": 3,
+        "healthy_called_diseased_accepted": 2,
+        "healthy_correct_accepted": 105,
+        "healthy_abstained": 1,
+        "diseased_count": 696,
+        "diseased_called_healthy_accepted": 141
+      },
+      "by_source": {
+        "anhui": {
+          "count": 400,
+          "shared_class_count": 100,
+          "shared_class_correct": 0,
+          "shared_class_accuracy": 0.0,
+          "healthy_count": 0,
+          "healthy_called_diseased_argmax": 0,
+          "healthy_called_diseased_accepted": 0,
+          "healthy_correct_accepted": 0,
+          "healthy_abstained": 0,
+          "diseased_count": 400,
+          "diseased_called_healthy_accepted": 45
+        },
+        "ecuador": {
+          "count": 138,
+          "shared_class_count": 138,
+          "shared_class_correct": 138,
+          "shared_class_accuracy": 1.0,
+          "healthy_count": 138,
+          "healthy_called_diseased_argmax": 0,
+          "healthy_called_diseased_accepted": 0,
+          "healthy_correct_accepted": 138,
+          "healthy_abstained": 0,
+          "diseased_count": 0,
+          "diseased_called_healthy_accepted": 0
+        },
+        "idadp": {
+          "count": 372,
+          "shared_class_count": 200,
+          "shared_class_correct": 108,
+          "shared_class_accuracy": 0.54,
+          "healthy_count": 100,
+          "healthy_called_diseased_argmax": 0,
+          "healthy_called_diseased_accepted": 0,
+          "healthy_correct_accepted": 100,
+          "healthy_abstained": 0,
+          "diseased_count": 272,
+          "diseased_called_healthy_accepted": 86
+        },
+        "legacy_kaggle": {
+          "count": 1391,
+          "shared_class_count": 1391,
+          "shared_class_correct": 1319,
+          "shared_class_accuracy": 0.9482386772106398,
+          "healthy_count": 550,
+          "healthy_called_diseased_argmax": 0,
+          "healthy_called_diseased_accepted": 0,
+          "healthy_correct_accepted": 550,
+          "healthy_abstained": 0,
+          "diseased_count": 841,
+          "diseased_called_healthy_accepted": 9
+        },
+        "pretoria": {
+          "count": 32,
+          "shared_class_count": 24,
+          "shared_class_correct": 10,
+          "shared_class_accuracy": 0.4166666666666667,
+          "healthy_count": 8,
+          "healthy_called_diseased_argmax": 3,
+          "healthy_called_diseased_accepted": 2,
+          "healthy_correct_accepted": 5,
+          "healthy_abstained": 1,
+          "diseased_count": 24,
+          "diseased_called_healthy_accepted": 10
+        },
+        "tari": {
+          "count": 32,
+          "shared_class_count": 5,
+          "shared_class_correct": 5,
+          "shared_class_accuracy": 1.0,
+          "healthy_count": 5,
+          "healthy_called_diseased_argmax": 0,
+          "healthy_called_diseased_accepted": 0,
+          "healthy_correct_accepted": 5,
+          "healthy_abstained": 0,
+          "diseased_count": 27,
+          "diseased_called_healthy_accepted": 0
+        },
+        "tom2024": {
+          "count": 72,
+          "shared_class_count": 54,
+          "shared_class_correct": 54,
+          "shared_class_accuracy": 1.0,
+          "healthy_count": 54,
+          "healthy_called_diseased_argmax": 0,
+          "healthy_called_diseased_accepted": 0,
+          "healthy_correct_accepted": 54,
+          "healthy_abstained": 0,
+          "diseased_count": 18,
+          "diseased_called_healthy_accepted": 0
+        }
+      }
+    }
+  },
+  "candidates": {
+    "mobilenet_v3_large": {
+      "directory": "backend/data/models/corn_candidates/compare_v1_mobilenet_v3_large",
+      "validation_macro_f1": 0.934395021608035,
+      "test_macro_f1": 0.642576928515769,
+      "weights_sha256": "6c5face1b2c91a23f2b48f0a74e9c717af055eaa8a1c36ad9162f7dab2b71131"
+    },
+    "efficientnet_v2_s": {
+      "directory": "backend/data/models/corn_candidates/compare_v1_efficientnet_v2_s_cached",
+      "validation_macro_f1": 0.9641972508544536,
+      "test_macro_f1": 0.6723046952674738,
+      "weights_sha256": "f121c3cdaad32a4c2e2639a779fca3ce22acf6769122463cad59adb6a47c49f3"
+    }
+  },
+  "preferred_by_validation": "efficientnet_v2_s",
+  "unseen_sources": [
+    "anhui",
+    "idadp",
+    "pretoria"
+  ],
+  "activated": false,
+  "crop_annotations_sha256": "eaa787a1b44b256212acaa7d74eedc27a5b7cb328c2e2e61e5c4db7758cd4768",
+  "detector_pilot": {
+    "eligible_for_training": false,
+    "rule": {
+      "minimum_net_corrected": 5,
+      "minimum_healthy_false_positive_reduction": 2,
+      "maximum_additional_false_healthy": 0,
+      "minimum_improved_sources": 2
+    },
+    "evaluated_candidate": "efficientnet_v2_s",
+    "paired": {
+      "count": 45,
+      "shared_count": 28,
+      "shared_corrected": 0,
+      "shared_broken": 0,
+      "native_corrected": 0,
+      "native_broken": 0,
+      "changed_predictions": 3,
+      "full": {
+        "count": 45,
+        "shared_class_count": 28,
+        "shared_class_correct": 18,
+        "shared_class_accuracy": 0.6428571428571429,
+        "healthy_count": 21,
+        "healthy_called_diseased_argmax": 3,
+        "healthy_called_diseased_accepted": 2,
+        "healthy_correct_accepted": 18,
+        "healthy_abstained": 1,
+        "diseased_count": 24,
+        "diseased_called_healthy_accepted": 7
+      },
+      "crop": {
+        "count": 45,
+        "shared_class_count": 28,
+        "shared_class_correct": 18,
+        "shared_class_accuracy": 0.6428571428571429,
+        "healthy_count": 21,
+        "healthy_called_diseased_argmax": 3,
+        "healthy_called_diseased_accepted": 2,
+        "healthy_correct_accepted": 18,
+        "healthy_abstained": 1,
+        "diseased_count": 24,
+        "diseased_called_healthy_accepted": 7
+      }
+    }
+  },
+  "limitations": [
+    "Shared-class accuracy covers healthy, common rust and gray leaf spot only.",
+    "External metrics exclude legacy_kaggle; Ecuador/TARI/TOM are image/group holdouts within candidate training sources.",
+    "Unseen-source metrics exclude every source present in candidate training. Old-source tests have previously been inspected.",
+    "Source labels are not independently confirmed diagnoses.",
+    "Crop experiment uses approximate manually reviewed boxes, not automatic detections.",
+    "Rotation/scale sensitivity is synthetic and not a field-accuracy estimate.",
+    "No model was selected using test performance or activated."
+  ]
+}

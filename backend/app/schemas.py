@@ -5,6 +5,7 @@ from datetime import datetime
 
 # Входные данные от пользователя
 class DiagnosisRequest(BaseModel):
+    session_id: Optional[str] = Field(default=None, max_length=36)
     crop: Literal["Кукуруза", "Подсолнечник", "Картофель"] = Field(default="Кукуруза", description="Кукуруза и подсолнечник; картофель сохранён для совместимости")
     growth_stage: str = Field(..., description="Фаза развития")
     symptoms: Optional[str] = Field(
@@ -12,7 +13,14 @@ class DiagnosisRequest(BaseModel):
         description="Описание симптомов растения"
     )
     image_base64: Optional[str] = Field(None, description="Фото растения в формате Base64")
-    plant_part: Literal["auto", "leaf", "flower", "stem", "tuber", "whole"] = "leaf"
+    plant_part: Literal["auto", "leaf", "ear", "flower", "stem", "tuber", "whole"] = "leaf"
+
+
+class DiagnosisFeedbackRequest(BaseModel):
+    proposed_labels: List[str] = Field(min_length=1, max_length=4)
+    plant_part: Literal['leaf', 'ear', 'stem', 'whole', 'unknown'] = 'unknown'
+    notes: str = Field(default='', max_length=2000)
+    specimen_group: str = Field(default='', max_length=100)
 
 # Отдельная гипотеза (причина)
 class ProbableCause(BaseModel):
@@ -28,8 +36,32 @@ class SourceReference(BaseModel):
     url_or_code: str = Field(..., description="Ссылка или номер в Госкаталоге")
 
 # Итог анализа, который получает интерфейс.
+class KnowledgeMatch(BaseModel):
+    article_id: str
+    title: str
+    symptoms_text: str
+    recommendations: List[str]
+    source: SourceReference
+    additional_sources: List[SourceReference] = Field(default_factory=list)
+    basis: Literal['model', 'symptoms', 'organ']
+
+
 class DiagnosisResponse(BaseModel):
+    session_id: Optional[str] = None
+    context_observations: List[str] = Field(default_factory=list)
+    symptom_assessment: Optional[str] = None
+    symptom_hypotheses: List[str] = Field(default_factory=list)
+    experimental_observation: Optional[str] = None
+    experimental_model_sha256: Optional[str] = None
+    previous_photo_assessment: Optional[str] = None
     check_id: Optional[int] = None
+    model_label: Optional[str] = None
+    detected_plant_part: Optional[Literal['leaf','ear','whole','unknown']] = None
+    organ_detection_method: Optional[Literal['automatic']] = None
+    organ_confidence: Optional[int] = Field(default=None, ge=0, le=100)
+    organ_model_sha256: Optional[str] = None
+    knowledge_matches: List[KnowledgeMatch] = Field(default_factory=list)
+    model_observation: Optional[Literal['healthy_leaf_like']] = None
     status: Literal["success", "healthy", "insufficient_data"] = Field(
         ..., description="Статус: диагноз поставлен или данных недостаточно"
     )

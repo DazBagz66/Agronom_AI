@@ -1,0 +1,3811 @@
+{
+  "source": "inat_smut",
+  "images": 200,
+  "requested": 200,
+  "errors": [],
+  "counts": {
+    "common_smut": 200
+  },
+  "records": [
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/10046906.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/7672096",
+      "source_id": "7672096",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/10046906/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:63000",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "82c2bf82422c82f2d4ba0e5035a02cedabff3817dfc22cb7494906ecb8a4a49a",
+      "bytes": 537552
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/101055977.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/63009892",
+      "source_id": "63009892",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/101055977/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:67003",
+      "license": "cc-by",
+      "attribution": "(c) Carlos Domínguez-Rodríguez, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "5aca45d98dc2ab6d370974d38fb984a5bcaf66671a3809835caa8132b3a06e48",
+      "bytes": 431811
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/106239695.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/65953093",
+      "source_id": "65953093",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/106239695/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:63000",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "11382427a772e848fc353d6ba6a5f4597d29a71d2d174bd52387ed086ad644ac",
+      "bytes": 548279
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/106268002.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/65979551",
+      "source_id": "65979551",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/106268002/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1122647",
+      "license": "cc-by",
+      "attribution": "(c) Alejandro Alfredo Aguirre, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "348479caa48f1a54c7c66d9d0ece52914bd13437c979ba80c3f716be78f12a23",
+      "bytes": 223103
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/108034254.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/66942007",
+      "source_id": "66942007",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/108034254/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:3064229",
+      "license": "cc-by",
+      "attribution": "(c) Manuel Nicolás Madrigal Pérez, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "cf8ebe5bab5c01fc8a439b084352b5eab806d3578e2f9c507b6c02d4615d19c6",
+      "bytes": 486752
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/108600029.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/67248630",
+      "source_id": "67248630",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/108600029/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:291957",
+      "license": "cc-by",
+      "attribution": "(c) Maria, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "5890481f2f25989f1e2c46b7def7e6d55c8868160ac9aebd622101ec30b9e3e3",
+      "bytes": 357686
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/11060910.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/8326834",
+      "source_id": "8326834",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/11060910/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:662520",
+      "license": "cc-by-sa",
+      "attribution": "(c) Luke Smithson, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "a14c9443287524458450b48745c4680cdebe6f259989647090f689982d277a16",
+      "bytes": 320322
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/111635121.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/68876682",
+      "source_id": "68876682",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/111635121/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:2477443",
+      "license": "cc-by",
+      "attribution": "(c) Gabriel Mayrhofer, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "f2772a7005fff98dc474f9fade240d5826b2acfca5c732cf9ef8f9611207acd0",
+      "bytes": 93020
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/119680649.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/73318373",
+      "source_id": "73318373",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/119680649/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:4194871",
+      "license": "cc-by",
+      "attribution": "(c) natomik, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "f3ff1ee51cac735a97c1c5cbe1c2ee41ef0fa2af7b176ddf30946ea52e706347",
+      "bytes": 465074
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/126163966.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/77164738",
+      "source_id": "77164738",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/126163966/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1122647",
+      "license": "cc-by",
+      "attribution": "(c) Alejandro Alfredo Aguirre, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "13563722899e7abe41e410da7c19a85f966e3735c7bf454ac4642e7218e57511",
+      "bytes": 55227
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/139230842.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/84697696",
+      "source_id": "84697696",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/139230842/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:3042",
+      "license": "cc-by",
+      "attribution": "(c) Duarte Frade, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "8fb5526aa00674a6da3058d693337653142397d928932986fba5d028ed336d06",
+      "bytes": 186012
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/142349890.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/86412266",
+      "source_id": "86412266",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/142349890/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:970009",
+      "license": "cc-by",
+      "attribution": "(c) Brandon Corder, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "67d91fdc4ab8db39b9438c83425b22630014fbd43543b2a7ed9eda751d8d8a99",
+      "bytes": 237013
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/142605743.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/86558950",
+      "source_id": "86558950",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/142605743/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:970009",
+      "license": "cc-by",
+      "attribution": "(c) Brandon Corder, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "744426bd2c9ce89fa2cafcce5eae3c201f498eb2fc2074ef750eaff22dbe9a8a",
+      "bytes": 238174
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/142605855.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/86558951",
+      "source_id": "86558951",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/142605855/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:970009",
+      "license": "cc-by",
+      "attribution": "(c) Brandon Corder, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "f8a3e569da335e9570eedcf2c44f376511eca7d831829557159cffcbbf88ba91",
+      "bytes": 216682
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/142605896.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/86558952",
+      "source_id": "86558952",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/142605896/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:970009",
+      "license": "cc-by",
+      "attribution": "(c) Brandon Corder, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "369ffee831a592a2f1c1b98d3c86590d2ca4fa3ca37bd0bc24e6e73d9f63f523",
+      "bytes": 228520
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/142606391.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/86558975",
+      "source_id": "86558975",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/142606391/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:970009",
+      "license": "cc-by",
+      "attribution": "(c) Brandon Corder, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "a7562deb5bdfbadcdd04d7dcbcdaa9d5bc16a7f8aa6ea3502bb5311ee6c554ac",
+      "bytes": 269906
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/142613810.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/86559170",
+      "source_id": "86559170",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/142613810/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:970009",
+      "license": "cc-by",
+      "attribution": "(c) Brandon Corder, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "65b1ff3ac9dec9f6148b6ba47929c4ce5e331716b338eac4c000547405616296",
+      "bytes": 217884
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/148222890.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/89737442",
+      "source_id": "89737442",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/148222890/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1529678",
+      "license": "cc-by",
+      "attribution": "(c) Ethan Rose, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "c419e69e25d00f0510b55e0a6c3a76f11d10ddf0f2e90453a60fd99ec20d7f28",
+      "bytes": 561296
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/149182326.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/90276620",
+      "source_id": "90276620",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/149182326/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1032700",
+      "license": "cc-by-sa",
+      "attribution": "(c) Björn Sothmann, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "94dcfd7fb1b4d55e7bda33ad18341809082a337ce1883ded9d736ed2eafb6655",
+      "bytes": 232333
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/149182340.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/90276625",
+      "source_id": "90276625",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/149182340/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1032700",
+      "license": "cc-by-sa",
+      "attribution": "(c) Björn Sothmann, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "97f6ea2916322c0a0bdf6d425f95601ecf6af648d4206feb49aa71af8c8631de",
+      "bytes": 287984
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/149182429.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/90276628",
+      "source_id": "90276628",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/149182429/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1032700",
+      "license": "cc-by-sa",
+      "attribution": "(c) Björn Sothmann, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "f62b33bd839e0f6fb55c1cd75917f1aa9a7ef00ce635a840e3ba8f81b3f0068f",
+      "bytes": 298075
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/153136435.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/92482574",
+      "source_id": "92482574",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/153136435/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1908828",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "5b4900c6de6cb31d7b43c4790d7b5916d559a4c8de12e2244ddfd40f1b9d0309",
+      "bytes": 262567
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/154153513.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/93046204",
+      "source_id": "93046204",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/154153513/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1901064",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "5016fb3321b1d8aedcacd586f218922003fb582ec29921bde54b06c7bfafe3a0",
+      "bytes": 406404
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/154740063.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/93367934",
+      "source_id": "93367934",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/154740063/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1908828",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "baf8fcb1b8277a84c31ca0bc33c32a76cfc3de807b97f944b04e2db2e1ed5675",
+      "bytes": 348093
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/155139918.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/93592398",
+      "source_id": "93592398",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/155139918/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1759668",
+      "license": "cc-by",
+      "attribution": "(c) Christina s.l., some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "49f5de199c12e8b04e592694f6f94adac44f706f0431cd48bbde541a0fd61278",
+      "bytes": 765744
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/155407645.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/93741236",
+      "source_id": "93741236",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/155407645/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1440713",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "6e9e0728fb6a1e31118e903a3e231bdb3e041bb99969ce7f8fb31921d6feb692",
+      "bytes": 526738
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/155634243.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/93867394",
+      "source_id": "93867394",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/155634243/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:4859295",
+      "license": "cc-by",
+      "attribution": "(c) A. Johann, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "e503e6cacf62ccf8bc226534f37a7d7093bd69ff96ed7e441af47918d5318f36",
+      "bytes": 252140
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/156633915.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/94424160",
+      "source_id": "94424160",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/156633915/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1880699",
+      "license": "cc-by",
+      "attribution": "(c) Enrico Tomschke, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "c2cabc2e8f4180bb378ea5adbd67e11a92638b6bf1e7a608ffc603a88b8374b2",
+      "bytes": 270739
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/158019959.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/95202453",
+      "source_id": "95202453",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/158019959/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:477431",
+      "license": "cc-by",
+      "attribution": "(c) carnifex, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "91b9cc21863c28ca7cdff9f3a7d485ede47540986d3c05613b630e51cd503063",
+      "bytes": 478447
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/158285294.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/95350910",
+      "source_id": "95350910",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/158285294/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1864966",
+      "license": "cc-by",
+      "attribution": "(c) ELOYJIMENEZ13, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "cc971547d73c065523349fae764c03509c31d5584a503872cf8541b62d4b0293",
+      "bytes": 605937
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/159152790.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/95835707",
+      "source_id": "95835707",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/159152790/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1775428",
+      "license": "cc-by-sa",
+      "attribution": "(c) migallel, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "15441eddc4fd3e465f7cfd4a9323fe47cae974e8bba7671f8cfcb63eaa447002",
+      "bytes": 290958
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/159550906.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/96064147",
+      "source_id": "96064147",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/159550906/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:5041202",
+      "license": "cc-by",
+      "attribution": "(c) Pav Johnsson, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "8447d64aa51e50225aac910567f19747f373a59488e4adef0be71272a8367552",
+      "bytes": 529527
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/159588073.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/96086823",
+      "source_id": "96086823",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/159588073/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:3617051",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "a89db8c473465760d387c09d5fbc3b359c9dbbfa67697925a4f603d421bc6447",
+      "bytes": 235004
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/159825527.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/96220629",
+      "source_id": "96220629",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/159825527/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1131047",
+      "license": "cc-by-sa",
+      "attribution": "(c) Jalil R., some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "19188f3c64b78acae719642a953d031b7abd911e342b002943ea66519231e681",
+      "bytes": 543058
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/160685928.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/96700335",
+      "source_id": "96700335",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/160685928/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:2399135",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "359ebf0b4de5cad92f7d6f781adcc26baf2fcbcb55cb805717572bfb805f3201",
+      "bytes": 1000095
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/161725302.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/97264239",
+      "source_id": "97264239",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/161725302/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:381646",
+      "license": "cc-by",
+      "attribution": "(c) Alejandro Gómez Maya, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "d08301f8d0b22210fac1c69ea8f85bf9bcc15eef6cc65a931e5aaaa2608328b5",
+      "bytes": 647236
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/162904362.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/96901779",
+      "source_id": "96901779",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/162904362/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:315502",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "7968665465bef7013fe7925acae9f4c1f8f2d3da6cd44181e2d979e96ec8509e",
+      "bytes": 247849
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/163257485.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/98095842",
+      "source_id": "98095842",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/163257485/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:2606942",
+      "license": "cc-by",
+      "attribution": "(c) Martin Scheuch, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "a98ac18e7d29e5dc1dc7f1422eb5547099f176cb860b3c601b16147c75212229",
+      "bytes": 508665
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/163963918.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/98475918",
+      "source_id": "98475918",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/163963918/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1960560",
+      "license": "cc-by",
+      "attribution": "(c) Harrison J Elkins, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "c28615054603355b12c74c09f831e053bb38e710e3808352ed54138be6f312e8",
+      "bytes": 270384
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/173157826.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/103458568",
+      "source_id": "103458568",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/173157826/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1404811",
+      "license": "cc-by",
+      "attribution": "(c) Jie-Hao Ou, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "dc3544ff3b4be7dbdebd8321180c6c30ad58406f07c0b023d7646e8aa19d05b2",
+      "bytes": 549499
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/174760674.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/104313420",
+      "source_id": "104313420",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/174760674/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:696204",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "e00db685e8c72729f8527d317a9f4ac48522b8adc8b6147a79d20de75ccc867e",
+      "bytes": 302524
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/179803344.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/106962610",
+      "source_id": "106962610",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/179803344/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:696204",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "2dc2b115dda9c54cbedf1e026c183460f5b084e100b8d6945645b9e0955f6592",
+      "bytes": 299952
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/179874764.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/107000896",
+      "source_id": "107000896",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/179874764/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1275073",
+      "license": "cc-by",
+      "attribution": "(c) Lars Willighagen, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "cc930fa18fb9f5a1e0dc92921e87e11c9fc4903fa7b51750fba3227e6ae73e6b",
+      "bytes": 203426
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/179874773.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/107000897",
+      "source_id": "107000897",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/179874773/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1275073",
+      "license": "cc-by",
+      "attribution": "(c) Lars Willighagen, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "63febb4bc1e2933aad4a7803c6cf9e10201474a7ecc7a7171ef676f5eb151f2f",
+      "bytes": 162317
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/18338536.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/12670673",
+      "source_id": "12670673",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/18338536/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:59856",
+      "license": "cc-by",
+      "attribution": "(c) Dr. Nasser Halaweh, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "f047978fbc33ddfcf24970c6caf9416d874dc3d26d9efc6af163a26bd70e03a0",
+      "bytes": 179136
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/202581567.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/119813279",
+      "source_id": "119813279",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/202581567/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:67003",
+      "license": "cc-by",
+      "attribution": "(c) Carlos Domínguez-Rodríguez, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "17d5cfa2cea4622c3c68e94beaec84d09aeaf682e07023e408c01dfe242bcfda",
+      "bytes": 355359
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/203955494.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/120578388",
+      "source_id": "120578388",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/203955494/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:844805",
+      "license": "cc-by-sa",
+      "attribution": "(c) Kurt Miller, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "da76eccb10c5026cc734bb24bb416ef9119b89b5df1da01384f462c29b653f91",
+      "bytes": 587251
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/216208533.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/127357590",
+      "source_id": "127357590",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/216208533/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1073255",
+      "license": "cc-by",
+      "attribution": "(c) Crap Fou, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "2e8c37fb95c20d043417650f4c994258b76bee3f7184e3ca4981703b5673b59e",
+      "bytes": 371018
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/217697224.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/128179273",
+      "source_id": "128179273",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/217697224/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:2097451",
+      "license": "cc-by",
+      "attribution": "(c) Senna Bryce Robeson, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "a937cd023626d65beeb2c13cbc9f126ab71c884b8ac15d60a2203a80780c02aa",
+      "bytes": 235337
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/218810413.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/128800275",
+      "source_id": "128800275",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/218810413/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1960560",
+      "license": "cc-by",
+      "attribution": "(c) Harrison J Elkins, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "de38dac9aaf45c748111cdd22fe614cd01860fa894181c9f59deb0bc76e1a61d",
+      "bytes": 216008
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/218922741.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/128870471",
+      "source_id": "128870471",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/218922741/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1032700",
+      "license": "cc-by-sa",
+      "attribution": "(c) Björn Sothmann, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "8436b1f686c47875680e8abe1b7644656591174c8ae725462ca34fca08d82257",
+      "bytes": 370483
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/220493683.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/129724307",
+      "source_id": "129724307",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/220493683/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1960560",
+      "license": "cc-by",
+      "attribution": "(c) Harrison J Elkins, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "e32113e68fbf540e4d5eb0972aa5eab375278df0a8ca52f627e4d362c006d40c",
+      "bytes": 380154
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/220606212.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/129783152",
+      "source_id": "129783152",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/220606212/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1880699",
+      "license": "cc-by",
+      "attribution": "(c) Enrico Tomschke, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "4e61581eac5b9dd6894402baf6859bdc62d85da648262773b421e59175110776",
+      "bytes": 206933
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/220683201.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/129829399",
+      "source_id": "129829399",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/220683201/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:3287221",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "bae7527d78d9ce8d3b4889dd295ce0c5fd4830d163116ced1f95420c782dc1ea",
+      "bytes": 323426
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/220771949.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/129874755",
+      "source_id": "129874755",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/220771949/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1032700",
+      "license": "cc-by-sa",
+      "attribution": "(c) Björn Sothmann, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "02bb02ce59e01ff6aaddfb55aeb26f60599a84db0dc6cc48252d7cbdf3f1dd30",
+      "bytes": 326982
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/222396753.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/130744249",
+      "source_id": "130744249",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/222396753/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1365773",
+      "license": "cc-by",
+      "attribution": "(c) Markus Krieger, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "dbfd0766f0861bda71a353f57e9f825f53957586a26513bbb8f95946efa6c1e6",
+      "bytes": 532321
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/222701263.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/130910790",
+      "source_id": "130910790",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/222701263/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:3805776",
+      "license": "cc-by",
+      "attribution": "(c) Alexandr Stanislavschi, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "bbd3aee81fa7faf895a15d8715c939a09610a5fff56f92b926eb24916d6e7f4b",
+      "bytes": 478626
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/224216258.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/131728347",
+      "source_id": "131728347",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/224216258/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1026644",
+      "license": "cc-by",
+      "attribution": "(c) Asrın Akıncıoğlu, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "2aabfde24cf2a42ab23e4f9bf38eed045b185bce379a89f2953482e4b905060d",
+      "bytes": 648475
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/224839358.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/132063436",
+      "source_id": "132063436",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/224839358/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:5064754",
+      "license": "cc-by",
+      "attribution": "(c) Bertis Y. Franco Pérez, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "a13cf0ff1b082599a8a71d06e54b5ee0b5b99b998bec15a7ee85d389814e763b",
+      "bytes": 580028
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/225879895.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/132664566",
+      "source_id": "132664566",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/225879895/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1032700",
+      "license": "cc-by-sa",
+      "attribution": "(c) Björn Sothmann, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "5016c3deedc6bbfb216ed23edc473a93c39e2c1db1caf4476c41ac901da31a8f",
+      "bytes": 307820
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/227176153.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/133376464",
+      "source_id": "133376464",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/227176153/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:2097451",
+      "license": "cc-by",
+      "attribution": "(c) Senna Bryce Robeson, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "cbd1f0c19acfeac6350d924d543a5a675bd713497c21324b4479e195b8f248b9",
+      "bytes": 224577
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/227442970.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/133522096",
+      "source_id": "133522096",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/227442970/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:292489",
+      "license": "cc-by",
+      "attribution": "(c) Elliot Greiner, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "e751a0e218a9e79a2470289ba39a0444e902367c7ff2024bb5d60c6a441ec4c8",
+      "bytes": 281856
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/227719722.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/133670707",
+      "source_id": "133670707",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/227719722/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:2840714",
+      "license": "cc-by",
+      "attribution": "(c) Annie Weissman, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "67dc3ea012089326b70fb7ac520135e12ec952d47dc88748f607e85972fc9da1",
+      "bytes": 291624
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/230331234.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/135071990",
+      "source_id": "135071990",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/230331234/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:25766",
+      "license": "cc-by",
+      "attribution": "(c) Richard Jacob, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "0e0de2a0359f1b1a3bb2f9a118bc569bde2057dfb8970a44479e38a22cc10c06",
+      "bytes": 628293
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/231246299.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/135571227",
+      "source_id": "135571227",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/231246299/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:5539522",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "2a6bc0894bae7b2f26aec3149a83d06f285007e605c91870cfc88752ff2ac711",
+      "bytes": 378217
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/231857114.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/135896776",
+      "source_id": "135896776",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/231857114/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:6021667",
+      "license": "cc-by",
+      "attribution": "(c) Clément Maouche, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "779ebe4dfd935dad4585c8f295d05fb6b2238dce51581c061464032856ad1de9",
+      "bytes": 575066
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/23275750.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/15554832",
+      "source_id": "15554832",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/23275750/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1032700",
+      "license": "cc-by-sa",
+      "attribution": "(c) Björn Sothmann, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "4e7c567f05267f29b8670388a15b6a29626ebb7196b4fa47e5d0960b048949e9",
+      "bytes": 388012
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/232791166.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/136403396",
+      "source_id": "136403396",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/232791166/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:3042",
+      "license": "cc-by",
+      "attribution": "(c) Duarte Frade, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "ce5dff1be81db2429ec61f4961d892f0a379083e9d11548fd45496b20e449693",
+      "bytes": 240470
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/233408224.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/136699488",
+      "source_id": "136699488",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/233408224/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:112499",
+      "license": "cc-by",
+      "attribution": "(c) Brandon McCracken, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "63dc91d700038a5d7fda8b1baa61a1942875282a20013cca4ef9facb17406b4c",
+      "bytes": 384091
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/236035869.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/138131527",
+      "source_id": "138131527",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/236035869/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:319407",
+      "license": "cc-by-sa",
+      "attribution": "(c) Thismia, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "77b6b9e022ecaabf6797b613c60eaf812d6f1b37b28cb196463b26b278555b1b",
+      "bytes": 344669
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/237692042.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/139017378",
+      "source_id": "139017378",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/237692042/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:3708411",
+      "license": "cc-by",
+      "attribution": "(c) casey, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "a58ed22599aaccf153b665a82333798a208384dad4e4d78da31ce759fb030aa8",
+      "bytes": 257499
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/23829093.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/15934010",
+      "source_id": "15934010",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/23829093/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:320666",
+      "license": "cc-by",
+      "attribution": "(c) Thomas Koffel, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "14bc59635ed6defc9f682e7be39a75cfd58ede65a847a1497b3318d61859203c",
+      "bytes": 342249
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/23829897.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/15934024",
+      "source_id": "15934024",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/23829897/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:320666",
+      "license": "cc-by",
+      "attribution": "(c) Thomas Koffel, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "47eaf9fd4f8bf2c5bb116a5ffe755134187bcef7dbfd1253343a682609b47008",
+      "bytes": 320819
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/240386463.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/140432568",
+      "source_id": "140432568",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/240386463/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:6270029",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "67ad90650eda6144afed5b84152bd49e593239a73c9e8de001b70ece2fca2799",
+      "bytes": 201028
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/241060363.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/140794627",
+      "source_id": "140794627",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/241060363/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:6270029",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "3cf4932bd3089c48b93e2bc0b888533a00eed36a4a02a12c3e81fcd25db0cdb7",
+      "bytes": 487988
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/241466154.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/141009972",
+      "source_id": "141009972",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/241466154/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:3845806",
+      "license": "cc-by",
+      "attribution": "(c) Oleksandr Shynder, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "fec7d84d20851a90e1d134283019c2e70bbfb3c5fe797c00d432af6245a14d5d",
+      "bytes": 395149
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/24242634.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/16168726",
+      "source_id": "16168726",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/24242634/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:26667",
+      "license": "cc-by-sa",
+      "attribution": "(c) Oscar Alejandro Morales Juárez, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "e66382760a16952a44764701d5be1abf3acbc3fdaaa7ec9144688eacc7a9d36d",
+      "bytes": 262259
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/244740504.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/142723048",
+      "source_id": "142723048",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/244740504/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:16911",
+      "license": "cc-by",
+      "attribution": "(c) nasua, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "42fe194266db4434f2776ed161ee15b64c49cefea6e141f9b60e28cb05bca96d",
+      "bytes": 460574
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/251330399.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/146214542",
+      "source_id": "146214542",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/251330399/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:5996968",
+      "license": "cc-by",
+      "attribution": "(c) Jefferson Ferreira, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "5c1f5710755ade301700041d05e98007cde2efd97cea31f8fb6a88dc8fb54424",
+      "bytes": 426846
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/259140877.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/150302031",
+      "source_id": "150302031",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/259140877/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:844805",
+      "license": "cc-by-sa",
+      "attribution": "(c) Kurt Miller, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "b34fb949158c6822f604bb790e45e41ca9f2e526e906cfd399200101054792fc",
+      "bytes": 381493
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/269652926.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/155969563",
+      "source_id": "155969563",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/269652926/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1843774",
+      "license": "cc-by-sa",
+      "attribution": "(c) Ángela María Gómez M, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "658c9fbadfe80cc6c068a322c2f61fdf2b8a167422049dd5f9157ab75972ee09",
+      "bytes": 192242
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/275319730.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/159354438",
+      "source_id": "159354438",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/275319730/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:3866382",
+      "license": "cc-by",
+      "attribution": "(c) Cajá-manga, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "78058e6c9a28e7f539b70288cad4d5ac7c9b22dfefde4e3ffdd090524ce8de0a",
+      "bytes": 558588
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/2812444.jpg",
+      "source": "inat_smut",
+      "source_url": "http://www.inaturalist.org/observations/2504755",
+      "source_id": "2504755",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/2812444/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:44100",
+      "license": "cc-by-sa",
+      "attribution": "(c) Vilseskogen, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "6a8b832a98cef49c2b75f92ad8a75285b27cfe2bfa22c8f6fad69534ffb61e66",
+      "bytes": 96544
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/301876715.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/173805944",
+      "source_id": "173805944",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/301876715/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1006201",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "713ca761424b57cec22fb00c8291c4d08e17bb602e622900e89b01c3a6f9d9b7",
+      "bytes": 200121
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/302258573.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/174012502",
+      "source_id": "174012502",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/302258573/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:3122994",
+      "license": "cc-by",
+      "attribution": "(c) Dávid Horváth, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "e790bd9c9ebb4ef8dbac4eb0eaa89e324143a556a59d9af4cb78b3874eef4065",
+      "bytes": 548919
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/302452796.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/174108123",
+      "source_id": "174108123",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/302452796/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:6109020",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "6824e6c7841c3cd301e6719f2768e1af234c2b8274d94cbc1e83d4cf9442b1ec",
+      "bytes": 195169
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/302770249.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/174288762",
+      "source_id": "174288762",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/302770249/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:2388370",
+      "license": "cc-by",
+      "attribution": "(c) Valentin R., some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "13be3a73e21f45854f3e5cb12dd521b267c3957b349210356f9f953e0e04c976",
+      "bytes": 460695
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/304772202.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/175372356",
+      "source_id": "175372356",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/304772202/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1923168",
+      "license": "cc-by",
+      "attribution": "(c) slariblafast, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "acbbd7a6522c760f9bd7e51ed7e9d585781a74fa4b8ac3b64987fc3faa3c15be",
+      "bytes": 536880
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/306797968.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/176466740",
+      "source_id": "176466740",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/306797968/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:971137",
+      "license": "cc-by",
+      "attribution": "(c) Jeff Hansen, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "6c56a87ff01d77991271a3783237bcd7ba684e95fad8bdff66abf62893526698",
+      "bytes": 353191
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/307484676.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/176837210",
+      "source_id": "176837210",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/307484676/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:7164865",
+      "license": "cc-by-sa",
+      "attribution": "(c) V. Ross Johnson, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "d3d74f6cc4341b04a6677a1c83d327ad5c68c7a8ced68db552618075a787f1a2",
+      "bytes": 260834
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/309816458.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/178082670",
+      "source_id": "178082670",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/309816458/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:3624274",
+      "license": "cc-by",
+      "attribution": "(c) Alex, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "857cf611b06b10ca757b8255b963a12685c2de60500c6592c0add5f1ea893b28",
+      "bytes": 306424
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/310239663.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/178301280",
+      "source_id": "178301280",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/310239663/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1878517",
+      "license": "cc-by",
+      "attribution": "(c) Isaac Winkler, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "6c57b13b97e85c769b0e173a36b98c03e575e3b1c0ac4d4191caad61cc8c00e8",
+      "bytes": 469723
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/311047786.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/178726042",
+      "source_id": "178726042",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/311047786/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:5198446",
+      "license": "cc-by",
+      "attribution": "(c) Diego Rodríguez Hernández, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "98dbc88e2f1552def65c006c27e6e173bcb361186b9b2a6b4a54ee371e623d27",
+      "bytes": 490060
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/311729162.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/179082319",
+      "source_id": "179082319",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/311729162/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:77976",
+      "license": "cc-by-sa",
+      "attribution": "(c) Keith Seifert, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "6d46f922f4f8701a2173d54b93129c0b724d5cba668cbdb7ee2830c265b574c5",
+      "bytes": 304930
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/312149291.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/179310167",
+      "source_id": "179310167",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/312149291/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:3042",
+      "license": "cc-by",
+      "attribution": "(c) Duarte Frade, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "789d6492015046a4d342beff396b0247bf96826b8cf75b6ae974a1ea9453dddb",
+      "bytes": 247115
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/314243973.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/180404381",
+      "source_id": "180404381",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/314243973/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1311365",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "5b720a5786f033d08451b75ddd9a089cfb0eb0d28c1f020b9a7e7257cfa31dc6",
+      "bytes": 488741
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/315013212.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/180806361",
+      "source_id": "180806361",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/315013212/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1437422",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "19e5ea5615b99e7f2dd1c5d784a8b24482c92dd403cf564a8fe2f17d40bd25eb",
+      "bytes": 397825
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/315025183.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/180817669",
+      "source_id": "180817669",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/315025183/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:2478447",
+      "license": "cc-by-sa",
+      "attribution": "(c) Loopy30, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "67ba6110e2bd23319706ff5a3a258efca9c80bd56411e78b0d8661efe920cdfc",
+      "bytes": 232750
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/316478496.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/181601978",
+      "source_id": "181601978",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/316478496/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:2457002",
+      "license": "cc-by",
+      "attribution": "(c) Daniel Linzbauer, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "5cb60f7c0d720c81e72e96f9dd99355b0cd4e38d71c3bc2672019d46e5bf3383",
+      "bytes": 688973
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/318300720.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/182547682",
+      "source_id": "182547682",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/318300720/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1815672",
+      "license": "cc-by",
+      "attribution": "(c) stephen, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "cca95c26ac27da4fd3544e7415ee0147547aad7ad683ba157992e7bd24587680",
+      "bytes": 310727
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/319331764.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/183073593",
+      "source_id": "183073593",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/319331764/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:2006722",
+      "license": "cc-by",
+      "attribution": "(c) Cas Colangelo, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "31dfb5e5c7a804459f7a2ccd520ce17a75fc5cf0f84db1f4fe8a19cbe5caf24c",
+      "bytes": 724008
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/320812623.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/183849935",
+      "source_id": "183849935",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/320812623/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:5306777",
+      "license": "cc-by",
+      "attribution": "(c) gerardbertrand, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "7aa19be8ea894cf06987bb8ede052431eee19b877a5886258d26b8ea9f784ff3",
+      "bytes": 370108
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/321590795.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/184249100",
+      "source_id": "184249100",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/321590795/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1032700",
+      "license": "cc-by-sa",
+      "attribution": "(c) Björn Sothmann, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "a2e821057532791c76162d3024507470baf3df900c8a9327ed99592bf942d3dc",
+      "bytes": 389809
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/321859372.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/184389105",
+      "source_id": "184389105",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/321859372/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1775428",
+      "license": "cc-by-sa",
+      "attribution": "(c) migallel, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "a3e21f60fa64179f4482fd16af26789dc557f3e11d93c9f8aefc3c6162e68dd4",
+      "bytes": 285506
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/322165090.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/184552923",
+      "source_id": "184552923",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/322165090/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:5402988",
+      "license": "cc-by",
+      "attribution": "(c) Cosimo Costanzia di Costigliole, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "ab6a03beb26684583922eb36bdbb282d886542b41f9f6abd9aab221ed71dd106",
+      "bytes": 316472
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/322351713.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/184646858",
+      "source_id": "184646858",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/322351713/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:5825420",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "10fea5237bb5e6336923ad2a057c93a07bd9109622939786d19d56dd56dccc33",
+      "bytes": 253294
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/323025649.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/185002146",
+      "source_id": "185002146",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/323025649/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:2883343",
+      "license": "cc-by",
+      "attribution": "(c) E. A., some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "95dfc3dd78eea4e2dc21a82eb598fe8d80abf3096e03c8c0259e9eebabdc24db",
+      "bytes": 410670
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/324433449.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/185734996",
+      "source_id": "185734996",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/324433449/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1334078",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "d592429e49cbe689f844d9fa4ecc8d3c6ab813253a8befa9bb8bb771416a9268",
+      "bytes": 260533
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/325459848.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/186256212",
+      "source_id": "186256212",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/325459848/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:72679",
+      "license": "cc-by",
+      "attribution": "(c) saydelah, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "f732a3c1b8452c90c880f3017d209140d3dc06125a18d4d1cdd11e16c93e35c7",
+      "bytes": 363613
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/325826209.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/186443739",
+      "source_id": "186443739",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/325826209/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:963417",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "554a3c6935efc40a8d587e1dbdefa27cda7fa34bf6ddd4fab4a72afd743456c5",
+      "bytes": 340874
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/326171662.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/186620837",
+      "source_id": "186620837",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/326171662/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1878517",
+      "license": "cc-by",
+      "attribution": "(c) Isaac Winkler, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "d6552a66fa0918c7653e7ef4de214e026ac466437f5a88e6d518a8fb27cd5023",
+      "bytes": 346903
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/332525490.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/189768300",
+      "source_id": "189768300",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/332525490/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:7194606",
+      "license": "cc-by",
+      "attribution": "(c) F. Bemmerlein-Lux, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "73c44560263c58a1c70cbf3f9b14aad2ba31a301d22b1572d3d679e9d587b126",
+      "bytes": 520655
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/336583136.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/191809465",
+      "source_id": "191809465",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/336583136/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:86278",
+      "license": "cc-by",
+      "attribution": "(c) Norma Piedra, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "9149891eb03dffcf46dc059a8de1fd27bfb548c7cfc316e1505e200c094dcbaf",
+      "bytes": 298822
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/343499384.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/195278340",
+      "source_id": "195278340",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/343499384/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:7603177",
+      "license": "cc-by",
+      "attribution": "(c) relew, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "3dc52e0faf1e15369ad5111fec7b1956c4964342a04e2f01c549d068068e62ef",
+      "bytes": 595683
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/346143282.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/196646420",
+      "source_id": "196646420",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/346143282/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:3931517",
+      "license": "cc-by",
+      "attribution": "(c) Beah Vega, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "ea54b1eef02a8dc1eaace717f790edc404e382e509525e09dd94aca433d52614",
+      "bytes": 452798
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/350560002.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/198849265",
+      "source_id": "198849265",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/350560002/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:5294465",
+      "license": "cc-by",
+      "attribution": "(c) Carlos Martínez, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "1200ede1cc03e42bf6c7557fed88cbe48889a0490acb33815b0d74a1521e06a4",
+      "bytes": 394333
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/361376734.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/204448263",
+      "source_id": "204448263",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/361376734/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:3560559",
+      "license": "cc-by",
+      "attribution": "(c) Lalys, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "609b92814e0ceaee60963504d429676b78ffa136df17cb4c5d54128b52bca655",
+      "bytes": 560890
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/361577228.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/204552427",
+      "source_id": "204552427",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/361577228/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:3560559",
+      "license": "cc-by",
+      "attribution": "(c) Lalys, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "1f99687813be2e4b5b35dde4b0e7fd1e71d5a368f1da4ca15ebcb4509c9474c4",
+      "bytes": 537534
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/361744168.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/204645448",
+      "source_id": "204645448",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/361744168/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1416957",
+      "license": "cc-by",
+      "attribution": "(c) Victoria Prosdocimo, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "2fa61eb44a0c1c45292d041e0b8000469f83a45f92005fd641434a53649744b2",
+      "bytes": 52071
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/376383723.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/212984323",
+      "source_id": "212984323",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/376383723/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1434358",
+      "license": "cc-by",
+      "attribution": "(c) Julian Pietragalla, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "3cb5c1c301c691195be3d0fb340ab9a3840472bb555d7206a4ace86778e7b7f9",
+      "bytes": 461242
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/37670845.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/24362324",
+      "source_id": "24362324",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/37670845/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:25945",
+      "license": "cc-by",
+      "attribution": "(c) Alan Rockefeller, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "e304ad6f3e27981be120aa9938fc05c38e1d2bdad5fe33d7cdcc8ea57e810f2b",
+      "bytes": 303115
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/399648052.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/225413718",
+      "source_id": "225413718",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/399648052/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:5573454",
+      "license": "cc-by",
+      "attribution": "(c) José Javier Barrios Flores, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "e21b594a165fba51946f87383d169d2c3b7bbe33e7958737d228a96fbc3c2ea2",
+      "bytes": 378670
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/401387582.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/226331869",
+      "source_id": "226331869",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/401387582/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:5539522",
+      "license": "cc-by",
+      "attribution": "(c) Ricardo Betancourt Sánchez, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "a7d7c54c5bd081b8414ff6d503ee3f04ce2546375e12399659900f3c3ce8bf6d",
+      "bytes": 458759
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/401623336.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/226454458",
+      "source_id": "226454458",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/401623336/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:3122994",
+      "license": "cc-by",
+      "attribution": "(c) Dávid Horváth, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "f5e4eb08a1d629080d6496a694323a5eba233845d50534368dde6e5ed63701c0",
+      "bytes": 600852
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/403591747.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/227496993",
+      "source_id": "227496993",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/403591747/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:3122994",
+      "license": "cc-by",
+      "attribution": "(c) Dávid Horváth, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "53b76671393486650b2b505fd22fe71ccb2d96fe8a1bff780c069f0ac5d2f6e3",
+      "bytes": 541185
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/405839041.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/228685387",
+      "source_id": "228685387",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/405839041/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1584261",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "9f324a6130db92603907d3e5f01847dd107a9cec4c1cb5b03b7b0678ffdd4cbd",
+      "bytes": 585464
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/407096564.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/229348761",
+      "source_id": "229348761",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/407096564/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:5052586",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "a730533a24d92ffa52242c3b2b08753e7d4eee379efb256f99970f426fa81098",
+      "bytes": 612494
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/407561492.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/229595433",
+      "source_id": "229595433",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/407561492/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:491170",
+      "license": "cc-by",
+      "attribution": "(c) Jared Shorma, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "94c81e6f589fab0f2f0de4d1c951178c89dae0e59d23e20ccadc8ff36d79b71d",
+      "bytes": 313918
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/408905189.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/230301130",
+      "source_id": "230301130",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/408905189/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:8669",
+      "license": "cc-by",
+      "attribution": "(c) Summit Metro Parks, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "6f2d109e2ba3b08bc310b2d0bb928890ac4e691591325fd5490a5016ea34a236",
+      "bytes": 386191
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/409623131.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/230680298",
+      "source_id": "230680298",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/409623131/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:6698066",
+      "license": "cc-by",
+      "attribution": "(c) Toadkeeper, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "e9911c7aefd2f131e05c7b0ab61fadad6a31d49b4ec6cc9494e481b7d96e5bc6",
+      "bytes": 469049
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/412085002.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/231980004",
+      "source_id": "231980004",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/412085002/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:2533480",
+      "license": "cc-by",
+      "attribution": "(c) Christoph Moning, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "a79562eb3b8fef068c486cced53e92182933f7cf4ee39cde486f5ff56de0e1f8",
+      "bytes": 484892
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/413275914.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/232601065",
+      "source_id": "232601065",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/413275914/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:2342058",
+      "license": "cc-by",
+      "attribution": "(c) Dean R Suhlter, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "b95956c9f0ae60ddde66b0f421098b57fbbd5738bbb497e610ed7b969fc25cc0",
+      "bytes": 401837
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/414240106.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/233110803",
+      "source_id": "233110803",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/414240106/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1006201",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "a1746583246f71868565d60275113dc9c8fc72f630a192605717eec614b64a0f",
+      "bytes": 222356
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/414254865.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/233118674",
+      "source_id": "233118674",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/414254865/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:3618214",
+      "license": "cc-by",
+      "attribution": "(c) Lukas Zangl, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "b713360affd0a045d357c6c9599257a0e45a8386bb406d2c718f50ba9eaa5dcc",
+      "bytes": 328849
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/415021440.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/233524698",
+      "source_id": "233524698",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/415021440/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:5797933",
+      "license": "cc-by",
+      "attribution": "(c) gene, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "f110ebbdfed2088a53c4ba353c1824f5d40566be2487851290ff947a26323e3d",
+      "bytes": 557347
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/416269607.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/234180575",
+      "source_id": "234180575",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/416269607/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:4308504",
+      "license": "cc-by",
+      "attribution": "(c) Werner Schuster, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "c1c285542d05cb64abeb610ef6814f361c8aa0b5c67b2a13ae46ca3061a8d0c6",
+      "bytes": 714716
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/416411273.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/234252182",
+      "source_id": "234252182",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/416411273/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:4986748",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "426d85c17d2db3ae6e4eeeb5b27dbed638920076e3077086b2f8377c926e39ae",
+      "bytes": 271818
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/417060410.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/234586803",
+      "source_id": "234586803",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/417060410/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:5758624",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "24b9a8007043f92ab0570a3d32228e3c4b093af3bce3c95af64acd7bc4e93e3e",
+      "bytes": 224887
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/417349200.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/234734534",
+      "source_id": "234734534",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/417349200/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:758243",
+      "license": "cc-by",
+      "attribution": "(c) Daniel J. Layton, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "1171a26f184ecc831f4d7dc56a738ff336671ef87a1a0de059190f8cbe0c6a5a",
+      "bytes": 331505
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/418164734.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/235155441",
+      "source_id": "235155441",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/418164734/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:5933291",
+      "license": "cc-by",
+      "attribution": "(c) Bernhard Hildebrand, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "95ed07f94af2d9ee7f56994fd91e9f71328b868954243aca47ee55c0e2d9dc65",
+      "bytes": 403431
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/419191441.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/235687558",
+      "source_id": "235687558",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/419191441/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:3499430",
+      "license": "cc-by",
+      "attribution": "(c) Petr Kouba, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "9c571d8ed62ecec7d04263121b1162beadab7b6e7aa71ca2f7afa5e41f8aa970",
+      "bytes": 276333
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/419213118.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/235698902",
+      "source_id": "235698902",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/419213118/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1908828",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "a8891a76b21812b3365826325940b084d2e3cd0d8ca9bc99eaf9271b0aa459d4",
+      "bytes": 530606
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/419379603.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/235787436",
+      "source_id": "235787436",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/419379603/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:587203",
+      "license": "cc-by",
+      "attribution": "(c) Brian C. Hunt, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "829f0f44d5b1e0bd8ab42eee31397122047c561ae9c928abb8e0e0caf2eb14b8",
+      "bytes": 326531
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/420140769.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/236177445",
+      "source_id": "236177445",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/420140769/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:6922668",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "7847c36fd074c8b618893861823f8d66edae953d2bacd0bcd11fa39a0ce6a420",
+      "bytes": 329291
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/420458465.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/236345014",
+      "source_id": "236345014",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/420458465/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:2749485",
+      "license": "cc-by",
+      "attribution": "(c) donbull, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "17520a4c6f31cbac891a6583c24be05a46a67b9121918cacf244f2e9e7cf3778",
+      "bytes": 1054692
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/420580456.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/236408479",
+      "source_id": "236408479",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/420580456/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:321317",
+      "license": "cc-by",
+      "attribution": "(c) Kevin Faccenda, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "b96fd468a1cda6b7d5aba6222830a7f2c9f598787a2699af509e6ebc760773be",
+      "bytes": 107437
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/420837743.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/236544523",
+      "source_id": "236544523",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/420837743/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:2761015",
+      "license": "cc-by",
+      "attribution": "(c) Alex Stuart, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "8d2411c9591eb3071713b40af4cc9b213b105a53650728af0773e46bd26b66fd",
+      "bytes": 243314
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/421234858.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/236751124",
+      "source_id": "236751124",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/421234858/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:6164054",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "12c2eed89dc08880b60258699b3be8ff1e1fa2eae5ac1b096b40c294f4312321",
+      "bytes": 289183
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/423734652.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/238043113",
+      "source_id": "238043113",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/423734652/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1032700",
+      "license": "cc-by-sa",
+      "attribution": "(c) Björn Sothmann, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "2a5f81db29755195bf28955fb6e294c437159efcb36b047db41644da960caba9",
+      "bytes": 291764
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/424432093.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/238402889",
+      "source_id": "238402889",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/424432093/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:5510986",
+      "license": "cc-by",
+      "attribution": "(c) Matthew Morgan, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "d9b15bdc1c52cbf93a5470e19203cc6a2b32f5071195a5fa1fd3ab4bffefecec",
+      "bytes": 210871
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/425843787.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/239131909",
+      "source_id": "239131909",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/425843787/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1908828",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "95d80ecf1142554f2a3e67e9907230751f4875bf63476eb12da3f803478090cf",
+      "bytes": 576451
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/425844284.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/239132103",
+      "source_id": "239132103",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/425844284/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1908828",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "ee09673b964fb320e3f02484ed81918c956439b234c36c0a95e6241fe273ed27",
+      "bytes": 551395
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/425847078.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/239133647",
+      "source_id": "239133647",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/425847078/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1908828",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "f3f084ecea3e341aec5e88e3ec04400d32817e15ddfa1a5eacc528d990c407ac",
+      "bytes": 614871
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/425847499.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/239134011",
+      "source_id": "239134011",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/425847499/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1908828",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "52058bb6f9eb42512878ea5baf922528dec55d4c049eb15c42157fb7b8c766b3",
+      "bytes": 591404
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/45141127.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/28941171",
+      "source_id": "28941171",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/45141127/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1019741",
+      "license": "cc-by",
+      "attribution": "(c) Jose Castro, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "daadf39cd161be514e1ce04de50cb9b7659ca825137148453151d74aa70a688e",
+      "bytes": 419839
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/455724.jpg",
+      "source": "inat_smut",
+      "source_url": "http://www.inaturalist.org/observations/365038",
+      "source_id": "365038",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/455724/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:14334",
+      "license": "cc-by",
+      "attribution": "(c) mayfly1963, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "6e37cb62cffbb496f44e618e479c008b3508affb36a8519055a3272500475294",
+      "bytes": 165162
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/45790312.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/29342892",
+      "source_id": "29342892",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/45790312/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1775428",
+      "license": "cc-by-sa",
+      "attribution": "(c) migallel, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "168e947aebefbf8b5b58cd99068ef2d17f1d13b6bbdbdc4de7f7c3d7f3918883",
+      "bytes": 298320
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/48250281.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/30865879",
+      "source_id": "30865879",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/48250281/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:186163",
+      "license": "cc-by",
+      "attribution": "(c) Jason Grant, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "d57cdb0b3acf9d1793c6b93dae43ae073cf47408a2bbaaf0f3d4aa08a230a633",
+      "bytes": 267232
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/48281816.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/30885584",
+      "source_id": "30885584",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/48281816/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1365773",
+      "license": "cc-by",
+      "attribution": "(c) Markus Krieger, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "7760d7ee705b49d383f24276d451234946abe8280e899e1fd70f56f1431fd475",
+      "bytes": 509758
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/48489112.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/31010593",
+      "source_id": "31010593",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/48489112/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1787440",
+      "license": "cc-by",
+      "attribution": "(c) Fabian Steeg, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "5434fe29d5137ad5561b93024a5f26fc11d9a27f186d02b7fb4c3694890f835b",
+      "bytes": 239978
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/48665902.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/31114656",
+      "source_id": "31114656",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/48665902/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1775428",
+      "license": "cc-by-sa",
+      "attribution": "(c) migallel, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "7ad2f39f35facbc528105b559d88cf0fd8aa86bc7f1c399e3a723845c4fc8249",
+      "bytes": 406540
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/50395267.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/32147904",
+      "source_id": "32147904",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/50395267/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:374372",
+      "license": "cc-by-sa",
+      "attribution": "(c) Django Grootmyers, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "2c171f51844c53e61e29ba8a73bbfc86b23529ef425e2dcdd5176e5e54b9b5b1",
+      "bytes": 167615
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/50598289.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/32269823",
+      "source_id": "32269823",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/50598289/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:21652",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "c3289180d86156e0b4aeef8af5b65cda0f0f9e0ec6514c0128e13d29ce9f5bfd",
+      "bytes": 364393
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/50959908.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/32488829",
+      "source_id": "32488829",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/50959908/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:673263",
+      "license": "cc-by",
+      "attribution": "(c) Erik Rytter, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "74865eadb01054e9faccc2f79154082fa436c24bcebb0279e159d2350b087e94",
+      "bytes": 315348
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/51507980.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/32822438",
+      "source_id": "32822438",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/51507980/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1032700",
+      "license": "cc-by-sa",
+      "attribution": "(c) Björn Sothmann, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "3511e5aa665eff436dcc5c89dca0ca3ede81e1fac96576267e1e293a0c088d53",
+      "bytes": 287380
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/51889909.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/33057226",
+      "source_id": "33057226",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/51889909/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:11064",
+      "license": "cc-by",
+      "attribution": "(c) Robert Guralnick, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "6edb53a630846eb43621d22f45399764b9bae154e6705fff1139c175dc008ecc",
+      "bytes": 377352
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/52020759.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/33137714",
+      "source_id": "33137714",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/52020759/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1775428",
+      "license": "cc-by-sa",
+      "attribution": "(c) migallel, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "0a48dff4b89284ccd7803a2e67bc701270a8413ac69a3ab704c4314850901c0d",
+      "bytes": 312427
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/52329325.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/33322390",
+      "source_id": "33322390",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/52329325/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1794233",
+      "license": "cc-by",
+      "attribution": "(c) bogsuckers, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "b22a5b34bed71ee892d0aa7bbdcb84c715b93353bee1ae9ea24975707ade78f4",
+      "bytes": 425678
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/56050739.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/35539958",
+      "source_id": "35539958",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/56050739/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:24791",
+      "license": "cc-by-sa",
+      "attribution": "(c) Juan Carlos Pérez Magaña, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "e1f9981714078caf57c083273b6f3a8742ed3da1d6eabb1cdbef60f5701ca16d",
+      "bytes": 619276
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/5611106.jpg",
+      "source": "inat_smut",
+      "source_url": "http://www.inaturalist.org/observations/4636759",
+      "source_id": "4636759",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/5611106/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:477",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "9c90d2d84ee1bac4c7c72338edfe607e12d0c40ef09d2911da0babb14e6226be",
+      "bytes": 904366
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/5619958.jpg",
+      "source": "inat_smut",
+      "source_url": "http://www.inaturalist.org/observations/4642512",
+      "source_id": "4642512",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/5619958/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:505",
+      "license": "cc-by",
+      "attribution": "(c) Don Loarie, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "4c87614083427b93415cc40b532f79bec18d25cc4b70b9a07a6eb3be88080ef9",
+      "bytes": 224646
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/5674805.jpg",
+      "source": "inat_smut",
+      "source_url": "http://www.inaturalist.org/observations/4678258",
+      "source_id": "4678258",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/5674805/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:25945",
+      "license": "cc-by",
+      "attribution": "(c) Alan Rockefeller, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "8173a276258e5b23094e91de46ae5807851783647c4edc730761a29da6032ebb",
+      "bytes": 336172
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/5677213.jpg",
+      "source": "inat_smut",
+      "source_url": "http://www.inaturalist.org/observations/4678601",
+      "source_id": "4678601",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/5677213/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:25945",
+      "license": "cc-by",
+      "attribution": "(c) Alan Rockefeller, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "050296c30bac4141cd1bff00982d9e631498a0aaff9c21a5445642c70984e5ae",
+      "bytes": 324007
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/57772571.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/36539434",
+      "source_id": "36539434",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/57772571/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:2475928",
+      "license": "cc-by",
+      "attribution": "(c) CorentinD, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "8b909b5f729376ac58492c049ccd857edeb9cfddb7edc0984460caac8d182ec6",
+      "bytes": 616408
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/59974972.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/37787039",
+      "source_id": "37787039",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/59974972/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:420777",
+      "license": "cc-by",
+      "attribution": "(c) Tereso Hernández Morales, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "c896b38e98e2d66f0b840ed9524c35b587fc00b1ce0064a9b33e9c7220ff323c",
+      "bytes": 379037
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/61734534.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/38810225",
+      "source_id": "38810225",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/61734534/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:488462",
+      "license": "cc-by",
+      "attribution": "(c) Peter Boyer, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "43ddb118bd00b9eeb4519529d490456eebbec485bb31dcedb82e186538407710",
+      "bytes": 251384
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/61734567.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/38810226",
+      "source_id": "38810226",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/61734567/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:488462",
+      "license": "cc-by",
+      "attribution": "(c) Peter Boyer, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "e1d5e8f03923031a5976f5c64b5d4439ddb8001c2b8d930a07d3eeb8067d1761",
+      "bytes": 202023
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/6998469.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/5653432",
+      "source_id": "5653432",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/6998469/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:447269",
+      "license": "cc-by",
+      "attribution": "(c) Davide Puddu, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "c6281f716645bf6352cdf22c54d4e8a9d9f887f14920969984b19e1b78674d3b",
+      "bytes": 475736
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/7033100.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/5678612",
+      "source_id": "5678612",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/7033100/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:85370",
+      "license": "cc-by-sa",
+      "attribution": "(c) Miguel Moreno, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "874d8b0e0d622e26548a15128c81b10a06eedc6e1d26a72379fe9f8fd5e888e0",
+      "bytes": 288026
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/77782902.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/49004783",
+      "source_id": "49004783",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/77782902/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1880699",
+      "license": "cc-by",
+      "attribution": "(c) Enrico Tomschke, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "bf64f8369bf7660acc2a3da33421f9b5dd6f9ecad757a9ba1d2911fde9dc892c",
+      "bytes": 311260
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/82650295.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/52001277",
+      "source_id": "52001277",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/82650295/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1775428",
+      "license": "cc-by-sa",
+      "attribution": "(c) migallel, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "66d1d80c49e8b8e524d5988edd70092ac036803696d3a63a82395a4155f6de93",
+      "bytes": 491895
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/8468893.jpg",
+      "source": "inat_smut",
+      "source_url": "http://conabio.inaturalist.org/observations/6681060",
+      "source_id": "6681060",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/8468893/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:420777",
+      "license": "cc-by",
+      "attribution": "(c) Tereso Hernández Morales, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "7d077693213c6e44ea3b44775f85f0086f36b1d5dc5e9aea8b2b2e4375d586b2",
+      "bytes": 358785
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/87670121.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/55073954",
+      "source_id": "55073954",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/87670121/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1028043",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "061ae08a97d3053d354f0832232c4918fa72ef49b92e4f75c758c485b588e8c7",
+      "bytes": 785502
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/88293595.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/55448603",
+      "source_id": "55448603",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/88293595/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:420777",
+      "license": "cc-by",
+      "attribution": "(c) Tereso Hernández Morales, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "180711d5e470ac655f354c9d0b04c9e84e6a4d9a242a45e3a1d8370814635629",
+      "bytes": 357626
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/89931230.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/56432833",
+      "source_id": "56432833",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/89931230/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:481777",
+      "license": "cc-by",
+      "attribution": "(c) moleneg, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "d3deaaec81e5d418b0f539dbb85affa5807b052f2b0e63d70ef25bccb6c1d64e",
+      "bytes": 262291
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/90465048.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/56756009",
+      "source_id": "56756009",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/90465048/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1032700",
+      "license": "cc-by-sa",
+      "attribution": "(c) Björn Sothmann, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "b5caeefd1d2be695ee9b578b2378787d6982bc299f8160656d7275d0f7aa5682",
+      "bytes": 295490
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/90758500.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/56927666",
+      "source_id": "56927666",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/90758500/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:2335278",
+      "license": "cc-by",
+      "attribution": "(c) JSmall, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "270cb6745dbe94b7147cca93dfaa43516e24bd08812d3cb8a563855fe79f50bc",
+      "bytes": 431697
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/90856498.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/56985113",
+      "source_id": "56985113",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/90856498/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:166236",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "94135c71d97a8ee15c248a5cd758b7e8d9b279e3ff417db8a358a71ee06e5819",
+      "bytes": 595802
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/90999329.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/57069363",
+      "source_id": "57069363",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/90999329/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:587203",
+      "license": "cc-by",
+      "attribution": "(c) Brian C. Hunt, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "c8ccdad57f006e42f2cf5fd2c19ae841c281013c10a0486e674fc51581552a22",
+      "bytes": 259096
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/91470793.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/57352889",
+      "source_id": "57352889",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/91470793/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1032700",
+      "license": "cc-by-sa",
+      "attribution": "(c) Björn Sothmann, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "cdf556357051967d70b123b3034e74aa36bec8a8b8226fa263745acd7877df6f",
+      "bytes": 390590
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/91903022.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/57606393",
+      "source_id": "57606393",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/91903022/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:26019",
+      "license": "cc-by-sa",
+      "attribution": "(c) Judith Bush, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "dd4592df4e1642402d361083af87f6d652df0176d37650936ced17d453a6b3bb",
+      "bytes": 405376
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/91959574.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/57639357",
+      "source_id": "57639357",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/91959574/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:2438113",
+      "license": "cc-by",
+      "attribution": "(c) Patrick Hacker, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "c6813b5831482774e2058ec8fcd07bfa51f273a510dde3db63dcd22d5bfbfa86",
+      "bytes": 733067
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/92026192.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/57679939",
+      "source_id": "57679939",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/92026192/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1424403",
+      "license": "cc-by",
+      "attribution": "(c) J.S. Carter, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "31da925569f0046f5256b81ddd253acf3577bd00ef449fa63ff54a8a0f9e773f",
+      "bytes": 458906
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/92346042.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/57876006",
+      "source_id": "57876006",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/92346042/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:488462",
+      "license": "cc-by",
+      "attribution": "(c) Peter Boyer, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "cf59287815e055ee7492d77d7b2c9ba63027e64e8de38ced92b01e3762f89983",
+      "bytes": 248756
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/92465532.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/57941887",
+      "source_id": "57941887",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/92465532/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:3228748",
+      "license": "cc-by",
+      "attribution": "(c) Nikita Gerasin, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "e57a8d7b521fc04ce8b8a556041c62263678963a5fb962cdfe3eecb731435015",
+      "bytes": 552039
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/93073173.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/58304726",
+      "source_id": "58304726",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/93073173/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:320666",
+      "license": "cc-by",
+      "attribution": "(c) Thomas Koffel, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "793982e7386b4ee57483d36fa130909f025f9633ef83522eb3066b99db73e2f1",
+      "bytes": 284965
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/93292110.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/58434653",
+      "source_id": "58434653",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/93292110/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1365773",
+      "license": "cc-by",
+      "attribution": "(c) Markus Krieger, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "253066d7999a5c1c1f55a13162ac35f583ea95cdd762e07b2e0cda541f1e02d0",
+      "bytes": 219202
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/93928912.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/58816549",
+      "source_id": "58816549",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/93928912/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:1032700",
+      "license": "cc-by-sa",
+      "attribution": "(c) Björn Sothmann, some rights reserved (CC BY-SA)",
+      "review_required": true,
+      "sha256": "d7976549eedb8525008b3fc98635cf5068fc5066eab95b0d6828389c31af5522",
+      "bytes": 326372
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/94300469.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/59037628",
+      "source_id": "59037628",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/94300469/large.jpg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:472396",
+      "license": "cc-by",
+      "attribution": "(c) Dan MacNeal, some rights reserved (CC BY)",
+      "review_required": true,
+      "sha256": "ebf67258355ba276084b09829b2ae7d683dc0a4ad92a3af5bb15abb7d1ac10c0",
+      "bytes": 398777
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/9761539.jpg",
+      "source": "inat_smut",
+      "source_url": "https://www.inaturalist.org/observations/7493763",
+      "source_id": "7493763",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/9761539/large.jpeg",
+      "labels": [
+        "common_smut"
+      ],
+      "raw_label": "Mycosarcoma maydis",
+      "organ": "unverified",
+      "label_basis": "community_research_grade_not_expert_verified",
+      "capture_group_hint": "inat_observer:419580",
+      "license": "cc0",
+      "attribution": "no rights reserved",
+      "review_required": true,
+      "sha256": "2e9804166aa0da0a6f2ed51a8128cb2430d7e631a077ad4a47f48fb572804f35",
+      "bytes": 671655
+    }
+  ]
+}

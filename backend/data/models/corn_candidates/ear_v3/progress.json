@@ -1,0 +1,146 @@
+[
+  {
+    "classes": [
+      "common_smut",
+      "ear_rot",
+      "healthy_ear"
+    ],
+    "counts": {
+      "train": {
+        "common_smut": 111,
+        "ear_rot": 115,
+        "healthy_ear": 89
+      },
+      "validation": {
+        "common_smut": 27,
+        "ear_rot": 38,
+        "healthy_ear": 37
+      },
+      "test": {
+        "common_smut": 42,
+        "ear_rot": 38,
+        "healthy_ear": 27
+      }
+    },
+    "threads": 6
+  },
+  {
+    "epoch": 1,
+    "stage": "head",
+    "loss": 0.6931360714019291,
+    "validation_macro_f1": 0.7867861305361306,
+    "validation_accuracy": 0.7843137254901961,
+    "seconds": 18
+  },
+  {
+    "epoch": 2,
+    "stage": "head",
+    "loss": 0.4539269218369136,
+    "validation_macro_f1": 0.8757433043147329,
+    "validation_accuracy": 0.8725490196078431,
+    "seconds": 16
+  },
+  {
+    "epoch": 3,
+    "stage": "finetune",
+    "loss": 0.40031989074888685,
+    "validation_macro_f1": 0.9241129910553534,
+    "validation_accuracy": 0.9215686274509803,
+    "seconds": 35
+  },
+  {
+    "epoch": 4,
+    "stage": "finetune",
+    "loss": 0.33903090878138464,
+    "validation_macro_f1": 0.9023496828374878,
+    "validation_accuracy": 0.9019607843137255,
+    "seconds": 588
+  },
+  {
+    "epoch": 5,
+    "stage": "finetune",
+    "loss": 0.26081863372098835,
+    "validation_macro_f1": 0.9320745880580463,
+    "validation_accuracy": 0.9313725490196079,
+    "seconds": 33
+  },
+  {
+    "epoch": 6,
+    "stage": "finetune",
+    "loss": 0.2772761183598685,
+    "validation_macro_f1": 0.9520328599275967,
+    "validation_accuracy": 0.9509803921568627,
+    "seconds": 34
+  },
+  {
+    "epoch": 7,
+    "stage": "finetune",
+    "loss": 0.22371818461115398,
+    "validation_macro_f1": 0.9428436023097553,
+    "validation_accuracy": 0.9411764705882353,
+    "seconds": 33
+  },
+  {
+    "epoch": 8,
+    "stage": "finetune",
+    "loss": 0.21804971671293652,
+    "validation_macro_f1": 0.933852312379333,
+    "validation_accuracy": 0.9313725490196079,
+    "seconds": 32
+  },
+  {
+    "epoch": 9,
+    "stage": "finetune",
+    "loss": 0.20784433257012142,
+    "validation_macro_f1": 0.9340828924162258,
+    "validation_accuracy": 0.9313725490196079,
+    "seconds": 33
+  },
+  {
+    "epoch": 10,
+    "stage": "finetune",
+    "loss": 0.20505907932917278,
+    "validation_macro_f1": 0.9340828924162258,
+    "validation_accuracy": 0.9313725490196079,
+    "seconds": 32
+  },
+  {
+    "epoch": 11,
+    "stage": "finetune",
+    "loss": 0.19657903881300062,
+    "validation_macro_f1": 0.9531181379007466,
+    "validation_accuracy": 0.9509803921568627,
+    "seconds": 32
+  },
+  {
+    "epoch": 12,
+    "stage": "finetune",
+    "loss": 0.19571925094203343,
+    "validation_macro_f1": 0.9531181379007466,
+    "validation_accuracy": 0.9509803921568627,
+    "seconds": 63
+  },
+  {
+    "selected_epoch": 11,
+    "temperature": 0.6664305656026692,
+    "note": "evaluating held-out test once"
+  },
+  {
+    "done": true,
+    "test_accuracy": 0.9532710280373832,
+    "test_macro_f1": 0.9474433777684516,
+    "release_classes": [
+      "common_smut",
+      "ear_rot",
+      "healthy_ear"
+    ],
+    "by_source": {
+      "hf_ricemaize_ear_rot": 0.944,
+      "idadp": 1.0,
+      "inat_maize": 0.75,
+      "inat_smut": 0.963,
+      "inat_smut_recent": 1.0,
+      "wikimedia_ears": 0.913
+    }
+  }
+]

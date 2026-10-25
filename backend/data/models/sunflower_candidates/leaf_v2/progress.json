@@ -1,0 +1,145 @@
+[
+  {
+    "classes": [
+      "downy_mildew",
+      "gray_mold",
+      "healthy",
+      "leaf_scars"
+    ],
+    "counts": {
+      "train": {
+        "downy_mildew": 71,
+        "gray_mold": 44,
+        "healthy": 80,
+        "leaf_scars": 83
+      },
+      "validation": {
+        "downy_mildew": 24,
+        "gray_mold": 14,
+        "healthy": 27,
+        "leaf_scars": 28
+      },
+      "test": {
+        "downy_mildew": 24,
+        "gray_mold": 14,
+        "healthy": 27,
+        "leaf_scars": 28
+      }
+    },
+    "threads": 8
+  },
+  {
+    "epoch": 1,
+    "stage": "head",
+    "loss": 0.8736335948216829,
+    "validation_macro_f1": 0.8382214156079855,
+    "validation_accuracy": 0.8279569892473119,
+    "seconds": 52
+  },
+  {
+    "epoch": 2,
+    "stage": "head",
+    "loss": 0.5912735719474957,
+    "validation_macro_f1": 0.8561677146878239,
+    "validation_accuracy": 0.8494623655913979,
+    "seconds": 20
+  },
+  {
+    "epoch": 3,
+    "stage": "finetune",
+    "loss": 0.6009007623727373,
+    "validation_macro_f1": 0.8494252873563217,
+    "validation_accuracy": 0.8387096774193549,
+    "seconds": 30
+  },
+  {
+    "epoch": 4,
+    "stage": "finetune",
+    "loss": 0.4116309021445487,
+    "validation_macro_f1": 0.9203389830508475,
+    "validation_accuracy": 0.9139784946236559,
+    "seconds": 25
+  },
+  {
+    "epoch": 5,
+    "stage": "finetune",
+    "loss": 0.3883689116659782,
+    "validation_macro_f1": 0.9227032227032227,
+    "validation_accuracy": 0.9139784946236559,
+    "seconds": 24
+  },
+  {
+    "epoch": 6,
+    "stage": "finetune",
+    "loss": 0.37735698870617707,
+    "validation_macro_f1": 0.9615384615384617,
+    "validation_accuracy": 0.956989247311828,
+    "seconds": 24
+  },
+  {
+    "epoch": 7,
+    "stage": "finetune",
+    "loss": 0.3091537635103404,
+    "validation_macro_f1": 0.9118679193147279,
+    "validation_accuracy": 0.9032258064516129,
+    "seconds": 23
+  },
+  {
+    "epoch": 8,
+    "stage": "finetune",
+    "loss": 0.35632522672200373,
+    "validation_macro_f1": 0.9415292353823088,
+    "validation_accuracy": 0.9354838709677419,
+    "seconds": 23
+  },
+  {
+    "epoch": 9,
+    "stage": "finetune",
+    "loss": 0.3240158935244992,
+    "validation_macro_f1": 0.920282361879036,
+    "validation_accuracy": 0.9139784946236559,
+    "seconds": 23
+  },
+  {
+    "epoch": 10,
+    "stage": "finetune",
+    "loss": 0.3167026006489349,
+    "validation_macro_f1": 0.9307035876001394,
+    "validation_accuracy": 0.9247311827956989,
+    "seconds": 25
+  },
+  {
+    "epoch": 11,
+    "stage": "finetune",
+    "loss": 0.34207838151952347,
+    "validation_macro_f1": 0.9307035876001394,
+    "validation_accuracy": 0.9247311827956989,
+    "seconds": 25
+  },
+  {
+    "epoch": 12,
+    "stage": "finetune",
+    "loss": 0.28371244325912254,
+    "validation_macro_f1": 0.9307035876001394,
+    "validation_accuracy": 0.9247311827956989,
+    "seconds": 23
+  },
+  {
+    "selected_epoch": 6,
+    "temperature": 0.5000049211903709,
+    "note": "evaluating held-out test once"
+  },
+  {
+    "done": true,
+    "test_accuracy": 0.9247311827956989,
+    "test_macro_f1": 0.9324675324675324,
+    "release_classes": [
+      "downy_mildew",
+      "healthy",
+      "leaf_scars"
+    ],
+    "by_source": {
+      "kaggle_sunflower": 0.925
+    }
+  }
+]

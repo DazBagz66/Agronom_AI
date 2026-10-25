@@ -1,0 +1,43 @@
+{
+  "started_at": "2026-10-22T17:15:15.234334+00:00",
+  "applied": false,
+  "before": {
+    "logical_bytes": 7395820295,
+    "top_level_bytes": {
+      ".cache": 5544260702,
+      ".git": 81620923,
+      ".gitignore": 147,
+      ".idea": 10481,
+      ".venv": 1090926137,
+      "backend": 519155880,
+      "dist-runtime": 80457461,
+      "docs": 59278,
+      "react-frontend": 79319864,
+      "README.md": 9051,
+      "requirements-training.txt": 60,
+      "requirements.txt": 227,
+      "start.bat": 84
+    }
+  },
+  "actions": [],
+  "skipped": [],
+  "after": {
+    "logical_bytes": 7395820869,
+    "top_level_bytes": {
+      ".cache": 5544260702,
+      ".git": 81620923,
+      ".gitignore": 147,
+      ".idea": 10481,
+      ".venv": 1090926137,
+      "backend": 519156454,
+      "dist-runtime": 80457461,
+      "docs": 59278,
+      "react-frontend": 79319864,
+      "README.md": 9051,
+      "requirements-training.txt": 60,
+      "requirements.txt": 227,
+      "start.bat": 84
+    }
+  },
+  "removed_bytes": 0
+}

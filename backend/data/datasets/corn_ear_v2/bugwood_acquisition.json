@@ -1,0 +1,389 @@
+{
+  "records": [
+    {
+      "path": ".cache/datasets/corn_ear_v2/bugwood/images/1236006.jpg",
+      "download_url": "https://bugwoodcloud.org/images/768x512/1236006.jpg",
+      "source": "bugwood_original",
+      "source_id": "1236006",
+      "source_url": "https://www.invasive.org/browse/image/1236006",
+      "labels": [
+        "diplodia_ear_rot"
+      ],
+      "raw_label": "white ear rot and seedling blight of maize (Stenocarpella maydis (Berk.) B. Sutton)",
+      "organ": "unverified",
+      "license": "CC BY 3.0 US",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/us/",
+      "attribution": "Clemson University - USDA Cooperative Extension Slide Series , Bugwood.org ",
+      "capture_group_hint": "bugwood_photographer:A0CDEDB0-2DCC-4082-991B-6CD90357F871",
+      "label_basis": "original_catalog_pathogen_and_host_not_lab_report",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_review_required"
+      ],
+      "metadata_file": ".cache/datasets/corn_ear_v2/bugwood/1236006.json",
+      "sha256": "efa28cb79e8f3d7047e995476411569002890bf3c156d3fc1c145497cf238e8a",
+      "bytes": 515458,
+      "width": 768,
+      "height": 768,
+      "phash": "32226ae44adb2f2d",
+      "pixel_sha256": "2955d13be3e37a95d91cefc125047fe0611b657b9d1b0d290ac735801be08e38",
+      "gray_std": 39.572,
+      "laplacian_variance": 4561.374
+    },
+    {
+      "path": ".cache/datasets/corn_ear_v2/bugwood/images/5405276.jpg",
+      "download_url": "https://bugwoodcloud.org/images/768x512/5405276.jpg",
+      "source": "bugwood_original",
+      "source_id": "5405276",
+      "source_url": "https://www.invasive.org/browse/image/5405276",
+      "labels": [
+        "diplodia_ear_rot"
+      ],
+      "raw_label": "white ear rot and seedling blight of maize (Stenocarpella maydis (Berk.) B. Sutton)",
+      "organ": "unverified",
+      "license": "CC BY-NC 3.0 US",
+      "license_url": "https://creativecommons.org/licenses/by-nc/3.0/us/",
+      "attribution": "Paul Bachi, University of Kentucky Research and Education Center, Bugwood.org ",
+      "capture_group_hint": "bugwood_photographer:A4133EC2-BD52-4CA3-8ECB-E0D84CC952E8",
+      "label_basis": "original_catalog_pathogen_and_host_not_lab_report",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_review_required",
+        "noncommercial_license"
+      ],
+      "metadata_file": ".cache/datasets/corn_ear_v2/bugwood/5405276.json",
+      "sha256": "74b23f7760270f5d9bbdbcef49557194ae1728c27226bab13982bb54de6e4d08",
+      "bytes": 125993,
+      "width": 767,
+      "height": 575,
+      "phash": "2d3e43cc74ba41c5",
+      "pixel_sha256": "58cf286d12fc7637e0e561a18386e42f2bd41882a2f5acbc2f755d5e97010919",
+      "gray_std": 48.949,
+      "laplacian_variance": 10070.621
+    },
+    {
+      "path": ".cache/datasets/corn_ear_v2/bugwood/images/5405277.jpg",
+      "download_url": "https://bugwoodcloud.org/images/768x512/5405277.jpg",
+      "source": "bugwood_original",
+      "source_id": "5405277",
+      "source_url": "https://www.invasive.org/browse/image/5405277",
+      "labels": [
+        "diplodia_ear_rot"
+      ],
+      "raw_label": "white ear rot and seedling blight of maize (Stenocarpella maydis (Berk.) B. Sutton)",
+      "organ": "unverified",
+      "license": "CC BY-NC 3.0 US",
+      "license_url": "https://creativecommons.org/licenses/by-nc/3.0/us/",
+      "attribution": "Paul Bachi, University of Kentucky Research and Education Center, Bugwood.org ",
+      "capture_group_hint": "bugwood_photographer:A4133EC2-BD52-4CA3-8ECB-E0D84CC952E8",
+      "label_basis": "original_catalog_pathogen_and_host_not_lab_report",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_review_required",
+        "noncommercial_license"
+      ],
+      "metadata_file": ".cache/datasets/corn_ear_v2/bugwood/5405277.json",
+      "sha256": "9b705752fef60223a47b101e45810a7fc10e798fce1ff90053188863c179b3d5",
+      "bytes": 98122,
+      "width": 767,
+      "height": 575,
+      "phash": "1891e7f4a56a29b1",
+      "pixel_sha256": "860cb757b838b93762ed262eb6673f81d11ae2b2d4b451309b30d05fa85cd36d",
+      "gray_std": 50.76,
+      "laplacian_variance": 4765.203
+    },
+    {
+      "path": ".cache/datasets/corn_ear_v2/bugwood/images/5405278.jpg",
+      "download_url": "https://bugwoodcloud.org/images/768x512/5405278.jpg",
+      "source": "bugwood_original",
+      "source_id": "5405278",
+      "source_url": "https://www.invasive.org/browse/image/5405278",
+      "labels": [
+        "diplodia_ear_rot"
+      ],
+      "raw_label": "white ear rot and seedling blight of maize (Stenocarpella maydis (Berk.) B. Sutton)",
+      "organ": "unverified",
+      "license": "CC BY-NC 3.0 US",
+      "license_url": "https://creativecommons.org/licenses/by-nc/3.0/us/",
+      "attribution": "Paul Bachi, University of Kentucky Research and Education Center, Bugwood.org ",
+      "capture_group_hint": "bugwood_photographer:A4133EC2-BD52-4CA3-8ECB-E0D84CC952E8",
+      "label_basis": "original_catalog_pathogen_and_host_not_lab_report",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_review_required",
+        "noncommercial_license"
+      ],
+      "metadata_file": ".cache/datasets/corn_ear_v2/bugwood/5405278.json",
+      "sha256": "73a8225bef0f7e8efc47f94bb8266f14b61fdf82b93bccc11224dd2ec133eaf0",
+      "bytes": 65199,
+      "width": 768,
+      "height": 576,
+      "phash": "6f7e30e08f0f46c0",
+      "pixel_sha256": "e38de49be49556c42fb26169a9dae795dadef60d33f57b27d49ef7d72babf6f0",
+      "gray_std": 49.505,
+      "laplacian_variance": 1401.629
+    },
+    {
+      "path": ".cache/datasets/corn_ear_v2/bugwood/images/5405279.jpg",
+      "download_url": "https://bugwoodcloud.org/images/768x512/5405279.jpg",
+      "source": "bugwood_original",
+      "source_id": "5405279",
+      "source_url": "https://www.invasive.org/browse/image/5405279",
+      "labels": [
+        "diplodia_ear_rot"
+      ],
+      "raw_label": "white ear rot and seedling blight of maize (Stenocarpella maydis (Berk.) B. Sutton)",
+      "organ": "unverified",
+      "license": "CC BY-NC 3.0 US",
+      "license_url": "https://creativecommons.org/licenses/by-nc/3.0/us/",
+      "attribution": "Paul Bachi, University of Kentucky Research and Education Center, Bugwood.org ",
+      "capture_group_hint": "bugwood_photographer:A4133EC2-BD52-4CA3-8ECB-E0D84CC952E8",
+      "label_basis": "original_catalog_pathogen_and_host_not_lab_report",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_review_required",
+        "noncommercial_license"
+      ],
+      "metadata_file": ".cache/datasets/corn_ear_v2/bugwood/5405279.json",
+      "sha256": "c0d868458be067d82abc9b30a0c7d0c8aa8e3627a6fdd8ac00cfb1e049f134f5",
+      "bytes": 46595,
+      "width": 768,
+      "height": 576,
+      "phash": "6749cf633e621494",
+      "pixel_sha256": "68440f3e7a0ae63a4b4af009cd5e2dbc3be6b282c4c1308de5652c1e6a4127d0",
+      "gray_std": 52.031,
+      "laplacian_variance": 817.086
+    },
+    {
+      "path": ".cache/datasets/corn_ear_v2/bugwood/images/5405280.jpg",
+      "download_url": "https://bugwoodcloud.org/images/768x512/5405280.jpg",
+      "source": "bugwood_original",
+      "source_id": "5405280",
+      "source_url": "https://www.invasive.org/browse/image/5405280",
+      "labels": [
+        "diplodia_ear_rot"
+      ],
+      "raw_label": "white ear rot and seedling blight of maize (Stenocarpella maydis (Berk.) B. Sutton)",
+      "organ": "unverified",
+      "license": "CC BY-NC 3.0 US",
+      "license_url": "https://creativecommons.org/licenses/by-nc/3.0/us/",
+      "attribution": "Paul Bachi, University of Kentucky Research and Education Center, Bugwood.org ",
+      "capture_group_hint": "bugwood_photographer:A4133EC2-BD52-4CA3-8ECB-E0D84CC952E8",
+      "label_basis": "original_catalog_pathogen_and_host_not_lab_report",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_review_required",
+        "noncommercial_license"
+      ],
+      "metadata_file": ".cache/datasets/corn_ear_v2/bugwood/5405280.json",
+      "sha256": "575b6b8f5e0110af020c4d03946f563a3ac91e4fcf4d70ac60c6273f54e37b1c",
+      "bytes": 29864,
+      "width": 768,
+      "height": 576,
+      "phash": "05acb4e665d85695",
+      "pixel_sha256": "65841dab7863135748012aa619cd1f0830c4d3fd625753e17c06f6100cbed2b9",
+      "gray_std": 41.312,
+      "laplacian_variance": 606.309
+    },
+    {
+      "path": ".cache/datasets/corn_ear_v2/bugwood/images/5405281.jpg",
+      "download_url": "https://bugwoodcloud.org/images/768x512/5405281.jpg",
+      "source": "bugwood_original",
+      "source_id": "5405281",
+      "source_url": "https://www.invasive.org/browse/image/5405281",
+      "labels": [
+        "diplodia_ear_rot"
+      ],
+      "raw_label": "white ear rot and seedling blight of maize (Stenocarpella maydis (Berk.) B. Sutton)",
+      "organ": "unverified",
+      "license": "CC BY-NC 3.0 US",
+      "license_url": "https://creativecommons.org/licenses/by-nc/3.0/us/",
+      "attribution": "Paul Bachi, University of Kentucky Research and Education Center, Bugwood.org ",
+      "capture_group_hint": "bugwood_photographer:A4133EC2-BD52-4CA3-8ECB-E0D84CC952E8",
+      "label_basis": "original_catalog_pathogen_and_host_not_lab_report",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_review_required",
+        "noncommercial_license"
+      ],
+      "metadata_file": ".cache/datasets/corn_ear_v2/bugwood/5405281.json",
+      "sha256": "d2f106e334b20f977f9d0b3ac16ac4d3f2bdc9a6622c15bd043fa151e89d4a8a",
+      "bytes": 61027,
+      "width": 768,
+      "height": 576,
+      "phash": "149b5a636ba4869b",
+      "pixel_sha256": "cc9fa469e7db5b50fc067a45d411e67d330a0ab69f645862da55974447d3d569",
+      "gray_std": 75.847,
+      "laplacian_variance": 4106.933
+    },
+    {
+      "path": ".cache/datasets/corn_ear_v2/bugwood/images/5405282.jpg",
+      "download_url": "https://bugwoodcloud.org/images/768x512/5405282.jpg",
+      "source": "bugwood_original",
+      "source_id": "5405282",
+      "source_url": "https://www.invasive.org/browse/image/5405282",
+      "labels": [
+        "diplodia_ear_rot"
+      ],
+      "raw_label": "white ear rot and seedling blight of maize (Stenocarpella maydis (Berk.) B. Sutton)",
+      "organ": "unverified",
+      "license": "CC BY-NC 3.0 US",
+      "license_url": "https://creativecommons.org/licenses/by-nc/3.0/us/",
+      "attribution": "Paul Bachi, University of Kentucky Research and Education Center, Bugwood.org ",
+      "capture_group_hint": "bugwood_photographer:A4133EC2-BD52-4CA3-8ECB-E0D84CC952E8",
+      "label_basis": "original_catalog_pathogen_and_host_not_lab_report",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_review_required",
+        "noncommercial_license"
+      ],
+      "metadata_file": ".cache/datasets/corn_ear_v2/bugwood/5405282.json",
+      "sha256": "6aef5b32846f0ffd1010e1b81c29f80f34825c6b4009cdaf5ed2cf1ddc1e2dcc",
+      "bytes": 54087,
+      "width": 768,
+      "height": 576,
+      "phash": "48b36ca4337d01f6",
+      "pixel_sha256": "21c0306a2d51c88351f35ea1686ff1a67eda15c629c847fb6c97b1567784ca09",
+      "gray_std": 59.48,
+      "laplacian_variance": 1326.235
+    },
+    {
+      "path": ".cache/datasets/corn_ear_v2/bugwood/images/5405283.jpg",
+      "download_url": "https://bugwoodcloud.org/images/768x512/5405283.jpg",
+      "source": "bugwood_original",
+      "source_id": "5405283",
+      "source_url": "https://www.invasive.org/browse/image/5405283",
+      "labels": [
+        "diplodia_ear_rot"
+      ],
+      "raw_label": "white ear rot and seedling blight of maize (Stenocarpella maydis (Berk.) B. Sutton)",
+      "organ": "unverified",
+      "license": "CC BY-NC 3.0 US",
+      "license_url": "https://creativecommons.org/licenses/by-nc/3.0/us/",
+      "attribution": "Paul Bachi, University of Kentucky Research and Education Center, Bugwood.org ",
+      "capture_group_hint": "bugwood_photographer:A4133EC2-BD52-4CA3-8ECB-E0D84CC952E8",
+      "label_basis": "original_catalog_pathogen_and_host_not_lab_report",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_review_required",
+        "noncommercial_license"
+      ],
+      "metadata_file": ".cache/datasets/corn_ear_v2/bugwood/5405283.json",
+      "sha256": "6f5abc5ef7a5fb4b32636740f6b64a7d0b41b71a00bd14e80fd28ba60fc3c9e9",
+      "bytes": 34619,
+      "width": 768,
+      "height": 576,
+      "phash": "42e962d55e310af5",
+      "pixel_sha256": "306781bdce5ced3aaba6820be8aab20f8e91c654e99b75d5297007ecbdcd7bd6",
+      "gray_std": 21.094,
+      "laplacian_variance": 1725.632
+    },
+    {
+      "path": ".cache/datasets/corn_ear_v2/bugwood/images/5405284.jpg",
+      "download_url": "https://bugwoodcloud.org/images/768x512/5405284.jpg",
+      "source": "bugwood_original",
+      "source_id": "5405284",
+      "source_url": "https://www.invasive.org/browse/image/5405284",
+      "labels": [
+        "diplodia_ear_rot"
+      ],
+      "raw_label": "white ear rot and seedling blight of maize (Stenocarpella maydis (Berk.) B. Sutton)",
+      "organ": "unverified",
+      "license": "CC BY-NC 3.0 US",
+      "license_url": "https://creativecommons.org/licenses/by-nc/3.0/us/",
+      "attribution": "Paul Bachi, University of Kentucky Research and Education Center, Bugwood.org ",
+      "capture_group_hint": "bugwood_photographer:A4133EC2-BD52-4CA3-8ECB-E0D84CC952E8",
+      "label_basis": "original_catalog_pathogen_and_host_not_lab_report",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_review_required",
+        "noncommercial_license"
+      ],
+      "metadata_file": ".cache/datasets/corn_ear_v2/bugwood/5405284.json",
+      "sha256": "5d2f17e3501c638aa29c78325f21486490a38487e957c866fdaaee3664983555",
+      "bytes": 83246,
+      "width": 768,
+      "height": 576,
+      "phash": "7631eba8a19d5a88",
+      "pixel_sha256": "1fbcb37ed569a2c7b13fcfb495f84ba30038b0ec82a54d123e933caa99562e0a",
+      "gray_std": 43.65,
+      "laplacian_variance": 5895.254
+    },
+    {
+      "path": ".cache/datasets/corn_ear_v2/bugwood/images/5512441.jpg",
+      "download_url": "https://bugwoodcloud.org/images/768x512/5512441.jpg",
+      "source": "bugwood_original",
+      "source_id": "5512441",
+      "source_url": "https://www.invasive.org/browse/image/5512441",
+      "labels": [
+        "diplodia_ear_rot"
+      ],
+      "raw_label": "white ear rot and seedling blight of maize (Stenocarpella maydis (Berk.) B. Sutton)",
+      "organ": "unverified",
+      "license": "CC BY-NC 3.0 US",
+      "license_url": "https://creativecommons.org/licenses/by-nc/3.0/us/",
+      "attribution": "James Stack, Kansas State University, Bugwood.org ",
+      "capture_group_hint": "bugwood_photographer:37B70952-DDC1-4739-AA83-DFFD12139CDC",
+      "label_basis": "original_catalog_pathogen_and_host_not_lab_report",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_review_required",
+        "noncommercial_license"
+      ],
+      "metadata_file": ".cache/datasets/corn_ear_v2/bugwood/5512441.json",
+      "sha256": "7de6e8955ef6a2d50f290619d4874c4bee4338643dd8ee051a53c029fcc2534a",
+      "bytes": 74548,
+      "width": 503,
+      "height": 768,
+      "phash": "6b7f8fca302443d0",
+      "pixel_sha256": "d052e442795baa456a6fa3993ad450e3bd36435dfcd3d1324e96edbf026f20e1",
+      "gray_std": 76.704,
+      "laplacian_variance": 4931.599
+    },
+    {
+      "path": ".cache/datasets/corn_ear_v2/bugwood/images/5625257.jpg",
+      "download_url": "https://bugwoodcloud.org/images/768x512/5625257.jpg",
+      "source": "bugwood_original",
+      "source_id": "5625257",
+      "source_url": "https://www.invasive.org/browse/image/5625257",
+      "labels": [
+        "gibberella_ear_rot"
+      ],
+      "raw_label": "Fusarium head blight (Fusarium graminearum Schwabe)",
+      "organ": "unverified",
+      "license": "CC BY-NC 3.0 US",
+      "license_url": "https://creativecommons.org/licenses/by-nc/3.0/us/",
+      "attribution": "Alison Robertson, Bugwood.org ",
+      "capture_group_hint": "bugwood_photographer:2C468D05-0C82-4861-A9C3-30B6A991831A",
+      "label_basis": "original_catalog_pathogen_and_host_not_lab_report",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_review_required",
+        "noncommercial_license"
+      ],
+      "metadata_file": ".cache/datasets/corn_ear_v2/bugwood/5625257.json",
+      "sha256": "553980e081c8ae37f61ff76dee820462cea4a2b73349b5a5048457d3107166ca",
+      "bytes": 146397,
+      "width": 768,
+      "height": 576,
+      "phash": "70b630af705d0da6",
+      "pixel_sha256": "13173d5cf1a69ea9be3a8a43592a9931d1e61fbd446604f667724fc82748078a",
+      "gray_std": 36.973,
+      "laplacian_variance": 2049.915
+    }
+  ],
+  "errors": [],
+  "license_mapping_basis": "Public image-page component: commercial 2/3 = CC BY 3.0 US; 1/4 = CC BY-NC 3.0 US."
+}

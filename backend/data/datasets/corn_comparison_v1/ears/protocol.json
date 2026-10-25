@@ -1,0 +1,36 @@
+{
+  "classes": [
+    "common_smut",
+    "healthy_ear"
+  ],
+  "organ": "ear",
+  "manifest_hashes": {
+    "train": "856a44c0e8d5813938ade555ee500d1766a970d30c308af547fe2db1828761b3",
+    "validation": "cb6a09a9c533db6e8ad3f84b8a3e08386a73c7aacdd59265406153a3b4ccfccb",
+    "test": "026ddf741209316751431ef750fe4859f964857cfccc166714b4888f5c78f3d2"
+  },
+  "counts": {
+    "train": {
+      "common_smut": 111,
+      "healthy_ear": 19
+    },
+    "validation": {
+      "common_smut": 27,
+      "healthy_ear": 14
+    },
+    "test": {
+      "common_smut": 42,
+      "healthy_ear": 4
+    }
+  },
+  "epochs": 4,
+  "seed": 42,
+  "selection": "Validation macro-F1 only; identical splits/augmentation for both architectures.",
+  "limitations": [
+    "Research-only community labels and non-expert visual triage.",
+    "healthy_ear means no visible smut, not absence of other diseases.",
+    "Very few independent negative ears; no release eligibility.",
+    "Rot, head smut and specific fungal species are not represented by validated classes.",
+    "Existing protected test and validation groups preserved; sources were previously inspected."
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "records": 585,
+  "unique_sha256": 584,
+  "new_downloads": 268,
+  "roles": {
+    "research_training": 130,
+    "protected_validation": 41,
+    "protected_test": 46,
+    "license_and_expert_review": 91,
+    "excluded": 29,
+    "auxiliary_development": 140,
+    "licensed_pathogen_example": 1,
+    "noncommercial_reference": 7,
+    "protected_external_review": 100
+  },
+  "proposed_visual_rot_examples": 91,
+  "sources": {
+    "inat_smut": 129,
+    "inat_maize": 37,
+    "inat_smut_recent": 51,
+    "hf_ricemaize_ear_rot": 116,
+    "openear_development": 140,
+    "bugwood_original": 12,
+    "idadp": 100
+  },
+  "duplicate_pairs": [
+    {
+      "left": 177,
+      "right": 186,
+      "kind": "perceptual_candidate"
+    },
+    {
+      "left": 259,
+      "right": 473,
+      "kind": "perceptual_candidate"
+    },
+    {
+      "left": 331,
+      "right": 478,
+      "kind": "exact"
+    },
+    {
+      "left": 299,
+      "right": 483,
+      "kind": "perceptual_candidate"
+    },
+    {
+      "left": 282,
+      "right": 484,
+      "kind": "perceptual_candidate"
+    }
+  ],
+  "multiclass_disease_training_ready": false,
+  "activated": false,
+  "hashes": {
+    "inventory.jsonl": "5a1579461bba456f3c285fb01e52bd01a004cb700d0c8affbbaa5f25589948a0",
+    "train.jsonl": "856a44c0e8d5813938ade555ee500d1766a970d30c308af547fe2db1828761b3",
+    "validation.jsonl": "cb6a09a9c533db6e8ad3f84b8a3e08386a73c7aacdd59265406153a3b4ccfccb",
+    "test.jsonl": "026ddf741209316751431ef750fe4859f964857cfccc166714b4888f5c78f3d2",
+    "auxiliary_development.jsonl": "840ac1b71e475c0713ecc147e4cee7dccead6240a2f605a9f32d140779374b11",
+    "excluded.jsonl": "ad86b78ee1befb547498095b0b7f35665d5aeb843d624ff5effad94aaabd5f62",
+    "license_and_expert_review.jsonl": "d42eeac929a2c55a313befdfd755b4bb87ecf0de60b531f187a234de64f814ab",
+    "licensed_pathogen_example.jsonl": "75071eb0049e193010367a3302f01beff6285bbc95225270021398fbfd92c54a",
+    "noncommercial_reference.jsonl": "f12affc955c94e8fbad71cbb84faced4bf73cb3ba8bfdd2f6784f7561014587b",
+    "protected_external_review.jsonl": "4d4dd406a9e43b53cb89cf322b7ba3aa9019d6d8e955144e17d2f6a69f2f8223"
+  },
+  "blocked_by": [
+    "Independent expert labels for rot subtypes and original image usage rights.",
+    "Natural phone photos of ears without visible disease; normal-development scans are not substitutes.",
+    "Independent test specimens per class; current no-smut test contains only four examples."
+  ],
+  "split_policy": "Prior ear train/validation/test retained exactly; new sources never enter them automatically. IDADP remains external review. Split future accepted data by photographer, plot/specimen and duplicate component."
+}

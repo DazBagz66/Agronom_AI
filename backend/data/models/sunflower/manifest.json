@@ -14,5 +14,8 @@
   "training": "Frozen ImageNet MobileNetV2 + StandardScaler + multinomial LogisticRegression C=0.1",
   "limitations": "Dataset-only evaluation; pHash groups reduce but cannot eliminate source/specimen leakage. Not independent field validation. Healthy means no visible supported disease. No reliable out-of-distribution or crop detector.",
   "dataset": "https://www.kaggle.com/datasets/noamaanabdulazeem/sunflower-fruits-and-leaves-dataset",
-  "backbone": "https://huggingface.co/onnxmodelzoo/mobilenetv2-12"
+  "backbone": "https://huggingface.co/onnxmodelzoo/mobilenetv2-12",
+  "release_status": "retired",
+  "retired_on": "2026-10-22T13:48:38.342289+00:00",
+  "retirement_reason": "User requested removal of MobileNetV2 models"
 }

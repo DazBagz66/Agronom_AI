@@ -1,0 +1,986 @@
+{
+  "records": [
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/188823315.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/111827020",
+      "source_id": "111827020",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/188823315/large.jpeg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by",
+      "attribution": "(c) B. Phalan, some rights reserved (CC BY)",
+      "capture_group_hint": "inat_observer:231737",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "92cd30c8f8bff715fbfb28a6c467feb77b39e7fe8955290fdb5f3a9239ad3d00",
+      "bytes": 329919,
+      "width": 768,
+      "height": 1024,
+      "phash": "11a0ab246a67fa5d",
+      "pixel_sha256": "be5f66ba1c649bb3c99852bba3938eb59e37cfe6ffbf95e592046425b91d20ff",
+      "gray_std": 75.371,
+      "laplacian_variance": 6386.065
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/188823339.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/111827020",
+      "source_id": "111827020",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/188823339/large.jpeg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by",
+      "attribution": "(c) B. Phalan, some rights reserved (CC BY)",
+      "capture_group_hint": "inat_observer:231737",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "d594260cc4e9e996d76c636a7b045d6f231c0ed81ce8c695266d79b7dc918b40",
+      "bytes": 252650,
+      "width": 1024,
+      "height": 768,
+      "phash": "0dcffc409e661cc8",
+      "pixel_sha256": "15fca1f7e0d3d0e3dd37ae3cfa10ee946fa17b3a9daa703334182219e4fe1b40",
+      "gray_std": 51.589,
+      "laplacian_variance": 1930.938
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/204173525.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/120701264",
+      "source_id": "120701264",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/204173525/large.jpeg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by",
+      "attribution": "(c) Celso Henrique Varela Rios, some rights reserved (CC BY)",
+      "capture_group_hint": "inat_observer:2740708",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "444f7c396772d2c94a9225f33b6bd7dd7c071d7d03a88cac9824ce373de16d2a",
+      "bytes": 755733,
+      "width": 1024,
+      "height": 768,
+      "phash": "446c985bd9884cfd",
+      "pixel_sha256": "625a984809841ac1ea8ca1b7aea7cad02066384e9ca2d5f53151dc90aa97a94b",
+      "gray_std": 48.262,
+      "laplacian_variance": 5947.747
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/204173573.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/120701264",
+      "source_id": "120701264",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/204173573/large.jpeg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by",
+      "attribution": "(c) Celso Henrique Varela Rios, some rights reserved (CC BY)",
+      "capture_group_hint": "inat_observer:2740708",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "264be325727e4f8d9ca17e9d12193bcdd566e35cbff9eef7b7bcb5c2b8f3ce66",
+      "bytes": 777607,
+      "width": 1024,
+      "height": 768,
+      "phash": "73c6bc65693a0217",
+      "pixel_sha256": "841686951bf632ad06cddb75dccb8d5b383ddddc4f2ac6ac5f03c519f48f9a10",
+      "gray_std": 46.392,
+      "laplacian_variance": 6137.747
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/204173617.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/120701264",
+      "source_id": "120701264",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/204173617/large.jpeg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by",
+      "attribution": "(c) Celso Henrique Varela Rios, some rights reserved (CC BY)",
+      "capture_group_hint": "inat_observer:2740708",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "a760847db1f6093a8c9b62d017d2b6faf1e0cfecefcd334acb189bed31ed307b",
+      "bytes": 799856,
+      "width": 1024,
+      "height": 768,
+      "phash": "6d677644a644274d",
+      "pixel_sha256": "76319d67da1c29a640b6a6b7895b0a269053fd302e1ff5ca10f5cfc73e90648a",
+      "gray_std": 53.707,
+      "laplacian_variance": 7991.046
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/212643226.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/125393254",
+      "source_id": "125393254",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/212643226/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by",
+      "attribution": "(c) Sandy Wolkenberg, some rights reserved (CC BY)",
+      "capture_group_hint": "inat_observer:572980",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "561aa5cd6f2f3b804e5b9d53e354f25c7b5d9a005c57eb0f357652bf671471f3",
+      "bytes": 332503,
+      "width": 768,
+      "height": 1024,
+      "phash": "15990d63411fde6c",
+      "pixel_sha256": "7d9bda620945400b458941197b05d763b4c9abf22e9022c5b03db543fa6e247e",
+      "gray_std": 46.815,
+      "laplacian_variance": 5491.006
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/232454513.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/136220783",
+      "source_id": "136220783",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/232454513/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by",
+      "attribution": "(c) Sandy Wolkenberg, some rights reserved (CC BY)",
+      "capture_group_hint": "inat_observer:572980",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "57135993894eae8ee86c69c8a7dad90ff228d361ce36aef3067c02f3d9e49f9e",
+      "bytes": 457961,
+      "width": 768,
+      "height": 1024,
+      "phash": "404c976ae7529f52",
+      "pixel_sha256": "9ddf1fa6fbc48e89316349a06504aacd8eb8af230e6c0f2e3025cd0b3d8090a9",
+      "gray_std": 60.287,
+      "laplacian_variance": 15656.571
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/233688588.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/136883751",
+      "source_id": "136883751",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/233688588/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by-sa",
+      "attribution": "(c) Dinesh Valke, some rights reserved (CC BY-SA)",
+      "capture_group_hint": "inat_observer:24158",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "27df3ebe84b288a5af944605b2523316c7ea9e11d36a15d18aedc03686ed5015",
+      "bytes": 410135,
+      "width": 1024,
+      "height": 768,
+      "phash": "14af52ac4bb06d93",
+      "pixel_sha256": "2a47782293d0007b789dc9f0337e9d3d8837edbe18ad5233ea079e4ecd881269",
+      "gray_std": 44.456,
+      "laplacian_variance": 1873.264
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/233688591.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/136883751",
+      "source_id": "136883751",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/233688591/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by-sa",
+      "attribution": "(c) Dinesh Valke, some rights reserved (CC BY-SA)",
+      "capture_group_hint": "inat_observer:24158",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "5b962fde50b6eeb8893c28063d891d7550b70a1b90ad5719c01176bf22c7c5cc",
+      "bytes": 414797,
+      "width": 1024,
+      "height": 768,
+      "phash": "7c43a44e619e40bf",
+      "pixel_sha256": "ad6f012f3612138b7f53b18b7a91151737b8f354f14aca522c146f269b32d730",
+      "gray_std": 21.744,
+      "laplacian_variance": 1245.452
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/233693055.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/136883751",
+      "source_id": "136883751",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/233693055/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by-sa",
+      "attribution": "(c) Dinesh Valke, some rights reserved (CC BY-SA)",
+      "capture_group_hint": "inat_observer:24158",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "83459460ed2adecb7debbcbf58877df267d7722dde4f12f22032ed2c0350b7b8",
+      "bytes": 532513,
+      "width": 1024,
+      "height": 768,
+      "phash": "21e34113c7d17fd0",
+      "pixel_sha256": "034571ba0454f3010b6efc76a56e334d6c7b6a84bb855ffb92e531e0a130cccf",
+      "gray_std": 39.054,
+      "laplacian_variance": 2898.581
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/235226092.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/137700718",
+      "source_id": "137700718",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/235226092/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by",
+      "attribution": "(c) Sandy Wolkenberg, some rights reserved (CC BY)",
+      "capture_group_hint": "inat_observer:572980",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "24b76966a940b0f240d5e39fd623d338ea62703e05c88031d0e4509b59ff0c68",
+      "bytes": 330707,
+      "width": 768,
+      "height": 1024,
+      "phash": "6737e6131a0b1cb1",
+      "pixel_sha256": "4efa69d285a07e1f6f46351155c1a018eac9b3484b56c092364360eee3c05efb",
+      "gray_std": 60.077,
+      "laplacian_variance": 5422.574
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/236004620.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/138114489",
+      "source_id": "138114489",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/236004620/large.jpeg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by",
+      "attribution": "(c) carnifex, some rights reserved (CC BY)",
+      "capture_group_hint": "inat_observer:477431",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "c572a7f458f7ab50a396844140d7a4bb5b118ed04f535bb9a086ba465d85f5bd",
+      "bytes": 652294,
+      "width": 768,
+      "height": 1024,
+      "phash": "4817c5f467f2c48c",
+      "pixel_sha256": "8cb8ed77902f4d114dfba2fc279d98a657a35f833eb3d812c8931738e6263812",
+      "gray_std": 53.537,
+      "laplacian_variance": 8729.974
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/236004658.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/138114489",
+      "source_id": "138114489",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/236004658/large.jpeg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by",
+      "attribution": "(c) carnifex, some rights reserved (CC BY)",
+      "capture_group_hint": "inat_observer:477431",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "694ed5730dfa4ccce8ac79cb0ff36423e7c428162c1ade2847f973a87a5b7eac",
+      "bytes": 777580,
+      "width": 768,
+      "height": 1024,
+      "phash": "14f3d955f449b484",
+      "pixel_sha256": "ff8349c8f664b70de755b67b23b8b785556dffd250219da3fcd4bcac8c649813",
+      "gray_std": 37.647,
+      "laplacian_variance": 9671.236
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/262805406.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/152251596",
+      "source_id": "152251596",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/262805406/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by",
+      "attribution": "(c) Martin Kalfatovic, some rights reserved (CC BY)",
+      "capture_group_hint": "inat_observer:375342",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "1d6cf27155467288a7f64c6db1cf76d2ef7adf011b1b9d78cd4f33bc434323b7",
+      "bytes": 180270,
+      "width": 1024,
+      "height": 768,
+      "phash": "139bfa2d44828af9",
+      "pixel_sha256": "0288986297f97329692b472a726219cf944199e6958682364a2c22a1f44ba876",
+      "gray_std": 63.006,
+      "laplacian_variance": 2340.575
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/567426751.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/314185501",
+      "source_id": "314185501",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/567426751/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by",
+      "attribution": "(c) jonsense, some rights reserved (CC BY)",
+      "capture_group_hint": "inat_observer:7545635",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "b482246d943601bcb6ace99a438031e8964085eb9bcab6d20567b979c3a48ff5",
+      "bytes": 527456,
+      "width": 768,
+      "height": 1024,
+      "phash": "2ecf781584d392a5",
+      "pixel_sha256": "09264f3d5e3c92b50d24bf077176a4dedd360c5f44f8b83a3d247a2861db8073",
+      "gray_std": 61.133,
+      "laplacian_variance": 25986.281
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/567426858.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/314185501",
+      "source_id": "314185501",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/567426858/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by",
+      "attribution": "(c) jonsense, some rights reserved (CC BY)",
+      "capture_group_hint": "inat_observer:7545635",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "5a27e7dbca5089dd2360009ff8ec6d98b886a1703133199120da5046536590dd",
+      "bytes": 363379,
+      "width": 768,
+      "height": 1024,
+      "phash": "4cec6b90939368cd",
+      "pixel_sha256": "a602b32dcf3ba3e024e0bdaf2d8f12ae1622036cf5af06ae12af9527f404c340",
+      "gray_std": 59.092,
+      "laplacian_variance": 10472.834
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/567426905.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/314185501",
+      "source_id": "314185501",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/567426905/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by",
+      "attribution": "(c) jonsense, some rights reserved (CC BY)",
+      "capture_group_hint": "inat_observer:7545635",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "55c6559c326617c94cb27363d05f72f563bac20c6205c602cbdceec6c147502b",
+      "bytes": 269477,
+      "width": 768,
+      "height": 1024,
+      "phash": "528c56c964339d3b",
+      "pixel_sha256": "56f64da2dbf3dc96ca7b84d6a31418b0bde151a1554c167faff7cd1febfe6067",
+      "gray_std": 55.638,
+      "laplacian_variance": 3240.008
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/578500892.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/319995071",
+      "source_id": "319995071",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/578500892/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by",
+      "attribution": "(c) Георгий Виноградов (Georgy Vinogradov), some rights reserved (CC BY)",
+      "capture_group_hint": "inat_observer:1434599",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "5e5875c12f310264e66458a4f4d83fe61d680bb02a46f2acdacfe85cd70b69eb",
+      "bytes": 317814,
+      "width": 510,
+      "height": 680,
+      "phash": "1b2915d3cb3513aa",
+      "pixel_sha256": "1d29994a456cf39fb330d1aadb16d078d100da4b2b7e71311b7c05c6148f42d9",
+      "gray_std": 61.024,
+      "laplacian_variance": 17209.689
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/578500925.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/319995071",
+      "source_id": "319995071",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/578500925/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by",
+      "attribution": "(c) Георгий Виноградов (Georgy Vinogradov), some rights reserved (CC BY)",
+      "capture_group_hint": "inat_observer:1434599",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "fa80c9f80dc2a31f6b2605a3d4ec8c25dc672f9c8bee04a59b77b002e28cff60",
+      "bytes": 225136,
+      "width": 510,
+      "height": 680,
+      "phash": "78d30a52b1661b8f",
+      "pixel_sha256": "9a8448e9fb1c7907ad734182c7b537847570824547b96fdd0f50538f212d2f9c",
+      "gray_std": 48.0,
+      "laplacian_variance": 2333.039
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/578501767.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/319995071",
+      "source_id": "319995071",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/578501767/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by",
+      "attribution": "(c) Георгий Виноградов (Georgy Vinogradov), some rights reserved (CC BY)",
+      "capture_group_hint": "inat_observer:1434599",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "361e8cab82a53f02ba54015718fe36dac1c494b903a46eb7a07dabde1cb4e309",
+      "bytes": 253597,
+      "width": 510,
+      "height": 680,
+      "phash": "596802f6cf4152db",
+      "pixel_sha256": "387fe5b77b2f6e5a482d7c123bdb0887c1b49a67e57b642854cb8bd797b441fe",
+      "gray_std": 52.097,
+      "laplacian_variance": 13093.176
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/51247752.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/32663509",
+      "source_id": "32663509",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/51247752/large.jpeg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by",
+      "attribution": "(c) Eric Watts, some rights reserved (CC BY)",
+      "capture_group_hint": "inat_observer:1076827",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "33fd377cadaa22a1d43e29991c5435a1eda210076fd80c816682d497833ac9c3",
+      "bytes": 200192,
+      "width": 768,
+      "height": 1024,
+      "phash": "1e3922c7b8a6cd4a",
+      "pixel_sha256": "a4d777494036776ee2b610ccd76b1f95c5a3a29c6f52260451703042512f3e07",
+      "gray_std": 51.862,
+      "laplacian_variance": 15534.68
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/57590552.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/36434139",
+      "source_id": "36434139",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/57590552/large.jpeg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by",
+      "attribution": "(c) Diogo Luiz, some rights reserved (CC BY)",
+      "capture_group_hint": "inat_observer:1876348",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "133572b205a7b1fe5ac8e1e6c84e882dfb7efd4a358b271ac82e330c3b130989",
+      "bytes": 401286,
+      "width": 1024,
+      "height": 768,
+      "phash": "6c20fb2d51e36594",
+      "pixel_sha256": "6f7dc758b9b3a2eadff8e88f3c9757ffadcdd94c7a2ba3b4a292ec98dc034a61",
+      "gray_std": 41.086,
+      "laplacian_variance": 5326.719
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/697631610.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/381277857",
+      "source_id": "381277857",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/697631610/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by",
+      "attribution": "(c) Gianni Del Bufalo bygdb, some rights reserved (CC BY)",
+      "capture_group_hint": "inat_observer:1094650",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "d24e2da449683a76e6e36e701976eed8eeb01972331f2383faf98fc162307e64",
+      "bytes": 604787,
+      "width": 576,
+      "height": 1024,
+      "phash": "1e6b1f7d3dd18080",
+      "pixel_sha256": "5bbd670b73ab143b84230a647f3385562affc1cecedb3becbb9626afbb0f85d0",
+      "gray_std": 63.914,
+      "laplacian_variance": 18327.529
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/697631657.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/381277857",
+      "source_id": "381277857",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/697631657/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by",
+      "attribution": "(c) Gianni Del Bufalo bygdb, some rights reserved (CC BY)",
+      "capture_group_hint": "inat_observer:1094650",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "6eecefb3c9699ab4f4c9ea504a9786f79710e5294f5e55f304baaa09d01da5ec",
+      "bytes": 379116,
+      "width": 576,
+      "height": 1024,
+      "phash": "0b95cfb318462b9c",
+      "pixel_sha256": "15891b1c9e0931ee3f7d202ec787c2816db717e731f336eef8da682e8dcb0047",
+      "gray_std": 46.154,
+      "laplacian_variance": 1008.907
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/697631712.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/381277857",
+      "source_id": "381277857",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/697631712/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by",
+      "attribution": "(c) Gianni Del Bufalo bygdb, some rights reserved (CC BY)",
+      "capture_group_hint": "inat_observer:1094650",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "eacecaded09f0e22b516e3c4c85e60261f4b374aca1c14035abd8b47f9fd0dbc",
+      "bytes": 447684,
+      "width": 576,
+      "height": 1024,
+      "phash": "506d06f188371fcd",
+      "pixel_sha256": "8c6ae06d8030d0250dee04c44836372587290c70bab765c99af1e6ffb5b46f22",
+      "gray_std": 47.971,
+      "laplacian_variance": 6605.78
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/718735365.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/392206318",
+      "source_id": "392206318",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/718735365/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by",
+      "attribution": "(c) Gianni Del Bufalo bygdb, some rights reserved (CC BY)",
+      "capture_group_hint": "inat_observer:1094650",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "7fedd1a283b0bfaa2f4a702028f73d32b013d42ce159249df895aade1f1c8d0e",
+      "bytes": 579299,
+      "width": 576,
+      "height": 1024,
+      "phash": "5096a62d216dc9f9",
+      "pixel_sha256": "e5f7593eccf184ea9129809bb771023566a14bc31422842388a7272bb3335c93",
+      "gray_std": 50.924,
+      "laplacian_variance": 3209.494
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/718735393.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/392206318",
+      "source_id": "392206318",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/718735393/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by",
+      "attribution": "(c) Gianni Del Bufalo bygdb, some rights reserved (CC BY)",
+      "capture_group_hint": "inat_observer:1094650",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "407c3e8e764b873cc6672ec030a0ed39b51841f9357b11a29f6a7ecf4d9e78c5",
+      "bytes": 593074,
+      "width": 576,
+      "height": 1024,
+      "phash": "4c18550ef9166dda",
+      "pixel_sha256": "1d9f73afce880cbdcca93a7bc9f4b36676417117dfa258f55430770a95925cf6",
+      "gray_std": 47.078,
+      "laplacian_variance": 7008.822
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/718735487.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/392206318",
+      "source_id": "392206318",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/718735487/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by",
+      "attribution": "(c) Gianni Del Bufalo bygdb, some rights reserved (CC BY)",
+      "capture_group_hint": "inat_observer:1094650",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "89db99f85921c3dc14d0eef4e50561c304376dc80dcf9cc87a4dc6fe48d6cfd8",
+      "bytes": 537000,
+      "width": 576,
+      "height": 1024,
+      "phash": "61390c8de750dacb",
+      "pixel_sha256": "ab6accb474e0f03c454eaa800be9e600370d13e09aa4b9d24962debb13c3e190",
+      "gray_std": 41.649,
+      "laplacian_variance": 1643.894
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/722142965.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/393945587",
+      "source_id": "393945587",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/722142965/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by",
+      "attribution": "(c) Paulo Galvão, some rights reserved (CC BY)",
+      "capture_group_hint": "inat_observer:2412710",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "32173db7f451d31c6617cb69847ced1ad456f0a4658c9f89cb7968d0142726f2",
+      "bytes": 539254,
+      "width": 576,
+      "height": 1024,
+      "phash": "78e54a6a21959697",
+      "pixel_sha256": "82b86b3037bf4ff7eae7987902b9628f602c1ffc2bb784f441b49b2e0dd384f0",
+      "gray_std": 72.096,
+      "laplacian_variance": 8072.793
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/726680173.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/396257291",
+      "source_id": "396257291",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/726680173/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by",
+      "attribution": "(c) Tom Norton, some rights reserved (CC BY)",
+      "capture_group_hint": "inat_observer:175837",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "48321f6c201ff4262a5a0e571c633069660e49cbc641f85f1e09ebd6472fc0f9",
+      "bytes": 644070,
+      "width": 768,
+      "height": 1024,
+      "phash": "0826277e7c084fee",
+      "pixel_sha256": "eabe3a009f4b768d743e7fe9343f19b2ea4af8e3b214fb1f819016ebf110f2c5",
+      "gray_std": 39.309,
+      "laplacian_variance": 6118.773
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/744456439.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/405314032",
+      "source_id": "405314032",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/744456439/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by",
+      "attribution": "(c) Chris Stahl, some rights reserved (CC BY)",
+      "capture_group_hint": "inat_observer:7567198",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "3771a8a3905ce23487cd8b5d1fcf7d8767ed9159cc46d156ce834a8f238a2199",
+      "bytes": 1554086,
+      "width": 768,
+      "height": 1024,
+      "phash": "44ea724c59175fb0",
+      "pixel_sha256": "47869d69529911fcd05af314f4a01b9841cb22c66486c49cd1bee63a402f2de3",
+      "gray_std": 54.466,
+      "laplacian_variance": 24832.075
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/744456488.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/405314032",
+      "source_id": "405314032",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/744456488/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by",
+      "attribution": "(c) Chris Stahl, some rights reserved (CC BY)",
+      "capture_group_hint": "inat_observer:7567198",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "df7680dfc590aac8a3a64caa631aee236bf01db50a171ec61c67f948643d6a23",
+      "bytes": 1459077,
+      "width": 768,
+      "height": 1024,
+      "phash": "0fba211e61670cdb",
+      "pixel_sha256": "939cfeea5da9b96be4d0808295a3a642d3abf1c854537e39222d167a612f3a38",
+      "gray_std": 61.412,
+      "laplacian_variance": 23610.804
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/744456498.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/405314032",
+      "source_id": "405314032",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/744456498/large.jpg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by",
+      "attribution": "(c) Chris Stahl, some rights reserved (CC BY)",
+      "capture_group_hint": "inat_observer:7567198",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "745c52efa716fb8f8fbc8c9e6578608256a606d28ba74c7f55f65d577f40fec7",
+      "bytes": 1403274,
+      "width": 768,
+      "height": 1024,
+      "phash": "1702ec60f009ffab",
+      "pixel_sha256": "6e7d27bc8f5cc99a0274c3cfed9526ff7876d26c1bb355ca2605995c94708ba0",
+      "gray_std": 61.796,
+      "laplacian_variance": 23289.783
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/93141196.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/58343701",
+      "source_id": "58343701",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/93141196/large.jpeg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by",
+      "attribution": "(c) Lexi Destria, some rights reserved (CC BY)",
+      "capture_group_hint": "inat_observer:3325109",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "8f3c2cd52e4d2bd20447ae8833c41bc30a36feb271a596a1d99db0833b0db5a0",
+      "bytes": 563652,
+      "width": 576,
+      "height": 1024,
+      "phash": "601e6dc64f335c89",
+      "pixel_sha256": "f6a5fca7594f4001f2596e225c34de49b7b9d4ea1e168ed878e6847af375daf4",
+      "gray_std": 47.797,
+      "laplacian_variance": 7562.377
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/93142936.jpg",
+      "source": "inat_ear_details",
+      "source_url": "https://www.inaturalist.org/observations/58343701",
+      "source_id": "58343701",
+      "download_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/93142936/large.jpeg",
+      "labels": [
+        "maize_unverified"
+      ],
+      "organ": "unverified",
+      "license": "cc-by",
+      "attribution": "(c) Lexi Destria, some rights reserved (CC BY)",
+      "capture_group_hint": "inat_observer:3325109",
+      "label_basis": "plant_identity_only",
+      "review_required": true,
+      "split": "quarantine",
+      "exclusion_reasons": [
+        "organ_and_visual_review_required"
+      ],
+      "sha256": "f26cb941967ee06bb4f2c783df01173a5c9603d3463a8663660ab68564081377",
+      "bytes": 649437,
+      "width": 576,
+      "height": 1024,
+      "phash": "5d4eeb53d2ce2420",
+      "pixel_sha256": "ddb532b1f16b0c302826edf6fb7838f82c680f305db9a8ffcc5cb8686c269dca",
+      "gray_std": 54.38,
+      "laplacian_variance": 16382.633
+    }
+  ],
+  "errors": [],
+  "limitations": "Community labels; not expert confirmation. No automatic healthy or rot labels."
+}

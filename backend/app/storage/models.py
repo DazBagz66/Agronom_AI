@@ -52,3 +52,33 @@ class KnowledgeFetch(Base):
     content_sha256 = Column(String, nullable=False)
     source_updated = Column(String, nullable=True)
     license = Column(String, nullable=False)
+
+
+class DiagnosisFeedback(Base):
+    """Append-only user reports awaiting independent review, never training labels."""
+    __tablename__ = 'diagnosis_feedback'
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    check_id = Column(Integer, ForeignKey('check_history.id'), nullable=False, index=True)
+    proposed_labels = Column(JSON, nullable=False)
+    plant_part = Column(String, nullable=False)
+    notes = Column(Text, nullable=False)
+    specimen_group = Column(String, nullable=False)
+    reviewer_status = Column(String, nullable=False, default='pending')
+    model_snapshot = Column(JSON, nullable=False)
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
+
+
+class InvestigationSession(Base):
+    """An ongoing examination; observations remain immutable history records."""
+    __tablename__ = 'investigation_sessions'
+    id = Column(String, primary_key=True)
+    crop = Column(String, nullable=False, index=True)
+    title = Column(String, nullable=False)
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
+    updated_at = Column(DateTime(timezone=True), server_default=func.now(), index=True)
+
+
+class SessionObservation(Base):
+    __tablename__ = 'session_observations'
+    check_id = Column(Integer, ForeignKey('check_history.id'), primary_key=True)
+    session_id = Column(String, ForeignKey('investigation_sessions.id'), nullable=False, index=True)

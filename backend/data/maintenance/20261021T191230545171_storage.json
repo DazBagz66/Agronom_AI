@@ -1,0 +1,146 @@
+{
+  "started_at": "2026-10-21T19:12:27.915906+00:00",
+  "applied": true,
+  "before": {
+    "logical_bytes": 9145625710,
+    "top_level_bytes": {
+      ".cache": 7751293864,
+      ".git": 81620923,
+      ".gitignore": 132,
+      ".idea": 7807,
+      ".venv": 1090926137,
+      "backend": 142435746,
+      "docs": 22303,
+      "react-frontend": 79301864,
+      "README.md": 16563,
+      "requirements-training.txt": 60,
+      "requirements.txt": 227,
+      "start.bat": 84
+    }
+  },
+  "actions": [
+    {
+      "kind": "duplicate_archive",
+      "path": ".cache/datasets/corn/dataset.zip",
+      "extracted": ".cache/datasets/corn/images",
+      "bytes": 168591426,
+      "sha256": "f80b56212de2c194bacd67e70419e6a87b780603710087ec69347940fecd6313",
+      "verified_members": 4188,
+      "mtime_ns": 1792563165975377800,
+      "removed": true
+    },
+    {
+      "kind": "duplicate_archive",
+      "path": ".cache/datasets/sunflower/dataset.zip",
+      "extracted": ".cache/datasets/sunflower/images",
+      "bytes": 1746501986,
+      "sha256": "bce50b7611eb0d5ac9c26c2a73b85124c3ecf1e10dd66761c71e8faaf3c92516",
+      "verified_members": 466,
+      "mtime_ns": 1792563522331568500,
+      "removed": true
+    },
+    {
+      "kind": "duplicate_archive",
+      "path": ".cache/datasets/corn_expansion/tari/archives/ZEAMX Maize lethal necrosis.zip",
+      "extracted": ".cache/datasets/corn_expansion/tari/extracted/ZEAMX Maize lethal necrosis",
+      "bytes": 223146159,
+      "sha256": "845a6c7957dd668d7bab54ff5e9895c7d9e253f8b85567dcd8a6629751e6d6a4",
+      "verified_members": 103,
+      "mtime_ns": 1792566866860454100,
+      "removed": true
+    },
+    {
+      "kind": "duplicate_archive",
+      "path": ".cache/datasets/corn_expansion/tari/archives/ZEAMX_healthy leaves.zip",
+      "extracted": ".cache/datasets/corn_expansion/tari/extracted/ZEAMX_healthy leaves",
+      "bytes": 138018756,
+      "sha256": "8cdc4a9533b88e6bc66c942f59c3b116bc0d6beed32debe4b7d0086feee62399",
+      "verified_members": 54,
+      "mtime_ns": 1792566174085394200,
+      "removed": true
+    },
+    {
+      "kind": "duplicate_archive",
+      "path": ".cache/datasets/corn_expansion/tari/archives/ZEAMX_MSV000_Maize streak virus (MSV).zip",
+      "extracted": ".cache/datasets/corn_expansion/tari/extracted/ZEAMX_MSV000_Maize streak virus (MSV)",
+      "bytes": 276657698,
+      "sha256": "a810b2b4a512fd7e83c02eb6e7a5c42b5c8785e6c475342200caf5701d54e59d",
+      "verified_members": 82,
+      "mtime_ns": 1792566726594336400,
+      "removed": true
+    },
+    {
+      "kind": "duplicate_archive",
+      "path": ".cache/datasets/corn_expansion/tari/archives/ZEAMX_SETOTU_Exserohilum turcicum.zip",
+      "extracted": ".cache/datasets/corn_expansion/tari/extracted/ZEAMX_SETOTU_Exserohilum turcicum",
+      "bytes": 213118747,
+      "sha256": "af7a8a31dc57fcf77c07b606ae0115a77b9c5acef88bf503a18b19c71e29e41d",
+      "verified_members": 86,
+      "mtime_ns": 1792566496466160200,
+      "removed": true
+    },
+    {
+      "kind": "duplicate_archive",
+      "path": ".cache/datasets/corn_expansion/tom2024/archives/maize_diseases.zip",
+      "extracted": ".cache/datasets/corn_expansion/tom2024/extracted/maize_diseases",
+      "bytes": 43147826,
+      "sha256": "4d3ba94b2acb26059bef483e13a34bec1f11736110f54f6411a0456c96cf5ed8",
+      "verified_members": 3517,
+      "mtime_ns": 1792566384795767700,
+      "removed": true
+    },
+    {
+      "kind": "duplicate_archive",
+      "path": ".cache/datasets/corn_field/anhui/Corn-leaf-disease-data-main.zip",
+      "extracted": ".cache/datasets/corn_field/anhui/extracted",
+      "bytes": 69328668,
+      "sha256": "ca15394a5f9cc1015c6ed9cbc60e4b72d1364e4841b02755d8f4cf76f5982af4",
+      "verified_members": 601,
+      "mtime_ns": 1792601358915135100,
+      "removed": true
+    },
+    {
+      "kind": "disposable_cache",
+      "path": ".cache/npm",
+      "bytes": 173560973,
+      "removed": true
+    },
+    {
+      "kind": "disposable_cache",
+      "path": ".cache/pip",
+      "bytes": 26817579,
+      "removed": true
+    },
+    {
+      "kind": "disposable_cache",
+      "path": ".cache/datasets/corn_expansion/pretoria/archives/leaf_images.zip.part",
+      "bytes": 125829120,
+      "removed": true
+    },
+    {
+      "kind": "disposable_cache",
+      "path": ".cache/datasets/corn_expansion/pretoria/archives/leaf_images.zip.part.chunks",
+      "bytes": 407896064,
+      "removed": true
+    }
+  ],
+  "skipped": [],
+  "after": {
+    "logical_bytes": 5533024170,
+    "top_level_bytes": {
+      ".cache": 4138678862,
+      ".git": 81620923,
+      ".gitignore": 147,
+      ".idea": 7807,
+      ".venv": 1090926137,
+      "backend": 142448124,
+      "docs": 22303,
+      "react-frontend": 79302933,
+      "README.md": 16563,
+      "requirements-training.txt": 60,
+      "requirements.txt": 227,
+      "start.bat": 84
+    }
+  },
+  "removed_bytes": 3612615002
+}

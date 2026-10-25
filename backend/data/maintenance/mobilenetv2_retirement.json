@@ -1,0 +1,76 @@
+{
+  "reason": "User requested removal of MobileNetV2 models",
+  "removed": [
+    {
+      "path": "backend/data/models/corn/mobilenetv2_features.onnx",
+      "bytes": 8844253,
+      "sha256": "bfa8f7bdd68ff12b519fe81f420ba370904b33b6580b01fb907bd05a3b6959cc"
+    },
+    {
+      "path": "backend/data/models/corn/classifier.npz",
+      "bytes": 59605,
+      "sha256": "5eeb3cf100ebf7930c0832c1bd998ec3931de4aa9db0c514340e8cc7c8a593c6"
+    },
+    {
+      "path": "backend/data/models/sunflower/mobilenetv2_features.onnx",
+      "bytes": 8844253,
+      "sha256": "bfa8f7bdd68ff12b519fe81f420ba370904b33b6580b01fb907bd05a3b6959cc"
+    },
+    {
+      "path": "backend/data/models/sunflower/classifier.npz",
+      "bytes": 58928,
+      "sha256": "7b6bf4305d74400698b9718e7bbcc8ab6e38c6bba0c894eabe1bdf4781362e22"
+    },
+    {
+      "path": "backend/data/models/tuber/mobilenetv2_features.onnx",
+      "bytes": 8844253,
+      "sha256": "bfa8f7bdd68ff12b519fe81f420ba370904b33b6580b01fb907bd05a3b6959cc"
+    },
+    {
+      "path": "backend/data/models/tuber/classifier.npz",
+      "bytes": 88704,
+      "sha256": "5c51419e8d4381b54b10aa4043ec436405a73c895267d960a38c816a04de358e"
+    },
+    {
+      "path": "backend/data/models/corn_candidates/expanded_v1/mobilenetv2_features.onnx",
+      "bytes": 8844253,
+      "sha256": "bfa8f7bdd68ff12b519fe81f420ba370904b33b6580b01fb907bd05a3b6959cc"
+    },
+    {
+      "path": "backend/data/models/corn_candidates/expanded_v1/classifier.npz",
+      "bytes": 89049,
+      "sha256": "be5ffc0d577da9b0d91e3c83b53ae11e15dddd980fb3b24af0424f1d6414e15f"
+    },
+    {
+      "path": ".cache/models/corn_expanded_v1/mobilenetv2_features.onnx",
+      "bytes": 8844253,
+      "sha256": "bfa8f7bdd68ff12b519fe81f420ba370904b33b6580b01fb907bd05a3b6959cc"
+    },
+    {
+      "path": ".cache/models/corn_expanded_v1/classifier.npz",
+      "bytes": 89049,
+      "sha256": "be5ffc0d577da9b0d91e3c83b53ae11e15dddd980fb3b24af0424f1d6414e15f"
+    },
+    {
+      "path": ".cache/models/corn_legacy_20261021/mobilenetv2_features.onnx",
+      "bytes": 8844253,
+      "sha256": "bfa8f7bdd68ff12b519fe81f420ba370904b33b6580b01fb907bd05a3b6959cc"
+    },
+    {
+      "path": ".cache/models/corn_legacy_20261021/classifier.npz",
+      "bytes": 59605,
+      "sha256": "5eeb3cf100ebf7930c0832c1bd998ec3931de4aa9db0c514340e8cc7c8a593c6"
+    },
+    {
+      "path": ".cache/models/corn_organ_v1/classifier.npz",
+      "bytes": 39189,
+      "sha256": "69c8507d8058369b833a695d81cfe677457e7b84c4757b70853f5b609b2912f5"
+    },
+    {
+      "path": ".cache/tuber_training/mobilenetv2.onnx",
+      "bytes": 13964571,
+      "sha256": "c0c3f76d93fa3fd6580652a45618618a220fced18babf65774ed169de0432ad5"
+    }
+  ],
+  "removed_bytes": 67514218
+}

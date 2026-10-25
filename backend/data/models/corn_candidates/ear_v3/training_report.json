@@ -1,0 +1,1885 @@
+{
+  "seed": 42,
+  "architecture": "mobilenet_v3_large",
+  "classes": [
+    "common_smut",
+    "ear_rot",
+    "healthy_ear"
+  ],
+  "organ": "ear",
+  "recipe": "2 epochs head only (lr 1e-3), then full fine-tuning (backbone lr 0.0001, cosine), AdamW, label smoothing 0.05, class×source balanced sampling",
+  "preprocessing": "EXIF transpose, RGB, thumbnail max side 320 (LANCZOS), pad to 224x224 gray (127,127,127), ImageNet mean/std",
+  "counts": {
+    "train": {
+      "common_smut": 111,
+      "ear_rot": 115,
+      "healthy_ear": 89
+    },
+    "validation": {
+      "common_smut": 27,
+      "ear_rot": 38,
+      "healthy_ear": 37
+    },
+    "test": {
+      "common_smut": 42,
+      "ear_rot": 38,
+      "healthy_ear": 27
+    }
+  },
+  "manifest_hashes": {
+    "train": "23979cff2cb92a6dae3b1fae17868ee16c32bf52e8ea26eeb7a0a87c6048d727",
+    "validation": "dacb48b68cb65b06bee34e835b8c7a1cb63b8b65d0353f03a3d9eb0deb1e52ec",
+    "test": "5aaacc472384cae353a72a994cb15b4d1fd65f5d8d7cab837dc4d37935b6d52a"
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "stage": "head",
+      "loss": 0.6931360714019291,
+      "validation_macro_f1": 0.7867861305361306,
+      "validation_accuracy": 0.7843137254901961,
+      "seconds": 18
+    },
+    {
+      "epoch": 2,
+      "stage": "head",
+      "loss": 0.4539269218369136,
+      "validation_macro_f1": 0.8757433043147329,
+      "validation_accuracy": 0.8725490196078431,
+      "seconds": 16
+    },
+    {
+      "epoch": 3,
+      "stage": "finetune",
+      "loss": 0.40031989074888685,
+      "validation_macro_f1": 0.9241129910553534,
+      "validation_accuracy": 0.9215686274509803,
+      "seconds": 35
+    },
+    {
+      "epoch": 4,
+      "stage": "finetune",
+      "loss": 0.33903090878138464,
+      "validation_macro_f1": 0.9023496828374878,
+      "validation_accuracy": 0.9019607843137255,
+      "seconds": 588
+    },
+    {
+      "epoch": 5,
+      "stage": "finetune",
+      "loss": 0.26081863372098835,
+      "validation_macro_f1": 0.9320745880580463,
+      "validation_accuracy": 0.9313725490196079,
+      "seconds": 33
+    },
+    {
+      "epoch": 6,
+      "stage": "finetune",
+      "loss": 0.2772761183598685,
+      "validation_macro_f1": 0.9520328599275967,
+      "validation_accuracy": 0.9509803921568627,
+      "seconds": 34
+    },
+    {
+      "epoch": 7,
+      "stage": "finetune",
+      "loss": 0.22371818461115398,
+      "validation_macro_f1": 0.9428436023097553,
+      "validation_accuracy": 0.9411764705882353,
+      "seconds": 33
+    },
+    {
+      "epoch": 8,
+      "stage": "finetune",
+      "loss": 0.21804971671293652,
+      "validation_macro_f1": 0.933852312379333,
+      "validation_accuracy": 0.9313725490196079,
+      "seconds": 32
+    },
+    {
+      "epoch": 9,
+      "stage": "finetune",
+      "loss": 0.20784433257012142,
+      "validation_macro_f1": 0.9340828924162258,
+      "validation_accuracy": 0.9313725490196079,
+      "seconds": 33
+    },
+    {
+      "epoch": 10,
+      "stage": "finetune",
+      "loss": 0.20505907932917278,
+      "validation_macro_f1": 0.9340828924162258,
+      "validation_accuracy": 0.9313725490196079,
+      "seconds": 32
+    },
+    {
+      "epoch": 11,
+      "stage": "finetune",
+      "loss": 0.19657903881300062,
+      "validation_macro_f1": 0.9531181379007466,
+      "validation_accuracy": 0.9509803921568627,
+      "seconds": 32
+    },
+    {
+      "epoch": 12,
+      "stage": "finetune",
+      "loss": 0.19571925094203343,
+      "validation_macro_f1": 0.9531181379007466,
+      "validation_accuracy": 0.9509803921568627,
+      "seconds": 63
+    }
+  ],
+  "selected_epoch": 11,
+  "temperature": 0.6664305656026692,
+  "selection": "validation macro-F1 only; temperature fitted to validation NLL; test evaluated once",
+  "validation": {
+    "count": 102,
+    "accuracy": 0.9509803921568627,
+    "macro_f1": 0.9531181379007466,
+    "classification_report": {
+      "common_smut": {
+        "precision": 0.9642857142857143,
+        "recall": 1.0,
+        "f1-score": 0.9818181818181818,
+        "support": 27.0
+      },
+      "ear_rot": {
+        "precision": 0.9047619047619048,
+        "recall": 1.0,
+        "f1-score": 0.95,
+        "support": 38.0
+      },
+      "healthy_ear": {
+        "precision": 1.0,
+        "recall": 0.8648648648648649,
+        "f1-score": 0.927536231884058,
+        "support": 37.0
+      },
+      "accuracy": 0.9509803921568627,
+      "macro avg": {
+        "precision": 0.9563492063492064,
+        "recall": 0.954954954954955,
+        "f1-score": 0.9531181379007466,
+        "support": 102.0
+      },
+      "weighted avg": {
+        "precision": 0.9550653594771241,
+        "recall": 0.9509803921568627,
+        "f1-score": 0.9502738381255005,
+        "support": 102.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        27,
+        0,
+        0
+      ],
+      [
+        0,
+        38,
+        0
+      ],
+      [
+        1,
+        4,
+        32
+      ]
+    ]
+  },
+  "test": {
+    "count": 107,
+    "accuracy": 0.9532710280373832,
+    "macro_f1": 0.9474433777684516,
+    "classification_report": {
+      "common_smut": {
+        "precision": 1.0,
+        "recall": 0.9761904761904762,
+        "f1-score": 0.9879518072289156,
+        "support": 42.0
+      },
+      "ear_rot": {
+        "precision": 0.925,
+        "recall": 0.9736842105263158,
+        "f1-score": 0.9487179487179487,
+        "support": 38.0
+      },
+      "healthy_ear": {
+        "precision": 0.9230769230769231,
+        "recall": 0.8888888888888888,
+        "f1-score": 0.9056603773584906,
+        "support": 27.0
+      },
+      "accuracy": 0.9532710280373832,
+      "macro avg": {
+        "precision": 0.9493589743589744,
+        "recall": 0.9462545252018936,
+        "f1-score": 0.9474433777684516,
+        "support": 107.0
+      },
+      "weighted avg": {
+        "precision": 0.9539539899352983,
+        "recall": 0.9532710280373832,
+        "f1-score": 0.953253160220334,
+        "support": 107.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        41,
+        0,
+        1
+      ],
+      [
+        0,
+        37,
+        1
+      ],
+      [
+        0,
+        3,
+        24
+      ]
+    ]
+  },
+  "test_by_source": {
+    "hf_ricemaize_ear_rot": {
+      "count": 18,
+      "accuracy": 0.9444444444444444,
+      "macro_f1": 0.3238095238095238,
+      "classification_report": {
+        "common_smut": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "ear_rot": {
+          "precision": 1.0,
+          "recall": 0.9444444444444444,
+          "f1-score": 0.9714285714285714,
+          "support": 18.0
+        },
+        "healthy_ear": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.9444444444444444,
+        "macro avg": {
+          "precision": 0.3333333333333333,
+          "recall": 0.3148148148148148,
+          "f1-score": 0.3238095238095238,
+          "support": 18.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.9444444444444444,
+          "f1-score": 0.9714285714285713,
+          "support": 18.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          17,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "idadp": {
+      "count": 20,
+      "accuracy": 1.0,
+      "macro_f1": 0.3333333333333333,
+      "classification_report": {
+        "common_smut": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "ear_rot": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 20.0
+        },
+        "healthy_ear": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 0.3333333333333333,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.3333333333333333,
+          "support": 20.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 20.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          20,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "inat_maize": {
+      "count": 4,
+      "accuracy": 0.75,
+      "macro_f1": 0.2857142857142857,
+      "classification_report": {
+        "common_smut": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "ear_rot": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "healthy_ear": {
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1-score": 0.8571428571428571,
+          "support": 4.0
+        },
+        "accuracy": 0.75,
+        "macro avg": {
+          "precision": 0.3333333333333333,
+          "recall": 0.25,
+          "f1-score": 0.2857142857142857,
+          "support": 4.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1-score": 0.8571428571428571,
+          "support": 4.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          3
+        ]
+      ]
+    },
+    "inat_smut": {
+      "count": 27,
+      "accuracy": 0.9629629629629629,
+      "macro_f1": 0.3270440251572327,
+      "classification_report": {
+        "common_smut": {
+          "precision": 1.0,
+          "recall": 0.9629629629629629,
+          "f1-score": 0.9811320754716981,
+          "support": 27.0
+        },
+        "ear_rot": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "healthy_ear": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.9629629629629629,
+        "macro avg": {
+          "precision": 0.3333333333333333,
+          "recall": 0.32098765432098764,
+          "f1-score": 0.3270440251572327,
+          "support": 27.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.9629629629629629,
+          "f1-score": 0.9811320754716981,
+          "support": 27.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          26,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "inat_smut_recent": {
+      "count": 15,
+      "accuracy": 1.0,
+      "macro_f1": 0.3333333333333333,
+      "classification_report": {
+        "common_smut": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        },
+        "ear_rot": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "healthy_ear": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 0.3333333333333333,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.3333333333333333,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          15,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "wikimedia_ears": {
+      "count": 23,
+      "accuracy": 0.9130434782608695,
+      "macro_f1": 0.3181818181818182,
+      "classification_report": {
+        "common_smut": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "ear_rot": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "healthy_ear": {
+          "precision": 1.0,
+          "recall": 0.9130434782608695,
+          "f1-score": 0.9545454545454546,
+          "support": 23.0
+        },
+        "accuracy": 0.9130434782608695,
+        "macro avg": {
+          "precision": 0.3333333333333333,
+          "recall": 0.3043478260869565,
+          "f1-score": 0.3181818181818182,
+          "support": 23.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.9130434782608695,
+          "f1-score": 0.9545454545454547,
+          "support": 23.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          21
+        ]
+      ]
+    }
+  },
+  "release_evidence": {
+    "common_smut": {
+      "support": 42,
+      "precision": 1.0,
+      "recall": 0.9762
+    },
+    "ear_rot": {
+      "support": 38,
+      "precision": 0.925,
+      "recall": 0.9737
+    },
+    "healthy_ear": {
+      "support": 27,
+      "precision": 0.9231,
+      "recall": 0.8889
+    }
+  },
+  "release_classes": [
+    "common_smut",
+    "ear_rot",
+    "healthy_ear"
+  ],
+  "predictions": [
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/111635121.jpg",
+      "source": "inat_smut",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.9992693066596985,
+      "probabilities": {
+        "common_smut": 0.9992693066596985,
+        "ear_rot": 0.0002977681579068303,
+        "healthy_ear": 0.000432922737672925
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/149182326.jpg",
+      "source": "inat_smut",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.8384173512458801,
+      "probabilities": {
+        "common_smut": 0.8384173512458801,
+        "ear_rot": 0.12603549659252167,
+        "healthy_ear": 0.03554713726043701
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/149182340.jpg",
+      "source": "inat_smut",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.7005773186683655,
+      "probabilities": {
+        "common_smut": 0.7005773186683655,
+        "ear_rot": 0.019797736778855324,
+        "healthy_ear": 0.27962490916252136
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/155407645.jpg",
+      "source": "inat_smut",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.9983830451965332,
+      "probabilities": {
+        "common_smut": 0.9983830451965332,
+        "ear_rot": 0.0003659845679067075,
+        "healthy_ear": 0.0012510151136666536
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/159588073.jpg",
+      "source": "inat_smut",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.9971227049827576,
+      "probabilities": {
+        "common_smut": 0.9971227049827576,
+        "ear_rot": 0.0015207197284325957,
+        "healthy_ear": 0.001356536871753633
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/163257485.jpg",
+      "source": "inat_smut",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.5845691561698914,
+      "probabilities": {
+        "common_smut": 0.5845691561698914,
+        "ear_rot": 0.41441673040390015,
+        "healthy_ear": 0.0010141580132767558
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/203955494.jpg",
+      "source": "inat_smut",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.9904986023902893,
+      "probabilities": {
+        "common_smut": 0.9904986023902893,
+        "ear_rot": 0.0003019851865246892,
+        "healthy_ear": 0.009199402295053005
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/217697224.jpg",
+      "source": "inat_smut",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.9965230226516724,
+      "probabilities": {
+        "common_smut": 0.9965230226516724,
+        "ear_rot": 0.00019308521586935967,
+        "healthy_ear": 0.003283959347754717
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/220771949.jpg",
+      "source": "inat_smut",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.9950880408287048,
+      "probabilities": {
+        "common_smut": 0.9950880408287048,
+        "ear_rot": 0.0010450199479237199,
+        "healthy_ear": 0.003866893472149968
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/222396753.jpg",
+      "source": "inat_smut",
+      "actual": "common_smut",
+      "predicted": "healthy_ear",
+      "confidence": 0.4834630489349365,
+      "probabilities": {
+        "common_smut": 0.3762516379356384,
+        "ear_rot": 0.14028522372245789,
+        "healthy_ear": 0.4834630489349365
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/224216258.jpg",
+      "source": "inat_smut",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.9998654127120972,
+      "probabilities": {
+        "common_smut": 0.9998654127120972,
+        "ear_rot": 1.1745151823561173e-05,
+        "healthy_ear": 0.00012272660387679935
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/225879895.jpg",
+      "source": "inat_smut",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.9940993785858154,
+      "probabilities": {
+        "common_smut": 0.9940993785858154,
+        "ear_rot": 0.004367686342447996,
+        "healthy_ear": 0.0015330207534134388
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/227719722.jpg",
+      "source": "inat_smut",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.9991145730018616,
+      "probabilities": {
+        "common_smut": 0.9991145730018616,
+        "ear_rot": 6.625130481552333e-06,
+        "healthy_ear": 0.0008787232218310237
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/23275750.jpg",
+      "source": "inat_smut",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.9979413151741028,
+      "probabilities": {
+        "common_smut": 0.9979413151741028,
+        "ear_rot": 0.00143899442628026,
+        "healthy_ear": 0.0006196710164658725
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/236035869.jpg",
+      "source": "inat_smut",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.9917349815368652,
+      "probabilities": {
+        "common_smut": 0.9917349815368652,
+        "ear_rot": 0.007407070603221655,
+        "healthy_ear": 0.0008579054847359657
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/259140877.jpg",
+      "source": "inat_smut",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.9900479316711426,
+      "probabilities": {
+        "common_smut": 0.9900479316711426,
+        "ear_rot": 0.0003209119604434818,
+        "healthy_ear": 0.00963110662996769
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/275319730.jpg",
+      "source": "inat_smut",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.9971678853034973,
+      "probabilities": {
+        "common_smut": 0.9971678853034973,
+        "ear_rot": 0.00036564384936355054,
+        "healthy_ear": 0.002466451609507203
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/311729162.jpg",
+      "source": "inat_smut",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.9052754044532776,
+      "probabilities": {
+        "common_smut": 0.9052754044532776,
+        "ear_rot": 0.001410214346833527,
+        "healthy_ear": 0.09331429749727249
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/320812623.jpg",
+      "source": "inat_smut",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.9846078753471375,
+      "probabilities": {
+        "common_smut": 0.9846078753471375,
+        "ear_rot": 0.001877114991657436,
+        "healthy_ear": 0.013514970429241657
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/321590795.jpg",
+      "source": "inat_smut",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.9928522706031799,
+      "probabilities": {
+        "common_smut": 0.9928522706031799,
+        "ear_rot": 0.0064885434694588184,
+        "healthy_ear": 0.0006590899429284036
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/415021440.jpg",
+      "source": "inat_smut",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.881041944026947,
+      "probabilities": {
+        "common_smut": 0.881041944026947,
+        "ear_rot": 0.06358372420072556,
+        "healthy_ear": 0.055374350398778915
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/45141127.jpg",
+      "source": "inat_smut",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.9970327615737915,
+      "probabilities": {
+        "common_smut": 0.9970327615737915,
+        "ear_rot": 0.0022553761955350637,
+        "healthy_ear": 0.0007118654903024435
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/48281816.jpg",
+      "source": "inat_smut",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.9848606586456299,
+      "probabilities": {
+        "common_smut": 0.9848606586456299,
+        "ear_rot": 0.010499055497348309,
+        "healthy_ear": 0.004640321247279644
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/51507980.jpg",
+      "source": "inat_smut",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.9989632368087769,
+      "probabilities": {
+        "common_smut": 0.9989632368087769,
+        "ear_rot": 0.00018877391994465142,
+        "healthy_ear": 0.0008479589596390724
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/90465048.jpg",
+      "source": "inat_smut",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.8997080326080322,
+      "probabilities": {
+        "common_smut": 0.8997080326080322,
+        "ear_rot": 0.06755810976028442,
+        "healthy_ear": 0.032733768224716187
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/91470793.jpg",
+      "source": "inat_smut",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.9965200424194336,
+      "probabilities": {
+        "common_smut": 0.9965200424194336,
+        "ear_rot": 0.002211244311183691,
+        "healthy_ear": 0.0012686746194958687
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_smut/images/93292110.jpg",
+      "source": "inat_smut",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.9974097609519958,
+      "probabilities": {
+        "common_smut": 0.9974097609519958,
+        "ear_rot": 0.0006962838815525174,
+        "healthy_ear": 0.0018939777510240674
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/39256640.jpg",
+      "source": "inat_maize",
+      "actual": "healthy_ear",
+      "predicted": "healthy_ear",
+      "confidence": 0.9520663619041443,
+      "probabilities": {
+        "common_smut": 0.03298238292336464,
+        "ear_rot": 0.014951289631426334,
+        "healthy_ear": 0.9520663619041443
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/57590544.jpg",
+      "source": "inat_maize",
+      "actual": "healthy_ear",
+      "predicted": "healthy_ear",
+      "confidence": 0.9501034617424011,
+      "probabilities": {
+        "common_smut": 0.0027410469483584166,
+        "ear_rot": 0.04715551435947418,
+        "healthy_ear": 0.9501034617424011
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/82818408.jpg",
+      "source": "inat_maize",
+      "actual": "healthy_ear",
+      "predicted": "healthy_ear",
+      "confidence": 0.9889940619468689,
+      "probabilities": {
+        "common_smut": 0.010862859897315502,
+        "ear_rot": 0.000143027602462098,
+        "healthy_ear": 0.9889940619468689
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/inat_maize/images/99848829.jpg",
+      "source": "inat_maize",
+      "actual": "healthy_ear",
+      "predicted": "ear_rot",
+      "confidence": 0.6787856817245483,
+      "probabilities": {
+        "common_smut": 0.13735097646713257,
+        "ear_rot": 0.6787856817245483,
+        "healthy_ear": 0.18386328220367432
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/602107326.jpg",
+      "source": "inat_smut_recent",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.9898362755775452,
+      "probabilities": {
+        "common_smut": 0.9898362755775452,
+        "ear_rot": 0.0005408333381637931,
+        "healthy_ear": 0.0096229063346982
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/711612686.jpg",
+      "source": "inat_smut_recent",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.9964062571525574,
+      "probabilities": {
+        "common_smut": 0.9964062571525574,
+        "ear_rot": 0.000554644619114697,
+        "healthy_ear": 0.0030390846077352762
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/711966581.jpg",
+      "source": "inat_smut_recent",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.998768150806427,
+      "probabilities": {
+        "common_smut": 0.998768150806427,
+        "ear_rot": 0.0008747895481064916,
+        "healthy_ear": 0.00035712021053768694
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/714303594.jpg",
+      "source": "inat_smut_recent",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.8113419413566589,
+      "probabilities": {
+        "common_smut": 0.8113419413566589,
+        "ear_rot": 0.021697038784623146,
+        "healthy_ear": 0.1669609397649765
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/718416172.jpg",
+      "source": "inat_smut_recent",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.9497160315513611,
+      "probabilities": {
+        "common_smut": 0.9497160315513611,
+        "ear_rot": 0.002553484868258238,
+        "healthy_ear": 0.04773048311471939
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/718418434.jpg",
+      "source": "inat_smut_recent",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.9542091488838196,
+      "probabilities": {
+        "common_smut": 0.9542091488838196,
+        "ear_rot": 0.033064041286706924,
+        "healthy_ear": 0.012726846151053905
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/718418463.jpg",
+      "source": "inat_smut_recent",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.9929319620132446,
+      "probabilities": {
+        "common_smut": 0.9929319620132446,
+        "ear_rot": 0.006450876593589783,
+        "healthy_ear": 0.0006171392742544413
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/721236483.jpg",
+      "source": "inat_smut_recent",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.9784550070762634,
+      "probabilities": {
+        "common_smut": 0.9784550070762634,
+        "ear_rot": 0.01933835633099079,
+        "healthy_ear": 0.002206620993092656
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/724535780.jpg",
+      "source": "inat_smut_recent",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.7619715929031372,
+      "probabilities": {
+        "common_smut": 0.7619715929031372,
+        "ear_rot": 0.16199952363967896,
+        "healthy_ear": 0.07602883130311966
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/724580857.jpg",
+      "source": "inat_smut_recent",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.9994223117828369,
+      "probabilities": {
+        "common_smut": 0.9994223117828369,
+        "ear_rot": 0.0004446381644811481,
+        "healthy_ear": 0.00013302436855155975
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/726584471.jpg",
+      "source": "inat_smut_recent",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.5782544612884521,
+      "probabilities": {
+        "common_smut": 0.5782544612884521,
+        "ear_rot": 0.23596380650997162,
+        "healthy_ear": 0.18578173220157623
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/726869291.jpg",
+      "source": "inat_smut_recent",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.9942231774330139,
+      "probabilities": {
+        "common_smut": 0.9942231774330139,
+        "ear_rot": 0.004648640286177397,
+        "healthy_ear": 0.0011282168561592698
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/727313216.jpg",
+      "source": "inat_smut_recent",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.9985218644142151,
+      "probabilities": {
+        "common_smut": 0.9985218644142151,
+        "ear_rot": 0.00019224757852498442,
+        "healthy_ear": 0.0012859650887548923
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/737856470.jpg",
+      "source": "inat_smut_recent",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.9955399632453918,
+      "probabilities": {
+        "common_smut": 0.9955399632453918,
+        "ear_rot": 0.0006315149366855621,
+        "healthy_ear": 0.003828564891591668
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_comparison_v1/ear_review/images/738187058.jpg",
+      "source": "inat_smut_recent",
+      "actual": "common_smut",
+      "predicted": "common_smut",
+      "confidence": 0.9769667983055115,
+      "probabilities": {
+        "common_smut": 0.9769667983055115,
+        "ear_rot": 0.018523836508393288,
+        "healthy_ear": 0.004509332589805126
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_ear_v2/rot/20k_train_00000006.jpg",
+      "source": "hf_ricemaize_ear_rot",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9961917400360107,
+      "probabilities": {
+        "common_smut": 0.0025330577045679092,
+        "ear_rot": 0.9961917400360107,
+        "healthy_ear": 0.001275238231755793
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_ear_v2/rot/20k_train_00000114.jpeg",
+      "source": "hf_ricemaize_ear_rot",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9763995409011841,
+      "probabilities": {
+        "common_smut": 0.00047925824765115976,
+        "ear_rot": 0.9763995409011841,
+        "healthy_ear": 0.023121191188693047
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_ear_v2/rot/20k_train_00000070.jpg",
+      "source": "hf_ricemaize_ear_rot",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9972743391990662,
+      "probabilities": {
+        "common_smut": 0.0012897019041702151,
+        "ear_rot": 0.9972743391990662,
+        "healthy_ear": 0.0014360201312229037
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_ear_v2/rot/20k_train_00000010.jpg",
+      "source": "hf_ricemaize_ear_rot",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.983588457107544,
+      "probabilities": {
+        "common_smut": 0.007324228994548321,
+        "ear_rot": 0.983588457107544,
+        "healthy_ear": 0.009087289683520794
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_ear_v2/rot/20k_train_00000065.jpg",
+      "source": "hf_ricemaize_ear_rot",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9955114126205444,
+      "probabilities": {
+        "common_smut": 0.0006317959632724524,
+        "ear_rot": 0.9955114126205444,
+        "healthy_ear": 0.003856850089505315
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_ear_v2/rot/20k_train_00000080.jpg",
+      "source": "hf_ricemaize_ear_rot",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9205886125564575,
+      "probabilities": {
+        "common_smut": 0.0009288043947890401,
+        "ear_rot": 0.9205886125564575,
+        "healthy_ear": 0.07848258316516876
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_ear_v2/rot/20k_train_00000052.jpg",
+      "source": "hf_ricemaize_ear_rot",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9891577959060669,
+      "probabilities": {
+        "common_smut": 0.0024779841769486666,
+        "ear_rot": 0.9891577959060669,
+        "healthy_ear": 0.008364241570234299
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_ear_v2/rot/20k_train_00000001.jpg",
+      "source": "hf_ricemaize_ear_rot",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9168576002120972,
+      "probabilities": {
+        "common_smut": 0.045450665056705475,
+        "ear_rot": 0.9168576002120972,
+        "healthy_ear": 0.03769173473119736
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_ear_v2/rot/20k_train_00000024.jpg",
+      "source": "hf_ricemaize_ear_rot",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.8994145393371582,
+      "probabilities": {
+        "common_smut": 0.0755387470126152,
+        "ear_rot": 0.8994145393371582,
+        "healthy_ear": 0.025046788156032562
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_ear_v2/rot/20k_train_00000075.jpg",
+      "source": "hf_ricemaize_ear_rot",
+      "actual": "ear_rot",
+      "predicted": "healthy_ear",
+      "confidence": 0.9705932140350342,
+      "probabilities": {
+        "common_smut": 0.0036695904564112425,
+        "ear_rot": 0.02573724091053009,
+        "healthy_ear": 0.9705932140350342
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_ear_v2/rot/20k_train_00000034.jpg",
+      "source": "hf_ricemaize_ear_rot",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9933444261550903,
+      "probabilities": {
+        "common_smut": 0.005070538725703955,
+        "ear_rot": 0.9933444261550903,
+        "healthy_ear": 0.0015850459458306432
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_ear_v2/rot/20k_train_00000061.jpg",
+      "source": "hf_ricemaize_ear_rot",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.876481831073761,
+      "probabilities": {
+        "common_smut": 0.02518402971327305,
+        "ear_rot": 0.876481831073761,
+        "healthy_ear": 0.09833408147096634
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_ear_v2/rot/20k_train_00000007.jpg",
+      "source": "hf_ricemaize_ear_rot",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9915623068809509,
+      "probabilities": {
+        "common_smut": 0.007930915802717209,
+        "ear_rot": 0.9915623068809509,
+        "healthy_ear": 0.0005068624741397798
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_ear_v2/rot/20k_train_00000012.jpg",
+      "source": "hf_ricemaize_ear_rot",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9462429881095886,
+      "probabilities": {
+        "common_smut": 0.019507406279444695,
+        "ear_rot": 0.9462429881095886,
+        "healthy_ear": 0.03424949198961258
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_ear_v2/rot/20k_train_00000048.jpg",
+      "source": "hf_ricemaize_ear_rot",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9782891273498535,
+      "probabilities": {
+        "common_smut": 0.007157281972467899,
+        "ear_rot": 0.9782891273498535,
+        "healthy_ear": 0.01455360185354948
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_ear_v2/rot/20k_train_00000093.png",
+      "source": "hf_ricemaize_ear_rot",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9666328430175781,
+      "probabilities": {
+        "common_smut": 0.029020659625530243,
+        "ear_rot": 0.9666328430175781,
+        "healthy_ear": 0.004346542526036501
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_ear_v2/rot/20k_train_00000071.jpg",
+      "source": "hf_ricemaize_ear_rot",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9648759961128235,
+      "probabilities": {
+        "common_smut": 0.0005116152460686862,
+        "ear_rot": 0.9648759961128235,
+        "healthy_ear": 0.03461241349577904
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_ear_v2/rot/20k_train_00000076.jpg",
+      "source": "hf_ricemaize_ear_rot",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9898300766944885,
+      "probabilities": {
+        "common_smut": 0.0010385261848568916,
+        "ear_rot": 0.9898300766944885,
+        "healthy_ear": 0.009131412021815777
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/穗腐病/IMG_19078268.JPG",
+      "source": "idadp",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9987801909446716,
+      "probabilities": {
+        "common_smut": 0.00030129155493341386,
+        "ear_rot": 0.9987801909446716,
+        "healthy_ear": 0.0009185104863718152
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/穗腐病/IMG_19077063.JPG",
+      "source": "idadp",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9912400841712952,
+      "probabilities": {
+        "common_smut": 0.008055328391492367,
+        "ear_rot": 0.9912400841712952,
+        "healthy_ear": 0.0007046544924378395
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/穗腐病/IMG_19078308.JPG",
+      "source": "idadp",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9955917000770569,
+      "probabilities": {
+        "common_smut": 0.0003737046499736607,
+        "ear_rot": 0.9955917000770569,
+        "healthy_ear": 0.004034490790218115
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/穗腐病/IMG_19078381.JPG",
+      "source": "idadp",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9952620267868042,
+      "probabilities": {
+        "common_smut": 0.0010382751934230328,
+        "ear_rot": 0.9952620267868042,
+        "healthy_ear": 0.003699675900861621
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/穗腐病/IMG_19078382.JPG",
+      "source": "idadp",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.998658299446106,
+      "probabilities": {
+        "common_smut": 0.0012096522841602564,
+        "ear_rot": 0.998658299446106,
+        "healthy_ear": 0.00013202102854847908
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/穗腐病/IMG_19077076.JPG",
+      "source": "idadp",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9662383794784546,
+      "probabilities": {
+        "common_smut": 0.015291601419448853,
+        "ear_rot": 0.9662383794784546,
+        "healthy_ear": 0.018470054492354393
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/穗腐病/IMG_19078271.JPG",
+      "source": "idadp",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9993185997009277,
+      "probabilities": {
+        "common_smut": 5.681880793417804e-05,
+        "ear_rot": 0.9993185997009277,
+        "healthy_ear": 0.0006246294942684472
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/穗腐病/IMG_19078285.JPG",
+      "source": "idadp",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9938315153121948,
+      "probabilities": {
+        "common_smut": 0.0012264206307008862,
+        "ear_rot": 0.9938315153121948,
+        "healthy_ear": 0.004941999912261963
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/穗腐病/IMG_19078457.JPG",
+      "source": "idadp",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9969624876976013,
+      "probabilities": {
+        "common_smut": 0.0011473982594907284,
+        "ear_rot": 0.9969624876976013,
+        "healthy_ear": 0.0018902034498751163
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/穗腐病/IMG_19078265.JPG",
+      "source": "idadp",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9983639121055603,
+      "probabilities": {
+        "common_smut": 0.00018198564066551626,
+        "ear_rot": 0.9983639121055603,
+        "healthy_ear": 0.0014540917472913861
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/穗腐病/IMG_19077075.JPG",
+      "source": "idadp",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9732561707496643,
+      "probabilities": {
+        "common_smut": 0.008487984538078308,
+        "ear_rot": 0.9732561707496643,
+        "healthy_ear": 0.01825578883290291
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/穗腐病/IMG_19078227.JPG",
+      "source": "idadp",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9968262910842896,
+      "probabilities": {
+        "common_smut": 0.0019775338005274534,
+        "ear_rot": 0.9968262910842896,
+        "healthy_ear": 0.0011961576528847218
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/穗腐病/IMG_19078314.JPG",
+      "source": "idadp",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9906971454620361,
+      "probabilities": {
+        "common_smut": 0.008623223751783371,
+        "ear_rot": 0.9906971454620361,
+        "healthy_ear": 0.0006797110545448959
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/穗腐病/IMG_19078326.JPG",
+      "source": "idadp",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9489445090293884,
+      "probabilities": {
+        "common_smut": 0.04523656517267227,
+        "ear_rot": 0.9489445090293884,
+        "healthy_ear": 0.005818893667310476
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/穗腐病/IMG_19078405.JPG",
+      "source": "idadp",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9646270275115967,
+      "probabilities": {
+        "common_smut": 0.0012219632044434547,
+        "ear_rot": 0.9646270275115967,
+        "healthy_ear": 0.034151043742895126
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/穗腐病/IMG_19078466.JPG",
+      "source": "idadp",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9409534931182861,
+      "probabilities": {
+        "common_smut": 0.05727723240852356,
+        "ear_rot": 0.9409534931182861,
+        "healthy_ear": 0.0017693046247586608
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/穗腐病/IMG_19078307.JPG",
+      "source": "idadp",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9966315627098083,
+      "probabilities": {
+        "common_smut": 0.0016010942636057734,
+        "ear_rot": 0.9966315627098083,
+        "healthy_ear": 0.0017674047267064452
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/穗腐病/IMG_19077130.JPG",
+      "source": "idadp",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9855490326881409,
+      "probabilities": {
+        "common_smut": 0.011369814164936543,
+        "ear_rot": 0.9855490326881409,
+        "healthy_ear": 0.0030812022741883993
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/穗腐病/IMG_19077158.JPG",
+      "source": "idadp",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9489423632621765,
+      "probabilities": {
+        "common_smut": 0.043537940829992294,
+        "ear_rot": 0.9489423632621765,
+        "healthy_ear": 0.007519712671637535
+      }
+    },
+    {
+      "path": ".cache/datasets/corn_field/idadp/image/穗腐病/IMG_19078451.JPG",
+      "source": "idadp",
+      "actual": "ear_rot",
+      "predicted": "ear_rot",
+      "confidence": 0.9957697987556458,
+      "probabilities": {
+        "common_smut": 0.0006294514751061797,
+        "ear_rot": 0.9957697987556458,
+        "healthy_ear": 0.00360070145688951
+      }
+    },
+    {
+      "path": ".cache/datasets/wikimedia_ears/images/44169978.jpg",
+      "source": "wikimedia_ears",
+      "actual": "healthy_ear",
+      "predicted": "healthy_ear",
+      "confidence": 0.9938759207725525,
+      "probabilities": {
+        "common_smut": 0.003818008117377758,
+        "ear_rot": 0.0023060522507876158,
+        "healthy_ear": 0.9938759207725525
+      }
+    },
+    {
+      "path": ".cache/datasets/wikimedia_ears/images/44169971.jpg",
+      "source": "wikimedia_ears",
+      "actual": "healthy_ear",
+      "predicted": "healthy_ear",
+      "confidence": 0.990056037902832,
+      "probabilities": {
+        "common_smut": 0.0009797507664188743,
+        "ear_rot": 0.008964220993220806,
+        "healthy_ear": 0.990056037902832
+      }
+    },
+    {
+      "path": ".cache/datasets/wikimedia_ears/images/81991650.jpg",
+      "source": "wikimedia_ears",
+      "actual": "healthy_ear",
+      "predicted": "healthy_ear",
+      "confidence": 0.9966148734092712,
+      "probabilities": {
+        "common_smut": 0.0007520909421145916,
+        "ear_rot": 0.0026330321561545134,
+        "healthy_ear": 0.9966148734092712
+      }
+    },
+    {
+      "path": ".cache/datasets/wikimedia_ears/images/26459901.jpg",
+      "source": "wikimedia_ears",
+      "actual": "healthy_ear",
+      "predicted": "healthy_ear",
+      "confidence": 0.9740623235702515,
+      "probabilities": {
+        "common_smut": 0.0014249030500650406,
+        "ear_rot": 0.024512775242328644,
+        "healthy_ear": 0.9740623235702515
+      }
+    },
+    {
+      "path": ".cache/datasets/wikimedia_ears/images/138851320.jpg",
+      "source": "wikimedia_ears",
+      "actual": "healthy_ear",
+      "predicted": "healthy_ear",
+      "confidence": 0.5416730642318726,
+      "probabilities": {
+        "common_smut": 0.29422396421432495,
+        "ear_rot": 0.16410298645496368,
+        "healthy_ear": 0.5416730642318726
+      }
+    },
+    {
+      "path": ".cache/datasets/wikimedia_ears/images/19277633.jpg",
+      "source": "wikimedia_ears",
+      "actual": "healthy_ear",
+      "predicted": "healthy_ear",
+      "confidence": 0.9999592304229736,
+      "probabilities": {
+        "common_smut": 2.099637276842259e-05,
+        "ear_rot": 1.975125996978022e-05,
+        "healthy_ear": 0.9999592304229736
+      }
+    },
+    {
+      "path": ".cache/datasets/wikimedia_ears/images/88065618.jpg",
+      "source": "wikimedia_ears",
+      "actual": "healthy_ear",
+      "predicted": "healthy_ear",
+      "confidence": 0.9975103139877319,
+      "probabilities": {
+        "common_smut": 1.9358392819412984e-05,
+        "ear_rot": 0.002470354549586773,
+        "healthy_ear": 0.9975103139877319
+      }
+    },
+    {
+      "path": ".cache/datasets/wikimedia_ears/images/104842455.jpg",
+      "source": "wikimedia_ears",
+      "actual": "healthy_ear",
+      "predicted": "ear_rot",
+      "confidence": 0.9591540694236755,
+      "probabilities": {
+        "common_smut": 0.005839107558131218,
+        "ear_rot": 0.9591540694236755,
+        "healthy_ear": 0.03500686585903168
+      }
+    },
+    {
+      "path": ".cache/datasets/wikimedia_ears/images/109487000.jpg",
+      "source": "wikimedia_ears",
+      "actual": "healthy_ear",
+      "predicted": "healthy_ear",
+      "confidence": 0.9936282634735107,
+      "probabilities": {
+        "common_smut": 0.001238286611624062,
+        "ear_rot": 0.005133436061441898,
+        "healthy_ear": 0.9936282634735107
+      }
+    },
+    {
+      "path": ".cache/datasets/wikimedia_ears/images/76812676.jpg",
+      "source": "wikimedia_ears",
+      "actual": "healthy_ear",
+      "predicted": "healthy_ear",
+      "confidence": 0.9729235172271729,
+      "probabilities": {
+        "common_smut": 0.008954456076025963,
+        "ear_rot": 0.018122032284736633,
+        "healthy_ear": 0.9729235172271729
+      }
+    },
+    {
+      "path": ".cache/datasets/wikimedia_ears/images/12732012.jpg",
+      "source": "wikimedia_ears",
+      "actual": "healthy_ear",
+      "predicted": "healthy_ear",
+      "confidence": 0.9998087286949158,
+      "probabilities": {
+        "common_smut": 1.069378231477458e-05,
+        "ear_rot": 0.00018058670684695244,
+        "healthy_ear": 0.9998087286949158
+      }
+    },
+    {
+      "path": ".cache/datasets/wikimedia_ears/images/12463721.jpg",
+      "source": "wikimedia_ears",
+      "actual": "healthy_ear",
+      "predicted": "healthy_ear",
+      "confidence": 0.8422704935073853,
+      "probabilities": {
+        "common_smut": 0.00040388014167547226,
+        "ear_rot": 0.1573256552219391,
+        "healthy_ear": 0.8422704935073853
+      }
+    },
+    {
+      "path": ".cache/datasets/wikimedia_ears/images/23077814.jpg",
+      "source": "wikimedia_ears",
+      "actual": "healthy_ear",
+      "predicted": "healthy_ear",
+      "confidence": 0.9866212606430054,
+      "probabilities": {
+        "common_smut": 0.012234480120241642,
+        "ear_rot": 0.0011442189570516348,
+        "healthy_ear": 0.9866212606430054
+      }
+    },
+    {
+      "path": ".cache/datasets/wikimedia_ears/images/104932879.jpg",
+      "source": "wikimedia_ears",
+      "actual": "healthy_ear",
+      "predicted": "healthy_ear",
+      "confidence": 0.9192744493484497,
+      "probabilities": {
+        "common_smut": 0.08061535656452179,
+        "ear_rot": 0.00011026664287783206,
+        "healthy_ear": 0.9192744493484497
+      }
+    },
+    {
+      "path": ".cache/datasets/wikimedia_ears/images/11493791.jpg",
+      "source": "wikimedia_ears",
+      "actual": "healthy_ear",
+      "predicted": "healthy_ear",
+      "confidence": 0.9910932183265686,
+      "probabilities": {
+        "common_smut": 0.002092967042699456,
+        "ear_rot": 0.006813772488385439,
+        "healthy_ear": 0.9910932183265686
+      }
+    },
+    {
+      "path": ".cache/datasets/wikimedia_ears/images/22669559.jpg",
+      "source": "wikimedia_ears",
+      "actual": "healthy_ear",
+      "predicted": "ear_rot",
+      "confidence": 0.5586833953857422,
+      "probabilities": {
+        "common_smut": 0.1943499594926834,
+        "ear_rot": 0.5586833953857422,
+        "healthy_ear": 0.2469666600227356
+      }
+    },
+    {
+      "path": ".cache/datasets/wikimedia_ears/images/107888178.jpg",
+      "source": "wikimedia_ears",
+      "actual": "healthy_ear",
+      "predicted": "healthy_ear",
+      "confidence": 0.8703568577766418,
+      "probabilities": {
+        "common_smut": 0.020260201767086983,
+        "ear_rot": 0.10938291996717453,
+        "healthy_ear": 0.8703568577766418
+      }
+    },
+    {
+      "path": ".cache/datasets/wikimedia_ears/images/26519044.jpg",
+      "source": "wikimedia_ears",
+      "actual": "healthy_ear",
+      "predicted": "healthy_ear",
+      "confidence": 0.9998169541358948,
+      "probabilities": {
+        "common_smut": 0.00014176368131302297,
+        "ear_rot": 4.128604996367358e-05,
+        "healthy_ear": 0.9998169541358948
+      }
+    },
+    {
+      "path": ".cache/datasets/wikimedia_ears/images/24503346.jpg",
+      "source": "wikimedia_ears",
+      "actual": "healthy_ear",
+      "predicted": "healthy_ear",
+      "confidence": 0.9215664267539978,
+      "probabilities": {
+        "common_smut": 0.0019274515798315406,
+        "ear_rot": 0.07650616765022278,
+        "healthy_ear": 0.9215664267539978
+      }
+    },
+    {
+      "path": ".cache/datasets/wikimedia_ears/images/44169974.jpg",
+      "source": "wikimedia_ears",
+      "actual": "healthy_ear",
+      "predicted": "healthy_ear",
+      "confidence": 0.9650849103927612,
+      "probabilities": {
+        "common_smut": 0.0019246259471401572,
+        "ear_rot": 0.032990463078022,
+        "healthy_ear": 0.9650849103927612
+      }
+    },
+    {
+      "path": ".cache/datasets/wikimedia_ears/images/3145888.jpg",
+      "source": "wikimedia_ears",
+      "actual": "healthy_ear",
+      "predicted": "healthy_ear",
+      "confidence": 0.9290599822998047,
+      "probabilities": {
+        "common_smut": 0.0003121881454717368,
+        "ear_rot": 0.07062780857086182,
+        "healthy_ear": 0.9290599822998047
+      }
+    },
+    {
+      "path": ".cache/datasets/wikimedia_ears/images/113282508.jpg",
+      "source": "wikimedia_ears",
+      "actual": "healthy_ear",
+      "predicted": "healthy_ear",
+      "confidence": 0.9431129693984985,
+      "probabilities": {
+        "common_smut": 0.02828046679496765,
+        "ear_rot": 0.02860650233924389,
+        "healthy_ear": 0.9431129693984985
+      }
+    },
+    {
+      "path": ".cache/datasets/wikimedia_ears/images/2164526.jpg",
+      "source": "wikimedia_ears",
+      "actual": "healthy_ear",
+      "predicted": "healthy_ear",
+      "confidence": 0.9988000392913818,
+      "probabilities": {
+        "common_smut": 7.943467062432319e-05,
+        "ear_rot": 0.0011204819893464446,
+        "healthy_ear": 0.9988000392913818
+      }
+    }
+  ]
+}
